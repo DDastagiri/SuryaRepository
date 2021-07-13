@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3080204DataSet" targetNamespace="http://tempuri.org/IC3080204DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3080204DataSet.xsd" xmlns="http://tempuri.org/IC3080204DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3080204DataSet" msdata:IsDataSet="true" msdata:Locale="ja-JP" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3080204DataSet" msprop:Generator_UserDSName="IC3080204DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3080204Customer" msprop:Generator_TableClassName="IC3080204CustomerDataTable" msprop:Generator_TableVarName="tableIC3080204Customer" msprop:Generator_TablePropName="IC3080204Customer" msprop:Generator_RowDeletingName="IC3080204CustomerRowDeleting" msprop:Generator_UserTableName="IC3080204Customer" msprop:Generator_RowChangingName="IC3080204CustomerRowChanging" msprop:Generator_RowEvHandlerName="IC3080204CustomerRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3080204CustomerRowDeleted" msprop:Generator_RowEvArgName="IC3080204CustomerRowChangeEvent" msprop:Generator_RowChangedName="IC3080204CustomerRowChanged" msprop:Generator_RowClassName="IC3080204CustomerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORIGINALID" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="ORIGINALID" msprop:Generator_ColumnVarNameInTable="columnORIGINALID" msprop:Generator_ColumnPropNameInTable="ORIGINALIDColumn" msprop:Generator_UserColumnName="ORIGINALID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="19" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

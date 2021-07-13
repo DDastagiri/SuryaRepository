@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{DA812634-345D-449B-AC6F-02D36CCEC61E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Toyota.eCRB.iCROP.BizLogic.SC3070201</RootNamespace>
+    <AssemblyName>Toyota.eCRB.iCROP.BizLogic.SC3070201</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Toyota.eCRB.iCROP.BizLogic.SC3070201.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Toyota.eCRB.iCROP.BizLogic.SC3070201.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Toyota.eCRB.iCROP.BizLogic.IC3040801">
+      <HintPath>..\Toyota.eCRB.iCROP.BizLogic.IC3040801\bin\Debug\Toyota.eCRB.iCROP.BizLogic.IC3040801.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Toyota.eCRB.iCROP.DataAccess.IC3040801">
+      <HintPath>..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3040801\bin\Debug\Toyota.eCRB.iCROP.DataAccess.IC3040801.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Toyota.eCRB.SystemFrameworks.Configuration">
+      <HintPath>..\..\..\..\ReferenceBin\WebSite_Sales\Bin\Toyota.eCRB.SystemFrameworks.Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Toyota.eCRB.SystemFrameworks.Core">
+      <HintPath>..\..\..\..\ReferenceBin\WebSite_Sales\Bin\Toyota.eCRB.SystemFrameworks.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Toyota.eCRB.SystemFrameworks.Web">
+      <HintPath>..\..\..\..\ReferenceBin\WebSite_Sales\Bin\Toyota.eCRB.SystemFrameworks.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="IEstimateInfoControl.vb" />
+    <Compile Include="SC3070201BusinessLogic.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3070201\Toyota.eCRB.iCROP.BizLogic.IC3070201.vbproj">
+      <Project>{42A49AB1-9729-4F06-84D4-F3F4802D78E0}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3070201</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3070202\Toyota.eCRB.iCROP.BizLogic.IC3070202.vbproj">
+      <Project>{748D91B2-272C-47D0-A629-394EBA37E664}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3070202</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3070201\Toyota.eCRB.iCROP.DataAccess.IC3070201.vbproj">
+      <Project>{40CD4D23-4720-4860-A81E-A25EB063687F}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3070201</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3070202\Toyota.eCRB.iCROP.DataAccess.IC3070202.vbproj">
+      <Project>{06888359-9E7C-4B35-80EC-63E34AFEB7FA}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3070202</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.SC3070201\Toyota.eCRB.iCROP.DataAccess.SC3070201.vbproj">
+      <Project>{03600226-5099-4AFC-91C5-20F058DF26AD}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.SC3070201</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

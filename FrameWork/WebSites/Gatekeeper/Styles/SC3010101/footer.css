@@ -1,0 +1,55 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* Footer
+------------------------------------------------------------------------------*/
+
+div#footer{
+	height:49px;
+	border:1px solid black;
+	border-bottom:2px solid black;
+	z-index:901;
+	background: -webkit-gradient(linear, left top, left bottom, from(#434343),
+            color-stop(0.50, #151515),
+            color-stop(0.51, #000),
+						to(#000));
+	text-align:center;
+	overflow:hidden;
+}
+
+#footer .NaviSet{
+	display:compact;
+	width:870px;
+	margin:3px auto 0;
+}
+
+#footer .NaviSet li{
+	display:block;
+	width:76px; height:44px;
+	margin:0 23px;
+	float:left;
+}
+
+#footer .NaviSet .linker01{background:url(../Images/footerIcon01.png) 0 0 no-repeat;}
+#footer .NaviSet .linker02{background:url(../Images/footerIcon02a.png) 0 0 no-repeat;}
+#footer .NaviSet .linker03{background:url(../Images/footerIcon03.png) 0 0 no-repeat;}
+#footer .NaviSet .linker04{background:url(../Images/footerIcon04.png) 0 0 no-repeat;}
+#footer .NaviSet .linker05{background:url(../Images/footerIcon05.png) 0 0 no-repeat;}
+#footer .NaviSet .linker06{background:url(../Images/footerIcon06.png) 0 0 no-repeat;}
+#footer .NaviSet .linker07{background:url(../Images/footerIcon07.png) 0 0 no-repeat;}
+#footer .NaviSet a{display:block;width:76px; height:44px;}
+
+
+#footer .Dummy{
+	position:absolute;
+	left:0; top:699px;
+	z-index:10;
+}
+

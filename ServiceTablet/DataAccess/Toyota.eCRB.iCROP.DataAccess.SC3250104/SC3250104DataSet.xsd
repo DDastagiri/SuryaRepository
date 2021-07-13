@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3250104DataSet" targetNamespace="http://tempuri.org/SC3250104DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3250104DataSet.xsd" xmlns="http://tempuri.org/SC3250104DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3250104DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3250104DataSet" msprop:Generator_UserDSName="SC3250104DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DefaultPartsFile" msprop:Generator_TableClassName="DefaultPartsFileDataTable" msprop:Generator_TableVarName="tableDefaultPartsFile" msprop:Generator_RowChangedName="DefaultPartsFileRowChanged" msprop:Generator_TablePropName="DefaultPartsFile" msprop:Generator_RowDeletingName="DefaultPartsFileRowDeleting" msprop:Generator_RowChangingName="DefaultPartsFileRowChanging" msprop:Generator_RowEvHandlerName="DefaultPartsFileRowChangeEventHandler" msprop:Generator_RowDeletedName="DefaultPartsFileRowDeleted" msprop:Generator_RowClassName="DefaultPartsFileRow" msprop:Generator_UserTableName="DefaultPartsFile" msprop:Generator_RowEvArgName="DefaultPartsFileRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INSPEC_ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnINSPEC_ITEM_CD" msprop:Generator_ColumnPropNameInRow="INSPEC_ITEM_CD" msprop:Generator_ColumnPropNameInTable="INSPEC_ITEM_CDColumn" msprop:Generator_UserColumnName="INSPEC_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_PARTS_FILE_NAME" msprop:Generator_ColumnVarNameInTable="columnNEW_PARTS_FILE_NAME" msprop:Generator_ColumnPropNameInRow="NEW_PARTS_FILE_NAME" msprop:Generator_ColumnPropNameInTable="NEW_PARTS_FILE_NAMEColumn" msprop:Generator_UserColumnName="NEW_PARTS_FILE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_PARTS_FILE_NAME" msprop:Generator_ColumnVarNameInTable="columnOLD_PARTS_FILE_NAME" msprop:Generator_ColumnPropNameInRow="OLD_PARTS_FILE_NAME" msprop:Generator_ColumnPropNameInTable="OLD_PARTS_FILE_NAMEColumn" msprop:Generator_UserColumnName="OLD_PARTS_FILE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SEL_PICTURE_URL" msprop:Generator_ColumnVarNameInTable="columnSEL_PICTURE_URL" msprop:Generator_ColumnPropNameInRow="SEL_PICTURE_URL" msprop:Generator_ColumnPropNameInTable="SEL_PICTURE_URLColumn" msprop:Generator_UserColumnName="SEL_PICTURE_URL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DmsCodeMap" msprop:Generator_TableClassName="DmsCodeMapDataTable" msprop:Generator_TableVarName="tableDmsCodeMap" msprop:Generator_RowChangedName="DmsCodeMapRowChanged" msprop:Generator_TablePropName="DmsCodeMap" msprop:Generator_RowDeletingName="DmsCodeMapRowDeleting" msprop:Generator_RowChangingName="DmsCodeMapRowChanging" msprop:Generator_RowEvHandlerName="DmsCodeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="DmsCodeMapRowDeleted" msprop:Generator_RowClassName="DmsCodeMapRow" msprop:Generator_UserTableName="DmsCodeMap" msprop:Generator_RowEvArgName="DmsCodeMapRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE1" msdata:Caption="DMS_CD_1" msprop:Generator_ColumnVarNameInTable="columnCODE1" msprop:Generator_ColumnPropNameInRow="CODE1" msprop:Generator_ColumnPropNameInTable="CODE1Column" msprop:Generator_UserColumnName="CODE1" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE2" msdata:Caption="DMS_CD_2" msprop:Generator_ColumnVarNameInTable="columnCODE2" msprop:Generator_ColumnPropNameInRow="CODE2" msprop:Generator_ColumnPropNameInTable="CODE2Column" msprop:Generator_UserColumnName="CODE2" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE3" msdata:Caption="DMS_CD_3" msprop:Generator_ColumnVarNameInTable="columnCODE3" msprop:Generator_ColumnPropNameInRow="CODE3" msprop:Generator_ColumnPropNameInTable="CODE3Column" msprop:Generator_UserColumnName="CODE3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SystemSetting" msprop:Generator_TableClassName="SystemSettingDataTable" msprop:Generator_TableVarName="tableSystemSetting" msprop:Generator_TablePropName="SystemSetting" msprop:Generator_RowDeletingName="SystemSettingRowDeleting" msprop:Generator_RowChangingName="SystemSettingRowChanging" msprop:Generator_RowEvHandlerName="SystemSettingRowChangeEventHandler" msprop:Generator_RowDeletedName="SystemSettingRowDeleted" msprop:Generator_UserTableName="SystemSetting" msprop:Generator_RowChangedName="SystemSettingRowChanged" msprop:Generator_RowEvArgName="SystemSettingRowChangeEvent" msprop:Generator_RowClassName="SystemSettingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SETTING_VAL" msdata:Caption="SETTING_VALUE" msprop:Generator_ColumnVarNameInTable="columnSETTING_VAL" msprop:Generator_ColumnPropNameInRow="SETTING_VAL" msprop:Generator_ColumnPropNameInTable="SETTING_VALColumn" msprop:Generator_UserColumnName="SETTING_VAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RoThumbnailCount" msprop:Generator_TableClassName="RoThumbnailCountDataTable" msprop:Generator_TableVarName="tableRoThumbnailCount" msprop:Generator_RowChangedName="RoThumbnailCountRowChanged" msprop:Generator_TablePropName="RoThumbnailCount" msprop:Generator_RowDeletingName="RoThumbnailCountRowDeleting" msprop:Generator_RowChangingName="RoThumbnailCountRowChanging" msprop:Generator_RowEvHandlerName="RoThumbnailCountRowChangeEventHandler" msprop:Generator_RowDeletedName="RoThumbnailCountRowDeleted" msprop:Generator_RowClassName="RoThumbnailCountRow" msprop:Generator_UserTableName="RoThumbnailCount" msprop:Generator_RowEvArgName="RoThumbnailCountRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResultCode" msprop:Generator_ColumnVarNameInTable="columnResultCode" msprop:Generator_ColumnPropNameInRow="ResultCode" msprop:Generator_ColumnPropNameInTable="ResultCodeColumn" msprop:Generator_UserColumnName="ResultCode" type="xs:string" minOccurs="0" />
+              <xs:element name="RoThumbnailCount" msprop:Generator_ColumnVarNameInTable="columnRoThumbnailCount" msprop:Generator_ColumnPropNameInRow="RoThumbnailCount" msprop:Generator_ColumnPropNameInTable="RoThumbnailCountColumn" msprop:Generator_UserColumnName="RoThumbnailCount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SelectedPartsFile" msprop:Generator_TableClassName="SelectedPartsFileDataTable" msprop:Generator_TableVarName="tableSelectedPartsFile" msprop:Generator_RowChangedName="SelectedPartsFileRowChanged" msprop:Generator_TablePropName="SelectedPartsFile" msprop:Generator_RowDeletingName="SelectedPartsFileRowDeleting" msprop:Generator_RowChangingName="SelectedPartsFileRowChanging" msprop:Generator_RowEvHandlerName="SelectedPartsFileRowChangeEventHandler" msprop:Generator_RowDeletedName="SelectedPartsFileRowDeleted" msprop:Generator_RowClassName="SelectedPartsFileRow" msprop:Generator_UserTableName="SelectedPartsFile" msprop:Generator_RowEvArgName="SelectedPartsFileRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEL_PICTURE_URL" msprop:Generator_ColumnVarNameInTable="columnSEL_PICTURE_URL" msprop:Generator_ColumnPropNameInRow="SEL_PICTURE_URL" msprop:Generator_ColumnPropNameInTable="SEL_PICTURE_URLColumn" msprop:Generator_UserColumnName="SEL_PICTURE_URL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SAchipIDExistCheck" msprop:Generator_TableClassName="SAchipIDExistCheckDataTable" msprop:Generator_TableVarName="tableSAchipIDExistCheck" msprop:Generator_RowChangedName="SAchipIDExistCheckRowChanged" msprop:Generator_TablePropName="SAchipIDExistCheck" msprop:Generator_RowDeletingName="SAchipIDExistCheckRowDeleting" msprop:Generator_RowChangingName="SAchipIDExistCheckRowChanging" msprop:Generator_RowEvHandlerName="SAchipIDExistCheckRowChangeEventHandler" msprop:Generator_RowDeletedName="SAchipIDExistCheckRowDeleted" msprop:Generator_RowClassName="SAchipIDExistCheckRow" msprop:Generator_UserTableName="SAchipIDExistCheck" msprop:Generator_RowEvArgName="SAchipIDExistCheckRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VISIT_ID" msprop:Generator_ColumnVarNameInTable="columnVISIT_ID" msprop:Generator_ColumnPropNameInRow="VISIT_ID" msprop:Generator_ColumnPropNameInTable="VISIT_IDColumn" msprop:Generator_UserColumnName="VISIT_ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

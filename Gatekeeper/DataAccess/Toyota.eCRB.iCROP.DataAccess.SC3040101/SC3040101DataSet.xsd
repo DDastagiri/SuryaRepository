@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3040101DataSet" targetNamespace="http://tempuri.org/SC3040101DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3040101DataSet.xsd" xmlns="http://tempuri.org/SC3040101DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.iCROP.DataAccess.SC3040101.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3040101DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3040101DataSet" msprop:Generator_UserDSName="SC3040101DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3040101MessageInfo" msprop:Generator_TableClassName="SC3040101MessageInfoDataTable" msprop:Generator_TableVarName="tableSC3040101MessageInfo" msprop:Generator_TablePropName="SC3040101MessageInfo" msprop:Generator_RowDeletingName="SC3040101MessageInfoRowDeleting" msprop:Generator_UserTableName="SC3040101MessageInfo" msprop:Generator_RowChangingName="SC3040101MessageInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3040101MessageInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3040101MessageInfoRowDeleted" msprop:Generator_RowEvArgName="SC3040101MessageInfoRowChangeEvent" msprop:Generator_RowChangedName="SC3040101MessageInfoRowChanged" msprop:Generator_RowClassName="SC3040101MessageInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_UserColumnName="TITLE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MESSAGE" msprop:Generator_ColumnVarNameInTable="columnMESSAGE" msprop:Generator_ColumnPropNameInRow="MESSAGE" msprop:Generator_ColumnPropNameInTable="MESSAGEColumn" msprop:Generator_UserColumnName="MESSAGE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIMELIMIT" msprop:Generator_ColumnVarNameInTable="columnTIMELIMIT" msprop:Generator_ColumnPropNameInRow="TIMELIMIT" msprop:Generator_ColumnPropNameInTable="TIMELIMITColumn" msprop:Generator_UserColumnName="TIMELIMIT" type="xs:dateTime" />
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEM" msprop:Generator_ColumnVarNameInTable="columnSYSTEM" msprop:Generator_ColumnPropNameInRow="SYSTEM" msprop:Generator_ColumnPropNameInTable="SYSTEMColumn" msprop:Generator_UserColumnName="SYSTEM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

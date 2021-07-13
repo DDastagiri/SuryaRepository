@@ -1,0 +1,1049 @@
+@charset "utf-8";
+/*/-------------------------------------------------------------------------
+//SC3180204.css
+//--------------------------------------------------------------------------
+//機能： 完成検査入力画面
+//作成：
+//更新：
+---------------------------------------------------------------------------*/
+
+div#main{
+	height:655px;
+	width:1024px;
+	overflow:hidden;
+	z-index:1;
+}
+
+#main #contents{
+	display:block;
+	padding:20px 20px;
+}
+
+
+/*-------------------------------------------------------------------------
+  メインブロック
+---------------------------------------------------------------------------*/
+
+#mainblockContent {
+ }
+
+#mainblockContent:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+ }
+
+#mainblockContent h2 {
+	width:186px;
+	height:25px;
+	border-bottom:#dedfe1 1px solid;
+	border-top-left-radius:7px;
+	border-bottom-right-radius:25px;
+	font-size:14px;
+    text-indent:14px;
+    line-height:24px;
+    color:#FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E929A), color-stop(0.49, #797D84), color-stop(0.5, #6A6E76), to(#5D616A));
+    font-weight:normal;
+ }
+
+#mainblockContent .mainblockContentArea {
+    width:984px;
+    height:610px;
+    border:#999 1px solid;
+    border-radius:8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.6, #FEFEFE), color-stop(0.7, #F4F4F4), to(#DBDBDB));
+    box-shadow:3px 3px 4px #666666;
+ }
+ 
+#mainblockContent .mainblockContentAreaWrap {
+    margin:15px;
+ }
+
+
+
+/*-------------------------------------------------------------------------
+  ページ上部 登録情報
+---------------------------------------------------------------------------*/
+
+/*ページ上部 登録情報表示*/
+#mainblockRegistdata {
+    color:#666;
+    font-weight:300;
+    font-size:13px;
+    line-height: 13px;
+ }
+
+.mainblockRegistdataWrapper {
+    margin:0 auto 12px;
+    width:954px;
+    height: 57px;
+    border-bottom: #CBCBCB 1px solid;
+    font-size:12px;
+    position:relative;
+ }
+
+.mainblockRegistdata1 {
+    width:202px;
+    float:left;
+    color:#666666;
+ }
+
+.mainblockRegistdata1 dt {
+    width:53px;
+    height:18px;
+    float:left;
+    clear: left;
+ }
+
+.mainblockRegistdata1 dt.mainblockRegistdata1-1 {
+    line-height:16px;
+ }
+
+.mainblockRegistdata1 dd {
+    width:143px;
+    height:18px;
+    float:left;
+ }
+
+.mainblockRegistdata1 dd:nth-child(2) {
+    font-weight:bold;
+    font-size: 14px;
+ }
+
+.mainblockRegistdata22 {
+    margin-right:15px;
+    width:167px;
+    float:left;
+    margin-top:-2px;
+    color:#666666;
+ }
+
+.mainblockRegistdata22 dt {
+    width:100px;
+    height:18px;
+    float:left;
+ }
+
+.mainblockRegistdata22 dd {
+    width:60px;
+    height:18px;
+    float:left;
+ }
+
+.mainblockRegistdata22-2 {
+    background:url(../Images/SC3180204/ico126.png) no-repeat 0px 0px;
+    font-weight:bold;
+    padding:2px 0 0 0;
+ }
+
+.mainblockRegistdata22-3 {
+    background:url(../Images/SC3180204/ico63.png) no-repeat 0px 0px;
+ }
+
+#ContactPersonNameLabel, #ContactPersonTelLabel {
+    text-indent: 17px;
+ }
+
+.mainblockRegistdata3 {
+    margin-right:24px;
+    width:200px;
+    float:left;
+    color:#666666;
+ }
+
+.mainblockRegistdata3 dt {
+    width:43px;
+    height:18px;
+    float:left;
+ }
+
+.mainblockRegistdata3 dt:nth-of-type(3) {
+    width:82px;
+ }
+
+.mainblockRegistdata3 dt.mainblockRegistdata3-1 {
+    line-height:16px;
+ }
+
+.mainblockRegistdata3 dd {
+    width:140px;
+    height:18px;
+    float:left;
+ }
+
+.mainblockRegistdata3 dd:nth-child(2) {
+    font-weight:400;
+    font-size:14px;
+ }
+
+.mainblockRegistdata3 dd:nth-child(2) span {
+    float:left;
+    margin-left:3px;
+ }
+
+.mainblockRegistdata3 dd:nth-of-type(1) {
+    font-weight:bold;
+    width:100px;
+    padding-right: 40px;
+}
+
+.mainblockRegistdata3 dd:nth-of-type(3) {
+    width:113px;
+ }
+
+.mainblockRegistdata4 {
+    width:149px;
+    float:left;
+    color:#666666;
+ }
+
+.mainblockRegistdata4 p.mainblockRegistdata4Name {
+    font-weight:bold;
+    font-size: 14px;
+    height: 19px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+ }
+
+.mainblockRegistdata4 p.mainblockRegistdata4Time {
+    /*width:;*/
+    height:18px;
+ }
+
+.mainblockRegistdata4 p.mainblockRegistdata4Date {
+    /*width:;*/
+    clear:both;
+ }
+
+.mainblockRegistdata5 {
+    width:221px;
+    position:absolute;
+    right:0;
+    top:0;
+    color:#666;
+}
+
+.mainblockRegistdata5 p:nth-child(1) {
+    height:35px;
+    line-height:28px;
+    text-align:right;
+ }
+
+.mainblockRegistdata5 p:nth-child(1) input {
+    margin-left:10px;
+    padding-right:5px;
+    width:99px;
+    height:23px;
+    border:#BBBBBB 1px solid;
+    border-radius:5px;
+    font-size:14px;
+    color:#000000;
+    line-height:24px;
+    box-shadow:inset 0px 1px 0px #F4F4F2;
+    float:right;
+    text-align:right;
+ }
+
+.mainblockRegistdata5 p:nth-child(2) {
+    text-align:right;
+    margin:1px 0 0 0;
+ }
+
+.mainblockRegistdata5 p:nth-child(2) span.Times {
+    display:block;
+    margin-left:10px;
+    width:106px;
+    float:right;
+    color:#656565;
+    font-size:14px;
+ }
+
+.mainblockRegistdata5 p:nth-child(2) span.LineByLine {
+    display:block;
+    margin-top:6px;
+    margin-left:10px;
+    width:106px;
+    height: 1px;
+    background:#999;
+    float:right;
+    font-size: 0.1em;
+    line-height: 0.1em;
+ }
+
+.IcoReserve {
+    width:15px;
+    height:15px;
+    border-radius:3px;
+    font-size:11px;
+    text-align:center;
+    text-shadow:0px 1px 0px #666;
+    line-height:16px;
+    color:#FFF;
+    display:inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8BC56D), to(#8BC56D));
+ }
+
+.IcoI {
+    width:15px;
+    height:15px;
+    border-radius:3px;
+    font-size:11px;
+    text-align:center;
+    text-shadow:0px 1px 0px #666;
+    line-height:16px;
+    color:#FFF;
+    display:inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9135DF), to(#9135DF));
+ }
+
+
+/*-------------------------------------------------------------------------
+  ページ左側　車両展開図、アドバイス
+---------------------------------------------------------------------------*/
+
+.STC04Block {
+  }
+  
+.STC04BlockLeft {
+    margin-right:14px;
+    margin-bottom: 15px;
+    width:245px;
+    float:left;
+ }
+
+.STC04BlockLeftDeployment {
+    margin-bottom: 15px;
+    border:#B9B9B9 1px solid;
+    border-radius: 8px;
+    background: #FFF;
+ }
+ 
+/*車両展開図*/
+.STC04BlockLeftDeploymentWrap {
+    padding: 10px 15px;
+ }
+
+.STC04BlockLeftDeployment ul {
+    list-style:none;
+ }
+
+.STC04BlockLeftDeployment ul li {
+    position:absolute;
+    z-index:2;
+ }
+
+.STC04BlockLeftDeployment ul li a {
+    display: block;
+    width:18px;
+    height: 18px;
+    border-radius:18px;
+    border:#FFF 4px solid;
+    box-shadow:5px 5px 8px #666;
+    margin-right:-18px;
+    margin-bottom: -18px;
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-1 {
+    top:205px;
+    left:146px;
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-2 {
+    top:274px;
+    left:146px;
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-3 {
+    top:313px;
+    left:81px;
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-4 {
+    top:313px;
+    left:211px;
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-5 {
+    top:348px;
+    left:146px;
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-6 {
+    top:406px;
+    left:146px;
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-1 a {
+    background:-webkit-gradient(linear, left top, left bottom, from(#FCBF05), to(#A17A03));
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-2 a {
+    background:-webkit-gradient(linear, left top, left bottom, from(#66DA65), to(#228221));
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-3 a {
+    background:-webkit-gradient(linear, left top, left bottom, from(#B3B1B1), to(#797878));
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-4 a {
+    background:-webkit-gradient(linear, left top, left bottom, from(#66DA65), to(#228221));
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-5 a {
+    background:-webkit-gradient(linear, left top, left bottom, from(#B3B1B1), to(#797878));
+ }
+
+.STC04BlockLeftDeployment ul li.STC04BlockLeftDeployment1-6 a {
+    background:-webkit-gradient(linear, left top, left bottom, from(#B3B1B1), to(#797878));
+ }
+
+.SCT03BlockLeftCheckBase {
+    width:214px;
+    height:252px;
+    position: relative;
+    /*top:;*/
+    /*left:;*/
+    z-index:1;
+ }
+
+.SCT03BlockLeftCheckInfo {
+    margin-bottom:-36px;
+    padding:4px 5px 0 38px;
+    width:42px;
+    height:32px;
+    position:relative;
+    top:-255px;
+    left:-5px;
+    z-index:2;
+    border:#B3B3B3 1px solid;
+    border-radius:4px;
+    background:#FFF;
+    text-align:left;
+    color:#3F3F3F;
+    font-size:12px;
+    line-height:14px;
+ }
+
+.SCT03BlockLeftCheck1-7 {
+    top:4px;
+    left:3px;
+    position:relative;
+    z-index:444;
+    position:absolute;
+    z-index:222;
+ }
+
+.SCT03BlockLeftCheck1-7 a {
+    display: block;
+    width:18px;
+    height: 18px;
+    border-radius:18px;
+    border:#FFF 4px solid;
+    box-shadow:5px 5px 8px #666;
+    margin-right:-18px;
+    margin-bottom: -18px;
+    background:-webkit-gradient(linear, left top, left bottom, from(#66DA65), to(#228221));
+ }
+
+/*アドバイス*/
+.STC04BlockLeftAdvice {
+    border:#B9B9B9 1px solid;
+    border-radius: 8px;
+    background: #FFF;
+ }
+
+.STC04BlockLeftAdviceWrap {
+    padding: 1px 1px 1px 1px;
+ }
+
+.STC04BlockLeftAdvice ul {
+    list-style:none;
+    float: right;
+    height:26px;
+    margin-bottom:9px;
+ }
+
+.STC04BlockLeftAdviceMemo {
+ clear: both;
+ height: 163px;
+ }
+
+.ChangeInput{
+	font-size:12px;
+    outline:0;
+    border:0;
+    margin:0;
+    padding:0;
+    resize:none;
+    overflow:auto;
+    width:100%;
+    height:100%;
+}
+
+/* テキストエリアのスクロールバー */
+.ChangeInput:hover::-webkit-scrollbar{
+    width: 5px;
+}
+
+.ChangeInput:hover::-webkit-scrollbar-thumb{
+    border: solid 1px rgb(119, 119, 119);
+    border-radius: 5px;
+    background-color: rgba(100, 100, 100, 0.796875);
+}
+.ChangeInput{
+    overflow: auto;
+  overflow:scroll: touch;
+}
+
+.ChangeText{
+	word-break: break-all;
+    border:0;
+    margin:0;
+    padding:0;
+    font-size:12px;
+    overflow:auto;
+    width:100%;
+    /*height:110px;*/
+}
+/*-------------------------------------------------------------------------
+  ページ右側　作業項目エリア
+---------------------------------------------------------------------------*/
+
+.STC04BlockRight {
+    width:695px;
+    float:left;
+ }
+
+.STC04BlockRightItem {
+    margin-bottom: 10px;
+    height:507px;
+    border:#B9B9B9 1px solid;
+    border-radius: 8px;
+    background: #FFF;
+ }
+
+.STC04BlockRightItemWrap {
+    padding: 15px;
+ }
+
+.STC04BlockRightItem h3 {
+    padding-bottom: 5px;
+	margin-bottom:15px;
+    border-bottom:#CCCCCC 1px solid;
+    color:#7F7F7F;
+    font-size:18px;
+    line-height: 19px;
+    font-weight: 400;
+ }
+
+.STC04BlockRightHead {
+    height: 25px;
+    font-size: 16px;
+    color:#7F7F7F;
+ }
+
+.STC04BlockRightHead p.STC04BlockRightHead1 {
+    width: 210px;
+    border-right: #FFF 1px solid;
+    float: left;
+ }
+
+.STC04BlockRightHead p.STC04BlockRightHead2 {
+    width: 345px;
+    float: left;
+ }
+
+.STC04BlockRightHead p.STC04BlockRightHead3 {
+    width: 100px;
+    float: left;
+ }
+
+.STC04BlockRightMain {
+    border:rgba(0, 0, 0, 0.0) 1px solid;
+    width:661px;
+	height:383px;
+	overflow-y:scroll;
+}
+
+.STC04BlockRightMain dl:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+ }
+
+.STC04BlockRightMain dl {
+    padding:0 5px;
+    height:42px;
+    clear:both;
+	overflow:hidden;
+ }
+ 
+.STC04BlockRightMain dt {
+    width:207px;
+    height:42px;
+    border-right: #FFF 1px solid;
+    float:left;
+    font-size:16px;
+    color: #7F7F7F;
+    line-height:42px;
+ }
+
+.STC04BlockRightMain dd {
+    padding: 8px 0px 8px 20px;
+    width:412px;
+    height:24px;
+    border-left: #F2F2F2 1px solid;
+    float:left;
+ }
+
+.STC04BlockRightMain ul {
+    width: 185px;
+    padding:0 5px;
+    height:42px;
+    float:left;
+    clear:both;
+ }
+
+.STC04BlockRightMain ul li {
+    width:58px;
+    float:left;
+ }
+
+.STC04BlockRightMain label {
+    width:72px;
+    float: left;
+    color:#7F7F7F;
+    font-size:11px;
+    text-shadow:0px 1px 0px #FFF;
+ }
+
+.STC04BlockRightMain label input {
+    margin-right:3px;
+    width: 16px;
+    height: 16px;
+    border: #9B9B9B 1px solid;
+    border-radius: 4px;
+    background: #FFF;
+    position:relative;
+    top:2px;
+ }
+
+.STC04BlockRightMain dd.InspectionResult{
+	display:block;
+	border:none;
+	width:350px;
+	height:42px;
+	padding: 0;
+	float:left;
+}
+
+.STC04BlockRightMain dd.CompletedJobBox{
+	border:none;
+	width:100px;
+	height:42px;
+	padding: 0;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox{
+	padding:5px 2px 5px 0;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox{
+	display:block;
+	float:none;
+	position:relative;
+	width:auto;
+	height:34px;
+	padding:0;
+    margin:0;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li{
+	width:auto;
+	height:34px;
+	padding:0;
+    margin:0;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon1,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon2,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon3,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon4,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon5,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon6,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon7{
+	position:absolute;
+	top:0;
+	width:51px;
+	height:16px;
+	padding:20px 0 0 0;
+    margin:0;
+	font-size:10px;
+	line-height:15px;
+	color:#7f7f7f;
+	text-align:center;
+	text-shadow:#FFF 0 1px 0;
+	font-weight:bold;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon1{
+    left:0px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon2{
+    left:48px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon3{
+    left:100px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon4{
+    left:152px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon5{
+    width:75px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon5pos{
+    left:204px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Icon6pos{
+    left:280px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Good_green{
+	width:43px;
+	background:url(../Images/SC3180204/good_green.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Good_blue{
+	width:43px;
+	background:url(../Images/SC3180204/good_blue.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Inspect_green{
+	background:url(../Images/SC3180204/inspect_green.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Inspect_blue{
+	background:url(../Images/SC3180204/inspect_blue.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Replace_green{
+	background:url(../Images/SC3180204/replace_green.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Replace_blue{
+	background:url(../Images/SC3180204/replace_blue.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Fix_green{
+	background:url(../Images/SC3180204/fix_green.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Fix_blue{
+	background:url(../Images/SC3180204/fix_blue.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Cleaning_blue{
+	background:url(../Images/SC3180204/clean_blue.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Cleaning_green{
+	background:url(../Images/SC3180204/clean_green.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Swap_blue{
+	background:url(../Images/SC3180204/swap_blue.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Swap_green{
+	background:url(../Images/SC3180204/swap_green.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .No_Check_blue{
+	background:url(../Images/SC3180204/no_check_blue.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .No_Check_green{
+	background:url(../Images/SC3180204/no_check_green.png) center 0 no-repeat;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .CompletedJob{
+	position:absolute;
+	right:1px;
+    top:2px;
+	width:98px;
+	height:26px;
+	background:url(../Images/SC3180204/icon_arrow.png) 87px center no-repeat #FFF;
+	box-shadow:inset #f4f4f2 0 1px 0;
+	border:#bbbbbb 1px solid;
+	border-radius:5px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .CompletedJob p{
+	display:block;
+	padding:0 0 0 10px;
+	font-size:14px;
+	line-height:26px;
+	color:#333333;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_Before,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_After,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_After1,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_After2,
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_mm{
+	position:absolute;
+	top:2px;
+	height:26px;
+	width:59px;
+	background:#FFF;
+	box-shadow:inset #f4f4f2 0 1px 0;
+	border-radius:5px;
+    color:#666;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_Before{
+    right:61px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_After{
+    right:1px;
+}
+
+.STC04BlockRightMain dd .InspectionResultBox ul.InspectionResultIconBox li .Area_After1{
+    right:4px;
+    background:#eeeeee;
+}
+
+.STC04BlockRightMain dl.STC04BRM2 {
+	display:block;
+	padding:0 5px;
+	height:43px;
+	clear:both;
+}
+
+.STC04BlockRightMain dl.STC04BRM2 dt {
+	display:block;
+	width:199px;
+	height:40px;
+    border:none;
+	float:left;
+	font-size:16px;
+	color: #7F7F7F;
+	line-height:42px;
+	font-weight:bold;
+}
+
+.STC04BlockRightMain dl.STC04BRM2 dt.FontBlue{
+	color:#324f85;
+}
+
+.STC04BlockRightMain dl.STC04BRM2 dt strong {
+	display:block;
+	padding:0 0 0 17px;
+	font-weight:bold;
+}
+
+.STC04BlockRightMain dl.Mainte {
+	display:block;
+	padding:0 5px;
+	height:48px;
+	clear:both;
+}
+
+.STC04BlockRightMain dl.Mainte dt {
+	display:block;
+	width:199px;
+	height:40px;
+    border:none;
+	float:left;
+	font-size:16px;
+	color: #7F7F7F;
+	line-height:42px;
+	font-weight:bold;
+}
+
+.STC04BlockRightMain dl.BackColor01 {
+	background:#FFF;
+	border-bottom:#f2f2f2 1px solid;
+	box-shadow:#FFF 0 1px 0;
+	margin:0 0 1px 0;
+}
+
+.InspectionResult{
+    position:relative;
+}
+
+.InspectionResult input.RadioA[type="radio"]{
+    position:relative;
+    width:19px;
+    height:19px;
+    float:left;
+    border:1px solid #19283C;
+    border-radius:20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#323232), to(#878787));
+}
+
+.InspectionResult input.RadioA[type="radio"]:checked{
+    background: -webkit-gradient(linear, left top, left bottom, from(#323232), to(#878787));
+}
+
+.InspectionResult input.RadioA[type="radio"]:checked:after{
+    content:"";
+    display:block;
+    width:7px;
+    height:7px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#d4d4d4));
+    border-radius:10px;
+    box-shadow:0 1px 1px rgba(0,0,0,1);
+}
+
+.STC04BlockRightMain .STC04BlockRightMain1-1{
+    background:#f2f2f2;
+}
+
+.InspectionResult label{
+	display:block;
+	width:78px;
+	height:21px;
+	margin-top:10px;
+	line-height:21px;
+	font-size:14px;
+	color:#7f7f7f;
+	padding:0 0 0 5px;
+}
+
+.InspectionResult label span{
+    display:block;
+    float:left;
+    height:23px;
+    line-height:23px;
+ }
+
+
+/*-------------------------------------------------------------------------
+  フッターボタン
+---------------------------------------------------------------------------*/
+
+.footerCustomButton_RegisterWork
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #7C98ED), color-stop(0.49, #4169E5), color-stop(0.5, #1E4EE1), to(#1D4AD6));
+    /*float:right;*/
+    text-align:center;
+    text-shadow:-1px -1px 0px #333;
+    font-size:14px;
+    font-weight:600;
+    /*line-height:50px;*/
+    margin-left:10px;
+    vertical-align:middle;
+}
+
+.footerCustomButton_SendWork
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #7C98ED), color-stop(0.49, #4169E5), color-stop(0.5, #1E4EE1), to(#1D4AD6));
+    /*float:right;*/
+    text-align:center;
+    text-shadow:-1px -1px 0px #333;
+    font-size:14px;
+    font-weight:600;
+    /*line-height:50px;*/
+    margin-left:10px;
+    vertical-align:middle;
+}
+
+.footerCustomButton_SaveWork
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #7C98ED), color-stop(0.49, #4169E5), color-stop(0.5, #1E4EE1), to(#1D4AD6));
+    /*float:right;*/
+    text-align:center;
+    text-shadow:-1px -1px 0px #333;
+    font-size:14px;
+    font-weight:600;
+    /*line-height:23px;*/
+    margin-left:10px;
+    vertical-align:middle;
+}
+
+.footerCustomButton_ClearWork
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #7C98ED), color-stop(0.49, #4169E5), color-stop(0.5, #1E4EE1), to(#1D4AD6));
+    /*float:right;*/
+    text-align:center;
+    text-shadow:-1px -1px 0px #333;
+    font-size:14px;
+    font-weight:600;
+    /*line-height:23px;*/
+    margin-left:10px;
+    vertical-align:middle;
+}
+
+.footerCustomButton_AdditionalJobWork
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #7C98ED), color-stop(0.49, #4169E5), color-stop(0.5, #1E4EE1), to(#1D4AD6));
+    /*float:right;*/
+    text-align:center;
+    vertical-align:middle;
+    text-shadow:-1px -1px 0px #333;
+    font-size:14px;
+    font-weight:600;
+    /*line-height:23px;*/
+    margin-left:10px;
+    vertical-align:middle;
+}
+
+.fotterButtonTable
+{
+    height:44px;
+    border-collapse:collapse;
+    border:0px;
+    border-collapse:separate;
+    border-spacing:2px 0px;
+}
+
+.fotterButtonTable td
+{
+    vertical-align:top;
+}
+
+
+
+/* 隠しボタン */
+.HiddenButton 
+{
+    display:none;
+}

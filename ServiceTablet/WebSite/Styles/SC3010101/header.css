@@ -1,0 +1,145 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Header
+------------------------------------------------------------------------------*/
+
+div#header{
+	height:44px;
+	overflow:hidden;
+	z-index:900;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f4f5f7), to(#a8acb9));
+	border-bottom:#797f8f 1px solid;
+}
+
+#header h1{
+	font-size:20px;
+	line-height:20px;
+	text-align:center;
+	font-weight:bold;
+	color:#686c74;
+	padding:11px 0 0;
+}
+
+
+
+/* ←　-----*/
+#header .leftButtonsGroup{float:left; display:compact;}
+
+#header .leftButtonsGroup .prevButton,
+#header .leftButtonsGroup .nextButton,
+#header .leftButtonsGroup .communityButton,
+#header .leftButtonsGroup .forumButton,
+#header .leftButtonsGroup .checkButton{width:38px;	height:42px; top:1px; position:absolute;}
+#header .leftButtonsGroup a{width:38px;	height:42px; display:block;}
+
+#header .leftButtonsGroup .prevButton{
+	left:6px;	
+	opacity: 1.0;
+	background:url(../Images/headerImage01.png) 0 0 no-repeat;
+}
+
+#header .leftButtonsGroup .nextButton{
+	left:51px;
+	background:url(../Images/headerImage02.png) 0 0 no-repeat;
+	opacity: 0.3;
+}
+
+#header .leftButtonsGroup .communityButton{
+	left:101px;
+	background:url(../Images/headerImage03.png) 0 0 no-repeat;
+}
+
+
+#header .leftButtonsGroup .forumButton{
+	left:158px;
+	background:url(../Images/headerImage04.png) 0 0 no-repeat;
+}
+
+#header .leftButtonsGroup .checkButton{
+	left:215px;
+	background:url(../Images/headerImage05.png) 0 0 no-repeat;
+}
+
+#header .leftButtonsGroup .communityButton .addStatus,
+#header .leftButtonsGroup .forumButton .addStatus{
+	font-size:10px;
+	position:absolute;
+	top:20px;	left:25px;
+	color:#FFF;
+	border-radius: 16px;
+	padding:1px;
+	background:#FFFFFF;
+}
+
+#header .leftButtonsGroup .communityButton .addStatus span,
+#header .leftButtonsGroup .forumButton .addStatus span{
+	display:block;
+	height:14px;
+	padding:2px 6px 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9d2d4), to(#ba070b));
+	border-radius: 15px;
+}
+
+
+
+/* →　-----*/
+#header .rightButtonsGroup{float:right; display:compact;}
+
+
+#header .rightButtonsGroup .serchArea,
+#header .rightButtonsGroup .imageIcon{ display:block; top:1px; position:absolute;}
+
+#header .rightButtonsGroup .serchArea{
+	width:165px;
+	right:130px;	top:5px;
+	background-color:#FFFFFF;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	box-shadow:inset 3px 3px 3px #666;
+	box-shadow:inset 3px 3px 3px #666;
+	border-radius: 18px;
+	padding:4px;
+}
+
+#header .rightButtonsGroup .imageIcon{
+	width:95px;height:42px;
+	right:17px;
+	background:url(../Images/headerImage10.png) 0 0 no-repeat;
+}
+
+#searchform1 {
+	width: 170px;
+	display: block;
+	height: 24px;
+	position: relative;
+}
+#keywords1	{
+	width: 126px;
+	position: absolute;
+	top: 5px;
+	left: 32px;
+	border: 1px solid #FFF;
+}
+#searchBtn1	{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+
+.absolute{
+	position:absolute;
+	left:0px; top:0px;
+	z-index:5000000;
+	width:1024px;
+}
+
+#header .Dummy{
+	position:absolute;
+	left:0; top:0;
+}

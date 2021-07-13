@@ -1,0 +1,2741 @@
+﻿/*
+'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+'SC3080203.css
+'─────────────────────────────────────
+'機能： 顧客詳細(活動登録)
+'補足： 
+'作成：            TCS 河原 【SALES_1A】
+'更新： 2012/03/07 TCS 河原 【SALES_2】
+'       2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70)
+'       2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217)
+'       2012/05/09 TCS 河原 【SALES_1A】断念の理由入力ｴﾘｱが、編集時、枠をはみ出して表示される
+'       2012/11/05 TCS 神本 【A.STEP2】次世代e-CRB  新車タブレット横展開に向けた機能開発
+'       2013/10/01 TCS 安田 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス）
+'─────────────────────────────────────
+*/
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-60-03
+//
+//////////////////////////////////////////////////////////////////////////////*/
+/*
+#scNscNextActTimeWindown6003 {
+	position:absolute;
+	top:-50px;
+	left:-18px;
+	width:330px;
+	height:244px;
+	padding:0 0 0 17px;
+	background-image: url(../Images/SC3080201/scNscNextActTimeWindownArrow2.png);
+	background-repeat: no-repeat;
+	background-position:148px bottom;
+	z-index:300;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox {
+	width:330px;
+	height:207px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.106, rgba(29,40,59,0.9)),
+							color-stop(0.1065, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+}
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeListArea {
+	font-size:0.9em;
+	width:318px;
+	height:154px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeListBox {
+	width:298px;
+	height:134px;
+	margin:11px auto 9px;;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeListItemBox {
+	width:298px
+}
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .scNscNextActTimeListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dl{
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	margin:0;
+}
+
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dt{
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:61px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 10px 13px 21px;
+	margin:0;
+	font-size:14px;
+	line-height:16px;
+	background:none;
+}
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dd{
+	border-left:none;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:190px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 14px 13px 0;
+	margin:0;
+	text-align:right;
+	font-size:14px;
+	line-height:16px;
+	color:#375388;
+}
+
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dd.Long{
+	width:839px;
+}
+
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dt.end,
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dd.end{
+	border-bottom:none;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+	padding-right:30px;
+	width:174px;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dt.Blue,
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox dd.Blue{
+	background: -webkit-gradient(linear, left top, left bottom, from(#0581e3), 
+							color-stop(0.01, #0589f1),
+							to(#015fe6));
+	color:#FFF;
+	text-shadow:#000 0 -1px 0;
+}
+#scNscNextActTimeWindown6003 #scNscNextActTimeWindownBox .nscListBoxSetIn .Selection{
+	position:absolute;
+	display:block;
+	left:26px;
+	top:14px;
+	width:18px;
+	height:15px;
+	background:url(../Images/SC3080201/scNscCustomerEditingListBackCheck.png) 0 0 no-repeat;
+	color:#3b4f85;
+}
+
+#scNscNextFollowTimeWindown6003 {
+	position:absolute;
+	top:-50px;
+	left:-25px;
+	width:330px;
+	height:244px;
+	padding:0 0 0 17px;
+	background-image: url(../Images/SC3080201/scNscNextFollowTimeWindownArrow2.png);
+	background-repeat: no-repeat;
+	background-position:148px bottom;
+	z-index:300;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox {
+	width:330px;
+	height:207px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.106, rgba(29,40,59,0.9)),
+							color-stop(0.1065, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeListArea {
+	font-size:0.9em;
+	width:318px;
+	height:154px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeListBox {
+	width:298px;
+	height:134px;
+	margin:11px auto 9px;;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeListItemBox {
+	width:298px
+}
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .scNscNextFollowTimeListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dl{
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	margin:0;
+}
+
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dt{
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:61px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 10px 13px 21px;
+	margin:0;
+	font-size:14px;
+	line-height:16px;
+	background:none;
+}
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dd{
+	border-left:none;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:190px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 14px 13px 0;
+	margin:0;
+	text-align:right;
+	font-size:14px;
+	line-height:16px;
+	color:#375388;
+}
+
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dd.Long{
+	width:839px;
+}
+
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dt.end,
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dd.end{
+	border-bottom:none;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+	padding-right:30px;
+	width:174px;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dt.Blue,
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox dd.Blue{
+	background: -webkit-gradient(linear, left top, left bottom, from(#0581e3), 
+							color-stop(0.01, #0589f1),
+							to(#015fe6));
+	color:#FFF;
+	text-shadow:#000 0 -1px 0;
+}
+#scNscNextFollowTimeWindown6003 #scNscNextFollowTimeWindownBox .nscListBoxSetIn .Selection{
+	position:absolute;
+	display:block;
+	left:26px;
+	top:14px;
+	width:18px;
+	height:15px;
+	background:url(../Images/SC3080201/scNscCustomerEditingListBackCheck.png) 0 0 no-repeat;
+	color:#3b4f85;
+}
+*/
+
+#scNscActTimeWindown6003 {
+	width:330px;
+	/* height:244px; */
+	padding:0 0 0 0px;
+	background-image: url(../Images/SC3080201/scNscActTimeWindownArrow2.png);
+	background-repeat: no-repeat;
+	background-position:148px bottom;
+	z-index:300;
+}
+
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscActTimeWindown6003 #scNscActTimeWindownBox {
+	width:330px;
+	height:207px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.106, rgba(29,40,59,0.9)),
+							color-stop(0.1065, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+
+/* ポップアップヘッダーボタン(キャンセル系) 
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCancellButton,
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:79px;
+	height:28px;
+	overflow:hidden;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174),color-stop(0.50, #0d1734),color-stop(0.501, #000b29),to(#000b29));
+	z-index:2;
+	text-align:center;
+}
+*/
+/* ポップアップヘッダーボタン(完了系) 
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCompletionButton,
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCompletionButton,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCompletionButton,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:79px;
+	height:28px;
+	overflow:hidden;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8),color-stop(0.50, #376fe0),color-stop(0.501, #2361dd),to(#2361dd));
+	z-index:2;
+	text-align:center;
+}
+*/
+/* ポップアップのボタンのフォント位置 
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCancellButton span,
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCompletionButton span,
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton span,
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCompletionButton span,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton span,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCompletionButton span,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton span,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCompletionButton span {
+	position:relative;
+	top:8px;
+	color:#FFF;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListArea {
+	font-size:0.9em;
+	width:318px;
+	height:154px;
+	margin:0px;
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListBox {
+	width:298px;
+	height:134px;
+	margin:11px auto 9px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListItemBox {
+	width:298px
+}
+
+/*2013/10/01 TCS 安田 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） MODIFY START */
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListArea input[type=datetime-local],
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListArea input[type=datetime],
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListArea input[type=time] 
+{
+    text-align:right;
+}
+/*2013/10/01 TCS 安田 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） MODIFY END */
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dl{
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	margin:0;
+}
+
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dt{
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:61px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 10px 13px 21px;
+	margin:0;
+	font-size:14px;
+	line-height:16px;
+	background:none;
+}
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd{
+	border-left:none;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:190px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 14px 13px 0;
+	margin:0;
+	text-align:right;
+	font-size:14px;
+	line-height:16px;
+	color:#375388;
+}
+
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.Long{
+	width:839px;
+}
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dt.end,
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.end{
+	border-bottom:none;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+	padding-right:30px;
+	width:174px;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dt.Blue,
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.Blue{
+	background: -webkit-gradient(linear, left top, left bottom, from(#0581e3), 
+							color-stop(0.01, #0589f1),
+							to(#015fe6));
+	color:#FFF;
+	text-shadow:#000 0 -1px 0;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .nscListBoxSetIn .Selection{
+	position:absolute;
+	display:block;
+	left:26px;
+	top:14px;
+	width:18px;
+	height:15px;
+	background:url(../Images/SC3080201/scNscCustomerEditingListBackCheck.png) 0 0 no-repeat;
+	color:#3b4f85;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+
+/*
+#scNscTestDriveWindown {
+	background-image: url(images/scNscTestDriveWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0px;
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItemBox {
+	width:298px
+}
+
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItem5 table {
+	width:298px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItem5 th{
+	width:90px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItem5 td{
+	width:206px;
+}
+
+
+#scNscTestDriveWindown #scNscTestDriveWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+#scNscCatalogWindown {
+	top:-2px;
+	left:-20px;
+	background-image: url(images/scNscCatalogWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0px;
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItemBox {
+	width:298px
+}
+
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItem5 table {
+	width:298px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItem5 th{
+	width:90px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItem5 td{
+	width:206px;
+}
+
+
+#scNscCatalogWindown #scNscCatalogWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscCatalogWindown #scNscCatalogWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscValuationWindown {
+	background-image: url(images/scNscValuationWindownArrow.png);
+	background-repeat: no-repea
+	background-position: 109px 288px;
+}
+#scNscValuationWindown #scNscValuationWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0px;
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItemBox {
+	width:298px
+}
+
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItem5 table {
+	width:298px;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItem5 th{
+	width:90px;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItem5 td{
+	width:206px;
+}
+#scNscValuationWindown #scNscValuationWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscValuationWindown #scNscValuationWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscValuationWindown #scNscValuationWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscStaffWindown 
+{
+	background-image: url(images/scNscStaffWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscStaffWindown #scNscStaffWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0px;
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItemBox {
+	width:298px
+}
+
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItem5 table {
+	width:298px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItem5 th{
+	width:90px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItem5 td{
+	width:206px;
+}
+#scNscStaffWindown #scNscStaffWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscStaffWindown #scNscStaffWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscStaffWindown #scNscStaffWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscActContactWindown 
+{
+	background-image: url(images/scNscActContactWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscActContactWindown #scNscActContactWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0px;
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListBox {
+	width:306px;
+	height:215px;
+	margin:10px 0px 0px 10px;
+	padding:0px 0px 0px 0px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItemBox {
+	width:298px
+}
+
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItem5 table {
+	width:298px;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItem5 th{
+	width:90px;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItem5 td{
+	width:206px;
+}
+
+
+#scNscActContactWindown #scNscActContactWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscActContactWindown #scNscActContactWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+/*------*/
+
+#scNscActContactWindown #scNscActContactWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+
+#scNscNextActContactWindown {
+	/*
+	position:absolute;
+	top:-100px;
+	left:-20px;
+	*/
+	position:absolute;
+	top:-170px;
+	left:0px;
+	width:330px;
+	height:320px;
+	padding:0 0 0 0px;
+	background-image: url(images/scNscNextActContactWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//							color-stop(0.002, rgba(120,128,147,0.9)),
+//							color-stop(0.015, rgba(87,95,114,0.9)),
+//							color-stop(0.036, rgba(29,40,59,0.9)),
+//							color-stop(0.0365, rgba(3,11,26,0.9)),
+//							to(rgba(7,11,29,0.9)));
+*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	text-shadow: 0px -1px 1px black;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	height:235px;
+	margin:0px;
+	margin-right:4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListBox {
+	width:298px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) START */
+	/*height:220px;*/
+	height:230px;
+	/*margin:10px auto 0;*/
+    margin:4px 0px 0px 10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) END */
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListItemBox {
+	width:298px
+}
+
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListItem5 table {
+	width:298px;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListItem5 th{
+	width:90px;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListItem5 td{
+	width:206px;
+}
+
+
+#scNscNextActContactWindown #scNscNextActContactWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .scNscNextActContactListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscNextActContactWindown #scNscNextActContactWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+
+#scNscFollowContactWindown 
+{
+	/*
+	position:absolute;
+	top:-220px;
+	left:0px;
+	*/
+	
+	background-image: url(images/scNscFollowContactWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//							color-stop(0.002, rgba(120,128,147,0.9)),
+//							color-stop(0.015, rgba(87,95,114,0.9)),
+//							color-stop(0.036, rgba(29,40,59,0.9)),
+//							color-stop(0.0365, rgba(3,11,26,0.9)),
+//							to(rgba(7,11,29,0.9)));
+*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*font-size:0.8em;*/
+	font-size:0.75em;
+	text-shadow: 0px -1px 1px black;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*font-size:0.85em;*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	text-shadow: 0px -1px 1px black;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	height:235px;
+	margin:0px;
+	margin-right:4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListItemBox {
+	width:298px
+}
+
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListItem5 table {
+	width:298px;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListItem5 th{
+	width:90px;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListItem5 td{
+	width:206px;
+}
+
+
+#scNscFollowContactWindown #scNscFollowContactWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .scNscFollowContactListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscFollowContactWindown #scNscFollowContactWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+} 
+#confirmContents60{
+	width:984px
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListBoxSetLeft2{
+	overflow:hidden;
+	float:left;
+	width:468px;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn ul{
+/*2012/11/05 TCS 神本 【A.STEP2】次世代e-CRB  新車タブレット横展開に向けた機能開発 START */
+	/*width:465px;*/
+	width:690px;
+/*2012/11/05 TCS 神本 【A.STEP2】次世代e-CRB  新車タブレット横展開に向けた機能開発 END */
+}
+
+
+li.FontBlack{
+	color:#000000;
+}
+/*2012/11/05 TCS 神本 【A.STEP2】次世代e-CRB  新車タブレット横展開に向けた機能開発 START */
+/*#confirmContents60 .nscListBoxSet .nscListBoxSetIn div#SuccessSelectedCar { height:140px; width:472px; top:0px; left:0px; display:block;  }*/
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn div#SuccessSelectedCar { height:140px; width:700px; top:0px; left:0px; display:block;  }
+/*2012/11/05 TCS 神本 【A.STEP2】次世代e-CRB  新車タブレット横展開に向けた機能開発 END */
+
+#confirmContents60 .nscListBoxSet .HeightB3{
+	margin:17px 15px 3px 15px;
+}
+.clip{
+	text-overflow: clip;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.scNscGiveupReasonCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+}
+.scNscGiveupReasonListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+.scNscGiveupReasonListBox {
+	width:298px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) START */
+	/*height:220px;*/
+	height:230px;
+	/*margin:10px auto 0;*/
+    margin:4px 0px 0px 10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) END */
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+.scNscGiveupReasonListItemBox {
+	width:298px
+}
+
+.scNscGiveupReasonListItem5 table {
+	width:298px;
+}
+.scNscGiveupReasonListItem5 th{
+	width:90px;
+}
+.scNscGiveupReasonListItem5 td{
+	width:206px;
+}
+
+.scNscGiveupReasonListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+.scNscGiveupReasonListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+/*------*/
+
+ul.nscGiveupListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+
+.nscGiveupListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:204px;
+	display:block;
+}
+.nscGiveupListBoxSetIn li.end{
+	border-bottom:none;
+}
+.nscGiveupListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+.nscGiveupListBoxSetIn li.Blue{
+	color:#375388;
+}
+.nscGiveupListBoxSetIn .Selection{
+
+	background:url(../Images/SC3080201/scNscCustomerEditingListBackCheck.png) no-repeat;
+	background-position:20px 14px;
+	color:#3b4f85;
+}
+
+#scNscNextActTimeWindown6003 {
+	position:absolute;
+	top:-50px;
+	left:-18px;
+	width:330px;
+	height:244px;
+	padding:0 0 0 17px;
+	background-image: url(../Images/SC3080201/scNscNextActTimeWindownArrow2.png);
+	background-repeat: no-repeat;
+	background-position:148px bottom;
+	z-index:300;
+}
+.scNscNextActTimeWindown6003 {
+	width:330px;
+	height:207px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.106, rgba(29,40,59,0.9)),
+							color-stop(0.1065, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+.scNscNextActTimeListDiv .scNscNextActTimeHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+.scNscNextActTimeListDiv .scNscNextActTimeHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+.scNscNextActTimeListDiv .scNscNextActTimeCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+.scNscNextActTimeListDiv .scNscNextActTimeCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+.scNscNextActTimeListDiv .scNscNextActTimeCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+.scNscNextActTimeListDiv .scNscNextActTimeCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+}
+.scNscNextActTimeListDiv .scNscNextActTimeCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+.scNscNextActTimeListDiv .scNscNextActTimeListArea {
+	font-size:0.9em;
+	width:318px;
+	height:154px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+.scNscNextActTimeListDiv .scNscNextActTimeListBox {
+	width:298px;
+	height:134px;
+	margin:11px auto 9px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+.scNscNextActTimeListDiv .scNscNextActTimeListItemBox {
+	width:298px
+}
+
+.scNscNextActTimeListDiv table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+.scNscNextActTimeListDiv td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+.scNscNextActTimeListDiv .scNscNextActTimeListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+.scNscNextActTimeListDiv .scNscNextActTimeListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+.scNscNextActTimeListDiv ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+.scNscNextActTimeListDiv .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+.scNscNextActTimeListDiv .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+.scNscNextActTimeListDiv .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+.scNscNextActTimeListDiv .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+.scNscNextActTimeListDiv .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+
+
+}
+.scNscNextActTimeListDiv dl{
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	margin:0;
+}
+.scNscNextActTimeListDiv dt{
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:61px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 10px 13px 21px;
+	margin:0;
+	font-size:14px;
+	line-height:16px;
+	background:none;
+}
+.scNscNextActTimeListDiv dd{
+	border-left:none;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:190px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 14px 13px 0;
+	margin:0;
+	text-align:right;
+	font-size:14px;
+	line-height:16px;
+	color:#375388;
+}
+.scNscNextActTimeListDiv dd.Long{
+	width:839px;
+}
+.scNscNextActTimeListDiv dt.end,
+.scNscNextActTimeListDiv dd.end{
+	border-bottom:none;
+}
+.scNscNextActTimeListDiv dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+	padding-right:30px;
+	width:174px;
+}
+.scNscNextActTimeListDiv dt.Blue,
+.scNscNextActTimeListDiv dd.Blue{
+	background: -webkit-gradient(linear, left top, left bottom, from(#0581e3), 
+							color-stop(0.01, #0589f1),
+							to(#015fe6));
+	color:#FFF;
+	text-shadow:#000 0 -1px 0;
+}
+.scNscNextActTimeListDiv .nscListBoxSetIn .Selection{
+
+	background:url(../Images/SC3080201/scNscCustomerEditingListBackCheck.png) 10 0 no-repeat;
+	color:#3b4f85;
+}
+
+#scNscNextActTimeWindown6003 {
+	position:absolute;
+	top:-50px;
+	left:-18px;
+	width:330px;
+	height:244px;
+	padding:0 0 0 17px;
+	background-image: url(../Images/SC3080201/scNscNextActTimeWindownArrow2.png);
+	background-repeat: no-repeat;
+	background-position:148px bottom;
+	z-index:300;
+}
+.scNscNextActTimeWindown6003 {
+	width:330px;
+	height:207px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.106, rgba(29,40,59,0.9)),
+							color-stop(0.1065, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+.scNscFollowTimeListDiv .scNscNextActTimeHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+.scNscFollowTimeListDiv .scNscNextActTimeHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+.scNscFollowTimeListDiv .scNscNextActTimeCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+.scNscFollowTimeListDiv .scNscNextActTimeCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+.scNscFollowTimeListDiv .scNscNextActTimeCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+.scNscFollowTimeListDiv .scNscNextActTimeCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+}
+.scNscFollowTimeListDiv .scNscNextActTimeCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+.scNscFollowTimeListDiv .scNscNextActTimeListArea {
+	font-size:0.9em;
+	width:318px;
+	height:154px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+.scNscFollowTimeListDiv .scNscNextActTimeListBox {
+	width:298px;
+	height:134px;
+	margin:11px auto 9px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+.scNscFollowTimeListDiv .scNscNextActTimeListItemBox {
+	width:298px
+}
+
+.scNscFollowTimeListDiv table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+.scNscFollowTimeListDiv td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+.scNscFollowTimeListDiv .scNscNextActTimeListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+.scNscFollowTimeListDiv .scNscNextActTimeListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+.scNscFollowTimeListDiv ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+.scNscFollowTimeListDiv .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:230px;
+	display:block;
+}
+.scNscFollowTimeListDiv .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+.scNscFollowTimeListDiv .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+.scNscFollowTimeListDiv .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+.scNscFollowTimeListDiv .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+
+
+}
+.scNscFollowTimeListDiv dl{
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	margin:0;
+}
+.scNscFollowTimeListDiv dt{
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:61px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 10px 13px 21px;
+	margin:0;
+	font-size:14px;
+	line-height:16px;
+	background:none;
+}
+.scNscFollowTimeListDiv dd{
+	border-left:none;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:190px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 14px 13px 0;
+	margin:0;
+	text-align:right;
+	font-size:14px;
+	line-height:16px;
+	color:#375388;
+}
+.scNscFollowTimeListDiv dd.Long{
+	width:839px;
+}
+.scNscFollowTimeListDiv dt.end,
+.scNscFollowTimeListDiv dd.end{
+	border-bottom:none;
+}
+.scNscFollowTimeListDiv dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+	padding-right:30px;
+	width:174px;
+}
+.scNscFollowTimeListDiv dt.Blue,
+.scNscFollowTimeListDiv dd.Blue{
+	background: -webkit-gradient(linear, left top, left bottom, from(#0581e3), 
+							color-stop(0.01, #0589f1),
+							to(#015fe6));
+	color:#FFF;
+	text-shadow:#000 0 -1px 0;
+}
+.scNscFollowTimeListDiv .nscListBoxSetIn .Selection{
+
+	background:url(../Images/SC3080201/scNscCustomerEditingListBackCheck.png) 10 0 no-repeat;
+	color:#3b4f85;
+}
+
+.icrop-PopOverForm-header
+{
+    position:relative;
+    width:330px;
+    height: 45px;
+}
+/* 2012/05/09 TCS 河原 【SALES_1A】断念の理由入力ｴﾘｱが、編集時、枠をはみ出して表示される START */
+#GiveupReason {
+	font-size:13px;
+	padding:0px;
+	line-height: 14px;
+	border:0px;
+	resize:none;
+	position:relative;
+	top:-17px;
+	width:835px;
+	left:-9px;
+	border:none;
+	outline:none;
+}
+/* 2012/05/09 TCS 河原 【SALES_1A】断念の理由入力ｴﾘｱが、編集時、枠をはみ出して表示される END */

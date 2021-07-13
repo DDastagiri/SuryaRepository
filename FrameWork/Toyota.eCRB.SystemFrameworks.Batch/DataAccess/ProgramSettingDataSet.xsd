@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProgramSettingDataSet" targetNamespace="http://tempuri.org/ProgramSettingDataSet.xsd" xmlns:mstns="http://tempuri.org/ProgramSettingDataSet.xsd" xmlns="http://tempuri.org/ProgramSettingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProgramSettingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProgramSettingDataSet" msprop:Generator_UserDSName="ProgramSettingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProgramSettingTable" msprop:Generator_TableClassName="ProgramSettingTableDataTable" msprop:Generator_TableVarName="tableProgramSettingTable" msprop:Generator_TablePropName="ProgramSettingTable" msprop:Generator_RowDeletingName="ProgramSettingTableRowDeleting" msprop:Generator_UserTableName="ProgramSettingTable" msprop:Generator_RowChangingName="ProgramSettingTableRowChanging" msprop:Generator_RowEvHandlerName="ProgramSettingTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ProgramSettingTableRowDeleted" msprop:Generator_RowEvArgName="ProgramSettingTableRowChangeEvent" msprop:Generator_RowChangedName="ProgramSettingTableRowChanged" msprop:Generator_RowClassName="ProgramSettingTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PROGRAMID" msprop:Generator_ColumnVarNameInTable="columnPROGRAMID" msprop:Generator_ColumnPropNameInRow="PROGRAMID" msprop:Generator_ColumnPropNameInTable="PROGRAMIDColumn" msprop:Generator_UserColumnName="PROGRAMID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECTION" msprop:Generator_ColumnVarNameInTable="columnSECTION" msprop:Generator_ColumnPropNameInRow="SECTION" msprop:Generator_ColumnPropNameInTable="SECTIONColumn" msprop:Generator_UserColumnName="SECTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KEY" msprop:Generator_ColumnVarNameInTable="columnKEY" msprop:Generator_ColumnPropNameInRow="KEY" msprop:Generator_ColumnPropNameInTable="KEYColumn" msprop:Generator_UserColumnName="KEY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALUE" msprop:Generator_ColumnVarNameInTable="columnVALUE" msprop:Generator_ColumnPropNameInRow="VALUE" msprop:Generator_ColumnPropNameInTable="VALUEColumn" msprop:Generator_UserColumnName="VALUE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOTE" msprop:Generator_ColumnVarNameInTable="columnNOTE" msprop:Generator_ColumnPropNameInRow="NOTE" msprop:Generator_ColumnPropNameInTable="NOTEColumn" msprop:Generator_UserColumnName="NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATEDATE" msprop:Generator_ColumnVarNameInTable="columnCREATEDATE" msprop:Generator_ColumnPropNameInRow="CREATEDATE" msprop:Generator_ColumnPropNameInTable="CREATEDATEColumn" msprop:Generator_UserColumnName="CREATEDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATEACCOUNT" msprop:Generator_ColumnVarNameInTable="columnCREATEACCOUNT" msprop:Generator_ColumnPropNameInRow="CREATEACCOUNT" msprop:Generator_ColumnPropNameInTable="CREATEACCOUNTColumn" msprop:Generator_UserColumnName="CREATEACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPDATEACCOUNT" msprop:Generator_ColumnVarNameInTable="columnUPDATEACCOUNT" msprop:Generator_ColumnPropNameInRow="UPDATEACCOUNT" msprop:Generator_ColumnPropNameInTable="UPDATEACCOUNTColumn" msprop:Generator_UserColumnName="UPDATEACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATEID" msprop:Generator_ColumnVarNameInTable="columnCREATEID" msprop:Generator_ColumnPropNameInRow="CREATEID" msprop:Generator_ColumnPropNameInTable="CREATEIDColumn" msprop:Generator_UserColumnName="CREATEID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPDATEID" msprop:Generator_ColumnVarNameInTable="columnUPDATEID" msprop:Generator_ColumnPropNameInRow="UPDATEID" msprop:Generator_ColumnPropNameInTable="UPDATEIDColumn" msprop:Generator_UserColumnName="UPDATEID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BranchListDataSet" targetNamespace="http://tempuri.org/BranchListDataSet.xsd" xmlns:mstns="http://tempuri.org/BranchListDataSet.xsd" xmlns="http://tempuri.org/BranchListDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BranchListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BranchListDataSet" msprop:Generator_UserDSName="BranchListDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BranchTable" msprop:Generator_TableClassName="BranchTableDataTable" msprop:Generator_TableVarName="tableBranchTable" msprop:Generator_TablePropName="BranchTable" msprop:Generator_RowDeletingName="BranchTableRowDeleting" msprop:Generator_UserTableName="BranchTable" msprop:Generator_RowChangingName="BranchTableRowChanging" msprop:Generator_RowEvHandlerName="BranchTableRowChangeEventHandler" msprop:Generator_RowDeletedName="BranchTableRowDeleted" msprop:Generator_RowEvArgName="BranchTableRowChangeEvent" msprop:Generator_RowChangedName="BranchTableRowChanged" msprop:Generator_RowClassName="BranchTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRNM_LOCAL" msprop:Generator_ColumnVarNameInTable="columnSTRNM_LOCAL" msprop:Generator_ColumnPropNameInRow="STRNM_LOCAL" msprop:Generator_ColumnPropNameInTable="STRNM_LOCALColumn" msprop:Generator_UserColumnName="STRNM_LOCAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

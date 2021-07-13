@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3090301DataSet" targetNamespace="http://tempuri.org/SC3090301DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3090301DataSet.xsd" xmlns="http://tempuri.org/SC3090301DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.GateKeeper.GateKeeperMain.DataAccess.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3090301DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3090301DataSet" msprop:Generator_UserDSName="SC3090301DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3090301VisitVehicleUnsentData" msprop:Generator_TableClassName="SC3090301VisitVehicleUnsentDataDataTable" msprop:Generator_TableVarName="tableSC3090301VisitVehicleUnsentData" msprop:Generator_RowChangedName="SC3090301VisitVehicleUnsentDataRowChanged" msprop:Generator_TablePropName="SC3090301VisitVehicleUnsentData" msprop:Generator_RowDeletingName="SC3090301VisitVehicleUnsentDataRowDeleting" msprop:Generator_RowChangingName="SC3090301VisitVehicleUnsentDataRowChanging" msprop:Generator_RowEvHandlerName="SC3090301VisitVehicleUnsentDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301VisitVehicleUnsentDataRowDeleted" msprop:Generator_RowClassName="SC3090301VisitVehicleUnsentDataRow" msprop:Generator_UserTableName="SC3090301VisitVehicleUnsentData" msprop:Generator_RowEvArgName="SC3090301VisitVehicleUnsentDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VISITVCLSEQ" msprop:Generator_ColumnVarNameInTable="columnVISITVCLSEQ" msprop:Generator_ColumnPropNameInRow="VISITVCLSEQ" msprop:Generator_ColumnPropNameInTable="VISITVCLSEQColumn" msprop:Generator_UserColumnName="VISITVCLSEQ" type="xs:long" />
+              <xs:element name="VISITTIMESTAMP" msprop:Generator_ColumnVarNameInTable="columnVISITTIMESTAMP" msprop:Generator_ColumnPropNameInRow="VISITTIMESTAMP" msprop:Generator_ColumnPropNameInTable="VISITTIMESTAMPColumn" msprop:Generator_UserColumnName="VISITTIMESTAMP" type="xs:dateTime" />
+              <xs:element name="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301VisitUnsentTotalCount" msprop:Generator_TableClassName="SC3090301VisitUnsentTotalCountDataTable" msprop:Generator_TableVarName="tableSC3090301VisitUnsentTotalCount" msprop:Generator_RowChangedName="SC3090301VisitUnsentTotalCountRowChanged" msprop:Generator_TablePropName="SC3090301VisitUnsentTotalCount" msprop:Generator_RowDeletingName="SC3090301VisitUnsentTotalCountRowDeleting" msprop:Generator_RowChangingName="SC3090301VisitUnsentTotalCountRowChanging" msprop:Generator_RowEvHandlerName="SC3090301VisitUnsentTotalCountRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301VisitUnsentTotalCountRowDeleted" msprop:Generator_RowClassName="SC3090301VisitUnsentTotalCountRow" msprop:Generator_UserTableName="SC3090301VisitUnsentTotalCount" msprop:Generator_RowEvArgName="SC3090301VisitUnsentTotalCountRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TOTALCOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTALCOUNT" msprop:Generator_ColumnPropNameInRow="TOTALCOUNT" msprop:Generator_ColumnPropNameInTable="TOTALCOUNTColumn" msprop:Generator_UserColumnName="TOTALCOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301CustomerInfo" msprop:Generator_TableClassName="SC3090301CustomerInfoDataTable" msprop:Generator_TableVarName="tableSC3090301CustomerInfo" msprop:Generator_RowChangedName="SC3090301CustomerInfoRowChanged" msprop:Generator_TablePropName="SC3090301CustomerInfo" msprop:Generator_RowDeletingName="SC3090301CustomerInfoRowDeleting" msprop:Generator_RowChangingName="SC3090301CustomerInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3090301CustomerInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301CustomerInfoRowDeleted" msprop:Generator_RowClassName="SC3090301CustomerInfoRow" msprop:Generator_UserTableName="SC3090301CustomerInfo" msprop:Generator_RowEvArgName="SC3090301CustomerInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMETITLE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="NAMETITLE" msprop:Generator_ColumnVarNameInTable="columnNAMETITLE" msprop:Generator_ColumnPropNameInTable="NAMETITLEColumn" msprop:Generator_UserColumnName="NAMETITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTKBN" msprop:Generator_ColumnVarNameInTable="columnCUSTKBN" msprop:Generator_ColumnPropNameInRow="CUSTKBN" msprop:Generator_ColumnPropNameInTable="CUSTKBNColumn" msprop:Generator_UserColumnName="CUSTKBN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTPIC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTPIC" msprop:Generator_ColumnVarNameInTable="columnCUSTPIC" msprop:Generator_ColumnPropNameInTable="CUSTPICColumn" msprop:Generator_UserColumnName="CUSTPIC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARINFO1" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CARINFO1" msprop:Generator_ColumnVarNameInTable="columnCARINFO1" msprop:Generator_ColumnPropNameInTable="CARINFO1Column" msprop:Generator_UserColumnName="CARINFO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARINFO2" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CARINFO2" msprop:Generator_ColumnVarNameInTable="columnCARINFO2" msprop:Generator_ColumnPropNameInTable="CARINFO2Column" msprop:Generator_UserColumnName="CARINFO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARPIC" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CARPIC" msprop:Generator_ColumnVarNameInTable="columnCARPIC" msprop:Generator_ColumnPropNameInTable="CARPICColumn" msprop:Generator_UserColumnName="CARPIC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTCD" msprop:Generator_ColumnVarNameInTable="columnCUSTCD" msprop:Generator_ColumnPropNameInTable="CUSTCDColumn" msprop:Generator_UserColumnName="CUSTCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STUFFCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STUFFCD" msprop:Generator_ColumnVarNameInTable="columnSTUFFCD" msprop:Generator_ColumnPropNameInTable="STUFFCDColumn" msprop:Generator_UserColumnName="STUFFCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEX" msprop:Generator_ColumnVarNameInTable="columnSEX" msprop:Generator_ColumnPropNameInRow="SEX" msprop:Generator_ColumnPropNameInTable="SEXColumn" msprop:Generator_UserColumnName="SEX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VIN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInTable="VINColumn" msprop:Generator_UserColumnName="VIN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEQNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SACODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SACODE" msprop:Generator_ColumnVarNameInTable="columnSACODE" msprop:Generator_ColumnPropNameInTable="SACODEColumn" msprop:Generator_UserColumnName="SACODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTYPE" msprop:Generator_ColumnVarNameInTable="columnCUSTYPE" msprop:Generator_ColumnPropNameInTable="CUSTYPEColumn" msprop:Generator_UserColumnName="CUSTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301VisitVehicleDealFlg" msprop:Generator_TableClassName="SC3090301VisitVehicleDealFlgDataTable" msprop:Generator_TableVarName="tableSC3090301VisitVehicleDealFlg" msprop:Generator_RowChangedName="SC3090301VisitVehicleDealFlgRowChanged" msprop:Generator_TablePropName="SC3090301VisitVehicleDealFlg" msprop:Generator_RowDeletingName="SC3090301VisitVehicleDealFlgRowDeleting" msprop:Generator_RowChangingName="SC3090301VisitVehicleDealFlgRowChanging" msprop:Generator_RowEvHandlerName="SC3090301VisitVehicleDealFlgRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301VisitVehicleDealFlgRowDeleted" msprop:Generator_RowClassName="SC3090301VisitVehicleDealFlgRow" msprop:Generator_UserTableName="SC3090301VisitVehicleDealFlg" msprop:Generator_RowEvArgName="SC3090301VisitVehicleDealFlgRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEALFLG" msprop:Generator_ColumnVarNameInTable="columnDEALFLG" msprop:Generator_ColumnPropNameInRow="DEALFLG" msprop:Generator_ColumnPropNameInTable="DEALFLGColumn" msprop:Generator_UserColumnName="DEALFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELFLG" msprop:Generator_ColumnVarNameInTable="columnDELFLG" msprop:Generator_ColumnPropNameInRow="DELFLG" msprop:Generator_ColumnPropNameInTable="DELFLGColumn" msprop:Generator_UserColumnName="DELFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301StuffStatus" msprop:Generator_TableClassName="SC3090301StuffStatusDataTable" msprop:Generator_TableVarName="tableSC3090301StuffStatus" msprop:Generator_RowChangedName="SC3090301StuffStatusRowChanged" msprop:Generator_TablePropName="SC3090301StuffStatus" msprop:Generator_RowDeletingName="SC3090301StuffStatusRowDeleting" msprop:Generator_RowChangingName="SC3090301StuffStatusRowChanging" msprop:Generator_RowEvHandlerName="SC3090301StuffStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301StuffStatusRowDeleted" msprop:Generator_RowClassName="SC3090301StuffStatusRow" msprop:Generator_UserTableName="SC3090301StuffStatus" msprop:Generator_RowEvArgName="SC3090301StuffStatusRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301StuffInfo" msprop:Generator_TableClassName="SC3090301StuffInfoDataTable" msprop:Generator_TableVarName="tableSC3090301StuffInfo" msprop:Generator_RowChangedName="SC3090301StuffInfoRowChanged" msprop:Generator_TablePropName="SC3090301StuffInfo" msprop:Generator_RowDeletingName="SC3090301StuffInfoRowDeleting" msprop:Generator_RowChangingName="SC3090301StuffInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3090301StuffInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301StuffInfoRowDeleted" msprop:Generator_RowClassName="SC3090301StuffInfoRow" msprop:Generator_UserTableName="SC3090301StuffInfo" msprop:Generator_RowEvArgName="SC3090301StuffInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STUFFCD" msprop:Generator_ColumnVarNameInTable="columnSTUFFCD" msprop:Generator_ColumnPropNameInRow="STUFFCD" msprop:Generator_ColumnPropNameInTable="STUFFCDColumn" msprop:Generator_UserColumnName="STUFFCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301VisitSequenceValue" msprop:Generator_TableClassName="SC3090301VisitSequenceValueDataTable" msprop:Generator_TableVarName="tableSC3090301VisitSequenceValue" msprop:Generator_RowChangedName="SC3090301VisitSequenceValueRowChanged" msprop:Generator_TablePropName="SC3090301VisitSequenceValue" msprop:Generator_RowDeletingName="SC3090301VisitSequenceValueRowDeleting" msprop:Generator_RowChangingName="SC3090301VisitSequenceValueRowChanging" msprop:Generator_RowEvHandlerName="SC3090301VisitSequenceValueRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301VisitSequenceValueRowDeleted" msprop:Generator_RowClassName="SC3090301VisitSequenceValueRow" msprop:Generator_UserTableName="SC3090301VisitSequenceValue" msprop:Generator_RowEvArgName="SC3090301VisitSequenceValueRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VISITSEQ" msprop:Generator_ColumnVarNameInTable="columnVISITSEQ" msprop:Generator_ColumnPropNameInRow="VISITSEQ" msprop:Generator_ColumnPropNameInTable="VISITSEQColumn" msprop:Generator_UserColumnName="VISITSEQ" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301VisitUnsentData" msprop:Generator_TableClassName="SC3090301VisitUnsentDataDataTable" msprop:Generator_TableVarName="tableSC3090301VisitUnsentData" msprop:Generator_RowChangedName="SC3090301VisitUnsentDataRowChanged" msprop:Generator_TablePropName="SC3090301VisitUnsentData" msprop:Generator_RowDeletingName="SC3090301VisitUnsentDataRowDeleting" msprop:Generator_RowChangingName="SC3090301VisitUnsentDataRowChanging" msprop:Generator_RowEvHandlerName="SC3090301VisitUnsentDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301VisitUnsentDataRowDeleted" msprop:Generator_RowClassName="SC3090301VisitUnsentDataRow" msprop:Generator_UserTableName="SC3090301VisitUnsentData" msprop:Generator_RowEvArgName="SC3090301VisitUnsentDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VISITVCLSEQ" msprop:Generator_ColumnVarNameInTable="columnVISITVCLSEQ" msprop:Generator_ColumnPropNameInRow="VISITVCLSEQ" msprop:Generator_ColumnPropNameInTable="VISITVCLSEQColumn" msprop:Generator_UserColumnName="VISITVCLSEQ" type="xs:long" />
+              <xs:element name="VISITTIMESTAMP" msprop:Generator_ColumnVarNameInTable="columnVISITTIMESTAMP" msprop:Generator_ColumnPropNameInRow="VISITTIMESTAMP" msprop:Generator_ColumnPropNameInTable="VISITTIMESTAMPColumn" msprop:Generator_UserColumnName="VISITTIMESTAMP" type="xs:dateTime" />
+              <xs:element name="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTCOUNT" msprop:Generator_ColumnVarNameInTable="columnCUSTCOUNT" msprop:Generator_ColumnPropNameInRow="CUSTCOUNT" msprop:Generator_ColumnPropNameInTable="CUSTCOUNTColumn" msprop:Generator_UserColumnName="CUSTCOUNT" type="xs:long" />
+              <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMETITLE" msprop:Generator_ColumnVarNameInTable="columnNAMETITLE" msprop:Generator_ColumnPropNameInRow="NAMETITLE" msprop:Generator_ColumnPropNameInTable="NAMETITLEColumn" msprop:Generator_UserColumnName="NAMETITLE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTKBN" msprop:Generator_ColumnVarNameInTable="columnCUSTKBN" msprop:Generator_ColumnPropNameInRow="CUSTKBN" msprop:Generator_ColumnPropNameInTable="CUSTKBNColumn" msprop:Generator_UserColumnName="CUSTKBN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARINFO1" msprop:Generator_ColumnVarNameInTable="columnCARINFO1" msprop:Generator_ColumnPropNameInRow="CARINFO1" msprop:Generator_ColumnPropNameInTable="CARINFO1Column" msprop:Generator_UserColumnName="CARINFO1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARINFO2" msprop:Generator_ColumnVarNameInTable="columnCARINFO2" msprop:Generator_ColumnPropNameInRow="CARINFO2" msprop:Generator_ColumnPropNameInTable="CARINFO2Column" msprop:Generator_UserColumnName="CARINFO2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTCD" msprop:Generator_ColumnVarNameInTable="columnCUSTCD" msprop:Generator_ColumnPropNameInTable="CUSTCDColumn" msprop:Generator_UserColumnName="CUSTCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STUFFCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STUFFCD" msprop:Generator_ColumnVarNameInTable="columnSTUFFCD" msprop:Generator_ColumnPropNameInTable="STUFFCDColumn" msprop:Generator_UserColumnName="STUFFCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEX" msprop:Generator_ColumnVarNameInTable="columnSEX" msprop:Generator_ColumnPropNameInRow="SEX" msprop:Generator_ColumnPropNameInTable="SEXColumn" msprop:Generator_UserColumnName="SEX">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VIN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInTable="VINColumn" msprop:Generator_UserColumnName="VIN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEQNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SACODE" msprop:Generator_ColumnVarNameInTable="columnSACODE" msprop:Generator_ColumnPropNameInRow="SACODE" msprop:Generator_ColumnPropNameInTable="SACODEColumn" msprop:Generator_UserColumnName="SACODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTYPE" msprop:Generator_ColumnVarNameInTable="columnCUSTYPE" msprop:Generator_ColumnPropNameInTable="CUSTYPEColumn" msprop:Generator_UserColumnName="CUSTYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROVINCE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="PROVINCE" msprop:Generator_ColumnVarNameInTable="columnPROVINCE" msprop:Generator_ColumnPropNameInTable="PROVINCEColumn" msprop:Generator_UserColumnName="PROVINCE" type="xs:string" minOccurs="0" />
+              <xs:element name="RESERVFLG" msprop:Generator_ColumnVarNameInTable="columnRESERVFLG" msprop:Generator_ColumnPropNameInRow="RESERVFLG" msprop:Generator_ColumnPropNameInTable="RESERVFLGColumn" msprop:Generator_UserColumnName="RESERVFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMEDISP" msprop:Generator_ColumnVarNameInTable="columnNAMEDISP" msprop:Generator_ColumnPropNameInRow="NAMEDISP" msprop:Generator_ColumnPropNameInTable="NAMEDISPColumn" msprop:Generator_UserColumnName="NAMEDISP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMETITLEDISP" msprop:Generator_ColumnVarNameInTable="columnNAMETITLEDISP" msprop:Generator_ColumnPropNameInRow="NAMETITLEDISP" msprop:Generator_ColumnPropNameInTable="NAMETITLEDISPColumn" msprop:Generator_UserColumnName="NAMETITLEDISP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301ReservData" msprop:Generator_TableClassName="SC3090301ReservDataDataTable" msprop:Generator_TableVarName="tableSC3090301ReservData" msprop:Generator_TablePropName="SC3090301ReservData" msprop:Generator_RowDeletingName="SC3090301ReservDataRowDeleting" msprop:Generator_RowChangingName="SC3090301ReservDataRowChanging" msprop:Generator_RowEvHandlerName="SC3090301ReservDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301ReservDataRowDeleted" msprop:Generator_UserTableName="SC3090301ReservData" msprop:Generator_RowChangedName="SC3090301ReservDataRowChanged" msprop:Generator_RowEvArgName="SC3090301ReservDataRowChangeEvent" msprop:Generator_RowClassName="SC3090301ReservDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUSTCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTCD" msprop:Generator_ColumnVarNameInTable="columnCUSTCD" msprop:Generator_ColumnPropNameInTable="CUSTCDColumn" msprop:Generator_UserColumnName="CUSTCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEQNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3090301AllReservData" msprop:Generator_TableClassName="SC3090301AllReservDataDataTable" msprop:Generator_TableVarName="tableSC3090301AllReservData" msprop:Generator_RowChangedName="SC3090301AllReservDataRowChanged" msprop:Generator_TablePropName="SC3090301AllReservData" msprop:Generator_RowDeletingName="SC3090301AllReservDataRowDeleting" msprop:Generator_RowChangingName="SC3090301AllReservDataRowChanging" msprop:Generator_RowEvHandlerName="SC3090301AllReservDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3090301AllReservDataRowDeleted" msprop:Generator_RowClassName="SC3090301AllReservDataRow" msprop:Generator_UserTableName="SC3090301AllReservData" msprop:Generator_RowEvArgName="SC3090301AllReservDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VCLREGNO" msdata:Caption="CUSTCD" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAME" msdata:Caption="SEQNO" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMETITLE" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="NAMETITLE" msprop:Generator_ColumnVarNameInTable="columnNAMETITLE" msprop:Generator_ColumnPropNameInTable="NAMETITLEColumn" msprop:Generator_UserColumnName="NAMETITLE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCHESTARTDATETIME" msprop:Generator_ColumnVarNameInTable="columnSCHESTARTDATETIME" msprop:Generator_ColumnPropNameInRow="SCHESTARTDATETIME" msprop:Generator_ColumnPropNameInTable="SCHESTARTDATETIMEColumn" msprop:Generator_UserColumnName="SCHESTARTDATETIME" type="xs:dateTime" />
+              <xs:element name="CUSTOMERFLAG" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERFLAG" msprop:Generator_ColumnPropNameInRow="CUSTOMERFLAG" msprop:Generator_ColumnPropNameInTable="CUSTOMERFLAGColumn" msprop:Generator_UserColumnName="CUSTOMERFLAG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTVCLTYPE" msprop:Generator_ColumnVarNameInTable="columnCUSTVCLTYPE" msprop:Generator_ColumnPropNameInRow="CUSTVCLTYPE" msprop:Generator_ColumnPropNameInTable="CUSTVCLTYPEColumn" msprop:Generator_UserColumnName="CUSTVCLTYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SC3090301VisitVehicleUnsentData" />
+      <xs:field xpath="mstns:VISITVCLSEQ" />
+    </xs:unique>
+    <xs:unique name="SC3090301ReservData_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SC3090301ReservData" />
+      <xs:field xpath="mstns:CUSTCD" />
+      <xs:field xpath="mstns:SEQNO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{8CBF40BD-F12D-40F7-8ADF-4DB0687AA8FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Toyota.eCRB.iCROP.BizLogic.SC3140103</RootNamespace>
+    <AssemblyName>Toyota.eCRB.iCROP.BizLogic.SC3140103</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Toyota.eCRB.iCROP.BizLogic.SC3140103.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>..\..\..\..\iwaki\20121130_Web_06_HK4_No34_Latest\次世代e-CRB.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Toyota.eCRB.iCROP.BizLogic.SC3140103.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Toyota.eCRB.SystemFrameworks.Configuration, Version=1.0.1.38281, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ReferenceBin\WebSite_Service\Bin\Toyota.eCRB.SystemFrameworks.Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Toyota.eCRB.SystemFrameworks.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ReferenceBin\WebSite_Service\Bin\Toyota.eCRB.SystemFrameworks.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Toyota.eCRB.SystemFrameworks.Web">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ReferenceBin\WebSite_Service\Bin\Toyota.eCRB.SystemFrameworks.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="SC3140103BusinessLogic.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SC3140103SearchResult.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3040801\Toyota.eCRB.iCROP.DataAccess.IC3040801.vbproj">
+      <Project>{A03F79CE-351D-4675-9556-7DA799627BAB}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3040801</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3800709\Toyota.eCRB.iCROP.DataAccess.IC3800709.vbproj">
+      <Project>{7F18E4B6-F8EA-4AAE-85E1-42E216D16A43}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3800709</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3810301\Toyota.eCRB.iCROP.DataAccess.IC3810301.vbproj">
+      <Project>{F71975F7-4CD4-4C67-BBFD-B118BA598AD5}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3810301</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3810601\Toyota.eCRB.iCROP.DataAccess.IC3810601.vbproj">
+      <Project>{3E6D1660-9DB2-4295-9DC9-0D8EC8DE0BB7}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3810601</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3810701\Toyota.eCRB.iCROP.DataAccess.IC3810701.vbproj">
+      <Project>{3DE1EEEB-E333-42D5-9AA3-EE0E140FB861}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3810701</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3811501\Toyota.eCRB.iCROP.DataAccess.IC3811501.vbproj">
+      <Project>{C1906C1F-6567-4472-9A20-3263521E5913}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.IC3811501</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.SC3140103\Toyota.eCRB.iCROP.DataAccess.SC3140103.vbproj">
+      <Project>{00E0F631-5E32-4ACA-A814-F8AF9CDADE6F}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.SC3140103</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.ServiceCommonClass\Toyota.eCRB.iCROP.DataAccess.ServiceCommonClass.vbproj">
+      <Project>{251D3574-7BBE-450B-8EDB-FCF58D3B5F7B}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.ServiceCommonClass</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\Toyota.eCRB.iCROP.DataAccess.VisitUtility\Toyota.eCRB.iCROP.DataAccess.VisitUtility.vbproj">
+      <Project>{855240CA-2378-45E0-9197-1CAF623A253D}</Project>
+      <Name>Toyota.eCRB.iCROP.DataAccess.VisitUtility</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3040801\Toyota.eCRB.iCROP.BizLogic.IC3040801.vbproj">
+      <Project>{5A936AAB-1ECA-4E9D-9F65-C7CE10DA0A70}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3040801</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3800709\Toyota.eCRB.iCROP.BizLogic.IC3800709.vbproj">
+      <Project>{01C08A35-2659-4F79-BDBA-06C31FA78EE8}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3800709</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3810301\Toyota.eCRB.iCROP.BizLogic.IC3810301.vbproj">
+      <Project>{7BD72403-48B5-44E9-8C3D-BB079E7BE6E6}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3810301</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3810601\Toyota.eCRB.iCROP.BizLogic.IC3810601.vbproj">
+      <Project>{A6832EA5-9E30-4E6C-8A66-2ED9B15FC96D}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3810601</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3810701\Toyota.eCRB.iCROP.BizLogic.IC3810701.vbproj">
+      <Project>{216C669F-9C8B-4941-831C-33CC9A9191C0}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3810701</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.IC3811501\Toyota.eCRB.iCROP.BizLogic.IC3811501.vbproj">
+      <Project>{B12BA753-2C90-4C07-9915-34C4EDF4CF14}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.IC3811501</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.ServiceCommonClass\Toyota.eCRB.iCROP.BizLogic.ServiceCommonClass.vbproj">
+      <Project>{0B0C41ED-A7ED-4539-B8F4-6E231ACE91DC}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.ServiceCommonClass</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.SMBCommonClass\Toyota.eCRB.iCROP.BizLogic.SMBCommonClass.vbproj">
+      <Project>{BF0EE20C-9307-4AD6-B6C9-3F4DCF655B7F}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.SMBCommonClass</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.eCRB.iCROP.BizLogic.VisitUtility\Toyota.eCRB.iCROP.BizLogic.VisitUtility.vbproj">
+      <Project>{8469D5A2-D578-4F6D-9248-570E669BAA7B}</Project>
+      <Name>Toyota.eCRB.iCROP.BizLogic.VisitUtility</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

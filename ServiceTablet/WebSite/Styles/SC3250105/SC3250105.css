@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+/*/-------------------------------------------------------------------------
+//SC3230105.css
+//--------------------------------------------------------------------------
+//機能：部品説明（交換部品情報）画面
+//
+//作成：2014/08/XX NEC 上野	初版作成
+//更新：
+
+---------------------------------------------------------------------------*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	Parts Details
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#main 
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.3, #fff), color-stop(0.7, #fff), to(#dfdfdf));
+}
+
+/*******コンテント３*******/
+
+
+
+
+dl dd.pLeftIltems,
+dl dd.pRightIltems{
+	display:block;
+	width:420px; height:95px;
+	position:absolute;
+	top:21px;
+	background:url(../Images/SC3250105/ReplacementPeriod01.png) 0 0 no-repeat;
+	display:block;
+	box-sizing: border-box;
+	padding-left:108px;
+}
+
+dl dd.pLeftIltems{
+	left:40px;
+}
+
+dl dd.pRightIltems{
+	left:494px;
+	background:url(../Images/SC3250105/ReplacementPeriod02.png) 0 0 no-repeat;
+}
+
+dl dd.pLeftIltems h5,
+dl dd.pRightIltems h5{
+	display:block;
+	margin-top:14px;
+	font-size:16px; line-height:34px;
+	color:#00a0b9;
+	text-align:left; text-indent:0; padding:0;
+}
+
+dl dd.pLeftIltems .dateSet,
+dl dd.pRightIltems .dateSet{
+	display:block;
+	font-size:26px; line-height:26px;
+	color:#6c737a; font-weight:bold;
+}
+	

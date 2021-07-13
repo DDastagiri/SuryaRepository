@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3080202DataSet" targetNamespace="http://tempuri.org/IC3080202DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3080202DataSet.xsd" xmlns="http://tempuri.org/IC3080202DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3080202DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3080202DataSet" msprop:Generator_UserDSName="IC3080202DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3080202ModelLogo" msprop:Generator_TableClassName="IC3080202ModelLogoDataTable" msprop:Generator_TableVarName="tableIC3080202ModelLogo" msprop:Generator_TablePropName="IC3080202ModelLogo" msprop:Generator_RowDeletingName="IC3080202ModelLogoRowDeleting" msprop:Generator_UserTableName="IC3080202ModelLogo" msprop:Generator_RowChangingName="IC3080202ModelLogoRowChanging" msprop:Generator_RowEvHandlerName="IC3080202ModelLogoRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3080202ModelLogoRowDeleted" msprop:Generator_RowEvArgName="IC3080202ModelLogoRowChangeEvent" msprop:Generator_RowChangedName="IC3080202ModelLogoRowChanged" msprop:Generator_RowClassName="IC3080202ModelLogoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="LOGO" msprop:Generator_ColumnVarNameInTable="columnLOGO" msprop:Generator_ColumnPropNameInTable="LOGOColumn" msprop:Generator_UserColumnName="LOGO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3080202Parameter" msprop:Generator_TableClassName="IC3080202ParameterDataTable" msprop:Generator_TableVarName="tableIC3080202Parameter" msprop:Generator_TablePropName="IC3080202Parameter" msprop:Generator_RowDeletingName="IC3080202ParameterRowDeleting" msprop:Generator_UserTableName="IC3080202Parameter" msprop:Generator_RowChangingName="IC3080202ParameterRowChanging" msprop:Generator_RowEvHandlerName="IC3080202ParameterRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3080202ParameterRowDeleted" msprop:Generator_RowEvArgName="IC3080202ParameterRowChangeEvent" msprop:Generator_RowChangedName="IC3080202ParameterRowChanged" msprop:Generator_RowClassName="IC3080202ParameterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VIN" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInTable="VINColumn" msprop:Generator_UserColumnName="VIN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VCLREGNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SELECTIONDVS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SELECTIONDVS" msprop:Generator_ColumnVarNameInTable="columnSELECTIONDVS" msprop:Generator_ColumnPropNameInTable="SELECTIONDVSColumn" msprop:Generator_UserColumnName="SELECTIONDVS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

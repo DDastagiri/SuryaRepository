@@ -1,0 +1,323 @@
+﻿
+
+/*　右カラム用
+-------------------------------------------------------------------------------------------*/
+#contentsRightBox {
+    width:634px;
+    height:613px;
+    float:right;
+    position:relative;
+}
+#contentsRightBox .InnerBox01 { padding:0 15px; position:relative; opacity:1; -webkit-transition: opacity 150ms ease-in-out 0; }
+#contentsRightBox.contentsFrame .LodingInnerBox01 { opacity:0; }
+
+
+/*　ダッシュボード
+-------------------------------------------------------------------------------------------*/
+#dashboardBox { top:261px; width:296px; overflow: hidden; position:absolute; height:315px; left:15px; }
+#dashboardBox.loading {}
+#dashboardFrame { border: none; padding: 0px; margin: 0px; }
+#loadingDashboard {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:130px;
+	left:130px;
+	width:21px;
+	height:22px;
+	display: none;
+}
+#dashboardBox.loading #loadingDashboard { display:block; }
+#dashboardBox.loading #dashboardFrame { display:none; }
+
+/*　日付
+ -------------------------------------------------------------------------------------------*/
+#contentsRightBox .katudouDate { position:absolute; font-size:12px; color:#808080; right: 10px; top: 11px; }
+#NowDateLiteral { text-align: right; }
+
+
+/*　スケジュール
+ -------------------------------------------------------------------------------------------*/
+#contentsRightBox .inLeftBox1  { width:401px; float:left; border-right:#999 1px solid; }
+
+/* 終日イベント */
+#DateScheduleBox {
+    -webkit-transition: height 300ms ease-in-out 0;
+	margin:0px 0 25px 38px;
+	width:344px;
+	font-size:12px;
+	line-height:12px;
+	height: 43px;
+	padding:1px 1px 5px;
+	border-bottom:1px solid #c1c1c1;
+	border-top:1px solid #c1c1c1;
+	border-left:1px solid #c1c1c1;
+	border-right:1px solid #dedede;
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2) inset;
+	position:absolute;
+    top:38px; 
+    left:13px;
+	background:#FFF;
+	z-index:2;
+	overflow-y:hidden;
+}
+
+
+#DateScheduleInner { height: 100%;  }
+
+#DateScheduleBox ul { padding:7px 0px 0px 7px; }
+#DateScheduleBox li {
+    padding:1px 0px 5px 20px;
+    background-image: url(../Images/SC3010203/iconDayEvent.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 262px;
+}
+
+/*通常サイズ */
+#DateScheduleBox ul.normalMode li { display: none; }
+#DateScheduleBox ul.normalMode li:nth-child(1),#DateScheduleBox ul.normalMode li:nth-child(2)
+{
+    display: block;
+}
+/*終日イベント拡大サイズ*/
+#DateScheduleBox.bigMessageWindow { height: 187px;  }
+
+/*#DateScheduleBox p.more { margin:-16px 8px 0 0; color:#999; float:right; min-width:100px; display:block; background:#000; }*/
+/* 終日イベントと時間スケジュールの境目 */
+#contentsRightBox .InsLineBox { position: absolute; width: 346px; left: 52px; top: 104px; border-top: #666 1px solid; }
+/* 終日イベント新規登録タップエリア */
+#DateScheduleBox .dateScheduleMarginArea { position:absolute; top:0px; right:0px; height:100%; width:52px; }
+
+/*他Ｎ件*/
+#DateScheduleBox p.moreDayEvent {
+    bottom: 5px;
+    right: 9px;
+    position: absolute;
+    text-align: right;   
+    font-size: 10px;
+    margin: 0px 0px 0px;
+}
+#DateScheduleBox p.moreDayEvent a { color: #999; min-width: 55px; display: inline-block; padding-top:5px; padding-right:12px; box-sizing: border-box; display:none;  }
+#DateScheduleBox p.moreDayEvent a:first-child { background:url(../Images/SC3010201/nsc0000more01.png) right center no-repeat; display:block; }
+#DateScheduleBox p.moreDayEvent a:last-child { background:url(../Images/SC3010201/nsc0000more02.png) right center no-repeat; display:block; }
+
+/*データなしのテキスト*/
+#DateScheduleBox span#dayEventNotFound { color:#777; font-size:12px; top:5px; left:4px; position:absolute; display:none; }
+
+/*　TODO
+ -------------------------------------------------------------------------------------------*/
+ #contentsRightBox .inRightBox1 { width:185px; float:right; }
+ 
+ /*ToDo
+------------------------------------------------------------------------------*/
+#toDoBoxOut {
+    width:185px; height:538px;
+    background:url(../Images/SC3010203/bgToDo.png) no-repeat;
+}
+
+#toDoBoxIn{}
+/* 遅れ */
+#toDoBoxIn p.toDoBoxNote {
+    font-size:12px;
+    text-align:right;
+    color:#F00;
+    padding:9px 08px 0 0;
+    font-weight:bold;
+    height:19px;
+    display:block;
+}
+/* TODOチップを入れる枠(スクロール用) */
+#todoChipBox { height: 505px; margin: 0px auto 0px; position:relative;  }
+
+/* TODOチップ */
+.todoChip {
+    font-size:12px;
+    color:#333;
+    display:block;
+    margin:8px auto 7px;
+    padding:3px 5px 5px;
+    width:162px;
+    height:41px;
+    box-shadow:2px 2px 5px #666;
+    overflow: hidden;
+	border-top:2px solid #717171;
+	border-left:2px solid #717171;
+	border-bottom:2px solid #eceeee;
+	border-right:2px solid #eceeee;
+	cursor: pointer;
+	box-sizing:border-box;
+	position: relative;
+}
+
+/* アイコン */
+.todoChip .iconBox {
+    display:block;
+    float:left;
+    margin:6px 0px 0px;
+    height:20px;
+    width:20px;
+    /*background:#000;*/
+}
+.todoChip .callinIcon { background:url(../Images/SC3010203/Nsc_Todo_Icon_callin.png) no-repeat; }
+
+/* タイトル */
+.todoChip .inText { display:block;  padding:0px 0px 0px 3px; }
+/* 時間 */
+.todoChip .date   { display:block; font-size:10px; line-height:10px; color:#000; text-align:right; padding-top:-2px; }
+/* ドラッグ中のチップ */
+.dragChip { position: absolute; font-size:14px; opacity: 0.7; z-index: 3; }
+/* ドラッグしているチップの親となるチップ */
+.dragChipOwner { opacity: 0.5; }
+/* TODOチップ格納ボックス */
+#todoChipBoxInner { padding-bottom: 20px; }
+ 
+ /*　スケジュール・TODO共通
+ -------------------------------------------------------------------------------------------*/
+ #contentsRightBox h3.subTitle01 {
+	width:152px;
+	float:left;
+}
+
+#contentsRightBox h3,
+#contentsRightBox h4 {
+    display:block;
+    font-size:14px;
+    line-height:14px;
+    margin:0px 0 8px;
+    padding-top:16px;
+    color:#666;
+}
+
+/*　スケジュール(時間）
+ -------------------------------------------------------------------------------------------*/
+/* 全体を囲む枠 */
+#timeScheduleBoxOut  
+{
+    height:474px; width:391px; margin:104px 0px 0px; 
+    background:url(../Images/SC3010203/drumShadowImage1.png) no-repeat;     
+    background-position: 35px 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* 内枠(スクロール用) */
+#timeScheduleBoxIn { min-height: 1086px; position: relative; }
+
+/* 時間ボックス */
+#timeScheduleLeftBox {
+    position:absolute;
+    box-sizing: border-box;
+    left: 0px;
+    top: 11px;
+    width: 40px;
+}
+
+/* 時間TEXT */
+#timeScheduleLeftBox p {
+    font-size:10px;
+    font-weight:normal;
+    text-align:right;
+    width:35px;
+    height:44px;
+    padding:0px 5px 0px 0px;
+    display:block;
+    position:relative;
+    top:-7px;
+    box-sizing:border-box;
+    margin: 0px;
+}
+/* 分のナビゲーション */
+#timeScheduleLeftBox p.naviminute {
+    font-weight:bold;
+    width:35px;
+    text-align:right;
+    position: absolute;
+    left:0px;
+    top: 0px;
+    box-sizing: border-box;
+    display:none;
+}
+/* 時間のナビゲーション */
+#timeScheduleLeftBox p.navihour { font-weight:bold; }
+
+/* 時間の隣のスケジュール枠 */
+#timeScheduleRightBox {
+    position:absolute;
+    box-sizing: border-box;
+    left:39px; top:11px;
+    width: 341px;
+}
+
+/* 時間のメモリ */
+#timeScheduleRightBox .timeLineBorder { height:22px; box-sizing:border-box; opacity:0.4; position:relative; }
+#timeScheduleRightBox .timeLineBorder:nth-child(odd)  { border-top: 1px solid #888; }
+#timeScheduleRightBox .timeLineBorder:nth-child(even) { border-top: 1px dashed #888; }
+#timeScheduleRightBox .timeLineBorder:nth-child(48)      { border-bottom: 1px solid #888; }
+/* 新規登録タップエリア */
+#timeScheduleRightBox div.marginArea { position:absolute; height:100%; width:20px; top:0px; right:0px; }
+
+/*チップ格納ボックス */
+#timeScheduleChipBox {
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    width: 321px;
+    height: 100%;
+    box-sizing: border-box; 
+}
+
+/*チップ */
+#timeScheduleChipBox div.timeScheduleChip 
+{
+    /*
+    background: -webkit-gradient(linear, left top, right bottom, 
+    color-stop(0%,rgba(211,211,211,0.7)), 
+    color-stop(50%,rgba(255,255,255,0.7)), 
+    color-stop(100%,rgba(211,211,211,0.7)));
+    */
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    padding:2px;
+    font-size:14px;
+    box-sizing: border-box; 
+	border-top:2px solid #868686;
+	border-left:2px solid #868686;
+	border-bottom:2px solid #f8f9f9;
+	border-right:2px solid #f8f9f9;
+    box-shadow:2px 2px 5px #666;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    border-radius:2px;
+ }
+
+/*（現在時刻） */
+.borderLine {
+    background:url(../Images/SC3010203/borderLine.png) no-repeat;
+    width:352px;
+    height:19px;
+    left:30px;
+    top:0px;
+    position:absolute;
+}
+
+
+/*　読み込み中
+ -------------------------------------------------------------------------------------------*/
+#loadingSchedule {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:300px;
+	left:290px;
+	width:21px;
+	height:22px;
+}
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+

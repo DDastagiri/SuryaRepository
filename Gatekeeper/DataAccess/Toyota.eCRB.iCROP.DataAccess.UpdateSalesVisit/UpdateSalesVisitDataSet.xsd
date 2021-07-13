@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UpdateSalesVisitDataSet" targetNamespace="http://tempuri.org/UpdateSalesVisitDataSet.xsd" xmlns:mstns="http://tempuri.org/UpdateSalesVisitDataSet.xsd" xmlns="http://tempuri.org/UpdateSalesVisitDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.Common.SalesVisit.DataAccess.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UpdateSalesVisitDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="UpdateSalesVisitDataSet" msprop:Generator_UserDSName="UpdateSalesVisitDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UpdateSalesVisit" msprop:Generator_TableClassName="UpdateSalesVisitDataTable" msprop:Generator_TableVarName="tableUpdateSalesVisit" msprop:Generator_TablePropName="UpdateSalesVisit" msprop:Generator_RowDeletingName="UpdateSalesVisitRowDeleting" msprop:Generator_UserTableName="UpdateSalesVisit" msprop:Generator_RowChangingName="UpdateSalesVisitRowChanging" msprop:Generator_RowEvHandlerName="UpdateSalesVisitRowChangeEventHandler" msprop:Generator_RowDeletedName="UpdateSalesVisitRowDeleted" msprop:Generator_RowEvArgName="UpdateSalesVisitRowChangeEvent" msprop:Generator_RowChangedName="UpdateSalesVisitRowChanged" msprop:Generator_RowClassName="UpdateSalesVisitRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VISITSEQ" msprop:Generator_ColumnVarNameInTable="columnVISITSEQ" msprop:Generator_ColumnPropNameInRow="VISITSEQ" msprop:Generator_ColumnPropNameInTable="VISITSEQColumn" msprop:Generator_UserColumnName="VISITSEQ" type="xs:long" />
+              <xs:element name="VISITSTATUS" msprop:Generator_ColumnVarNameInTable="columnVISITSTATUS" msprop:Generator_ColumnPropNameInRow="VISITSTATUS" msprop:Generator_ColumnPropNameInTable="VISITSTATUSColumn" msprop:Generator_UserColumnName="VISITSTATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UpdateSalesVisit" />
+      <xs:field xpath="mstns:VISITSEQ" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

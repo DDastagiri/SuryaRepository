@@ -1,0 +1,281 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/CommonMasterPage.Master" AutoEventWireup="false" CodeFile="SC3010201.master.vb" Inherits="Pages_SC3010201" %>
+<%@ Register src="SC3040101.ascx" tagname="SC3040101" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <%'外部ファイル宣言 %>
+    <link rel="stylesheet" href="../Styles/SC3010201/SC3010201.css?20150515000000" type="text/css" media="all" />
+    <link rel="stylesheet" href="../Styles/SC3010201/SC3010201.PullDownRefresh.css?20120117000000" type="text/css" media="all" />
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.js?20190314000001"></script>
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.PullDownRefresh.js?20150515000000"></script>
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.MainMenuFingerscroll.js?20120117000000"></script>
+
+    <%'2015/5/15 TMEJ 河原 問連「20140910-05」対応 START %>
+    <%--<script type="text/javascript" src="../Scripts/SC3010201/jquery.touchSwipe-1.2.5.js"></script>--%>
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.jquery.touchSwipe.js?20150515000000"></script>
+    <%'2015/5/15 TMEJ 河原 問連「20140910-05」対応END %>
+
+    <%'HEADの穴あけ %>
+    <asp:ContentPlaceHolder ID="SC3010201head" runat="server"/>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="content" Runat="Server">
+    <asp:ScriptManager ID="managerScript" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+<%'左カラム %>
+<%--2012/02/29 TCS 松野 【SALES_2】 START--%>
+<div id="parentDiv">
+<%--2012/02/29 TCS 松野 【SALES_2】 END--%>
+<%'2013/12/19 TMEJ 小澤 IT9611_次世代サービス 工程管理機能開発 START %>
+<div class="WhatsNewArea">
+<%'2013/12/19 TMEJ 小澤 IT9611_次世代サービス 工程管理機能開発 END %>
+
+    <div id="contentsLeftBox" class="contentsFrame">
+        <h2 class="contentTitle"><icrop:CustomLabel ID="leftContentTitleLabel" CssClass="cutTextWord" UseEllipsis="true" Width="170px" runat="server"/></h2>
+    
+        <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 START--%>
+        <%--<div class="innerBox">--%>
+        <div id="contentsLeftBoxInner" class="innerBox">
+        <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 END--%>
+            <%'重要事項 %>
+            <div id="message">
+                <div class="iconsBoxMemo icon01"><a id="messageAddButton" href="javascript:void(0)"></a></div>
+                <h3><icrop:CustomLabel ID="messageTitleLabel" CssClass="cutTextWord" UseEllipsis="true" Width="200px" runat="server" /></h3>
+                <div id="messageInner01" class="nsc00BackGroud01 normalMode">
+                    <div id="messageInner02">
+
+                        <%'プルダウンリフレッシュのレイアウト %>
+                        <div id="messagePullDownToRefreshTemplateIn"></div>
+
+                        <%'重要事項 非同期更新用パネル %>
+                        <asp:UpdatePanel ID="MessageListViewUpPanel" runat="server" UpdateMode="Conditional">
+                            <ContentTemplate>
+
+                                <%'一覧ListView ここから %>
+                                <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 START--%>
+                                <%--<asp:ListView ID="MessageListView" runat="server" DataSourceID="MessageDataSource" EnableViewState="false" ClientIDMode="Predictable">--%>
+                                <asp:ListView ID="MessageListView" runat="server" EnableViewState="false" ClientIDMode="Predictable">
+                                <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 END--%>
+                                    <LayoutTemplate>
+                                        <ul>
+                                            <li id="itemPlaceholder" runat="server"/>
+                                        </ul>
+                                    </LayoutTemplate>
+                                    <ItemTemplate>
+                                        <li>
+                                        <%'メッセージ１件毎のレイアウト %>
+                                            <span class="messageImage">
+                                                <asp:Image runat="server" id="ImageForCreateAccount" src="../Styles/Images/SC3010201/nsc0001WhatsNewImportantPoint.png" alt="" />
+                                                <asp:Image runat="server" id="ImageForNotCreateAccount" src="../Styles/Images/SC3010201/nsc0000WhatsNewImportantPoint.png" alt="" />
+                                            </span>
+                                            <span class="messegeLineBox">
+                                                <icrop:CustomLabel ID="MessageTitleLabel" runat="server" 
+                                                            CssClass="MessageTitle" UseEllipsis="true" Width="176px" 
+                                                            Text='<%#HttpUtility.HtmlEncode(Eval("TITLE"))%>'/>
+                                                <asp:Label ID="Label2" runat="server" CssClass="MessageDay cutTextWord" Text='<%#HttpUtility.HtmlEncode(Eval("CREATEDATE_DISP"))%>' />
+                                                <%'詳細表示エリア %>
+                                                <div class="msgDetail">
+                                                    <asp:Literal ID="MesageDetailLiteral" Mode="PassThrough" runat="server" Text='<%# HttpUtility.HtmlEncode(Eval("MESSAGE")).Replace(vbCrLf, "<br/>").Replace(vbLf, "<br/>")%>' />
+                                                </div>
+                                                <div id="deleteBntArea" class="deleteBntArea">
+                                                    <asp:Button runat="server" ID="DeleteButton" CssClass="deleteButtonClass" Text='<%#WebWordUtility.GetWord("SC3010201", 13)%>' />
+                                                </div>
+                                                <div id="hiddenValueArea" class="hiddenValueArea">
+                                                    <span>
+                                                        <asp:Literal ID="createAccountLiteral" runat="server" Mode="Encode" Text='<%#HttpUtility.HtmlEncode(Eval("CREATESTAFFCD"))%>'></asp:Literal>
+                                                    </span>
+                                                </div>
+                                                <div id="hiddenValueAreaMessageNo" class="hiddenValueAreaMessageNo">
+                                                    <span>
+                                                        <asp:Literal ID="messageNoLiteral" runat="server" Mode="Encode" Text='<%#HttpUtility.HtmlEncode(Eval("MESSAGENO"))%>'></asp:Literal>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        
+                                        </li>
+                                    </ItemTemplate>
+                                    <EmptyDataTemplate>
+                                        <div id="messageNotFound">
+                                            <span><asp:Literal id="messageNotFoundLiteral" Mode="Encode" runat="server"></asp:Literal></span>
+                                        </div>
+                                    </EmptyDataTemplate>
+                                </asp:ListView>
+                                <%'一覧ListView ここまで %>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
+                        <%'データソース %>
+                        <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 START--%>
+                        <%--
+                        <asp:ObjectDataSource ID="MessageDataSource" runat="server"
+                                                SelectMethod="ReadMessageInfo" 
+                                                TypeName="Toyota.eCRB.Common.MainMenu.BizLogic.SC3010201BusinessLogic" />
+                        --%>
+                        <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 END--%>
+
+                    </div>
+
+                    <%'拡大・縮小ボタンの非同期更新パネル %>
+                    <asp:UpdatePanel ID="MessageListButtonUpPanel" runat="server" UpdateMode="Conditional" RenderMode="Inline">
+                        <ContentTemplate>
+                            <p class="more02">&nbsp;
+                                <%'拡大 %>
+                                <asp:LinkButton ID="MessageBigSizeLink" runat="server" CssClass="cutTextWord" OnClientClick="return false">
+                                    <icrop:CustomLabel ID="MessageNText1" runat="server"/>
+                                    <%=HttpUtility.HtmlEncode(MessageListView.Items.Count - 3)%>
+                                    <icrop:CustomLabel ID="MessageNText2" runat="server"/>
+                                </asp:LinkButton>
+                                <%'縮小 %>
+                                <asp:LinkButton ID="MessageNormalSizeLink" CssClass="cutTextWord" runat="server" OnClientClick="return false">&nbsp;</asp:LinkButton>
+                            </p>
+                            <%'非同期更新のトリガーボタン %>
+                            <asp:Button ID="MessageListViewUpdateButton" runat="server" style="display:none" />
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+                </div>
+            </div>
+
+            <%'RSS %>
+            <div id="news">
+                <h3><icrop:CustomLabel ID="newsTitleLabel" UseEllipsis="true" Width="200px" runat="server"/></h3>
+                <div id="newsInner01" class="normalMode">
+                    <div id="newsInner02">
+
+                        <%'プルダウンリフレッシュのレイアウト %>
+                        <div id="rssPullDownToRefreshTemplateIn"></div>
+
+                        <%'RSS 非同期更新用パネル %>
+                        <asp:UpdatePanel ID="RssListViewUpPanel" runat="server" UpdateMode="Conditional">
+                            <ContentTemplate>
+
+                                <%'一覧ListView %>
+                                <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 START--%>
+                                <%--<asp:ListView ID="RssListView" runat="server" EnableViewState="false" DataSourceID="RssDataSource" ClientIDMode="Predictable">--%>
+                                <asp:ListView ID="RssListView" runat="server" EnableViewState="false" ClientIDMode="Predictable">
+                                <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 END--%>
+                                    <LayoutTemplate>
+                                        <ul>
+                                            <li id="itemPlaceholder" runat="server"/>
+                                        </ul>
+                                    </LayoutTemplate>
+                                    <ItemTemplate>
+                                        <%'RSS１件毎のレイアウト %>
+                                        <li siteUrl='<%#HttpUtility.HtmlEncode(Eval("ITEM_URL"))%>'>
+                                            <icrop:CustomLabel ID="rssItemText" 
+                                                               CssClass="newsTitle" 
+                                                               runat="server" 
+                                                               UseEllipsis="true" 
+                                                               Width="205px" 
+                                                               Text='<%#HttpUtility.HtmlEncode(WebWordUtility.GetWord(AppId, 7) & Eval("ITEM_TITLE").ToString())%>'/>
+                                            <span class="newsDate cutTextWord"><asp:Literal ID="Literal1" Mode="Encode" runat="server" Text='<%#Eval("ITEM_CREATEDATE_DAY")%>'/></span>
+                                            <span class="newsTime cutTextWord"><asp:Literal ID="Literal2" Mode="Encode" runat="server" Text='<%#Eval("ITEM_CREATEDATE_TIME")%>'/></span>
+                                        </li>
+                                    </ItemTemplate>
+                                    <EmptyDataTemplate>
+                                        <div id="rssNotFound">
+                                            <span><asp:Literal id="rssNotFoundLiteral" Mode="Encode" runat="server"></asp:Literal></span>
+                                        </div>
+                                    </EmptyDataTemplate>
+                                </asp:ListView>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                        <%'データソース %>
+                        <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 START--%>
+                        <%--
+                        <asp:ObjectDataSource ID="RssDataSource" runat="server" 
+                                                SelectMethod="ReadRssInfo" 
+                                                TypeName="Toyota.eCRB.Common.MainMenu.BizLogic.SC3010201BusinessLogic" />
+                        --%>
+                        <%--2019/03/14 NSK 山田 18PRJ02750-00_(トライ店システム評価)サービス業務における次世代オペレーション実現の為の性能対策 END--%>
+                    </div>
+
+                    <%'拡大・縮小ボタンの非同期更新パネル %>
+                    <asp:UpdatePanel ID="RssListButtonUpPanel" runat="server" UpdateMode="Conditional" RenderMode="Inline">
+                        <ContentTemplate>
+                            <p class="more">&nbsp; <%'拡大 %><asp:LinkButton ID="RssBigSizeLink" CssClass="cutTextWord" runat="server" OnClientClick="return false">
+                                    <icrop:CustomLabel ID="NewsNText1" runat="server"/>
+                                    <%=RssListView.Items.Count - 3 %>
+                                    <icrop:CustomLabel ID="NewsNText2" runat="server"/>
+                                </asp:LinkButton><%'縮小 %><asp:LinkButton ID="RssNormalSizeLink" CssClass="cutTextWord"  runat="server" OnClientClick="return false">&nbsp;</asp:LinkButton></p><%'非同期更新のトリガーボタン %><asp:Button ID="RssListViewUpdateButton" runat="server" style="display:none" />
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+                </div>
+            </div>
+
+            <%'プルダウンリフレッシュのレイアウトテンプレートエリア %>
+            <div id="pullDownToRefreshTemplate" style="display:none">
+                <!--プルダウンリフレッシュエリア START-->
+                <div class="pullDownToRefresh step0">
+                    <!--内部ボックス-->
+                    <div class="pullDownToRefresh-inBox">
+
+                        <!--中央寄せのアイコン＆テキスト表示エリア-->    
+                        <div class="pullDownToRefresh-center">
+                    
+                            <!--上下矢印アイコン-->
+                            <span class="pullDownToRefresh-icon"></span>
+                            <!--読み込み中アイコン-->
+                            <span class="pullDownToRefresh-loding"></span>
+                            <!--テキスト-->
+                            <div class="pullDownToRefresh-text">
+                                <!--メッセージ-->
+                                <span class="pullDownToRefresh-textBlock pullDownToRefresh-message">
+                                    <span class="pullDownToRefresh-message-step0"><%:WebWordUtility.GetWord("SC3010201", 10)%></span>
+                                    <span class="pullDownToRefresh-message-step1"><%:WebWordUtility.GetWord("SC3010201", 11)%></span>
+                                    <span class="pullDownToRefresh-message-step2"><%:WebWordUtility.GetWord("SC3010201", 12)%></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--プルダウンリフレッシュエリア END-->
+            </div>
+
+            <% 'ログイン中のアカウント %>
+            <asp:HiddenField runat="server" id="accountHiddenField" />
+            <% '投稿したアカウント %>
+            <asp:HiddenField runat="server" id="createAccountHiddenField" />
+            <% '削除ボタン隠し %>
+            <asp:Button ID="DeleteButtonHidden" runat="server" style="display:none" />
+
+            <%'穴空け %>
+            <asp:ContentPlaceHolder ID="SC3010201leftBottomBox"  runat="server"/>
+        </div>
+    </div>
+<%'2013/12/19 TMEJ 小澤 IT9611_次世代サービス 工程管理機能開発 START %>
+    <div class="WhatsNewButtonClass">
+        <div class="WhatsNewButtonLine1"></div>
+        <div class="WhatsNewButtonLine2"></div>
+        <div class="WhatsNewButtonLine3"></div>
+    </div>
+    
+    <div class="WhatsNewActiveOverlay"></div>
+    <div class="WhatsNewActiveIcon"></div>
+    <asp:UpdatePanel ID="UpdatePanelReloadButton" runat="server" UpdateMode="Conditional" RenderMode="Inline">
+        <ContentTemplate>
+            <asp:Button ID="ReloadButton" runat="server" style="display:none" />
+        </ContentTemplate>
+    </asp:UpdatePanel>
+</div>
+<%'2013/12/19 TMEJ 小澤 IT9611_次世代サービス 工程管理機能開発 END %>
+
+<%'右側の穴あけ %>
+<asp:ContentPlaceHolder ID="SC3010201rightBox" runat="server"/>
+
+<%'重要事項登録 %>
+<div id="messageWinPopupBlack">&nbsp;</div><div id="messageWinPopup">
+    <uc1:SC3040101 ID="SC30401011" runat="server" EnableViewState="false" />
+</div>
+
+<%--2012/02/29 TCS 松野 【SALES_2】 START--%>
+</div>
+<%--2012/02/29 TCS 松野 【SALES_2】 END--%>
+
+<%'サーバー処理中のオーバーレイとアイコン %>
+<div id="serverProcessOverlayBlack"></div>
+<div id="serverProcessIcon"></div>
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+    <asp:ContentPlaceHolder ID="SC301020footer" runat="server"/>
+</asp:Content>

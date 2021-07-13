@@ -1,0 +1,602 @@
+﻿body { overflow: hidden;}
+
+li { list-style:none; margin:0px; text-indent: 0px; padding: 0px; }
+
+#BaseBox
+{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#container
+{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#MstPG_LoadingScreen
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:Black;
+    opacity:0.6;
+    z-index:1000;
+    display:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#MstPG_LoadingWrap
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#MstPG_LoadingScreen .loadingIcn
+{
+	display:block;
+	width:38px;
+	height:38px;
+	-webkit-animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+
+@-webkit-keyframes LoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(340deg);}
+}
+
+/* Header
+------------------------------------------------------------------------------*/
+/* ヘッダー全体を囲む枠 */
+div#header 
+{
+	height:44px;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f4f5f7), to(#a8acb9));
+	border-bottom:#797f8f 1px solid;
+	position: relative;
+}
+
+/*
+ヘッダー左側のボタングループ 
+*/
+#header .leftButtonsGroup 
+{
+    float:left;
+    display:compact;
+}
+
+#header .leftButtonsGroup li 
+{
+    width:38px;
+    height:42px;
+    top:1px;
+    position:absolute;
+}
+
+#header .leftButtonsGroup a 
+{
+    width:38px;
+    height:42px;
+    display:block;
+    position:relative;
+    z-index: 1;
+}
+
+/* -----------------------------------------------------------------通知 start */
+#forumButtonPanel.disabled
+{
+    opacity: 0.4;
+}
+
+#header .leftButtonsGroup .forumButton_blink
+{
+	left:165px;
+	top:10px;
+}
+
+#header .leftButtonsGroup .forumButton_blink .addStatus{
+	font-size:10px;
+	position:absolute;
+	top:11px;	left:20px;
+	color:#FFF;
+	-webkit-border-radius: 16px;
+	padding:1px;
+	background:#FFFFFF;
+	display:none;
+}
+
+#header .leftButtonsGroup .forumButton_blink .addStatus span{
+	display:block;
+	height:14px;
+	padding:2px 6px 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9d2d4), to(#ba070b));
+	-webkit-border-radius: 15px;
+}
+
+#MstPG_ForumHeader
+{
+   height:35px;
+   font-size:20px;
+   text-align:center;
+   font-weight:bold; 
+}
+
+#MstPG_ForumHeader p
+{
+    line-height:35px;
+}
+
+#MstPG_ForumHeader_blink
+{
+   height:35px;
+   font-size:20px;
+   text-align:center;
+   font-weight:bold; 
+}
+
+#MstPG_ForumHeader_blink p
+{
+    line-height:35px;
+}
+
+#myIMG_popover .content, #myIMG_blink_popover .content { padding:0px; }
+
+/* -----------------------------------------------------------------通知 end */
+
+#noticeListFrame
+{
+    position: absolute;
+    overflow:hidden;
+    top:65px;
+    left:978px;
+    z-index:3;
+    width:46px;
+}
+
+/* -----------------------------------------------------------------未対応来店客 start */
+#visitorButtonPanel.disabled
+{
+    opacity: 0.4;
+}
+#header .leftButtonsGroup .visitorButton_blink
+{
+	left:110px;
+	top:10px;
+}
+
+#header .leftButtonsGroup .visitorButton_blink .addStatusVisitor{
+	font-size:10px;
+	position:absolute;
+	top:11px;	left:20px;
+	color:#FFF;
+	-webkit-border-radius: 16px;
+	padding:1px;
+	background:#FFFFFF;
+	display:none;
+}
+
+#header .leftButtonsGroup .visitorButton_blink .addStatusVisitor span{
+	display:block;
+	height:14px;
+	padding:2px 6px 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9d2d4), to(#ba070b));
+	-webkit-border-radius: 15px;
+}
+
+#MstPG_VisitorHeader
+{
+   height:35px;
+   font-size:20px;
+   text-align:center;
+   font-weight:bold; 
+}
+
+#MstPG_VisitorHeader p
+{
+    line-height:35px;
+}
+
+#MstPG_VisitorHeader_blink
+{
+   height:35px;
+   font-size:20px;
+   text-align:center;
+   font-weight:bold; 
+}
+
+#MstPG_VisitorHeader_blink p
+{
+    line-height:35px;
+}
+
+#myVisit_popover .content, #myVisit_blink_popover .content { padding:0px; }
+/* -----------------------------------------------------------------未対応来店客 end */
+
+/* 前ページ */
+#header .leftButtonsGroup .prevButton 
+{
+    left:6px;
+    background:url(Images/headerImage01.png) 0 0 no-repeat;
+}
+          
+#header .leftButtonsGroup .prevButton:empty
+{
+    opacity: 0.3;
+}
+
+/* 検索条件 */
+#MstPG_SearchType
+{
+    float: left;
+    position: absolute;
+    top: 7px;
+    /* 2013/12/20 TCS 市川 Aカード情報相互連携開発 追加要望 START */
+    left:166px;
+    /* 2013/12/20 TCS 市川 Aカード情報相互連携開発 追加要望 END */
+    display:none;
+}
+
+#MstPG_SearchType .icrop-SegmentedButton
+{
+    border:none;
+    -webkit-box-shadow:none;
+}
+
+#MstPG_SearchType .icrop-SegmentedButton li
+{
+    color:#666666;
+	width:74px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+	font-size:12px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#bec1ca));
+	text-shadow:0px 1px 0px #FFF;
+	border:none;
+	border-top:1px solid #666666;
+	border-bottom:1px solid #666666;
+	border-right:1px solid #666666;
+    display:compact;
+    -webkit-box-shadow:0px 1px 1px #ccc;
+}
+
+#MstPG_SearchType .icrop-SegmentedButton li:first-child
+{
+	border:1px solid #666666;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+#MstPG_SearchType .icrop-SegmentedButton li:last-child
+{
+	border-top:1px solid #666666;
+	border-bottom:1px solid #666666;
+	border-right:1px solid #666666;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+#MstPG_SearchType .icrop-SegmentedButton .icrop-selected
+{
+    background:none;
+    background:-webkit-gradient(linear, left top, left bottom, from(#adb1b4), to(#676e74));
+    -webkit-box-shadow:none;
+    color:#FFFFFF;
+    text-shadow: 0px -1px 0px black;
+}
+    
+/*
+ヘッダー右側のボタングループ 
+*/
+#header .rightButtonsGroup { float:right; display:compact; }
+#MstPG_CustomerSearchArea,
+#header .rightButtonsGroup .imageIcon { display:block; top:1px; position:absolute; }
+
+/* 検索Box */
+#MstPG_CustomerSearchTextBoxPanel.disabled
+{
+    opacity: 0.4;
+}
+
+#MstPG_CustomerSearchArea {
+    width:165px;
+    right:130px; top:5px;
+    background-color:#FFFFFF;
+    -webkit-box-shadow:inset 3px 3px 3px #666;
+    box-shadow:inset 3px 3px 3px #666;
+    -webkit-border-radius: 18px;
+    padding:4px;
+    height: 26px;
+}
+
+#MstPG_CustomerSearchButton 
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#MstPG_CustomerSearchTextBoxArea
+{
+    position:absolute;
+    top: 6px;
+    left:28px;
+}
+
+#MstPG_CustomerSearchTextBoxArea .icrop-CustomTextBox-label
+{
+    top:5px;
+    left:0px;
+}
+
+#MstPG_CustomerSearchTextBox
+{
+    width: 133px;
+    height:22px;
+    border: none;
+    outline:0px;
+    -webkit-appearance:textfield;
+    -webkit-box-sizing:content-box;
+    -webkit-border-radius:11px;
+}
+
+/* コンテキストメニュー */
+#MstPG_PopOver1_popover .content
+{
+    margin: 5px;
+    padding: 2px 0px;
+}
+#MstPG_PopOver1_content .icrop-CustomButton
+{
+    -webkit-border-radius: 0px;
+}
+#MstPG_PopOver1_content .icrop-CustomButton-label
+{
+    text-align:left;
+    font-size: 16px;
+}
+
+.MstPG_ContextMenuItem
+{
+    padding:15px 15px;
+    width:248px;
+    text-align:left;
+	background-position:95% 50%;
+	background-repeat:no-repeat;
+	border-bottom: #CCC 1px solid;
+}
+
+.MstPG_ContextMenuItem:last-child
+{
+	border-bottom: #CCC 0px solid;
+}
+
+
+/* ロゴ */
+#header .rightButtonsGroup .imageIcon 
+{
+    width:95px;
+    height:42px;
+    right:17px;
+}
+
+/* 画面タイトル */
+#header h1 
+{
+    text-align:center;
+    font-weight:bold;
+    color:#686c74;
+}
+
+#header h1 .HeaderTitle
+{
+    font-size:20px;
+    vertical-align:middle;
+}
+
+#header h1 .HeaderStaff
+{
+    font-size:12px;
+    vertical-align:middle;
+}
+
+
+/* Main 基本部分
+------------------------------------------------------------------------------*/
+
+div#main {
+    height: 655px;
+    width: 1024px;
+    overflow: hidden;
+    background: #FFF;
+}
+
+#main > #contents { padding:20px; }
+
+/* Footer*/
+div#foot{
+	border-top:#000 1px solid;
+	width:1024px;
+	height:47px;
+	overflow:hidden;
+}
+
+#foot .footerNavi
+{
+	display:block;
+	width:1024px;
+	border-top:#434343 1px solid;
+	height:47px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e2e2e), 
+							color-stop(0.49, #151515),
+							color-stop(0.50, #000),
+							to(#000));
+}
+
+#footer
+{
+    float:left;
+}
+
+#MstPG_LockArea
+{
+    display:block;
+	width:60px;
+	height:24px;
+	border:none;
+	position:relative;
+	left:0;
+	top:20px;
+	float:left;
+}
+
+#MstPG_LockArea .icrop-CheckButton
+{
+    background-color:transparent;
+}
+
+#MstPG_LockArea .icrop-selected
+{
+    background:none;
+}
+
+#MstPG_LockCheckBox
+{
+    height:24px;
+    width:30px;
+}
+
+#MstPG_FooterButton
+{
+    float:left;
+}
+
+#MstPG_FooterButton div[id^=MstPG_FootItem_Space]
+{
+    float:left;
+    position:relative;
+}
+
+#MstPG_FooterButton .icrop-CustomButton
+{
+    width:76px;
+	height:43px;
+	/*border-left  :#434343 1px solid;
+	border-top   :#434343 1px solid;
+	border-right :#000 1px solid;
+	border-bottom:#000 1px solid;
+	-webkit-border-radius:4px;*/
+	background-position:center top;
+	background-repeat:no-repeat;
+	float:left;
+	margin-left:5px;
+}
+
+#MstPG_FooterButton .icrop-CustomButton-label
+{
+    display:block;
+	width:76px;
+	position:absolute;
+	bottom:2px;
+	font-size:10px;
+	line-height:10px;
+	text-align:center;
+	background-color:transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#MstPG_FooterButton .icrop-CustomButton-label
+{
+	color:#434343;
+}
+
+#MstPG_FooterButton .icrop-disabled {
+    background-color: transparent;
+}
+
+#MstPG_FooterButton .mstpg-selected .icrop-CustomButton-label
+{
+	color:#B0ADAD;
+}
+
+#MstPG_FooterButton #MstPG_FootItem_Space_Center .icrop-CustomButton-label
+{
+    left:5px;
+}
+
+/* 2014/03/10 TCS 武田 受注後フォロー機能開発 START */
+#MstPG_NextFooterArea
+{
+	display:block;
+	width:42px; height:37px;
+	position:absolute;
+	-webkit-border-radius:3px;
+	border:#000000 1px solid;
+	border-bottom:#333333 1px solid;
+    left:694px;
+    margin-top:4px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4f4f4f),
+							color-stop(0.01, #575757),
+							color-stop(0.50, #1f1f1f),
+							color-stop(0.51, #050505),
+							to(#000000));
+}
+
+#MstPG_NextFooterButton
+{
+    position: absolute;
+    top: 10px;
+    left: 11px;
+}
+
+#MstPG_NextFooterLabel
+{
+	position:absolute;
+	left:0; top:0;
+	width:42px;
+	display:block;
+	position:absolute;
+	text-align:center;
+	font-size:10px;
+	line-height:17px;
+	color:#8e8e8e;
+	font-weight:bold;
+}
+/* 2014/03/10 TCS 武田 受注後フォロー機能開発 END */
+
+/*　Loadingのオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#MstPG_registOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	background:#000;
+	width:1024px;
+	height:703px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#MstPG_registOverlayBlack.open { opacity:0.6; }
+
+/*　Loading
+ -------------------------------------------------------------------------------------------*/
+#MstPG_processingServer {
+	position:absolute;
+	background:url(Images/animeicn-1.png) no-repeat;
+	-webkit-animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:300px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+
+#MstPG_processingServer.show { display: block; }
+@-webkit-keyframes LoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(340deg);}
+}

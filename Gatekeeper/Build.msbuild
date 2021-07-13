@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- ビルドスクリプトが実行されているパス -->
+    <SolutionRoot Condition="$(SolutionPath) == ''">$(MSBuildProjectDirectory)</SolutionRoot>
+
+    <!-- 基盤出力ベースフォルダ -->
+    <ReferenceBinPath>$(MSBuildProjectDirectory)\..\..\ReferenceBin</ReferenceBinPath>
+
+    <!-- 基盤が出力する各業務用サイトフォルダ -->
+    <ReferenceBinSitePath>$(ReferenceBinPath)\WebSite_Gatekeeper</ReferenceBinSitePath>
+  </PropertyGroup>
+  
+
+  <Target Name="Build">
+    <!-- 基盤が出力する各業務用サイトフォルダ -->
+    <Exec Command="xcopy /E /I /F /G /R /K /Y $(ReferenceBinSitePath) $(SolutionRoot)\WebSite"/>
+
+    <!-- ソリューションのビルド -->
+    <MSBuild Projects="$(SolutionRoot)\icrop-gatekeeper.sln" Targets="Build"  />
+  </Target>
+</Project>

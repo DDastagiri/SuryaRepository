@@ -1,0 +1,134 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+// 全体フォーマット   
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	font-family:"Microsoft YaHei"
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td	{
+	margin: 0;	padding: 0;
+}
+
+input{
+	background-color: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
+	color: rgba(255, 255, 255, 0);
+	-webkit-appearance: none;
+}
+
+li{
+	list-style:none;
+	margin:0px;
+	text-indent: 0px;
+	padding: 0px;
+}
+
+hr {
+	display: none;
+	clear:both;
+}
+
+
+.clearboth{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	color:#FFFFFF;
+	font-size:1px;
+	line-height:1px;
+	text-indent:-3000px;
+	height:1px;
+}
+
+a{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+
+/* その他
+------------------------------------------------------------------------------*/
+div#MainBlock{
+	width:1920px;
+	overflow:auto;
+	display:block;
+	position:relative;
+}
+div#InnerMainBlock{
+	display:block;
+	margin:20px;
+	position:relative;
+	top:0; left:0;
+}
+
+.heightType01{height:1080px;}
+.baceBgType01{
+	background: -webkit-gradient(linear, left top, left bottom, from(#000000),
+							to(#414141));
+}
+
+
+
+/* Debug用
+------------------------------------------------------------------------------*/
+.likeButton 
+{
+    border:#4F5153 1px solid;
+    border-radius:6px;
+    color:#FFF;
+    font-weight:600;
+    text-shadow:-1px -1px 1px #666;
+    text-align:center;
+    -webkit-box-shadow:1px 1px 0px #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#CD6B74), color-stop(0.45, #CD6B74), color-stop(0.5, #B01825), color-stop(1.0, #B01825));
+}
+
+
+
+/* 処理中オーバーレイ
+-------------------------------------------------------------------------------------------*/
+.registOverlay {
+    position:absolute;
+    /*top:0px;
+    left:0px;*/
+    background-color:Black;
+    opacity:0.6;
+    z-index:1000;
+    display:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.registOverlay .registWrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* 処理中アイコン表示
+ -------------------------------------------------------------------------------------------*/
+.registOverlay .registWrap .processingServer {
+	background:url(Images/animeicn-1.png) no-repeat;
+	display:block;
+	width:38px;
+	height:38px;
+	-webkit-animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+@-webkit-keyframes LoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(340deg);}
+}
+
+

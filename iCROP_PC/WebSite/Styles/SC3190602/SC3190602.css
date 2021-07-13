@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* CSS Document SC3190602 */
+
+input {
+    font-family: Helvetica, sans-serif;
+}
+
+#SC3190602_Panel .Line_InputBox .BO_PopInput{
+    font-family: Helvetica, sans-serif;
+    line-height: 42px;
+}
+
+/* 読み込み中に操作不可とするため全体に設定する透明なオーバーレイ */
+#SC3190602_Panel #SC3190602_Overlay
+{
+    position:absolute;
+    top:0px; 
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:10001;
+    display:none;
+    background: #1E1E1E;
+    opacity: 0.5;
+}
+
+/* 処理中アイコン表示 */
+#SC3190602_Panel #SC3190602_ProcessingServer {
+    position:absolute;
+    background:url(../Images/SC3190602/animeicn.png) no-repeat;
+    animation: LoadingAnimation 1.0s infinite linear;
+    display:none;
+    top:442px;
+    left:732px;
+    width:38px;
+    height:38px;
+    z-index:10002;
+}
+
+@keyframes LoadingAnimation {
+    0%{ transform:rotate(0deg);}
+    100%{transform:rotate(340deg);}
+}
+
+/* 背景色用 */
+#Black_Back{
+    width:1920px;
+    height:1080px;
+    background:#000;
+    z-index:1;
+    opacity:0.4;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+
+/* 全体エリアの背景色 */
+#PopUp_Back{
+    width:1464px;
+    height:944px;
+    background:#1e1e1e;
+    opacity:0.9;
+    z-index:98;
+    border:#FFF 1px solid;
+    border-radius:18px;
+    box-shadow:0px 10px 24px #000;
+    position:absolute;
+    top:67px;
+    left:227px;
+    display:none;
+}
+
+/* 全体エリア */
+#SC3190602_Panel{
+    width:1464px;
+    height:944px;
+    background:none;
+    opacity:1.0;
+    z-index:99;
+    position:absolute;
+    top:67px;
+    left:227px;
+    display:none;
+}
+
+#SC3190602_Panel .PopUp_Head_Box{
+    width:1464px;
+    height:99px;
+    text-align:center;
+}
+
+#SC3190602_Panel .CloseBtn{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:68px;
+    height:68px;
+    background:url(../Images/SC3190602/Parts-B_Omonitor_CloseBtn.png) right top no-repeat;
+}
+
+#SC3190602_Panel .PopUp_Head_Box span{
+    font-size:48px;
+    color:#FFF;
+    line-height:99px;
+}
+#SC3190602_Panel .PopUp_Contents_Box{
+    width:1358px;
+    height:734px;
+    margin:20px auto 0;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Upper_Line01{
+    width:1352px;
+    height:44px;
+    /* add */
+    position: relative;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Upper_Line01 .F24{
+    font-size:24px; 
+}
+#SC3190602_Panel .Line_Title{
+    width:195px;
+    height:44px;
+    color:#FFF;
+    font-size:30px;
+    line-height:44px;
+    text-align:left;
+    float:left;
+}
+#SC3190602_Panel .Line_InputBox{
+    width:441px;
+    height:44px;
+    margin-left:10px;
+    float:left;
+}
+#SC3190602_Panel .Line_InputBox .BO_PopInput{
+    width:441px;
+    height:42px;
+    font-size:30px;
+    box-shadow:0px 2px 5px #919191 inset;
+    border-radius:8px;
+    border:none;
+}
+#SC3190602_Panel .MGL53{
+    margin-left:53px;   
+}
+#SC3190602_Panel .MGT30{
+    margin-top:30px;    
+}
+#SC3190602_Panel .MGT10{
+    margin-top:10px;    
+}
+#SC3190602_Panel .MGT15{
+    margin-top:15px;    
+}
+#SC3190602_Panel .MGT24{
+    margin-top:24px;    
+}
+#SC3190602_Panel .MGL06{
+    margin-left:6px;    
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box{
+    width:1358px;
+	/* del
+	height:318px;
+	position:relative;*/
+    margin-top:24px;
+	margin:17px 4px 7px 4px;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Top_TBL{
+    /* del
+    position:absolute;*/
+    top:0; left:0;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Parts_TBL_Head{
+    height:72px;
+    color:#FFF;
+    font-size:30px;
+    font-weight:normal;
+    line-height:72px;
+    text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+    border-spacing:0px;
+    border-collapse: collapse;
+    background:-webkit-gradient(linear, left top, left bottom, from(#023293),
+                color-stop(0.30, #0569d6),color-stop(0.40, #0786f3),
+                color-stop(0.80, #0569d6),color-stop(0.61, #0786f3),
+                to(#023aa8));
+}
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .F24{
+    font-size:24px; 
+}
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .TAL{
+    text-align:left;    
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Bottom_TBL{
+    /* del
+    height:240px;
+    position:absolute;*/
+	/* add st */
+	margin-top: -6px;
+	/* add ed */
+    top:78px; left:0;
+    /*overflow-y:scroll;*/
+}
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Bottom_TBL .Parts_TBL_Contents{
+    height:72px;
+    color:#000;
+    font-size:28px;
+    font-weight:normal;
+    line-height:72px;
+    border-spacing:0px;
+    border-collapse: collapse;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Bottom_TBL .Checked{
+    background:url(../Images/SC3190602/Parts-B_Omonitor_CheckSign.png) left top no-repeat;    
+}
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Bottom_TBL .TAL{
+    text-align:left;
+}
+
+#SC3190602_Panel .W576{
+    width:558px;
+    padding-left:18px;
+}
+#SC3190602_Panel .W180{
+    width:180px;    
+}
+#SC3190602_Panel .W100{
+    width:100px;    
+}
+
+/* 部品情報の入力エリア */
+#SC3190602_Panel .partsTable input
+{
+    width:90%;
+    height:42px;
+    font-size:28px;
+    font-weight:normal;
+    box-shadow:0px 2px 5px #919191 inset;
+    border-radius:8px;
+    border:none;
+    line-height: 42px;
+}
+
+#SC3190602_Panel .BG01{
+    background:#FFF;
+}
+#SC3190602_Panel .BG02{
+    background:#dcecff;
+}
+#SC3190602_Panel .BG03{
+    background:-webkit-gradient(linear, left top, left bottom, from(#6485eb),
+                color-stop(0.50, #3560e4),
+                color-stop(0.51, #1e4ee1),
+                to(#1e4ee1));
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .Button_OutBox{
+    width:226px;
+    height:80px;
+    background:#000;
+    border-top:#252525 2px solid;
+    border-left:#4f4f4f 2px solid;
+    border-right:#4f4f4f 2px solid;
+    border-bottom:#777777 2px solid;
+    border-radius:18px;
+    box-shadow:0px -2px 2px #3c3c3c inset;
+    float:right;
+    margin-right:6px;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Button_OutBox .Button_01{
+    width:220px;
+    height:72px;
+    margin:4px auto;
+    border-radius:15px;
+    text-align:center;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Button_OutBox .Button_01 span{
+    color:#FFF;
+    font-size:30px;
+    line-height:72px;
+    text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .Button_OutBoxOff{
+	width:226px;
+	height:80px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#040404),
+				to(#292929));
+	border-top:#252525 2px solid;
+	border-left:#4f4f4f 2px solid;
+	border-right:#4f4f4f 2px solid;
+	border-bottom:#777777 2px solid;
+	border-radius:18px;
+	float:right;
+	margin-right:6px;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Button_OutBoxOff .Button_01{
+	background:-webkit-gradient(linear, left top, left bottom, from(#b1b5bb),
+				to(#6b737e));
+	width:220px;
+	height:72px;
+	margin:4px auto;
+	border-radius:15px;
+	text-align:center;
+}
+#SC3190602_Panel .PopUp_Contents_Box .Button_OutBoxOff .Button_01 span{
+	color:rgba(255,255,255,0.4);
+	font-size:30px;
+	line-height:72px;
+	text-shadow:rgba(0, 0, 0, 0.2) 0 -2px 1px;
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Bottom_TBL .TAL .IconBox{
+	position:relative;
+	width:69px;
+	height:62px;
+	float:left;
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .IconPlus{
+	position:absolute;
+	left:0; top:4px;
+	background:url(../Images/SC3190602/icon_plus.png) center center no-repeat,
+				-webkit-gradient(linear, left top, left bottom, from(#6586eb),
+            	color-stop(0.50, #3560e4),
+           		color-stop(0.51, #1e4ee1),
+				to(#1e4ee1));
+	border-radius:10px;
+	border:rgba(0,0,0,0.75) 2px solid;
+	width:50px;
+	height:51px;
+	box-shadow:inset rgba(0,0,0,0.5) 0 1px 2px;
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .IconMinus{
+	position:absolute;
+	left:0; top:4px;
+	background:url(../Images/SC3190602/icon_minus.png) center center no-repeat,
+				-webkit-gradient(linear, left top, left bottom, from(#6586eb),
+            	color-stop(0.50, #3560e4),
+           		color-stop(0.51, #1e4ee1),
+				to(#1e4ee1));
+	border-radius:10px;
+	border:rgba(0,0,0,0.75) 2px solid;
+	width:50px;
+	height:51px;
+	box-shadow:inset rgba(0,0,0,0.5) 0 1px 2px;
+}
+
+#SC3190602_Panel .PopUp_Contents_Box .Parts_TBL_Box .Bottom_TBL .TAL .TextBox{
+	width: 487px;
+	height:62px;
+	float:left;
+}
+
+/* ここから追加分 */
+.Ellipsis {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+#OperationScroll{
+    width: 1387px;
+    height: 564px;
+    overflow: auto;
+    position: relative;
+    background:url(../Images/SC3190602/PopUp_sscroll.png) 0 0 repeat;
+    margin-top: 15px;
+}
+
+.OperationArea{
+    float: left;
+}
+
+.partsTable tbody tr:nth-child(odd) { background:#FFF; }
+.partsTable tbody tr:nth-child(even) { background:#dcecff; }
+
+#SC3190602_Panel .BG04{
+    background:-webkit-gradient(linear, left top, left bottom, from(#404040),
+                color-stop(0.50, #404040),
+                color-stop(0.51, #1E1E1E),
+                to(#1E1E1E));
+}
+
+#SC3190602_JobDelIcon {
+    position: absolute;
+    width: 69px;
+    height: 62px;
+    left: 656px;
+    top: -11px;
+}
+
+#SC3190602_PartsAddIcon {
+    position: absolute;
+    width: 69px;
+    height: 62px;
+    left: 1294px;
+    top: -11px;
+}

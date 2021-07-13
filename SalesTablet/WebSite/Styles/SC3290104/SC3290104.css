@@ -1,0 +1,450 @@
+@charset "utf-8";
+/* CSS Document SC3290104 */
+
+
+/* ヘッダー */
+#SC3290104_Panel #SC3290104_Header 
+{
+    height:43px;
+    width: 402px;
+    overflow: hidden;
+}
+
+/* キャンセルボタン */
+#SC3290104_Panel #SC3290104_CancelButton {
+    position:absolute;
+    top:7px;
+    left:5px;
+    font-weight:bold;
+    width:78px;
+    height:22px;
+    padding:5px 0 0 0;
+    font-size: 0.60em;
+    border:#25272b 1px solid;
+    border-left:none;
+    box-shadow:0px 1px 0px #6e727b;
+    border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+                                    color-stop(0.50, #0d1734),
+                                    color-stop(0.501, #000b29),
+                                    to(#000b29));
+    z-index:2;
+    overflow: hidden;
+}
+
+/* タイトル */
+#SC3290104_Panel #SC3290104_Title {
+    position:relative;
+    height:45px;
+    top:8px;
+    font-weight:bold;
+    text-shadow:0px -1px 0px #333;
+}
+
+/* 完了ボタン */
+#SC3290104_Panel #SC3290104_RegistButton {
+    text-decoration: none;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    display: block;
+    font-size: 0.60em;
+    font-weight:bold;
+    width: 78px;
+    height: 22px;
+    padding: 5px 0 0 0;
+    border: #25272B 1px solid;
+    box-shadow: 0px 1px 0px #6E727B;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6F96E8), 
+     color-stop(0.50, #376FE0),
+     color-stop(0.501, #2361DD),
+     to(#2361DD));
+    overflow: hidden;
+}
+
+
+/* ボディー */
+#SC3290104_Panel #SC3290104_Content
+{
+    height:430px;
+    width: 370px;
+}
+
+#SC3290104_Panel #SC3290104_Content .UnderLineSet .DataLine01
+{
+    height:42px;
+    padding-bottom:10px;
+}
+
+#SC3290104_Panel #SC3290104_Content .UnderLineSet .DataLine02
+{
+    height:45px;
+    padding-bottom:10px;
+}
+
+#SC3290104_Panel .DataLine_Left
+{
+    width:520px;
+    height:auto;
+    float:left;
+}
+
+#SC3290104_Panel .DataLine_Right
+{
+    width:200px;
+    height:auto;
+    float:right;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListArrow
+{
+    background:url(../Images/SC3290104/ListArrowGr.png) 209px 15px no-repeat;
+}
+
+#SC3290104_Panel #SC3290104_Content .FllwExprDate
+{
+    -webkit-appearance: none;
+    border-width: 0px;
+    text-align:center;
+    font-size:16px;
+    position:absolute;
+    top:11px;
+    left:12px;
+    width: 50%;
+    height: 19px;
+}
+
+#SC3290104_Panel #SC3290104_Content .Titlebox01
+{
+    font-size:11px;
+    color:#666666;
+    line-height:12px;
+    padding:0 0 3px 0;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01
+{
+    overflow:hidden;
+    width:365px;
+    height:43px;
+    border:#bbbbbb 1px solid;
+    border-radius:9px;
+    box-shadow:0px 1px 0px #FFF;
+    background-color:#FFF;
+    margin:0 0 10px 0;
+    clear:both;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 li
+{
+    width:365px;
+    height:43px;
+    overflow:hidden;
+    border-bottom:#bbbbbb 1px solid;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 li:first-child
+{
+    border-radius:8px 8px 0 0;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 li:last-child
+{
+    border-radius:0 0 8px 8px;
+    border:none;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 dl
+{
+    width:365px;
+    height:43px;
+    overflow:hidden;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 dt,
+#SC3290104_Panel #SC3290104_Content .ListBox01 dd
+{
+    float:left;
+    height:43px;
+    line-height:43px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 dt
+{
+    width:135px;
+    font-size:11px;
+    text-align:right;
+    color:#666666;
+    border-right:#bbbbbb 1px solid;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 dt p
+{
+    padding:0 10px 0 0;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 dd
+{
+    position:relative;
+    width:229px;
+    font-size:14px;
+    text-align:left;
+    color:#000;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 dd p
+{
+    padding:0 0 0 10px;
+}
+
+#SC3290104_Panel #SC3290104_Content .FollowFlg
+{
+    position:absolute;
+    right:10px; top:8px;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_Off
+{
+    border:#7e7e7e 1px solid;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_On .FollowBack,
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_Off .FollowBack
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#2a5cb5), to(#72aafb));
+    width:92px;
+    height:25px;
+    border-radius:4px;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_Off .FollowBack{
+    background: -webkit-gradient(linear, left top, left bottom, from(#bebebe),
+                            color-stop(0.5, #eeeeee),
+                            color-stop(0.5, #f7f7f7),
+                            to(#fefefe));
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_On .FollowBack .FollowText,
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_Off .FollowBack .FollowText
+{
+    position:absolute;
+    top:0;
+    width:52px;
+    height:25px;
+    font-size:17px;
+    font-weight:bold;
+    color:#8b8b8b;
+    line-height:26px;
+    text-align:center;
+    border-radius:4px;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_On .FollowBack .FollowText
+{
+    left:0;
+    color:#FFF;
+}
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_Off .FollowBack .FollowText
+{
+    right:0;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_On .FollowBtn,
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_Off .FollowBtn
+{
+    position:absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d7d7d7), to(#fafafa));
+    box-shadow:#f7f7f7 0 1px 0 inset;
+    border-radius:4px;
+    top:0;
+    width:38px;
+    height:25px;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_On .FollowBtn
+{
+    right:0;
+    border-left:#7e7e7e 1px solid;
+}
+
+#SC3290104_Panel #SC3290104_Content .ListBox01 .Follow_Off .FollowBtn
+{
+    left:0;
+    border-right:#7e7e7e 1px solid;
+}
+
+#SC3290104_Panel #SC3290104_Content .MemoBox01
+{
+    border:#bbbbbb;
+    width:347px;
+    height:106px;
+    border:#bbbbbb 1px solid;
+    border-radius:9px;
+    box-shadow:0px 1px 0px #FFF;
+    background-color:#FFF;
+    margin:0 0 10px 0;
+    clear:both;
+    font-size:14px;
+    line-height:22px;
+    font-weight: bold;
+    padding: 5px 9px;
+}
+
+#SC3290104_Panel #SC3290104_Content .ClearBtn01,
+#SC3290104_Panel #SC3290104_Content .ClearBtn02
+{
+    width:366px;
+    height:40px;
+    box-shadow:0px 1px 0px #FFF;
+    border:#717682 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF),
+                            color-stop(0.5, #FFF),
+                            color-stop(0.5, #edeff3),
+                            to(#edeff3));
+    font-size:14px;
+    line-height:40px;
+    font-weight:bold;
+    color:#666666;
+    text-align:center;
+    border:#727783 1px solid;
+    border-radius:6px;
+    margin:0 0 8px 0;
+    overflow: hidden;
+}
+
+#SC3290104_Panel #SC3290104_Content .ClearBtn02
+{
+    color:#000000;
+    overflow: hidden;
+}
+
+#SC3290104_Panel #SC3290104_Content .MemoBtnSet
+{
+    overflow:hidden;
+    width:367px;
+    height:42px;
+    font-size:14px;
+    font-weight:bold;
+    line-height:40px;
+    color:#c9c9c9;
+    margin:0 0 8px 0;
+}
+
+#SC3290104_Panel #SC3290104_Content .MemoBtnColor
+{
+    color:#666666;
+}
+
+#SC3290104_Panel #SC3290104_Content .MemoBtn01
+{
+    float:left;
+    width:170px;
+    height:40px;
+    box-shadow:0px 1px 0px #FFF;
+    border:#999999 1px solid;
+    font-size:14px;
+    text-align:center;
+    border:#727783 1px solid;
+    border-radius:6px;
+    overflow: hidden;
+}
+
+#SC3290104_Panel #SC3290104_Content .MemoBtn02
+{
+    float:right;
+    width:182px;
+    height:40px;
+    box-shadow:0px 1px 0px #FFF;
+    border:#999999 1px solid;
+    font-size:14px;
+    text-align:center;
+    border:#727783 1px solid;
+    border-radius:6px;
+    overflow: hidden;
+}
+
+#SC3290104_Panel #SC3290104_Content .MemoEndBtn,
+#SC3290104_Panel #SC3290104_Content .MemoEndBtn02
+{
+    width:364px;
+    height:38px;
+    box-shadow:0px 1px 0px #FFF;
+    border:#999999 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b1b5bb),
+                            to(#6d747f));
+    font-size:14px;
+    line-height:38px;
+    color:#b2b5ba;
+    text-shadow:rgba(0,0,0,0.5) 0 -1px 0;
+    text-align:center;
+    border:#727783 1px solid;
+    border-radius:6px;
+    overflow: hidden;
+}
+
+#SC3290104_Panel #SC3290104_Content .MemoEndBtn02
+{
+    color:#FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7197e8),
+                            color-stop(0.5, #3870e0),
+                            color-stop(0.5, #2663dd),
+                            to(#2463de));
+    overflow: hidden;
+}
+
+#SC3290104_Panel #SC3290104_NowDate
+{
+    display: none;    
+}
+
+/* オーバーレイ（全体） */
+#SC3290104_Panel #SC3290104_RegistOverlayBlack
+{
+    position:absolute;
+    top:0px; 
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:10001;
+    display:none;
+    opacity:0;
+}
+
+/* オーバーレイ（コンテンツ部分） */
+#SC3290104_Panel #SC3290104_ContentOverlayBlack
+{
+    position:absolute;
+    top:50px; 
+    left:10px;
+    right:10px;
+    bottom:10px;
+    background:#FFF;
+    z-index:10001;
+    display:none;
+}
+
+/* 処理中アイコン表示 */
+#SC3290104_Panel #SC3290104_ProcessingServer {
+    position:absolute;
+    background:url(../Images/SC3290104/animeicn.png) no-repeat;
+    animation: LoadingAnimation 1.0s infinite linear;
+    display:none;
+    top:228px;
+    left:182px;
+    width:38px;
+    height:38px;
+    z-index:10002;
+}
+
+@keyframes LoadingAnimation {
+    0%{ transform:rotate(0deg);}
+    100%{transform:rotate(340deg);}
+}
+
+/* フォロー期日が過去の場合の背景色 */
+#SC3290104_Panel .required-error-background {
+    background-color: pink  !important;
+}

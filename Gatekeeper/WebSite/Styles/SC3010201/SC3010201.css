@@ -1,0 +1,317 @@
+﻿a { color:#007FB5; text-decoration:none; }
+a:hover { color:#007FB5; text-decoration:none; }
+/*コンテンツフレームの内枠 */
+div.contentsFrame .innerBox { padding: 0px 15px; position: relative; }
+
+/*文字列カット*/
+.cutTextWord { white-space:nowrap;  overflow:hidden; }
+
+/*　左カラム用
+-------------------------------------------------------------------------------------------*/
+#contentsLeftBox {
+    width:320px;
+    height:613px;
+    float:left;
+}
+
+#contentsLeftBox h3 {
+    display:block;
+    font-size:14px;
+    line-height:14px;
+    margin:0px 0px 10px;
+    color:#666;
+}
+
+
+/*　重要事項
+-------------------------------------------------------------------------------------------*/
+/*全体を囲む枠 */
+#message { position: absolute; top: 14px; left: 15px; background: #FFF; z-index: 3; }
+
+/*重要事項背景 */
+div.nsc00BackGroud01 {
+    border-bottom:1px solid #c1c1c1;
+    border-top:1px solid #c1c1c1;
+    border-left:1px solid #c1c1c1;
+    border-right:1px solid #dedede;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2) inset;
+    width:290px;
+    margin: 0px;
+}
+
+/*ulタグを囲む枠 */
+#messageInner01 { width: 290px; font-size: 12px; line-height: 14px; }
+
+/*リスト */
+#messageInner01 ul { margin:0px 0px 0px 10px; padding:3px 0px 0px; list-style-type:none; }
+#messageInner01 ul li {
+    -webkit-transition: height 300ms ease-in-out 0;
+    width:269px; 
+    min-height:24px;
+    padding:5px 0px 0px 0px;
+    box-sizing: border-box;
+    display: block;
+}
+#messageInner01 ul li .messegeLineBox {
+    -webkit-transition: height 300ms ease-in-out 0;
+    display: block;
+    width: 269px;
+    height: 21px;
+    position: relative;
+    padding: 4px 0px 0px 23px;
+    -webkit-box-shadow: 2px 2px 3px rgba(30,30,30,0.7);
+    box-sizing: border-box;
+    background: #f0f0f0 url(../Images/SC3010201/nsc0000WhatsNewImportantPoint.png) 0px 0px no-repeat;
+}
+
+/*重要事項通常サイズ */
+#messageInner01 ul.normalMode li { display: none; }
+#messageInner01 ul.normalMode li:nth-child(1),#messageInner01 ul.normalMode li:nth-child(2),#messageInner01 ul.normalMode li:nth-child(3)
+{
+    display: block;
+}
+
+/*選択中の項目 */
+#messageInner01 ul li.selectionItem {}
+#messageInner01 ul li.selectionItem .messegeLineBox {}
+
+/*タイトル・日付・メッセージ */
+#messageInner01 li .MessageTitle { float:left; }
+#messageInner01 li .MessageDay {
+    float:right;
+    padding:0 5px 0 0;
+    text-align:right;
+    color:#aaa;
+    font-size:11px;
+    width:60px;
+}
+#messageInner01 li div.msgDetail 
+{
+    font-size:12px;
+    line-height:16px;
+    color:#333;
+    padding: 10px 10px 0px 0px;
+    left:0px;
+    float:none; clear:both;
+    box-sizing: border-box;
+    display: none;
+}
+
+/*重要事項ulタグを囲む枠 */
+#messageInner02 { height: 84px; -webkit-transition: height 600ms ease-in-out 0; }
+/*重要事項拡大 */
+#messageInner01 div#messageInner02.bigMessageWindow { height: 267px;  }
+
+/*重要事項なし*/
+#messageNotFound { padding-top: 40px; text-align: center; }
+
+/*メモアイコン*/
+#contents .icon01 {
+	display:block;
+	position:absolute;
+	right:0px;
+	top:-16px;
+	float:right;
+}
+#contents .iconsBoxMemo { border:#999 1px solid; }
+
+/*　RSS
+-------------------------------------------------------------------------------------------*/
+/*全体を囲む枠 */
+#news { position: absolute; top: 154px; left: 15px; border-bottom:1px #CCC solid; background:#FFF; z-index:2;  }
+
+/*RSSリスト */
+#newsInner01 { width: 290px; }
+#newsInner01 ul { font-size: 12px; line-height:14px;  }
+#newsInner01 ul li { display: block; margin-bottom: 2px;  height:14px; position: relative; }
+#newsInner01 ul li .newsTitle { 
+    display:inline-block; 
+    width:205px; 
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    color:#0086e5; 
+    letter-spacing:-1px;
+    text-shadow: 1px 1px 2px #999;
+}
+#newsInner01 ul li .newsDate { color:#808080; width:40px; display:inline-block; position:absolute; top:0px; right:40px; text-align:right; }
+#newsInner01 ul li .newsTime { color:#808080; width:40px; display:inline-block; position:absolute; top:0px; right:0px; text-align:right; }
+
+/*通常サイズ */
+#newsInner01 ul.normalMode li { display: none; }
+#newsInner01 ul.normalMode li:nth-child(1),#newsInner01 ul.normalMode li:nth-child(2),#newsInner01 ul.normalMode li:nth-child(3)
+{
+    display: block;
+}
+
+#newsList { font-size:12px; line-height:14px; width:290px; }
+#newsList .newsTitle{
+    color:#0086e5;
+    font-weight:normal;
+    float:left;
+    letter-spacing:-1px;
+    text-shadow: 1px 1px 2px #999; 
+}
+#newsList .newsDate  { width:39px; color:#808080; float:right; }
+#newsList .newsTime  { width:34px; color:#808080; float:right; }
+#newsList .clearboth { margin-bottom:2px; }
+
+/*RSSのulタグを囲む枠 */
+#newsInner02 { height: 52px; -webkit-transition: height 400ms ease-in-out 0; overflow:hidden; }
+/*RSS拡大 */
+#newsInner01 div#newsInner02.bigMessageWindow { height: 165px;  }
+
+/*RSSなし*/
+#rssNotFound { padding-top: 15px; text-align: center; }
+
+/*　重要事項・ＲＳＳ共通
+-------------------------------------------------------------------------------------------*/
+
+/*他Ｎ件*/
+#messageInner01 p.more02, #newsInner01 p.more {
+    text-align: right;   
+    font-size: 10px;
+    margin: 0px 0px 0px;
+}
+#messageInner01 p.more02 a, #newsInner01 p.more a { color: #999; min-width: 55px; display: inline-block; padding-top:5px; padding-right:12px; box-sizing: border-box;  }
+#messageInner01 p.more02 a:first-child, #newsInner01 p.more a:first-child { background:url(../Images/SC3010201/nsc0000more01.png) right center no-repeat; }
+#messageInner01 p.more02 a:last-child, #newsInner01 p.more a:last-child { background:url(../Images/SC3010201/nsc0000more02.png) right center no-repeat; }
+#messageInner01 p.more02 { padding: 2px 10px 2px 0;  }
+#newsInner01 p.more { padding:3px 10px; }
+
+/*データなしのテキスト*/
+#messageNotFound span, #rssNotFound span { color:#777; font-size:12px; }
+
+/*　重要事項登録ポップアップ
+-------------------------------------------------------------------------------------------*/
+#messageWinPopupBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:44px; 
+	left:0;
+	background:#000;
+	z-index:100;
+	width:1024px;
+	height:656px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+
+#messageWinPopupBlack.open { opacity:0.6; }
+
+/* ポップアップ */
+#messageWinPopup {
+    position:absolute;
+	top:140px;
+	left:290px;
+	z-index:5;
+	display:none;
+	opacity:0;
+	-webkit-transition: opacity 300ms ease-in-out 0;
+}
+
+#messageWinPopup.open {
+	opacity:1;
+}
+
+
+/* ここから共通
+------------------------------------------------------------------------------*/
+
+
+.clearboth {
+    display:block;
+    overflow:hidden;
+    clear:both;
+    color:#FFFFFF;
+    font-size:1px;
+    line-height:1px;
+    text-indent:-3000px;
+    height:1px;
+}
+
+/* コンテンツフレーム
+------------------------------------------------------------------------------*/
+/* フレーム枠 */
+#contents .contentsFrame {
+    -webkit-border-radius: 7px 7px 7px 7px;
+    background:#FFF;
+    border:#a5a5a5 1px solid;
+    box-shadow:3px 3px 3px #666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+    color-stop(0.90, #FFF),
+    color-stop(0.91, #FFF),
+    to(#dfdfdf));
+}
+
+/* フレームタイトル */
+#contents .contentTitle {
+    width:190px;
+    font-size:16px;
+    padding:0px 0 0px 16px;
+    margin-bottom:7px;
+    color:#FFFFFF;
+    height:26px;
+    display:block;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-border-top-left-radius:7px;
+    -webkit-border-top-right-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -webkit-border-bottom-right-radius:56px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+    color-stop(0.50, #797d84),
+    color-stop(0.51, #6a6e76),
+    to(#6a6e76));
+}
+
+/* メモアイコン
+------------------------------------------------------------------------------*/
+#contents .iconsBoxMemo{
+	width:31px; height:31px;
+	border:#666 1px solid;
+	-webkit-border-radius:3px;
+	background:url(../Images/SC3010201/iconMemo.png) 7px 7px no-repeat #FFF;
+}
+#contents .iconsBoxMemo a {
+	display:block;
+	width:31px; height:31px;
+}
+
+
+/*　サーバー処理中のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#serverProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0;
+	background:#000;
+	z-index:100;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#serverProcessOverlayBlack.open { opacity:0.6; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#serverProcessIcon {
+	position:absolute;
+	background:url(../Images/SC3010201/animeicn-1.png) no-repeat;
+	-webkit-animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:344px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+#serverProcessIcon.show { display: block; }
+@-webkit-keyframes LoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(340deg);}
+}

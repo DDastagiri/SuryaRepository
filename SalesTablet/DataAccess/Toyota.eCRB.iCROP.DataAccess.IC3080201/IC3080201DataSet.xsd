@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3080201DataSet" targetNamespace="http://tempuri.org/IC3080201DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3080201DataSet.xsd" xmlns="http://tempuri.org/IC3080201DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3080201DataSet" msdata:IsDataSet="true" msdata:Locale="ja-JP" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3080201DataSet" msprop:Generator_UserDSName="IC3080201DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3080201OrgPicture" msprop:Generator_TableClassName="IC3080201OrgPictureDataTable" msprop:Generator_TableVarName="tableIC3080201OrgPicture" msprop:Generator_TablePropName="IC3080201OrgPicture" msprop:Generator_RowDeletingName="IC3080201OrgPictureRowDeleting" msprop:Generator_UserTableName="IC3080201OrgPicture" msprop:Generator_RowChangingName="IC3080201OrgPictureRowChanging" msprop:Generator_RowEvHandlerName="IC3080201OrgPictureRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3080201OrgPictureRowDeleted" msprop:Generator_RowEvArgName="IC3080201OrgPictureRowChangeEvent" msprop:Generator_RowChangedName="IC3080201OrgPictureRowChanged" msprop:Generator_RowClassName="IC3080201OrgPictureRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IMAGEFILE_S" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IMAGEFILE_S" msprop:Generator_ColumnVarNameInTable="columnIMAGEFILE_S" msprop:Generator_ColumnPropNameInTable="IMAGEFILE_SColumn" msprop:Generator_UserColumnName="IMAGEFILE_S" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FACEPIC_UPLOADPATH" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FACEPIC_UPLOADPATH" msprop:Generator_ColumnVarNameInTable="columnFACEPIC_UPLOADPATH" msprop:Generator_ColumnPropNameInTable="FACEPIC_UPLOADPATHColumn" msprop:Generator_UserColumnName="FACEPIC_UPLOADPATH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FACEPIC_UPLOADURL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FACEPIC_UPLOADURL" msprop:Generator_ColumnVarNameInTable="columnFACEPIC_UPLOADURL" msprop:Generator_ColumnPropNameInTable="FACEPIC_UPLOADURLColumn" msprop:Generator_UserColumnName="FACEPIC_UPLOADURL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3080201Parameter" msprop:Generator_TableClassName="IC3080201ParameterDataTable" msprop:Generator_TableVarName="tableIC3080201Parameter" msprop:Generator_TablePropName="IC3080201Parameter" msprop:Generator_RowDeletingName="IC3080201ParameterRowDeleting" msprop:Generator_UserTableName="IC3080201Parameter" msprop:Generator_RowChangingName="IC3080201ParameterRowChanging" msprop:Generator_RowEvHandlerName="IC3080201ParameterRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3080201ParameterRowDeleted" msprop:Generator_RowEvArgName="IC3080201ParameterRowChangeEvent" msprop:Generator_RowChangedName="IC3080201ParameterRowChanged" msprop:Generator_RowClassName="IC3080201ParameterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DMSID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DMSID" msprop:Generator_ColumnVarNameInTable="columnDMSID" msprop:Generator_ColumnPropNameInTable="DMSIDColumn" msprop:Generator_UserColumnName="DMSID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,235 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    ログイン画面用スタイル
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------------------------------------------div */
+div#mainLogin{
+	height:748px;
+	width:1024px;
+	overflow:hidden;
+	background:url(../Images/SC3010101/backimg.jpg) center center no-repeat;
+	z-index:1;
+	border-top:#797f8f 1px solid;
+}
+
+#mainLogin #contents{
+	display:block;
+	position:relative;
+	left:369px; top:295px;
+	width:290px;
+}
+
+#login{
+	/*margin-bottom:128px;*/
+	margin-bottom:30px;
+	background:#FFF;
+	-webkit-border-radius:8px;
+}
+
+/* ------------------------------------------------テキストボックス */
+#loginId{
+	color:#C5C5C5;
+	font-weight:bold;
+	height:42px;
+	border-bottom:#c5c5c5 1px solid;
+	-webkit-border-radius:8px 8px 0 0;
+}
+
+#loginPw
+{
+    color:#C5C5C5;
+	font-weight:bold;
+	height:42px;
+	-webkit-border-radius:0 0 8px 8px;
+}
+
+#id,#password{
+	width: 278px;
+	height: 27px;
+	/*position: relative;*/
+	display:block;
+	top: 8px;
+	left: 10px;
+	border: 1px solid #FFF;
+	-webkit-box-shadow:inset 10px 12px 3px #fff;
+	z-index:1;
+	background-color: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
+	color: #393939;
+	-webkit-appearance: none;
+}
+
+#id {
+    font-size:20px;
+    margin:8px 2px 0 5px;
+}
+
+#password{
+    font-size:20px;
+    line-height:27px;
+    font-weight:900;
+    margin:6px 2px 0 5px;
+}
+
+/* ------------------プレイスフォルダ */
+input::-webkit-input-placeholder, isindex::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+{
+    color:#CCC;
+    font-size:16px;
+    font-weight:bolder;
+}
+
+/* ------------------------------------------------ボタン */
+#loginBtn{
+	border:#5b5b5b 1px solid;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	-webkit-border-radius:8px;
+	padding:15px 15px 15px 15px;
+	text-align:center;
+	text-shadow:1px -1px #393939;
+}
+
+#logOnBtn02{
+	border:#5b5b5b 1px solid;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	-webkit-border-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e66b), to(#49740d));
+	padding:15px 15px 13px 1px;
+	text-align:center;
+	text-shadow:1px -1px #393939;
+	width:290px;
+	Height:55px;
+	font-size:16px;
+}
+
+#btnRefresh{
+	border:#5b5b5b 1px solid;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	-webkit-border-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e66b), to(#49740d));
+	padding:15px 15px 13px 1px;
+	text-align:center;
+	text-shadow:1px -1px #393939;
+	width:100px;
+}
+
+.mousUp{
+	background: -webkit-gradient(linear, left top, left bottom, from(#737373), to(#393939));
+	color:#fff;
+}
+.mousDown{
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e56a), to(#4b760d));
+	color:#fff;
+}
+
+.loginChar{
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+/* ------------------------------------------------ローディング */
+.loading{
+	position:relative;
+	background:#FFF;
+	margin:0 0 20px 0;
+	padding:35px 0 30px 0;
+	text-align:center;
+	-webkit-border-radius:8px;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+	overflow:hidden;
+}
+
+.loadingIcn{
+	position:absolute;
+	display:block;
+	width:21px;
+	height:22px;
+	-webkit-animation: LoadingAnimation 1.0s infinite linear;
+}
+
+.loadingChar{
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:15px;
+  text-align:left;
+}
+
+.loadingVertical{
+    height:25px;
+	vertical-align:middle;
+}
+
+/* ------------------共通 */
+@-webkit-keyframes LoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(340deg);}
+}
+
+.holding input {
+padding: 9px 7px 10px 7px;
+width: 296px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+margin-bottom: 8px;
+opacity: 1!important;
+}
+phoenix_core_logged_out.bundle.css:1
+.holding input,
+.holding .holder {
+font: 15px "Helvetica Neue",Arial,sans-serif;
+}
+phoenix_core_logged_out.bundle.css:1
+.front-page form .holding:hover input {
+opacity: .9;
+-webkit-box-shadow: 0 -1px 0 rgba(0,0,0,.4),inset 0 1px 2px rgba(0,0,0,.3);
+-moz-box-shadow: 0 -1px 0 rgba(0,0,0,.4),inset 0 1px 2px rgba(0,0,0,.3);
+box-shadow: 0 -1px 0 rgba(0,0,0,.4),inset 0 1px 2px rgba(0,0,0,.3);
+}
+phoenix_core_logged_out.bundle.css:1
+.front-page form .holding input {
+border: none!important;
+-webkit-box-shadow: 0 -1px 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(0,0,0,.2);
+-moz-box-shadow: 0 -1px 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(0,0,0,.2);
+box-shadow: 0 -1px 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(0,0,0,.2);
+background-color: white;
+color: #567792;
+opacity: .7;
+-webkit-transition: opacity 1s;
+-moz-transition: opacity 1s;
+-o-transition: opacity 1s;
+}
+
+phoenix_core_logged_out.bundle.css:1
+* {
+margin: 0;
+padding: 0;
+}
+
+user agent stylesheet
+input:not([type]), input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+padding: 1px 0px;
+}
+user agent stylesheet
+input[type="password"] {
+-webkit-text-security: disc;
+}
+.holder {
+position: absolute;
+top: 0;
+z-index: 1;
+left: 8px;
+white-space: nowrap;
+cursor: text;
+color: #999;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+-webkit-transition: opacity .1s,font-size .1s;
+-moz-transition: opacity .1s,font-size .1s;
+-o-transition: opacity .1s,font-size .1s;
+}

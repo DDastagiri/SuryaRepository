@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3802504DataSet" targetNamespace="http://tempuri.org/IC3802504DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3802504DataSet.xsd" xmlns="http://tempuri.org/IC3802504DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3802504DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3802504DataSet" msprop:Generator_UserDSName="IC3802504DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3802504PartsDetail" msprop:Generator_TableClassName="IC3802504PartsDetailDataTable" msprop:Generator_TableVarName="tableIC3802504PartsDetail" msprop:Generator_RowChangedName="IC3802504PartsDetailRowChanged" msprop:Generator_TablePropName="IC3802504PartsDetail" msprop:Generator_RowDeletingName="IC3802504PartsDetailRowDeleting" msprop:Generator_RowChangingName="IC3802504PartsDetailRowChanging" msprop:Generator_RowEvHandlerName="IC3802504PartsDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802504PartsDetailRowDeleted" msprop:Generator_RowClassName="IC3802504PartsDetailRow" msprop:Generator_UserTableName="IC3802504PartsDetail" msprop:Generator_RowEvArgName="IC3802504PartsDetailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResultCode" msprop:Generator_ColumnVarNameInTable="columnResultCode" msprop:Generator_ColumnPropNameInRow="ResultCode" msprop:Generator_ColumnPropNameInTable="ResultCodeColumn" msprop:Generator_UserColumnName="ResultCode" type="xs:long" minOccurs="0" />
+              <xs:element name="R_O" msprop:Generator_ColumnVarNameInTable="columnR_O" msprop:Generator_ColumnPropNameInRow="R_O" msprop:Generator_ColumnPropNameInTable="R_OColumn" msprop:Generator_UserColumnName="R_O" type="xs:string" minOccurs="0" />
+              <xs:element name="R_O_SEQNO" msprop:Generator_ColumnVarNameInTable="columnR_O_SEQNO" msprop:Generator_ColumnPropNameInRow="R_O_SEQNO" msprop:Generator_ColumnPropNameInTable="R_O_SEQNOColumn" msprop:Generator_UserColumnName="R_O_SEQNO" type="xs:string" minOccurs="0" />
+              <xs:element name="PartsCode" msprop:Generator_ColumnVarNameInTable="columnPartsCode" msprop:Generator_ColumnPropNameInRow="PartsCode" msprop:Generator_ColumnPropNameInTable="PartsCodeColumn" msprop:Generator_UserColumnName="PartsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="PartsName" msprop:Generator_ColumnVarNameInTable="columnPartsName" msprop:Generator_ColumnPropNameInRow="PartsName" msprop:Generator_ColumnPropNameInTable="PartsNameColumn" msprop:Generator_UserColumnName="PartsName" type="xs:string" minOccurs="0" />
+              <xs:element name="JobID" msprop:Generator_ColumnVarNameInTable="columnJobID" msprop:Generator_ColumnPropNameInRow="JobID" msprop:Generator_ColumnPropNameInTable="JobIDColumn" msprop:Generator_UserColumnName="JobID" type="xs:string" minOccurs="0" />
+              <xs:element name="PartsType" msprop:Generator_ColumnVarNameInTable="columnPartsType" msprop:Generator_ColumnPropNameInRow="PartsType" msprop:Generator_ColumnPropNameInTable="PartsTypeColumn" msprop:Generator_UserColumnName="PartsType" type="xs:string" minOccurs="0" />
+              <xs:element name="PartsUnit" msprop:Generator_ColumnVarNameInTable="columnPartsUnit" msprop:Generator_ColumnPropNameInRow="PartsUnit" msprop:Generator_ColumnPropNameInTable="PartsUnitColumn" msprop:Generator_UserColumnName="PartsUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="PartsAmount" msprop:Generator_ColumnVarNameInTable="columnPartsAmount" msprop:Generator_ColumnPropNameInRow="PartsAmount" msprop:Generator_ColumnPropNameInTable="PartsAmountColumn" msprop:Generator_UserColumnName="PartsAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="BO_Scheduled_DateTime" msprop:Generator_ColumnVarNameInTable="columnBO_Scheduled_DateTime" msprop:Generator_ColumnPropNameInRow="BO_Scheduled_DateTime" msprop:Generator_ColumnPropNameInTable="BO_Scheduled_DateTimeColumn" msprop:Generator_UserColumnName="BO_Scheduled_DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="PartsStatus" msprop:Generator_ColumnVarNameInTable="columnPartsStatus" msprop:Generator_ColumnPropNameInRow="PartsStatus" msprop:Generator_ColumnPropNameInTable="PartsStatusColumn" msprop:Generator_UserColumnName="PartsStatus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802504RONumInfo" msprop:Generator_TableClassName="IC3802504RONumInfoDataTable" msprop:Generator_TableVarName="tableIC3802504RONumInfo" msprop:Generator_RowChangedName="IC3802504RONumInfoRowChanged" msprop:Generator_TablePropName="IC3802504RONumInfo" msprop:Generator_RowDeletingName="IC3802504RONumInfoRowDeleting" msprop:Generator_RowChangingName="IC3802504RONumInfoRowChanging" msprop:Generator_RowEvHandlerName="IC3802504RONumInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802504RONumInfoRowDeleted" msprop:Generator_RowClassName="IC3802504RONumInfoRow" msprop:Generator_UserTableName="IC3802504RONumInfo" msprop:Generator_RowEvArgName="IC3802504RONumInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R_O" msprop:Generator_ColumnVarNameInTable="columnR_O" msprop:Generator_ColumnPropNameInRow="R_O" msprop:Generator_ColumnPropNameInTable="R_OColumn" msprop:Generator_UserColumnName="R_O" type="xs:string" minOccurs="0" />
+              <xs:element name="R_O_SEQNO" msprop:Generator_ColumnVarNameInTable="columnR_O_SEQNO" msprop:Generator_ColumnPropNameInRow="R_O_SEQNO" msprop:Generator_ColumnPropNameInTable="R_O_SEQNOColumn" msprop:Generator_UserColumnName="R_O_SEQNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802504SystemSettingValue" msprop:Generator_TableClassName="IC3802504SystemSettingValueDataTable" msprop:Generator_TableVarName="tableIC3802504SystemSettingValue" msprop:Generator_RowChangedName="IC3802504SystemSettingValueRowChanged" msprop:Generator_TablePropName="IC3802504SystemSettingValue" msprop:Generator_RowDeletingName="IC3802504SystemSettingValueRowDeleting" msprop:Generator_RowChangingName="IC3802504SystemSettingValueRowChanging" msprop:Generator_RowEvHandlerName="IC3802504SystemSettingValueRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802504SystemSettingValueRowDeleted" msprop:Generator_RowClassName="IC3802504SystemSettingValueRow" msprop:Generator_UserTableName="IC3802504SystemSettingValue" msprop:Generator_RowEvArgName="IC3802504SystemSettingValueRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LINK_SEND_TIMEOUT_VAL" msprop:Generator_ColumnVarNameInTable="columnLINK_SEND_TIMEOUT_VAL" msprop:Generator_ColumnPropNameInRow="LINK_SEND_TIMEOUT_VAL" msprop:Generator_ColumnPropNameInTable="LINK_SEND_TIMEOUT_VALColumn" msprop:Generator_UserColumnName="LINK_SEND_TIMEOUT_VAL" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_CD" msprop:Generator_ColumnVarNameInTable="columnDIST_CD" msprop:Generator_ColumnPropNameInRow="DIST_CD" msprop:Generator_ColumnPropNameInTable="DIST_CDColumn" msprop:Generator_UserColumnName="DIST_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="LINK_URL_PARTS_DETAIL" msdata:Caption="LINK_URL_RESV_INFO" msprop:Generator_ColumnVarNameInTable="columnLINK_URL_PARTS_DETAIL" msprop:Generator_ColumnPropNameInRow="LINK_URL_PARTS_DETAIL" msprop:Generator_ColumnPropNameInTable="LINK_URL_PARTS_DETAILColumn" msprop:Generator_UserColumnName="LINK_URL_PARTS_DETAIL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

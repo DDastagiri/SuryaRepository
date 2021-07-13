@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" %>
+<!DOCTYPE html>
+<html lang="ja">
+<head id="Head1" runat="server">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no" />
+
+    <%'タイトル %>
+    <title></title>
+
+    <%'スタイルシート %>
+    <link rel="Stylesheet" href="../Styles/Style.css" />
+    <link rel="Stylesheet" href="../Styles/ControlStyle.css" />
+   	<link rel="stylesheet" href="../Styles/Controls.css" />
+
+
+    <%'スクリプト %>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery-1.4.4.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.flickable.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.json-2.3.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.popover.js")%>"></script>
+
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/eCRB.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/eCRB.ui.js")%>"></script>
+    
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.CheckButton.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.CheckMark.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.CustomButton.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.CustomLabel.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.CustomTextBox.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.DateTimeSelector.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.PopOverForm.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.SegmentedButton.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveClientUrl("~/Scripts/jquery.SwitchButton.js")%>"></script>
+
+    <%'HEAD部分の穴あけ %>
+    <asp:ContentPlaceHolder id="head" runat="server"/>
+</head>
+<body>
+<form id="this_form" runat="server">
+    <%'コンテンツ部分の穴あけ %>
+    <asp:ContentPlaceHolder id="content" runat="server"/>
+</form>
+</body>
+</html>

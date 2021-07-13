@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3320101DataSet" targetNamespace="http://tempuri.org/SC3320101DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3320101DataSet.xsd" xmlns="http://tempuri.org/SC3320101DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3320101DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3320101DataSet" msprop:Generator_UserDSName="SC3320101DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3320101VisitInfo" msprop:Generator_TableClassName="SC3320101VisitInfoDataTable" msprop:Generator_TableVarName="tableSC3320101VisitInfo" msprop:Generator_RowChangedName="SC3320101VisitInfoRowChanged" msprop:Generator_TablePropName="SC3320101VisitInfo" msprop:Generator_RowDeletingName="SC3320101VisitInfoRowDeleting" msprop:Generator_RowChangingName="SC3320101VisitInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3320101VisitInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3320101VisitInfoRowDeleted" msprop:Generator_RowClassName="SC3320101VisitInfoRow" msprop:Generator_UserTableName="SC3320101VisitInfo" msprop:Generator_RowEvArgName="SC3320101VisitInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VISITSEQ" msprop:Generator_ColumnVarNameInTable="columnVISITSEQ" msprop:Generator_ColumnPropNameInRow="VISITSEQ" msprop:Generator_ColumnPropNameInTable="VISITSEQColumn" msprop:Generator_UserColumnName="VISITSEQ" type="xs:int" minOccurs="0" />
+              <xs:element name="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO" type="xs:string" minOccurs="0" />
+              <xs:element name="MODEL_NAME" msprop:Generator_ColumnVarNameInTable="columnMODEL_NAME" msprop:Generator_ColumnPropNameInRow="MODEL_NAME" msprop:Generator_ColumnPropNameInTable="MODEL_NAMEColumn" msprop:Generator_UserColumnName="MODEL_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PARKINGCODE" msprop:Generator_ColumnVarNameInTable="columnPARKINGCODE" msprop:Generator_ColumnPropNameInRow="PARKINGCODE" msprop:Generator_ColumnPropNameInTable="PARKINGCODEColumn" msprop:Generator_UserColumnName="PARKINGCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="VISITTIMESTAMP" msprop:Generator_ColumnVarNameInTable="columnVISITTIMESTAMP" msprop:Generator_ColumnPropNameInRow="VISITTIMESTAMP" msprop:Generator_ColumnPropNameInTable="VISITTIMESTAMPColumn" msprop:Generator_UserColumnName="VISITTIMESTAMP" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ASSIGNTIMESTAMP" msprop:Generator_ColumnVarNameInTable="columnASSIGNTIMESTAMP" msprop:Generator_ColumnPropNameInRow="ASSIGNTIMESTAMP" msprop:Generator_ColumnPropNameInTable="ASSIGNTIMESTAMPColumn" msprop:Generator_UserColumnName="ASSIGNTIMESTAMP" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3320101SystemSetting" msprop:Generator_TableClassName="SC3320101SystemSettingDataTable" msprop:Generator_TableVarName="tableSC3320101SystemSetting" msprop:Generator_RowChangedName="SC3320101SystemSettingRowChanged" msprop:Generator_TablePropName="SC3320101SystemSetting" msprop:Generator_RowDeletingName="SC3320101SystemSettingRowDeleting" msprop:Generator_RowChangingName="SC3320101SystemSettingRowChanging" msprop:Generator_RowEvHandlerName="SC3320101SystemSettingRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3320101SystemSettingRowDeleted" msprop:Generator_RowClassName="SC3320101SystemSettingRow" msprop:Generator_UserTableName="SC3320101SystemSetting" msprop:Generator_RowEvArgName="SC3320101SystemSettingRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SETTING_VAL" msdata:Caption="SETTING_VALUE" msprop:Generator_ColumnVarNameInTable="columnSETTING_VAL" msprop:Generator_ColumnPropNameInRow="SETTING_VAL" msprop:Generator_ColumnPropNameInTable="SETTING_VALColumn" msprop:Generator_UserColumnName="SETTING_VAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

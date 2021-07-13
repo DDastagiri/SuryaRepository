@@ -1,0 +1,1192 @@
+/*--------------------------------------------------------------------------
+//SC3240501.css
+//--------------------------------------------------------------------------
+//機能：新規予約作成
+//作成：2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発
+//更新：2014/07/18 TMEJ 明瀬 予約客検索の検索方法切替ボタンのツールチップ非表示対応
+---------------------------------------------------------------------------*/
+@charset "utf-8";
+
+/*チップ選択エリア開閉時のちらつきをなくすためのstyle*/
+#NewChipStatusDiv,
+#NewChipPopupHeaderDiv,
+#NewChipVclInfoUl,
+#NewChipCustInfoUl,
+#NewChipTimeUl,
+#NewChipMaintenanceTypeUl,
+#NewChipOrderUl,
+#NewChipCheckUl
+{
+    transform:translateZ(0px);
+}
+
+.NewChipPopStyle{
+	font-weight:bold;
+	display:block;
+	width:385px;
+	height:615px;
+	position:absolute;
+	top:18px; left:514px;
+	z-index:902;
+	-webkit-transition:left 300ms linear;
+}
+
+.NewChipPopStyle .OverShadow{
+	display:block;
+	position:absolute;
+	font-size:1px; line-height:1px;
+	z-index:100;
+	width:375px;
+	height:25px;
+	top:44px;	left:6px;
+	border-radius:4px;
+	box-shadow:inset 0px 3px 1px rgba(64,64,64,0.4);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(16,16,16,0.4)), 
+							color-stop(0.1, rgba(16,16,16,0.3)),
+							color-stop(0.2, rgba(16,16,16,0)),
+							to(rgba(16,16,16,0)));
+	-webkit-transition:width 300ms linear;	
+}
+
+.NewChipPopStyle .borderBox{
+	display:block;
+	width:385px;
+	height:615px;
+	position:absolute;
+	top:0px;	left:0px;
+	font-size:1px; line-height:1px;
+	z-index:1;
+	-webkit-transition:width 300ms linear;
+}
+.NewChipPopStyle .gradationBox{
+	display:block;
+	width:385px;
+	height:615px;
+	position:absolute;
+	top:0px;	left:1px;
+	z-index:2;
+	-webkit-transition:width 300ms linear;
+}
+.NewChipPopStyle .myDataBox{
+	display:block;
+	width:385px;
+	height:614px;
+	top:0px; left:0;
+	border-radius:9px;
+	border:#4f4f4f 1px solid;
+	box-shadow: 0px 1px 6px #000;
+	z-index:2;
+	-webkit-transition:width 300ms linear;
+}
+.NewChipPopStyle .ArrowMask{
+	display:block;
+	position:absolute;
+	top:200px;
+	left:-17px;
+	width:40px;
+	height:70px;
+	overflow:hidden;
+}
+.NewChipPopStyle .Arrow{
+	display:block;
+	width:26px;
+	height:26px;
+	transform: rotate(45deg);
+	position:absolute;
+	top:4px;
+	left:6px;
+	border-bottom:1px solid rgba(79,79,79,0.98);
+	border-top:1px solid rgba(79,79,79,0.98);
+	border-left:1px solid rgba(79,79,79,0.98);
+	z-index:1;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(13,23,38, 0.98)),
+								to(rgba(13,23,38,0.98)));
+}
+
+.scNscPopUpHeaderBg{
+	width:385px; height:42px;
+	position:absolute;
+	top:1px; left:0;
+	border-top:#aeb2bb 1px solid;
+	border-radius:7px 7px 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.9)),
+								color-stop(0.01, rgba(201, 203, 208, 0.9)),
+								color-stop(0.011, rgba(29, 40, 59, 0.9)),
+								color-stop(0.50, rgba(29, 40, 59, 0.9)),
+								color-stop(0.51, rgba(3, 11, 26, 0.9)),
+								to(rgba(13,23,38,0.98)));
+	z-index:-1;
+	-webkit-transition:width 300ms linear;
+}
+
+.scNscPopUpDataBg{
+	width:385px; height:572px;
+	position:absolute;
+	border-radius:0 0 7px 7px;
+	background:rgba(13,23,38,0.98);
+	top:44px; left:0;
+	z-index:-1;
+	-webkit-transition:width 300ms linear;
+}
+
+.NewChipPopStyle .dataBox{
+	display:block;
+	width:375px;
+	height:567px;
+	position:absolute;
+	top:43px;	left:5px;
+	border-radius:5px;
+	border:#242c40 1px solid;
+	box-shadow:inset 0px 0px 3px #777;
+	z-index:10;
+	text-align:center;
+	-webkit-transition:width 300ms linear;
+	background:rgba(7,11,29,0.9);
+}
+
+
+.NewChipPopStyle .dataBox .newChipInnerDataBox{
+	width:367px; height:557px;
+	overflow:hidden;
+	position:relative;
+	left:0px; top:0;
+	float:left;
+	padding:10px 0 0 8px;
+	border-radius:5px;
+	margin: 0px auto;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+
+.NewChipPopStyle .dataBox .newChipInnerDataBox02{
+	width:357px; height:auto;
+	position:relative;
+	border-radius:0 0 4px 4px;
+}
+
+.NewChipPopStyle .NewChipPopupHeader {
+	position:relative;
+	width:385px;
+	height:45px;
+	z-index:1000;
+	text-align:center;
+	-webkit-transition:width 300ms linear;
+}
+.NewChipPopStyle .NewChipPopupHeader h3 {
+	width:300px;
+	font-size:20px;
+	line-height:45px;
+	color:#FFF;
+	text-shadow:0px -1px 0px #000;
+    margin:0px auto;
+}
+.NewChipPopStyle .LeftBtn{
+	position:absolute;
+	left:7px; top:7px;
+	width:78px;
+	height:30px;
+	border-radius:4px;
+}
+.NewChipPopStyle .RightBtn{
+	position:absolute;
+	right:5px; top:7px;
+	width:78px;
+	height:30px;
+	border-radius:4px;
+}
+.NewChipPopStyle #NewChipCancelBtn,
+.NewChipPopStyle #SearchCancelBtn,
+.NewChipPopStyle #NewChipRegisterBtn,
+.NewChipPopStyle #SearchRegisterBtn{
+	display:block;
+	background:-webkit-gradient(linear, left top, left bottom, from(#4f5769),
+							color-stop(0.01, #4f5769),
+							color-stop(0.01, #576174),
+							color-stop(0.5, #1a233e),
+							color-stop(0.5, #000b29),
+							to(#000b29));
+	border-radius:4px;
+	box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5);
+	border:#010205 1px solid;
+	width:78px;
+	height:30px;
+	font-size:12px;
+	font-weight:bold;
+	line-height:27px;
+	text-align:center;
+	text-shadow:rgba(0, 0, 0, 0.5);
+	color:#FFF;
+	z-index:1;
+}
+.NewChipPopStyle #NewChipRegisterBtn,
+.NewChipPopStyle #SearchRegisterBtn{
+	background:-webkit-gradient(linear, left top, left bottom, from(#6485cc),
+							color-stop(0.01, #6485cc),
+							color-stop(0.01, #6f96e8),
+							color-stop(0.5, #376fe0),
+							color-stop(0.5, #2361dd),
+							to(#2463de));
+}
+
+.NewChipPopStyle .TextBlue{
+	color:#324f85;
+}
+
+.NewChipPopStyle .TextBlack{
+	color:#000;
+}
+
+
+/***************************************************************
+* 新規予約作成  newChipHeadInfomation
+****************************************************************/
+.NewChipPopStyle .dataBox .newChipHeadInfomation{
+	height:52px;
+	background:blue;
+	box-shadow:inset 0px 0px 8px rgba(0,0,0,0.8);
+	margin-bottom:10px;
+}
+.NewChipPopStyle .dataBox .newChipHeadInfomation_margin0{
+	margin-bottom:0px;
+}
+.NewChipPopStyle .dataBox .newChipHeadInfomation .newChipInnaerDataBox{padding:5px 10px 0; color:#fff;}
+
+.NewChipPopStyle .dataBox .newChipHeadInfomation .newChipInnaerDataBox h4{
+	height:23px;
+	font-size:21px; line-height:21px;
+	padding:0 0 3px 0;
+	border-bottom:#FFF 1px solid;
+	text-align:center;
+}
+
+.NewChipPopStyle .dataBox .newChipHeadInfomation .newChipInnaerDataBox .addStatus{
+	height:38px;	border-bottom:#FFF 1px solid;
+}
+
+.NewChipPopStyle .dataBox .newChipHeadInfomation .newChipInnaerDataBox .addStatus h5{
+	font-size:17px; line-height:17px;
+	padding:3px 0 2px; text-align:left;
+}
+
+.NewChipPopStyle .dataBox .newChipHeadInfomation .newChipInnaerDataBox .addStatus div{
+	font-size:12px; line-height:12px; text-align:left;
+}
+
+
+/***************************************************************
+* 新規予約作成  newChipTableEntryNo
+****************************************************************/
+
+.NewChipPopStyle .newChipTableEntryNo_Height01{height:89px;}
+.NewChipPopStyle .newChipTableEntryNo_Height02{height:204px;}
+
+.NewChipPopStyle .newChipTableEntryNo{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.NewChipPopStyle .newChipTableEntryNo li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableEntryNo li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.NewChipPopStyle .newChipTableEntryNo li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.NewChipPopStyle .newChipTableEntryNo dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.NewChipPopStyle .newChipTableEntryNo dt,
+.NewChipPopStyle .newChipTableEntryNo dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+	position:relative;
+	width:250px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+}
+.NewChipPopStyle .newChipTableEntryNo dd{
+	left:10px;
+}
+.NewChipPopStyle .newChipTableEntryNo dt{
+	width:85px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableEntryNo dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.NewChipPopStyle .newChipTableEntryNo dd p{
+	display:block;
+	padding:0 0 0 10px;
+}
+.NewChipPopStyle .newChipTableEntryNo dd span{
+	display:block;
+	padding:0 0 0 10px;
+}
+
+.NewChipPopStyle .newChipTableEntryNo li.newChipCstAddress,
+.NewChipPopStyle .newChipTableEntryNo li.newChipCstAddress dl{
+	height:54px;
+}
+.NewChipPopStyle .newChipTableEntryNo li.newChipCstAddress dt,
+.NewChipPopStyle .newChipTableEntryNo li.newChipCstAddress dd{
+	height:54px;
+	line-height:54px;
+}
+.NewChipPopStyle .newChipTableEntryNo dd.newChipTitle,
+.NewChipPopStyle .newChipTableEntryNo dd.newChipSA{
+	background: url(../images/NextArrow.png) 250px 8px no-repeat;
+	left:0px;
+	width:269px;
+	color: #324F85;
+}
+.NewChipPopStyle .newChipTableEntryNo dd input{
+	border: none;
+    color: #324F85;
+    font-weight:bold;
+    font-size:14px;
+    height:29px;
+}
+.NewChipPopStyle .newChipTableEntryNo dd textarea{
+	border: none;
+    color: #324F85;
+    font-weight:bold;
+    font-size:14px;
+	height:38px;
+	line-height:19px;
+	padding: 8px 0px 8px 0px;
+    overflow:hidden;
+    resize: none;
+}
+
+.NewChipPopStyle .newChipTableEntryNo dd input.TextBlack,
+.NewChipPopStyle .newChipTableEntryNo dd textarea.TextBlack{
+	color:#000;
+}
+#NewChipCstAddressDd{
+	left:7px;
+}
+
+/***************************************************************
+* 新規予約作成  icon
+****************************************************************/
+/* 虫眼鏡 */
+.NewChipPopStyle .SearchIcon {
+	background:url(../Images/SC3240501/MagnifyingGlassStatus.png) center center no-repeat;
+	position: absolute;
+	left: 4px;
+	top: 6px;
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+/***************************************************************
+* 新規予約作成  newChipTableTime
+****************************************************************/
+.NewChipPopStyle .newChipTableTime{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:119px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.NewChipPopStyle .newChipTableTime li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableTime li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.NewChipPopStyle .newChipTableTime li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.NewChipPopStyle .newChipTableTime dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.NewChipPopStyle .newChipTableTime dt,
+.NewChipPopStyle .newChipTableTime dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.NewChipPopStyle .newChipTableTime dt{
+	width:85px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableTime dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.NewChipPopStyle .newChipTableTime dd{
+	width:269px;
+	font-size:14px;
+	text-align:right;
+	color:#324f85;
+}
+.NewChipPopStyle .newChipTableTime dd span{
+	padding:0 10px 0 0;
+}
+.NewChipPopStyle .newChipTableTime dd input{
+	display:block;
+	color:#324F85;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	text-align:right;
+}
+
+.NewChipPopStyle .newChipTableTime .TextBlue{
+	color:#324f85;
+}
+
+.NewChipPopStyle .newChipTableTime .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* 新規予約作成  newChipTableMaintenance
+****************************************************************/
+.NewChipPopStyle .newChipTableMaintenance{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:58px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.NewChipPopStyle .newChipTableMaintenance li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableMaintenance li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.NewChipPopStyle .newChipTableMaintenance li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.NewChipPopStyle .newChipTableMaintenance dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.NewChipPopStyle .newChipTableMaintenance dt,
+.NewChipPopStyle .newChipTableMaintenance dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.NewChipPopStyle .newChipTableMaintenance dt{
+	width:85px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableMaintenance dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.NewChipPopStyle .newChipTableMaintenance dd{
+	background: url(../images/NextArrow.png) 250px 8px no-repeat;
+	position:relative;
+	width:269px;
+	font-size:14px;
+	text-align:left;
+	color:#324f85;
+}
+.NewChipPopStyle .newChipTableMaintenance dd span{
+	display:block;
+	padding:0 0 0 10px;
+}
+
+.NewChipPopStyle .newChipTableMaintenance dd input{
+	display:block;
+	color:#324F85;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	padding:0 0 0 10px;
+}
+
+.NewChipPopStyle .newChipTableMaintenance .TextBlue{
+	color:#324f85;
+}
+
+.NewChipPopStyle .newChipTableMaintenance .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* 新規予約作成  newChipTableOrder
+****************************************************************/
+.NewChipPopStyle .newChipTableOrder{
+	display:block;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+}
+.NewChipPopStyle .newChipTableOrder li{
+	display:block;
+	width:355px;
+	border-radius:8px;
+}
+.NewChipPopStyle .newChipTableOrder dl{
+	display:block;
+	width:468px;
+}
+.NewChipPopStyle .newChipTableOrder dt,
+.NewChipPopStyle .newChipTableOrder dd{
+	display:block;
+	float:left;
+	line-height:59px;
+}
+.NewChipPopStyle .newChipTableOrder dt{
+	width:85px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+	line-height:90px;
+}
+.NewChipPopStyle .newChipTableOrder dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.NewChipPopStyle .newChipTableOrder dd{
+	width:269px;
+	font-size:14px;
+	line-height:29px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableOrder dd:last-child{
+	border:none;
+}
+
+.NewChipPopStyle .newChipTableOrder .TextareaBox{
+	padding:6px 10px;
+}
+
+.NewChipPopStyle .newChipTableOrder dd textarea{
+	display:block;
+	line-height:18px;
+	border: none;
+	font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    color: #324F85;
+    resize: none;
+}
+
+.NewChipPopStyle .newChipTableOrder .TextBlue{
+	color:#324f85;
+}
+
+.NewChipPopStyle .newChipTableOrder .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* 新規予約作成  newChipTableCheck
+****************************************************************/
+.NewChipPopStyle .newChipTableCheck{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:118px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 9px 0;
+	clear:both;
+}
+.NewChipPopStyle .newChipTableCheck li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableCheck li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.NewChipPopStyle .newChipTableCheck li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.NewChipPopStyle .newChipTableCheck dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.NewChipPopStyle .newChipTableCheck dt,
+.NewChipPopStyle .newChipTableCheck dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.NewChipPopStyle .newChipTableCheck dt{
+	width:85px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableCheck dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.NewChipPopStyle .newChipTableCheck dd{
+	width:133px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.NewChipPopStyle .newChipTableCheck dd span{
+	display:block;
+	padding:0 0 0 11px;
+}
+.NewChipPopStyle .newChipTableCheck dd:last-child{
+	border:none;
+}
+.NewChipPopStyle .newChipTableCheck .CheckBlue{
+	background:url(../Images/SC3240501/icon_check_blue.png) 119px 9px no-repeat;
+}
+
+.NewChipPopStyle .newChipTableCheck .CheckBlack{
+	background:url(../Images/SC3240501/icon_check_black.png) 119px 9px no-repeat;
+}
+
+.NewChipPopStyle .newChipTableCheck .TextBlue{
+	color:#324f85;
+}
+
+.NewChipPopStyle .newChipTableCheck .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* 新規予約作成  FooterButtonSet
+****************************************************************/
+.NewChipPopStyle #NewChipContent .FooterButtonSet{
+	width:357px;
+	height:43px;
+	overflow:hidden;
+	display:block;
+	margin:10px 0 9px 0;
+	clear:both;
+}
+.NewChipPopStyle #NewChipContent .FooterButtonLeftDiv{
+	float:left;
+	width:174px;
+	height:40px;
+	border-radius:3px;
+}
+.NewChipPopStyle #NewChipContent .FooterButtonLeft{
+	background:url(../Images/SC3240501/a14_icn01.png) center center no-repeat;
+	float:left;
+	width:174px;
+	height:40px;
+	border-radius:3px;
+	box-shadow:0px 1px 0px #FFF;
+	border:#bbbbbb 1px solid;
+}
+.NewChipPopStyle #NewChipContent .FooterButtonRightDiv{
+	float:right;
+	width:169px;
+	height:40px;
+	border-radius:3px;
+}
+.NewChipPopStyle #NewChipContent .FooterButtonRight{
+	background:url(../Images/SC3240501/a14_icn02.png) center center no-repeat;
+	float:right;
+	width:169px;
+	height:40px;
+	border-radius:3px;
+	box-shadow:0px 1px 0px #FFF;
+	border:#bbbbbb 1px solid;
+}
+
+/***************************************************************
+* 新規予約作成  アクティブインジケーター
+****************************************************************/
+#NewChipActiveIndicator {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:289px;
+	left:174px;
+	width:38px;
+	height:38px;
+	z-index:10002;
+}
+#NewChipActiveIndicator.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+/***************************************************************
+* 顧客検索用  Start
+****************************************************************/
+.SelectionButton{
+	width:373px;
+	height:54px;
+	border-bottom:#808080 1px solid;
+	background:-webkit-gradient(linear, left top, left bottom, from(#fff),
+						to(#c3c6cf));
+	border-radius:3px 3px 0 0;
+	box-shadow:inset 0px 2px 3px #999;
+	margin:-10px 0 0 -10px;
+}
+.SelectionButton ul{
+	display:block;
+	width:347px;
+	height:27px;
+	margin:0 0 10px 0;
+	position:absolute;
+	top:13px;
+	left:11px;
+	text-align:center;
+	background:-webkit-gradient(linear, left top, left bottom, from(#f3f3f4),
+						to(#bec1ca));
+	box-shadow:0px 1px 0px #e0e1e6;
+	border:#696a6a 1px solid;
+	border-radius:4px;
+	font-size:13px;
+	line-height:27px;
+	text-shadow:#FFF 0 -1px 0;
+	color:#696a6a;
+}
+.SelectionButton li{
+	background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f4),
+						to(#bec1ca));
+	border-right:#696a6a 1px solid;
+	float:left;
+	width:86px;
+	height:27px;
+	overflow:hidden;
+}
+.SelectionButton li:nth-child(1){
+	border-radius:3px 0 0 3px;
+	width:86px;
+}
+.SelectionButton li:nth-child(4){
+	border-radius:0 3px 3px 0;
+	border:none;
+}
+
+.SelectionButton li.ButtonOn{
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb1b5),
+						to(#686e75));
+	color:#FFF;
+	text-shadow:#6a6c6d 0 -1px 0;
+}
+.SearchBox{
+	position:relative;
+	border-bottom:#808080 1px solid;
+	background:-webkit-gradient(linear, left top, left bottom, from(#eceaea),
+								color-stop(0.028, #eceaea),
+								color-stop(0.028, #dcdee3),
+								color-stop(0.50, #a8acb9),
+								to(#a8acb9));
+	height:43px;
+	width:373px;
+	margin:0 0 0 -10px;
+}
+.SearchArea{
+	box-shadow:inset 0px 3px 5px #999999;
+	background-color:#FFF;
+	position:absolute;
+	left:10px; 
+	top:7px;
+	width:348px;
+	height:27px;
+	border:#696a6a 1px solid;
+	border-radius:30px;
+}
+.SearchArea .SearchButton{
+	background:url(../Images/SC3240501/MagnifyingGlass.png) center center no-repeat;
+	position:absolute;
+	width:14px;
+	height:15px;
+	margin:7px 0 0 10px;
+}
+.SearchArea .TextArea{
+	border:none;
+	box-shadow:0px 0px 0px #999999;
+	position:absolute;
+	left:31px;
+	top:5px;
+	width:286px;
+	color:#000;
+	font-size:15px;
+	line-height:20px;
+	font-weight:normal;
+}
+.SearchArea .ClearButton{
+	background:url(../Images/textClear.png) center center no-repeat;
+	position:absolute;
+	width:27px;
+	height:23px;
+	margin:3px 0 0 0;
+	right:0;
+}
+.SearchDataBox
+{
+	position:relative;
+	width:373px;
+	height:405px;
+	left:-10px;
+}
+.SearchDataBoxInner
+{
+	width:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.SearchDataBoxInner ul li
+{
+	position:relative;
+	background:#FFF;
+	border-bottom:#bbbbbb 1px solid;
+	width:373px;
+	height:83px;
+	display:block;
+	overflow:hidden;
+	font-size:15px;
+	line-height:16px;
+	color:#666666;
+}
+.SearchDataBoxInner ul li .SearchData
+{
+	position:relative;
+	width: 357px;
+    height: 73px;
+    padding: 5px 8px 5px 8px;
+}
+.SelectionOn{
+	background: -webkit-gradient(linear, left top, left bottom, from(#058bf5),
+						to(#015fe6));
+	color:#FFF;
+}
+.SearchDataBoxInner ul li.SelectionOn
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#058bf5),
+						to(#015fe6));
+	color:#FFF;
+}
+#SearchCustomerName,
+#SearchRegistrationNumber,
+#SearchVinNo,
+#SearchModel
+{
+	position:absolute;
+	height:18px;
+}
+#SearchRegistrationNumber
+{	
+	top:26px;
+	width:150px;
+	text-align:left;
+}
+#SearchVinNo
+{
+	right:24px;
+	top:26px;
+	width:180px;
+	text-align:right;
+}
+#SearchCustomerName
+{	
+	top:8px;
+	width:350px;
+	text-align:left;
+}
+#SearchModel
+{	
+	top:42px;
+	width:350px;
+	font-size:13px;
+	text-align:left;
+}
+#SearchPhone,
+#SearchMobile
+{
+	position:absolute;
+	bottom:5px;
+	padding:0 0 0 15px;
+	width:104px;
+	height:16px;
+	font-size:13px;
+	/*line-height:14px;*/
+}
+#SearchPhone
+{	
+	background:url(../Images/SC3240501/Phone.png) 0 0 no-repeat;
+}
+#SearchMobile
+{
+	right:24px;
+	background:url(../Images/SC3240501/Mobile.png) 0 0 no-repeat;
+}
+.SearchDataBoxInner ul li #SearchPhotoArea
+{
+	position:absolute;
+	top:11px; left:9px;
+	width:60px; height:60px;
+}
+.SearchDataBoxInner ul li.FrontLink{
+	border-bottom:#bbbbbb 1px solid;
+}
+.SearchDataBoxInner ul li .FrontList
+{
+	font-size:17px;
+	color:#666666;
+	text-align:center;
+	width:373px;
+	line-height:84px;
+}
+.SearchDataBoxInner ul li .FrontSearchingImage
+{
+	background:url(../Images/progress.png) 0 0 no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	position:absolute;
+	top:30px;
+	left:42px;
+	width:21px;
+	height:22px;
+}
+.SearchDataBoxInner ul li .FrontListSearching
+{
+	display:none;
+	font-size:17px;
+	color:#666666;
+	text-align:center;
+	width:373px;
+	line-height:84px;
+}
+.SearchDataBoxInner ul li.NextLink{
+	border-bottom:none;
+}
+.SearchDataBoxInner ul li .NextList
+{
+	font-size:17px;
+	color:#666666;
+	text-align:center;
+	width:373px;
+	line-height:84px;
+}
+.SearchDataBoxInner ul li .NextSearchingImage
+{
+	background:url(../Images/progress.png) 0 0 no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	position:absolute;
+	top:30px;
+	left:42px;
+	width:21px;
+	height:22px;
+}
+.SearchDataBoxInner ul li .NextListSearching
+{
+	display:none;
+	font-size:17px;
+	color:#666666;
+	text-align:center;
+	width:373px;
+	line-height:84px;
+}
+.SearchDataBoxInner .NoSearchImage
+{
+	background:url(../Images/SC3240501/NoSearch.png) center center no-repeat;
+	display:none;
+	position:relative;
+	width:353px;
+	height:145px;
+	padding: 270px 10px 0 10px;
+	font-size:16px;
+	line-height:18px;
+	color:#666;
+	text-align:center;
+}
+.NewChipPopStyle .dataBox .content .SearchBottomBox
+{
+	border-top:#7a8091 1px solid;
+	box-shadow:0px -1px 3px #777;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+							color-stop(0.01, #f7f8f9),
+							to(#a6aab7));
+	border-radius:0 0 3px 3px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:373px;
+	height:62px;
+	overflow:hidden;
+}
+
+.NewChipPopStyle .dataBox .content .SearchBottomBox .BottomButton
+{
+	position:absolute;
+    left:11px;
+    top:10px;
+    width:348px;
+    height:42px;
+    padding:0 0 0 0;
+    border:#545b6b 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+                            color-stop(0.50, #f7f8f9),
+                            color-stop(0.51, #edeff3),
+                            to(#edeff3));
+    border-radius:3px;
+    text-align:center;
+    font-size:17px;
+    line-height:40px;
+    font-weight:bold;
+    /*↓common.cssのinputで白が指定されているため、黒で上書きする↓*/
+    color:#000;
+}
+
+.NewChipPopStyle .dataBox .content .SearchBottomBox .BottomButtonDisable
+{
+	opacity: 0.5;
+}
+
+#SearchDataLoading {
+    position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:45%;
+	left:45%;
+	width:38px;
+	height:38px;
+}
+
+.NewChipPopStyle .dataBox .contentScroll
+{
+	overflow:hidden;
+    position:relative;
+    width:375px;
+}
+.NewChipPopStyle .dataBox .contentInner
+{
+	width:775px;
+	left:0px;
+	position:relative;
+	overflow:hidden;
+	-webkit-padding-start:0px;
+}
+
+.NewChipPopStyle .dataBox .content 
+{
+	width:353px;
+	height:545px;
+	left:26px; top:0;
+	float:left;
+    position:relative;
+    font-size:0.9em;
+    padding:10px;
+	margin: 0px auto;
+    border:#a5a5a5 1px solid;
+	border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+    color-stop(0.018, #fff),
+    color-stop(0.6, #fff),
+    to(#e6e6e6));
+ }
+
+
+/***************************************************************
+* 文字列調整
+****************************************************************/
+/*文字を設定されたWidthに合わせて強制的に切る*/
+.NewChipClip{
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*文字を設定されたWidthに合わせて...表示(ツールチップ表示用クラス)*/
+.NewChipEllipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*2014/07/18 TMEJ 明瀬 予約客検索の検索方法切替ボタンのツールチップ非表示対応 START*/
+/*文字を設定されたWidthに合わせて...表示(ツールチップ非表示用クラス)*/
+.NewChipNotToolChipEllipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*2014/07/18 TMEJ 明瀬 予約客検索の検索方法切替ボタンのツールチップ非表示対応 END*/
+
+/*文字を設定されたWidthに合わせて改行*/
+.NewChipWrap{
+	text-overflow: clip;
+	overflow: hidden;
+}
+

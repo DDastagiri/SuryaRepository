@@ -1,0 +1,434 @@
+﻿/*--------------------------------------------------------------------------
+//SC3240701.css
+//--------------------------------------------------------------------------
+//機能：ストール使用不可画面
+//作成：2017/08/30 NSK 竹中(悠) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加
+---------------------------------------------------------------------------*/
+@charset "utf-8";
+
+/*チップ選択エリア開閉時のちらつきをなくすためのstyle*/
+#IdleDateTimeUl,
+#IdleMemoUl
+{
+    transform:translateZ(0px);
+}
+
+.UnavailablePopStyle{
+	font-weight:bold;
+	display:block;
+	width:385px;
+	height:247px;
+	position:absolute;
+	top:18px; left:514px;
+	z-index:902;
+	-webkit-transition:left 300ms linear;
+}
+
+.UnavailablePopStyle .OverShadow{
+	display:block;
+	position:absolute;
+	font-size:1px; line-height:1px;
+	z-index:100;
+	width:375px;
+	height:25px;
+	top:44px;	left:6px;
+	border-radius:4px;
+	box-shadow:inset 0px 3px 1px rgba(64,64,64,0.4);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(16,16,16,0.4)), 
+							color-stop(0.1, rgba(16,16,16,0.3)),
+							color-stop(0.2, rgba(16,16,16,0)),
+							to(rgba(16,16,16,0)));
+	-webkit-transition:width 300ms linear;	
+}
+
+.UnavailablePopStyle .borderBox{
+	display:block;
+	width:385px;
+	height:190px;
+	position:absolute;
+	top:0px;	left:0px;
+	font-size:1px; line-height:1px;
+	z-index:1;
+	-webkit-transition:width 300ms linear;
+}
+.UnavailablePopStyle .gradationBox{
+	display:block;
+	width:385px;
+	height:190px;
+	position:absolute;
+	top:0px;	left:1px;
+	z-index:2;
+	-webkit-transition:width 300ms linear;
+}
+.UnavailablePopStyle .myDataBox{
+	display:block;
+	width:385px;
+	height: 247px;
+	top:0px; left:0;
+	border-radius:9px;
+	border:#4f4f4f 1px solid;
+	box-shadow: 0px 1px 6px #000;
+	z-index:2;
+	-webkit-transition:width 300ms linear;
+}
+.UnavailablePopStyle .ArrowMask{
+	display:block;
+	position:absolute;
+	top:200px;
+	left:-17px;
+	width:40px;
+	height:70px;
+	overflow:hidden;
+}
+.UnavailablePopStyle .Arrow{
+	display:block;
+	width:26px;
+	height:26px;
+	transform: rotate(45deg);
+	position:absolute;
+	top:4px;
+	left:6px;
+	border-bottom:1px solid rgba(79,79,79,0.98);
+	border-top:1px solid rgba(79,79,79,0.98);
+	border-left:1px solid rgba(79,79,79,0.98);
+	z-index:1;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(13,23,38, 0.98)),
+								to(rgba(13,23,38,0.98)));
+}
+
+.scNscPopUpHeaderBg{
+	width:385px; height:42px;
+	position:absolute;
+	top:1px; left:0;
+	border-top:#aeb2bb 1px solid;
+	border-radius:7px 7px 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.9)),
+								color-stop(0.01, rgba(201, 203, 208, 0.9)),
+								color-stop(0.011, rgba(29, 40, 59, 0.9)),
+								color-stop(0.50, rgba(29, 40, 59, 0.9)),
+								color-stop(0.51, rgba(3, 11, 26, 0.9)),
+								to(rgba(13,23,38,0.98)));
+	z-index:-1;
+	-webkit-transition:width 300ms linear;
+}
+
+.scNscPopUpDataBg{
+	width:385px; height:75px;
+	position:absolute;
+	border-radius:0 0 7px 7px;
+	background:rgba(13,23,38,0.98);
+	top:44px; left:0;
+	z-index:-1;
+	-webkit-transition:width 300ms linear;
+}
+
+.UnavailablePopStyle .dataBox{
+	display:block;
+	width:375px;
+	height:190px;
+	position:absolute;
+	top:43px;	left:5px;
+	border-radius:5px;
+	border:#242c40 1px solid;
+	box-shadow:inset 0px 0px 3px #777;
+	z-index:10;
+	text-align:center;
+	-webkit-transition:width 300ms linear;
+	background:rgba(7,11,29,0.9);
+}
+
+
+.UnavailablePopStyle .dataBox .UnavailableInnerDataBox{
+	width:367px; 
+	height:190px;
+	overflow:hidden;
+	position:relative;
+	left:0px; top:0;
+	float:left;
+	padding:10px 0 0 8px;
+	border-radius:5px;
+	margin: 0px auto;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+
+.UnavailablePopStyle .dataBox .UnavailableInnerDataBox02{
+	width:357px; height:auto;
+	position:relative;
+	border-radius:0 0 4px 4px;
+}
+
+.UnavailablePopStyle .PopUpHeader {
+	position:relative;
+	width:385px;
+	height:45px;
+	z-index:1000;
+	text-align:center;
+	-webkit-transition:width 300ms linear;
+}
+.UnavailablePopStyle .PopUpHeader h3 {
+	width:300px;
+	font-size:13px;
+	line-height:45px;
+	color:#FFF;
+	text-shadow:0px -1px 0px #000;
+    margin:0px auto;
+}
+.UnavailablePopStyle .LeftBtn{
+	position:absolute;
+	left:7px; top:7px;
+	width:78px;
+	height:30px;
+	border-radius:4px;
+}
+.UnavailablePopStyle .RightBtn{
+	position:absolute;
+	right:5px; top:7px;
+	width:78px;
+	height:30px;
+	border-radius:4px;
+}
+.UnavailablePopStyle #UnavailableCancelBtn,
+.UnavailablePopStyle #UnavailableRegisterBtn{
+	display:block;
+	background:-webkit-gradient(linear, left top, left bottom, from(#4f5769),
+							color-stop(0.01, #4f5769),
+							color-stop(0.01, #576174),
+							color-stop(0.5, #1a233e),
+							color-stop(0.5, #000b29),
+							to(#000b29));
+	border-radius:4px;
+	box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5);
+	border:#010205 1px solid;
+	width:78px;
+	height:30px;
+	font-size:12px;
+	font-weight:bold;
+	line-height:27px;
+	text-align:center;
+	text-shadow:rgba(0, 0, 0, 0.5);
+	color:#FFF;
+	z-index:1;
+}
+.UnavailablePopStyle #UnavailableRegisterBtn{
+	background:-webkit-gradient(linear, left top, left bottom, from(#6485cc),
+							color-stop(0.01, #6485cc),
+							color-stop(0.01, #6f96e8),
+							color-stop(0.5, #376fe0),
+							color-stop(0.5, #2361dd),
+							to(#2463de));
+}
+
+.UnavailablePopStyle .TextBlue{
+	color:#324f85;
+}
+
+.UnavailablePopStyle .TextBlack{
+	color:#000;
+}
+
+
+/***************************************************************
+*  使用不可チップ 日時テーブル IdleDateTimeTable
+****************************************************************/
+.UnavailablePopStyle .IdleDateTimeTable{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:60px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.UnavailablePopStyle .IdleDateTimeTable li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.UnavailablePopStyle .IdleDateTimeTable li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.UnavailablePopStyle .IdleDateTimeTable li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.UnavailablePopStyle .IdleDateTimeTable dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.UnavailablePopStyle .IdleDateTimeTable dt,
+.UnavailablePopStyle .IdleDateTimeTable dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.UnavailablePopStyle .IdleDateTimeTable dt{
+	width:85px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.UnavailablePopStyle .IdleDateTimeTable dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.UnavailablePopStyle .IdleDateTimeTable dd{
+	width:269px;
+	font-size:14px;
+	text-align:right;
+	color:#324f85;
+}
+.UnavailablePopStyle .IdleDateTimeTable dd span{
+	padding:0 10px 0 0;
+}
+.UnavailablePopStyle .IdleDateTimeTable dd input{
+	display:block;
+	color:#324F85;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	text-align:right;
+}
+
+.UnavailablePopStyle .IdleDateTimeTable .TextBlue{
+	color:#324f85;
+}
+
+.UnavailablePopStyle .IdleDateTimeTable .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* メモ  IdleMemo
+****************************************************************/
+.UnavailablePopStyle .IdleMemo{
+	display:block;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 15px 0;
+}
+.UnavailablePopStyle .IdleMemo li{
+	display:block;
+	width:355px;
+	border-radius:8px;
+}
+.UnavailablePopStyle .IdleMemo dl{
+	display:block;
+	width:468px;
+}
+.UnavailablePopStyle .IdleMemo dt,
+.UnavailablePopStyle .IdleMemo dd{
+	display:block;
+	float:left;
+	line-height:59px;
+}
+.UnavailablePopStyle .IdleMemo dt{
+	width:85px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+	line-height:90px;
+}
+.UnavailablePopStyle .IdleMemo dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.UnavailablePopStyle .IdleMemo dd{
+	width:269px;
+	font-size:14px;
+	line-height:29px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.UnavailablePopStyle .IdleMemo dd:last-child{
+	border:none;
+}
+
+.UnavailablePopStyle .IdleMemo .TextareaBox{
+	padding:6px 10px;
+}
+
+.UnavailablePopStyle .IdleMemo dd textarea{
+	display:block;
+	line-height:18px;
+	border: none;
+	font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    color: #324F85;
+    resize: none;
+}
+
+.UnavailablePopStyle .IdleMemo .TextBlue{
+	color:#324f85;
+}
+
+.UnavailablePopStyle .IdleMemo .TextBlack{
+	color:#000;
+}
+
+
+/***************************************************************
+* アクティブインジケーター
+****************************************************************/
+#UnavailableActiveIndicator {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	width:38px;
+	height:38px;
+	z-index:10002;
+}
+#UnavailableActiveIndicator.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+
+/***************************************************************
+* その他コンテンツ
+****************************************************************/
+
+.UnavailablePopStyle .dataBox .contentScroll
+{
+	overflow:hidden;
+    position:relative;
+    width:375px;
+}
+.UnavailablePopStyle .dataBox .contentInner
+{
+	width:775px;
+	left:0px;
+	position:relative;
+	overflow:hidden;
+	-webkit-padding-start:0px;
+}
+
+
+/***************************************************************
+* 文字列調整
+****************************************************************/
+/*文字を設定されたWidthに合わせて...表示(ツールチップ表示用クラス)*/
+.UnavailableEllipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+

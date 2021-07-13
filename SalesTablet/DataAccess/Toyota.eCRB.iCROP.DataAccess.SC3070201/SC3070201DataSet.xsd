@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3070201DataSet" targetNamespace="http://tempuri.org/SC3070201DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3070201DataSet.xsd" xmlns="http://tempuri.org/SC3070201DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.iCROP.DataAccess.SC3070201.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+          <Connection AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="Data Source=OSG-WLNW-WS2003;Persist Security Info=True;User ID=ICROP_TCS;Password=ICROP_TCS;Unicode=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3070201DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3070201DataSet" msprop:Generator_UserDSName="SC3070201DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3070201Contract" msprop:Generator_TableClassName="SC3070201ContractDataTable" msprop:Generator_TableVarName="tableSC3070201Contract" msprop:Generator_TablePropName="SC3070201Contract" msprop:Generator_RowDeletingName="SC3070201ContractRowDeleting" msprop:Generator_RowChangingName="SC3070201ContractRowChanging" msprop:Generator_RowEvHandlerName="SC3070201ContractRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201ContractRowDeleted" msprop:Generator_UserTableName="SC3070201Contract" msprop:Generator_RowChangedName="SC3070201ContractRowChanged" msprop:Generator_RowEvArgName="SC3070201ContractRowChangeEvent" msprop:Generator_RowClassName="SC3070201ContractRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONTRACTFLG" msprop:Generator_ColumnVarNameInTable="columnCONTRACTFLG" msprop:Generator_ColumnPropNameInRow="CONTRACTFLG" msprop:Generator_ColumnPropNameInTable="CONTRACTFLGColumn" msprop:Generator_UserColumnName="CONTRACTFLG" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201SelectedPaymentKbn" msprop:Generator_TableClassName="SC3070201SelectedPaymentKbnDataTable" msprop:Generator_TableVarName="tableSC3070201SelectedPaymentKbn" msprop:Generator_TablePropName="SC3070201SelectedPaymentKbn" msprop:Generator_RowDeletingName="SC3070201SelectedPaymentKbnRowDeleting" msprop:Generator_RowChangingName="SC3070201SelectedPaymentKbnRowChanging" msprop:Generator_RowEvHandlerName="SC3070201SelectedPaymentKbnRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201SelectedPaymentKbnRowDeleted" msprop:Generator_UserTableName="SC3070201SelectedPaymentKbn" msprop:Generator_RowChangedName="SC3070201SelectedPaymentKbnRowChanged" msprop:Generator_RowEvArgName="SC3070201SelectedPaymentKbnRowChangeEvent" msprop:Generator_RowClassName="SC3070201SelectedPaymentKbnRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAYMENTMETHOD" msprop:Generator_ColumnVarNameInTable="columnPAYMENTMETHOD" msprop:Generator_ColumnPropNameInRow="PAYMENTMETHOD" msprop:Generator_ColumnPropNameInTable="PAYMENTMETHODColumn" msprop:Generator_UserColumnName="PAYMENTMETHOD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201ESTIMATEDATA" msprop:Generator_TableClassName="SC3070201ESTIMATEDATADataTable" msprop:Generator_TableVarName="tableSC3070201ESTIMATEDATA" msprop:Generator_TablePropName="SC3070201ESTIMATEDATA" msprop:Generator_RowDeletingName="SC3070201ESTIMATEDATARowDeleting" msprop:Generator_RowChangingName="SC3070201ESTIMATEDATARowChanging" msprop:Generator_RowEvHandlerName="SC3070201ESTIMATEDATARowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201ESTIMATEDATARowDeleted" msprop:Generator_UserTableName="SC3070201ESTIMATEDATA" msprop:Generator_RowChangedName="SC3070201ESTIMATEDATARowChanged" msprop:Generator_RowEvArgName="SC3070201ESTIMATEDATARowChangeEvent" msprop:Generator_RowClassName="SC3070201ESTIMATEDATARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ESTIMATEID" msprop:Generator_ColumnVarNameInTable="columnESTIMATEID" msprop:Generator_ColumnPropNameInRow="ESTIMATEID" msprop:Generator_ColumnPropNameInTable="ESTIMATEIDColumn" msprop:Generator_UserColumnName="ESTIMATEID" type="xs:decimal" />
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201SYSTEMENVSETTING" msprop:Generator_TableClassName="SC3070201SYSTEMENVSETTINGDataTable" msprop:Generator_TableVarName="tableSC3070201SYSTEMENVSETTING" msprop:Generator_TablePropName="SC3070201SYSTEMENVSETTING" msprop:Generator_RowDeletingName="SC3070201SYSTEMENVSETTINGRowDeleting" msprop:Generator_RowChangingName="SC3070201SYSTEMENVSETTINGRowChanging" msprop:Generator_RowEvHandlerName="SC3070201SYSTEMENVSETTINGRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201SYSTEMENVSETTINGRowDeleted" msprop:Generator_UserTableName="SC3070201SYSTEMENVSETTING" msprop:Generator_RowChangedName="SC3070201SYSTEMENVSETTINGRowChanged" msprop:Generator_RowEvArgName="SC3070201SYSTEMENVSETTINGRowChangeEvent" msprop:Generator_RowClassName="SC3070201SYSTEMENVSETTINGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEFOLTNAMETITLE" msdata:Caption="PARAMNAME" msprop:Generator_ColumnVarNameInTable="columnDEFOLTNAMETITLE" msprop:Generator_ColumnPropNameInRow="DEFOLTNAMETITLE" msprop:Generator_ColumnPropNameInTable="DEFOLTNAMETITLEColumn" msprop:Generator_UserColumnName="DEFOLTNAMETITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMETITLEPOSITION" msdata:Caption="PARAMVALUE" msprop:Generator_ColumnVarNameInTable="columnNAMETITLEPOSITION" msprop:Generator_ColumnPropNameInRow="NAMETITLEPOSITION" msprop:Generator_ColumnPropNameInTable="NAMETITLEPOSITIONColumn" msprop:Generator_UserColumnName="NAMETITLEPOSITION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201CONTRACTAPPROVAL" msprop:Generator_TableClassName="SC3070201CONTRACTAPPROVALDataTable" msprop:Generator_TableVarName="tableSC3070201CONTRACTAPPROVAL" msprop:Generator_TablePropName="SC3070201CONTRACTAPPROVAL" msprop:Generator_RowDeletingName="SC3070201CONTRACTAPPROVALRowDeleting" msprop:Generator_RowChangingName="SC3070201CONTRACTAPPROVALRowChanging" msprop:Generator_RowEvHandlerName="SC3070201CONTRACTAPPROVALRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201CONTRACTAPPROVALRowDeleted" msprop:Generator_UserTableName="SC3070201CONTRACTAPPROVAL" msprop:Generator_RowChangedName="SC3070201CONTRACTAPPROVALRowChanged" msprop:Generator_RowEvArgName="SC3070201CONTRACTAPPROVALRowChangeEvent" msprop:Generator_RowClassName="SC3070201CONTRACTAPPROVALRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONTRACT_APPROVAL_STATUS" msprop:Generator_ColumnVarNameInTable="columnCONTRACT_APPROVAL_STATUS" msprop:Generator_ColumnPropNameInRow="CONTRACT_APPROVAL_STATUS" msprop:Generator_ColumnPropNameInTable="CONTRACT_APPROVAL_STATUSColumn" msprop:Generator_UserColumnName="CONTRACT_APPROVAL_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTRACT_APPROVAL_STAFF" msprop:Generator_ColumnVarNameInTable="columnCONTRACT_APPROVAL_STAFF" msprop:Generator_ColumnPropNameInRow="CONTRACT_APPROVAL_STAFF" msprop:Generator_ColumnPropNameInTable="CONTRACT_APPROVAL_STAFFColumn" msprop:Generator_UserColumnName="CONTRACT_APPROVAL_STAFF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTRACT_APPROVAL_REQUESTSTAFF" msprop:Generator_ColumnVarNameInTable="columnCONTRACT_APPROVAL_REQUESTSTAFF" msprop:Generator_ColumnPropNameInRow="CONTRACT_APPROVAL_REQUESTSTAFF" msprop:Generator_ColumnPropNameInTable="CONTRACT_APPROVAL_REQUESTSTAFFColumn" msprop:Generator_UserColumnName="CONTRACT_APPROVAL_REQUESTSTAFF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTRACTNO" msprop:Generator_ColumnVarNameInTable="columnCONTRACTNO" msprop:Generator_ColumnPropNameInRow="CONTRACTNO" msprop:Generator_ColumnPropNameInTable="CONTRACTNOColumn" msprop:Generator_UserColumnName="CONTRACTNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELFLG" msprop:Generator_ColumnVarNameInTable="columnDELFLG" msprop:Generator_ColumnPropNameInRow="DELFLG" msprop:Generator_ColumnPropNameInTable="DELFLGColumn" msprop:Generator_UserColumnName="DELFLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201EstimateId" msprop:Generator_TableClassName="SC3070201EstimateIdDataTable" msprop:Generator_TableVarName="tableSC3070201EstimateId" msprop:Generator_TablePropName="SC3070201EstimateId" msprop:Generator_RowDeletingName="SC3070201EstimateIdRowDeleting" msprop:Generator_RowChangingName="SC3070201EstimateIdRowChanging" msprop:Generator_RowEvHandlerName="SC3070201EstimateIdRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201EstimateIdRowDeleted" msprop:Generator_UserTableName="SC3070201EstimateId" msprop:Generator_RowChangedName="SC3070201EstimateIdRowChanged" msprop:Generator_RowEvArgName="SC3070201EstimateIdRowChangeEvent" msprop:Generator_RowClassName="SC3070201EstimateIdRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ESTIMATEID" msprop:Generator_ColumnVarNameInTable="columnESTIMATEID" msprop:Generator_ColumnPropNameInRow="ESTIMATEID" msprop:Generator_ColumnPropNameInTable="ESTIMATEIDColumn" msprop:Generator_UserColumnName="ESTIMATEID" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201StaffCd" msprop:Generator_TableClassName="SC3070201StaffCdDataTable" msprop:Generator_TableVarName="tableSC3070201StaffCd" msprop:Generator_TablePropName="SC3070201StaffCd" msprop:Generator_RowDeletingName="SC3070201StaffCdRowDeleting" msprop:Generator_RowChangingName="SC3070201StaffCdRowChanging" msprop:Generator_RowEvHandlerName="SC3070201StaffCdRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201StaffCdRowDeleted" msprop:Generator_UserTableName="SC3070201StaffCd" msprop:Generator_RowChangedName="SC3070201StaffCdRowChanged" msprop:Generator_RowEvArgName="SC3070201StaffCdRowChangeEvent" msprop:Generator_RowClassName="SC3070201StaffCdRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SLS_PIC_STF_CD" msprop:Generator_ColumnVarNameInTable="columnSLS_PIC_STF_CD" msprop:Generator_ColumnPropNameInRow="SLS_PIC_STF_CD" msprop:Generator_ColumnPropNameInTable="SLS_PIC_STF_CDColumn" msprop:Generator_UserColumnName="SLS_PIC_STF_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201FllwUpBox" msprop:Generator_TableClassName="SC3070201FllwUpBoxDataTable" msprop:Generator_TableVarName="tableSC3070201FllwUpBox" msprop:Generator_TablePropName="SC3070201FllwUpBox" msprop:Generator_RowDeletingName="SC3070201FllwUpBoxRowDeleting" msprop:Generator_RowChangingName="SC3070201FllwUpBoxRowChanging" msprop:Generator_RowEvHandlerName="SC3070201FllwUpBoxRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201FllwUpBoxRowDeleted" msprop:Generator_UserTableName="SC3070201FllwUpBox" msprop:Generator_RowChangedName="SC3070201FllwUpBoxRowChanged" msprop:Generator_RowEvArgName="SC3070201FllwUpBoxRowChangeEvent" msprop:Generator_RowClassName="SC3070201FllwUpBoxRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CRACTRESULT" msprop:Generator_ColumnVarNameInTable="columnCRACTRESULT" msprop:Generator_ColumnPropNameInRow="CRACTRESULT" msprop:Generator_ColumnPropNameInTable="CRACTRESULTColumn" msprop:Generator_UserColumnName="CRACTRESULT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201CustNametitle" msprop:Generator_TableClassName="SC3070201CustNametitleDataTable" msprop:Generator_TableVarName="tableSC3070201CustNametitle" msprop:Generator_TablePropName="SC3070201CustNametitle" msprop:Generator_RowDeletingName="SC3070201CustNametitleRowDeleting" msprop:Generator_RowChangingName="SC3070201CustNametitleRowChanging" msprop:Generator_RowEvHandlerName="SC3070201CustNametitleRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201CustNametitleRowDeleted" msprop:Generator_UserTableName="SC3070201CustNametitle" msprop:Generator_RowChangedName="SC3070201CustNametitleRowChanged" msprop:Generator_RowEvArgName="SC3070201CustNametitleRowChangeEvent" msprop:Generator_RowClassName="SC3070201CustNametitleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NAMETITLE" msprop:Generator_ColumnVarNameInTable="columnNAMETITLE" msprop:Generator_ColumnPropNameInRow="NAMETITLE" msprop:Generator_ColumnPropNameInTable="NAMETITLEColumn" msprop:Generator_UserColumnName="NAMETITLE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201DMSCODEMAP" msprop:Generator_TableClassName="SC3070201DMSCODEMAPDataTable" msprop:Generator_TableVarName="tableSC3070201DMSCODEMAP" msprop:Generator_TablePropName="SC3070201DMSCODEMAP" msprop:Generator_RowDeletingName="SC3070201DMSCODEMAPRowDeleting" msprop:Generator_RowChangingName="SC3070201DMSCODEMAPRowChanging" msprop:Generator_RowEvHandlerName="SC3070201DMSCODEMAPRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201DMSCODEMAPRowDeleted" msprop:Generator_UserTableName="SC3070201DMSCODEMAP" msprop:Generator_RowChangedName="SC3070201DMSCODEMAPRowChanged" msprop:Generator_RowEvArgName="SC3070201DMSCODEMAPRowChangeEvent" msprop:Generator_RowClassName="SC3070201DMSCODEMAPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DMS_CD_1" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_1" msprop:Generator_ColumnPropNameInRow="DMS_CD_1" msprop:Generator_ColumnPropNameInTable="DMS_CD_1Column" msprop:Generator_UserColumnName="DMS_CD_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DMS_CD_2" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_2" msprop:Generator_ColumnPropNameInRow="DMS_CD_2" msprop:Generator_ColumnPropNameInTable="DMS_CD_2Column" msprop:Generator_UserColumnName="DMS_CD_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201EstDiscountApproval" msprop:Generator_TableClassName="SC3070201EstDiscountApprovalDataTable" msprop:Generator_TableVarName="tableSC3070201EstDiscountApproval" msprop:Generator_TablePropName="SC3070201EstDiscountApproval" msprop:Generator_RowDeletingName="SC3070201EstDiscountApprovalRowDeleting" msprop:Generator_RowChangingName="SC3070201EstDiscountApprovalRowChanging" msprop:Generator_RowEvHandlerName="SC3070201EstDiscountApprovalRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201EstDiscountApprovalRowDeleted" msprop:Generator_UserTableName="SC3070201EstDiscountApproval" msprop:Generator_RowChangedName="SC3070201EstDiscountApprovalRowChanged" msprop:Generator_RowEvArgName="SC3070201EstDiscountApprovalRowChangeEvent" msprop:Generator_RowClassName="SC3070201EstDiscountApprovalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ESTIMATEID" msprop:Generator_ColumnVarNameInTable="columnESTIMATEID" msprop:Generator_ColumnPropNameInRow="ESTIMATEID" msprop:Generator_ColumnPropNameInTable="ESTIMATEIDColumn" msprop:Generator_UserColumnName="ESTIMATEID" type="xs:long" />
+              <xs:element name="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO" type="xs:decimal" />
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" type="xs:string" minOccurs="0" />
+              <xs:element name="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD" type="xs:string" minOccurs="0" />
+              <xs:element name="STAFFACCOUNT" msprop:Generator_ColumnVarNameInTable="columnSTAFFACCOUNT" msprop:Generator_ColumnPropNameInRow="STAFFACCOUNT" msprop:Generator_ColumnPropNameInTable="STAFFACCOUNTColumn" msprop:Generator_UserColumnName="STAFFACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REQUESTPRICE" msprop:Generator_ColumnVarNameInTable="columnREQUESTPRICE" msprop:Generator_ColumnPropNameInRow="REQUESTPRICE" msprop:Generator_ColumnPropNameInTable="REQUESTPRICEColumn" msprop:Generator_UserColumnName="REQUESTPRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="REASONID" msprop:Generator_ColumnVarNameInTable="columnREASONID" msprop:Generator_ColumnPropNameInRow="REASONID" msprop:Generator_ColumnPropNameInTable="REASONIDColumn" msprop:Generator_UserColumnName="REASONID" type="xs:string" minOccurs="0" />
+              <xs:element name="MSG_DLR" msprop:Generator_ColumnVarNameInTable="columnMSG_DLR" msprop:Generator_ColumnPropNameInRow="MSG_DLR" msprop:Generator_ColumnPropNameInTable="MSG_DLRColumn" msprop:Generator_UserColumnName="MSG_DLR" type="xs:string" minOccurs="0" />
+              <xs:element name="REQUESTDATE" msprop:Generator_ColumnVarNameInTable="columnREQUESTDATE" msprop:Generator_ColumnPropNameInRow="REQUESTDATE" msprop:Generator_ColumnPropNameInTable="REQUESTDATEColumn" msprop:Generator_UserColumnName="REQUESTDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MANAGERACCOUNT" msprop:Generator_ColumnVarNameInTable="columnMANAGERACCOUNT" msprop:Generator_ColumnPropNameInRow="MANAGERACCOUNT" msprop:Generator_ColumnPropNameInTable="MANAGERACCOUNTColumn" msprop:Generator_UserColumnName="MANAGERACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="APPROVEDPRICE" msprop:Generator_ColumnVarNameInTable="columnAPPROVEDPRICE" msprop:Generator_ColumnPropNameInRow="APPROVEDPRICE" msprop:Generator_ColumnPropNameInTable="APPROVEDPRICEColumn" msprop:Generator_UserColumnName="APPROVEDPRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="MANAGERMEMO" msprop:Generator_ColumnVarNameInTable="columnMANAGERMEMO" msprop:Generator_ColumnPropNameInRow="MANAGERMEMO" msprop:Generator_ColumnPropNameInTable="MANAGERMEMOColumn" msprop:Generator_UserColumnName="MANAGERMEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="APPROVEDDATE" msprop:Generator_ColumnVarNameInTable="columnAPPROVEDDATE" msprop:Generator_ColumnPropNameInRow="APPROVEDDATE" msprop:Generator_ColumnPropNameInTable="APPROVEDDATEColumn" msprop:Generator_UserColumnName="APPROVEDDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RESPONSEFLG" msprop:Generator_ColumnVarNameInTable="columnRESPONSEFLG" msprop:Generator_ColumnPropNameInRow="RESPONSEFLG" msprop:Generator_ColumnPropNameInTable="RESPONSEFLGColumn" msprop:Generator_UserColumnName="RESPONSEFLG" type="xs:string" minOccurs="0" />
+              <xs:element name="NOTICEREQID" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQID" msprop:Generator_ColumnPropNameInRow="NOTICEREQID" msprop:Generator_ColumnPropNameInTable="NOTICEREQIDColumn" msprop:Generator_UserColumnName="NOTICEREQID" type="xs:long" minOccurs="0" />
+              <xs:element name="SERIESCD" msprop:Generator_ColumnVarNameInTable="columnSERIESCD" msprop:Generator_ColumnPropNameInRow="SERIESCD" msprop:Generator_ColumnPropNameInTable="SERIESCDColumn" msprop:Generator_UserColumnName="SERIESCD" type="xs:string" minOccurs="0" />
+              <xs:element name="MODELCD" msprop:Generator_ColumnVarNameInTable="columnMODELCD" msprop:Generator_ColumnPropNameInRow="MODELCD" msprop:Generator_ColumnPropNameInTable="MODELCDColumn" msprop:Generator_UserColumnName="MODELCD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201NoticeRequest" msprop:Generator_TableClassName="SC3070201NoticeRequestDataTable" msprop:Generator_TableVarName="tableSC3070201NoticeRequest" msprop:Generator_TablePropName="SC3070201NoticeRequest" msprop:Generator_RowDeletingName="SC3070201NoticeRequestRowDeleting" msprop:Generator_RowChangingName="SC3070201NoticeRequestRowChanging" msprop:Generator_RowEvHandlerName="SC3070201NoticeRequestRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201NoticeRequestRowDeleted" msprop:Generator_UserTableName="SC3070201NoticeRequest" msprop:Generator_RowChangedName="SC3070201NoticeRequestRowChanged" msprop:Generator_RowEvArgName="SC3070201NoticeRequestRowChangeEvent" msprop:Generator_RowClassName="SC3070201NoticeRequestRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070201DmsId" msprop:Generator_TableClassName="SC3070201DmsIdDataTable" msprop:Generator_TableVarName="tableSC3070201DmsId" msprop:Generator_TablePropName="SC3070201DmsId" msprop:Generator_RowDeletingName="SC3070201DmsIdRowDeleting" msprop:Generator_RowChangingName="SC3070201DmsIdRowChanging" msprop:Generator_RowEvHandlerName="SC3070201DmsIdRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070201DmsIdRowDeleted" msprop:Generator_UserTableName="SC3070201DmsId" msprop:Generator_RowChangedName="SC3070201DmsIdRowChanged" msprop:Generator_RowEvArgName="SC3070201DmsIdRowChangeEvent" msprop:Generator_RowClassName="SC3070201DmsIdRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUSTCD" msprop:Generator_ColumnVarNameInTable="columnCUSTCD" msprop:Generator_ColumnPropNameInRow="CUSTCD" msprop:Generator_ColumnPropNameInTable="CUSTCDColumn" msprop:Generator_UserColumnName="CUSTCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SC3070201ESTIMATEDATA" />
+      <xs:field xpath="mstns:ESTIMATEID" />
+    </xs:unique>
+    <xs:unique name="SC3070201EstimateId_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:SC3070201EstimateId" />
+      <xs:field xpath="mstns:ESTIMATEID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

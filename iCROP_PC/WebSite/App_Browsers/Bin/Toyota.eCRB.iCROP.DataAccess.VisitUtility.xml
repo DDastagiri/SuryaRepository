@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Toyota.eCRB.iCROP.DataAccess.VisitUtility
+</name>
+</assembly>
+<members>
+<member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityClaimCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityUsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityGateWayDomainDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityClaimCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityUsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityGateWayDomainRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityClaimCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityUsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet.VisitUtilityGateWayDomainRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.ClaimStatusFirst">
+	<summary>
+ 苦情情報ステータス（1次対応中）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.ClaimStatusLast">
+	<summary>
+ 苦情情報ステータス（最終対応中）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.ClaimStatusComplete">
+	<summary>
+ 苦情情報ステータス（完了）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.RelationFlgOn">
+	<summary>
+ 苦情情報紐付け関係フラグ(親)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.RelationFlgOff">
+	<summary>
+ 苦情情報付け関係フラグ(なし)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.BizTypeClaim">
+	<summary>
+ 用件内容(苦情)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.HasClaimInfo(System.String,System.String,System.DateTime)">
+	<summary>
+ 苦情情報有無の取得
+ </summary>
+	<param name="customerKind">販売店コード</param>
+	<param name="customerCode">店舗コード</param>
+	<param name="completeDate">完了表示日時</param>
+	<returns>苦情情報有無</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.GetUsers(System.String,System.String,System.Collections.Generic.List{System.Decimal},System.Collections.Generic.List{System.String},System.String)">
+	<summary>
+ TBL_USERSから一覧を取得します。
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="operationCodeList">オペレーションコード</param>
+	<param name="presenceCategoryList">在席状態</param>
+	<param name="deleteCode">削除フラグ</param>
+	<returns>VisitUtilityUsersDataTable</returns>
+	<remarks>
+ TBL_USERSから一覧を取得します。
+ </remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter.GetSystemSettingDealer(System.String)">
+	<summary>
+ TB_M_SYSTEM_SETTING_DLRから設定値を取得します。
+ </summary>
+	<param name="settingName">削除フラグ</param>
+	<returns>VisitUtilityGateWayDomainDataTable</returns>
+	<remarks>
+ TB_M_SYSTEM_SETTING_DLRから設定値をを取得します。
+ </remarks>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitUtilityDataSetTableAdapters.VisitUtilityDataSetTableAdapter">
+	<summary>
+ 共通テーブルアダプター
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

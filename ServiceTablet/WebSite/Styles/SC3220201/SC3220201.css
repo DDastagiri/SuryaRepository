@@ -1,0 +1,609 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  共通
+//
+//////////////////////////////////////////////////////////////////////////////*/
+#MainArea{
+	position:relative;
+	width:1024px;
+	height:655px;
+	background:#2b2b2b;
+	font-size:12px;
+	color:#FFF;
+}
+#Inner{
+	position:relative;
+	display:block;
+	height:100%;
+	/*padding:19px;*/
+	padding: 20px 0px 0px 20px;
+}
+
+#main > #contents 
+{
+    padding: 0px 0px 0px 0px;
+}
+
+/*　サーバー処理中のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#ServerProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	z-index:100;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0.6;
+}
+
+#ServerProcessIcon {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:324px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+
+/* TSL01
+---------------------------------------*/
+.tsl01Img01{
+    position:relative;
+    display:block;
+    height:616px;
+}
+.tsl01Img01 .ColumnBox{
+	display:block;
+	background:#4e4e4e;
+	border:#000000 1px solid;
+	border-radius:5px;
+	border-top:none;
+	overflow:hidden;
+	position:absolute;
+	box-shadow:3px 3px 7px 0 #000;
+}
+.tsl01Img01 .type01{
+	width:100px;
+	height:608px;
+	left:0;
+	top:0;
+}
+.tsl01Img01 .type02{
+	width:100px;
+	height:608px;
+	left:123px;
+	top:0;
+}
+.tsl01Img01 .type03{
+	width:499px;
+	height:608px;
+	left:243px;
+	top:0;
+}
+.tsl01Img01 .type04{
+	width:100px;
+	height:608px;
+	left:763px;
+	top:0;
+}
+.tsl01Img01 .type05{
+	width:100px;
+	height:608px;
+	left:883px;
+	top:0;
+}
+.tsl01Img01 .ColumnBox h3{
+	display:block;
+	height:48px;
+	background: -webkit-gradient(linear, left top, left bottom,
+		from(#3f3f3f),
+		color-stop(0.50, #3f3f3f),
+		color-stop(0.51, #000),
+		to(#000));
+	color:#FFF;
+	text-shadow: 0px -1px 0px #000;
+	font-weight:bold;
+	text-align:center;
+	border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.tsl01Img01 .ColumnBox h3:after{
+	content:"";
+	display:block;
+	height:615px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#555555;
+}
+
+.tsl01Img01 .ColumnBox h3 .titleName{
+	display:block;
+	font-size:16px;
+	line-height:18px;
+	padding-top:6px;
+}
+.tsl01Img01 .ColumnBox h3 .chipCount{
+	display:block;
+	font-size:12px;
+	line-height:18px;
+}
+ 
+.tsl01Img01 .ColumnBox .chipsArea{
+	height:560px;
+	position:relative;
+	border-radius:0 0 5px 5px;
+}
+
+.tsl01Img01 .ColumnBox .maxChipArea{
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4E4E4E), color-stop(50%, #4E4E4E), color-stop(50%, #343434), to(#343434));
+	background-size:160px;
+}
+.tsl01Img01 .ColumnBox #WorkArea li:nth-child(even){
+	height:80px;
+	background:#343434;
+}
+.tsl01Img01 .ColumnBox #WorkArea li:nth-child(odd){
+	height:80px;
+	background:#4E4E4E;
+}
+.tsl01Img01 .ColumnBox .chipsArea li{
+	height:80px;
+}
+.tsl01Img01 .ColumnBox .chipsArea .chipList01{
+	margin:0;
+	padding: 0 0 0 10px;
+}
+
+.tsl01Img01 .ColumnBox .chipsArea .chipList01 dd{
+	
+}
+
+
+/*
+
+--------------*/
+.chipsArea .ColumnContentsHorizontalLine01{top:8px;}
+.chipsArea .ColumnContentsHorizontalLine02{top:87px;}
+.chipsArea .ColumnContentsHorizontalLine03{top:166px;}
+.chipsArea .ColumnContentsHorizontalLine04{top:245px;}
+.chipsArea .ColumnContentsHorizontalLine05{top:324px;}
+.chipsArea .ColumnContentsHorizontalLine06{top:403px;}
+.chipsArea .ColumnContentsHorizontalLine07{top:482px;}
+.chipsArea .ColumnContentsHorizontalLine08{top:561px;}
+.chipsArea .ColumnContentsHorizontalLine09{top:640px;}
+.chipsArea .ColumnContentsHorizontalLine10{top:719px;}
+.chipsArea .ColumnContentsVerticalLineA{left:10px;}
+.chipsArea .ColumnContentsVerticalLine01{left:12px;}
+.chipsArea .ColumnContentsVerticalLine02{left:111px;}
+.chipsArea .ColumnContentsVerticalLine03{left:210px;}
+.chipsArea .ColumnContentsVerticalLine04{left:309px;}
+.chipsArea .ColumnContentsVerticalLine05{left:408px;}
+.chipsArea .ColumnContents02Position02{left:138px; top:9px;}
+.chipsArea .ColumnContents02Position03{left:266px; top:9px;}
+.chipsArea .ColumnContents02Position04{left:395px; top:9px;}
+.chipsArea .ColumnContents02Position05{left:523px; top:9px;}
+.chipsArea .ColumnContents02Position06{left:546px; top:9px;}
+.chipsArea .ColumnContents02Boder{
+	position:absolute;
+	width:79px;
+	height:68px;
+	/*
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.28, #fdfdfd),
+            color-stop(0.50, #e5e5e5),
+            color-stop(0.70, #FFFFFF),
+						to(#FFFFFF));
+    */
+    background:#ffffff;
+	box-shadow:1px 1px 6px rgba(122,122,122,0.8);
+	border:#898989 1px solid;
+	margin-top: 5px;
+	z-index:11;
+}
+
+.chipsArea .ColumnContents02BoderIn{
+	position:absolute;
+	width:79px;
+	height:68px;
+	box-shadow:inset 0px 0px 8px #999999;
+	z-index:11;
+}
+
+.chipsArea .ColumnContents02BoderIn .IcnSet{
+	font-weight:bold;
+	height:12px;
+	border-bottom:#8d8b8b 1px solid
+}
+
+.chipsArea .ColumnContents02BoderIn .LeftIcn{
+	float:left;
+	width:13px;
+	height:11px;
+	text-align:center;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d78400),
+						to(#eec300));
+	padding:1px 0 0 0;
+	font-size:9px;
+	text-shadow:#4c4c4c 0 -1px 0;
+	line-height:12px;
+	color:#FFF;
+	border-top-left-radius:0px;
+}
+.chipsArea .ColumnContents02BoderIn .RightIcnD{
+	position:absolute;
+	right:25px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#8cc66d;
+	border-radius:1px;
+	font-size:8px;
+	line-height:9px;
+	text-shadow:#999999 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}
+/*-- 2018/06/12 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 START --*/
+/*.chipsArea .ColumnContents02BoderIn .RightIcnI{
+	position:absolute;
+	right:13px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#9236df;
+	border-radius:1px;
+	font-size:8px;
+	line-height:8px;
+	text-shadow:#491b6f 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}*/
+.chipsArea .ColumnContents02BoderIn .RightIcnM{
+	position:absolute;
+	right:61px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#fcd5b5;
+	-webkit-border-radius:1px;
+	font-size:8px;
+	line-height:9px;
+	text-align:center;
+	color:#000;
+	text-shadow:#666 0 1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .RightIcnB{
+	position:absolute;
+	right:61px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#7030a0;
+	-webkit-border-radius:1px;
+	font-size:8px;
+	line-height:9px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:#666 0 1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .RightIcnE{
+	position:absolute;
+	right:49px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#b7dee8;
+	-webkit-border-radius:1px;
+	font-size:8px;
+	line-height:9px;
+	text-align:center;
+	color:#000;
+	text-shadow:#666 0 1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .RightIcnT{
+	position:absolute;
+	right:37px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#ffc000;
+	-webkit-border-radius:1px;
+	font-size:8px;
+	line-height:9px;
+	text-align:center;
+	color:#000;
+	text-shadow:#666 0 1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .RightIcnP{
+	position:absolute;
+	right:13px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#FF0;
+	-webkit-border-radius:1px;
+	font-size:8px;
+	line-height:9px;
+	text-align:center;
+	color:#000;
+	text-shadow:#666 0 1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .RightIcnL{
+	position:absolute;
+	right:13px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#00b050;
+	-webkit-border-radius:1px;
+	font-size:8px;
+	line-height:9px;
+	text-align:center;
+	color:#000;
+	text-shadow:#666 0 1px 0;
+}
+/*-- 2018/06/12 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 END --*/
+.chipsArea .ColumnContents02BoderIn .RightIcnS{
+	position:absolute;
+	right:1px;
+	top:1px;
+	width:10px;
+	height:10px;
+	padding:0px 0 0 0;
+	background:#4459f6;
+	border-radius:1px;
+	font-size:8px;
+	line-height:8px;
+	text-shadow:#313a84 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}
+
+.chipsArea .ColumnContents02BoderIn .ColumnWatch,
+.chipsArea .ColumnContents02BoderIn .ColumnWatchRed{
+	font-weight:bold;
+	position:absolute;
+	right:4px;
+	top:28px;
+	font-size:14px;
+	line-height:16px;
+	color:#666666;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnWatchRed{
+	color:#ff0000;
+}
+
+.chipsArea .ColumnContents02BoderIn .ColumnTime,
+.chipsArea .ColumnContents02BoderIn .ColumnTimeRed,
+.chipsArea .ColumnContents02BoderIn .ColumnTimeGray,
+.chipsArea .ColumnContents02BoderIn .ColumnTimeYellow,
+.chipsArea .ColumnContents02BoderIn .ColumnTimeBlue{
+	font-weight:bold;
+	position:absolute;
+	right:5px;
+	top:80px;
+	width:50px;
+	height:19px;
+	padding:4px 0 0 0;
+	background:#FFF;
+	border:#6c6a6a 1px solid;
+	border-radius:4px;
+	font-size:14px;
+	line-height:16px;
+	color:#666666;
+	text-align:center;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTimeRed{
+	background:#ff0000;
+	border:#6c6a6a 1px solid;
+	color:#FFF;
+	text-shadow:#590000 0 -1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTimeGray{
+	background:#9a9999;
+	border:#6c6a6a 1px solid;
+	color:#FFF;
+	text-shadow:#272626 0 -1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTimeYellow{
+	background:#f7ab00;
+	border:#6c6a6a 1px solid;
+	color:#FFF;
+	text-shadow:#4b3400 0 -1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTimeBlue{
+	background:#5088fc;
+	color:#FFF;
+	text-shadow:#14223f 0 -1px 0;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox{
+	text-shadow:#FFF 0 1px 0;
+	color:#666666;
+}
+.chipsArea .ColumnContents02BoderIn .Icn01{
+	background:url(../images/SC3220201/ssa01icn01s.png) 54px 18px no-repeat;
+}
+.chipsArea .ColumnContents02BoderIn .IcnNo{
+	font-weight:bold;
+	position:absolute;
+	left:53px;
+	top:42px;
+	font-size:10px;
+	text-shadow:#FFF 0 1px 1px;
+}
+
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA01{
+	font-size:12px;
+	display:block;
+	padding-left:2px;
+	line-height:22px;
+	text-shadow:#FFF 0 1px 1px;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA01 span{
+	width:75px;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA02{
+	font-size:11px;
+	display:block;
+	padding-left:2px;
+	line-height:17px;
+	text-shadow:#FFF 0 1px 1px;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA02 span{
+	width:60px;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA03{
+	font-size:9px;
+	display:block;
+	line-height:17px;
+	width:38px;
+	position:absolute;
+	bottom:0;
+	left:2px;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA03 span{
+	width:42px;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA04{
+	font-size:9px;
+	display:block;
+	line-height:17px;
+	width:38;
+	position:absolute;
+	bottom:0;
+	right:2px;
+	text-align:right;
+	text-shadow:#FFFFFF 0 1px 1px;
+}
+.chipsArea .ColumnContents02BoderIn .ColumnTextBox .textA04 span{
+	width:35px;
+}
+
+.ColumnBoxAqua{
+	background:#DFF6FF;
+}
+.ColumnBoxBorderRed{
+    position:absolute;
+    left:-2px;
+    top:-2px;
+    border:#FF0000 2px solid;
+    width:79px;
+    height:68px;
+    z-index:10;
+}
+
+.ColumnBoxBorderYellow{
+    position:absolute;
+    left:-2px;
+    top:-2px;
+    border:#FFFF00 2px solid;
+    width:79px;
+    height:68px;
+    z-index:10;
+}
+
+.Ellipsis
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+.InnerBox01{
+    display:block;
+    position:absolute;
+    width:78px;
+    height:42px;
+	background-position:center top;
+	background-repeat:no-repeat;
+	border-radius:4px;
+    left: 843px;
+}
+.InnerBox02{
+    display:block;
+    position:absolute;
+    width:78px;
+    height:42px;
+	background-position:center top;
+	background-repeat:no-repeat;
+	border-radius:4px;
+    left: 927px;
+}
+.AllManagementFooterIcon{
+    background-image:url(../images/SC3220201/AllManagementButton_on.png);
+    width: 78px;
+    height: 44px;
+}
+.VisitManagementFooterIcon{
+    background-image:url(../images/SC3220201/VisitManagementButton.png);
+    width: 78px;
+    height: 44px;
+}
+
+.text{
+    display:block;
+    position:absolute;
+    left:0px;
+    bottom:1px;
+    width:75px;
+    height:10px;
+    font-size:10px;
+    line-height:10px;
+    text-align:center;
+    color:#7E7E7E;
+}
+.ActiveText{
+    display:block;
+    position:absolute;
+    left:0px;
+    bottom:1px;
+    width:75px;
+    height:10px;
+    font-size:10px;
+    line-height:10px;
+    text-align:center;
+    color:#B0ADAD;
+}
+
+/* 2013/12/10 TMEJ 河原 次世代サービス 工程管理機能開発 START */
+#CustomFooterButtonSA {
+    
+    display:block;
+    position:absolute;
+    left:924px;
+	width:80px; height:44px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#7c98ed),
+		color-stop(0.55, #4169e5),
+		color-stop(0.55, #1e4ee1),
+		to(#1e4ee1));
+        
+}
+.CustomFooterSALabel{
+	color:#FFF; font-size:14px;
+	font-weight: bold;
+	line-height:47px;
+	text-align:center;
+	text-shadow:0px -1px 1px #000;
+}
+/* 2013/12/10 TMEJ 河原 次世代サービス 工程管理機能開発 END */

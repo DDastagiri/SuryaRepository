@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BranchDataSet" targetNamespace="http://tempuri.org/BranchDataSet.xsd" xmlns:mstns="http://tempuri.org/BranchDataSet.xsd" xmlns="http://tempuri.org/BranchDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.ApplicationFrameworks.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BranchDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BranchDataSet" msprop:Generator_UserDSName="BranchDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BRANCH" msdata:CaseSensitive="True" msprop:Generator_TableClassName="BRANCHDataTable" msprop:Generator_TableVarName="tableBRANCH" msprop:Generator_TablePropName="BRANCH" msprop:Generator_RowDeletingName="BRANCHRowDeleting" msprop:Generator_UserTableName="BRANCH" msprop:Generator_RowChangingName="BRANCHRowChanging" msprop:Generator_RowEvHandlerName="BRANCHRowChangeEventHandler" msprop:Generator_RowDeletedName="BRANCHRowDeleted" msprop:Generator_RowEvArgName="BRANCHRowChangeEvent" msprop:Generator_RowChangedName="BRANCHRowChanged" msprop:Generator_RowClassName="BRANCHRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRNM_LOCAL" msprop:Generator_ColumnVarNameInTable="columnSTRNM_LOCAL" msprop:Generator_ColumnPropNameInRow="STRNM_LOCAL" msprop:Generator_ColumnPropNameInTable="STRNM_LOCALColumn" msprop:Generator_UserColumnName="STRNM_LOCAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRNM_ENG" msprop:Generator_ColumnVarNameInTable="columnSTRNM_ENG" msprop:Generator_ColumnPropNameInRow="STRNM_ENG" msprop:Generator_ColumnPropNameInTable="STRNM_ENGColumn" msprop:Generator_UserColumnName="STRNM_ENG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALTEL" msprop:Generator_ColumnVarNameInTable="columnSALTEL" msprop:Generator_ColumnPropNameInRow="SALTEL" msprop:Generator_ColumnPropNameInTable="SALTELColumn" msprop:Generator_UserColumnName="SALTEL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALFAXNO" msprop:Generator_ColumnVarNameInTable="columnSALFAXNO" msprop:Generator_ColumnPropNameInRow="SALFAXNO" msprop:Generator_ColumnPropNameInTable="SALFAXNOColumn" msprop:Generator_UserColumnName="SALFAXNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRVSTEL" msprop:Generator_ColumnVarNameInTable="columnSRVSTEL" msprop:Generator_ColumnPropNameInRow="SRVSTEL" msprop:Generator_ColumnPropNameInTable="SRVSTELColumn" msprop:Generator_UserColumnName="SRVSTEL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELFLG" msprop:Generator_ColumnVarNameInTable="columnDELFLG" msprop:Generator_ColumnPropNameInRow="DELFLG" msprop:Generator_ColumnPropNameInTable="DELFLGColumn" msprop:Generator_UserColumnName="DELFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSDATE" msprop:Generator_ColumnVarNameInTable="columnINSDATE" msprop:Generator_ColumnPropNameInRow="INSDATE" msprop:Generator_ColumnPropNameInTable="INSDATEColumn" msprop:Generator_UserColumnName="INSDATE" type="xs:dateTime" />
+              <xs:element name="UPDTTM" msprop:Generator_ColumnVarNameInTable="columnUPDTTM" msprop:Generator_ColumnPropNameInRow="UPDTTM" msprop:Generator_ColumnPropNameInTable="UPDTTMColumn" msprop:Generator_UserColumnName="UPDTTM" type="xs:dateTime" />
+              <xs:element name="ADDR1_LOCAL" msprop:Generator_ColumnVarNameInTable="columnADDR1_LOCAL" msprop:Generator_ColumnPropNameInRow="ADDR1_LOCAL" msprop:Generator_ColumnPropNameInTable="ADDR1_LOCALColumn" msprop:Generator_UserColumnName="ADDR1_LOCAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BRANCH" />
+      <xs:field xpath="mstns:DLRCD" />
+      <xs:field xpath="mstns:STRCD" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

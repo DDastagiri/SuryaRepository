@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3160218DataSet" targetNamespace="http://tempuri.org/SC3160218DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3160218DataSet.xsd" xmlns="http://tempuri.org/SC3160218DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3160218DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3160218DataSet" msprop:Generator_UserDSName="SC3160218DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_M_RO_DAMAGE_TYPE" msprop:Generator_TableClassName="TB_M_RO_DAMAGE_TYPEDataTable" msprop:Generator_TableVarName="tableTB_M_RO_DAMAGE_TYPE" msprop:Generator_RowChangedName="TB_M_RO_DAMAGE_TYPERowChanged" msprop:Generator_TablePropName="TB_M_RO_DAMAGE_TYPE" msprop:Generator_RowDeletingName="TB_M_RO_DAMAGE_TYPERowDeleting" msprop:Generator_RowChangingName="TB_M_RO_DAMAGE_TYPERowChanging" msprop:Generator_RowEvHandlerName="TB_M_RO_DAMAGE_TYPERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_M_RO_DAMAGE_TYPERowDeleted" msprop:Generator_RowClassName="TB_M_RO_DAMAGE_TYPERow" msprop:Generator_UserTableName="TB_M_RO_DAMAGE_TYPE" msprop:Generator_RowEvArgName="TB_M_RO_DAMAGE_TYPERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DAMAGE_TYPE" msprop:Generator_ColumnVarNameInTable="columnDAMAGE_TYPE" msprop:Generator_ColumnPropNameInRow="DAMAGE_TYPE" msprop:Generator_ColumnPropNameInTable="DAMAGE_TYPEColumn" msprop:Generator_UserColumnName="DAMAGE_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="DAMAGE_WORD_NUM" msprop:Generator_ColumnVarNameInTable="columnDAMAGE_WORD_NUM" msprop:Generator_ColumnPropNameInRow="DAMAGE_WORD_NUM" msprop:Generator_ColumnPropNameInTable="DAMAGE_WORD_NUMColumn" msprop:Generator_UserColumnName="DAMAGE_WORD_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADATION_FROM" msprop:Generator_ColumnVarNameInTable="columnGRADATION_FROM" msprop:Generator_ColumnPropNameInRow="GRADATION_FROM" msprop:Generator_ColumnPropNameInTable="GRADATION_FROMColumn" msprop:Generator_UserColumnName="GRADATION_FROM" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADATION_TO" msprop:Generator_ColumnVarNameInTable="columnGRADATION_TO" msprop:Generator_ColumnPropNameInRow="GRADATION_TO" msprop:Generator_ColumnPropNameInTable="GRADATION_TOColumn" msprop:Generator_UserColumnName="GRADATION_TO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RO_EXTERIOR" msprop:Generator_TableClassName="RO_EXTERIORDataTable" msprop:Generator_TableVarName="tableRO_EXTERIOR" msprop:Generator_TablePropName="RO_EXTERIOR" msprop:Generator_RowDeletingName="RO_EXTERIORRowDeleting" msprop:Generator_RowChangingName="RO_EXTERIORRowChanging" msprop:Generator_RowEvHandlerName="RO_EXTERIORRowChangeEventHandler" msprop:Generator_RowDeletedName="RO_EXTERIORRowDeleted" msprop:Generator_UserTableName="RO_EXTERIOR" msprop:Generator_RowChangedName="RO_EXTERIORRowChanged" msprop:Generator_RowEvArgName="RO_EXTERIORRowChangeEvent" msprop:Generator_RowClassName="RO_EXTERIORRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RO_EXTERIOR_ID" msprop:Generator_ColumnVarNameInTable="columnRO_EXTERIOR_ID" msprop:Generator_ColumnPropNameInRow="RO_EXTERIOR_ID" msprop:Generator_ColumnPropNameInTable="RO_EXTERIOR_IDColumn" msprop:Generator_UserColumnName="RO_EXTERIOR_ID" type="xs:decimal" />
+              <xs:element name="DLR_CD" msprop:Generator_ColumnVarNameInTable="columnDLR_CD" msprop:Generator_ColumnPropNameInRow="DLR_CD" msprop:Generator_ColumnPropNameInTable="DLR_CDColumn" msprop:Generator_UserColumnName="DLR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="BRN_CD" msprop:Generator_ColumnVarNameInTable="columnBRN_CD" msprop:Generator_ColumnPropNameInRow="BRN_CD" msprop:Generator_ColumnPropNameInTable="BRN_CDColumn" msprop:Generator_UserColumnName="BRN_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_DAMAGE_FLG" msprop:Generator_ColumnVarNameInTable="columnNO_DAMAGE_FLG" msprop:Generator_ColumnPropNameInRow="NO_DAMAGE_FLG" msprop:Generator_ColumnPropNameInTable="NO_DAMAGE_FLGColumn" msprop:Generator_UserColumnName="NO_DAMAGE_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="CANNOT_CHECK_FLG" msprop:Generator_ColumnVarNameInTable="columnCANNOT_CHECK_FLG" msprop:Generator_ColumnPropNameInRow="CANNOT_CHECK_FLG" msprop:Generator_ColumnPropNameInTable="CANNOT_CHECK_FLGColumn" msprop:Generator_UserColumnName="CANNOT_CHECK_FLG" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TB_T_RO_EXTERIOR_DAMAGE" msprop:Generator_TableClassName="TB_T_RO_EXTERIOR_DAMAGEDataTable" msprop:Generator_TableVarName="tableTB_T_RO_EXTERIOR_DAMAGE" msprop:Generator_RowChangedName="TB_T_RO_EXTERIOR_DAMAGERowChanged" msprop:Generator_TablePropName="TB_T_RO_EXTERIOR_DAMAGE" msprop:Generator_RowDeletingName="TB_T_RO_EXTERIOR_DAMAGERowDeleting" msprop:Generator_RowChangingName="TB_T_RO_EXTERIOR_DAMAGERowChanging" msprop:Generator_RowEvHandlerName="TB_T_RO_EXTERIOR_DAMAGERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_T_RO_EXTERIOR_DAMAGERowDeleted" msprop:Generator_RowClassName="TB_T_RO_EXTERIOR_DAMAGERow" msprop:Generator_UserTableName="TB_T_RO_EXTERIOR_DAMAGE" msprop:Generator_RowEvArgName="TB_T_RO_EXTERIOR_DAMAGERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RO_EXTERIOR_ID" msprop:Generator_ColumnVarNameInTable="columnRO_EXTERIOR_ID" msprop:Generator_ColumnPropNameInRow="RO_EXTERIOR_ID" msprop:Generator_ColumnPropNameInTable="RO_EXTERIOR_IDColumn" msprop:Generator_UserColumnName="RO_EXTERIOR_ID" type="xs:decimal" />
+              <xs:element name="PARTS_TYPE" msprop:Generator_ColumnVarNameInTable="columnPARTS_TYPE" msprop:Generator_ColumnPropNameInRow="PARTS_TYPE" msprop:Generator_ColumnPropNameInTable="PARTS_TYPEColumn" msprop:Generator_UserColumnName="PARTS_TYPE" type="xs:string" />
+              <xs:element name="DAMAGE_TYPE_EXISTS" msprop:Generator_ColumnVarNameInTable="columnDAMAGE_TYPE_EXISTS" msprop:Generator_ColumnPropNameInRow="DAMAGE_TYPE_EXISTS" msprop:Generator_ColumnPropNameInTable="DAMAGE_TYPE_EXISTSColumn" msprop:Generator_UserColumnName="DAMAGE_TYPE_EXISTS" type="xs:string" minOccurs="0" />
+              <xs:element name="RO_THUMBNAIL_ID" msprop:Generator_ColumnVarNameInTable="columnRO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInRow="RO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInTable="RO_THUMBNAIL_IDColumn" msprop:Generator_UserColumnName="RO_THUMBNAIL_ID" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ExteriorSequence" msprop:Generator_TableClassName="ExteriorSequenceDataTable" msprop:Generator_TableVarName="tableExteriorSequence" msprop:Generator_RowChangedName="ExteriorSequenceRowChanged" msprop:Generator_TablePropName="ExteriorSequence" msprop:Generator_RowDeletingName="ExteriorSequenceRowDeleting" msprop:Generator_RowChangingName="ExteriorSequenceRowChanging" msprop:Generator_RowEvHandlerName="ExteriorSequenceRowChangeEventHandler" msprop:Generator_RowDeletedName="ExteriorSequenceRowDeleted" msprop:Generator_RowClassName="ExteriorSequenceRow" msprop:Generator_UserTableName="ExteriorSequence" msprop:Generator_RowEvArgName="ExteriorSequenceRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RO_EXTERIOR_ID" msprop:Generator_ColumnVarNameInTable="columnRO_EXTERIOR_ID" msprop:Generator_ColumnPropNameInRow="RO_EXTERIOR_ID" msprop:Generator_ColumnPropNameInTable="RO_EXTERIOR_IDColumn" msprop:Generator_UserColumnName="RO_EXTERIOR_ID" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TB_M_DMS_CODE_MAP" msprop:Generator_TableClassName="TB_M_DMS_CODE_MAPDataTable" msprop:Generator_TableVarName="tableTB_M_DMS_CODE_MAP" msprop:Generator_TablePropName="TB_M_DMS_CODE_MAP" msprop:Generator_RowDeletingName="TB_M_DMS_CODE_MAPRowDeleting" msprop:Generator_RowChangingName="TB_M_DMS_CODE_MAPRowChanging" msprop:Generator_RowEvHandlerName="TB_M_DMS_CODE_MAPRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_M_DMS_CODE_MAPRowDeleted" msprop:Generator_UserTableName="TB_M_DMS_CODE_MAP" msprop:Generator_RowChangedName="TB_M_DMS_CODE_MAPRowChanged" msprop:Generator_RowEvArgName="TB_M_DMS_CODE_MAPRowChangeEvent" msprop:Generator_RowClassName="TB_M_DMS_CODE_MAPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ICROP_CD_1" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_1" msprop:Generator_ColumnPropNameInRow="ICROP_CD_1" msprop:Generator_ColumnPropNameInTable="ICROP_CD_1Column" msprop:Generator_UserColumnName="ICROP_CD_1" type="xs:string" minOccurs="0" />
+              <xs:element name="ICROP_CD_2" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_2" msprop:Generator_ColumnPropNameInRow="ICROP_CD_2" msprop:Generator_ColumnPropNameInTable="ICROP_CD_2Column" msprop:Generator_UserColumnName="ICROP_CD_2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TB_M_PROGRAM_SETTING" msprop:Generator_TableClassName="TB_M_PROGRAM_SETTINGDataTable" msprop:Generator_TableVarName="tableTB_M_PROGRAM_SETTING" msprop:Generator_TablePropName="TB_M_PROGRAM_SETTING" msprop:Generator_RowDeletingName="TB_M_PROGRAM_SETTINGRowDeleting" msprop:Generator_RowChangingName="TB_M_PROGRAM_SETTINGRowChanging" msprop:Generator_RowEvHandlerName="TB_M_PROGRAM_SETTINGRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_M_PROGRAM_SETTINGRowDeleted" msprop:Generator_UserTableName="TB_M_PROGRAM_SETTING" msprop:Generator_RowChangedName="TB_M_PROGRAM_SETTINGRowChanged" msprop:Generator_RowEvArgName="TB_M_PROGRAM_SETTINGRowChangeEvent" msprop:Generator_RowClassName="TB_M_PROGRAM_SETTINGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SETTING_VAL" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSETTING_VAL" msprop:Generator_ColumnPropNameInRow="SETTING_VAL" msprop:Generator_ColumnPropNameInTable="SETTING_VALColumn" msprop:Generator_UserColumnName="SETTING_VAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

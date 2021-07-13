@@ -1,0 +1,470 @@
+﻿/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SC3050702.css
+─────────────────────────────────────
+機能： セールスポイント設定
+補足： 
+作成： 2012/11/23 TMEJ 三和
+─────────────────────────────────────*/
+
+/* 車種 */
+.vehicle 
+{
+    width:150px;
+    height:30px;
+}
+
+/** エクステリア / インテリア */
+.switcher 
+{
+    height:35px;
+    cursor: pointer;
+}
+
+.switcher_ex_on 
+{
+    width:101px;
+    height:28px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    display:block;
+    float:left;
+    background: -webkit-gradient(linear, left top, left bottom, from(#114193), to(#5A91E0));
+}
+
+.switcher_ex_on span 
+{
+    margin-top:1px;
+    width:100px;
+    height:25px;
+    display:block;
+    float:right;
+    color:#FFF;
+    text-shadow:0px -1px 0px #193561;
+    font-size: 12px;
+    line-height:25px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ABFB));
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.switcher_ex_off 
+{
+    width:101px;
+    height:28px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    display:block;
+    float:left;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7B7B7B), to(#A7A7A7));
+    border-left:
+    #565656 1px solid;
+}
+
+.switcher_ex_off span 
+{
+    margin-top:1px;
+    width:100px;
+    height:25px;
+    display:block;
+    float:left;
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+    font-size: 12px;
+    line-height:23px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.switcher_in_on 
+{
+    width:101px;
+    height:28px;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    display:block;
+    float:left;
+    background: -webkit-gradient(linear, left top, left bottom, from(#114193), to(#5A91E0));
+}
+
+.switcher_in_on span 
+{
+    margin-top:1px;
+    width:100px;
+    height:25px;
+    display:block;
+    float:right;
+    color:#FFF;
+    text-shadow:0px 1px 0px #193561;
+    font-size: 12px;
+    line-height:25px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ABFB));
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;    
+}
+
+.switcher_in_off 
+{
+    width:101px;
+    height:28px;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    display:block;
+    float:left;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7B7B7B), to(#A7A7A7));
+}
+
+.switcher_in_off span 
+{
+    margin-top:1px;
+    width:100px;
+    height:25px;
+    display:block;
+    float:left;
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+    font-size: 12px;
+    line-height:23px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+}
+
+/** 追加ボタン */
+.add 
+{
+    width:85px;
+    height:30px;
+    float:left;
+}
+
+.add a 
+{
+    width:80px;
+    height:30px;
+    border:#1F2124 1px solid;
+    border-radius:6px;
+    text-decoration:none;
+    display:block;
+    box-shadow:0px 1px 1px #595E66;
+    font-size:13px;
+    font-weight:400;
+    text-shadow:0px -1px 0px #151A27;
+    line-height:30px;
+    color:#FFFFFF;
+    text-align: center;
+    background:-webkit-gradient(linear, left top, left bottom, from(#aeb2b8), to(#6d7580));
+    float:right;
+}
+
+/** 保存ボタン */
+.send 
+{
+    width:85px;
+    height:30px;
+    float:left;
+}
+
+.send a 
+{
+    width:80px;
+    height:30px;
+    border:#1F2124 1px solid;
+    border-radius:6px;
+    text-decoration:none;
+    display:block;
+    box-shadow:0px 1px 1px #595E66;
+    font-size:13px;
+    font-weight:400;
+    text-shadow:0px -1px 0px #151A27;
+    line-height:30px;
+    color:#FFFFFF;
+    text-align: center;
+    background: -webkit-gradient(linear, 
+                                 left top, 
+                                 left bottom, 
+                                 from(#000000), 
+                                 color-stop(0.02, #57585A), 
+                                 color-stop(0.04, #7C98ED), 
+                                 color-stop(0.49, #4169E5), 
+                                 color-stop(0.5, #1E4EE1), 
+                                 to(#1D4AD6));
+    float:right; }
+
+/** 一覧上部 */
+.upside 
+{
+    padding: 0px 15px 5px 15px;
+    position:relative;
+    top:-1px;
+    z-index:1;
+}
+
+/** 一覧下部 */
+.downside 
+{
+    padding: 0px 15px 0px 15px;
+    position:relative;
+    top:-8px;
+    z-index:1;
+}
+
+/** セールスポイント一覧エリア */
+.salesPointListArea 
+{
+    padding: 5px 15px 15px 15px;
+    position:relative;
+    top:-1px;
+    z-index:1;
+}
+
+/** セールスポイント一覧ヘッダ */
+.salesPointListHead 
+{
+    height:34px;
+}
+.salesPointListHead table 
+{
+    margin:0;
+    padding:0;
+    border:0;
+    border-collapse:collapse;
+}
+
+.salesPointListHead table th 
+{
+    font-size:14px;
+    font-weight:400;
+    color:#FFF;
+    height:34px;
+    border-right:#A5A5A5 1px solid;
+    border-left:#FFF 1px solid;
+    background:-webkit-gradient(linear, left top, left bottom, from(#85898F), to(#676B73));
+}
+
+.salesPointListHead table td { padding:3px 0; text-align:center; }
+.salesPointListHead table th:nth-child(1) { border-left:none; width:250px; }
+.salesPointListHead table th:nth-child(2) { width:603px; } 
+.salesPointListHead table th:nth-child(3) { width:55px; 
+                                            border-right:none; 
+                                            background:-webkit-gradient(linear, 
+                                                                        left top, 
+                                                                        left bottom, 
+                                                                        from(#85898F), 
+                                                                        to(#676B73)); }
+
+/** セールスポイント一覧 */
+.salesPointList 
+{
+    height:510px;
+    border:0px;
+}
+
+.salesPointList table 
+{
+    margin:0;
+    padding:0;
+    border:0;
+    border-collapse:collapse;
+}
+
+.salesPointList table th 
+{
+    font-size:14px;
+    font-weight:400;
+    color:#FFF;
+    height:34px;
+    border-right:#A5A5A5 1px solid;
+    border-left:#FFF 1px solid;
+    background:-webkit-gradient(linear, left top, left bottom, from(#85898F), to(#676B73));
+    
+}
+
+.salesPointList table td 
+{
+    padding:5px 0;
+    text-align:center;
+}
+
+.salesPointList table tr:nth-child(odd) 
+{
+    background:FFFFFF;
+}
+
+.salesPointList table tr:nth-child(even) 
+{
+    background:#DBDBDB;
+}
+
+.salesPointList table td:nth-child(1) 
+{
+    border-left:none;
+    width:248px;
+    text-align:left;
+    font-size:12px;
+    text-align:left;
+    padding-left:2px;
+}
+
+.salesPointList table td:nth-child(2) 
+{
+    width:602px;
+    text-align:left;
+    padding-left:2px;
+}
+
+.salesPointList table td:nth-child(3) 
+{
+    width:55px;
+}
+
+.salesPointList table td:nth-child(2) label
+{
+    height:34px;
+    font-size:12px;
+    text-align:left;
+    color:#333;
+    line-height:17px;
+}
+
+.salesPointList table td:nth-child(3) input 
+{
+    padding:0 5px;
+    margin:0 auto;
+    width:30px;
+    height:30px;
+    border:#BBBBBB 1px solid;
+    border-radius:4px;
+    background:#FFF;
+    font-size:12px;
+    text-align:right;
+    color:#333;
+    line-height:30px;
+}
+
+.salesPointLink
+{
+    width:235px
+}
+
+.salesPointLink a
+{
+    text-decoration:none;
+}
+
+#NoRequestMsg 
+{ 
+    font-size:14px;
+    color:#333; 
+}
+
+/*　登録時のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlack.open { opacity:0.6; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#processingServer {
+	position:absolute;
+	background:url(../Images/SC3080201/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:300px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+#processingServer.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+#SendButtonLink
+{
+	background-repeat:no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7c98ec),
+            color-stop(0.50, #426ae4),
+            color-stop(0.51, #1e4ee0),
+						to(#1e4de1));
+	bottom:15px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	text-shadow:0px -1px 1px #000000;
+	width:75px; 
+	height:46px;
+	text-decoration:none;
+}
+
+#SendButtonLabel
+{
+	display: block;
+	width: 75px;
+	bottom: 15px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight:600;
+	text-shadow: 0px -1px 1px black;
+	padding:12px 0px 6px;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#FooterOriginalButton
+{
+    height: 24px;
+    border: none;
+    position: relative;
+    float: right;
+}
+
+/*メインブロック*/
+#contents  
+{
+    width:1024px; 
+    height:655px; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#E6E6E6), to(#B7B7B7));
+}
+
+#mainblockContent .mainblockContentArea  
+{
+    width:984px; 
+    height:610px; 
+    border:#999 1px solid; 
+    border-radius:8px; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), 
+            color-stop(0.6, #FEFEFE), 
+            color-stop(0.7, #F4F4F4), 
+            to(#DBDBDB)); 
+    box-shadow:3px 3px 4px #666666; 
+}
+
+#mainblockContent .mainblockContentAreaWrap { margin:20px; }
+
+/*文字を設定されたWidthに合わせて...表示*/
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

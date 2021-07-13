@@ -1,0 +1,744 @@
+﻿/*/-------------------------------------------------------------------------
+//SC3140103.css
+//--------------------------------------------------------------------------
+//機能：メインメニュー(SA)
+//補足：
+//作成：2012/01/16 KN 森下
+//更新：
+---------------------------------------------------------------------------*/
+
+/**
+ * ダッシュボード--------------------------------------
+ */
+#dashboardBox  
+{
+    top:257px; 
+    width:296px;
+    overflow: hidden;
+    position:absolute;
+    height:317px;
+    left:15px; 
+}
+
+#dashboardFrame
+{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/**
+ * 工程管理ボックスエリア--------------------------------------
+ */
+
+#contentsRightBox1
+{
+    /*width: 661px;*/
+    width: 655px;
+    height: 613px;
+    float: right;
+    position: relative;
+}
+
+#contentsRightBox1 .ColumnBox01,
+#contentsRightBox1 .ColumnBox02,
+#contentsRightBox1 .ColumnBox03,
+#contentsRightBox1 .ColumnBox04{
+	position:absolute;
+	left:0;
+	top:0;
+	width:158px;
+	height:444px;
+	border-radius:8px;
+	box-shadow:3px 3px 3px #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.56, #FFFFFF),
+						to(#d5d5d5));
+}
+
+#contentsRightBox1 .ColumnBox02{left:167px; top:0;}
+#contentsRightBox1 .ColumnBox03{left:333px; top:0;}
+#contentsRightBox1 .ColumnBox04{left:499px; top:0;}
+#contentsRightBox1 .ColumnBox01 .contentTitle,
+#contentsRightBox1 .ColumnBox02 .contentTitle,
+#contentsRightBox1 .ColumnBox03 .contentTitle,
+#contentsRightBox1 .ColumnBox04 .contentTitle{
+	width:158px;
+	font-size:16px;
+	padding:0;
+	height:28px;
+	display:block;
+	display: table-cell;
+	text-align:center;
+	color:#FFFFFF;
+	vertical-align: middle;
+
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.43, #797d84),
+            color-stop(0.44, #6a6e76),
+						to(#6a6e76));
+}
+#contentsRightBox1 .contentTitleNo{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	right:9px;
+	top:6px;
+	width:25px;
+	height:8px;
+	font-size:14px;
+	color:#FFF;
+	text-align:right;
+}
+
+#contentsRightBox1 .ColumnContentsFlame
+{
+    height: 417px;
+    width: 158px;
+    overflow: hidden;
+    float: left;
+}
+
+#contentsRightBox1 .CustomerChipRight, #contentsRightBox1 .CustomerChipLeft, #contentsRightBox1 .CustomerChipTop
+{
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+}
+
+#contentsRightBox1 .ColumnContentsFlame ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+#contentsRightBox1 .ColumnContentsFlame li
+{
+    margin: 0;
+    padding: 0px;
+}
+
+#contentsRightBox1 .ColumnContentsFlame .ColumnContentsBoder
+{
+    margin: 9.5px 10px 7.5px 6px;
+    width: 140px;
+    height: 89px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.28, #fdfdfd),
+            color-stop(0.50, #e5e5e5),
+            color-stop(0.70, #FFFFFF),
+						to(#FFFFFF));
+    box-shadow: inset 0px 0px 8px #999999;
+    border: #898989 2px solid;
+    border-radius: 3px;
+}
+
+#contentsRightBox1 .ColumnContentsFlame .ColumnBoxAqua{
+	background:#dff6ff;
+}
+
+#contentsRightBox1 .ColumnContentsFlame .selectArea{
+	box-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+
+#contentsRightBox1 .ColumnContentsBoderIn{
+	position:relative;
+	padding:0 7px 0 0;
+}
+#contentsRightBox1 .ColumnContentsBoderIn .IcnSet{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	height:20px;
+	border-bottom:#8d8b8b 1px solid
+}
+#contentsRightBox1 .ColumnContentsBoderIn .RightIcnD{
+	position:absolute;
+	right:43px;
+	top:3px;
+	width:15px;
+	height:14px;
+	padding:1px 0 0 0;
+	background:#8cc66d;
+	border-radius:2px;
+	font-size:11px;
+	line-height:13px;
+	text-shadow:#999999 0 1px 0;
+	text-align:center;
+	color:#FFF;
+	
+}
+#contentsRightBox1 .ColumnContentsBoderIn .RightIcnI{
+	position:absolute;
+	right:25px;
+	top:3px;
+	width:15px;
+	height:13px;
+	padding:2px 0 0 0;
+	background:#9236df;
+	border-radius:2px;
+	font-size:11px;
+	line-height:11px;
+	text-shadow:#491b6f 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}
+#contentsRightBox1 .ColumnContentsBoderIn .RightIcnS{
+	position:absolute;
+	right:7px;
+	top:3px;
+	width:15px;
+	height:13px;
+	padding:2px 0 0 0;
+	background:#4459f6;
+	border-radius:2px;
+	font-size:11px;
+	line-height:11px;
+	text-shadow:#313a84 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTextBox{
+	padding:2px 0 0 7px;
+	font-size:12px;
+	line-height:16px;
+	text-shadow:#FFF 0 1px 0;
+	color:#666666;
+}
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnNo{
+	font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", Osaka, sans-serif, HiraKakuProN-W6, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" ;
+	position:absolute;
+	right:7px;
+	top:22px;
+	font-size:13px;
+	line-height:16px;
+	color:#666666;
+	text-shadow:#FFF 0 1px 0;
+}
+
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTime,
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTimeRed,
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTimeGray,
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTimeYellow{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	right:7px;
+	top:57px;
+	width:52px;
+	height:19px;
+	padding:4px 0 0 0;
+	background:#FFF;
+	border:#6c6a6a 1px solid;
+	border-radius:4px;
+	font-size:14px;
+	line-height:16px;
+	color:#666666;
+	text-align:center;
+}
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTimeRed{
+	background:#ff0000;
+	color:#FFF;
+	text-shadow:#590000 0 -1px 0;
+}
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTimeGray{
+	background:#9a9999;
+	color:#FFF;
+	text-shadow:#272626 0 -1px 0;
+}
+#contentsRightBox1 .ColumnContentsBoderIn .ColumnTimeYellow{
+	background:#f7ab00;
+	color:#FFF;
+	text-shadow:#4b3400 0 -1px 0;
+}
+
+#contentsRightBox1 .ColumnSide{
+	position:absolute;
+	left:0;
+	top:458px;
+	width:656px;
+	height:155px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.56, #FFFFFF),
+						to(#d5d5d5));
+	border:#999999 1px solid;
+	border-radius:8px;
+	box-shadow:3px 3px 3px #666;
+}
+
+
+#contentsRightBox1 .ColumnSide .contentTitle{
+	
+    width:986px;
+    font-size:16px;
+    padding:0;
+    height:28px;
+    display:block;
+    display: table-cell;
+    text-align:center;
+    color:#FFFFFF;
+    vertical-align: middle;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    background:
+     -webkit-gradient(linear, left top, left bottom, from(#8e929a),            
+    color-stop(0.43, #797d84),
+    color-stop(0.44, #6a6e76),
+    to(#6a6e76));
+}
+
+#contentsRightBox1 .ColumnSideFrame
+{
+    width: 656px;
+	height:155px;
+    overflow: hidden;
+}
+
+#contentsRightBox1 .ColumnSideBoderIn
+{
+    position: absolute;
+    width: 100%;
+}
+
+#contentsRightBox1 .columnSideContentTitleNo
+{
+    font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6" , "Hiragino Kaku Gothic Pro" , "メイリオ" , Meiryo, Osaka, "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    position: absolute;
+    top: 3px;
+    width: 25px;
+    height: 8px;
+    font-size: 14px;
+    color: #FFF;
+    text-align: left;
+    left: 140px;
+    right: 487px;
+}
+
+#contentsRightBox1 .ColumnSide .ColumnContents02Boder
+{
+    margin: 6px 5px 5px 4.5px;
+    position: relative;
+    width: 118px;
+    height: 111px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.28, #fdfdfd),
+            color-stop(0.50, #e5e5e5),
+            color-stop(0.70, #FFFFFF),
+						to(#FFFFFF));
+    /*box-shadow: 1px 1px 4px #999999;*/
+    box-shadow: inset 0px 0px 8px #999999;
+    border: #898989 2px solid;
+    /*border-radius: 6px;  */
+    border-radius: 2px;
+}
+
+#contentsRightBox1 .ColumnSide .ColumnBoxAqua{
+	background:#dff6ff;
+}
+
+#contentsRightBox1 .ColumnSide .selectArea{
+	box-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn
+{
+	position:absolute;
+    width:118px;
+	height:111px;
+    box-shadow: inset 0px 0px 8px #999999;
+    border-radius: 4px;
+}
+
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnWatch,
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnWatchRed{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	left:4px;
+	top:28px;
+	font-size:14px;
+	line-height:16px;
+	color:#666666;
+}
+
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnWatchRed{
+	color:#ff0000;
+}
+
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .WorkIcnSet{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	height:20px;
+	border-bottom:#8d8b8b 1px solid
+}
+
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .WorkRightIcnD{
+	position:absolute;
+	right:43px;
+	top:3px;
+	width:15px;
+	height:14px;
+	padding:1px 0 0 0;
+	background:#8cc66d;
+	border-radius:2px;
+	font-size:11px;
+	line-height:13px;
+	text-shadow:#999999 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .WorkRightIcnI{
+	position:absolute;
+	right:25px;
+	top:3px;
+	width:15px;
+	height:13px;
+	padding:2px 0 0 0;
+	background:#9236df;
+	border-radius:2px;
+	font-size:11px;
+	line-height:11px;
+	text-shadow:#491b6f 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .WorkRightIcnS{
+	position:absolute;
+	right:7px;
+	top:3px;
+	width:15px;
+	height:13px;
+	padding:2px 0 0 0;
+	background:#4459f6;
+	border-radius:2px;
+	font-size:11px;
+	line-height:11px;
+	text-shadow:#313a84 0 1px 0;
+	text-align:center;
+	color:#FFF;
+}
+
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTime,
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTimeRed,
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTimeGray,
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTimeYellow{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	right:5px;
+	top:26px;
+	width:50px;
+	height:15px;
+	padding:1px 0 0 0;
+	background:#FFF;
+	border:#6c6a6a 1px solid;
+	border-radius:4px;
+	font-size:14px;
+	line-height:16px;
+	color:#666666;
+	text-align:center;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTimeRed{
+	background:#ff0000;
+	border:#6c6a6a 1px solid;
+	color:#FFF;
+	text-shadow:#590000 0 -1px 0;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTimeGray{
+	background:#9a9999;
+	border:#6c6a6a 1px solid;
+	color:#FFF;
+	text-shadow:#590000 0 -1px 0;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTimeYellow{
+	background:#f7ab00;
+	border:#6c6a6a 1px solid;
+	color:#FFF;
+	text-shadow:#4b3400 0 -1px 0;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .ColumnTextBox{
+	margin:22px 0 0 0;
+	padding:2px 0 0 6px;
+	font-size:12px;
+	line-height:16px;
+	text-shadow:#FFF 0 1px 0;
+	color:#666666;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .Icn01 {
+    position:absolute;
+    top:86px;
+    left:92px;
+    width:24px;
+    height:20px;
+    background: url(../Images/SC3140103/ssa01icn01.png) no-repeat;
+    z-index:1;
+}
+#contentsRightBox1 .ColumnSide .ColumnContents02BoderIn .IcnNo
+{
+   	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	/*left:86px;*/
+	right:20px;
+	top:95px;
+	font-size:11px;
+	text-shadow:#FFF 0 1px 1px;
+	z-index:2;
+}
+
+/**
+ * 詳細画面ポップアップ 
+ *-------------------------------------------------------------
+ */
+ 
+.saPopOver {
+    position: absolute;
+    display: none;
+    -moz-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    background-color:#666;
+    border-radius:8px;
+    background:#FFF;
+    border:#1c232f 1px solid;
+    box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+	color-stop(0.002, rgba(120,128,147,0.9)),
+	color-stop(0.015, rgba(87,95,114,0.9)),
+	color-stop(0.036, rgba(29,40,59,0.9)),
+	color-stop(0.0365, rgba(3,11,26,0.9)),
+	to(rgba(7,11,29,0.9)));
+}
+
+.saPopOver.active { opacity: 1; }
+
+.saPopOver > .triangle 
+{
+	position: absolute;
+    width: 0px;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+
+}
+
+.saPopOver > .triangle.top { bottom: -40px; border-top: 20px solid #1c232f; }
+
+.saPopOver > .triangle.bottom { top: -40px; border-bottom: 20px solid #1c232f;}
+
+.saPopOver > .triangle.left { right: -40px; border-left: 20px solid #1c232f;}
+
+.saPopOver > .triangle.right { left: -40px; border-right: 20px solid #1c232f;}
+
+.saPopOver > .header {
+    color: white;
+    font-size: 20px;
+    -webkit-text-shadow: 0px -1px 0px #333;
+    text-align: center;
+}
+.header h3
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.saPopOver > .content {
+    min-width: 15em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size:0.9em;
+    padding:10px;
+    margin:0 5px 5px;
+    border:#a5a5a5 1px solid;
+    border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+    color-stop(0.018, #fff),
+    color-stop(0.6, #fff),
+    to(#e6e6e6));
+ }
+
+/*--icn--*/
+
+.saPopOver .IcnSet
+{
+   	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	height:30px;
+}
+.saPopOver .PopoverRightIcnD, .saPopOver .PopoverRightIcnI, .saPopOver .PopoverRightIcnS
+{
+    position: absolute;
+    right: 75px;
+    width: 23px;
+    height: 19px;
+    padding: 4px 0 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9ecf85),
+						to(#8cc66d));
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 14px;
+    text-shadow: #999999 0 -1px 0;
+    box-shadow: inset 0px 1px 0px #6f905d;
+    text-align: center;
+    color: #FFF;
+}
+.saPopOver .PopoverRightIcnI{
+	right:45px;
+	width:23px;
+	height:19px;
+	padding:4px 0 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9236df),
+						to(#9236df));
+	text-shadow:#491b6f 0 -1px 0;
+	box-shadow:inset 0px 1px 0px #66269c;
+	color:#FFF;
+}
+.saPopOver .PopoverRightIcnS
+{
+    right: 15px; /*top:0px;*/
+    width: 23px;
+    height: 19px;
+    padding: 4px 0 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6273f8),
+						to(#4459f6));
+    text-shadow: #313a84 0 -1px 0;
+    box-shadow: inset 0px 1px 0px #4451ad;
+    color: #FFF;
+}
+
+/*--詳細--*/
+
+.saPopOver .ListSet{
+	width:276px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	margin:0 0 5px 0;
+}
+.saPopOver .ListSet th{
+	width:76px;
+	height:26px;
+	border-bottom:#bbbbbb 1px solid;
+	border-right:#bbbbbb 1px solid;
+	padding:3px 9px 0 0;
+	font-size:11px;
+	line-height:12px;
+	font-weight:bold;
+	text-align:right;
+	color:#666666;
+}
+.saPopOver .ListSet td{
+	width:179px;
+	border-bottom:#bbbbbb 1px solid;
+	padding:2px 0 0 9px;
+	font-size:14px;
+	line-height:15px;
+	text-align:left;
+	color:#000000;
+}
+.saPopOver .ListSet th.ListEnd,
+.saPopOver .ListSet td.ListEnd{
+	border-bottom:none;
+}
+.saPopOver .FooterButton01, .saPopOver .FooterButton02
+{
+    margin: 3px 1px 0px 1px;
+    width: 126px;
+    height: 30px;
+    padding: 3px 0 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#aeb2b8),
+						to(#6d7580));
+    border: #4f5153 1px solid;
+    border-radius: 6px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: #616469 0 -1px 0;
+    color: #FFF;
+    white-space:nowrap;
+    overflow:hidden; 
+}
+.saPopOver .FooterButton01
+{
+    float: left;
+}
+.saPopOver .FooterButton02
+{
+    float: right;
+}
+/*　チップ詳細読み込み中
+ -------------------------------------------------------------------------------------------*/
+.saPopOver .loadingPopup {
+    position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:45%;
+	left:45%;
+	width:38px;
+	height:38px;
+}
+/**
+ * 文言省略表示
+ *-------------------------------------------------------------
+ */
+.Ellipsis
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+.EllipsisTextRight
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-align: right;
+}
+
+/**
+ * 通知リフレッシュボタン(隠しボタン)
+ *-------------------------------------------------------------
+ */
+.MainRefreshStyle
+{
+    display: none;
+}
+
+/*　ダッシュボード読み込み中
+ -------------------------------------------------------------------------------------------*/
+#dashboardBox.loading {}
+#dashboardFrame { border: none; padding: 0px; margin: 0px; }
+#loadingDashboard {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:150px;
+	left:125px;
+	width:38px;
+	height:38px;
+}
+#dashboardBox.loading #loadingDashboard { display:block; }
+#dashboardBox.loading #dashboardFrame { display:none; }
+/*　工程管理ボックス読み込み中
+ -------------------------------------------------------------------------------------------*/
+#loadingSchedule {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:250px;
+	left:300px;
+	width:38px;
+	height:38px;
+}

@@ -1,0 +1,893 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*/-------------------------------------------------------------------------
+//chips.css
+//-------------------------------------------------------------------------
+//更新：2018/02/20 NSK 小川 17PRJ01136-00 (トライ店システム評価)お客様受付における情報伝達の仕組み 適合性検証
+//更新：2018/07/06 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示
+//更新：
+
+/*
+チップ用　スタイル作成
+-----------------------------*/
+.MCp,
+.SCp{
+	position:absolute;
+	display:block;
+	height:72px;
+	top:1px;
+	border-radius:4px;
+}
+
+div.ChipArea #NewChip
+{
+    left: 1px;	
+    top:1px;
+    visibility:hidden;
+}
+
+div.ChipArea #NewChip .addBgG{
+	background: -webkit-gradient(linear, left top, right bottom,
+						from(rgba(139,139,139,0.5)),
+            color-stop(0.50, rgba(139,139,139,0)),
+						to(rgba(139,139,139,0)));
+}
+div.ChipArea #NewChip .Band
+{
+    background:#e2e2e2;
+	box-shadow:inset 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+div.ChipArea #NewChip .time{
+    background:#FFFFFF; 
+    box-shadow:inset 0px 1px 1px rgba(0,0,0,0.8);
+}
+div.ChipArea #NewChip .infoBox
+{
+    box-shadow:inset 0px 1px 1px rgba(0,0,0,0.8);
+}
+
+
+.StRez
+{
+    background: url(../images/SC3240101/chip_imgback_right.png) right top no-repeat,
+                url(../images/SC3240101/chip_addbgg_blue.png) 2px 2px no-repeat,
+                url(../images/SC3240101/chip_imgback_left.png) left top no-repeat,
+                url(../images/SC3240101/chip_imgback_center.png) 0 0 repeat-x;
+}
+.StWork
+{
+    background: url(../images/SC3240101/chip_imgback_right.png) right top no-repeat,
+                url(../images/SC3240101/chip_addbgg_green.png) 2px 2px no-repeat,
+                url(../images/SC3240101/chip_imgback_left.png) left top no-repeat,
+                url(../images/SC3240101/chip_imgback_center.png) 0 0 repeat-x;
+}
+.StTRez
+{
+    background: url(../images/SC3240101/chip_imgback_right.png) right top no-repeat,
+    
+                /* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+                /* url(../images/SC3240101/chip_addbgg_skyblue.png) 2px 2px no-repeat, */
+                url(../images/SC3240101/chip_addbgg_orange.png) 2px 2px no-repeat,
+                /* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+                
+                url(../images/SC3240101/chip_imgback_left.png) left top no-repeat,
+                url(../images/SC3240101/chip_imgback_center.png) 0 0 repeat-x;
+}
+.StWComplete
+{
+    background: url(../images/SC3240101/chip_imgback_right02.png) right top no-repeat,
+                url(../images/SC3240101/chip_addbgg_lightgray.png) 2px 2px no-repeat,
+                url(../images/SC3240101/chip_imgback_left02.png) left top no-repeat,
+                url(../images/SC3240101/chip_imgback_center02.png) 0 0 repeat-x;
+}
+.StDComplete
+{
+    background: url(../images/SC3240101/chip_imgback_right03.png) right top no-repeat,
+                url(../images/SC3240101/chip_addbgg_darkgray.png) 2px 2px no-repeat,
+                url(../images/SC3240101/chip_imgback_left03.png) left top no-repeat,
+                url(../images/SC3240101/chip_imgback_center03.png) 0 0 repeat-x;
+}
+
+.StoppingJobColor
+{
+    background: url(../images/SC3240101/chip_imgback_right_pink.png) right top no-repeat,
+                url(../images/SC3240101/chip_addbgg_green_pink.png) 2px 2px no-repeat,
+                url(../images/SC3240101/chip_imgback_left_pink.png) left top no-repeat,
+                url(../images/SC3240101/chip_imgback_center_pink.png) 0 0 repeat-x;
+}
+
+.StNew{background:#FEFEFE; opacity: 0.5;}
+
+.MCp .inBox,
+.SCp .inBox{
+	margin:0 1px 0px 0;
+	height:71px;
+	border-radius:4px 3px 4px 3px;
+	background:#f0f0f0;
+	box-shadow:inset -1px -1px 1px #7c7c7c;
+}
+
+.Front
+{
+    position:absolute;
+    top:0px; left:0px;
+    width:100%; height:73px;
+}
+
+.BlackBack
+{
+    position:absolute;
+	display:block;
+	top:0px; left:0px;
+	border-radius:3px 0px 0px 0px;
+	width:100%; height:73px;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+.CpInner .BlackBack
+{
+    border-radius: 4px;
+}
+.TapBlueBack
+{
+    position:absolute;
+	display:block;
+	top:0px; left:0px;
+	border-radius:3px 0px 0px 0px;
+	width:100%; height:73px;
+    background:rgba(0, 0, 255, 0.5); 
+}
+
+.MCp .Band,
+.SCp .Band{
+	width:100%; height:16px;
+	position:absolute;
+	
+	/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+	/* background:url(../images/SC3240101/band_skyblue.png) 0px 0px repeat; */
+	background:url(../images/SC3240101/band_orange.png) 0px 0px repeat;
+	/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+	
+	top:36px;
+}
+
+.StRez .Band{background:url(../images/SC3240101/band_blue.png) 0px 0px repeat;}
+.StWork .Band{background:url(../images/SC3240101/band_green.png) 0px 0px repeat;}
+.StWComplete .Band{background:url(../images/SC3240101/band_lightgray.png) 0px 0px repeat;;}
+.StDelay .Band{background:url(../images/SC3240101/band_red.png) 0px 0px repeat;;}
+.StDComplete .Band{background:url(../images/SC3240101/band_darkgray.png) 0px 0px repeat;;}
+
+.MCp .IC01,
+.SCp .IC01{
+	display:block;
+	position:absolute;
+	left:4px; top:4px;
+	width:9px; height:10px;
+	background:#FFF;
+	border-radius:2px;
+	box-shadow:inset 0px 1px 2px rgba(0,0,0,0.5);
+}
+.StWComplete .Band .IC01{background:#c8c8c8;}
+.StDComplete .Band .IC01{background:#646464;}
+	
+.MCp .Band .IC01 p,
+.SCp .Band .IC01 p{
+	display:block;
+	font-size:7px; line-height:7px;
+	padding-top:0px;
+	font-family:Helvetica;
+	font-weight:bold;
+	color:#72b7ff; text-align:center;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+}
+.StWComplete .Band .IC01 p{color:#383838;}
+.StDComplete .Band .IC01 p{color:#272727;}
+
+.StRez .Band .IC01 p{color:#275aff;}
+.StWork .Band .IC01 p{color:#00aa91;}
+.StDelay .Band .IC01 p{color:#e10000;}
+
+.MCp .IC02,
+.SCp .IC02{
+	display:block;
+	position:absolute;
+	left:13px; top:2px;
+	width:12px; height:13px;
+	background:url(../images/SC3240101/ChipsIconPersonCharge.png) center top no-repeat;
+}
+.StWComplete .Band .IC02{background:url(../images/SC3240101/ChipsIconPersonChargeGrey.png) center top no-repeat;}
+.StDComplete .Band .IC02{background:url(../images/SC3240101/ChipsIconPersonChargeDark.png) center top no-repeat;}
+
+.MCp .IC03,
+.SCp .IC03{
+	display:block;
+	position:absolute;
+	right:4px; top:2px;
+	width:15px; height:13px;
+	border-radius:2px;
+	background:url(../images/SC3240101/ChipsIconReservation.png) center 0px no-repeat;
+}
+/*2018/07/06 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 START*/
+/* Lアイコン*/
+.MCp .IconL,
+.SCp .IconL {
+    position:absolute;
+    right:20px;
+    top:2px;
+    width:15px;
+    height:13px;
+    background: url(../Images/TKMCommon/L_White_Frame.png) center top no-repeat;
+    z-index:5;
+    overflow:hidden;
+}
+/* Pアイコン*/
+.MCp .IconP,
+.SCp .IconP {
+    position:absolute;
+    right:20px;
+    top:2px;
+    width:15px;
+    height:13px;
+    background: url(../Images/TKMCommon/P_White_Frame.png) center top no-repeat;
+    z-index:5;
+    overflow:hidden;
+}
+/*2018/07/06 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 END*/
+
+.MCp h3,
+.SCp h3{
+	font-size:9px;
+	color:#000;
+	text-shadow:0px 1px 1px rgba(255,255,255,0.8);
+	font-family:'HiraKakuProN-W6',Helvetica,"ヒラギノ角ゴ Pro W6";
+	overflow:hidden;
+	white-space:nowrap;
+	position:absolute;
+	top:5px; left:5px;
+	width:95%;
+}
+
+.MCp p,
+.SCp p{
+	position:absolute;
+	top:19px; left:5px;
+	width:95%;
+	color:#000;
+	text-shadow:0px 1px 1px rgba(255,255,255,0.8);
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:12px;
+}
+
+.MCp .CarNoL,
+.SCp .CarNoL,
+.MCp .CarNoR,
+.SCp .CarNoR{
+	position:absolute;
+	top:19px; left:5px;
+	width:90%;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:12px;
+	overflow-x: hidden;
+	white-space:nowrap;
+    height: 15px;
+}
+
+.MCp .CarNoL span,
+.SCp .CarNoL span{
+	position:absolute;
+	left:0px;
+}
+
+.MCp .CarNoR span,
+.SCp .CarNoR span
+{
+    position:absolute;
+	right:5px;
+}
+
+.MCp .GIcon,
+.SCp .GIcon
+{
+    position:absolute;
+	right:4px; top:20px;
+	display:block;
+	width:14px; height:11px;
+	z-index:-1;
+	opacity:0.3;
+    background:url(../images/SC3240101/ChipsGBOOKIconBlue.png) 0 0 no-repeat;
+}
+
+.StWComplete  {color:#4e4e4e; text-shadow:0px 1px 1px rgba(200,200,200,0.8);}
+.StDComplete  {color:#272727; text-shadow:0px 1px 1px rgba(96,96,96,0.8);}
+
+.MCp .time,
+.SCp .time{
+	font-size:7px; line-height:12px;
+	position:absolute;
+	height:13px;
+	display:block;
+	width:33px;
+	top:3px; right:3px;
+	
+	/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+	/* background:url(../images/SC3240101/time_skyblue.png) top no-repeat; */
+	background:url(../images/SC3240101/time_orange.png) top no-repeat;
+	/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+	
+	font-family:'HiraKakuProN-W6',Helvetica,"ヒラギノ角ゴ Pro W6";
+	border-radius:2px;
+	text-align:center;
+	padding-top:1px;
+	color:#fff;
+	overflow:hidden;
+}
+
+.StRez .time{background:url(../images/SC3240101/time_blue.png) top no-repeat;}
+.StWork .time{background:url(../images/SC3240101/time_green.png) top no-repeat;}
+.StWComplete .time{background:url(../images/SC3240101/time_lightgray.png) top no-repeat;}
+.StDelay .time{background:url(../images/SC3240101/time_red.png) top no-repeat;}
+.StPDelay .time{background:url(../images/SC3240101/time_red.png) top no-repeat;}
+.StDComplete .time{background:url(../images/SC3240101/time_darkgray.png) top no-repeat;}
+
+.StWComplete .time p{color:#c8c8c8;}
+.StDComplete .time p{color:#5c5c5c;}
+
+.MCp .infoBox,
+.SCp .infoBox{
+	font-size:8px; line-height:12px;
+	position:absolute;
+	width:36px;height:13px;
+	display:block;
+	bottom:5px; right:3px;
+	background:url(../images/SC3240101/infobox_white.png) top no-repeat;
+	text-shadow:0px 1px 1px rgba(255,255,255,0.8);
+	font-family:'HiraKakuProN-W6',Helvetica,"ヒラギノ角ゴ Pro W6";
+	border-radius:2px;
+	text-align:center;
+	padding-top:1px;
+	color:#000;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.StWComplete .infoBox{background:url(../images/SC3240101/infobox_lightgray.png) top no-repeat; text-shadow:none;}
+.StDComplete .infoBox{background:url(../images/SC3240101/infobox_darkgray.png) top no-repeat; text-shadow:none;}
+
+.StWComplete .infoBox p{color:#4e4e4e;}
+.StDComplete .infoBox p{color:#272727;}
+
+.MCp .ICCarIn,
+.SCp .ICCarIn{
+	font-size:5px; line-height:5px;
+	width:13px; height:13px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/ChipsBlueWarehousing.png) 0 0 no-repeat;
+	bottom:5px; left:4px;
+}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+.StTRez .ICCarIn{background:url(../images/SC3240101/ChipsOrangeWarehousing.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+	
+.StWork .ICCarIn{background:url(../images/SC3240101/ChipsRGreenWarehousing.png) 0 0 no-repeat;}
+.StWComplete .ICCarIn{background:url(../images/SC3240101/ChipsGreyWarehousing.png) 0 0 no-repeat;}
+.StDComplete .ICCarIn{background:url(../images/SC3240101/ChipsDarkWarehousing.png) 0 0 no-repeat;}
+
+.MCp .ICRo,
+.SCp .ICRo
+{
+    width:13px; height:13px;
+    bottom:5px; left:17px;
+    background:url(../images/SC3240101/ChipsBlueApproval.png) 0 0 no-repeat;
+	position:absolute;
+}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+.StTRez .ICRo{background:url(../images/SC3240101/ChipsOrangeApproval.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+
+.StWork .ICRo{background:url(../images/SC3240101/ChipsRGreenApproval.png) 0 0 no-repeat;}
+.StWComplete .ICRo{background:url(../images/SC3240101/ChipsGreyApproval.png) 0 0 no-repeat;}
+.StDComplete .ICRo{background:url(../images/SC3240101/ChipsDarkApproval.png) 0 0 no-repeat;}
+
+.MCp .ICIssue,
+.SCp .ICIssue
+{
+    width:13px; height:13px;
+    bottom:5px; left:31px;
+    background:url(../images/SC3240101/ChipsBlueIssue.png) 0 0 no-repeat;
+	position:absolute;
+}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+.StTRez .ICIssue{background:url(../images/SC3240101/ChipsOrangeIssue.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+
+.StWork .ICIssue{background:url(../images/SC3240101/ChipsRGreenIssue.png) 0 0 no-repeat;}
+.StWComplete .ICIssue{background:url(../images/SC3240101/ChipsGreyIssue.png) 0 0 no-repeat;}
+.StDComplete .ICIssue{background:url(../images/SC3240101/ChipsDarkIssue.png) 0 0 no-repeat;}
+
+.MCp .ICCarinRo,
+.SCp .ICCarinRo
+{
+    width:26px; height:13px;
+    bottom:5px; left:4px;
+    background:url(../images/SC3240101/CpBCarinRO.png) 0 0 no-repeat;
+	position:absolute;
+}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+.StTRez .ICCarinRo{background:url(../images/SC3240101/CpOrangeCarinRO.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+
+.StWork .ICCarinRo{background:url(../images/SC3240101/CpGreenCarinRO.png) 0 0 no-repeat;}
+.StWComplete .ICCarinRo{background:url(../images/SC3240101/CpGreyCarinRO.png) 0 0 no-repeat;}
+.StDComplete .ICCarinRo{background:url(../images/SC3240101/CpDCarinRO.png) 0 0 no-repeat;}
+
+.MCp .ICCarinIssue,
+.SCp .ICCarinIssue
+{
+    width:40px; height:13px;
+    bottom:5px; left:4px;
+	background:url(../images/SC3240101/CpBCarinIssue.png) 0 0 no-repeat;
+	position:absolute;
+}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+.StTRez .ICCarinIssue{background:url(../images/SC3240101/CpOrangeCarinIssue.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+
+.StWork .ICCarinIssue{background:url(../images/SC3240101/CpGreenCarinIssue.png) 0 0 no-repeat;}
+.StWComplete .ICCarinIssue{background:url(../images/SC3240101/CpGreyCarinIssue.png) 0 0 no-repeat;}
+.StDComplete .ICCarinIssue{background:url(../images/SC3240101/CpDCarinIssue.png) 0 0 no-repeat;}
+
+.MCp .ICRoIssue,
+.SCp .ICRoIssue
+{
+    width:27px; height:13px;
+    bottom:5px; left:17px;
+	background:url(../images/SC3240101/CpBROIssue.png) 0 0 no-repeat;
+	position:absolute;
+}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+.StTRez .ICRoIssue{background:url(../images/SC3240101/CpOrangeROIssue.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+
+.StWork .ICRoIssue{background:url(../images/SC3240101/CpGreenROIssue.png) 0 0 no-repeat;}
+.StWComplete .ICRoIssue{background:url(../images/SC3240101/CpGreyROIssue.png) 0 0 no-repeat;}
+.StDComplete .ICRoIssue{background:url(../images/SC3240101/CpDROIssue.png) 0 0 no-repeat;}
+
+.MCp .ICAll,
+.SCp .ICAll
+{
+    width:40px; height:13px;
+    bottom:5px; left:4px;
+	background:url(../images/SC3240101/CpBAll.png) 0 0 no-repeat;
+	position:absolute;
+}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+.StTRez .ICAll{background:url(../images/SC3240101/CpOrangeAll.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+
+.StWork .ICAll{background:url(../images/SC3240101/CpGreenAll.png) 0 0 no-repeat;}
+.StWComplete .ICAll{background:url(../images/SC3240101/CpGreyAll.png) 0 0 no-repeat;}
+.StDComplete .ICAll{background:url(../images/SC3240101/CpDAll.png) 0 0 no-repeat;}
+
+
+.MCp .IC08,
+.SCp .IC08
+{
+    width:13px; height:13px;
+    bottom:5px; left:4px;
+	background:url(../images/SC3240101/ChipsBlueCarWash.png) 0 0 no-repeat;
+	left:31px;
+	position:absolute;
+}
+.StWork .IC08{background:url(../images/SC3240101/ChipsRGreenCarWash.png) 0 0 no-repeat;}
+.StWComplete .IC08{background:url(../images/SC3240101/ChipsGreyCarWash.png) 0 0 no-repeat;}
+.StDComplete .IC08{background:url(../images/SC3240101/ChipsDarkCarWash.png) 0 0 no-repeat;}
+
+.MCp .ICInterrupt,
+.SCp .ICInterrupt{
+	width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/ChipsIconInterruption.png)  center 1px no-repeat;
+	left:3px;bottom:5px;
+	border-radius:2px;
+}
+
+.MCp .ICAddWork,
+.SCp .ICAddWork
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/ChipsIconAdditionalWork_white.png) center 1px no-repeat;
+	left:3px;bottom:5px;
+	border-radius:2px;
+}
+.MCp .ICWaitCommited,
+.SCp .ICWaitCommited
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/ChipsIconAdditionalWork_yellow.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+.MCp .ICInspect,
+.SCp .ICInspect
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/ChipsIconWaiting4Test.png) center 1px no-repeat;
+	left:3px;bottom:5px;
+	border-radius:2px;
+}
+.MCp .ICWashCar,
+.SCp .ICWashCar
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/ChipsIconCarWash.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+
+.MCp .ICAddWash,
+.SCp .ICAddWash
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/CpAddworkWashcar.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+.MCp .ICAddInspect,
+.SCp .ICAddInspect
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/CpAddworkInspect.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+.MCp .ICAddInterrupt,
+.SCp .ICAddInterrupt
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/CpAddworkInterrupt.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+.MCp .ICWaitWash,
+.SCp .ICWaitWash
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/CpWaitCommitedWashCar.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+.MCp .ICWaitInspect,
+.SCp .ICWaitInspect
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/CpWaitCommitedInspect.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+
+.MCp .ICWaitInterrupt,
+.SCp .ICWaitInterrupt
+{
+    width:40px; height:14px;
+	display:block;
+	position:absolute;
+	background:url(../images/SC3240101/CpWaitCommitedInterrupt.png) center 1px no-repeat;
+    left:3px;bottom:5px;
+	border-radius:2px;
+}
+
+.SelectedChipShadow{
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 1),5px 5px 25px rgba(0, 0, 0, 1);
+    z-index:1;
+}
+
+.CpInner
+{
+    height:100%;    
+    border-radius: 4px;
+}
+/* 爪
+------------------------------------------------*/
+.TimeKnobPointR,
+.TimeKnobPointL{
+	width:12px; height:12px;
+	position:absolute;
+	background:
+	url(../images/SC3240101/TimeKnobPoint_blue.png) 0 0 no-repeat;
+	z-index:1;
+}
+.TimeKnobPointL{left:-6px; top:10px;}
+.TimeKnobPointR{right:-6px; bottom:10px;}
+.TimeKnobPointL{left:-6px; top:10px;}
+.TimeKnobPointR{right:-6px; bottom:10px;}
+
+.TimeKnobPoint_blue{background:url(../images/SC3240101/TimeKnobPoint_blue.png) 0 0 no-repeat;}
+.TimeKnobPoint_red{background:url(../images/SC3240101/TimeKnobPoint_red.png) 0 0 no-repeat;}
+.TimeKnobPoint_green{background:url(../images/SC3240101/TimeKnobPoint_green.png) 0 0 no-repeat;}
+
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 START */
+/* .TimeKnobPoint_skyblue{background:url(../images/SC3240101/TimeKnobPoint_skyblue.png) 0 0 no-repeat;} */
+.TimeKnobPoint_orange{background:url(../images/SC3240101/TimeKnobPoint_orange.png) 0 0 no-repeat;}
+/* 2018/02/20 NSK 小川 お客様受付における情報伝達の仕組み 適合性検証 END */
+
+.TimeKnobPoint_white{background:url(../images/SC3240101/TimeKnobPoint_white.png) 0 0 no-repeat;}
+.TimeKnobPoint_gray {background: url(../images/SC3240101/TimeKnobPoint_gray.png) 0 0 no-repeat;}
+/*リサイズ用オブジェクト Start*/
+.ui-resizable { position:absolute;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block;}
+/*チップ右側のリサイズ用(チップの大きさに合わせてtop,heightの調整必要)*/
+.ui-resizable-e { cursor: e-resize; width: 48px; right: -25px; top: 36px; height: 50%; }
+/*チップ左側のリサイズ用(チップの大きさに合わせてtop,heightの調整必要)*/
+.ui-resizable-w { cursor: w-resize; width: 48px; left: -25px; top: 0px; height: 50%; }
+/*リサイズ用オブジェクト End*/
+
+/*
+Relational Lines
+リレーショナルですが、
+下記方法ではチップに載せるのが困難になりそうですので、
+もう一案制作したいと思います。
+------------------------------------------------*/
+.PointR,
+.PointL{
+	display:block;
+	width:10px; height:10px;
+	position:absolute;
+	background:
+	url(../images/SC3240101/RelationalPoint.png) 0 0 no-repeat;
+	top:31px;
+	visibility:hidden;
+}
+.PointL{left:-5px;}
+.PointR{right:-5px;}
+
+.ArrowL
+{
+    left:-20px;
+    width:30px;
+    background:url(../images/SC3240101/RelationalArrowL.png) 0 0 no-repeat;
+}
+.ArrowR
+{
+    right:-25px;    
+    width:30px;
+    background:url(../images/SC3240101/RelationalArrowR.png) 0 0 no-repeat;
+}
+
+.RelationalLine
+{
+    display:block;
+    background-color:#00FF30;
+    height:2px;
+    position:absolute;
+}
+
+/*
+　チップ重複
+--------------------------------------*/
+.WhiteBorder{
+	position:absolute;
+	top:0; left:0;
+	height:72px;
+	z-index:22;
+}
+.WhiteBorder p{
+	display:block;
+	width:auto;
+	height:66px;
+	border:#FFF 3px solid;
+	border-radius:4px;
+}
+.selection{
+	z-index:21;
+	border-radius:4px;
+	box-shadow:-1px -1px 5px rgba(0, 0, 0, 1), 1px 1px 5px rgba(0, 0, 0, 1), -1px 1px 5px rgba(0, 0, 0, 1), 1px -1px 5px rgba(0, 0, 0, 1);
+}
+.smbChipOutBox
+{
+    z-index:23;
+    height:73px;
+    position:absolute;
+}
+/* ポップアップチップエリア
+------------------------------------------------------------------------------*/
+#MainArea .PopUpChipBoxBorder{
+	position:absolute;
+	height:97px;
+	background:rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	box-shadow: 3px 3px 6px #000;
+	z-index:40;
+}
+#MainArea .PopUpChipBoxBorder .PopUpChipBox{
+	position:absolute;
+	top:1px;
+	left:1px;
+	height:95px;
+	overflow:hidden;
+	border-radius:10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.8)),
+                                 color-stop(0.002, rgba(120, 128, 147, 0.8)),
+                                 color-stop(0.020, rgba(87, 95, 114, 0.8)),
+                                 color-stop(0.040, rgba(29, 40, 59, 0.8)),
+                                 color-stop(0.070, rgba(3, 11, 26, 0.8)),
+                                 to(rgba(7, 11, 29, 0.8)));
+}
+#MainArea .PopUpChipBoxBorder .PopUpChipBox .PopUpScrollBox{
+	position:absolute;
+	top:1px;
+	left:1px;
+	height:95px;
+	overflow:hidden;
+	border-radius:10px;
+}
+#MainArea .PopUpChipBoxBorder .PopUpChipBox .PopUpScrollBox .PopUpChipInnerBox{
+	position:absolute;
+	height:94px;
+}
+#MainArea .PopUpChipBoxBorder .TriangleBorderDown{
+	position:absolute;
+	top:96px;
+	width:18px;
+}
+.TriangleBorderDown:after, .TriangleBorderDown:before {
+	position:absolute;
+	top:100%;
+	width:0px;
+	height:0px;
+	border:solid transparent;
+	content:' ';
+}
+.TriangleBorderDown:after {
+	border-width:12px;    
+	border-top-color: rgba(7, 11, 29, 0.8);
+}
+.TriangleBorderDown:before {
+	top:101.5%;
+	border-width:13px;
+	border-top-color:rgba(255, 255, 255, 0.5);
+}
+
+#MainArea .PopUpChipBoxBorder .TriangleBorderUp{
+	position:absolute;
+	top:3px;
+	width:18px;
+	transform: rotate(180deg);
+}
+.TriangleBorderUp:after, .TriangleBorderUp:before {
+	position:absolute;
+	top:100%;
+	width:0px;
+	height:0px;
+	border:solid transparent;
+	content:' ';
+}
+.TriangleBorderUp:after {
+	border-width:16px;    
+	border-top-color: rgba(87, 95, 114, 0.8);
+}
+.TriangleBorderUp:before {
+	border-width:16px;
+	border-top-color:rgba(255, 255, 255, 0.5);
+}
+.Timing_Balloon {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    width: 46px;
+    height: 23px;
+    background: #797a7a;
+    box-shadow: rgba(0,0,0,1) 0 1px 20px;
+    border-radius: 2px;
+    opacity: 0.9;
+    z-index: 2;
+}
+.Timing_Balloon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 46px;
+    height: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9fa0a0),
+     color-stop(0.20, #a2a2a2),
+     color-stop(0.21, #8f9090),
+     to(#8f9090));
+    border-radius: 2px;
+    z-index: 3;
+}
+.Timing_Balloon:after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    bottom: -5px;
+    width: 20px;
+    height: 10px;
+    background: #797a7a;
+    transform: rotate(-74deg) scale(1.03) skew(-60deg) translate(0px);
+    z-index: 1;
+}
+
+.Timing_Balloon .Time {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #FFF;
+    text-shadow: #454646 0 -1px 0;
+    line-height: 23px;
+    text-align: center;
+    z-index: 4;
+}
+.MCp {
+   z-index: 5;
+}
+.UnavaliableChip{
+   z-index: 4;
+}
+.SelectedChipZIndex {
+    z-index: 38;
+}
+.MovingChipZIndex {
+    z-index: 39;
+}
+
+.SelectedRelationWorkOverChipZIndex {
+    z-index: 30;
+}
+.SelectedRelationWorkingChipZIndex {
+    z-index: 31;
+}
+.SelectedRelationRezChipZIndex {
+    z-index: 32;
+}
+
+.WorkOverChipZIndex {
+    z-index: 6;
+}
+.WorkRezChipZIndex {
+    z-index: 7;
+}
+.WorkingChipZIndex {
+    z-index: 8;
+}
+
+.RelationLineZIndex {
+    z-index: 50;
+}
+.SMBBackGroundZIndex1 {
+    z-index: 9999;
+}
+.SMBBackGroundZIndex2 {
+    z-index: 9998;
+}

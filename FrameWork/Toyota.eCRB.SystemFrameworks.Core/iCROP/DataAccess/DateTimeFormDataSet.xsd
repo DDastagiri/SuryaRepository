@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DateTimeFormDataSet" targetNamespace="http://tempuri.org/DateTimeFormDataSet.xsd" xmlns:mstns="http://tempuri.org/DateTimeFormDataSet.xsd" xmlns="http://tempuri.org/DateTimeFormDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="OracleConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OracleConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.OracleConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DateTimeFormDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DateTimeFormDataSet" msprop:Generator_UserDSName="DateTimeFormDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBL_DATETIMEFORM" msprop:Generator_TableClassName="TBL_DATETIMEFORMDataTable" msprop:Generator_TableVarName="tableTBL_DATETIMEFORM" msprop:Generator_TablePropName="TBL_DATETIMEFORM" msprop:Generator_RowDeletingName="TBL_DATETIMEFORMRowDeleting" msprop:Generator_UserTableName="TBL_DATETIMEFORM" msprop:Generator_RowChangingName="TBL_DATETIMEFORMRowChanging" msprop:Generator_RowEvHandlerName="TBL_DATETIMEFORMRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_DATETIMEFORMRowDeleted" msprop:Generator_RowEvArgName="TBL_DATETIMEFORMRowChangeEvent" msprop:Generator_RowChangedName="TBL_DATETIMEFORMRowChanged" msprop:Generator_RowClassName="TBL_DATETIMEFORMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONVID" msprop:Generator_ColumnVarNameInTable="columnCONVID" msprop:Generator_ColumnPropNameInRow="CONVID" msprop:Generator_ColumnPropNameInTable="CONVIDColumn" msprop:Generator_UserColumnName="CONVID" type="xs:long" />
+              <xs:element name="FORMAT" msprop:Generator_ColumnVarNameInTable="columnFORMAT" msprop:Generator_ColumnPropNameInRow="FORMAT" msprop:Generator_ColumnPropNameInTable="FORMATColumn" msprop:Generator_UserColumnName="FORMAT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

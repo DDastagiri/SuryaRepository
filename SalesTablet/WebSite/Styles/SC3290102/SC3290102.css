@@ -1,0 +1,289 @@
+﻿#SC3290102_Panel .contentTitle{
+    width:190px;
+    font-size:16px;
+    padding:0px 0 0px 16px;
+    margin-bottom:7px;
+    color:#FFFFFF;
+    height:26px;
+    display:block;
+    display: table-cell;
+    vertical-align: middle;
+    border-top-left-radius:7px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:56px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.50, #797d84),
+            color-stop(0.51, #6a6e76),
+                        to(#6a6e76));
+}
+
+#SC3290102_Panel{
+	width:643px;
+	height:294px;
+	float:right;
+	position:relative;
+	
+	border-radius: 7px 7px 7px 7px;
+    background:#FFF;
+    border:#a5a5a5 1px solid;
+    box-shadow:3px 3px 3px #666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#efefef), 
+                            color-stop(0.50, #ffffff),
+                            to(#dfdfdf));
+}
+
+#SC3290102_Panel h3,
+#SC3290102_Panel h4{
+	display:block;
+	font-size:14px;
+	line-height:14px;
+	margin:0px 0 8px;
+	padding-top:16px;
+	color:#666666;
+}
+
+#SC3290102_Panel .katudouDate{
+	position:absolute;
+	font-size:12px;
+	color:#808080;
+	left: 479px;
+	top: 11px;
+}
+#SC3290102_Panel .inLeftBox1{
+	width:401px;
+	float:left;
+	border-right:#999 1px solid;
+}
+	
+#SC3290102_Panel .inRightBox1{
+	width:185px;
+	float:right;
+}
+	
+
+#SC3290102_Panel h3.subTitle01{
+	width:152px;
+	float:left;
+}
+
+#SC3290102_Panel h3.subTitle02{
+	width:152px;
+	float:left;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02{
+	width:623px;
+	height:210px;
+	position:absolute;
+	top:35px; left:9px;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 {
+	border-top: #B3B3B3 solid 1px;
+    border-right: #B3B3B3 solid 1px;
+    border-left: #B3B3B3 solid 1px;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02HeadR {
+	float: left;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02HeadR th{
+	font-size:12px;
+	font-weight:normal;
+	color:#FFF;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02HeadR .TBL_HDST{
+	width:119px;
+	height:27px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86898f), to(#696d75));
+	border-right:#b3b3b3 1px solid;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02HeadR .WhiteHD{
+	width:1px;
+	height:27px;
+	background:#FFF;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02HeadR .TBL_HDCT{
+	width:118px;
+	height:27px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86898f), to(#696d75));
+	border-right:#b3b3b3 1px solid;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02HeadR .TBL_HDED{
+	width:380px;
+	height:27px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86898f), to(#696d75));
+	border-right:none;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02Body {
+	float: left;
+	height: 179px;
+	overflow: auto;
+	border-top:#FFF 1px solid;
+	border-bottom: #B3B3B3 solid 1px;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02Body td{
+	font-size:14px;
+	color:#333333;
+	text-align:center;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02Body .TBL_DTST{
+	width:119px;
+	height:44px;
+	border-right:#b3b3b3 1px solid;
+	border-bottom:#b3b3b3 1px solid;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02Body .WhiteDT{
+	width:1px;
+	height:44px;
+	background:#FFF;
+	border-bottom:#FFF 1px solid;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02Body .TBL_DTCT{
+	width:118px;
+	height:44px;
+	border-right:#b3b3b3 1px solid;
+	border-bottom:#b3b3b3 1px solid;	
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02Body .TBL_DTED{
+	width:361px;
+	height:44px;
+	border-right:none;
+	border-bottom:#b3b3b3 1px solid;
+	text-align:left;
+	padding-left:19px;
+}
+
+#SC3290102_Panel #SC3290102_TBL_Box02 .SC3290102_table02 #SC3290102_table02Body .LAST_DT{
+	border-bottom:none;	
+}
+
+#SC3290102_Panel .GrayBKDT{
+	background:#dcdcdc;
+}
+
+#SC3290102_Panel .WhiteBKDT{
+	background:#FFF;
+}
+
+#SC3290102_Panel .contentTitle.W186{
+	width:170px;	
+}
+
+/* オーバーレイ
+---------------------------------------------------------------*/
+#SC3290102_Panel #SC3290102_LoadingAnimation2 {
+    top: 120px;
+    left: 300px;
+	width: 21px;
+	height: 22px;
+	background:url(../Images/progress.png) no-repeat;
+	display: none;
+	z-index: 1;
+	position: absolute;
+}
+
+#SC3290102_Panel .PreLoad {
+    display: none;
+}
+
+#SC3290102_Panel .NextLoad {
+    display: none;
+}
+
+#SC3290102_Panel #SC3290102_ProgressPanel {
+    position:absolute;
+    top:0px; 
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:10001;
+    opacity:0;
+    display:none;
+}
+
+#SC3290102_Panel .LoadingAnimation3 {
+	width: 21px;
+	height: 22px;
+	background:url(../Images/progress.png) no-repeat;
+	display: block;
+	
+}
+#SC3290102_Panel .show2  {
+    animation: show2 1s linear infinite;
+}
+@keyframes show2 {
+	0%	    { transform: rotate(-0deg); }
+	100%	{ transform :rotate(360deg); }
+}
+
+#SC3290102_Panel td {
+    vertical-align: middle;
+}
+
+#SC3290102_Panel #SC3290102_ItemNothing {
+    font-size: 200%;
+    display: none;
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+
+#SC3290102_Panel .LoadingButton {
+    float: right; 
+    margin-right: 250px;
+    margin-top: 5px;
+    display: none;
+}
+
+#SC3290102_Panel .ItemLoad {
+    float: right;
+}
+
+#SC3290102_Panel #SC3290102_PreButtonRow {
+    display: none;
+}
+
+#SC3290102_Panel #SC3290102_NextButtonRow {
+    display: none;
+}
+
+#SC3290102_Panel #SC3290102_NextButtonRow {
+    display: none;
+}
+
+#SC3290102_Panel .ExpirationRed {
+	color: red;
+}
+
+#SC3290102_Panel .ExpirationBlack {
+	color: black;
+}
+
+#SC3290102_Panel .Hidden{
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+#SC3290102_Panel .Ellipsis {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+#SC3290102_FollwListUpdatePanel {
+    display:none;
+}

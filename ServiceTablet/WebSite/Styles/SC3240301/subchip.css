@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  A16-0010
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/*受付*/
+.SubChipReception{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:10;
+	display:none;
+}
+.ReceptionBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../images/SC3240301/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+.ReceptionBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.SubChipReception .ReceptionTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+.SubChipReception .SCp{
+	box-shadow:0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/*追加作業*/
+.SubChipAdditionalWork{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:10;
+	display:none;
+}
+.AdditionalWorkBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../images/SC3240301/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+.AdditionalWorkBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.SubChipAdditionalWork .AdditionalWorkTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+.SubChipAdditionalWork .SCp{
+	box-shadow:0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/*完成検査*/
+.SubChipCompletionInspection{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:10;
+	display:none;
+}
+.CompletionInspectionBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../images/SC3240301/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+.CompletionInspectionBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.SubChipCompletionInspection .CompletionInspectionTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+.SubChipCompletionInspection .SCp{
+	box-shadow:0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/*洗車*/
+.SubChipCarWash{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:10;
+	display:none;
+}
+.CarWashBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../images/SC3240301/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+.CarWashBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.SubChipCarWash .CarWashTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+.SubChipCarWash .SCp{
+	box-shadow:0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+/*納車待ち*/
+.SubChipWaitingDelivered{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:10;
+	display:none;
+}
+.WaitingDeliveredBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../images/SC3240301/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+.WaitingDeliveredBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.SubChipWaitingDelivered .WaitingDeliveredTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+.SubChipWaitingDelivered .SCp{
+	box-shadow:0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+/*NoShow*/
+.SubChipNoShow{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:10;
+	display:none;
+}
+.NoShowBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../images/SC3240301/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+.NoShowBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.SubChipNoShow .NoShowTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+.SubChipNoShow .SCp{
+	box-shadow:0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+/*中断*/
+.SubChipStop{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:10;
+	display:none;
+}
+.StopBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../images/SC3240301/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+.StopBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.SubChipStop .StopTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+.SubChipStop .SCp{
+	box-shadow:0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+/***************************************************************
+* サブチップタイトル
+****************************************************************/
+.SubBOXTitle{
+    letter-spacing: 0.3em;
+}
+/***************************************************************
+* サブチップエリア　アクティブインジケーター
+****************************************************************/
+#SubChipAreaActiveIndicator {
+    position:absolute;
+    background:url(../Images/animeicn-1.png) no-repeat;
+    animation: LoadingAnimation 1.0s infinite linear;
+    display:none;
+    top:580px;
+    left:512px;
+    width:38px;
+    height:38px;
+    z-index:101;
+}
+#SubChipAreaActiveIndicator.show { display: block; }
+@keyframes LoadingAnimation {
+    0%{ transform:rotate(0deg);}
+    100%{transform:rotate(340deg);}
+}
+#SubChip_LoadingScreen
+{
+    position:absolute;
+    top:504px;
+    left:0px;
+    background-color:Black;
+    opacity:0.6;
+    z-index:100;
+    display:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/***************************************************************
+* 矢印三角
+****************************************************************/
+.Triangle{
+	position:absolute;
+	left:289px; bottom:-26px;
+	background:url(../images/SC3240301/ReceptionTriangle.png) 0 0 no-repeat;
+	width:49px;
+	height:27px;
+	z-index:10;
+	
+	

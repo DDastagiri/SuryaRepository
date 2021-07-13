@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "WebSite", "{499E634A-550A-4F84-A3D3-C159E5C4F94E}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{76A3D071-F3A7-49A4-98A8-4A5E03493078}|Toyota.eCRB.iCROP.BizLogic.IC3040601.dll;{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}|Toyota.eCRB.iCROP.DataAccess.IC3040601.dll;{44F802ED-37AD-4644-B11C-2C6F4F792A75}|Toyota.eCRB.iCROP.BizLogic.IC3040404.dll;{34BBAA3A-6768-4966-B795-A2D81499A1DF}|Toyota.eCRB.iCROP.DataAccess.IC3040404.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WebSite"
+		Debug.AspNetCompiler.PhysicalPath = "WebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebSite"
+		Release.AspNetCompiler.PhysicalPath = "WebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1089"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2FD8401F-BB79-45B2-A54F-EF7B3D436E39}"
+	ProjectSection(SolutionItems) = preProject
+		Build.msbuild = Build.msbuild
+		次世代e-CRB.ruleset = 次世代e-CRB.ruleset
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Toyota.eCRB.iCROP.BizLogic.IC3040601", "BizLogic\Toyota.eCRB.iCROP.BizLogic.IC3040601\Toyota.eCRB.iCROP.BizLogic.IC3040601.vbproj", "{76A3D071-F3A7-49A4-98A8-4A5E03493078}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Toyota.eCRB.iCROP.DataAccess.IC3040601", "DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3040601\Toyota.eCRB.iCROP.DataAccess.IC3040601.vbproj", "{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Toyota.eCRB.iCROP.BizLogic.IC3040404", "BizLogic\Toyota.eCRB.iCROP.BizLogic.IC3040404\Toyota.eCRB.iCROP.BizLogic.IC3040404.vbproj", "{44F802ED-37AD-4644-B11C-2C6F4F792A75}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Toyota.eCRB.iCROP.DataAccess.IC3040404", "DataAccess\Toyota.eCRB.iCROP.DataAccess.IC3040404\Toyota.eCRB.iCROP.DataAccess.IC3040404.vbproj", "{34BBAA3A-6768-4966-B795-A2D81499A1DF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://127.0.0.1:18080/tfs/e-crb_collection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BizLogic\\Toyota.eCRB.iCROP.BizLogic.IC3040404\\Toyota.eCRB.iCROP.BizLogic.IC3040404.vbproj
+		SccProjectName1 = BizLogic/Toyota.eCRB.iCROP.BizLogic.IC3040404
+		SccLocalPath1 = BizLogic\\Toyota.eCRB.iCROP.BizLogic.IC3040404
+		SccProjectUniqueName2 = BizLogic\\Toyota.eCRB.iCROP.BizLogic.IC3040601\\Toyota.eCRB.iCROP.BizLogic.IC3040601.vbproj
+		SccProjectName2 = BizLogic/Toyota.eCRB.iCROP.BizLogic.IC3040601
+		SccLocalPath2 = BizLogic\\Toyota.eCRB.iCROP.BizLogic.IC3040601
+		SccProjectUniqueName3 = DataAccess\\Toyota.eCRB.iCROP.DataAccess.IC3040404\\Toyota.eCRB.iCROP.DataAccess.IC3040404.vbproj
+		SccProjectName3 = DataAccess/Toyota.eCRB.iCROP.DataAccess.IC3040404
+		SccLocalPath3 = DataAccess\\Toyota.eCRB.iCROP.DataAccess.IC3040404
+		SccProjectUniqueName4 = DataAccess\\Toyota.eCRB.iCROP.DataAccess.IC3040601\\Toyota.eCRB.iCROP.DataAccess.IC3040601.vbproj
+		SccProjectName4 = DataAccess/Toyota.eCRB.iCROP.DataAccess.IC3040601
+		SccLocalPath4 = DataAccess\\Toyota.eCRB.iCROP.DataAccess.IC3040601
+		SccWebProject5 = true
+		SccProjectUniqueName5 = WebSite
+		SccProjectName5 = WebSite
+		SccLocalPath5 = WebSite
+		SccProjectEnlistmentChoice5 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{499E634A-550A-4F84-A3D3-C159E5C4F94E}.Release|x86.ActiveCfg = Debug|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{76A3D071-F3A7-49A4-98A8-4A5E03493078}.Release|x86.ActiveCfg = Release|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2BD0E5E9-54F7-4490-BCE5-8EFC9C16BE2C}.Release|x86.ActiveCfg = Release|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{44F802ED-37AD-4644-B11C-2C6F4F792A75}.Release|x86.ActiveCfg = Release|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{34BBAA3A-6768-4966-B795-A2D81499A1DF}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

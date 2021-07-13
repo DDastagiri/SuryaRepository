@@ -1,0 +1,85 @@
+﻿@charset "utf-8";
+/*/-------------------------------------------------------------------------
+//SC3230104.css
+//--------------------------------------------------------------------------
+//機能：部品説明（交換部品情報）画面
+//
+//作成：2014/08/XX NEC 上野	初版作成
+//更新：
+
+---------------------------------------------------------------------------*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	Parts Details
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#main 
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.3, #fff), color-stop(0.7, #fff), to(#dfdfdf));
+}
+
+/*******コンテント２*******/
+#oldParts {
+	float:left;
+	margin:20px 0 20px 17px;
+	width:435px;
+	}
+
+#newParts {
+	float:right;
+	margin:20px 17px 20px 0;
+	width:435px;
+	}	
+
+#oldParts p,
+#newParts p{
+	text-align:center;
+	font-size:22px;
+	padding:10px 0 0;
+	}
+
+.clear {
+	clear:both;
+	}
+
+#oldParts img, #newParts img {
+	box-shadow: 3px 3px 3px #666;
+	/*border-radius: 7px 7px 7px 7px;*/
+	}
+
+.PartsIcon{
+	background:url(../Images/SC3250104/PartsIcon.png) 0 0 no-repeat;
+	position:absolute;
+	left:17px; bottom:16px;
+	height:20px;
+	width:50px;
+	padding:0 0 0 30px;
+	font-size:16px;
+	line-height:20px;
+	color:#6c737a;
+	font-weight:bold;
+}
+
+.PartsIcon_Disable{
+	background:url(../Images/SC3250104/PartsIcon.png) 0 0 no-repeat;
+	position:absolute;
+	left:17px; bottom:16px;
+	height:20px;
+	width:50px;
+	padding:0 0 0 30px;
+	opacity:0.4;
+}
+
+.ShowContents2{
+	height: 450px !important;
+}
+
+.ShowContents2 iframe.ContentsFrame{
+	height: 100% !important;
+}
+
+#imageNewParts, #imageOldParts{
+	height: auto !important;
+}

@@ -1,0 +1,202 @@
+/*/-------------------------------------------------------------------------
+//SC3180205.css
+//--------------------------------------------------------------------------
+//機能：承認者選択
+//補足：
+//作成：2014/01/21 TMEJ小澤	初版作成
+//更新：
+---------------------------------------------------------------------------*/
+
+#ServerProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	width:289px;
+	height:302px;
+	z-index:99;
+	display:none;
+	opacity:0.6;
+}
+
+#ServerProcessIcon {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:146px;
+	left:123px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+.CTConfirmPopList
+{
+    height:237px;
+    width:auto;
+    border:#bbbbbb 1px solid;
+    border-radius:10px;
+    font-size:18px;
+    line-height:19px;
+}
+
+.CTConfirmPopList li
+{
+    position:relative;
+    font-weight:bold;
+    height:42px;
+    border-bottom:#bbbbbb 1px solid;
+    /*padding:12px 0 0 0;*/
+    line-height:30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    list-style-type: none;
+}
+
+.CTConfirmPopList li:last-child
+{
+    border-bottom:none;
+}
+
+.nsc413OnOffIcn
+{
+/*
+    left:9px;
+    top:10px;
+    position:absolute;
+    border-bottom:none;
+*/
+    top:9px;
+left: 9px;
+    float: left;
+    border-bottom:none;
+    position: relative;
+}
+.nsc413OnOffWord
+{
+    top:7px;
+    left: 20px;
+    position: relative;
+    float: left;
+}
+
+.PopOverCtConfirmListChecked
+{
+    position: relative;
+    float: right;
+    width: 33px;
+    height: 43px;
+    right: 5px;
+    background:url(../images/SC3170308/nsc413checkOn.png) right center no-repeat;
+}
+
+#ApprovalList
+{
+    display: block;
+    width: 287px;
+    box-shadow: 0px 0px 0px;
+    height: 300px;
+}
+
+#ApprovalListTitleDiv
+{
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 35px;
+    float: left;
+    width:145px;
+}
+
+.ApprovalListHeader
+{
+    width: 287px;
+    height: 35px;
+}
+
+.CTConfirmPopTitleBlockButtonLeft
+{
+    border: #25272B 1px solid;
+    border-left: none;
+    box-shadow: 0px 1px 0px #6E727B;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+                 color-stop(0.50, #0D1734),
+                 color-stop(0.501, #000B29), to(#000B29));
+    color: white;
+    font-size:12px;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 70px;
+    height: 20px;
+    line-height:20px;
+    text-align: center;
+    cursor:pointer;
+    float: left;
+}
+.CTConfirmPopTitleBlockButtonRightOn
+{
+    border: #25272B 1px solid;
+    border-left: none;
+    box-shadow: 0px 1px 0px #6E727B;
+    border-radius: 5px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#6F96E8),
+                                color-stop(0.5, #376FE0),
+                                color-stop(0.5, #2361DD),
+                                to(#2361DD));
+    color: white;
+    font-size:12px;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    width: 70px;
+    height: 20px;
+    line-height:20px;
+    text-align: center;
+    color:white;
+    cursor:pointer;
+    float: left;
+}
+.CTConfirmPopTitleBlockButtonRightOff
+{
+    border: #25272B 1px solid;
+    border-left: none;
+    box-shadow: 0px 1px 0px #6E727B;
+    border-radius: 5px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#576174),
+								color-stop(0.5, #1A233E),
+								color-stop(0.5, #000B29),
+								to(#000B29));
+    color: white;
+    font-size:12px;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    width: 70px;
+    height: 20px;
+    line-height:20px;
+    text-align: center;
+    color:white;
+    cursor:pointer;
+    float: left;
+}
+
+/*ツールチップを表示しないラベルに適用する*/
+.NotEllipsis
+{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

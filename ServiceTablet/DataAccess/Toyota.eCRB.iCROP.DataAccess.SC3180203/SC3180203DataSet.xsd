@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3180203DataSet" targetNamespace="http://tempuri.org/SC3180203DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3180203DataSet.xsd" xmlns="http://tempuri.org/SC3180203DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.Toyota.eCRB.ServerCheck.CheckResult.DataAccessSC3180203.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3180203DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3180203DataSet" msprop:Generator_UserDSName="SC3180203DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3180203HeaderData" msprop:Generator_TableClassName="SC3180203HeaderDataDataTable" msprop:Generator_TableVarName="tableSC3180203HeaderData" msprop:Generator_RowChangedName="SC3180203HeaderDataRowChanged" msprop:Generator_TablePropName="SC3180203HeaderData" msprop:Generator_RowDeletingName="SC3180203HeaderDataRowDeleting" msprop:Generator_RowChangingName="SC3180203HeaderDataRowChanging" msprop:Generator_RowEvHandlerName="SC3180203HeaderDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3180203HeaderDataRowDeleted" msprop:Generator_RowClassName="SC3180203HeaderDataRow" msprop:Generator_UserTableName="SC3180203HeaderData" msprop:Generator_RowEvArgName="SC3180203HeaderDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="RSLT_SVCIN_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_SVCIN_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_SVCIN_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_SVCIN_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_SVCIN_DATETIME" type="xs:string" minOccurs="0" />
+              <xs:element name="SVCIN_MILE" msprop:Generator_ColumnVarNameInTable="columnSVCIN_MILE" msprop:Generator_ColumnPropNameInRow="SVCIN_MILE" msprop:Generator_ColumnPropNameInTable="SVCIN_MILEColumn" msprop:Generator_UserColumnName="SVCIN_MILE" type="xs:string" minOccurs="0" />
+              <xs:element name="RO_NUM" msprop:Generator_ColumnVarNameInTable="columnRO_NUM" msprop:Generator_ColumnPropNameInRow="RO_NUM" msprop:Generator_ColumnPropNameInTable="RO_NUMColumn" msprop:Generator_UserColumnName="RO_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="USERNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="RSLT_DELI_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_DELI_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_DELI_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_DELI_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_DELI_DATETIME" type="xs:string" minOccurs="0" />
+              <xs:element name="TELNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TELNO" msprop:Generator_ColumnVarNameInTable="columnTELNO" msprop:Generator_ColumnPropNameInTable="TELNOColumn" msprop:Generator_UserColumnName="TELNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3180203DetailData" msprop:Generator_TableClassName="SC3180203DetailDataDataTable" msprop:Generator_TableVarName="tableSC3180203DetailData" msprop:Generator_TablePropName="SC3180203DetailData" msprop:Generator_RowDeletingName="SC3180203DetailDataRowDeleting" msprop:Generator_RowChangingName="SC3180203DetailDataRowChanging" msprop:Generator_RowEvHandlerName="SC3180203DetailDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3180203DetailDataRowDeleted" msprop:Generator_UserTableName="SC3180203DetailData" msprop:Generator_RowChangedName="SC3180203DetailDataRowChanged" msprop:Generator_RowEvArgName="SC3180203DetailDataRowChangeEvent" msprop:Generator_RowClassName="SC3180203DetailDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="APPROVAL_STATUS" msprop:Generator_ColumnVarNameInTable="columnAPPROVAL_STATUS" msprop:Generator_ColumnPropNameInRow="APPROVAL_STATUS" msprop:Generator_ColumnPropNameInTable="APPROVAL_STATUSColumn" msprop:Generator_UserColumnName="APPROVAL_STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="ADVICE_CONTENT" msprop:Generator_ColumnVarNameInTable="columnADVICE_CONTENT" msprop:Generator_ColumnPropNameInRow="ADVICE_CONTENT" msprop:Generator_ColumnPropNameInTable="ADVICE_CONTENTColumn" msprop:Generator_UserColumnName="ADVICE_CONTENT" type="xs:string" minOccurs="0" />
+              <xs:element name="INSPEC_RSLT_CD" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="INSPEC_RSLT_CD" msprop:Generator_ColumnVarNameInTable="columnINSPEC_RSLT_CD" msprop:Generator_ColumnPropNameInTable="INSPEC_RSLT_CDColumn" msprop:Generator_UserColumnName="INSPEC_RSLT_CD" type="xs:int" minOccurs="0" />
+              <xs:element name="OPERATION_RSLT_ALREADY_REPLACE" msprop:Generator_ColumnVarNameInTable="columnOPERATION_RSLT_ALREADY_REPLACE" msprop:Generator_ColumnPropNameInRow="OPERATION_RSLT_ALREADY_REPLACE" msprop:Generator_ColumnPropNameInTable="OPERATION_RSLT_ALREADY_REPLACEColumn" msprop:Generator_UserColumnName="OPERATION_RSLT_ALREADY_REPLACE" type="xs:int" minOccurs="0" />
+              <xs:element name="OPERATION_RSLT_ALREADY_FIX" msprop:Generator_ColumnVarNameInTable="columnOPERATION_RSLT_ALREADY_FIX" msprop:Generator_ColumnPropNameInRow="OPERATION_RSLT_ALREADY_FIX" msprop:Generator_ColumnPropNameInTable="OPERATION_RSLT_ALREADY_FIXColumn" msprop:Generator_UserColumnName="OPERATION_RSLT_ALREADY_FIX" type="xs:int" minOccurs="0" />
+              <xs:element name="OPERATION_RSLT_ALREADY_CLEAN" msprop:Generator_ColumnVarNameInTable="columnOPERATION_RSLT_ALREADY_CLEAN" msprop:Generator_ColumnPropNameInRow="OPERATION_RSLT_ALREADY_CLEAN" msprop:Generator_ColumnPropNameInTable="OPERATION_RSLT_ALREADY_CLEANColumn" msprop:Generator_UserColumnName="OPERATION_RSLT_ALREADY_CLEAN" type="xs:int" minOccurs="0" />
+              <xs:element name="OPERATION_RSLT_ALREADY_SWAP" msprop:Generator_ColumnVarNameInTable="columnOPERATION_RSLT_ALREADY_SWAP" msprop:Generator_ColumnPropNameInRow="OPERATION_RSLT_ALREADY_SWAP" msprop:Generator_ColumnPropNameInTable="OPERATION_RSLT_ALREADY_SWAPColumn" msprop:Generator_UserColumnName="OPERATION_RSLT_ALREADY_SWAP" type="xs:int" minOccurs="0" />
+              <xs:element name="RSLT_VAL_BEFORE" msprop:Generator_ColumnVarNameInTable="columnRSLT_VAL_BEFORE" msprop:Generator_ColumnPropNameInRow="RSLT_VAL_BEFORE" msprop:Generator_ColumnPropNameInTable="RSLT_VAL_BEFOREColumn" msprop:Generator_UserColumnName="RSLT_VAL_BEFORE" type="xs:string" minOccurs="0" />
+              <xs:element name="RSLT_VAL_AFTER" msprop:Generator_ColumnVarNameInTable="columnRSLT_VAL_AFTER" msprop:Generator_ColumnPropNameInRow="RSLT_VAL_AFTER" msprop:Generator_ColumnPropNameInTable="RSLT_VAL_AFTERColumn" msprop:Generator_UserColumnName="RSLT_VAL_AFTER" type="xs:string" minOccurs="0" />
+              <xs:element name="INSPEC_ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnINSPEC_ITEM_NAME" msprop:Generator_ColumnPropNameInRow="INSPEC_ITEM_NAME" msprop:Generator_ColumnPropNameInTable="INSPEC_ITEM_NAMEColumn" msprop:Generator_UserColumnName="INSPEC_ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PRINT_INSPEC_ITEM_NAME" msprop:Generator_ColumnVarNameInTable="columnPRINT_INSPEC_ITEM_NAME" msprop:Generator_ColumnPropNameInRow="PRINT_INSPEC_ITEM_NAME" msprop:Generator_ColumnPropNameInTable="PRINT_INSPEC_ITEM_NAMEColumn" msprop:Generator_UserColumnName="PRINT_INSPEC_ITEM_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="INSPEC_ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnINSPEC_ITEM_CD" msprop:Generator_ColumnPropNameInRow="INSPEC_ITEM_CD" msprop:Generator_ColumnPropNameInTable="INSPEC_ITEM_CDColumn" msprop:Generator_UserColumnName="INSPEC_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DISP_TEXT_UNIT" msprop:Generator_ColumnVarNameInTable="columnDISP_TEXT_UNIT" msprop:Generator_ColumnPropNameInRow="DISP_TEXT_UNIT" msprop:Generator_ColumnPropNameInTable="DISP_TEXT_UNITColumn" msprop:Generator_UserColumnName="DISP_TEXT_UNIT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IcropCodeMap" msprop:Generator_TableClassName="IcropCodeMapDataTable" msprop:Generator_TableVarName="tableIcropCodeMap" msprop:Generator_TablePropName="IcropCodeMap" msprop:Generator_RowDeletingName="IcropCodeMapRowDeleting" msprop:Generator_RowChangingName="IcropCodeMapRowChanging" msprop:Generator_RowEvHandlerName="IcropCodeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="IcropCodeMapRowDeleted" msprop:Generator_UserTableName="IcropCodeMap" msprop:Generator_RowChangedName="IcropCodeMapRowChanged" msprop:Generator_RowEvArgName="IcropCodeMapRowChangeEvent" msprop:Generator_RowClassName="IcropCodeMapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ICROP_CD_1" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_1" msprop:Generator_ColumnPropNameInRow="ICROP_CD_1" msprop:Generator_ColumnPropNameInTable="ICROP_CD_1Column" msprop:Generator_UserColumnName="ICROP_CD_1" type="xs:string" minOccurs="0" />
+              <xs:element name="ICROP_CD_2" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_2" msprop:Generator_ColumnPropNameInRow="ICROP_CD_2" msprop:Generator_ColumnPropNameInTable="ICROP_CD_2Column" msprop:Generator_UserColumnName="ICROP_CD_2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

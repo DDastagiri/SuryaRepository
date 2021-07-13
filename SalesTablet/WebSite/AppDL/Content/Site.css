@@ -1,0 +1,550 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+
+html{
+   height: 100%;
+   font-size:14px;
+}
+   
+body {
+    background-color: #fff;
+    color: #333;
+    height:100%;
+    overflow: hidden;
+
+}
+
+body.dialog-body {
+    height:100%;
+    overflow: hidden;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.header{
+    width:100%;
+    overflow:hidden;
+
+    /*グラデーション（http://ie.microsoft.com/testdrive/Graphics/CSSGradientBackgroundMaker/）*/
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #737373));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #737373 100%);
+}
+.main{
+    background:#ccc;
+    overflow:auto;
+    width:100%;
+}
+.dialog-main{
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+
+.radius-div 
+{
+    -moz-border-radius: 10px/10px; 
+    border-radius: 10px 10px; 
+    border-radius: 10px/10px;
+    border:solid 1px; 
+    background-color: white;
+    -moz-box-shadow: -3px 3px 0px #9f9f9f;
+    box-shadow: -3px 3px 0px #9f9f9f;
+    box-shadow: -3px 3px 0px #9f9f9f; 
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.9rem;
+}
+
+.LL-size {
+    font-size : 1.2rem;
+}
+
+.L-size {
+    font-size : 1.1rem;
+}
+
+.M-size {
+    font-size : 1.0rem;
+}
+
+.S-size {
+    font-size : 0.9rem;
+}
+
+.SS-size {
+    font-size : 0.8rem;
+}
+
+.SSS-size {
+    font-size : 0.7rem;
+}
+
+.container-color {
+    background-color: #ccc;
+    color: #333;
+}
+.bar-color {
+    background-color: #7f7f7f;
+    color:White;
+}
+
+.title-color {
+    background-color: #F5F5F5;
+}
+
+.select-color {
+    background-color: #3D80DF;
+    color: #FFFFFF;
+} 
+
+.alternate-color {
+    background-color: #F5F5F5;
+}
+
+.error-color {
+    color: red;
+}
+
+.warning-color {
+    color: yellow;
+}
+
+.normal-color {
+    color: blue;
+}
+
+.error-background-color {
+    background-color: red;
+}
+
+.warning-background-color {
+    background-color: yellow;
+}
+
+.normal-background-color {
+    background-color: blue;
+}
+
+.grid-table-border-color {
+    border-color: #E3E3E3;
+}
+
+input[type="submit"],input[type="button"]
+ {
+    background-color: #d3dce0;
+    
+    cursor: pointer;
+    font-size: 1.0rem;
+    font-weight: 600;
+    min-width:80px;
+    margin: 2px;
+    min-height:22px;
+    padding-left:5px;
+    padding-right:5px;
+
+    -moz-border-radius: 5px/5px; 
+    border-radius: 5px 5px; 
+    border-radius: 5px/5px;
+
+    /*ipad*/
+    -webkit-appearance: none;
+}
+
+input[type="submit"].S-Button,input[type="button"].S-Button
+ {
+    background-color: #d3dce0;
+    
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    min-width:60px;
+    margin: 1px;
+    min-height:22px;
+    padding-left:4px;
+    padding-right:4px;
+
+    -moz-border-radius: 4px/4px; 
+    border-radius: 4px 4px; 
+    border-radius: 4px/4px;
+
+    /*ipad*/
+    -webkit-appearance: none;
+}
+
+select {
+    border: 1px solid #e2e2e2;
+    color: #333;
+}
+input[type="text"], input[type="password"] {
+    border: 1px solid #e2e2e2;
+    color: #333;
+}
+
+input[type="text"]:focus, input[type="password"]:focus 
+{
+    border: 1px solid #7ac0da;
+}
+
+.required-error-background {
+    background-color: pink  !important;
+}
+
+div.fill-dock {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+div.right-dock {
+    position:absolute;
+    right:0;
+}
+
+
+table.grid-table {
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+
+table.grid-table > thead > tr > th {
+    border-top: 1px solid white;
+    border-bottom: 1px solid #E3E3E3;
+    border-left: 1px solid #E3E3E3;
+    background: #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+table.grid-table > tbody > tr > td {
+    border-top: 1px solid white;
+    border-bottom: 1px solid #E3E3E3;
+    border-left: 1px solid #E3E3E3;
+    padding:0 10px 0 10px;
+}
+
+table.grid-table > tbody > tr:nth-child(2n+1) {
+    background-color: #F5F5F5;
+}
+
+tr.hidden {
+    visibility:collapse;
+}
+
+.grid-selectable tbody {
+    cursor:pointer;
+}
+
+.no-touch .grid-selectable > tbody > tr.hover {
+    background-color: #3D80DF;
+    color: #FFFFFF;
+}
+
+tr.more-data {
+    background-color: #ccc !important;
+    color: #333 !important;
+    cursor:pointer;
+}
+
+#header-fixed { 
+    position: fixed; 
+    top: 0px; display:none;
+    background-color:white;
+}
+
+.grid-layout select, .grid-layout input[type="text"] , .grid-layout input[type="password"] , .grid-layout label, .grid-layout textarea, .grid-layout {
+    width:100%;
+     box-sizing: border-box;
+     box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}
+
+/*ブロック用 開始*/
+.freezePaneOff
+{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.freezePaneOn
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    z-index: 998;
+    opacity: 0.4;
+    overflow:hidden;
+}
+
+.innerFreezePane
+{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width : 40%;
+    height: 50px;
+    margin: 0 30% 0 30%;
+    z-index: 999;
+}
+/*ブロック用 終了*/
+
+/*ボタンバー*/
+.btn-bar {
+    overflow: auto;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size:1.2rem;
+    background-color: #7f7f7f;
+    color:White;
+}
+
+.btn-bar a:link, .btn-bar a:visited, .btn-bar a:active {
+    color:white
+}
+
+
+/*メニュー用*/
+ul.menu li{
+	width:200px;
+	height:48px;
+	position:relative;
+}
+* html ul.menu li{
+	display:inline;
+	zoom:1;
+}
+*+html ul.menu li{
+	display:inline;
+	zoom:1;
+}
+ul.menu li a{
+	display:block;
+	width:100%;
+	height:100%;
+	line-height:48px;
+	text-indent:30px;
+	font-weight:bold;
+	color:black;
+	text-decoration:none;
+	position:relative;
+}
+ul.sub{
+	display:none;
+}
+* html ul.sub{
+	zoom:1;
+	position:relative;
+}
+*+html ul.sub{
+	zoom:1;
+	position:relative;
+}
+ul.sub li{
+	float:none;
+}
+ul.sub li ul.sub{
+	position:absolute;
+	left:200px;
+	top:0;
+}
+ul.menu li ul.sub{
+	position:absolute;
+	left:200px;
+	top:0;
+}
+ul.menu{
+	zoom:1;
+}
+ul.menu:after {
+	height:0;
+	visibility:hidden;
+	content:".";
+	display:block;
+	clear:both;
+}
+ul{
+    list-style-type:none;
+}
+
+/*jQuery UIのカスタマイズ*/
+
+.ui-widget-header{
+    /*グラデーション（http://ie.microsoft.com/testdrive/Graphics/CSSGradientBackgroundMaker/）*/
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #737373));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #737373 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #737373 100%);
+
+    color:white;
+}
+
+.ui-widget-overlay {
+    opacity:0.5;
+}
+
+/* タブレット基盤 コントロール共通スタイル */
+.icrop-disabled {
+}
+.icrop-focused {
+}
+.icrop-pressed {
+	background: #126EE4;
+	color: #FFF;
+}
+body.ipad input[type="text"], body.ipad input[type="password"], body.ipad select 
+{
+	height:26px;
+}
+
+/* タブレット基盤 CustomButtonスタイル */
+.icrop-CustomButton 
+{
+	border-radius:4px;
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+.icrop-CustomButton-badge 
+{
+    text-align:center; 
+    z-index:1;
+	top: 2px;
+	right: 2px;
+	width:10px;
+	height:10px;
+	font-size:8px;
+	background-color:#DDDDDD;
+}
+.icrop-CustomButton-label 
+{
+    text-align:center;
+}
+.icrop-CustomButton-imageLabel 
+{
+    position:absolute;
+    text-align:center;
+	bottom: 2px;
+}
+
+/* タブレット基盤 CustomLabelスタイル */
+.icrop-CustomLabel {
+}
+.icrop-CustomLabel-tooltip 
+{
+    border        : 1px solid #555;
+    border-radius : 2px;
+    background    : #FFE4C4;
+    color         : #555;
+    display       : none;
+    font-size     : 12px;
+    padding       : 1px 5px;
+    box-shadow    : 4px 4px rgba(3,3,3,0.4); box-shadow: 4px 4px rgba(3,3,3,0.4); 
+    white-space   : nowrap;
+}
+
+/* タブレット基盤 CustomTextBoxスタイル */
+.icrop-CustomTextBox-clear 
+{    
+    background-image: url(/Images/textClear.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+    width:23px; 
+    height:23px; 
+    cursor: pointer; 
+}
+.icrop-CustomTextBox-label
+{
+    top:2px; 
+    left:2px;
+}
+
+.parallelogram {
+
+}
+
+/* ダイアログ 戻るボタン */
+.ui-dialog-titlebar-back {
+    position: absolute;
+    left: .3em;
+    top: 50%;
+    width: 19px;
+    margin: -8px 0 0 0;
+    padding: 1px;
+    height: 18px;
+}
+.ui-dialog-titlebar-back span {
+    display: block; 
+    margin: 1px;
+}
+.ui-dialog-titlebar-back:hover, .ui-dialog .ui-dialog-titlebar-back:focus { 
+    padding: 0;
+}
+
+.ui-dialog-title {
+    width:100%;
+    text-align:center;
+}
+
+/*tree view*/
+.treeview a:hover, .treeview a:active, .treeview span:hover {
+    color:blue;
+}

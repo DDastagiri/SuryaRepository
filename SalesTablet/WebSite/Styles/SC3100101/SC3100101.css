@@ -1,0 +1,2210 @@
+﻿/**
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * SC3100101.css
+ * ──────────────────────────────────
+ * 機能： 受付メイン
+ * 補足： 
+ * 作成： 2011/12/12 KN  t.mizumoto
+ * 更新： 2012/08/27 TMEJ m.okamura 新車受付機能改善 $01
+ * 更新： 2020/02/05 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR008) $02
+ * 更新： 2020/04/16 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR060) $03
+ * ──────────────────────────────────
+ */
+/* CSS Document */
+/* 全体エリア ================================================== */
+
+/* 画面イベント時にフレームの上に付くチラつきを無くす */
+body 
+{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    /*font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, "HiraKakuProN-W3";*/
+}
+
+div#main { background: -webkit-gradient(linear, left top, left bottom, from(#E6E6E6), to(#B7B7B7));  }
+#main #contents { }
+
+div#frameArea 
+{
+    width:985px;
+    height:625px;
+}
+
+/* グレーアウトエリア : スタッフエリア */
+.staffChip .StaffChipGrayArea .ChipGrayArea { z-index:10; border-radius:4px; background:rgba(0, 0, 0, 0.5); width:135px; height:113px; position:absolute; top:2px; left:2px; display:none; }
+
+/* 選択エリア */
+.selectArea
+{
+	z-index:25;
+}
+
+.selectFlickArea
+{
+	z-index:15;
+}
+
+/* 読み込み中 */
+.MstPG_LoadingScreen
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:Black;
+    opacity:0.6;
+    z-index:100010;
+    display:none;
+}
+
+/* ポップアップ画面用 */
+#CustomerPopOver .MstPG_LoadingScreen,
+#StaffDetailPopOver .MstPG_LoadingScreen,
+#LinkingCancelPopOverBody .MstPG_LoadingScreen
+{
+    border-radius:4px;
+}
+
+.MstPG_LoadingWrap
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.MstPG_LoadingScreen .loadingIcn
+{
+	display:block;
+	width:38px;
+	height:38px;
+	animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+li{
+	list-style:none;
+	margin:0px;
+	text-indent: 0px;
+	padding: 0px;
+}
+
+.likeButton 
+{
+    border:#4F5153 1px solid;
+    border-radius:6px;
+    color:#FFF;
+    font-weight:600;
+    text-shadow:-1px -1px 1px #666;
+    text-align:center;
+    box-shadow:1px 1px 0px #FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#CD6B74), color-stop(0.45, #CD6B74), color-stop(0.5, #B01825), color-stop(1.0, #B01825));
+    width:120px;
+    height:34px;
+    margin:0px 5px 0px 5px;
+}
+
+/* 文字切り用 */
+.ellipsis
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  SMB共通
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+.SC_MainOutFrame{
+	position:relative;
+	overflow:hidden;
+	width:994px;
+	height:625px;
+}
+.SC_Main{
+	position:relative;
+	overflow:hidden;
+	width:982px;
+	height:617px;
+	border-right:#000 1px solid;
+	border-bottom:#000 1px solid;
+	box-shadow:1px 1px 6px #6a6a6a ;
+}
+
+/* 上のカセット
+------------------------------------------------------------------------------*/
+.DigitalDisplay{
+	position:relative;
+	display:block;
+	width:994px;
+	height:55px;
+}
+.DigitalDisplay li{
+	position:absolute;
+	top:0;
+	display:block;
+/* $02 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR008) START */
+	/*width:159px;*/
+	width:192.4px;
+/* $02 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR008) END */
+	height:55px;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2),
+						to(#cacaca));
+	box-shadow:inset 0px 0px 8px rgba(0, 0, 0, 0.6), inset 1px 1px 6px rgba(0, 0, 0, 0.6);
+	text-align:center;
+	font-weight:bold;
+}
+.DigitalDisplay li .Number{
+	display:block;
+	margin:18px 0 0 0;
+	font-size:31px;
+	line-height:38px;
+	color:#4c4c4c;
+	text-shadow:1px 1px 1px #FFF;
+	
+}
+.DigitalDisplay li .TitleText{
+	position:absolute;
+	left:1px; top:1px;
+/* $02 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR008) START */
+	/*width:157px;*/
+	width:190px;
+/* $02 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR008) END */
+	height:18px;
+	font-size:14px;
+	line-height:18px;
+	color:#FFF;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.6);
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 仮で追加 */
+.DigitalDisplay li .Inactive {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    z-index: 20;
+}
+
+.DigitalDisplay li:nth-child(1){left:0px;}
+/* $02 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR008) START */
+/*.DigitalDisplay li:nth-child(2){left:167px;}
+.DigitalDisplay li:nth-child(3){left:334px;}
+.DigitalDisplay li:nth-child(4){left:501px;}
+.DigitalDisplay li:nth-child(5){left:668px;}
+.DigitalDisplay li:nth-child(6){right:0px;}*/
+.DigitalDisplay li:nth-child(2){left:200.4px;}
+.DigitalDisplay li:nth-child(3){left:400.8px;}
+.DigitalDisplay li:nth-child(4){left:601.2px;}
+.DigitalDisplay li:nth-child(5){right:0px;}
+/* $02 NSK s.natsume TKM Change request development for Next Gen e-CRB (CR008) END */
+.DigitalDisplay li:nth-child(1) .TitleText{
+	background: -webkit-gradient(linear, left top, right top, from(#b38f00),
+            color-stop(0.28, #ffcc00),
+            color-stop(0.86, #ffcc00),
+						to(#b18f07));
+}
+.DigitalDisplay li:nth-child(2) .TitleText{
+	background: -webkit-gradient(linear, left top, right top, from(#0090a6),
+            color-stop(0.28, #00cdec),
+            color-stop(0.86, #00cdec),
+						to(#0790a5));
+}
+.DigitalDisplay li:nth-child(3) .TitleText{
+	background: -webkit-gradient(linear, left top, right top, from(#007930),
+            color-stop(0.28, #00ac45),
+            color-stop(0.86, #00ac45),
+						to(#0e7939));
+}
+.DigitalDisplay li:nth-child(4) .TitleText{
+	background: -webkit-gradient(linear, left top, right top, from(#6000b0),
+            color-stop(0.28, #8800fb),
+            color-stop(0.86, #8800fb),
+						to(#6207ae));
+}
+.DigitalDisplay li:nth-child(5) .TitleText{
+	background: -webkit-gradient(linear, left top, right top, from(#b3652c),
+            color-stop(0.28, #ff903e),
+            color-stop(0.86, #ff903e),
+						to(#b6672c));
+}
+.DigitalDisplay li:nth-child(6) .TitleText{
+	background: -webkit-gradient(linear, left top, right top, from(#b36d97),
+            color-stop(0.28, #ff9cd7),
+            color-stop(0.86, #ff9cd7),
+						to(#b66f99));
+}
+
+/* カセットセット
+------------------------------------------------------------------------------*/
+.SC_Cassette{
+	position:absolute;
+	left:0; top:70px;
+	width:994px;
+	height:468px;
+}
+.SC_Cassette .SC_CassetteBox01,
+.SC_Cassette .SC_CassetteBox02,
+.SC_Cassette .SC_CassetteBox03{
+	position:absolute;
+	top:0;
+	width:204px;
+	height:466px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.50, #FFFFFF),
+						to(#e1e1e1));
+	box-shadow:0px 1px 0px #efefef;
+	border:#aaaaaa 1px solid;
+	border-radius:3px;
+}
+.SC_Cassette .SC_CassetteBox01{left:0px;}
+.SC_Cassette .SC_CassetteBox02{left:221px;}
+.SC_Cassette .SC_CassetteBox03{
+	right:0;
+	width:550px;
+}
+
+.SC_Cassette .SC_CassetteTitle{
+	width:100%;
+	height:19px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c4c7cc),
+						to(#515258));
+	border-bottom:#9fa4a8 1px solid;
+	border-radius:2px 2px 0 0;
+	font-size:13px;
+	line-height:18px;
+	font-weight:bold;
+	color:#FFF;
+	text-shadow:0 -1px 0 #000;
+}
+.SC_Cassette .SC_CassetteTitle .Title{
+	padding-left:9px;
+	height:19px;
+	overflow: hidden;
+}
+.SC_Cassette .SC_CassetteTitle .Number{
+	position:absolute;
+	right:9px; top:0;
+	height:19px;
+	text-align:right;
+}
+.SC_Cassette .SC_CassetteBox01 .SC_CassetteBoxIn,
+.SC_Cassette .SC_CassetteBox02 .SC_CassetteBoxIn{
+	position:absolute;
+	/*left:9px; */
+	top:29px;
+	/* サイズ調整
+    width:186px;*/
+	width:204px;
+	height:437px;
+}
+.SC_Cassette .SC_CassetteBox03 .SC_CassetteBoxIn{
+	position:absolute;
+	/*left:9px; */
+	top:29px;
+	width:532px;
+	height:437px;
+}
+
+
+
+/* カセットの設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet{
+	position:relative;
+	display:block;
+	/* サイズ調整
+    width:100%;*/
+	width:200px;
+}
+.SC_Cassette .SC_CassetteBox03 ul.CassetteSet{
+	width:530px;
+}
+
+.SC_Cassette ul.CassetteSet li{
+	display:block;
+	/*width:100%;*/
+	width:184px;
+	height:54px;
+	/* サイズ調整 */
+	padding-left: 9px;
+}
+
+.SC_Cassette .SC_CassetteBox03 ul.CassetteSet li{
+	width:261px;
+	/* サイズ調整 */
+	padding-left: 0px;
+}
+.SC_Cassette .SC_CassetteBox03 ul.CassetteSet li:nth-child(odd){float:left;}
+.SC_Cassette .SC_CassetteBox03 ul.CassetteSet li:nth-child(even){float:right;}
+
+
+/* カセット内のテキスト設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li .CassetteBack{
+	position:relative;
+	background:#dddddd;
+	box-shadow:inset -1px -1px 2px rgba(0, 0, 0, 0.3), inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+	width:100%;
+	height:50px;
+	border-radius:3px;
+}
+
+.SC_Cassette ul.CassetteSet li .CassetteTextSet{
+	position:absolute;
+	left:6px; top:3px;
+	width:118px;
+	height:42px;
+	color:#4c4c4c;
+}
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .Clock{
+	position:absolute;
+	left:0; top:0;
+	width:70px;
+	height:10px;
+	line-height:10px;
+	font-size:10px;
+	text-align:center;
+}
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .Time{
+	position:absolute;
+	right:0; top:0;
+	width:48px;
+	height:10px;
+	line-height:10px;
+	font-size:10px;
+	text-align:right;
+	font-weight:bold;
+}
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .Name{
+	position:absolute;
+	left:0; top:12px;
+	/*width:80px;*/
+	width:74px;
+	height:17px;
+	line-height:17px;
+	font-size:12px;
+	font-weight:bold;
+}
+/*2018/07/12 NSK a.kani TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 START*/
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .LIcon{
+	position:absolute;
+    left:65px;
+    top:12px;
+    width:13px;
+    height:15px;
+	background:url(../../Styles/Images/SC3100101/15_13_L.png) center top no-repeat;
+}
+/*2018/07/12 NSK a.kani TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 END*/
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .Number{
+	position:absolute;
+	right:0; top:12px;
+	overflow:hidden;
+	/*background:url(../../Styles/Images/SC3100101/sc_icon_number.png) 0 0 no-repeat;*/
+	background:url(../../Styles/Images/SC3100101/sc_icon_number.png) 0 1px no-repeat;
+	width:36px;
+	height:14px;
+	line-height:18px;
+	font-size:10px;
+	text-align:right;
+	font-weight:bold;
+	color:#666666;
+	/*微調整で追加*/
+	padding-left: 3px;
+}
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .String{
+	position:absolute;
+	left:0; top:30px;
+	overflow:hidden;
+	/*width:74px;*/
+	width:70px;
+	height:12px;
+	line-height:12px;
+	font-size:10px;
+}
+
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .Car {
+    background: url(../Images/SC3100101/sc_icon_car.png) center 3px no-repeat #C2C2C2;
+    border-radius: 2px;
+    box-shadow: 0px -1px 0px #989898;
+    width: 63px;
+    height: 16px;
+    /*位置調整で追加 */
+    position: absolute; 
+    top: 29px; 
+}
+
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .Person {
+    background: url(../Images/SC3100101/sc_icon_person.png) center 2px no-repeat #C2C2C2;
+    border-radius: 2px;
+    box-shadow: 0px -1px 0px #989898;
+    width: 63px;
+    height: 16px;
+    /*位置調整で追加 */
+    position: absolute; 
+    top: 29px; 
+}
+
+.ComingStoreOff1-1-4-3  {
+    position: absolute;
+    width:42px; 
+    height:40px; 
+    border:#B0B0B0 1px solid; 
+    border-radius:4px; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#DADADA), to(#FFF)); 
+    left: 136px;
+    top: 4px;
+}
+.ComingStoreOff1-1-4-3  {
+    background-image:url(../Images/VisitCommon/icon_broadcast01.png); 
+    background-repeat:no-repeat; 
+    background-position:center center; 
+}
+
+
+.SC_Cassette ul.CassetteSet li .CassetteTextSet .Staff{
+	position:absolute;
+	/*right:0; */
+	left: 69px;
+	top:29px;
+	overflow:hidden;
+	/*background:url(../../Styles/Images/SC3100101/sc_icon_staff.png) 0 0 no-repeat;*/
+	background:url(../../Styles/Images/SC3100101/sc_icon_staff.png) 0 1px no-repeat;
+	width:44px;
+	height:14px;
+	line-height:15px;
+	font-size:10px;
+	/*text-align:right;*/
+	font-weight:bold;
+	padding-left: 11px;
+}
+
+.SC_Cassette ul.CassetteSet li .BackColor_Yellow{background:#fdca00;}
+.SC_Cassette ul.CassetteSet li .BackColor_Red{background:#ff0000;}
+
+.SC_Cassette ul.CassetteSet li .BackColor_Red .CassetteTextSet,
+.SC_Cassette ul.CassetteSet li .BackColor_Red .CassetteTextSet .Number{
+	color:#FFF;
+}
+.SC_Cassette ul.CassetteSet li .BackColor_Red .CassetteTextSet .Staff{
+	background:url(../../Styles/Images/SC3100101/sc_icon_staff02.png) 0 0 no-repeat;
+}
+
+/* カセット内のピン設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li .CassettePinSet,
+.SC_Cassette ul.CassetteSet li .CassettePinSetMore{
+	position:absolute;
+	right:9px; top:1px;
+	width:41px;
+	height:45px;
+}
+.SC_Cassette ul.CassetteSet li .CassettePinSet ul{
+	position:relative;
+	width:41px;
+	height:45px;
+}
+.SC_Cassette ul.CassetteSet li .CassettePinSet li{
+	position:absolute;
+	width:19px;
+	height:25px;
+	background:url(../../Styles/Images/SC3100101/sc_icon_pin.png) 0 0 no-repeat;
+	/* サイズ調整 */
+	padding-left: 0px;
+}
+.SC_Cassette ul.CassetteSet li .CassettePinSet li:nth-child(1){left:0; top:0;}
+.SC_Cassette ul.CassetteSet li .CassettePinSet li:nth-child(2){right:0; top:0;}
+.SC_Cassette ul.CassetteSet li .CassettePinSet li:nth-child(3){left:0; bottom:0;}
+.SC_Cassette ul.CassetteSet li .CassettePinSet li:nth-child(4){right:0; bottom:0;}
+
+.SC_Cassette ul.CassetteSet li .CassettePinSetMore .Pin{
+	position:absolute;
+	left:0; top:12px;
+	width:19px;
+	height:25px;
+	background:url(../../Styles/Images/SC3100101/sc_icon_pin.png) 0 0 no-repeat;
+}
+.SC_Cassette ul.CassetteSet li .CassettePinSetMore .PinNumber{
+	position:absolute;
+	right:0; top:12px;
+	width:18px;
+	height:25px;
+	font-size:12px;
+	font-weight:bold;
+	line-height:25px;
+	color:#4c4c4c;
+	text-align:center;
+}
+
+
+/* カセット内の仕切り線設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li .VerticalLine{
+	position:absolute;
+	left:131px; top:4px;
+	width:1px;
+	height:40px;
+	background:#b2b2b2;
+}
+
+
+/* カセット内の写真設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li .Photo{
+	position:absolute;
+	left:138px; top:4px;
+	width:42px;
+	height:40px;
+}
+
+
+/* カセット内のアイコン設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li .exmark{
+	position:absolute;
+	left:0; top:0;
+	width:14px;
+	height:14px;
+	background:#5893a1;
+	border-radius:2px;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
+	font-size:9px;
+	color:#FFF;
+	line-height:14px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.SC_Cassette ul.CassetteSet li .Tmark{
+	position:absolute;
+	right:0; top:0;
+	width:28px;
+	height:12px;
+	overflow:hidden;
+	background:url(../../Styles/Images/SC3100101/sc_icon_T.png) 0 0 no-repeat #e6e6e6;
+	border:#aaaaaa 1px solid;
+}
+.SC_Cassette ul.CassetteSet li .Tmark p{
+	display:block;
+	padding:0 0 0 14px;
+	font-size:10px;
+	line-height:12px;
+	color:#4c4c4c;
+	text-align:left;
+	font-weight:bold;
+}
+
+
+/* カセット内の［価格相談中］設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li ul.consultation{
+	position:absolute;
+	right:0; bottom:0;
+	display:block;
+	width:73px;
+	height:32px;
+}
+.SC_Cassette ul.CassetteSet li ul.consultation li{
+	position:absolute;
+	display:block;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF),
+						to(#e5e5e5));
+	border-radius:2px;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.4);
+	width:56px;
+	height:14px;
+	font-size:10px;
+	line-height:15px;
+	text-align:center;
+	color:#4c4c4c;
+	font-weight:bold;
+}
+.SC_Cassette ul.CassetteSet li ul.consultation li:nth-child(1){left:0px; top:0px; z-index:3;}
+.SC_Cassette ul.CassetteSet li ul.consultation li:nth-child(2){left:5px; top:5px; z-index:2;}
+.SC_Cassette ul.CassetteSet li ul.consultation li:nth-child(3){left:10px; top:10px; z-index:1;}
+
+.SC_Cassette ul.CassetteSet li ul.consultation li.Color_Red{
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0000),
+						to(#e50000));
+	color:#FFF;
+}
+.SC_Cassette ul.CassetteSet li ul.consultation li.Color_Yellow{
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffcc00),
+						to(#e5b700));
+	color:#FFF;
+}
+
+/* カセット内の透明な黒設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li .Inactive{
+	position:absolute;
+	left:0; top:0;
+	width:100%;
+	height:50px;
+	background:rgba(0, 0, 0, 0.5);
+	border-radius:3px;
+	z-index:20;
+}
+
+
+/* カセット内の桃色な線設定
+------------------------------------*/
+.SC_Cassette ul.CassetteSet li .Border_Pink{
+	position:absolute;
+	left:-1px; top:-1px;
+	width:259px;
+	height:48px;
+	border:#ff9cd7 2px solid;
+	border-radius:4px;
+	z-index:21;
+}
+
+
+/* カセット一番下
+------------------------------------------------------------------------------*/
+
+.SC_MainOutFrame .SC_CassetteBox04{
+	position:absolute;
+	left:0; bottom:1px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.50, #FFFFFF),
+						to(#e1e1e1));
+	border:#aaaaaa 1px solid;
+	border-radius:3px;
+	box-shadow:0px 1px 0px #efefef;
+	width:992px;
+	height:68px;
+}
+.SC_MainOutFrame .SC_CassetteBox04 ul{	
+	display:block;
+	position:absolute;
+	left:11px; 
+	/*top:9px;*/
+	width:977px;
+	/*height:51px;*/
+}
+.SC_MainOutFrame .SC_CassetteBox04 ul li,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip {
+	position:relative;
+	float:left;
+	width:65px;
+	height:50px;
+	margin-top: 9px;
+    margin-bottom: 3px;
+}
+
+.SC_MainOutFrame .SC_CassetteBox04 li .CassetteBack,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip .CassetteBack {
+	position:absolute;
+	left:0; top:0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.50, #FFFFFF),
+						to(#e1e1e1));
+	box-shadow:0px 1px 0px #efefef;
+	border:#aaaaaa 1px solid;
+	border-radius:3px;
+	width:58px;
+	height:48px;
+	border-radius:3px;
+}
+.SC_MainOutFrame .SC_CassetteBox04 li .CassetteBack .Photo,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip .CassetteBack .Photo {
+	position:absolute;
+	left:10px; top:3px;
+	width:38px;
+	height:32px;
+}
+.SC_MainOutFrame .SC_CassetteBox04 li .CassetteBack .Name,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip .CassetteBack .Name {
+	margin:34px 0 0 0;
+	font-size:10px;
+	line-height:15px;
+	text-align:center;
+	color:#4c4c4c;
+	font-weight:bold;
+	text-shadow:0 -1px 2px #FFF;
+    /* ...対応の為追加 */
+	width: 58px;
+}
+
+.SC_MainOutFrame .SC_CassetteBox04 li .BackColor_SkyBlue,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip .BackColor_SkyBlue {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ddf5fd),
+            color-stop(0.50, #ddf5fd),
+						to(#c4d9e0));
+}
+.SC_MainOutFrame .SC_CassetteBox04 li .BackColor_Pink,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip .BackColor_Pink {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff9cd7),
+            color-stop(0.50, #ff9cd7),
+						to(#e28abf));
+}
+.SC_MainOutFrame .SC_CassetteBox04 li .BackColor_Yellow,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip .BackColor_Yellow {
+	background: -webkit-gradient(linear, left top, left bottom, from(#fde997),
+            color-stop(0.50, #fde997),
+						to(#e0cf86));
+}
+
+.SC_MainOutFrame .SC_CassetteBox04 li .Inactive{
+	position:absolute;
+	left:0; top:0;
+	width:60px;
+	height:50px;
+	background:rgba(0, 0, 0, 0.5);
+	border-radius:3px;
+	z-index:20;
+}
+
+
+/* カセット内の赤色アイコン設定
+------------------------------------*/
+.SC_MainOutFrame .SC_CassetteBox04 li .CassetteBack .Photo .Icon_Red,
+/* ドラッグ時を考慮して、顧客チップ無いの要素も対象とする */
+.StaffChip .CassetteBack .Photo .Icon_Red {
+	position:absolute;
+	right:-8px; bottom:-1px;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9d2d4),
+            color-stop(0.50, #e8575e),
+            color-stop(0.50, #df232c),
+						to(#ba070b));
+	border:#FFF 1px solid;
+	border-radius:20px;
+	width:14px;
+	height:14px;
+	font-size:10px;
+	line-height:14px;
+	text-align:center;
+}
+
+/* 削除ボタン */
+.ComingStoreOff1-1-5  {
+    width:60px; 
+    height:48px; 
+    clear:both; 
+    background: rgba(0, 0, 0, 0.0); 
+    position:absolute; 
+    top:0px; 
+    /* left:111px; */
+    right:10px;
+    z-index:30;
+}
+.ComingStoreOff1-1-5-1  {
+    width: 48px; 
+    height:31px; 
+    border:#4F5153 1px solid; 
+    border-radius:4px; 
+    color:#FFF; 
+    font-weight:400; 
+    text-shadow:-1px -1px 1px #666; 
+    box-shadow:1px 1px 0px #FFF; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#CD6B74), color-stop(0.45, #CD6B74), color-stop(0.5, #B01825), color-stop(1.0, #B01825)); 
+    position:relative; 
+    top:11px; 
+    left:6px; 
+    line-height:30px; 
+ }
+
+/* 商談中詳細画面 START =================================================== */
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+// nrs_02.css
+//
+//////////////////////////////////////////////////////////////////////////////*/
+/* ポップオーバーエリア */
+#StaffDetailPopOver 
+{
+    width:306px;
+    /*height:500px;*/
+    height:457px;
+}
+
+.scNscPopUpStaffDetail
+{
+	width:312px;
+	padding:0;
+}
+
+.scNscPopUpStaffDetailWindownBox {
+	width:309px;
+	/*height:441px;*/
+	height:397px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.9)),
+								color-stop(0.002, rgba(120, 128, 147, 0.9)),
+								color-stop(0.015, rgba(87, 95, 114, 0.9)),
+								color-stop(0.041, rgba(29, 40, 59, 0.9)),
+								color-stop(0.0415, rgba(3, 11, 26, 0.9)),
+								to(rgba(7, 11, 29, 0.9)));
+}
+
+/* ヘッダ */
+.scNscPopUpStaffDetailHeader {
+	position:relative;
+	width:306px;
+	height:45px;
+}
+
+/* ヘッダタイトル */
+.scNscPopUpStaffDetailHeader h3 {
+	position:absolute;
+	width:135px;
+	height:36px;
+	top:7px;
+	left:90px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+/* キャンセルボタン */
+.scNscPopUpStaffDetailHeader .scNscPopUpStaffDetailCancelButton {
+	position:absolute;
+	top:7px;
+	left:6px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), color-stop(0.50, #0d1734), color-stop(0.501, #000b29), to(#000b29));
+	text-decoration:none;
+}
+/* 登録ボタン */
+.scNscPopUpStaffDetailHeader .scNscPopUpStaffDetailCompleteButton ,
+.scNscPopUpStaffDetailHeader .scNscPopUpStaffDetailCompleteButtonOff{
+	position:absolute;
+	top:7px;
+	right:3px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), color-stop(0.50, #376fe0), color-stop(0.501, #2361dd), to(#2361dd));
+	text-decoration:none;
+}
+
+/* 登録ボタン(権限なし) */
+.scNscPopUpStaffDetailHeader .scNscPopUpStaffDetailCompleteButtonOff{
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), color-stop(0.50, #1a233e), color-stop(0.501, #000b29), to(#000b29));
+	color:#7d8392;
+}
+
+/* ローディング */
+#StaffDetailPopOverBody {
+	width:294px;
+	/*height:385px;*/
+	height:343px;
+	margin:0 auto;
+	padding:0px 0px 0px 0px;
+	border-radius:6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), color-stop(0.018, #fff), color-stop(0.6, #fff), to(#e6e6e6));
+	border:#1C232F 1px solid;
+}
+/* ページ分割用 */
+#StaffDetailPopOverFlickArea {
+	width:296px;
+    overflow:hidden;
+    position:absolute;
+    top:45px;
+    left:7px;
+}
+
+/* ページ分割用 */
+#StaffDetailPopOverSheet {
+	width:594px;
+}
+
+/* ページ分割用 */
+.StaffDetailPopOverPage {
+	width:295px;
+    float:left;
+}
+
+/* 1ページ目のページの設定 */
+.scNscPopUpStaffDetailListArea {
+	/*font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	font-size:14px;
+	width:294px;
+	margin:0 auto;
+	padding:0px;
+	border:#1C232F 1px solid;
+	border-radius:6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), color-stop(0.018, #fff), color-stop(0.6, #fff), to(#e6e6e6));
+}
+
+/* 1ページ目のポップアップ画面  */
+.scNscPopUpStaffDetailSttl01{
+	position:relative;
+	/*font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6";*/
+	display:block;
+	height:26px;
+	text-align:left;
+	vertical-align:middle;
+	color:#666666;
+	border-top:#4b5158 1px solid;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	background: #dff6ff;
+	-moz-box-shadow:inset 0px 2px 3px #656e75;
+	box-shadow:inset 0px 2px 3px #656e75;
+	box-shadow:inset 0px 2px 4px #656e75;
+	padding:4px 0 0 9px;
+}
+
+/* ポップアップ内の設定 */
+.scNscPopUpStaffDetailBox01 {
+	width:275px;
+	margin:0 auto 0;
+}
+
+/* スクロール */
+.scNscPopUpStaffDetailScroll{
+	/*height:347px;*/
+	height:303px;
+	width :282px;
+	overflow:auto;
+	padding:10px 0 0 0;
+}
+
+/* テーブルNo表示時のアイコン */
+.scNscPopUpStaffDetailScroll li .listIcnSet{
+	position:absolute;
+	right:15px;
+	top:10px;
+	font-size:13px;
+	line-height:24px;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+/* リスト表示(共通) */
+.scNscPopUpStaffDetailScroll ul.ListSet01,
+.scNscPopUpStaffDetailScroll ul.ListSet02{
+	background:#FFF;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	margin:0 0 10px 0;
+	font-size:17px;
+	line-height:25px;
+	color:#000000;
+	width:272px;
+}
+
+.scNscPopUpStaffDetailScroll ul.ListSet03{
+	background:#FFF;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	margin:0 0 10px 0;
+	font-size:17px;
+	color:#000000;
+	width:272px;
+}
+
+/* リスト表示(依頼リスト) */
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.listTop{border:none;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.listCenter{}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.listBottom{}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list1{border:none; background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn1Off.png) 15px 10px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list2{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn2Off.png) 15px 10px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list3{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn3Off.png) 15px 10px no-repeat;}
+
+/* アイコン変更に伴い修正
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list1On{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn1On.png) 15px 10px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list2On{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn2On.png) 15px 10px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list4On{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn4On.png) 15px 10px no-repeat;}*/
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list1On{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn18On.png) 15px 10px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list2On{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn2On.png) 15px 10px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list3On{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn19On.png) 15px 10px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet01 li.list4On{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn20On.png) 15px 10px no-repeat;}
+
+/* リスト表示(顧客情報) */
+.scNscPopUpStaffDetailScroll ul.ListSet02 li.list1{border:none; padding-left:15px; width:188px;}
+.scNscPopUpStaffDetailScroll ul.ListSet02 li.list2{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn4.png) 15px 9px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet02 li.list3{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn5.png) 15px 9px no-repeat;}
+.scNscPopUpStaffDetailScroll ul.ListSet02 li.list4{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn6.png) 15px 9px no-repeat; width:206px; padding-right:10px;}
+.scNscPopUpStaffDetailScroll ul.ListSet02 li.list5{background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn7.png) 15px 8px no-repeat; width:206px; padding-right:10px;}
+.scNscPopUpStaffDetailScroll ul.ListSet02 li.FontBlue{color:#375388;}
+
+/* 顧客詳細に遷移させないようにするためのクラス */
+.scNscPopUpStaffDetailScroll ul.ListSet02 li.list1NoLink{border:none; padding-left:15px; width:188px;}
+
+/* リスト表示(プロセス、ステータス) */
+.scNscPopUpStaffDetailScroll ul.ListSet03{
+	overflow:hidden;
+	display:block;
+	background:#FFF;
+	height:58px;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	position:relative;
+	margin:0 0 10px 0;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li{
+	position:absolute;
+	top:11px;
+	width:56px;
+	text-align:center;
+	padding:25px 0 0 0;
+	font-size:9px;
+	border:none;
+	color:#666666;
+}
+/* 受注前：日付が設定されていない場合のアイコン */
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn1Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn9Off.png) center top no-repeat;
+	left:1px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn2Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn10Off.png) center top no-repeat;
+	left:57px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn3Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn11Off.png) center top no-repeat;
+	left:112px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn4Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn12Off.png) center top no-repeat;
+	left:165px;
+}
+
+/* 受注前：日付が設定されている場合のアイコン */
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn1On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn9On.png) center top no-repeat;
+	left:1px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn2On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn10On.png) center top no-repeat;
+	left:57px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn3On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn11On.png) center top no-repeat;
+	left:112px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn4On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn12On.png) center top no-repeat;
+	left:165px;
+}
+
+/* 受注後：日付が設定されていない場合のアイコン */
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn5Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn14Off.png) center top no-repeat;
+	left:1px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn6Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn15Off.png) center top no-repeat;
+	left:57px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn7Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn16Off.png) center top no-repeat;
+	left:112px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn8Off{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn17Off.png) center top no-repeat;
+	left:165px;
+}
+
+/* 受注後：日付が設定されている場合のアイコン */
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn5On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn14On.png) center top no-repeat;
+	left:1px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn6On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn15On.png) center top no-repeat;
+	left:57px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn7On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn16On.png) center top no-repeat;
+	left:112px;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.Icn8On{
+	background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icn17On.png) center top no-repeat;
+	left:165px;
+}
+
+/* ステータスアイコン */
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnCold,
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnWarm,
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnHot,
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnSuccess,
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnGiveUp,
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnNoStatus{
+	border-left:#bbbbbb 1px solid;
+	padding:13px 0 0 12px;
+	right:13px;
+	top:3px;
+	width:26px;
+	height:39px;
+}
+
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnCold{
+    background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icnCold.png) right 13px no-repeat;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnWarm{
+    background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icnWarm.png) right 13px no-repeat;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnHot{
+    background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icnHot.png) right 13px no-repeat;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnSuccess{
+    background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icnSuccess.png) right 13px no-repeat;
+}
+.scNscPopUpStaffDetailScroll ul.ListSet03 li.IcnGiveUp{
+    background:url(../../Styles/Images/SC3100101/StaffDetail/nrs01icnGiveup.png) right 13px no-repeat;
+}
+
+/* 経過時間 */
+.scNscPopUpStaffDetailSttl01 .LeftBoxTime{
+	position:absolute;
+	right:9px;
+	top:5px;
+}
+
+/* [!]アイコン */
+.scNscPopUpStaffDetailScroll li .listIcn1{
+	width:23px;
+	height:23px;
+	float:left;
+	background: -webkit-gradient(linear, left top, left bottom, from(#72a4b0),to(#5893a1));
+
+	box-shadow:inset 0px 1px 0px #50737b;
+	border-radius:3px;
+	text-shadow:#436168 0 -1px 0;
+	margin:0 0 0 7px;
+}
+
+/* [V]アイコン */
+.scNscPopUpStaffDetailScroll li .listIcn2{
+	width:23px;
+	height:23px;
+	float:left;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d78600),to(#efc600));
+
+	box-shadow:inset 0px 1px 0px #965c00;
+	border-radius:3px;
+	text-shadow:#855800 0 -1px 0;
+	margin:0 0 0 7px;
+}
+
+/* リストに線を入れる */
+.scNscPopUpStaffDetailScroll li{
+	position:relative;
+	width:146px;
+	height:23px;
+	/*border-bottom:#bbbbbb 1px solid;*/
+	border-top:#bbbbbb 1px solid;
+	padding:10px 70px 10px 57px;
+	color:#000;
+}
+
+/* リスト表示上段の文字列 */
+.scNscPopUpStaffDetailScroll li p{
+	position:absolute;
+	right:10px;
+	top:10px;
+	font-size:14px;
+}
+
+/* 経過時間の超過時 */
+.scNscPopUpStaffDetailScroll li p.FontRed{
+	color:#ff0000;
+}
+
+/* テーブル情報の表示制御 */
+.scNscPopUpStaffDetailScroll li#TableNoLink span.on{
+	display:inline;
+}
+
+.scNscPopUpStaffDetailScroll li#TableNoLink span.off{
+	display:none;
+}
+
+/* テーブルNo.の矢印アイコン */
+.scNscPopUpStaffDetailScroll li .listIcnSet{
+	position:absolute;
+	right:15px;
+	top:10px;
+	font-size:13px;
+	line-height:24px;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+/* 2ページ目のポップアップ画面  */
+.scNscPopUpStaffDetailBox02 {
+	width:285px;
+	margin:10px 0 0 8px;
+}
+
+.scNscPopUpStaffDetailListArea2 {
+	/*font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	font-size:14px;
+	width:294px;
+	/*height:388px;*/
+	height:345px;
+	margin:0 auto;
+	padding:0px;
+	border:#050d18 1px solid;
+	border-radius:6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), color-stop(0.018, #fff), color-stop(0.6, #fff), to(#e6e6e6));
+}
+
+/* テーブルNo */
+.scNscPopUpStaffDetailNoButton li{
+	float:left;
+	width:71px;
+	height:55px;
+}
+.scNscPopUpStaffDetailNoButton li.NoButtonRight{
+	width:61px;
+}
+.scNscPopUpStaffDetailNoButton li.NoButtonCenters{
+	width:72px;
+}
+.scNscPopUpStaffDetailNoButton li .NoButtonOff{
+	display:block;
+	width:59px;
+	height:33px;
+	background:#FFF;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	text-align:center;
+	color:#666666;
+	padding:11px 0 0 0;
+}
+.scNscPopUpStaffDetailNoButton li .NoButtonOn{
+	display:block;
+	width:61px;
+	height:33px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#058cf5),
+								to(#0160e6));
+	border-radius:9px;
+	text-align:center;
+	color:#FFFFFF;
+	text-shadow:#011f3c 0 -1px 0;
+	padding:12px 0 0 0;
+}
+.scNscPopUpStaffDetailNoButton li .NoButtonSelected{
+	display:block;
+	width:59px;
+	height:33px;
+	background:#c8c8c8;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	text-align:center;
+	color:#aaaaaa;
+	padding:11px 0 0 0;
+}
+
+
+
+/* テーブル選択時に戻るときの表示 */
+.nscGiveupReasonCancellButton {
+	position:absolute;
+	top:6px;
+	left:7px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:95px;
+	height:32px;
+	overflow:hidden;
+}
+.nscGiveupReasonCancellButton .tgLeft{
+	position:absolute;
+	left:1px;
+	top:5px;
+	width:20px;
+	height:20px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(53deg) skew(15deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#4d5465), 
+							color-stop(0.49, #1a233e),
+							color-stop(0.491, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+}
+
+.nscGiveupReasonCancellButton a{
+	position:absolute;
+	left:9px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:70px;
+	height:20px;
+	padding:5px 0 4px 5px;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4f5769), 
+							color-stop(0.51, #1a233e),
+							color-stop(0.511, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	text-decoration: none;
+}
+
+/* 商談中詳細画面 END ============================================== */
+
+/* ポップオーバー ================================================== */
+/* line 5, ../../app/stylesheets/popover.scss */
+.popoverEx {
+  position: absolute;
+  display: none;
+  
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* line 17, ../../app/stylesheets/popover.scss */
+.popoverEx.active {
+  opacity: 1;
+}
+/* line 21, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle {
+  position: absolute;
+  width: 0px;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+}
+/* line 29, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.top {
+  bottom: -40px;
+  border-top: 20px solid #1c232f;
+}
+/* line 34, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.bottom {
+  top: -40px;
+  border-bottom: 20px solid #1c232f;
+}
+/* line 39, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.left {
+  right: -40px;
+  border-left: 20px solid #1c232f;
+}
+/* line 44, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.right {
+  left: -40px;
+  border-right: 20px solid #1c232f;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  お客様ポップアップ
+//
+//////////////////////////////////////////////////////////////////////////////*/
+/* ポップオーバーエリア */
+#CustomerPopOver 
+{
+    width:306px;
+    /*height:507px;*/
+    /* start NSK s.natsume TKM Change request development for Next Gen e-CRB (CR060) $03 */
+    /*height:550px;*/
+    height:611px;
+    /* end NSK s.natsume TKM Change request development for Next Gen e-CRB (CR060) $03 */
+}
+
+/* ローディング用に追加 */
+#CustomerPopOverBody {
+	width:295px;
+    /* start NSK s.natsume TKM Change request development for Next Gen e-CRB (CR060) $03 */
+	/*
+	height:498px;
+    */
+	height:559px;
+	/* end NSK s.natsume TKM Change request development for Next Gen e-CRB (CR060) $03 */
+	margin:0 auto;
+	padding:0px;
+	border-radius:6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), color-stop(0.018, #fff), color-stop(0.6, #fff), to(#e6e6e6));
+	border:#1C232F 1px solid;
+}
+
+.BlackBack{
+	position:absolute;
+	left:0; top:0;
+	background:rgba(0, 0, 0, 0.5);
+	width:100%;
+	height:100%;
+	z-index:900;
+}
+.ChipAreaBack_lineBox .item004,
+.ChipAreaBack_lineBox .selection{
+	z-index:991;
+	box-shadow:5px 5px 25px rgba(0, 0, 0, 1);
+}
+
+/* Wind座標
+----------------------------*/
+.popWindowCoordinate01{
+	top:32px; left:226px;
+}
+/* Arrow座標
+----------------------------*/
+.ArrowCoordinate01 .popWindowBase .gradationBox .ArrowMask{top:136px;	left:-17px;}
+
+/* Windサイズ
+----------------------------*/
+.popWindowSizeW387 .popWindowBase,
+.popWindowSizeW387 .popWindowBase .borderBox,
+.popWindowSizeW387 .popWindowBase .gradationBox,
+.popWindowSizeW387 .popWindowBase .borderBox .myDataBox,
+.popWindowSizeW387 .popWindowBase .gradationBox .myDataBox,
+.popWindowSizeW387 .scNscPopUpHeaderBg,
+.popWindowSizeW387 .scNscPopUpDataBg,
+.popWindowSizeW387 .popWindowBase .PopUpHeader,
+.popWindowSizeW387 .popWindowBase .PopUpHeader h3{width:387px;}
+
+.popWindowSizeW387 .popWindowBase .OverShadow,
+.popWindowSizeW387 .popWindowBase .dataBox{width:375px;}
+
+.popWindowSizeW387 .popWindowBase .dataBox .innerDataBox,
+.popWindowSizeW387 .popWindowBase .dataBox .innerDataBox02{width:357px;}
+
+
+.popWindowSizeW307 .popWindowBase,
+.popWindowSizeW307 .popWindowBase .borderBox,
+.popWindowSizeW307 .popWindowBase .gradationBox,
+.popWindowSizeW307 .popWindowBase .borderBox .myDataBox,
+.popWindowSizeW307 .popWindowBase .gradationBox .myDataBox,
+.popWindowSizeW307 .scNscPopUpHeaderBg,
+.popWindowSizeW307 .scNscPopUpDataBg,
+.popWindowSizeW307 .popWindowBase .PopUpHeader,
+.popWindowSizeW307 .popWindowBase .PopUpHeader h3 {
+    /*width:307px;*/
+    width:309px;
+}
+
+.popWindowSizeW307 .popWindowBase .OverShadow,
+.popWindowSizeW307 .popWindowBase .dataBox{width:295px;}
+
+.popWindowSizeW307 .popWindowBase .dataBox .innerDataBox,
+.popWindowSizeW307 .popWindowBase .dataBox .innerDataBox02{width:277px;}
+
+
+/* Heightサイズ
+----------------------------*/
+.popWindowSizeH616 .popWindowBase,
+.popWindowSizeH616 .popWindowBase .borderBox,
+.popWindowSizeH616 .popWindowBase .gradationBox{height:616px;}
+.popWindowSizeH616 .popWindowBase .borderBox .myDataBox{height:615px;}
+.popWindowSizeH616 .popWindowBase .gradationBox .myDataBox{height:565px;}
+.popWindowSizeH616 .scNscPopUpDataBg{height:573px;}
+.popWindowSizeH616 .popWindowBase .dataBox{height:567px;}
+.popWindowSizeH616 .popWindowBase .dataBox .innerDataBox{height:557px;}
+
+/* start NSK s.natsume TKM Change request development for Next Gen e-CRB (CR060) $03 */
+/*
+.popWindowSizeH549 .popWindowBase,
+.popWindowSizeH549 .popWindowBase .borderBox,
+.popWindowSizeH549 .popWindowBase .gradationBox{height:549px;}
+
+
+.popWindowSizeH549 .popWindowBase .borderBox .myDataBox{height:548px;}
+.popWindowSizeH549 .popWindowBase .gradationBox .myDataBox{height:496px;}
+.popWindowSizeH549 .scNscPopUpDataBg{height:504px;}
+.popWindowSizeH549 .popWindowBase .dataBox{height:498px;}
+.popWindowSizeH549 .popWindowBase .dataBox .innerDataBox{height:488px;}
+*/
+
+.popWindowSizeH610 .popWindowBase,
+.popWindowSizeH610 .popWindowBase .borderBox,
+.popWindowSizeH610 .popWindowBase .gradationBox{height:610px;}
+
+
+.popWindowSizeH610 .popWindowBase .borderBox .myDataBox{height:609px;}
+.popWindowSizeH610 .popWindowBase .gradationBox .myDataBox{height:557px;}
+.popWindowSizeH610 .scNscPopUpDataBg{height:565px;}
+.popWindowSizeH610 .popWindowBase .dataBox{height:559px;}
+.popWindowSizeH610 .popWindowBase .dataBox .innerDataBox{height:549px;}
+/* end NSK s.natsume TKM Change request development for Next Gen e-CRB (CR060) $03 */
+
+/* popUpWindow グラデ入り
+---------------------------------------------------------------*/
+
+.popWindowBase{
+	font-weight:bold;
+	display:block;
+	
+	/*position:absolute;*/
+	z-index:992;
+}
+
+
+.popWindowBase .OverShadow{
+	display:block;
+	position:absolute;
+	font-size:1px; line-height:1px;
+	z-index:100;
+	height:25px;
+	top:46px;	left:7px;
+	border-radius:4px;
+	box-shadow:inset 0px 3px 1px rgba(64,64,64,0.4);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(16,16,16,0.4)), 
+							color-stop(0.1, rgba(16,16,16,0.3)),
+							color-stop(0.2, rgba(16,16,16,0)),
+							to(rgba(16,16,16,0)));
+	
+}
+
+.popWindowBase .borderBox{
+	display:block;
+	
+	position:absolute;
+	top:0px;	left:0px;
+	font-size:1px; line-height:1px;
+	z-index:1;
+}
+.popWindowBase .gradationBox{
+	display:block;
+	
+	
+	position:absolute;
+	top:0px;	left:1px;
+	z-index:2;
+}
+.popWindowBase .borderBox .myDataBox{
+	display:block;
+	
+	top:0px; left:0;
+	border-radius:9px;
+	/* 色を変更 */
+	/*border:#4f4f4f 1px solid;*/
+	border: #1C232F 1px solid;
+	box-shadow: 0px 1px 6px #000;
+	z-index:2;
+}
+.ssa16popWindow .borderBox .Arrow{
+	display:block;
+	width:24px; height:24px;
+	transform: rotate(45deg);
+	position:absolute;
+	top:-13px;	left:248px;
+	border:#4f4f4f 1px solid;
+	box-shadow: -1px 0px 6px #646464;
+	border-radius:1px;
+	z-index:1;
+	display:none;
+}
+.popWindowBase .gradationBox .myDataBox{
+	display:block;
+	
+	position:absolute;
+	top:0px; left:0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#565d70), 
+							color-stop(0.002, #565d70),
+							color-stop(0.043,  #323c4c),
+							color-stop(0.0431, #19202d),
+							to(#1f232a));
+	border-radius:7px;
+	z-index:2;
+}
+.popWindowBase .gradationBox .ArrowMask{
+	display:block;
+	position:absolute;
+	
+	width:17px;
+	height:70px;
+	overflow:hidden;
+}
+.popWindowBase .gradationBox .Arrow{
+	display:block;
+	width:26px;
+	height:26px;
+	transform: rotate(45deg);
+	position:absolute;
+	top:4px;
+	left:6px;
+	border-bottom:1px solid rgba(79,79,79,0.98);
+	border-top:1px solid rgba(79,79,79,0.98);
+	border-left:1px solid rgba(79,79,79,0.98);
+	z-index:1;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(13,23,38, 0.98)),
+								to(rgba(13,23,38,0.98)));
+	
+/*	background: -webkit-gradient(linear, left top, right bottom, from(rgba(181,185,192,0.9)), 
+							color-stop(0.5, rgba(51,61,78,0.98)),
+							to(rgba(51,61,78,0.98)));
+*/
+}
+
+.scNscPopUpHeaderBg{
+	height:44px;
+	position:absolute;
+	top:1px; left:0;
+	border-top:#aeb2bb 1px solid;
+	border-radius:7px 7px 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.9)),
+								color-stop(0.01, rgba(201, 203, 208, 0.9)),
+								color-stop(0.011, rgba(68, 77, 97, 0.9)),
+								color-stop(0.48, rgba(28, 39, 57, 0.9)),
+								color-stop(0.52, rgba(4, 13, 28, 0.9)),
+								to(rgba(13,23,38,0.98)));
+	z-index:-1;
+}
+
+.scNscPopUpDataBg{
+	
+	position:absolute;
+	border-radius:0 0 7px 7px;
+	background:rgba(13,23,38,0.98);
+	top:46px; left:0;
+	z-index:-1;
+}
+
+
+
+
+.popWindowBase .dataBox{
+	display:block;
+	
+	
+	position:absolute;
+	top:46px;	left:7px;
+	border-radius:5px;
+	background:#FFF;
+	box-shadow:inset 0px 0px 3px #777;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+	z-index:10;
+}
+
+.popWindowBase .dataBox .innerDataBox{
+	
+	overflow:scroll;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	position:relative;
+	left:9px; top:0;
+	padding:10px 0 0 0;
+	border-radius:0 0 4px 4px;
+}
+.popWindowBase .dataBox .innerDataBox02{
+	height:auto;
+	position:relative;
+	border-radius:0 0 4px 4px;
+}
+
+.popWindowBase .PopUpHeader {
+	position:relative;
+	
+	height:47px;
+	z-index:1000;
+}
+.popWindowBase .PopUpHeader h3 {
+	position:absolute;
+	left:0; top:8px;
+	
+	height:36px;
+	font-size:20px;
+	line-height:32px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #000;
+}
+
+
+/*--icn--*/
+
+.popWindowBase .IcnSet{
+	height:28px;
+}
+.popWindowBase .LeftIcn{
+	position:absolute;
+	top:0;
+	left:0;
+	width:15px;
+	height:14px;
+	padding:1px 0 0 0;
+	text-align:center;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d78600),
+						to(#efc600));
+	border-radius:2px;
+	font-size:12px;
+	text-shadow:#4c4c4c 0 -1px 0;
+	box-shadow:inset 0px 1px 0px #965c00;
+	line-height:12px;
+	color:#FFF;
+}
+.popWindowBase .RightIcnD,
+.popWindowBase .RightIcnI,
+.popWindowBase .RightIcnS,
+.popWindowBase .RightIcnV{
+	position:absolute;
+	right:40px;
+	top:0px;
+	width:15px;
+	height:14px;
+	padding:1px 0 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9ecf85),
+						to(#8cc66d));
+	border-radius:2px;
+	font-size:12px;
+	line-height:12px;
+	text-shadow:#999999 0 1px 0;
+/*	box-shadow:inset 0px 1px 0px #6f905d;*/
+	text-align:center;
+	color:#FFF;
+}
+.popWindowBase .RightIcnI{
+	right:20px;
+	top:0px;
+	width:15px;
+	height:14px;
+	padding:1px 0 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9236df),
+						to(#9236df));
+	text-shadow:#491b6f 0 1px 0;
+/*	box-shadow:inset 0px 1px 0px #66269c;*/
+	color:#FFF;
+}
+.popWindowBase .RightIcnS{
+	right:0px;
+	top:0px;
+	width:15px;
+	height:14px;
+	padding:1px 0 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6273f8),
+						to(#4459f6));
+	text-shadow:#313a84 0 1px 0;
+/*	box-shadow:inset 0px 1px 0px #4451ad;*/
+	color:#FFF;
+}
+.popWindowBase .RightIcnV{
+	right:0px;
+	top:0px;
+	width:15px;
+	height:14px;
+	padding:1px 0 0 0;
+	text-align:center;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d78600),
+						to(#efc600));
+	border-radius:2px;
+	font-size:12px;
+	text-shadow:#4c4c4c 0 1px 0;
+/*	box-shadow:inset 0px 1px 0px #965c00;*/
+	line-height:12px;
+	color:#FFF;
+}
+
+.popWindowBase .PopUpHeader{}
+.popWindowBase .PopUpHeader .Expand a{
+	display:block;
+	position:absolute;
+	right:89px; top:8px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.5, #19233e),
+							to(#000b29));
+	border-radius:4px;
+	box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5);
+	border:#010205 1px solid;
+	width:28px;
+	height:27px;
+	z-index:1;
+}
+.popWindowBase .PopUpHeader .Expand a:after{
+	content:"";
+	display:block;
+	position:absolute;
+	top:0; left:0;
+	background:url(../images/icon_expand.png) 5px 4px no-repeat;
+	width:28px;
+	height:27px;
+	z-index:2;
+}
+
+.popWindowBase .PopUpHeader .Shrink{}
+
+.popWindowBase .PopUpHeader .LeftBtn{
+	position:absolute;
+	left:7px; top:8px;
+	width:78px;
+	height:27px;
+}
+.popWindowBase .PopUpHeader .RightBtn{
+	position:absolute;
+	right:5px; top:8px;
+	width:78px;
+	height:27px;
+}
+.popWindowBase .PopUpHeader .LeftBtn a,
+.popWindowBase .PopUpHeader .RightBtn a{
+	display:block;
+	background:-webkit-gradient(linear, left top, left bottom, from(#4f5769),
+							color-stop(0.01, #4f5769),
+							color-stop(0.01, #576174),
+							color-stop(0.5, #1a233e),
+							color-stop(0.5, #000b29),
+							to(#000b29));
+	border-radius:4px;
+	box-shadow:0px 1px 0px rgba(255, 255, 255, 0.5);
+	border:#010205 1px solid;
+	width:auto;
+	height:27px;
+	font-size:12px;
+	font-weight:bold;
+	line-height:27px;
+	text-align:center;
+	text-shadow:0 -1px 1px rgba(0, 0, 0, 0.5);
+	color:#FFF;
+	z-index:1;
+}
+.popWindowBase .PopUpHeader .RightBtn a{
+	background:-webkit-gradient(linear, left top, left bottom, from(#6485cc),
+							color-stop(0.01, #6485cc),
+							color-stop(0.01, #6f96e8),
+							color-stop(0.5, #376fe0),
+							color-stop(0.5, #2361dd),
+							to(#2463de));
+}
+
+
+
+/* pop01 中身
+---------------------------------------------------------------*/
+.scNscPopUpContactVisit {
+	position:absolute;
+	top:14px;
+	left:455px;
+	width:345px;
+	padding:0;
+	background:url(images/scNscCustomerEditingWindownArrowRight.png) right 138px no-repeat;
+	z-index:1;
+}
+.scNscPopUpContactVisitWindownBox {
+	width:309px;
+	height:500px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.9)),
+								color-stop(0.002, rgba(120, 128, 147, 0.9)),
+								color-stop(0.015, rgba(87, 95, 114, 0.9)),
+								color-stop(0.041, rgba(29, 40, 59, 0.9)),
+								color-stop(0.0415, rgba(3, 11, 26, 0.9)),
+								to(rgba(7, 11, 29, 0.9)));
+}
+.scNscPopUpContactVisitHeader {
+	position:relative; width:306px; height:45px;
+	/*追加*/
+	z-index: 5;
+}
+.scNscPopUpContactVisitHeader h3 {
+	position:absolute;
+	width:309px;
+	height:36px;
+	top:7px;
+	left:0; text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+.scNscPopUpContactVisitHeader .scNscPopUpCancelButton {
+	position:absolute;
+	top:7px;
+	left:6px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), color-stop(0.50, #0d1734), color-stop(0.501, #000b29), to(#000b29));
+	/*追加*/
+	text-decoration: none;
+}
+.scNscPopUpContactVisitHeader .scNscPopUpCompleteButton {
+	position:absolute;
+	top:7px;
+	right:3px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), color-stop(0.50, #376fe0), color-stop(0.501, #2361dd), to(#2361dd));
+	/*追加*/
+	text-decoration: none;
+}
+.scNscPopUpContactVisitListArea {
+	/*font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	font-size:14px;
+	width:295px;
+	margin:0 auto;
+	padding:0px;
+	border:#050d18 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), color-stop(0.018, #fff), color-stop(0.6, #fff), to(#e6e6e6));
+}
+.scNscPopUpContactVisitBox01 {
+	width:275px;
+	margin:0 auto 10px;
+}
+.scNscPopUpContactVisitBox02 {
+	width:285px;
+	margin:0 0 0 10px;
+}
+
+
+.scNscPopUpContactVisitSttl01,
+.scNscPopUpContactVisitSttl02 {
+	/*font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	display:block;
+	/*height:22px;*/
+	height:21px;
+	font-size:14px;
+	text-align:center;
+	vertical-align:middle;
+	color:#ffffff;
+	text-shadow:#7e8589 0px 1px 0px;
+	border-top:#4b5158 1px solid;
+	border-bottom:#575d65 1px solid;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2afb8),
+								to(#b6c4cf));
+	-moz-box-shadow:inset 0px 2px 4px #656e75;
+	box-shadow:inset 0px 2px 4px #656e75;
+	box-shadow:inset 0px 2px 4px #656e75;
+	padding:0px 0 0 0;
+	/*margin:0 0 10px 0;*/
+	margin:0 0 9px 0;
+}
+.scNscPopUpContactVisitSttl02{
+	border-radius:0px;
+	-moz-box-shadow:inset 0px 0px 0px;
+	box-shadow:inset 0px 0px 0px ;
+	box-shadow:inset 0px 0px 0px;
+}
+
+.scNscPopUpContactVisitTextArea {
+	width:253px;
+	background:#FFF;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	padding:15px 10px 7px 10px;
+	color:#000;
+	/* 高さの指定を追加 */
+	height: 27px;
+}
+.scNscPopUpContactVisitTextArea02 {
+	width:253px;
+	background:#FFF;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	padding:11px 10px 11px 10px;
+	color:#010101;
+	font-size:16px;
+	line-height:22px;
+}
+.scNscPopUpContactVisitTextArea input,
+.scNscPopUpContactVisitTextArea02 input{
+	/*font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	font-size:14px;
+	border:none;
+	color:#000;
+	/* 幅の指定を追加 */
+	width:253px;
+}
+.scNscPopUpContactVisitSubmitButton {
+	background: -webkit-gradient(linear, left top, left bottom, from(#afb3ba),
+								to(#6d747f));
+	border:#57595c 1px solid;
+	border-radius:4px;
+	padding:9px 0 8px 0;
+	text-align:center;
+	color:#bbbfc3;
+	text-shadow:#7a7f85 0px -1px 0px;
+}
+.scNscPopUpContactVisitSubmitButtonOn,
+.scNscPopUpContactVisitSubmitButtonOff{
+	background: -webkit-gradient(linear, left top, left bottom, from(#7197e8),
+								color-stop(0.50, #3870e0),
+								color-stop(0.51, #2663dd),
+								to(#2463de));
+	border:#57595c 1px solid;
+	border-radius:4px;
+	padding:9px 0 8px 0;
+	font-size:14px;
+	line-height:20px;
+	text-align:center;
+	color:#FFFFFF;
+	text-shadow:#223c71 0px -1px 0px;
+}
+.scNscPopUpContactVisitSubmitButtonOff{
+	background: -webkit-gradient(linear, left top, left bottom, from(#afb3ba),
+								color-stop(0.50, #868b94),
+								to(#6d747f));
+	color:#b3b6bc;
+	text-shadow:#73787d 0px -1px 0px;
+}
+
+.scNscPopUpContactVisitNoButton li{
+	float:left;
+	width:71px;
+	height:55px;
+	font-size:14px;
+}
+.scNscPopUpContactVisitNoButton li.NoButtonRight{
+	width:61px;
+}
+.scNscPopUpContactVisitNoButton li.NoButtonCenters{
+	width:72px;
+}
+.scNscPopUpContactVisitNoButton li .NoButtonOff{
+	display:block;
+	width:59px;
+	height:44px;
+	background:#FFF;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	text-align:center;
+	color:#666666;
+	line-height:44px;
+}
+.scNscPopUpContactVisitNoButton li .NoButtonOn{
+	display:block;
+	width:61px;
+	height:33px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#058cf5),
+								to(#0160e6));
+	border-radius:9px;
+	text-align:center;
+	color:#FFFFFF;
+	text-shadow:#011f3c 0 -1px 0;
+	padding:12px 0 0 0;058cf5
+}
+.scNscPopUpContactVisitNoButton li .NoButtonSelected{
+	display:block;
+	width:59px;
+	height:33px;
+	background:#c8c8c8;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	text-align:center;
+	color:#aaaaaa;
+	padding:11px 0 0 0;
+}
+
+
+/* 左上パーツ
+-----------------------*/
+/* 選択を不可とする。 */
+#bodyFrame{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+}
+
+*:not(input):not(textarea):not(select), 
+input[type=image], 
+input[type=file], 
+input[type=submit], 
+input[type=button], 
+input[type=reset] { 
+-webkit-user-select: none; 
+} 
+
+.selectArea {
+	z-index:25;
+}
+
+.BigMainListBox { 
+   	z-index:39; 
+    position:absolute;
+	transform: rotate(0deg) scale(1.050) skew(0deg) translate(0px);
+	box-shadow:0px 3px 6px #000; 
+}
+
+/* イベント付与用の各エリア
+------------------------------------*/
+#CassetteBox01FlickArea,
+#CassetteBox02FlickArea 
+{
+    /*width: 192px; */
+    width: 202px; 
+    height:432px; 
+    /*padding-left: 9px;*/
+    overflow:hidden;
+}
+
+#CassetteBox03FlickArea {
+    width: 538px; 
+    height:432px; 
+    padding-left: 
+    9px; overflow:hidden;
+}
+
+.ReceptionChip,
+.NegotiationChip {
+    width: 100%; 
+    height: 100%; 
+    z-index:25; 
+    position: absolute;
+}

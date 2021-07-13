@@ -1,0 +1,48 @@
+﻿'
+'
+' このファイルは、このプロジェクトに適用される SuppressMessage 
+'属性を保持するために、コード分析によって使用されます。
+' プロジェクト レベルの抑制には、ターゲットがないものと、特定のターゲット
+'が指定され、名前空間、型、メンバーなどをスコープとするものがあります。
+'
+' このファイルに抑制を追加するには、[エラー一覧] でメッセージを
+'右クリックし、[メッセージの非表示] をポイントして、
+'[プロジェクト抑制ファイル内] をクリックします。
+' このファイルに手動で抑制を追加する必要はありません。
+
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetAfterOrderProcessIcon(System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetBoardInfo(System.String,System.String,System.DateTime)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetClaimInfo(System.String,System.String,System.DateTime,System.Int64)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetCustomerInfo(System.Int64,System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetSalesTableInfo(System.String,System.String,System.DateTime)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetStaffNoticeRequest(System.Int64)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetStaffSituationInfo(System.String,System.String,System.DateTime)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetStandbyStaff(System.String,System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetVisitCount(System.String,System.String,System.Decimal)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#MakeRequestNoticeMessage(System.String,System.String,System.String,System.String,System.String,System.Boolean)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#MargeNoticeInfo(Toyota.eCRB.Visit.ReceptionistMain.DataAccess.SC3100101DataSet+SC3100101ReceptionInfoDataTable,System.String,System.String,System.DateTime,System.DateTime)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#UpdateTentativeNameAndSalesTable(System.Int64,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:スコープを失う前にオブジェクトを破棄", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetStaffSituationInfo(System.String,System.String,System.DateTime)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId:="Un", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.ISC3100101BusinessLogic.#RegistrationUnNecessary(System.Int64,System.String,System.String,System.Int32,System.Int32,System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1062:パブリック メソッドの引数の検証", MessageId:="6", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#RequestNoticeBroadcast(System.Int64,System.String,System.String,System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1062:パブリック メソッドの引数の検証", MessageId:="0", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#MargeNoticeInfo(Toyota.eCRB.Visit.ReceptionistMain.DataAccess.SC3100101DataSet+SC3100101ReceptionInfoDataTable,System.String,System.String,System.DateTime,System.DateTime)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1062:パブリック メソッドの引数の検証", MessageId:="4", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetReceptionInfo(System.String,System.String,System.String,System.DateTime,System.Collections.Generic.List`1<System.Int64>)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1026:DefaultParametersShouldNotBeUsed", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#RegistrationNameAndSalesTable(System.Int64,System.String,System.String,System.Int32,System.Int32,System.String,System.Boolean)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1026:DefaultParametersShouldNotBeUsed", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetCustomerInfo(System.Int64,System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1026:DefaultParametersShouldNotBeUsed", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.ISC3100101BusinessLogic.#RegistrationNameAndSalesTable(System.Int64,System.String,System.String,System.Int32,System.Int32,System.String,System.Boolean)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#RequestNoticeBroadcast(System.Int64,System.String,System.String,System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.ISC3100101BusinessLogic.#RequestNoticeBroadcast(System.Int64,System.String,System.String,System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetReceptionInfo(System.String,System.String,System.String,System.DateTime,System.Collections.Generic.List`1<System.Int64>)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101BusinessLogic.#GetClaimInfo(System.String,System.String,System.DateTime,System.Int64)")> 
+'0493 KN Nakamura
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:スコープを失う前にオブジェクトを破棄", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101.SC3100101BusinessLogic.#GetBoardInfo(System.String,System.String,System.DateTime)")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:スコープを失う前にオブジェクトを破棄", Scope:="member", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic.SC3100101.SC3100101BusinessLogic.#GetStaffSituationInfo(System.String,System.String,System.DateTime)")> 
+
+'0005 KN Nakamura<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId:="CROP")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId:="i")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId:="e")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId:="CRB")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId:="e", Scope:="namespace", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic")> 
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", MessageId:="CRB", Scope:="namespace", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic")> 
+'0004 KN Nakamura
+<Assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope:="namespace", Target:="Toyota.eCRB.Visit.ReceptionistMain.BizLogic")> 

@@ -1,0 +1,131 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  ヘッダー設定
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+.Head {
+	width:1024px;
+	height:42px;
+	z-index:900;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F4F5F7), to(#A8ACB9));
+	border-top:#FFF 1px solid;
+	border-bottom:#797F90 1px solid;
+}
+.Head:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.Head h1 {
+	padding:11px 0 0 0;
+	width:432px;
+	font-size:20px;
+	line-height:20px;
+	text-align:center;
+	text-shadow:0px 1px 0px #FFF;
+	color:#686c74;
+	float:left;
+}
+
+.HeadLeft {
+	margin-top:8px;
+	margin-left:16px;
+	width:280px;
+	float:left;
+}
+.HeadLeft li { float:left; }
+
+.HeadLeft li:nth-child(1) {
+	margin-top:5px;
+	margin-right:31px;
+	width:16px;
+	height:18px;
+}
+.HeadLeft li:nth-child(2) {
+	margin-top:5px;
+	margin-right:30px;
+	width:16px;
+	height:18px;
+}
+.HeadLeft li:nth-child(3) {
+	margin-right:17px;
+	width:37px;
+	height:29px;
+}
+.HeadLeft li:nth-child(4) {
+	width:42px;
+	height:29px;
+}
+
+.HeadLeft1-1On { background:url(../images/SC3240601/ico102.png) no-repeat; }
+.HeadLeft1-2On { background:url(../images/SC3240601/ico105.png) no-repeat; }
+.HeadLeft1-3On { background:url(../images/SC3240601/ico107.png) no-repeat; }
+.HeadLeft1-4On { background:url(../images/SC3240601/ico108.png) no-repeat; }
+
+.HeadLeft1-3On span {
+	width:;
+	height:14px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F9D2D4), color-stop(0.5, #E8575E), color-stop(0.5, #DF232C), to(#BA070B));
+	text-align:center;
+	line-height:14px;
+	font-size:10px;
+	color:#FFF;
+	displat:block;
+}
+.HeadLeft1-4On span {
+	margin-left:20px;
+	padding:0 2px;
+	height:14px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#F9D2D4), color-stop(0.5, #E8575E), color-stop(0.5, #DF232C), to(#BA070B));
+	text-align:center;
+	line-height:14px;
+	font-size:10px;
+	color:#FFF;
+	displat:block;
+	border:#FFF 1px solid;
+	border-radius:14px;
+	position:relative;
+	top:7px;
+}
+
+.HeadLeft1-1Off { background:url(../images/SC3240601/ico104.png) no-repeat; }
+.HeadLeft1-2Off { background:url(../images/SC3240601/ico103.png) no-repeat; }
+.HeadLeft1-3Off { background:url(../images/SC3240601/ico106.png) no-repeat; }
+.HeadLeft1-4Off { background:url(../images/SC3240601/ico109.png) no-repeat; }
+
+.HeadRight {
+	margin-top:6px;
+	margin-right:18px;
+	width:278px;
+	float:left;
+}
+.HeadRight form {
+	margin-right:18px;
+	padding:1px;
+	width:160px;
+	height:28px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#575757), to(#AEAEAE));
+	border-radius:30px;
+	float:left;
+}
+
+.HeadRight1-1 { width:160px; height:28px; background:#FFF; border-radius:28px; border:0; box-shadow:inset 0px 1px 3px #BEBEBE; }
+.HeadRight1-2 { margin-left:28px; width:130px; height:28px; background:tranceparent; border:0; }
+.HeadRight1-3 { position:relative; top:-22px; left:7px; }
+
+.HeadRight1-4 { margin-top:4px; width:92px; height:22px; background:url(../images/SC3240601/icrop.png) no-repeat; float:left; }
+.HeadRight1-4 a { height:22px;display:block; text-indent:-7777px; }
+
+
+
+
+
+
+
+
+

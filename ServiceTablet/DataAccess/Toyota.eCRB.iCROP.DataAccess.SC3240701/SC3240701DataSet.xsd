@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3240701DataSet" targetNamespace="http://tempuri.org/SC3240701DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3240701DataSet.xsd" xmlns="http://tempuri.org/SC3240701DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3240701DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3240701DataSet" msprop:Generator_UserDSName="SC3240701DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StallIdleInfo" msprop:Generator_TableClassName="StallIdleInfoDataTable" msprop:Generator_TableVarName="tableStallIdleInfo" msprop:Generator_TablePropName="StallIdleInfo" msprop:Generator_RowDeletingName="StallIdleInfoRowDeleting" msprop:Generator_RowChangingName="StallIdleInfoRowChanging" msprop:Generator_RowEvHandlerName="StallIdleInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="StallIdleInfoRowDeleted" msprop:Generator_UserTableName="StallIdleInfo" msprop:Generator_RowChangedName="StallIdleInfoRowChanged" msprop:Generator_RowEvArgName="StallIdleInfoRowChangeEvent" msprop:Generator_RowClassName="StallIdleInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STALL_IDLE_ID" msprop:Generator_ColumnVarNameInTable="columnSTALL_IDLE_ID" msprop:Generator_ColumnPropNameInRow="STALL_IDLE_ID" msprop:Generator_ColumnPropNameInTable="STALL_IDLE_IDColumn" msprop:Generator_UserColumnName="STALL_IDLE_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STALL_ID" msprop:Generator_ColumnVarNameInTable="columnSTALL_ID" msprop:Generator_ColumnPropNameInRow="STALL_ID" msprop:Generator_ColumnPropNameInTable="STALL_IDColumn" msprop:Generator_UserColumnName="STALL_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IDLE_START_DATETIME" msprop:Generator_ColumnVarNameInTable="columnIDLE_START_DATETIME" msprop:Generator_ColumnPropNameInRow="IDLE_START_DATETIME" msprop:Generator_ColumnPropNameInTable="IDLE_START_DATETIMEColumn" msprop:Generator_UserColumnName="IDLE_START_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDLE_END_DATETIME" msprop:Generator_ColumnVarNameInTable="columnIDLE_END_DATETIME" msprop:Generator_ColumnPropNameInRow="IDLE_END_DATETIME" msprop:Generator_ColumnPropNameInTable="IDLE_END_DATETIMEColumn" msprop:Generator_UserColumnName="IDLE_END_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDLE_MEMO" msprop:Generator_ColumnVarNameInTable="columnIDLE_MEMO" msprop:Generator_ColumnPropNameInRow="IDLE_MEMO" msprop:Generator_ColumnPropNameInTable="IDLE_MEMOColumn" msprop:Generator_UserColumnName="IDLE_MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="ROW_LOCK_VERSION" msprop:Generator_ColumnVarNameInTable="columnROW_LOCK_VERSION" msprop:Generator_ColumnPropNameInRow="ROW_LOCK_VERSION" msprop:Generator_ColumnPropNameInTable="ROW_LOCK_VERSIONColumn" msprop:Generator_UserColumnName="ROW_LOCK_VERSION" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

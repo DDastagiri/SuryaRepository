@@ -1,0 +1,874 @@
+﻿/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-44
+//
+//////////////////////////////////////////////////////////////////////////////*/
+/* 上部枠
+////////////*/
+#main #contents{
+	display:block;
+	padding:0 20px 20px;
+}
+#tcvNsc44Main{
+	position:relative;
+	margin:20px 0 0 0;
+}
+
+
+#tcvNsc44Main .nscListBoxSet{
+	position:relative;
+	width:auto;
+	height:183px;
+}
+#tcvNsc44Main h4{
+	width:171px;
+	font-size:16px;
+	padding:1px 0 0px 16px;
+	margin-bottom:7px;
+	font-weight:bold;
+	height:26px;
+	display:block;
+	display: table-cell;
+	vertical-align: middle;
+	color:#FFFFFF;
+	border-top-left-radius:7px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:56px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.50, #797d84),
+            color-stop(0.51, #6a6e76),
+						to(#6a6e76));
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft,
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight{
+	position:absolute;
+	margin:0;
+	height:187px;
+	padding:0;
+	border-radius:7px;
+	background-color:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.51, #FEFEFE),
+						to(#e2e2e2));
+	border:#adadad 1px solid;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+	color:#221815;
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter{
+	position:absolute;
+	margin:0;
+	padding:0;
+	border-radius:7px;
+	background-color:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.51, #FEFEFE),
+						to(#e2e2e2));
+	border:#adadad 1px solid;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+	color:#221815;
+}
+
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft{
+	width:315px;
+	left:0;
+	top:0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter{
+	width:317px;
+	left:332px;
+	top:0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight{
+	width:316px;
+	left:666px;
+	top:0;
+}
+
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxOpt01{
+	padding:10px;
+	height:140px;
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxOpt02{
+	padding:0 0 0 10px;
+}
+
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxIn{
+	padding:10px;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxIn02{
+	padding:9px 10px 10px 10px;
+}
+
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carImg{
+	float:left;
+	background:#525252;
+	border:#FFF 1px solid;
+	border-radius:4px;
+	width:143px;
+	height:108px;
+	padding:28px 0 0 0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carText{
+	float:right;
+	width:148px;
+	height:136px;
+	padding:1px 0 0 0;
+	font-size:16px;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carText h5{
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W6;
+*/
+	font-size:18px;
+	line-height:19px;
+	font-weight:normal;
+	padding:0;
+	margin:0 0 10px 0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carText strong{
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W6;
+*/
+	font-size:16px;
+	line-height:17px;
+	font-weight:normal;
+	padding:0;
+	margin:0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carText table{
+	margin:8px 0 0 0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carText td{
+	text-align:left;
+	vertical-align:top;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carText td.icn{
+	padding:2px 0 0 0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxLeft .nsc44carText td.text{
+	padding:0 0 10px 0;
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li{
+	float:left;
+	display:block;
+	width:105px;
+	height:27px;
+	padding:3px 0 0 42px;
+	list-style:none;
+	font-size:12px;
+}
+
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn1{
+	background:url(images/nsc44icn1.png) 8px 3px no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn2{
+	background:url(images/nsc44icn2.png) 8px 1px no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn3{
+	background:url(images/nsc44icn3.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn4{
+	background:url(../images/SC3060101/nsc44icn4.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn5{
+	background:url(../images/SC3060101/nsc44icn5.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn6{
+	background:url(../images/SC3060101/nsc44icn6.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn7{
+	background:url(../images/SC3060101/nsc44icn7.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn8{
+	background:url(../images/SC3060101/nsc44icn8.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn9{
+	background:url(../images/SC3060101/nsc44icn9.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn10{
+	background:url(../images/SC3060101/nsc44icn10.png) 8px 0 no-repeat;
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn11{
+	background:url(../images/SC3060101/nsc44icn11.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn12{
+	background:url(../images/SC3060101/nsc44icn12.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn13{
+	background:url(../images/SC3060101/nsc44icn13.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn14{
+	background:url(../images/SC3060101/nsc44icn14.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn15{
+	background:url(../images/SC3060101/nsc44icn15.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn16{
+	background:url(../images/SC3060101/nsc44icn16.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn17{
+	background:url(../images/SC3060101/nsc44icn17.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn18{
+	background:url(../images/SC3060101/nsc44icn18.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn19{
+	background:url(../images/SC3060101/nsc44icn19.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn20{
+	background:url(../images/SC3060101/nsc44icn20.png) 8px 0 no-repeat;
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn21{
+	background:url(../images/SC3060101/nsc44icn21.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn22{
+	background:url(../images/SC3060101/nsc44icn22.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn23{
+	background:url(../images/SC3060101/nsc44icn23.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn24{
+	background:url(../images/SC3060101/nsc44icn24.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn25{
+	background:url(../images/SC3060101/nsc44icn25.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn26{
+	background:url(../images/SC3060101/nsc44icn26.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn27{
+	background:url(../images/SC3060101/nsc44icn27.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn28{
+	background:url(../images/SC3060101/nsc44icn28.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn29{
+	background:url(../images/SC3060101/nsc44icn29.png) 8px 0 no-repeat;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter li.nscListBoxCenterIcn30{
+	background:url(../images/SC3060101/nsc44icn30.png) 8px 0 no-repeat;
+}
+
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter .triangle{
+	position:absolute;
+	right:10px;
+	top:158px;
+/*	width:20px;
+	height:20px;*/
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxCenter .triangleUp{
+
+	position:absolute;
+	right:10px;
+	bottom:10px;
+/*	position:relative;
+	left:1px;
+	top:0;*/
+}
+
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .PriceText{
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+	background:#494646;
+	border-radius:6px;
+	padding:10px 0;
+	font-size:28px;
+	line-height:29px;
+	text-align:center;
+	color:#FFF;
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .nsc44priceimg{
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+	position:absolute;
+	left:10px;
+	top:95px;
+	text-align:center;
+	font-size:12px;
+	line-height:14px;
+	color:#656565;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .nsc44priceimg img{
+	margin:0 0 0 0;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .Balloon{
+	position:absolute;
+	background:#FFF;
+	border-radius:4px;
+	width:215px;
+	height:49px;
+	left:1px;
+	top:1px;
+	font-size:14px;
+	line-height:16px;
+	padding:5px 7px;
+	z-index:0;
+	word-wrap: break-word;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .BalloonBoder{
+	position:absolute;
+	background:#5B5B5B;
+	border-radius:5px;
+	box-shadow: 0px 1px 0px #fff;
+	width:231px;
+	height:61px;
+	left:75px;
+	top:95px;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .BalloonArrow{
+	position:absolute;
+	background:#FFF;
+	border-radius:2px;
+	width:25px;
+	height:18px;
+	left:1px;
+	top:1px;
+	z-index:3;
+}
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .BalloonArrowBoder{
+	position:absolute;
+	background:#FFF;
+	transform: rotate(25deg) skew(-40deg);
+	border-radius:3px;
+	background:#5B5B5B;
+	width:27px;
+	height:20px;
+	left:-3px;
+	top:21px;
+}
+
+#tcvNsc44Main .nscListBoxSet .nscListBoxRight .Deadline{
+	position:absolute;
+	text-align:right;
+	right:11px;
+	top:158px;
+	font-size:12px;
+	color:#595757;
+}
+
+/*---*/
+#tcvNsc44Main .nsc44BoxBottom{
+	overflow:hidden;
+	width:982px;
+	height:412px;
+	border-radius:7px;
+	background-color:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+           		color-stop(0.51, #FEFEFE),
+							to(#e2e2e2));
+	border:#adadad 1px solid;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+	margin:18px 0 0 0;
+}
+#tcvNsc44Main .nsc44BoxBottomIn{
+	position:relative;
+	margin:10px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44BoxLeft1{
+	position:absolute;
+	overflow:hidden;
+	width:139px;
+	height:140px;
+	border-radius:7px;
+	box-shadow: 0px 1px 0px #fff;
+	background:#f7f7f7;
+	border:#bbbbbb 1px solid;
+	left:0;
+	top:0;
+	padding:8px 18px;
+	font-size:14px;
+	color:#555555;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44BoxLeft1 li{
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+	width:93px;
+	height:41px;
+	padding:10px 0 0 47px;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44BoxLeft1 li.nsc44icnP{
+	background:url(../images/SC3060101/nsc44icnP.png) 0 0 no-repeat;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44BoxLeft1 li.nsc44icnB{
+	background:url(../images/SC3060101/nsc44icnB.png) 0 0 no-repeat;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44BoxLeft1 li.nsc44icnX{
+	background:url(../images/SC3060101/nsc44icnX.png) 0 0 no-repeat;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44BoxLeft2{
+	position:absolute;
+	overflow:hidden;
+	width:83px;
+	height:181px;
+	border-radius:7px;
+	background:#f7f7f7 url(../images/SC3060101/nsc44icn123.png) 13px 12px no-repeat;
+	border:#bbbbbb 1px solid;
+	box-shadow: 0px 1px 0px #fff;
+	left:0;
+	top:166px;
+	padding:8px 18px 9px 74px;
+	color:#555555;
+	font-size:14px;
+	color:#555555;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44BoxLeft2 li{
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+	padding:23px 0 0 0;
+	height:35px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint{
+	position:absolute;
+	width:777px;
+	height:325px;
+	background:url(../images/SC3060101/nsc44carpoint.png) 0 0 no-repeat;
+	right:0;
+	top:-39px;
+}
+
+/* カーポイントのアイコンセット 1～57 設定値
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn01,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn03,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn05,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn06,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn08,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn10,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn12,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn14,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn16,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn18,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn20,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn21,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn22,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn23,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn24,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn26,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn28,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn30,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn32,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn34,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn36,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn38,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn39,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn40,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn41,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn42,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn44,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn45,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn47,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn49,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn51,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn53,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn54,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn55,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn56,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn57
+{
+	position:absolute;
+	width:26px;
+	height:25px;
+	font-size:15px;
+	color: white;
+	vertical-align:    middle;
+	text-align: center;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark01,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark03,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark05,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark06,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark08,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark10,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark12,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark14,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark16,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark18,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark20,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark21,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark22,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark23,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark24,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark26,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark28,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark30,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark32,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark34,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark36,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark38,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark39,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark40,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark41,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark42,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark44,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark45,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark47,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark49,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark51,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark53,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark54,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark55,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark56,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark57
+{
+	position:absolute;
+	width:26px;
+	height:25px;
+}
+
+/* カーポイントのアイコンセット 1～57 座標
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn01{left:99px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark01{left:99px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn03{left:131px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark03{left:131px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn05{left:163px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark05{left:163px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn06{left:221px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark06{left:221px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn08{left:288px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark08{left:288px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn10{left:278px; top:79px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark10{left:278px; top:76px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn12{left:340px; top:70px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark12{left:340px; top:67px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn14{left:426px; top:70px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark14{left:426px; top:67px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn16{left:514px; top:78px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark16{left:514px; top:75px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn18{left:363px; top:22px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark18{left:363px; top:19px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn20{left:301px; top:113px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark20{left:301px; top:110px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn21{left:345px; top:110px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark21{left:345px; top:107px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn22{left:383px; top:110px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark22{left:383px; top:107px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn23{left:420px; top:110px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark23{left:420px; top:107px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn24{left:459px; top:110px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark24{left:459px; top:107px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn26{left:385px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark26{left:385px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn28{left:278px; top:236px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark28{left:278px; top:233px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn30{left:340px; top:246px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark30{left:340px; top:243px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn32{left:426px; top:246px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark32{left:426px; top:243px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn34{left:512px; top:236px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark34{left:512px; top:233px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn36{left:363px; top:289px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark36{left:363px; top:286px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn38{left:301px; top:202px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark38{left:301px; top:199px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn39{left:345px; top:205px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark39{left:345px; top:202px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn40{left:383px; top:205px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark40{left:383px; top:202px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn41{left:420px; top:205px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark41{left:420px; top:202px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn42{left:459px; top:205px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark42{left:459px; top:202px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn44{left:479px; top:159px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark44{left:479px; top:156px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn45{left:515px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark45{left:515px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn47{left:552px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark47{left:552px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn49{left:583px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark49{left:583px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn51{left:615px; top:158px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark51{left:615px; top:155px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn53{left:246px; top:47px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark53{left:246px; top:44px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn54{left:482px; top:47px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark54{left:482px; top:44px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn55{left:246px; top:268px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark55{left:246px; top:265px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn56{left:482px; top:268px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark56{left:482px; top:265px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn57{left:599px; top:268px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcnMark57{left:599px; top:265px;}
+
+
+
+
+/* カーポイントのアイコンセット 59～62 設定値
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn58,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn59,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn60,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn61,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn62{
+	position:absolute;
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+	width:34px;
+	height:26px;
+	padding:8px 0 0 0;
+	text-align:center;
+	font-size:14px;
+	line-height:18px;
+	color:#4f4f4f;
+}
+/* カーポイントのアイコンセット 59～62 座標
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn58{left:197px;top:16px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn59{left:522px;top:16px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn60{left:197px;top:284px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn61{left:522px;top:284px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn62{left:652px;top:284px;}
+
+
+
+/* カーポイントのアイコンセット 64、66、67、68 設定値
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn64,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn66,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn67,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn68{
+	position:absolute;
+	width:36px;
+	height:36px;
+	font-size:11px;
+}    
+
+/* カーポイントのアイコンセット 63、65 設定値
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn63,
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn65{
+	position:absolute;
+	width:36px;
+	height:36px;
+	font-size:15px;
+}    
+
+/* カーポイントのアイコンセット 63-68 座標
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn63{left:166px; top:117px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn64{left:137px; top:106px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn65{left:166px; top:197px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn66{left:137px; top:215px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn67{left:560px; top:122px;}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .nsc44pointIcn68{left:560px; top:198px;}
+
+/* カーポイントのアイコンセット 59～62の枠線設定値
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .SquareBox{
+	position:absolute;
+/*	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+*/
+	width:34px;
+	height:26px;
+	padding:8px 0 0 0;
+	border:#4f4f4f 1px solid;
+	box-shadow: 1px 1px 3px #b0b0b0;
+	text-align:center;
+	font-size:12px;
+	line-height:18px;
+	color:#4f4f4f;
+}
+/* カーポイントのアイコンセット 59～62の枠線座標
+------------------------------------------*/
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .SquareBoxPosition01{
+	left:197px;
+	top:16px;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .SquareBoxPosition02{
+	left:197px;
+	top:283px;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .SquareBoxPosition03{
+	left:521px;
+	top:16px;
+}
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .SquareBoxPosition04{
+	left:521px;
+	top:283px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44carpoint .SquareBoxPosition05{
+	left:651px;
+	top:283px;
+}
+/* カーポイントのアイコンセット---ここまで
+------------------------------------------*/
+
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailSet{
+	position:absolute;
+	width:780px;
+	height:60px;
+/*	right:-2px;*/
+    left:200px;
+	top:300px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg
+{
+/*	float:left;*/
+	position:absolute;
+	width:71px;
+	height:53px;
+	overflow:hidden;
+	padding:2px;
+	background:#FFF;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	margin:0 3px 0 0;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg1 
+{
+	left:2px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg2
+{
+	left:75px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg3 
+{
+	left:148px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg4 
+{
+	left:221px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg5 
+{
+	left:294px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg6
+{
+	left:367px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg7
+{
+	left:440px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg8
+{
+	left:513px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg9
+{
+	left:586px;
+	top:0px;
+}
+
+#tcvNsc44Main .nsc44BoxBottom .nsc44pointThumbnailImg10
+{
+	left:659px;
+	top:0px;
+}
+
+
+.tcvNsc31Black{
+	position:absolute;
+	top:44px; left:0;
+	opacity: 0.6;
+	background:#000;
+	z-index:101;
+	width:1024px;
+	height:656px;
+}
+
+
+
+#tcvNsc31Main .popWind .dataWind1{
+	display:block;
+	position:absolute;
+	background:#FFF;
+/*	left:400px; top:200px;*/
+	width:1px; height:1px;        
+	border-radius: 7px;
+	box-shadow:inset 0px 3px 3px #333333;
+	background: #dcdee4;
+	z-index:102;
+}
+
+#tcvNsc31Main .closeWind{
+	position:absolute;
+	left:10px; top:50px;
+	z-index:103;
+}
+
+
+.clearboth{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	color:#FFFFFF;
+	font-size:1px;
+	line-height:1px;
+	text-indent:-3000px;
+	height:1px;
+}
+
+
+/*　サーバー処理中のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#serverProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0; 
+	position:absolute;
+	top:0px; 
+	left:0;
+	background:#000;
+	width:1024px;
+	height:768px;
+	z-index:399;
+	display:none;
+	opacity:0;
+}
+#serverProcessOverlayBlack.open { opacity:0.6; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#serverProcessIcon {
+	position:absolute;
+	background:url(../Images/SC3060101/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:344px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:400;
+}
+#serverProcessIcon.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}

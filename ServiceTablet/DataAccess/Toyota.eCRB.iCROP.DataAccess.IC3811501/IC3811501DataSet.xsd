@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3811501DataSet" targetNamespace="http://tempuri.org/IC3811501DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3811501DataSet.xsd" xmlns="http://tempuri.org/IC3811501DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3811501DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3811501DataSet" msprop:Generator_UserDSName="IC3811501DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3811501ReservationList" msprop:Generator_TableClassName="IC3811501ReservationListDataTable" msprop:Generator_TableVarName="tableIC3811501ReservationList" msprop:Generator_TablePropName="IC3811501ReservationList" msprop:Generator_RowDeletingName="IC3811501ReservationListRowDeleting" msprop:Generator_RowChangingName="IC3811501ReservationListRowChanging" msprop:Generator_RowEvHandlerName="IC3811501ReservationListRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3811501ReservationListRowDeleted" msprop:Generator_UserTableName="IC3811501ReservationList" msprop:Generator_RowChangedName="IC3811501ReservationListRowChanged" msprop:Generator_RowEvArgName="IC3811501ReservationListRowChangeEvent" msprop:Generator_RowClassName="IC3811501ReservationListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REZSTARTTIME" msprop:Generator_ColumnVarNameInTable="columnREZSTARTTIME" msprop:Generator_ColumnPropNameInRow="REZSTARTTIME" msprop:Generator_ColumnPropNameInTable="REZSTARTTIMEColumn" msprop:Generator_UserColumnName="REZSTARTTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REZENDTIME" msprop:Generator_ColumnVarNameInTable="columnREZENDTIME" msprop:Generator_ColumnPropNameInRow="REZENDTIME" msprop:Generator_ColumnPropNameInTable="REZENDTIMEColumn" msprop:Generator_UserColumnName="REZENDTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ORDERNO" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="ORDERNO" msprop:Generator_ColumnVarNameInTable="columnORDERNO" msprop:Generator_ColumnPropNameInTable="ORDERNOColumn" msprop:Generator_UserColumnName="ORDERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SERVICENAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SERVICENAME" msprop:Generator_ColumnVarNameInTable="columnSERVICENAME" msprop:Generator_ColumnPropNameInTable="SERVICENAMEColumn" msprop:Generator_UserColumnName="SERVICENAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ROSTATUSCODE" msprop:Generator_ColumnVarNameInTable="columnROSTATUSCODE" msprop:Generator_ColumnPropNameInRow="ROSTATUSCODE" msprop:Generator_ColumnPropNameInTable="ROSTATUSCODEColumn" msprop:Generator_UserColumnName="ROSTATUSCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REZID" msprop:Generator_ColumnVarNameInTable="columnREZID" msprop:Generator_ColumnPropNameInRow="REZID" msprop:Generator_ColumnPropNameInTable="REZIDColumn" msprop:Generator_UserColumnName="REZID" type="xs:decimal" />
+              <xs:element name="DMS_JOB_DTL_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DMS_JOB_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnDMS_JOB_DTL_ID" msprop:Generator_ColumnPropNameInTable="DMS_JOB_DTL_IDColumn" msprop:Generator_UserColumnName="DMS_JOB_DTL_ID" type="xs:string" default="String.Empty" minOccurs="0" />
+              <xs:element name="CST_NAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CST_NAME" msprop:Generator_ColumnVarNameInTable="columnCST_NAME" msprop:Generator_ColumnPropNameInTable="CST_NAMEColumn" msprop:Generator_UserColumnName="CST_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

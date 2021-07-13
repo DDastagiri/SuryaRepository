@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IcropWordDataSet" targetNamespace="http://tempuri.org/IcropWordDataSet.xsd" xmlns:mstns="http://tempuri.org/IcropWordDataSet.xsd" xmlns="http://tempuri.org/IcropWordDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="OracleConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OracleConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.OracleConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IcropWordDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IcropWordDataSet" msprop:Generator_UserDSName="IcropWordDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IcropWordTable" msprop:Generator_TableClassName="IcropWordTableDataTable" msprop:Generator_TableVarName="tableIcropWordTable" msprop:Generator_TablePropName="IcropWordTable" msprop:Generator_RowDeletingName="IcropWordTableRowDeleting" msprop:Generator_UserTableName="IcropWordTable" msprop:Generator_RowChangingName="IcropWordTableRowChanging" msprop:Generator_RowEvHandlerName="IcropWordTableRowChangeEventHandler" msprop:Generator_RowDeletedName="IcropWordTableRowDeleted" msprop:Generator_RowEvArgName="IcropWordTableRowChangeEvent" msprop:Generator_RowChangedName="IcropWordTableRowChanged" msprop:Generator_RowClassName="IcropWordTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISPLAYID" msprop:Generator_ColumnVarNameInTable="columnDISPLAYID" msprop:Generator_ColumnPropNameInRow="DISPLAYID" msprop:Generator_ColumnPropNameInTable="DISPLAYIDColumn" msprop:Generator_UserColumnName="DISPLAYID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISPLAYNO" msprop:Generator_ColumnVarNameInTable="columnDISPLAYNO" msprop:Generator_ColumnPropNameInRow="DISPLAYNO" msprop:Generator_ColumnPropNameInTable="DISPLAYNOColumn" msprop:Generator_UserColumnName="DISPLAYNO" type="xs:long" />
+              <xs:element name="KINDFLG" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKINDFLG" msprop:Generator_ColumnPropNameInRow="KINDFLG" msprop:Generator_ColumnPropNameInTable="KINDFLGColumn" msprop:Generator_UserColumnName="KINDFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WORD" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWORD" msprop:Generator_ColumnPropNameInRow="WORD" msprop:Generator_ColumnPropNameInTable="WORDColumn" msprop:Generator_UserColumnName="WORD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="512" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

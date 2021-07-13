@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3801003DataSet" targetNamespace="http://tempuri.org/IC3801003DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3801003DataSet.xsd" xmlns="http://tempuri.org/IC3801003DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3801003DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3801003DataSet" msprop:Generator_UserDSName="IC3801003DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3801003OrderInfo" msprop:Generator_TableClassName="IC3801003OrderInfoDataTable" msprop:Generator_TableVarName="tableIC3801003OrderInfo" msprop:Generator_TablePropName="IC3801003OrderInfo" msprop:Generator_RowDeletingName="IC3801003OrderInfoRowDeleting" msprop:Generator_UserTableName="IC3801003OrderInfo" msprop:Generator_RowChangingName="IC3801003OrderInfoRowChanging" msprop:Generator_RowEvHandlerName="IC3801003OrderInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3801003OrderInfoRowDeleted" msprop:Generator_RowEvArgName="IC3801003OrderInfoRowChangeEvent" msprop:Generator_RowChangedName="IC3801003OrderInfoRowChanged" msprop:Generator_RowClassName="IC3801003OrderInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SALESDATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SALESDATE" msprop:Generator_ColumnVarNameInTable="columnSALESDATE" msprop:Generator_ColumnPropNameInTable="SALESDATEColumn" msprop:Generator_UserColumnName="SALESDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDERCANCELDATE_x0009_" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="_ORDERCANCELDATE_" msprop:Generator_ColumnVarNameInTable="_columnORDERCANCELDATE_" msprop:Generator_ColumnPropNameInTable="_ORDERCANCELDATE_Column" msprop:Generator_UserColumnName="ORDERCANCELDATE	" type="xs:string" minOccurs="0" />
+              <xs:element name="DELETEFLAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DELETEFLAG" msprop:Generator_ColumnVarNameInTable="columnDELETEFLAG" msprop:Generator_ColumnPropNameInTable="DELETEFLAGColumn" msprop:Generator_UserColumnName="DELETEFLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="DEALERCODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DEALERCODE" msprop:Generator_ColumnVarNameInTable="columnDEALERCODE" msprop:Generator_ColumnPropNameInTable="DEALERCODEColumn" msprop:Generator_UserColumnName="DEALERCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDERNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORDERNO" msprop:Generator_ColumnVarNameInTable="columnORDERNO" msprop:Generator_ColumnPropNameInTable="ORDERNOColumn" msprop:Generator_UserColumnName="ORDERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SACODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SACODE" msprop:Generator_ColumnVarNameInTable="columnSACODE" msprop:Generator_ColumnPropNameInTable="SACODEColumn" msprop:Generator_UserColumnName="SACODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMERID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTOMERID" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERID" msprop:Generator_ColumnPropNameInTable="CUSTOMERIDColumn" msprop:Generator_UserColumnName="CUSTOMERID" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMERNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTOMERNAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERNAME" msprop:Generator_ColumnPropNameInTable="CUSTOMERNAMEColumn" msprop:Generator_UserColumnName="CUSTOMERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REGISTERNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="REGISTERNO" msprop:Generator_ColumnVarNameInTable="columnREGISTERNO" msprop:Generator_ColumnPropNameInTable="REGISTERNOColumn" msprop:Generator_UserColumnName="REGISTERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="JDPFLAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="JDPFLAG" msprop:Generator_ColumnVarNameInTable="columnJDPFLAG" msprop:Generator_ColumnPropNameInTable="JDPFLAGColumn" msprop:Generator_UserColumnName="JDPFLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDERSTATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORDERSTATUS" msprop:Generator_ColumnVarNameInTable="columnORDERSTATUS" msprop:Generator_ColumnPropNameInTable="ORDERSTATUSColumn" msprop:Generator_UserColumnName="ORDERSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="SFLAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SFLAG" msprop:Generator_ColumnVarNameInTable="columnSFLAG" msprop:Generator_ColumnPropNameInTable="SFLAGColumn" msprop:Generator_UserColumnName="SFLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="DELIVERYHOPEDATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DELIVERYHOPEDATE" msprop:Generator_ColumnVarNameInTable="columnDELIVERYHOPEDATE" msprop:Generator_ColumnPropNameInTable="DELIVERYHOPEDATEColumn" msprop:Generator_UserColumnName="DELIVERYHOPEDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDDELIVERYHOPEDATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ADDDELIVERYHOPEDATE" msprop:Generator_ColumnVarNameInTable="columnADDDELIVERYHOPEDATE" msprop:Generator_ColumnPropNameInTable="ADDDELIVERYHOPEDATEColumn" msprop:Generator_UserColumnName="ADDDELIVERYHOPEDATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3801003AddSrvCount" msprop:Generator_TableClassName="IC3801003AddSrvCountDataTable" msprop:Generator_TableVarName="tableIC3801003AddSrvCount" msprop:Generator_TablePropName="IC3801003AddSrvCount" msprop:Generator_RowDeletingName="IC3801003AddSrvCountRowDeleting" msprop:Generator_UserTableName="IC3801003AddSrvCount" msprop:Generator_RowChangingName="IC3801003AddSrvCountRowChanging" msprop:Generator_RowEvHandlerName="IC3801003AddSrvCountRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3801003AddSrvCountRowDeleted" msprop:Generator_RowEvArgName="IC3801003AddSrvCountRowChangeEvent" msprop:Generator_RowChangedName="IC3801003AddSrvCountRowChanged" msprop:Generator_RowClassName="IC3801003AddSrvCountRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ADDSRVCOUNT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ADDSRVCOUNT" msprop:Generator_ColumnVarNameInTable="columnADDSRVCOUNT" msprop:Generator_ColumnPropNameInTable="ADDSRVCOUNTColumn" msprop:Generator_UserColumnName="ADDSRVCOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3801003NoDeliveryRO" msprop:Generator_TableClassName="IC3801003NoDeliveryRODataTable" msprop:Generator_TableVarName="tableIC3801003NoDeliveryRO" msprop:Generator_TablePropName="IC3801003NoDeliveryRO" msprop:Generator_RowDeletingName="IC3801003NoDeliveryRORowDeleting" msprop:Generator_UserTableName="IC3801003NoDeliveryRO" msprop:Generator_RowChangingName="IC3801003NoDeliveryRORowChanging" msprop:Generator_RowEvHandlerName="IC3801003NoDeliveryRORowChangeEventHandler" msprop:Generator_RowDeletedName="IC3801003NoDeliveryRORowDeleted" msprop:Generator_RowEvArgName="IC3801003NoDeliveryRORowChangeEvent" msprop:Generator_RowChangedName="IC3801003NoDeliveryRORowChanged" msprop:Generator_RowClassName="IC3801003NoDeliveryRORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORDERNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORDERNO" msprop:Generator_ColumnVarNameInTable="columnORDERNO" msprop:Generator_ColumnPropNameInTable="ORDERNOColumn" msprop:Generator_UserColumnName="ORDERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDERSTATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORDERSTATUS" msprop:Generator_ColumnVarNameInTable="columnORDERSTATUS" msprop:Generator_ColumnPropNameInTable="ORDERSTATUSColumn" msprop:Generator_UserColumnName="ORDERSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="CANCELFLG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CANCELFLG" msprop:Generator_ColumnVarNameInTable="columnCANCELFLG" msprop:Generator_ColumnPropNameInTable="CANCELFLGColumn" msprop:Generator_UserColumnName="CANCELFLG" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMERID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTOMERID" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERID" msprop:Generator_ColumnPropNameInTable="CUSTOMERIDColumn" msprop:Generator_UserColumnName="CUSTOMERID" type="xs:string" minOccurs="0" />
+              <xs:element name="IFLAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IFLAG" msprop:Generator_ColumnVarNameInTable="columnIFLAG" msprop:Generator_ColumnPropNameInTable="IFLAGColumn" msprop:Generator_UserColumnName="IFLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="SFLAG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SFLAG" msprop:Generator_ColumnVarNameInTable="columnSFLAG" msprop:Generator_ColumnPropNameInTable="SFLAGColumn" msprop:Generator_UserColumnName="SFLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMERNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTOMERNAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERNAME" msprop:Generator_ColumnPropNameInTable="CUSTOMERNAMEColumn" msprop:Generator_UserColumnName="CUSTOMERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="REGISTERNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="REGISTERNO" msprop:Generator_ColumnVarNameInTable="columnREGISTERNO" msprop:Generator_ColumnPropNameInTable="REGISTERNOColumn" msprop:Generator_UserColumnName="REGISTERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDSRVCOUNT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ADDSRVCOUNT" msprop:Generator_ColumnVarNameInTable="columnADDSRVCOUNT" msprop:Generator_ColumnPropNameInTable="ADDSRVCOUNTColumn" msprop:Generator_UserColumnName="ADDSRVCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="DELIVERYHOPEDATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DELIVERYHOPEDATE" msprop:Generator_ColumnVarNameInTable="columnDELIVERYHOPEDATE" msprop:Generator_ColumnPropNameInTable="DELIVERYHOPEDATEColumn" msprop:Generator_UserColumnName="DELIVERYHOPEDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAMINETIME" msprop:Generator_ColumnVarNameInTable="columnEXAMINETIME" msprop:Generator_ColumnPropNameInRow="EXAMINETIME" msprop:Generator_ColumnPropNameInTable="EXAMINETIMEColumn" msprop:Generator_UserColumnName="EXAMINETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COLSINGPRINTTIME" msprop:Generator_ColumnVarNameInTable="columnCOLSINGPRINTTIME" msprop:Generator_ColumnPropNameInRow="COLSINGPRINTTIME" msprop:Generator_ColumnPropNameInTable="COLSINGPRINTTIMEColumn" msprop:Generator_UserColumnName="COLSINGPRINTTIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

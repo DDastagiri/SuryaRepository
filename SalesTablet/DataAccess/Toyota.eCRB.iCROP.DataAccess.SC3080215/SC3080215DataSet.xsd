@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3080215DataSet" targetNamespace="http://tempuri.org/SC3080215DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3080215DataSet.xsd" xmlns="http://tempuri.org/SC3080215DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3080215DataSet" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3080215DataSet" msprop:Generator_UserDSName="SC3080215DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3080215Session" msprop:Generator_TableClassName="SC3080215SessionDataTable" msprop:Generator_TableVarName="tableSC3080215Session" msprop:Generator_TablePropName="SC3080215Session" msprop:Generator_RowDeletingName="SC3080215SessionRowDeleting" msprop:Generator_UserTableName="SC3080215Session" msprop:Generator_RowChangingName="SC3080215SessionRowChanging" msprop:Generator_RowEvHandlerName="SC3080215SessionRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080215SessionRowDeleted" msprop:Generator_RowEvArgName="SC3080215SessionRowChangeEvent" msprop:Generator_RowChangedName="SC3080215SessionRowChanged" msprop:Generator_RowClassName="SC3080215SessionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTKIND" msprop:Generator_ColumnVarNameInTable="columnCSTKIND" msprop:Generator_ColumnPropNameInRow="CSTKIND" msprop:Generator_ColumnPropNameInTable="CSTKINDColumn" msprop:Generator_UserColumnName="CSTKIND" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMERCLASS" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERCLASS" msprop:Generator_ColumnPropNameInRow="CUSTOMERCLASS" msprop:Generator_ColumnPropNameInTable="CUSTOMERCLASSColumn" msprop:Generator_UserColumnName="CUSTOMERCLASS" type="xs:string" minOccurs="0" />
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGCUSTID" msprop:Generator_ColumnVarNameInTable="columnORGCUSTID" msprop:Generator_ColumnPropNameInRow="ORGCUSTID" msprop:Generator_ColumnPropNameInTable="ORGCUSTIDColumn" msprop:Generator_UserColumnName="ORGCUSTID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080215CSQuestionList" msprop:Generator_TableClassName="SC3080215CSQuestionListDataTable" msprop:Generator_TableVarName="tableSC3080215CSQuestionList" msprop:Generator_TablePropName="SC3080215CSQuestionList" msprop:Generator_RowDeletingName="SC3080215CSQuestionListRowDeleting" msprop:Generator_UserTableName="SC3080215CSQuestionList" msprop:Generator_RowChangingName="SC3080215CSQuestionListRowChanging" msprop:Generator_RowEvHandlerName="SC3080215CSQuestionListRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080215CSQuestionListRowDeleted" msprop:Generator_RowEvArgName="SC3080215CSQuestionListRowChangeEvent" msprop:Generator_RowChangedName="SC3080215CSQuestionListRowChanged" msprop:Generator_RowClassName="SC3080215CSQuestionListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ANSWERID" msprop:Generator_ColumnVarNameInTable="columnANSWERID" msprop:Generator_ColumnPropNameInRow="ANSWERID" msprop:Generator_ColumnPropNameInTable="ANSWERIDColumn" msprop:Generator_UserColumnName="ANSWERID" type="xs:decimal" />
+              <xs:element name="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:dateTime" />
+              <xs:element name="PAPERNAME" msprop:Generator_ColumnVarNameInTable="columnPAPERNAME" msprop:Generator_ColumnPropNameInRow="PAPERNAME" msprop:Generator_ColumnPropNameInTable="PAPERNAMEColumn" msprop:Generator_UserColumnName="PAPERNAME" type="xs:string" />
+              <xs:element name="TARGETFLG" msprop:Generator_ColumnVarNameInTable="columnTARGETFLG" msprop:Generator_ColumnPropNameInRow="TARGETFLG" msprop:Generator_ColumnPropNameInTable="TARGETFLGColumn" msprop:Generator_UserColumnName="TARGETFLG" type="xs:string" />
+              <xs:element name="SERIESNAME" msprop:Generator_ColumnVarNameInTable="columnSERIESNAME" msprop:Generator_ColumnPropNameInRow="SERIESNAME" msprop:Generator_ColumnPropNameInTable="SERIESNAMEColumn" msprop:Generator_UserColumnName="SERIESNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO" type="xs:string" minOccurs="0" />
+              <xs:element name="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME" type="xs:string" />
+              <xs:element name="ICON_IMGFILE" msprop:Generator_ColumnVarNameInTable="columnICON_IMGFILE" msprop:Generator_ColumnPropNameInRow="ICON_IMGFILE" msprop:Generator_ColumnPropNameInTable="ICON_IMGFILEColumn" msprop:Generator_UserColumnName="ICON_IMGFILE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080215CSQuestionDetail" msprop:Generator_TableClassName="SC3080215CSQuestionDetailDataTable" msprop:Generator_TableVarName="tableSC3080215CSQuestionDetail" msprop:Generator_TablePropName="SC3080215CSQuestionDetail" msprop:Generator_RowDeletingName="SC3080215CSQuestionDetailRowDeleting" msprop:Generator_UserTableName="SC3080215CSQuestionDetail" msprop:Generator_RowChangingName="SC3080215CSQuestionDetailRowChanging" msprop:Generator_RowEvHandlerName="SC3080215CSQuestionDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080215CSQuestionDetailRowDeleted" msprop:Generator_RowEvArgName="SC3080215CSQuestionDetailRowChangeEvent" msprop:Generator_RowChangedName="SC3080215CSQuestionDetailRowChanged" msprop:Generator_RowClassName="SC3080215CSQuestionDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QUESTIONITEMID" msprop:Generator_ColumnVarNameInTable="columnQUESTIONITEMID" msprop:Generator_ColumnPropNameInRow="QUESTIONITEMID" msprop:Generator_ColumnPropNameInTable="QUESTIONITEMIDColumn" msprop:Generator_UserColumnName="QUESTIONITEMID" type="xs:long" />
+              <xs:element name="QUESTIONCONTENT" msprop:Generator_ColumnVarNameInTable="columnQUESTIONCONTENT" msprop:Generator_ColumnPropNameInRow="QUESTIONCONTENT" msprop:Generator_ColumnPropNameInTable="QUESTIONCONTENTColumn" msprop:Generator_UserColumnName="QUESTIONCONTENT" type="xs:string" />
+              <xs:element name="ANSWERTYPE" msprop:Generator_ColumnVarNameInTable="columnANSWERTYPE" msprop:Generator_ColumnPropNameInRow="ANSWERTYPE" msprop:Generator_ColumnPropNameInTable="ANSWERTYPEColumn" msprop:Generator_UserColumnName="ANSWERTYPE" type="xs:string" />
+              <xs:element name="ANSWERCOUNT" msprop:Generator_ColumnVarNameInTable="columnANSWERCOUNT" msprop:Generator_ColumnPropNameInRow="ANSWERCOUNT" msprop:Generator_ColumnPropNameInTable="ANSWERCOUNTColumn" msprop:Generator_UserColumnName="ANSWERCOUNT" type="xs:short" />
+              <xs:element name="SORTNO" msprop:Generator_ColumnVarNameInTable="columnSORTNO" msprop:Generator_ColumnPropNameInRow="SORTNO" msprop:Generator_ColumnPropNameInTable="SORTNOColumn" msprop:Generator_UserColumnName="SORTNO" type="xs:int" />
+              <xs:element name="ANSWERCONTENT" msprop:Generator_ColumnVarNameInTable="columnANSWERCONTENT" msprop:Generator_ColumnPropNameInRow="ANSWERCONTENT" msprop:Generator_ColumnPropNameInTable="ANSWERCONTENTColumn" msprop:Generator_UserColumnName="ANSWERCONTENT" type="xs:string" minOccurs="0" />
+              <xs:element name="CHECKVAL" msprop:Generator_ColumnVarNameInTable="columnCHECKVAL" msprop:Generator_ColumnPropNameInRow="CHECKVAL" msprop:Generator_ColumnPropNameInTable="CHECKVALColumn" msprop:Generator_UserColumnName="CHECKVAL" type="xs:string" minOccurs="0" />
+              <xs:element name="TEXTRESULT" msprop:Generator_ColumnVarNameInTable="columnTEXTRESULT" msprop:Generator_ColumnPropNameInRow="TEXTRESULT" msprop:Generator_ColumnPropNameInTable="TEXTRESULTColumn" msprop:Generator_UserColumnName="TEXTRESULT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080215CSQuestionListCount" msprop:Generator_TableClassName="SC3080215CSQuestionListCountDataTable" msprop:Generator_TableVarName="tableSC3080215CSQuestionListCount" msprop:Generator_TablePropName="SC3080215CSQuestionListCount" msprop:Generator_RowDeletingName="SC3080215CSQuestionListCountRowDeleting" msprop:Generator_UserTableName="SC3080215CSQuestionListCount" msprop:Generator_RowChangingName="SC3080215CSQuestionListCountRowChanging" msprop:Generator_RowEvHandlerName="SC3080215CSQuestionListCountRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080215CSQuestionListCountRowDeleted" msprop:Generator_RowEvArgName="SC3080215CSQuestionListCountRowChangeEvent" msprop:Generator_RowChangedName="SC3080215CSQuestionListCountRowChanged" msprop:Generator_RowClassName="SC3080215CSQuestionListCountRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COUNT" msprop:Generator_ColumnVarNameInTable="columnCOUNT" msprop:Generator_ColumnPropNameInRow="COUNT" msprop:Generator_ColumnPropNameInTable="COUNTColumn" msprop:Generator_UserColumnName="COUNT" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080215DisplayList" msprop:Generator_TableClassName="SC3080215DisplayListDataTable" msprop:Generator_TableVarName="tableSC3080215DisplayList" msprop:Generator_TablePropName="SC3080215DisplayList" msprop:Generator_RowDeletingName="SC3080215DisplayListRowDeleting" msprop:Generator_UserTableName="SC3080215DisplayList" msprop:Generator_RowChangingName="SC3080215DisplayListRowChanging" msprop:Generator_RowEvHandlerName="SC3080215DisplayListRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080215DisplayListRowDeleted" msprop:Generator_RowEvArgName="SC3080215DisplayListRowChangeEvent" msprop:Generator_RowChangedName="SC3080215DisplayListRowChanged" msprop:Generator_RowClassName="SC3080215DisplayListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ANSWERID" msprop:Generator_ColumnVarNameInTable="columnANSWERID" msprop:Generator_ColumnPropNameInRow="ANSWERID" msprop:Generator_ColumnPropNameInTable="ANSWERIDColumn" msprop:Generator_UserColumnName="ANSWERID" type="xs:decimal" />
+              <xs:element name="PAPERNAME" msprop:Generator_ColumnVarNameInTable="columnPAPERNAME" msprop:Generator_ColumnPropNameInRow="PAPERNAME" msprop:Generator_ColumnPropNameInTable="PAPERNAMEColumn" msprop:Generator_UserColumnName="PAPERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SERIESNAME" msprop:Generator_ColumnVarNameInTable="columnSERIESNAME" msprop:Generator_ColumnPropNameInRow="SERIESNAME" msprop:Generator_ColumnPropNameInTable="SERIESNAMEColumn" msprop:Generator_UserColumnName="SERIESNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO" type="xs:string" minOccurs="0" />
+              <xs:element name="DATEWORD" msprop:Generator_ColumnVarNameInTable="columnDATEWORD" msprop:Generator_ColumnPropNameInRow="DATEWORD" msprop:Generator_ColumnPropNameInTable="DATEWORDColumn" msprop:Generator_UserColumnName="DATEWORD" type="xs:string" minOccurs="0" />
+              <xs:element name="ICONFILENAME" msprop:Generator_ColumnVarNameInTable="columnICONFILENAME" msprop:Generator_ColumnPropNameInRow="ICONFILENAME" msprop:Generator_ColumnPropNameInTable="ICONFILENAMEColumn" msprop:Generator_UserColumnName="ICONFILENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="STAFFNAME" msprop:Generator_ColumnVarNameInTable="columnSTAFFNAME" msprop:Generator_ColumnPropNameInRow="STAFFNAME" msprop:Generator_ColumnPropNameInTable="STAFFNAMEColumn" msprop:Generator_UserColumnName="STAFFNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PAPERTYPE" msprop:Generator_ColumnVarNameInTable="columnPAPERTYPE" msprop:Generator_ColumnPropNameInRow="PAPERTYPE" msprop:Generator_ColumnPropNameInTable="PAPERTYPEColumn" msprop:Generator_UserColumnName="PAPERTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ROWINDEX" msprop:Generator_ColumnVarNameInTable="columnROWINDEX" msprop:Generator_ColumnPropNameInRow="ROWINDEX" msprop:Generator_ColumnPropNameInTable="ROWINDEXColumn" msprop:Generator_UserColumnName="ROWINDEX" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080215DetailChild" msprop:Generator_TableClassName="SC3080215DetailChildDataTable" msprop:Generator_TableVarName="tableSC3080215DetailChild" msprop:Generator_TablePropName="SC3080215DetailChild" msprop:Generator_RowDeletingName="SC3080215DetailChildRowDeleting" msprop:Generator_UserTableName="SC3080215DetailChild" msprop:Generator_RowChangingName="SC3080215DetailChildRowChanging" msprop:Generator_RowEvHandlerName="SC3080215DetailChildRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080215DetailChildRowDeleted" msprop:Generator_RowEvArgName="SC3080215DetailChildRowChangeEvent" msprop:Generator_RowChangedName="SC3080215DetailChildRowChanged" msprop:Generator_RowClassName="SC3080215DetailChildRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONTENTID" msprop:Generator_ColumnVarNameInTable="columnCONTENTID" msprop:Generator_ColumnPropNameInRow="CONTENTID" msprop:Generator_ColumnPropNameInTable="CONTENTIDColumn" msprop:Generator_UserColumnName="CONTENTID" type="xs:int" minOccurs="0" />
+              <xs:element name="ANSWERCONTENT" msprop:Generator_ColumnVarNameInTable="columnANSWERCONTENT" msprop:Generator_ColumnPropNameInRow="ANSWERCONTENT" msprop:Generator_ColumnPropNameInTable="ANSWERCONTENTColumn" msprop:Generator_UserColumnName="ANSWERCONTENT" type="xs:string" minOccurs="0" />
+              <xs:element name="CHECKRESULT" msprop:Generator_ColumnVarNameInTable="columnCHECKRESULT" msprop:Generator_ColumnPropNameInRow="CHECKRESULT" msprop:Generator_ColumnPropNameInTable="CHECKRESULTColumn" msprop:Generator_UserColumnName="CHECKRESULT" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="ANSWERTYPE" msprop:Generator_ColumnVarNameInTable="columnANSWERTYPE" msprop:Generator_ColumnPropNameInRow="ANSWERTYPE" msprop:Generator_ColumnPropNameInTable="ANSWERTYPEColumn" msprop:Generator_UserColumnName="ANSWERTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ANSWERCOUNT" msprop:Generator_ColumnVarNameInTable="columnANSWERCOUNT" msprop:Generator_ColumnPropNameInRow="ANSWERCOUNT" msprop:Generator_ColumnPropNameInTable="ANSWERCOUNTColumn" msprop:Generator_UserColumnName="ANSWERCOUNT" type="xs:int" minOccurs="0" />
+              <xs:element name="TEXTRESULT" msprop:Generator_ColumnVarNameInTable="columnTEXTRESULT" msprop:Generator_ColumnPropNameInRow="TEXTRESULT" msprop:Generator_ColumnPropNameInTable="TEXTRESULTColumn" msprop:Generator_UserColumnName="TEXTRESULT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080215DetailPurent" msprop:Generator_TableClassName="SC3080215DetailPurentDataTable" msprop:Generator_TableVarName="tableSC3080215DetailPurent" msprop:Generator_TablePropName="SC3080215DetailPurent" msprop:Generator_RowDeletingName="SC3080215DetailPurentRowDeleting" msprop:Generator_UserTableName="SC3080215DetailPurent" msprop:Generator_RowChangingName="SC3080215DetailPurentRowChanging" msprop:Generator_RowEvHandlerName="SC3080215DetailPurentRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080215DetailPurentRowDeleted" msprop:Generator_RowEvArgName="SC3080215DetailPurentRowChangeEvent" msprop:Generator_RowChangedName="SC3080215DetailPurentRowChanged" msprop:Generator_RowClassName="SC3080215DetailPurentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONTENTID" msprop:Generator_ColumnVarNameInTable="columnCONTENTID" msprop:Generator_ColumnPropNameInRow="CONTENTID" msprop:Generator_ColumnPropNameInTable="CONTENTIDColumn" msprop:Generator_UserColumnName="CONTENTID" type="xs:int" />
+              <xs:element name="QUESTION_INDEXNAME" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnQUESTION_INDEXNAME" msprop:Generator_ColumnPropNameInRow="QUESTION_INDEXNAME" msprop:Generator_ColumnPropNameInTable="QUESTION_INDEXNAMEColumn" msprop:Generator_UserColumnName="QUESTION_INDEXNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ANSWER_INDEXNAME" msprop:Generator_ColumnVarNameInTable="columnANSWER_INDEXNAME" msprop:Generator_ColumnPropNameInRow="ANSWER_INDEXNAME" msprop:Generator_ColumnPropNameInTable="ANSWER_INDEXNAMEColumn" msprop:Generator_UserColumnName="ANSWER_INDEXNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="QUESTIONCONTENT" msprop:Generator_ColumnVarNameInTable="columnQUESTIONCONTENT" msprop:Generator_ColumnPropNameInRow="QUESTIONCONTENT" msprop:Generator_ColumnPropNameInTable="QUESTIONCONTENTColumn" msprop:Generator_UserColumnName="QUESTIONCONTENT" type="xs:string" minOccurs="0" />
+              <xs:element name="ANSWERCOUNT" msprop:Generator_ColumnVarNameInTable="columnANSWERCOUNT" msprop:Generator_ColumnPropNameInRow="ANSWERCOUNT" msprop:Generator_ColumnPropNameInTable="ANSWERCOUNTColumn" msprop:Generator_UserColumnName="ANSWERCOUNT" type="xs:int" minOccurs="0" />
+              <xs:element name="ANSWERTYPE" msprop:Generator_ColumnVarNameInTable="columnANSWERTYPE" msprop:Generator_ColumnPropNameInRow="ANSWERTYPE" msprop:Generator_ColumnPropNameInTable="ANSWERTYPEColumn" msprop:Generator_UserColumnName="ANSWERTYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SC3080215DisplayList" />
+      <xs:field xpath="mstns:ANSWERID" />
+    </xs:unique>
+    <xs:unique name="SC3080215DetailPurent_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SC3080215DetailPurent" />
+      <xs:field xpath="mstns:CONTENTID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

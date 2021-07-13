@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MC3040204DataSet" targetNamespace="http://tempuri.org/MC3040204DataSet.xsd" xmlns:mstns="http://tempuri.org/MC3040204DataSet.xsd" xmlns="http://tempuri.org/MC3040204DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MC3040204DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MC3040204DataSet" msprop:Generator_UserDSName="MC3040204DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MC3040204RssSiteInfo" msprop:Generator_TableClassName="MC3040204RssSiteInfoDataTable" msprop:Generator_TableVarName="tableMC3040204RssSiteInfo" msprop:Generator_TablePropName="MC3040204RssSiteInfo" msprop:Generator_RowDeletingName="MC3040204RssSiteInfoRowDeleting" msprop:Generator_UserTableName="MC3040204RssSiteInfo" msprop:Generator_RowChangingName="MC3040204RssSiteInfoRowChanging" msprop:Generator_RowEvHandlerName="MC3040204RssSiteInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="MC3040204RssSiteInfoRowDeleted" msprop:Generator_RowEvArgName="MC3040204RssSiteInfoRowChangeEvent" msprop:Generator_RowChangedName="MC3040204RssSiteInfoRowChanged" msprop:Generator_RowClassName="MC3040204RssSiteInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SITENO" msprop:Generator_ColumnVarNameInTable="columnSITENO" msprop:Generator_ColumnPropNameInRow="SITENO" msprop:Generator_ColumnPropNameInTable="SITENOColumn" msprop:Generator_UserColumnName="SITENO" type="xs:long" minOccurs="0" />
+              <xs:element name="SITE_RSSURL" msprop:Generator_ColumnVarNameInTable="columnSITE_RSSURL" msprop:Generator_ColumnPropNameInRow="SITE_RSSURL" msprop:Generator_ColumnPropNameInTable="SITE_RSSURLColumn" msprop:Generator_UserColumnName="SITE_RSSURL" type="xs:string" minOccurs="0" />
+              <xs:element name="SITE_LASTUPDATE" msprop:Generator_ColumnVarNameInTable="columnSITE_LASTUPDATE" msprop:Generator_ColumnPropNameInRow="SITE_LASTUPDATE" msprop:Generator_ColumnPropNameInTable="SITE_LASTUPDATEColumn" msprop:Generator_UserColumnName="SITE_LASTUPDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="TIMEDIFFERENCE" msprop:Generator_ColumnVarNameInTable="columnTIMEDIFFERENCE" msprop:Generator_ColumnPropNameInRow="TIMEDIFFERENCE" msprop:Generator_ColumnPropNameInTable="TIMEDIFFERENCEColumn" msprop:Generator_UserColumnName="TIMEDIFFERENCE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MC3040204RssItem" msprop:Generator_TableClassName="MC3040204RssItemDataTable" msprop:Generator_TableVarName="tableMC3040204RssItem" msprop:Generator_TablePropName="MC3040204RssItem" msprop:Generator_RowDeletingName="MC3040204RssItemRowDeleting" msprop:Generator_UserTableName="MC3040204RssItem" msprop:Generator_RowChangingName="MC3040204RssItemRowChanging" msprop:Generator_RowEvHandlerName="MC3040204RssItemRowChangeEventHandler" msprop:Generator_RowDeletedName="MC3040204RssItemRowDeleted" msprop:Generator_RowEvArgName="MC3040204RssItemRowChangeEvent" msprop:Generator_RowChangedName="MC3040204RssItemRowChanged" msprop:Generator_RowClassName="MC3040204RssItemRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SITENO" msprop:Generator_ColumnVarNameInTable="columnSITENO" msprop:Generator_ColumnPropNameInRow="SITENO" msprop:Generator_ColumnPropNameInTable="SITENOColumn" msprop:Generator_UserColumnName="SITENO" type="xs:long" minOccurs="0" />
+              <xs:element name="ITEM_TITLE" msprop:Generator_ColumnVarNameInTable="columnITEM_TITLE" msprop:Generator_ColumnPropNameInRow="ITEM_TITLE" msprop:Generator_ColumnPropNameInTable="ITEM_TITLEColumn" msprop:Generator_UserColumnName="ITEM_TITLE" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_URL" msprop:Generator_ColumnVarNameInTable="columnITEM_URL" msprop:Generator_ColumnPropNameInRow="ITEM_URL" msprop:Generator_ColumnPropNameInTable="ITEM_URLColumn" msprop:Generator_UserColumnName="ITEM_URL" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_SELECT" msprop:Generator_ColumnVarNameInTable="columnITEM_SELECT" msprop:Generator_ColumnPropNameInRow="ITEM_SELECT" msprop:Generator_ColumnPropNameInTable="ITEM_SELECTColumn" msprop:Generator_UserColumnName="ITEM_SELECT" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_CREATEDATE" msprop:Generator_ColumnVarNameInTable="columnITEM_CREATEDATE" msprop:Generator_ColumnPropNameInRow="ITEM_CREATEDATE" msprop:Generator_ColumnPropNameInTable="ITEM_CREATEDATEColumn" msprop:Generator_UserColumnName="ITEM_CREATEDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ITEM_CATEGORY" msprop:Generator_ColumnVarNameInTable="columnITEM_CATEGORY" msprop:Generator_ColumnPropNameInRow="ITEM_CATEGORY" msprop:Generator_ColumnPropNameInTable="ITEM_CATEGORYColumn" msprop:Generator_UserColumnName="ITEM_CATEGORY" type="xs:string" minOccurs="0" />
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

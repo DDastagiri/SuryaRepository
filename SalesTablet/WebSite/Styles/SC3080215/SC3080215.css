@@ -1,0 +1,486 @@
+﻿/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SC3080215.css
+─────────────────────────────────────
+機能： CSアンケート一覧・詳細
+補足： 
+作成： 2012/02/06 TCS 明瀬
+─────────────────────────────────────*/
+
+@charset "utf-8";
+
+/******************************************************************************
+ *	CSアンケート共通 Start
+ ******************************************************************************/
+/* CSアンケートのタイトル */
+.CSSurveyTitleName
+{
+	height:30px; 
+	width: 495px;
+	z-index:-1;
+}
+
+.CSSurveyTitleName h3
+{
+	font-size:20px; 
+	text-shadow:0px 1px 0px #404040;
+	color:#FFF; 
+	text-align:center;	
+	margin-top:7px;
+}
+
+.CSSurveyTitleButtonLeft {
+	position:absolute;
+	top:-2px;
+	left:6px;
+	display:block;
+	color:#FFF;
+	/*font-size:0.8em;*/
+	width:90px;
+	height:30px;
+	z-index:1;
+	/*overflow:hidden;*/
+}
+
+.CSSurveyTitleButtonLeft a{
+	position:absolute;
+	left:9px;
+	display:block;
+	color:#FFF;
+	/*font-size:0.75em;*/
+	font-size:5px;
+	width:80px;
+	height:17px;
+	padding:5px 5px 4px 0px;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.51, #1a233e),
+							color-stop(0.511, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.CSSurveyTitleButtonLeft .tgLeft{
+	position:absolute;
+	left:1px;
+	top:5px;
+	display:block;
+	width:20px;
+	height:18px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(53deg) skew(15deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.48, #1a233e),
+							color-stop(0.481, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+/******************************************************************************
+ *	CSアンケート共通 End
+ ******************************************************************************/
+
+/******************************************************************************
+ *	CSアンケート一覧 Start
+ ******************************************************************************/
+
+/* CSアンケート一覧のデータ領域 */
+.CSSurveyListContent
+{
+	border-radius:5px;
+	width:473px;
+}
+
+/* CSアンケート一覧のデータ部 */
+.CSSurveyListContentBody
+{
+    border:none;
+    border-radius:2px;
+}
+
+/* CSアンケート一覧のデータリスト */
+.CSSurveyListData
+{
+    font-size:17px;
+}
+
+.CSSurveyListWrap
+{
+    padding-top:10px;
+}
+
+.CSSurveyListData li
+{ 
+	padding-left: 10px;
+	border-left:#BBB 1px solid;
+	border-right:#BBB 1px solid;
+	border-bottom:#BBB 1px solid;
+	height:42px; line-height:43px;
+	background:#FFF url(../Images/SC3080215/ico52.png) 450px 14px no-repeat;
+	position:relative;
+	border-top:#FFF 1px solid; border-bottom:#BBB 1px solid;
+}
+
+/* アンケート一覧の行データ */
+.CSSurveyListData li:nth-child(1)
+{
+    border-top:#BBB 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* アンケート一覧の最終行データ */
+.CSSurveyListData li:nth-last-child(1)
+{
+    margin-bottom: -10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* アンケート名 */
+.CSSurveyListData .surveyNameBox
+{
+	color:#666;
+	font-size:17px; 
+	line-height:17px;
+	display:block;
+	height:17px; 
+	/*width:350px;*/
+	position:absolute;
+	top:13px;
+	z-index:1;
+}
+
+/* 車種、登録No. */
+.CSSurveyListData .vehicleBox
+{
+	color:#666;
+	font-size:12px; 
+	line-height:17px;
+	display:block;
+	height:36px; 
+	width:156px;
+	position:absolute;
+	top:5px; 
+	left:144px;
+	z-index:2;	
+}
+
+/* 更新日、更新者 */
+.CSSurveyListData .updateBox
+{
+	color:#666;
+	display:block;
+	height:33px; width:140px;
+	position:absolute;
+	top:4px; left:300px;
+	/*background:url(../Images/SC3080215/ico128.png) left bottom no-repeat;*/
+	z-index:3;
+	line-height:10px;
+}
+
+/* 更新日 */
+.CSSurveyListData .updateBox .updateDate
+{
+	display:block; 
+	font-size:10px;
+	line-height:10px;
+	height:14px;
+}
+
+/* 更新者アカウント名 */
+.CSSurveyListData .updateBox .updateAccountName
+{
+	font-size:15px; 
+	line-height:15px;
+	text-indent:23px;
+	display:block;
+	height:19px;
+	padding-top:3px;
+}
+/******************************************************************************
+ *	CSアンケート一覧 End
+ ******************************************************************************/
+
+/******************************************************************************
+ *	CSアンケート詳細 Start
+ ******************************************************************************/
+/* CSアンケート詳細のデータ領域 */
+.CSSurveyDetailContent
+{
+	width:473px;
+	height:580px;
+	background-color:rgba(0, 0, 0, 0);
+}
+
+/* CSアンケート詳細のデータ部 */
+.CSSurveyDetailContentBody 
+{
+    border:none; 
+    background-color:rgba(0, 0, 0, 0);
+}
+
+/* CSアンケート詳細の第２ヘッダー */
+.CSSurveyDetailContentBody .headerSet
+{
+	display:block;
+	height:25px;
+	position:relative;
+	font-size:15px; 
+	color:#666;
+}
+
+/* CSアンケート詳細の第２ヘッダーの更新者アカウント名（アイコン付） */
+.CSSurveyDetailContentBody .headerSet .updateAccountName
+{
+	display:block;
+	height:20px; 
+	width:130px;
+	position:absolute;
+	text-indent:24px;
+	left:-1px;
+	margin-top:1px;
+	font-weight:bold;
+	margin-left:5px;
+	position:absolute;
+	z-index:1;
+}
+
+/* CSアンケート詳細の第２ヘッダーの車種 */
+.CSSurveyDetailContentBody .headerSet .vehicle
+{
+	display:block;
+	height:22px; 
+	width:130px;
+	position:absolute;
+	left:135px;
+	text-align:center;
+	padding-top:4px;
+	z-index:2;
+	font-weight:bold;
+	background-position:center;
+}
+
+/* CSアンケート詳細の第２ヘッダーの登録No. */
+.CSSurveyDetailContentBody .headerSet .regNo
+{
+	display:block;
+	height:22px; 
+	width:114px;
+	position:absolute;
+	left:265px;
+	text-align:center;
+	padding-top:1px;
+	z-index:3;
+	font-weight:bold;
+}
+
+/* CSアンケート詳細の第２ヘッダーの日付文言 */
+.CSSurveyDetailContentBody .headerSet .updateDate
+{
+	font-size:12px;
+	display:block; 
+	text-align:right;
+	height:18px; 
+	width:70px;
+	position:absolute;
+	padding-top:6px;
+	right:2px;
+	z-index:4;
+}
+
+.CSSurveyDetailContentBodyWrap 
+{ 
+    height:530px; 
+    font-size:13px; 
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.CSSurveyDetailList 
+{ 
+    font-size:17px; 
+    display:block; 
+    position:relative; 
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.CSSurveyDetailList .qBox
+{
+    width:70px;
+}
+
+.CSSurveyDetailList .aBox
+{
+    width:70px;
+}
+
+.CSSurveyDetailList .aBox h6
+{
+	font-size:16px;	
+	line-height:16px;
+	font-weight:normal;	
+	display:block;
+	width:57px; 
+	text-align:center; 
+	color:#666;
+}
+
+.CSSurveyDetailList .qBox h6
+{
+	font-size:16px;	
+	line-height:16px;
+	font-weight:normal;	
+	display:block;
+	width:57px; 
+	text-align:center; 
+	color:#666;
+}
+
+.CSSurveyDetailList .qAndABox h6
+{
+	font-size:16px;	
+	line-height:16px;
+	font-weight:normal;	
+	display:block;
+	width:60px; 
+	position:absolute;
+	text-align:center; 
+	color:#666;
+}
+
+.CSSurveyDetailList .aContentBox
+{
+	color:#8B8B8B;
+	font-size:16px; 
+	line-height:24px;
+	z-index:2;
+}
+
+.CSSurveyDetailList .aContentBox dd
+{
+	text-indent:18px;	
+	display:block;
+	margin-left:12px;
+}
+
+.CSSurveyDetailList .aContentBox dd.On{
+	background:url(../Images/SC3080215/ico51black.png) 0px 5px no-repeat;
+	color:#000;
+	margin-left:11px;
+}
+
+/******************************************************************************
+ *	CSアンケート詳細 End
+ ******************************************************************************/
+
+/***************************************************************
+* 文字列調整 Start
+****************************************************************/
+/*文字を設定されたWidthに合わせて強制的に切る*/
+.CSSurveyClip{
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*文字を設定されたWidthに合わせて...表示*/
+.CSSurveyEllipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*文字を設定されたWidthに合わせて改行*/
+.CSSurveyWrap{
+	text-overflow: clip;
+	overflow: hidden;
+}
+/***************************************************************
+* 文字列調整 End
+****************************************************************/
+
+/***************************************************************
+* コールバック Start
+****************************************************************/
+/*コールバック時のオーバーレイ*/
+#registOverlayBlackSC3080215 {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:-2000px;
+	left:-2000px;
+	background:#000;
+	width:4000px;
+	height:4000px;
+	z-index:100001;
+	display:none;
+	opacity:0;
+}
+
+#registOverlayBlackSC3080215.open { opacity:0.01; }
+
+/*コールバック時の処理中アニメーション*/
+#processingServerSC3080215 {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:270px;
+	left:230px;
+	width:38px;
+	height:38px;
+	z-index:100002;
+}
+
+#processingServerSC3080215.show { display: block; }
+
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+/***************************************************************
+* コールバック End
+****************************************************************/
+
+.hiddenButton {
+    display: none;
+}
+
+.popover {
+    position: absolute;
+    display: none;
+    -moz-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    background-color:#666;
+    border-radius:8px;
+    background:#FFF;
+    border:#1c232f 1px solid;
+    box-shadow:0px 0px 12px #333;
+	/*background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+	color-stop(0.102, rgba(120,128,147,0.9)),
+	color-stop(0.115, rgba(87,95,114,0.9)),
+	color-stop(0.136, rgba(29,40,59,0.9)),
+	color-stop(0.1365, rgba(3,11,26,0.9)),
+	to(rgba(7,11,29,0.9)));*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#565f72), color-stop(0.035, #19233e), color-stop(0.0351, #000b29), to(#000b29));
+}

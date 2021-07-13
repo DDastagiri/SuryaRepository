@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProgramSettingV4DataSet" targetNamespace="http://tempuri.org/ProgramSettingV4DataSet.xsd" xmlns:mstns="http://tempuri.org/ProgramSettingV4DataSet.xsd" xmlns="http://tempuri.org/ProgramSettingV4DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProgramSettingV4DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProgramSettingV4DataSet" msprop:Generator_UserDSName="ProgramSettingV4DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PROGRAMSETTINGV4" msdata:CaseSensitive="True" msprop:Generator_TableClassName="PROGRAMSETTINGV4DataTable" msprop:Generator_TableVarName="tablePROGRAMSETTINGV4" msprop:Generator_TablePropName="PROGRAMSETTINGV4" msprop:Generator_RowDeletingName="PROGRAMSETTINGV4RowDeleting" msprop:Generator_RowChangingName="PROGRAMSETTINGV4RowChanging" msprop:Generator_RowEvHandlerName="PROGRAMSETTINGV4RowChangeEventHandler" msprop:Generator_RowDeletedName="PROGRAMSETTINGV4RowDeleted" msprop:Generator_UserTableName="PROGRAMSETTINGV4" msprop:Generator_RowChangedName="PROGRAMSETTINGV4RowChanged" msprop:Generator_RowEvArgName="PROGRAMSETTINGV4RowChangeEvent" msprop:Generator_RowClassName="PROGRAMSETTINGV4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SETTING_VAL" msprop:Generator_ColumnVarNameInTable="columnSETTING_VAL" msprop:Generator_ColumnPropNameInRow="SETTING_VAL" msprop:Generator_ColumnPropNameInTable="SETTING_VALColumn" msprop:Generator_UserColumnName="SETTING_VAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3010101DataSet" targetNamespace="http://tempuri.org/SC3010101DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3010101DataSet.xsd" xmlns="http://tempuri.org/SC3010101DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3010101DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3010101DataSet" msprop:Generator_UserDSName="SC3010101DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3010101MacDataTable" msprop:Generator_TableClassName="SC3010101MacDataTableDataTable" msprop:Generator_TableVarName="tableSC3010101MacDataTable" msprop:Generator_TablePropName="SC3010101MacDataTable" msprop:Generator_RowDeletingName="SC3010101MacDataTableRowDeleting" msprop:Generator_UserTableName="SC3010101MacDataTable" msprop:Generator_RowChangingName="SC3010101MacDataTableRowChanging" msprop:Generator_RowEvHandlerName="SC3010101MacDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3010101MacDataTableRowDeleted" msprop:Generator_RowEvArgName="SC3010101MacDataTableRowChangeEvent" msprop:Generator_RowChangedName="SC3010101MacDataTableRowChanged" msprop:Generator_RowClassName="SC3010101MacDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Macaddress" msprop:Generator_ColumnVarNameInTable="columnMacaddress" msprop:Generator_ColumnPropNameInRow="Macaddress" msprop:Generator_ColumnPropNameInTable="MacaddressColumn" msprop:Generator_UserColumnName="Macaddress" type="xs:string" minOccurs="0" />
+              <xs:element name="Dlrcd" msprop:Generator_ColumnVarNameInTable="columnDlrcd" msprop:Generator_ColumnPropNameInRow="Dlrcd" msprop:Generator_ColumnPropNameInTable="DlrcdColumn" msprop:Generator_UserColumnName="Dlrcd" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

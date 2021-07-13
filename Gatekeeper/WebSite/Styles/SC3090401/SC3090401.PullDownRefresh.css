@@ -1,0 +1,156 @@
+﻿/*===================================================
+* SC3090401.PullDownRefresh.css
+*---------------------------------------------------
+* 機能： 予約一覧 プルダウンリフレッシュ CSS
+* 作成： 2018/02/19 NSK h.kawatani   REQ-SVT-TMT-20170615-001 iPod Gatekeeperに顧客の車両登録番号を入力する機能を追加
+* 更新： 2019/02/28 NSK h.kawatani   REQ-SVT-TMT-20180601-001 Gate Keeper機能の視認性操作性改善 $01
+===================================================*/
+/* プルダウンリフレッシュエリア */
+.pullDownToRefresh 
+{
+    position:absolute;
+    width:981px;
+    height:555px;
+    border-top: #000000 1px solid;
+    border-left: #000000 1px solid;
+    top:-553px;
+    left:-190px;
+    background:#E1E9EA;
+}
+    
+/* マーカークラス */
+.pullDownToRefresh.step0 {}
+.pullDownToRefresh.step1 {}
+.pullDownToRefresh.step2 {}
+    
+/* 内部ボックス */
+.pullDownToRefresh-inBox
+{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:981px;
+    height:60px;
+    box-sizing:border-box;
+    border-bottom:#666 1px solid;
+}
+    
+/* 中央寄せのアイコン＆テキストを囲う枠 */
+.pullDownToRefresh-center
+{
+    width:100%;
+    height:100%;
+    position:relative;
+    box-sizing:border-box;
+}
+    
+/* アイコン(初期状態) */
+.pullDownToRefresh-icon 
+{
+    position:absolute;
+    left:370px;
+    top:0px;
+    display:block;
+    width:21px;
+    height:55px;
+    background:url(../Images/SC3090401/FlickDownArrow.png) center center no-repeat;
+    -webkit-transition:-webkit-transform 400ms linear 0;
+}
+    
+/* アイコン(プルダウンして更新の状態) */
+.pullDownToRefresh.step0 .pullDownToRefresh-icon { -webkit-transform:rotate(0deg); }
+.pullDownToRefresh.step1 .pullDownToRefresh-icon { -webkit-transform:rotate(180deg); }
+.pullDownToRefresh.step2 .pullDownToRefresh-icon { display:none; }
+
+/* アイコン(ロード中非表示) */
+.pullDownToRefresh-loding 
+{
+    position:absolute;
+    top:10px;
+    left:370px;
+    display:block;
+    width:21px;
+    height:32px;
+    background:url(../Images/MasterPage/animeicn.png) center center no-repeat;
+    display:none;
+}
+    
+/* アイコン(ロード中) */
+.pullDownToRefresh.step2 .pullDownToRefresh-loding
+{
+    display:block;
+    -webkit-animation: ReleaseLoadingAnimation 1.0s infinite linear;
+}
+    
+/* 読み込み中 */
+@-webkit-keyframes ReleaseLoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
+    
+/* テキスト */
+.pullDownToRefresh-text  
+{
+    height:100%; 
+    text-align:left; 
+    font-size:18px;
+    color:#c6c6c6;
+    font-weight:bold;
+    padding-top:10px;
+}
+    
+/* 最終更新・メッセージテキストボックス */
+span.pullDownToRefresh-textBlock 
+{
+    display:block;
+    line-height:16px;    
+}
+    
+/* メッセージ欄 */
+.pullDownToRefresh-message { font-weight:bold; }
+    
+    
+/* メッセージのデフォルトスタイル */
+/* メッセージのデフォルトスタイル */
+.pullDownToRefresh-message-step0,
+.pullDownToRefresh-message-step1,
+.pullDownToRefresh-message-step2 
+{   
+    position: absolute;
+    display:none; 
+    font-size:17px;
+	font-weight:bold;
+	text-align:left;
+	color:#375388;
+}
+
+/* $01 start */
+/*.pullDownToRefresh.step0 .pullDownToRefresh-message-step0 { display:inline; left: 400px; width: 200px; height: 24px;} */
+/*.pullDownToRefresh.step1 .pullDownToRefresh-message-step1 { display:inline; left: 406px; width: 194px; height: 24px;} */
+/*.pullDownToRefresh.step2 .pullDownToRefresh-message-step2 { display:inline; left: 444px; width: 156px; top: 10px; height: 24px;} */
+.pullDownToRefresh.step0 .pullDownToRefresh-message-step0 { display:inline; left: 400px; width: 200px; height: 24px; text-align: center;}
+.pullDownToRefresh.step1 .pullDownToRefresh-message-step1 { display:inline; left: 400px; width: 200px; height: 24px; text-align: center;}
+.pullDownToRefresh.step2 .pullDownToRefresh-message-step2 { display:inline; left: 400px; width: 200px; height: 24px; text-align: center;}
+/* $01 end */
+
+.pullDownToRefresh-message-updateTime
+{   
+    font-size:15px;	
+	font-weight:bold;	
+	text-align:left;
+	color:#666;
+}
+#FixMessageUpdateTime
+{
+    width: 104px;
+    position:absolute;
+    left: 398px;
+    
+    }
+    
+#MessageUpdateTime
+{
+    width: 118px;
+    position:absolute;
+    left: 497px;
+        }

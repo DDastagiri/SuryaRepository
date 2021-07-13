@@ -1,0 +1,83 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	font-family:Helvetica;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td	{
+	margin: 0;	padding: 0;
+}
+
+li{
+	list-style:none;
+	margin:0px;
+	text-indent: 0px;
+	padding: 0px;
+}
+
+hr {
+	display: none;
+	clear:both;
+}
+
+
+.clearboth{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	color:#FFFFFF;
+	font-size:1px;
+	line-height:1px;
+	text-indent:-3000px;
+	height:1px;
+}
+
+a{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+
+/* その他
+------------------------------------------------------------------------------*/
+/*#MainBlock{
+	position:relative;
+	width:1024px;
+	height:655px;
+	background:#2b2b2b;
+	font-size:12px;
+	color:#FFF;
+}*/
+div#main{
+	position:relative;
+	width:1024px;
+	height:655px;
+	background:#2b2b2b;
+	font-size:12px;
+	color:#FFF;
+}
+#main #contents{
+	display:block;
+	padding:0px 0px;
+}
+#Inner{
+	position:relative;
+	padding:18px 0 0 20px;
+}
+
+
+
+

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3130501DataSet" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3130501DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3130501DataSet" msprop:Generator_UserDSName="SC3130501DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3130501DisplayData" msprop:Generator_TableClassName="SC3130501DisplayDataDataTable" msprop:Generator_TableVarName="tableSC3130501DisplayData" msprop:Generator_RowChangedName="SC3130501DisplayDataRowChanged" msprop:Generator_TablePropName="SC3130501DisplayData" msprop:Generator_RowDeletingName="SC3130501DisplayDataRowDeleting" msprop:Generator_RowChangingName="SC3130501DisplayDataRowChanging" msprop:Generator_RowEvHandlerName="SC3130501DisplayDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3130501DisplayDataRowDeleted" msprop:Generator_RowClassName="SC3130501DisplayDataRow" msprop:Generator_UserTableName="SC3130501DisplayData" msprop:Generator_RowEvArgName="SC3130501DisplayDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STF_NAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STF_NAME" msprop:Generator_ColumnVarNameInTable="columnSTF_NAME" msprop:Generator_ColumnPropNameInTable="STF_NAMEColumn" msprop:Generator_UserColumnName="STF_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CALLNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CALLNO" msprop:Generator_ColumnVarNameInTable="columnCALLNO" msprop:Generator_ColumnPropNameInTable="CALLNOColumn" msprop:Generator_UserColumnName="CALLNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CALLPLACE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CALLPLACE" msprop:Generator_ColumnVarNameInTable="columnCALLPLACE" msprop:Generator_ColumnPropNameInTable="CALLPLACEColumn" msprop:Generator_UserColumnName="CALLPLACE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3130501WaitNumber" msprop:Generator_TableClassName="SC3130501WaitNumberDataTable" msprop:Generator_TableVarName="tableSC3130501WaitNumber" msprop:Generator_RowChangedName="SC3130501WaitNumberRowChanged" msprop:Generator_TablePropName="SC3130501WaitNumber" msprop:Generator_RowDeletingName="SC3130501WaitNumberRowDeleting" msprop:Generator_RowChangingName="SC3130501WaitNumberRowChanging" msprop:Generator_RowEvHandlerName="SC3130501WaitNumberRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3130501WaitNumberRowDeleted" msprop:Generator_RowClassName="SC3130501WaitNumberRow" msprop:Generator_UserTableName="SC3130501WaitNumber" msprop:Generator_RowEvArgName="SC3130501WaitNumberRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WAITNUMBER" msprop:Generator_ColumnVarNameInTable="columnWAITNUMBER" msprop:Generator_ColumnPropNameInRow="WAITNUMBER" msprop:Generator_ColumnPropNameInTable="WAITNUMBERColumn" msprop:Generator_UserColumnName="WAITNUMBER" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3130501DateFormat" msprop:Generator_TableClassName="SC3130501DateFormatDataTable" msprop:Generator_TableVarName="tableSC3130501DateFormat" msprop:Generator_RowChangedName="SC3130501DateFormatRowChanged" msprop:Generator_TablePropName="SC3130501DateFormat" msprop:Generator_RowDeletingName="SC3130501DateFormatRowDeleting" msprop:Generator_RowChangingName="SC3130501DateFormatRowChanging" msprop:Generator_RowEvHandlerName="SC3130501DateFormatRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3130501DateFormatRowDeleted" msprop:Generator_RowClassName="SC3130501DateFormatRow" msprop:Generator_UserTableName="SC3130501DateFormat" msprop:Generator_RowEvArgName="SC3130501DateFormatRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONVID" msprop:Generator_ColumnVarNameInTable="columnCONVID" msprop:Generator_ColumnPropNameInRow="CONVID" msprop:Generator_ColumnPropNameInTable="CONVIDColumn" msprop:Generator_UserColumnName="CONVID" type="xs:int" />
+              <xs:element name="FORMAT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FORMAT" msprop:Generator_ColumnVarNameInTable="columnFORMAT" msprop:Generator_ColumnPropNameInTable="FORMATColumn" msprop:Generator_UserColumnName="FORMAT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

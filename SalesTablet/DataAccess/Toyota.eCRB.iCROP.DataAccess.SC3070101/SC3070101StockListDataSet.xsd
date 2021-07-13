@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3070101StockListDataSet" targetNamespace="http://tempuri.org/SC3070101StockListDataSet.xsd" xmlns:mstns="http://tempuri.org/SC3070101StockListDataSet.xsd" xmlns="http://tempuri.org/SC3070101StockListDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3070101StockListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3070101StockListDataSet" msprop:Generator_UserDSName="SC3070101StockListDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CommonDataTable" msprop:Generator_TableClassName="CommonDataTableDataTable" msprop:Generator_TableVarName="tableCommonDataTable" msprop:Generator_TablePropName="CommonDataTable" msprop:Generator_RowDeletingName="CommonDataTableRowDeleting" msprop:Generator_UserTableName="CommonDataTable" msprop:Generator_RowChangingName="CommonDataTableRowChanging" msprop:Generator_RowEvHandlerName="CommonDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="CommonDataTableRowDeleted" msprop:Generator_RowEvArgName="CommonDataTableRowChangeEvent" msprop:Generator_RowChangedName="CommonDataTableRowChanged" msprop:Generator_RowClassName="CommonDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KyeCode" msprop:Generator_ColumnVarNameInTable="columnKyeCode" msprop:Generator_ColumnPropNameInRow="KyeCode" msprop:Generator_ColumnPropNameInTable="KyeCodeColumn" msprop:Generator_UserColumnName="KyeCode" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Model" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInTable="ModelColumn" msprop:Generator_UserColumnName="Model" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Suffix" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Suffix" msprop:Generator_ColumnVarNameInTable="columnSuffix" msprop:Generator_ColumnPropNameInTable="SuffixColumn" msprop:Generator_UserColumnName="Suffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrderDataTable" msprop:Generator_TableClassName="OrderDataTableDataTable" msprop:Generator_TableVarName="tableOrderDataTable" msprop:Generator_TablePropName="OrderDataTable" msprop:Generator_RowDeletingName="OrderDataTableRowDeleting" msprop:Generator_UserTableName="OrderDataTable" msprop:Generator_RowChangingName="OrderDataTableRowChanging" msprop:Generator_RowEvHandlerName="OrderDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="OrderDataTableRowDeleted" msprop:Generator_RowEvArgName="OrderDataTableRowChangeEvent" msprop:Generator_RowChangedName="OrderDataTableRowChanged" msprop:Generator_RowClassName="OrderDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KyeCode" msprop:Generator_ColumnVarNameInTable="columnKyeCode" msprop:Generator_ColumnPropNameInRow="KyeCode" msprop:Generator_ColumnPropNameInTable="KyeCodeColumn" msprop:Generator_UserColumnName="KyeCode" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Color" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewlyDeliveryDate" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="NewlyDeliveryDate" msprop:Generator_ColumnVarNameInTable="columnNewlyDeliveryDate" msprop:Generator_ColumnPropNameInTable="NewlyDeliveryDateColumn" msprop:Generator_UserColumnName="NewlyDeliveryDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StockDataTable" msprop:Generator_TableClassName="StockDataTableDataTable" msprop:Generator_TableVarName="tableStockDataTable" msprop:Generator_TablePropName="StockDataTable" msprop:Generator_RowDeletingName="StockDataTableRowDeleting" msprop:Generator_UserTableName="StockDataTable" msprop:Generator_RowChangingName="StockDataTableRowChanging" msprop:Generator_RowEvHandlerName="StockDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="StockDataTableRowDeleted" msprop:Generator_RowEvArgName="StockDataTableRowChangeEvent" msprop:Generator_RowChangedName="StockDataTableRowChanged" msprop:Generator_RowClassName="StockDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KyeCode" msprop:Generator_ColumnVarNameInTable="columnKyeCode" msprop:Generator_ColumnPropNameInRow="KyeCode" msprop:Generator_ColumnPropNameInTable="KyeCodeColumn" msprop:Generator_UserColumnName="KyeCode" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Color" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AcceptDate" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="AcceptDate" msprop:Generator_ColumnVarNameInTable="columnAcceptDate" msprop:Generator_ColumnPropNameInTable="AcceptDateColumn" msprop:Generator_UserColumnName="AcceptDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

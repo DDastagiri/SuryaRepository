@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3080204DataSet" targetNamespace="http://tempuri.org/SC3080204DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3080204DataSet.xsd" xmlns="http://tempuri.org/SC3080204DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="DATA SOURCE=OSG-WLNW-WS2003;PASSWORD=ICROP_SMS;PERSIST SECURITY INFO=True;USER ID=ICROP_SMS" IsAppSettingsProperty="false" Modifier="Assembly" Name="ICROP_SMS.OSG-WLNW-WS2003" ParameterPrefix=":" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3080204DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3080204DataSet" msprop:Generator_UserDSName="SC3080204DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3080204CustMemo" msprop:Generator_TableClassName="SC3080204CustMemoDataTable" msprop:Generator_TableVarName="tableSC3080204CustMemo" msprop:Generator_TablePropName="SC3080204CustMemo" msprop:Generator_RowDeletingName="SC3080204CustMemoRowDeleting" msprop:Generator_RowChangingName="SC3080204CustMemoRowChanging" msprop:Generator_RowEvHandlerName="SC3080204CustMemoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080204CustMemoRowDeleted" msprop:Generator_UserTableName="SC3080204CustMemo" msprop:Generator_RowChangedName="SC3080204CustMemoRowChanged" msprop:Generator_RowEvArgName="SC3080204CustMemoRowChangeEvent" msprop:Generator_RowClassName="SC3080204CustMemoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUSTMEMOHIS_SEQNO" msprop:Generator_ColumnVarNameInTable="columnCUSTMEMOHIS_SEQNO" msprop:Generator_ColumnPropNameInRow="CUSTMEMOHIS_SEQNO" msprop:Generator_ColumnPropNameInTable="CUSTMEMOHIS_SEQNOColumn" msprop:Generator_UserColumnName="CUSTMEMOHIS_SEQNO" type="xs:long" minOccurs="0" />
+              <xs:element name="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UPDATEDATESTR" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPDATEDATESTR" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATESTR" msprop:Generator_ColumnPropNameInTable="UPDATEDATESTRColumn" msprop:Generator_UserColumnName="UPDATEDATESTR" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATEDATEDAY" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPDATEDATEDAY" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATEDAY" msprop:Generator_ColumnPropNameInTable="UPDATEDATEDAYColumn" msprop:Generator_UserColumnName="UPDATEDATEDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATEDATETIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPDATEDATETIME" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATETIME" msprop:Generator_ColumnPropNameInTable="UPDATEDATETIMEColumn" msprop:Generator_UserColumnName="UPDATEDATETIME" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MEMO" msprop:Generator_ColumnVarNameInTable="columnMEMO" msprop:Generator_ColumnPropNameInTable="MEMOColumn" msprop:Generator_UserColumnName="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="FIRSTMEMO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FIRSTMEMO" msprop:Generator_ColumnVarNameInTable="columnFIRSTMEMO" msprop:Generator_ColumnPropNameInTable="FIRSTMEMOColumn" msprop:Generator_UserColumnName="FIRSTMEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="CRCUSTID" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="CRCUSTID" msprop:Generator_ColumnVarNameInTable="columnCRCUSTID" msprop:Generator_ColumnPropNameInTable="CRCUSTIDColumn" msprop:Generator_UserColumnName="CRCUSTID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DLRCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCOUNT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRCUSTNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CRCUSTNAME" msprop:Generator_ColumnVarNameInTable="columnCRCUSTNAME" msprop:Generator_ColumnPropNameInTable="CRCUSTNAMEColumn" msprop:Generator_UserColumnName="CRCUSTNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTSEGMENT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTSEGMENT" msprop:Generator_ColumnVarNameInTable="columnCUSTSEGMENT" msprop:Generator_ColumnPropNameInTable="CUSTSEGMENTColumn" msprop:Generator_UserColumnName="CUSTSEGMENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTOMERCLASS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTOMERCLASS" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERCLASS" msprop:Generator_ColumnPropNameInTable="CUSTOMERCLASSColumn" msprop:Generator_UserColumnName="CUSTOMERCLASS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NEWCUSTID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="NEWCUSTID" msprop:Generator_ColumnVarNameInTable="columnNEWCUSTID" msprop:Generator_ColumnPropNameInTable="NEWCUSTIDColumn" msprop:Generator_UserColumnName="NEWCUSTID" type="xs:string" minOccurs="0" />
+              <xs:element name="ROW_LOCK_VERSION" msprop:Generator_ColumnVarNameInTable="columnROW_LOCK_VERSION" msprop:Generator_ColumnPropNameInRow="ROW_LOCK_VERSION" msprop:Generator_ColumnPropNameInTable="ROW_LOCK_VERSIONColumn" msprop:Generator_UserColumnName="ROW_LOCK_VERSION" type="xs:long" minOccurs="0" />
+              <xs:element name="CST_ROW_LOCK_VERSION" msprop:Generator_ColumnVarNameInTable="columnCST_ROW_LOCK_VERSION" msprop:Generator_ColumnPropNameInRow="CST_ROW_LOCK_VERSION" msprop:Generator_ColumnPropNameInTable="CST_ROW_LOCK_VERSIONColumn" msprop:Generator_UserColumnName="CST_ROW_LOCK_VERSION" type="xs:long" minOccurs="0" />
+              <xs:element name="DBDiv" msprop:Generator_ColumnVarNameInTable="columnDBDiv" msprop:Generator_ColumnPropNameInRow="DBDiv" msprop:Generator_ColumnPropNameInTable="DBDivColumn" msprop:Generator_UserColumnName="DBDiv" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080204Seq" msprop:Generator_TableClassName="SC3080204SeqDataTable" msprop:Generator_TableVarName="tableSC3080204Seq" msprop:Generator_TablePropName="SC3080204Seq" msprop:Generator_RowDeletingName="SC3080204SeqRowDeleting" msprop:Generator_RowChangingName="SC3080204SeqRowChanging" msprop:Generator_RowEvHandlerName="SC3080204SeqRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080204SeqRowDeleted" msprop:Generator_UserTableName="SC3080204Seq" msprop:Generator_RowChangedName="SC3080204SeqRowChanged" msprop:Generator_RowEvArgName="SC3080204SeqRowChangeEvent" msprop:Generator_RowClassName="SC3080204SeqRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Seq" msprop:Generator_ColumnVarNameInTable="columnSeq" msprop:Generator_ColumnPropNameInRow="Seq" msprop:Generator_ColumnPropNameInTable="SeqColumn" msprop:Generator_UserColumnName="Seq" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3080204Cst_CD" msprop:Generator_TableClassName="SC3080204Cst_CDDataTable" msprop:Generator_TableVarName="tableSC3080204Cst_CD" msprop:Generator_TablePropName="SC3080204Cst_CD" msprop:Generator_RowDeletingName="SC3080204Cst_CDRowDeleting" msprop:Generator_RowChangingName="SC3080204Cst_CDRowChanging" msprop:Generator_RowEvHandlerName="SC3080204Cst_CDRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3080204Cst_CDRowDeleted" msprop:Generator_UserTableName="SC3080204Cst_CD" msprop:Generator_RowChangedName="SC3080204Cst_CDRowChanged" msprop:Generator_RowEvArgName="SC3080204Cst_CDRowChangeEvent" msprop:Generator_RowClassName="SC3080204Cst_CDRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CST_CD" msprop:Generator_ColumnVarNameInTable="columnCST_CD" msprop:Generator_ColumnPropNameInRow="CST_CD" msprop:Generator_ColumnPropNameInTable="CST_CDColumn" msprop:Generator_UserColumnName="CST_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CST_TYPE" msprop:Generator_ColumnVarNameInTable="columnCST_TYPE" msprop:Generator_ColumnPropNameInRow="CST_TYPE" msprop:Generator_ColumnPropNameInTable="CST_TYPEColumn" msprop:Generator_UserColumnName="CST_TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

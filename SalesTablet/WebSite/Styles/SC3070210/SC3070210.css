@@ -1,0 +1,279 @@
+﻿#SC3070210_CommentHistoryPanel {
+    position:relative;
+    width:960px;
+    border-radius:8px;
+    background-color:#FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+            color-stop(0.51, #FEFEFE),
+                        to(#e2e2e2));
+    border:#adadad 1px solid;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    clear:both;
+}
+
+#SC3070210_CommentHistoryPanel h4 {
+    width:190px;
+    font-size:16px;
+    padding:1px 0 2px 16px;
+    margin-bottom:7px;
+    font-weight:bold;
+    color:#FFFFFF;
+    border-top-left-radius:7px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:56px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.50, #797d84),
+            color-stop(0.51, #6a6e76),
+                        to(#6a6e76));
+
+}
+
+#SC3070210_CommentArea 
+{
+    margin: 0 15px 15px 15px;
+
+}
+
+#SC3070210_CommentArea .SC3070210_Comment
+{
+    position: relative;
+    margin-top:12px;
+    margin-bottom:12px;
+    font-size: 14px;
+}
+
+
+#SC3070210_CommentArea .SC3070210_Comment_Left 
+{
+    margin-left:40px;
+    margin-right:24px;
+    width:400px;
+    float:left;
+}
+
+#SC3070210_CommentArea .SC3070210_Comment_Right 
+{
+    margin-left:24px;
+    margin-right:40px;
+    width:400px;
+    float:left;
+}
+
+
+#SC3070210_CommentArea .SC3070210_Comment_StaffName
+{
+    font-weight: bold;
+    color: #8C8C8B;
+}
+
+#SC3070210_CommentArea .SC3070210_Comment_StaffNameR
+{
+    text-align:right;
+}
+
+#SC3070210_CommentArea .SC3070210_Comment_Header 
+{
+    margin-left:10px;
+    margin-top:10px;
+}
+
+#SC3070210_CommentArea .SC3070210_Comment_Body 
+{
+    margin-left:10px;
+    word-wrap;nomal;
+}
+
+#SC3070210_CommentArea .SC3070210_Comment_Body .memo
+{
+    margin-top:4px;
+}
+
+#SC3070210_CommentArea .SC3070210_Comment_Footer 
+{
+    margin-left:10px;
+    margin-right:15px;
+    margin-bottom:5px;
+    text-align:right;
+}
+
+#SC3070210_CommentArea .SC3070210_Pager
+{
+    text-align:right;
+}
+
+
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Approved,
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Rejected,
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Approved,
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Rejected
+{
+    margin:30px;
+}
+
+/*ふきだし（無）*/
+#SC3070210_CommentArea .SC3070210_Comment_None .SC3070210_Comment_Cloud
+{
+    border:none;
+    background:none;
+}
+
+/*ふきだしベース（白）*/
+#SC3070210_CommentArea .SC3070210_Comment_Request .SC3070210_Comment_Cloud
+{
+    position: relative;
+    display:inline-block;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    width:400px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff),
+                color-stop(0.05, #ffffff),
+                color-stop(0.1, #ebebeb),
+                color-stop(0.15, #ffffff),
+			 			to(#ffffff));
+}
+
+/*ふきだしベース（緑）*/
+#SC3070210_CommentArea .SC3070210_Comment_Approved .SC3070210_Comment_Cloud
+{
+    position: relative;
+    display:inline-block;
+    border-radius: 5px;
+    border: 1px solid #7ec36f;
+    width:400px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dff0db),
+                color-stop(0.10, #7ec36f),
+                color-stop(0.11, #7ec36f),
+						to(#7ec36f)); 
+}
+
+/*ふきだしベース（赤）*/
+#SC3070210_CommentArea .SC3070210_Comment_Rejected .SC3070210_Comment_Cloud
+{
+    position: relative;
+    display:inline-block;
+    border-radius: 5px;
+    border: 1px solid #eb7a83;
+    width:400px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8d3d6),
+                color-stop(0.10, #eb7a83),
+                color-stop(0.11, #eb7a83),
+						to(#eb7a83));  
+}
+
+/*【ふきだし嘴（共通）】*/
+#SC3070210_CommentArea .SC3070210_Comment_Cloud:after,
+#SC3070210_CommentArea .SC3070210_Comment_Cloud:before 
+{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+/*ふきだしの嘴（白）*/
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Request .SC3070210_Comment_Cloud:after {
+    top: 10px;
+    left: -24px; 
+    border: 10px solid transparent;
+    border-right: 14px solid #EFEFEF; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Request .SC3070210_Comment_Cloud:before {
+    top: 10px;
+    left: -24px;
+    border: 10px solid transparent;
+    border-right: 14px solid #EFEFEF; 
+} 
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Request .SC3070210_Comment_Cloud:after {
+    top: 10px;
+    right: -24px; 
+    border: 10px solid transparent;
+    border-left: 14px solid #EFEFEF; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Request .SC3070210_Comment_Cloud:before {
+    top: 10px;
+    right: -24px;
+    border: 10px solid transparent;
+    border-left: 14px solid #EFEFEF; 
+}
+
+/*ふきだしの嘴（緑）*/
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Approved .SC3070210_Comment_Cloud:after {
+    top: 10px;
+    left: -24px; 
+    border: 10px solid transparent;
+    border-right: 14px solid #7ec36f; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Approved .SC3070210_Comment_Cloud:before {
+    top: 10px;
+    left: -24px; 
+    border: 10px solid transparent;
+    border-right: 14px solid #7ec36f; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Approved .SC3070210_Comment_Cloud:after {
+    top: 10px;
+    right: -24px; 
+    border: 10px solid transparent;
+    border-left: 14px solid #7ec36f; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Approved .SC3070210_Comment_Cloud:before {
+    top: 10px;
+    right: -24px; 
+    border: 10px solid transparent;
+    border-left: 14px solid #7ec36f; 
+}
+
+/*ふきだしの嘴（赤）*/
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Rejected .SC3070210_Comment_Cloud:after {
+    top: 10px;
+    left: -24px; 
+    border: 10px solid transparent;
+    border-right: 14px solid #eb7a83; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Left.SC3070210_Comment_Rejected .SC3070210_Comment_Cloud:before {
+    top: 10px;
+    left: -24px; 
+    border: 10px solid transparent;
+    border-right: 14px solid #eb7a83; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Rejected .SC3070210_Comment_Cloud:after {
+    top: 10px;
+    right: -24px; 
+    border: 10px solid transparent;
+    border-left: 14px solid #eb7a83; 
+}
+#SC3070210_CommentArea .SC3070210_Comment_Right.SC3070210_Comment_Rejected .SC3070210_Comment_Cloud:before {
+    top: 10px;
+    right: -24px; 
+    border: 10px solid transparent;
+    border-left: 14px solid #eb7a83; 
+}
+
+/*　登録時のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#SC3070210_ProcessingBlock {
+	position:absolute;
+	top:0; 
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:1000000;
+	display:none;
+}
+
+/*　処理中アニメーション
+ -------------------------------------------------------------------------------------------*/
+#SC3070210_ProcessingIcon {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	top:48%;
+	left:48%;
+	width:38px;
+	height:38px;
+	z-index:1000001;
+}
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}

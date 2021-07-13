@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FunctionSettingDataSet" targetNamespace="http://tempuri.org/FunctionSettingDataSet.xsd" xmlns:mstns="http://tempuri.org/FunctionSettingDataSet.xsd" xmlns="http://tempuri.org/FunctionSettingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.ApplicationFrameworks.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FunctionSettingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FunctionSettingDataSet" msprop:Generator_UserDSName="FunctionSettingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FUNCTIONSETTING" msdata:CaseSensitive="True" msprop:Generator_TableClassName="FUNCTIONSETTINGDataTable" msprop:Generator_TableVarName="tableFUNCTIONSETTING" msprop:Generator_TablePropName="FUNCTIONSETTING" msprop:Generator_RowDeletingName="FUNCTIONSETTINGRowDeleting" msprop:Generator_UserTableName="FUNCTIONSETTING" msprop:Generator_RowChangingName="FUNCTIONSETTINGRowChanging" msprop:Generator_RowEvHandlerName="FUNCTIONSETTINGRowChangeEventHandler" msprop:Generator_RowDeletedName="FUNCTIONSETTINGRowDeleted" msprop:Generator_RowEvArgName="FUNCTIONSETTINGRowChangeEvent" msprop:Generator_RowChangedName="FUNCTIONSETTINGRowChanged" msprop:Generator_RowClassName="FUNCTIONSETTINGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FUNCPARAM" msprop:Generator_ColumnVarNameInTable="columnFUNCPARAM" msprop:Generator_ColumnPropNameInRow="FUNCPARAM" msprop:Generator_ColumnPropNameInTable="FUNCPARAMColumn" msprop:Generator_UserColumnName="FUNCPARAM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FUNCSTATUS" msprop:Generator_ColumnVarNameInTable="columnFUNCSTATUS" msprop:Generator_ColumnPropNameInRow="FUNCSTATUS" msprop:Generator_ColumnPropNameInTable="FUNCSTATUSColumn" msprop:Generator_UserColumnName="FUNCSTATUS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHANGEFLG" msprop:Generator_ColumnVarNameInTable="columnCHANGEFLG" msprop:Generator_ColumnPropNameInRow="CHANGEFLG" msprop:Generator_ColumnPropNameInTable="CHANGEFLGColumn" msprop:Generator_UserColumnName="CHANGEFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMEWORDNO" msprop:Generator_ColumnVarNameInTable="columnNAMEWORDNO" msprop:Generator_ColumnPropNameInRow="NAMEWORDNO" msprop:Generator_ColumnPropNameInTable="NAMEWORDNOColumn" msprop:Generator_UserColumnName="NAMEWORDNO" type="xs:long" minOccurs="0" />
+              <xs:element name="DETAILWORDNO" msprop:Generator_ColumnVarNameInTable="columnDETAILWORDNO" msprop:Generator_ColumnPropNameInRow="DETAILWORDNO" msprop:Generator_ColumnPropNameInTable="DETAILWORDNOColumn" msprop:Generator_UserColumnName="DETAILWORDNO" type="xs:long" minOccurs="0" />
+              <xs:element name="WARNINGFLG" msprop:Generator_ColumnVarNameInTable="columnWARNINGFLG" msprop:Generator_ColumnPropNameInRow="WARNINGFLG" msprop:Generator_ColumnPropNameInTable="WARNINGFLGColumn" msprop:Generator_UserColumnName="WARNINGFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WARNINGWORDNO" msprop:Generator_ColumnVarNameInTable="columnWARNINGWORDNO" msprop:Generator_ColumnPropNameInRow="WARNINGWORDNO" msprop:Generator_ColumnPropNameInTable="WARNINGWORDNOColumn" msprop:Generator_UserColumnName="WARNINGWORDNO" type="xs:long" minOccurs="0" />
+              <xs:element name="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO" type="xs:long" />
+              <xs:element name="CREATEDATE" msprop:Generator_ColumnVarNameInTable="columnCREATEDATE" msprop:Generator_ColumnPropNameInRow="CREATEDATE" msprop:Generator_ColumnPropNameInTable="CREATEDATEColumn" msprop:Generator_UserColumnName="CREATEDATE" type="xs:dateTime" />
+              <xs:element name="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:dateTime" />
+              <xs:element name="UPDATEACCOUNT" msprop:Generator_ColumnVarNameInTable="columnUPDATEACCOUNT" msprop:Generator_ColumnPropNameInRow="UPDATEACCOUNT" msprop:Generator_ColumnPropNameInTable="UPDATEACCOUNTColumn" msprop:Generator_UserColumnName="UPDATEACCOUNT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FUNCTIONSETTING" />
+      <xs:field xpath="mstns:DLRCD" />
+      <xs:field xpath="mstns:FUNCPARAM" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

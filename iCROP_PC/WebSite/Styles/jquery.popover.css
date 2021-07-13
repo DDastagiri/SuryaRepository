@@ -1,0 +1,122 @@
+﻿
+/* line 5, ../../app/stylesheets/popover.scss */
+.popover {
+    position: absolute;
+    display: none;
+    -moz-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    background-color:#666;
+    border-radius:8px;
+    background:#FFF;
+    border:#1c232f 1px solid;
+    box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+	color-stop(0.002, rgba(120,128,147,0.9)),
+	color-stop(0.015, rgba(87,95,114,0.9)),
+	color-stop(0.036, rgba(29,40,59,0.9)),
+	color-stop(0.0365, rgba(3,11,26,0.9)),
+	to(rgba(7,11,29,0.9)));
+}
+
+/* line 17, ../../app/stylesheets/popover.scss */
+.popover.active { opacity: 1; }
+
+/* line 21, ../../app/stylesheets/popover.scss */
+.popover > .triangle 
+{
+    display:block;
+	position:absolute;
+	width:30px;
+	height:30px;
+	overflow:hidden;
+}
+
+/* 上or下表示の場合の噴出しサイズ */
+.popover > .triangle.top, .popover > .triangle.bottom { height: 15px; }
+/* 左or右表示の場合の噴出しサイズ */
+.popover > .triangle.left, .popover > .triangle.right { width : 15px; }
+
+/* line 29, ../../app/stylesheets/popover.scss */
+.popover > .triangle.top { bottom: -15px; }
+
+/* line 34, ../../app/stylesheets/popover.scss */
+.popover > .triangle.bottom { top: -15px; }
+
+/* line 39, ../../app/stylesheets/popover.scss */
+.popover > .triangle.left { right: -15px; }
+
+/* line 44, ../../app/stylesheets/popover.scss */
+.popover > .triangle.right { left: -15px; }
+
+.popover > .triangle > .triangleBorder
+{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:30px;
+	height:30px;
+	background:#222;
+	opacity:0.91;
+}
+
+.popover > .triangle.bottom > .triangleBorder    { top:6px; transform: rotate(45deg);}
+.popover > .triangle.right > .triangleBorder   { left:6px; transform: rotate(315deg);}
+.popover > .triangle.top > .triangleBorder { top:-21px; transform: rotate(225deg);}
+.popover > .triangle.left > .triangleBorder  { left:-21px; transform: rotate(135deg);}
+
+.popover > .triangle > .triangleBorder > .triangleInner
+{
+	height:28px;
+	margin:1px;
+	box-shadow:inset 1px 1px 0px #333;
+}
+
+.popover > .triangle.bottom > .triangleBorder > .triangleInner
+{
+	box-shadow:inset 1px 1px 0px #eee;
+}
+
+.popover > .triangle.bottom > .triangleBorder > .triangleInner { background: -webkit-gradient(linear, left top, right bottom, from(#c5c6c8), color-stop(0.4, #676e80), to(#6e7585)); }        
+.popover > .triangle.right > .triangleBorder > .triangleInner,
+.popover > .triangle.top > .triangleBorder > .triangleInner,
+.popover > .triangle.left > .triangleBorder > .triangleInner 
+{ background: -webkit-gradient(linear, left top, right bottom, from(rgba(7,11,29,0.9)), color-stop(0.4, rgba(7,11,29,0.9)), to(rgba(7,11,29,0.9))); }
+
+
+/* line 50, ../../app/stylesheets/popover.scss */
+.popover > .header {
+    color: white;
+    font-size: 20px;
+    -webkit-text-shadow: 0px -1px 0px #333;
+    text-align: center;
+    /*height:45px;*/
+}
+
+
+/* line 64, ../../app/stylesheets/popover.scss */
+.popover > .content {
+    min-width: 15em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size:0.9em;
+    padding:10px;
+    margin:0 5px 5px;
+    border:#a5a5a5 1px solid;
+    border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+    color-stop(0.018, #fff),
+    color-stop(0.6, #fff),
+    to(#e6e6e6));
+ }
+

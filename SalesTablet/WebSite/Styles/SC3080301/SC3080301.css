@@ -1,0 +1,568 @@
+﻿/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SC3080301.css
+─────────────────────────────────────
+機能： 査定依頼
+補足： 
+作成： 2012/01/05 TCS 鈴木(恭)
+更新： 2012/02/21 TCS 鈴木(健) 【SALES_1B】カーチェックシート画面への遷移時の処理中表示追加
+更新： 2013/12/09 TCS 市川 Aカード情報相互連携開発 
+─────────────────────────────────────*/
+
+/* 査定依頼のポップアップ 
+----------------------------------------------------------------------------------------*/
+
+.nsc412popWindow{
+	display:block;
+	width:314px;
+	position:absolute;
+	/* 
+top:-145px; left:15px; */
+	top:-100px; left:13px;
+	z-index:950;
+}
+
+/* 噴出し */
+.scNsc412PopUpModelSelectArrow {
+	position:absolute;
+    top:285px;
+	left:26px;
+	width:314px;
+	padding:17px 0 0;
+	z-index:101;
+	background:url(../images/SC3080301/scNscPopUpArrowBottom.png);
+	background-repeat: no-repeat;
+	background-position:120px top;
+}
+
+/* ウィンドウ */
+.scNsc412PopUpModelSelectWindownBox {
+	height:auto;
+	padding:0 0 5px 0;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+	color-stop(0.075, #2a3445),
+	color-stop(0.075, #0f1623),
+	to(#030b19));
+}
+
+/* リストエリア */
+.scNsc412PopUpModelSelectListArea2 {
+	height:211px;
+	font-size:0.9em;
+	margin:0 4px;
+	padding:10px 0px 10px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+	color-stop(0.018, #fff),
+	color-stop(0.6, #fff),
+	to(#e6e6e6));
+}
+
+
+/* ポップアップのタイトルエリア 
+--------------------------------------------------------*/
+.scNsc412AssessmentPopUpModelSelectHeader {
+	position:relative;
+	width:314px;
+	height:45px;
+}
+.scNsc412AssessmentPopUpModelSelectHeader h3 
+{
+	
+/* 	position:absolute;
+	width:288px;
+	height:36px;
+	top:7px;
+	left:0; text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;  */
+	
+	position:absolute;
+	width:135px;
+	height:36px;
+	top:7px;
+	left:90px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+	font-size:20px;
+}
+
+/* ヘッダーのキャンセルボタン
+-------------------------------------------------------------------*/
+.scNsc412AssessmentPopUpModelSelectHeader .scNscAssessmentPopUpCancelButton 
+{
+/*	position:absolute;
+	top:7px;
+	left:7px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#565f72), color-stop(0.50, #19233e), color-stop(0.501, #000b29), to(#000b29));
+	z-index:2;  */
+
+ 	position:absolute;
+	top:7px;
+	left:4px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+    color-stop(0.50, #0d1734),
+	color-stop(0.501, #000b29),
+	to(#000b29));
+	z-index:2;
+}
+.scNsc412AssessmentPopUpModelSelectHeader .scNscAssessmentPopUpCancelButton a { color:#FFF; }
+
+/* ヘッダーの戻るボタン
+-------------------------------------------------------------------*/
+.scNsc412AssessmentPopUpModelSelectHeader .scNscAssessmentPopUpReturnButton 
+{
+/*	position:absolute;
+	top:7px;
+	left:7px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#565f72), color-stop(0.50, #19233e), color-stop(0.501, #000b29), to(#000b29));
+	z-index:2; */
+	
+ 	position:absolute;
+	top:7px;
+	left:12px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+    color-stop(0.50, #0d1734),
+	color-stop(0.501, #000b29),
+	to(#000b29));
+	z-index:2; 
+}
+.scNsc412AssessmentPopUpModelSelectHeader .scNscAssessmentPopUpReturnButton a { color:#FFF; }
+
+.scNsc412AssessmentPopUpModelSelectHeader .tgLeft{
+	position:absolute;
+	left:4px;
+	top:11px;
+	display:block;
+	width:19px;
+	height:19px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(53deg) skew(15deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#4d5465), 
+							color-stop(0.49, #1a233e),
+							color-stop(0.491, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+/* 各ページのリストを囲う枠 */
+.scNsc412AssessmentPopUpList01, 
+.scNsc412AssessmentPopUpList02
+{ box-sizing:border-box; width:304px; float:left; }
+/* UL */
+.scNsc412AssessmentPopUpList01 ul, .scNsc412AssessmentPopUpList02 ul
+{ margin:0 10px 0; box-sizing:border-box; }
+
+/* スクロール用の囲い */
+.scNsc412PopUpScrollWrapAssessment { height:211px; position:relative; top:0px; left:0px; overflow:hidden; transform:translate3d(0px, 0px, 0px); }
+
+/* ポップアップの全体枠 */
+#AssessmentCarSelectPopup.scNsc412PopUpModelSelect 
+{
+    /*2013/12/09 TCS 市川 Aカード情報相互連携開発 START*/
+	position:relative;
+	width:314px;
+	padding:0;
+	z-index:1;
+	display:block;
+	top:-203px;
+	left:-390px;
+    /*2013/12/09 TCS 市川 Aカード情報相互連携開発 END*/
+}
+
+/* 各リスト囲う枠 */
+#AssessmentCarSelectPopupListWrap { width: 608px; position: relative; -webkit-transition: transform 500ms ease-in-out 0; }
+#AssessmentCarSelectPopupListWrap.page1 { transform:translate3d(0px, 0px, 0px); }       /*選択車両*/
+#AssessmentCarSelectPopupListWrap.page2 { transform:translate3d(-304px, 0px, 0px); }    /*車両リスト選択*/
+
+/*--------------------------------------------------------------------------------------*/
+/* リスト共通
+----------------------------------------------------------------------------------------*/
+.scNsc412AssessmentPopUpList01 ul, .scNsc412AssessmentPopUpList02 ul
+{
+	list-style-type:none;
+	padding:0px;
+	display:block;
+}
+
+/* 選択リスト(LI)のスタイル */
+.scNsc412AssessmentPopUpList01 li,
+.scNsc412AssessmentPopUpList02 li
+{
+	padding:10px 12px 10px 30px;
+	font-size:16px;
+	background:url(../images/SC3080301/ListArrowGr.png) no-repeat 260px 25px;
+	/* font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3; */
+	font-weight:bold;
+	display:block;
+	overflow:hidden;
+	height:45px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0.2);
+	white-space:nowrap;
+}
+/* 矢印なし */
+.scNsc412AssessmentPopUpList01 li.NoArrow, 
+.scNsc412AssessmentPopUpList02 li.NoArrow
+{ background-image:none; }
+
+/* リスト先頭行*/
+.scNsc412AssessmentPopUpList01 li.scNsc412CarCheckSheetLi:first-child, 
+.scNsc412AssessmentPopUpList01 li.scNsc412AssessmentListLi1:first-child, 
+.scNsc412AssessmentPopUpList02 li.scNsc412AssessmentListLi2:first-child, 
+.scNsc412AssessmentPopUpList01 li.scNsc412AssessmentListLi3:first-child
+{
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	background-color:#FFFFFF;
+}
+/* リスト中間行*/
+.scNsc412AssessmentPopUpList01 li.scNsc412CarCheckSheetLi, 
+.scNsc412AssessmentPopUpList01 li.scNsc412AssessmentListLi1,
+.scNsc412AssessmentPopUpList02 li.scNsc412AssessmentListLi2,
+.scNsc412AssessmentPopUpList01 li.scNsc412AssessmentListLi3
+{
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	background-color:#FFFFFF;
+}
+/* リスト最終行*/
+.scNsc412AssessmentPopUpList01 li.scNsc412CarCheckSheetLi:last-child, 
+.scNsc412AssessmentPopUpList01 li.scNsc412AssessmentListLi1:last-child,
+.scNsc412AssessmentPopUpList02 li.scNsc412AssessmentListLi2:last-child,
+.scNsc412AssessmentPopUpList01 li.scNsc412AssessmentListLi3:last-child
+{
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft: 8px;
+	background-color:#FFFFFF;
+}
+
+/* リスト先頭行判定*/
+.scNsc412AssessmentPopUpList02 li.scNsc412AssessmentListLi2.top
+{
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	background-color:#FFFFFF;
+}
+/* リスト最終行判定*/
+.scNsc412AssessmentPopUpList02 li.scNsc412AssessmentListLi2.bottom
+{
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft: 8px;
+	background-color:#FFFFFF;
+}
+
+.nscPopUpContactCarCheckButton01 
+{
+	width:284px;
+	margin:5px 10px;
+}
+.nscPopUpAssessmentButton01 .AssessmentText{
+	/* font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	font-weight:bold;
+	text-align:center;
+	font-size:16px;
+	line-height:17px;
+}
+.nscPopUpAssessmentButton01 .Time{
+	position:absolute;
+	left:240px;
+	top:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#aaaaaa;
+}
+
+.scNsc412AssessmentPopUpList01 li.scNsc412RequestCarWait
+{
+	width:275px;
+	height:45px;
+	background:#f2f2f2;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	margin:5px 10px;
+	padding:10px 0 0 10px;
+	font-size:17px;
+	line-height:19px;
+	color:#acacac;
+}
+
+/* チェック状態 */
+.scNsc412AssessmentPopUpList01 li.scNsc412CarCheckSheetLi
+{
+	background-image:url(../images/SC3080301/nsc412CarIcn.png);
+	/* background-position:13px 13px,300px 35px; */
+	background-position:250px 25px;
+	color:#345186;
+}
+
+.scNsc412AssessmentPopUpList02 li.scNsc412AssessmentListLi2.On
+{
+	background-image:url(../images/SC3080301/scNscPopUpListCheckMark.png);
+	background-position:10px 25px;
+	color:#345186;
+}
+
+.clip{
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.center{
+	position:relative;
+    top:8px;
+}
+
+.nscPopUpAssessmentButton 
+{
+	position:absolute;
+	width:284px;
+	height:31px;
+	left:5;
+	top:164px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7a97ed), color-stop(0.50, #416ae5), color-stop(0.501, #1e4ee1), to(#1e4ee1));
+	border:#666 1px solid;
+	border-radius:4px;
+	margin:1px 11px;
+	padding:8px 0 0 0;
+	text-align:center;
+	text-shadow:#2e3f74 0 -1px 0;
+	font-size:17px;
+	color:#FFF;
+}
+
+.nscPopUpAssessmentCancelButton 
+{
+	position:absolute;
+	width:284px;
+	height:31px;
+	left:5;
+	top:164px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cd6d75), color-stop(0.50, #b93540), color-stop(0.501, #b01825), to(#b01825));
+	border:#666 1px solid;
+	border-radius:4px;
+	margin:1px 11px;
+	padding:8px 0 0 0;
+	text-align:center;
+	text-shadow:#2e3f74 0 -1px 0;
+	font-size:17px;
+	color:#FFF;
+}
+
+.nscPopUpAssessmentDummyButton 
+{
+	position:absolute;
+	width:284px;
+	height:31px;
+	left:5;
+	top:164px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#afb3ba), to(#6d747f));
+	border:#666 1px solid;
+	border-radius:4px;
+	margin:1px 11px;
+	padding:8px 0 0 0;
+	text-align:center;
+	text-shadow:#666 0 -1px 0;
+	font-size:17px;
+	color:#b6b9bf;
+}
+
+/* 回り込みクリア */
+.clearboth {
+	overflow:hidden;
+	clear:both;
+	color:#FFFFFF;
+	font-size:1px;
+	line-height:1px;
+	text-indent:-3000px;
+	height:1px;
+}
+
+a {	color:#FFFFFF; text-decoration:none; }
+
+li { list-style:none; margin:0px; text-indent: 0px;	padding: 0px; }
+
+
+.ContactRequest{
+	background:url(../images/SC3080301/nsc412ContactRequest.png) center center no-repeat;
+	display:block;
+	height:183px;
+}
+.ContactRequestText{
+	display:block;
+	/* font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro"; */
+	font-weight:bold;
+	color:#666;
+	font-size:16px;
+	text-align:center;
+	
+	
+}
+
+/* 登録時のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlackSC3080301 {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:-398px; 
+	left:-214px;
+	/* top:46px; 
+	left:5px;
+	top:0px; 
+	left:0px; */
+	background:#000;
+	width:1028px;
+	height:750px;
+	/* width:304px;
+	height:233px;
+	width:314px;
+	height:285px; */
+	z-index:10001;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlackSC3080301.open { opacity:0.01; }
+
+/* 登録処理中
+ -------------------------------------------------------------------------------------------*/
+#processingServerSC3080301 {
+	position:absolute;
+	background:url(../Images/SC3080301/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	/* top:-50px;
+	left:290px; */
+	top:135px;
+	left:145px;
+	width:38px;
+	height:38px;
+	z-index:10002;
+}
+#processingServerSC3080301.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+/* 2012/02/21 TCS 鈴木(健) 【SALES_1B】カーチェックシート画面への遷移時の処理中表示追加 */
+/* 登録時のオーバーレイ（カーチェックシートへの遷移時のみ使用）
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlackSC3080301_Redirect {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:-398px; 
+	left:-214px;
+	background:#000;
+	width:1028px;
+	height:750px;
+	z-index:200001;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlackSC3080301_Redirect.open { opacity:0.6; }
+
+/* 登録処理中（カーチェックシートへの遷移時のみ使用）
+ -------------------------------------------------------------------------------------------*/
+#processingServerSC3080301_Redirect {
+	position:absolute;
+	background:url(../Images/SC3080301/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:-85px;
+	left:275px;
+	width:38px;
+	height:38px;
+	z-index:200002;
+}
+#processingServerSC3080301_Redirect.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+/* 2012/02/21 TCS 鈴木(健) 【SALES_1B】カーチェックシート画面への遷移時の処理中表示追加 */

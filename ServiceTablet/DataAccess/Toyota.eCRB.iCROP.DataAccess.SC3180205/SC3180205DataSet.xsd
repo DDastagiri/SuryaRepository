@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3180205DataSet" targetNamespace="http://tempuri.org/SC3180205DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3180205DataSet.xsd" xmlns="http://tempuri.org/SC3180205DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3180205DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3180205DataSet" msprop:Generator_UserDSName="SC3180205DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3180205UserInfo" msprop:Generator_TableClassName="SC3180205UserInfoDataTable" msprop:Generator_TableVarName="tableSC3180205UserInfo" msprop:Generator_TablePropName="SC3180205UserInfo" msprop:Generator_RowDeletingName="SC3180205UserInfoRowDeleting" msprop:Generator_RowChangingName="SC3180205UserInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3180205UserInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3180205UserInfoRowDeleted" msprop:Generator_UserTableName="SC3180205UserInfo" msprop:Generator_RowChangedName="SC3180205UserInfoRowChanged" msprop:Generator_RowEvArgName="SC3180205UserInfoRowChangeEvent" msprop:Generator_RowClassName="SC3180205UserInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PRESENCECATEGORY" msprop:Generator_ColumnVarNameInTable="columnPRESENCECATEGORY" msprop:Generator_ColumnPropNameInRow="PRESENCECATEGORY" msprop:Generator_ColumnPropNameInTable="PRESENCECATEGORYColumn" msprop:Generator_UserColumnName="PRESENCECATEGORY" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

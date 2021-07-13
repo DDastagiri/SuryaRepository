@@ -1,0 +1,289 @@
+﻿/**
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * SC3290101.css
+ * ──────────────────────────────────
+ * 機能： 異常リスト
+ * 補足： 
+ * 作成： 2014/06/13 TMEJ y.gotoh
+ * 更新： 2015/01/30 TMEJ y.gotoh 異常リストのリンク表示変更対応 $01
+ * ──────────────────────────────────
+ */
+
+/* ascx
+------------------------------------------------------------------------------*/
+
+#SC3290101_Panel{
+	width:643px;
+	height:301px;
+	float:right;
+	position:relative;
+	border-radius: 7px 7px 7px 7px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efefef), 
+							color-stop(0.50, #ffffff),
+							to(#dfdfdf));
+}
+
+#SC3290101_Panel.contentsFrame02{
+	border-radius: 7px 7px 7px 7px;
+	background:#FFF;
+	border:#a5a5a5 1px solid;
+	box-shadow:3px 3px 3px #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efefef), 
+							color-stop(0.50, #ffffff),
+							to(#dfdfdf));
+}
+
+/* タイトル */
+#SC3290101_Panel .contentTitle{
+	width:190px;
+	font-size:16px;
+	padding:0px 0 0px 16px;
+	margin-bottom:7px;
+	color:#FFFFFF;
+	height:26px;
+	display:block;
+	display: table-cell;
+	vertical-align: middle;
+
+	border-top-left-radius:7px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:56px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.50, #797d84),
+            color-stop(0.51, #6a6e76),
+						to(#6a6e76));
+
+}
+
+/* 更新日時 */
+#SC3290101_Panel #SC3290101_DateBox{
+	position:absolute;
+	left:390px; top:0;
+	font-size:14px;
+	text-align:left;
+	padding:10px 25px 0 0;
+	display:none;
+	white-space: nowrap;
+}
+
+#SC3290101_Panel #SC3290101_DateBox #SC3290101_LastUpdateText
+{
+    max-width: 150px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* iframe */
+#SC3290101_iframe{
+    width:623px;
+    height:210px;
+    border:none;
+    display:none;
+}
+#SC3290101_IrregularListRepeater{
+    border:none;
+}
+
+/* テーブル */
+#SC3290101_TBL_Box01{
+	width:623px;
+	height:210px;
+	position:absolute;
+	top:35px; left:9px;
+	
+}
+#SC3290101_TBL_Box01 .SC3290101_table01 {
+	border-top: #B3B3B3 solid 1px;
+    border-right: #B3B3B3 solid 1px;
+    border-left: #B3B3B3 solid 1px;
+}
+
+/* ヘッダ */
+#SC3290101_TBL_Box01 .SC3290101_table01 #SC3290101_table01HeadR {
+	float: left;
+}
+#SC3290101_TBL_Box01 .SC3290101_table01 #SC3290101_table01HeadR th{
+	font-size:12px;
+	font-weight:normal;
+	color:#FFF;
+}
+#SC3290101_TBL_Box01 .SC3290101_table01 #SC3290101_table01HeadR .TBL_HDST{
+	width:381px;
+	height:27px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86898f), to(#696d75));
+	border-right:#b3b3b3 1px solid;
+}
+#SC3290101_TBL_Box01 .SC3290101_table01 #SC3290101_table01HeadR .WhiteHD{
+	width:1px;
+	height:27px;
+	background:#FFF;
+}
+#SC3290101_TBL_Box01 .SC3290101_table01 #SC3290101_table01HeadR .TBL_HDCT{
+	width:118px;
+	height:27px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86898f), to(#696d75));
+	border-right:#b3b3b3 1px solid;
+}
+#SC3290101_TBL_Box01 .SC3290101_table01 #SC3290101_table01HeadR .TBL_HDED{
+	width:118px;
+	height:27px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86898f), to(#696d75));
+	border-right:none;
+}
+
+/* 異常項目なしメッセージ */
+#SC3290101_Panel #SC3290101_ItemNothing {
+    font-size: 200%;
+    display: none;
+    text-align: center; 
+    width: 100%;
+    margin-top: 80px;
+}
+
+#SC3290101_ItemNothing .Ellipsis
+{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+/* aspx
+------------------------------------------------------------------------------*/
+/* テーブル */
+#SC3290101_TBL_Box02{
+	width:623px;
+	height:210px;
+	position:absolute;
+}
+#SC3290101_TBL_Box02 .SC3290101_table02 {
+	border:#b3b3b3 solid 1px;
+	width:623px;
+}
+/* ボディ */
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body {
+	float: left;
+	height: 179px;
+	overflow: auto;
+	border-top:#FFF 1px solid;
+}
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body td{
+	font-size:14px;
+	color:#ff0000;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .TBL_DTST{
+	width:362px;
+	height:44px;
+	border-right:#b3b3b3 1px solid;
+	border-bottom:#b3b3b3 1px solid;
+	text-align:left;
+	padding-left:19px;
+}
+
+/*$01 異常リストのリンク表示変更対応 START*/
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .TBL_DTST .Underline
+{
+    text-decoration:underline;
+}
+/*$01 異常リストのリンク表示変更対応 END*/
+
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .TBL_DTST .Marker{
+	float:right;
+	padding:2px 10px 0 0;
+	text-decoration:none;
+	color:#333;
+	max-width: 16px;
+    overflow: hidden;
+}
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .TBL_DTST .Marker span{
+	text-decoration:none;
+}
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .WhiteDT{
+	width:1px;
+	height:44px;
+	background:#FFF;
+	border-bottom:#FFF 1px solid;
+}
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .TBL_DTCT{
+	width:118px;
+	height:44px;
+	border-right:#b3b3b3 1px solid;
+	border-bottom:#b3b3b3 1px solid;	
+}
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .TBL_DTED{
+	width:118px;
+	height:44px;
+	border-right:none;
+	border-bottom:#b3b3b3 1px solid;	
+}
+
+
+#SC3290101_TBL_Box02 .SC3290101_table02 #SC3290101_table02Body .LAST_DT{
+	border-bottom:none;	
+}
+
+.GrayBKDT{
+	background:#dcdcdc;
+}
+.WhiteBKDT{
+	background:#FFF;
+}
+
+/* オーバーレイ */
+#SC3290101_Panel #SC3290101_ProgressPanel
+{
+    position:absolute;
+    top:0px; 
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:10001;
+    opacity:0;
+    display:none;
+}
+#SC3290101_Panel #SC3290101_LoadingAnimation 
+{
+    top: 120px;
+    left: 300px;
+	width: 21px;
+	height: 22px;
+	background:url(../Images/progress.png) no-repeat;
+	display: none;
+	z-index:1;
+	position: absolute;
+}
+.SC3290101_LoadingAnimation2
+{
+    margin-top:-10px;
+    margin-left:50px;
+	width: 21px;
+	height: 22px;
+	background:url(../Images/progress.png) no-repeat;
+	z-index:1;
+	position: absolute;
+}
+#SC3290101_Panel .show2,
+#SC3290101_TBL_Box02 .show2
+{
+    animation: show2 1s linear infinite;
+}
+@keyframes show2 {
+	0%	    { transform: rotate(-0deg); }
+	100%	{ transform :rotate(360deg); }
+}
+
+
+#SC3290101_Panel .Hidden{
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+#SC3290101_Panel .Ellipsis,
+#SC3290101_TBL_Box02 .Ellipsis
+{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}

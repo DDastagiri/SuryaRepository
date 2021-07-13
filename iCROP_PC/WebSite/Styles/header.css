@@ -1,0 +1,27 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Header
+------------------------------------------------------------------------------*/
+
+div#header{
+	width:1920px;
+	height:121px;
+	overflow:hidden;
+	background:url(svg/pattern01.svg);
+	background: -moz-linear-gradient(left top, #001224, #003366 50%, #003366);
+	background: -webkit-gradient(linear, left top, left bottom, from(#001224), color-stop(0.5, #003366), to(#003366)); 
+	background-image:url(svg/pattern01.svg);
+}
+
+#header .InnerBox01{
+	margin:14px 0px 0 19px;
+	position:relative;
+}
+

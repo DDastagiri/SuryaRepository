@@ -1,0 +1,101 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Main 基本部分
+------------------------------------------------------------------------------*/
+
+div#main{
+	height:655px;
+	width:1024px;
+	overflow:hidden;
+	z-index:1;
+}
+#main #contents{
+	display:block;
+	padding:20px 20px;
+}
+
+#contents .contentsFrame{
+	border-radius: 7px 7px 7px 7px;
+	background:#FFF;
+	border:#a5a5a5 1px solid;
+	box-shadow:3px 3px 3px #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+							color-stop(0.90, #FFF),
+							color-stop(0.91, #FFF),
+							to(#dfdfdf));
+}
+
+
+#contents .contentTitle{
+	width:190px;
+	font-size:16px;
+	padding:0px 0 0px 16px;
+	margin-bottom:7px;
+	color:#FFFFFF;
+	height:26px;
+	display:block;
+	display: table-cell;
+	vertical-align: middle;
+
+	border-top-left-radius:7px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:56px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.50, #797d84),
+            color-stop(0.51, #6a6e76),
+						to(#6a6e76));
+
+}
+
+#contents .iconsBoxMemo{
+	width:31px; height:31px;
+	border:#666 1px solid;
+	border-radius:3px;
+	background:url(../images/iconMemo.png) 7px 7px no-repeat #FFF;
+}
+#contents .iconsBoxMemo a{
+	display:block;
+	width:31px; height:31px;
+}
+
+#contents .iconsBoxCalDate a,
+#contents .iconsBoxCalWeek a,
+#contents .iconsBoxCalMonth a,
+#contents .iconsBoxCalPlus a,
+#contents .iconsBoxTrash a{ color:#333;}
+
+#contents .iconsBoxCalDate{
+	width:163px;
+	border:#666 1px solid;
+	border-radius:3px;
+}
+
+#contents .iconsBoxCalWeek,
+#contents .iconsBoxCalMonth,
+#contents .iconsBoxCalPlus,
+#contents .iconsBoxTrash{
+	width:31px;
+	border:#666 1px solid;
+	border-radius:3px;
+}
+#contents .iconsBoxCalWeek{margin:0 10px;}
+
+#contents .iconsBoxTrash{
+	position:absolute;
+	padding:4px 0;
+	bottom:80px; right:35px;
+	
+}
+
+.nsc40DummyBg{
+	height:665px;
+	background:url(../../sc/images/popupContents.png) 0 0 no-repeat;
+}

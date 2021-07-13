@@ -1,0 +1,1277 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+
+div#main{
+	height:655px;
+	width:1024px;
+	overflow:hidden;
+	z-index:0;
+}
+
+
+
+
+
+
+
+
+
+px;@charset "utf-8";
+/* CSS Document */
+#main #contents{
+	display:block;
+	padding:0;
+}
+#main{
+	position:relative;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#b7b7b7));
+}
+#headblock{overflow:hidden;}
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	S-SA04
+//
+//////////////////////////////////////////////////////////////////////////////*/
+#main > #contents { padding:0px; }
+.ssa04Base{
+	display:block;
+	position:absolute;
+	top:0; left:0;
+	width:1024px;
+	height:655px;
+}
+/*プレビュー用*/
+.ssa04popWindow{
+	background:rgba(0,0,0,0.5);
+}
+.ssa04popWindow .closeBox{
+	background:url(../Images/SC3180202/popClose.png) 0 0 no-repeat;
+	width:31px; height:31px;
+	display:block;
+	position:absolute;
+	top:6px; left:6px;
+	z-index:10;
+	
+}
+
+/*本体下地用*/
+.ssa04Base .mainDataBox{
+	display:block;
+/*	position:absolute; */
+/*	left:20px; top:20px; */
+	left:15px; top:15px;
+	background:#fff url(../Images/SC3180202/ssa04caeImage.png) 3px 0 no-repeat;
+	box-shadow:3px 3px 6px #666;
+	border-radius:7px;
+	z-index:1;
+	width:984px; height:615px;
+}
+
+/*ロゴ*/
+.ssa04Base .mainDataBox .CarLogo{
+	display:block;
+	width:200px; height:30px;
+	position:absolute;
+	left:614px; top:14px;
+}
+
+/*ユーザ情報*/
+.ssa04Base .mainDataBox .UserDatas{
+	display:block;
+	width:945px; height:53px;
+/*	position:absolute; */
+	left:15px; top:47px;
+	border-top:#ccc 1px solid;
+	border-bottom:#ccc 1px solid;
+}
+/*ユーザ情報　テーブル*/
+.ssa04Base .mainDataBox .UserDatas .dataTable{
+	width:905px; height:34px;
+	overflow:hidden;
+/*	position:absolute; */
+	left:20px; top:10px;
+	/*内容設計*/
+	font-size:12px;
+	line-height:17px;
+	color:#4f5459;
+	font-family:HiraKakuProN-W3, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel00{ padding-top:0px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel01,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel02,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel03,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel04,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel05,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel06,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel07,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel08,
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel09{
+	height:16px; padding:0;
+}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel01{width:53px; font-size:14px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel02{width:157px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel03{width:53px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel04{width:98px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel05{width:41px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel06{width:130px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel07{width:52px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel08{width:136px;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel09{width:116px;}
+
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel09{position:relative;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel09 .phoneIcon{ position:absolute; top:-3px; left:0;}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel09 .phoneNo{ position:absolute; top:0px; left:15px;}
+
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel04{
+	font-family:HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro";
+	font-size:14px;
+	position:relative;
+}
+.ssa04Base .mainDataBox .UserDatas .dataTable .cel04 span{position:absolute; top:-2px;}
+
+/*車情報*/
+.ssa04Base .mainDataBox .carInfo{
+	display:block;
+	width:800px; height:500px;
+	position:relative;
+	left:15px; top:120px;
+}
+
+.ssa04Base .mainDataBox .carInfo .Box{
+	display:block;
+	width:148px;
+	position:absolute;
+	border:#999 1px solid;
+	margin-left:2px;
+	margin-right:2px;
+	background:#FFFFFF;
+	overflow:hidden;
+	border-radius:4px;
+	font-family:HiraKakuProN-W3, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+}
+
+.ssa04Base .mainDataBox .carInfo .Inactive{
+	position:absolute;
+	z-index:100;
+	width:148px;
+	background:rgba(0,0,0,0.1);
+	border-radius:4px;
+	top:0; left:0;
+}
+
+.ssa04Base .mainDataBox .carInfo .heightType01{height:40px;}
+.ssa04Base .mainDataBox .carInfo .heightType02{height:55px;}
+.ssa04Base .mainDataBox .carInfo .heightType03{height:97px;}
+.ssa04Base .mainDataBox .carInfo .heightType04{height:128px;}
+
+
+.ssa04Base .mainDataBox .carInfo .Box .headType01,
+.ssa04Base .mainDataBox .carInfo .Box .headType02,
+.ssa04Base .mainDataBox .carInfo .Box .headType03,
+.ssa04Base .mainDataBox .carInfo .Box .headType04,
+.ssa04Base .mainDataBox .carInfo .Box .headType05,
+.ssa04Base .mainDataBox .carInfo .Box .headType06{
+	width:148px; height:15px;
+	background:#ebebeb;
+	border-bottom:#999 1px solid;
+	font-size:10px; color:#000;
+	line-height:14px;
+	position:absolute;
+	font-weight:normal;
+	left:0px; top:0px;
+	border-radius:2px 2px 0 0;
+}
+.ssa04Base .mainDataBox .carInfo .Box .headType02{background:#bcabf0;}
+.ssa04Base .mainDataBox .carInfo .Box .headType03{background:#f0daab;}
+.ssa04Base .mainDataBox .carInfo .Box .headType04{background:#f9c3e2;}
+.ssa04Base .mainDataBox .carInfo .Box .headType05{background:#abd9f0;}
+.ssa04Base .mainDataBox .carInfo .Box .headType06{
+	background:#abd9f0; height:29px;
+}
+
+.ssa04Base .mainDataBox .carInfo .Box .headType01 span,
+.ssa04Base .mainDataBox .carInfo .Box .headType02 span,
+.ssa04Base .mainDataBox .carInfo .Box .headType03 span,
+.ssa04Base .mainDataBox .carInfo .Box .headType04 span,
+.ssa04Base .mainDataBox .carInfo .Box .headType05 span,
+.ssa04Base .mainDataBox .carInfo .Box .headType06 span{
+	display:block;
+	width:148px;
+	position:absolute;
+	left:2px; top:1px;
+}
+
+.ssa04Base .mainDataBox .carInfo .Box .Data,
+.ssa04Base .mainDataBox .carInfo .Box .Data2,
+.ssa04Base .mainDataBox .carInfo .Box .Data3,
+.ssa04Base .mainDataBox .carInfo .Box .Data4{
+	left:4px; top:19px;
+	position:absolute;
+	width:148px;
+	font-size:10px; color:#333;
+}
+.ssa04Base .mainDataBox .carInfo .Box .Data3{top:34px;}
+.ssa04Base .mainDataBox .carInfo .Box .Data4{top:32px;}
+.ssa04Base .mainDataBox .carInfo .Box .Data2{top:17px;}
+.ssa04Base .mainDataBox .carInfo .Box .Data2 tr{ line-height:19px;}
+.ssa04Base .mainDataBox .carInfo .Box .Data4 tr{ line-height:18px;}
+
+.ssa04Base .mainDataBox .carInfo .Box .Data .statusBox,
+.ssa04Base .mainDataBox .carInfo .Box .Data2 .statusBox,
+.ssa04Base .mainDataBox .carInfo .Box .Data3 .statusBox,
+.ssa04Base .mainDataBox .carInfo .Box .Data4 .statusBox{
+	display:inline-block;
+	width:27px; height:16px;
+	border:#333 1px solid;
+	border-radius:3px;
+}
+
+.ssa04Base .mainDataBox .carInfo .Box .Data  .statusBox span,
+.ssa04Base .mainDataBox .carInfo .Box .Data2 .statusBox span,
+.ssa04Base .mainDataBox .carInfo .Box .Data3 .statusBox span,
+.ssa04Base .mainDataBox .carInfo .Box .Data4 .statusBox span{
+	display:block;
+	position:relative;
+	top:1px; left:0;
+	width:27px;
+	text-align:center;
+	font-size:10px; color:#333;
+}
+.ssa04Base .mainDataBox .carInfo .Box .Data4 .statusBox span{top:0px; left:0;}
+.ssa04Base .mainDataBox .carInfo .Box .Data2 .statusBox span{top:-1px; left:0;}
+
+.ssa04Base .mainDataBox .carInfo .Box .Data .text01,
+.ssa04Base .mainDataBox .carInfo .Box .Data2 .text01,
+.ssa04Base .mainDataBox .carInfo .Box .Data3 .text01,
+.ssa04Base .mainDataBox .carInfo .Box .Data4 .text01{display:inline-block;}
+.ssa04Base .mainDataBox .carInfo .Box .Data .text01,
+.ssa04Base .mainDataBox .carInfo .Box .Data3 .text01{vertical-align:-1px;}
+
+/*車情報　情報Box　ステータス設定*/
+.ssa04Base .mainDataBox .carInfo .Box .Data .good,
+.ssa04Base .mainDataBox .carInfo .Box .Data2 .good,
+.ssa04Base .mainDataBox .carInfo .Box .Data3 .good,
+.ssa04Base .mainDataBox .carInfo .Box .Data4 .good{background:#FFF;}
+
+.ssa04Base .mainDataBox .carInfo .Box .Data .inspection,
+.ssa04Base .mainDataBox .carInfo .Box .Data2 .inspection,
+.ssa04Base .mainDataBox .carInfo .Box .Data3 .inspection,
+.ssa04Base .mainDataBox .carInfo .Box .Data4 .inspection{
+	background:-webkit-gradient(linear, 51% 50%, 50% 47%, from(#ff8a00),
+		to(#fff));
+}
+
+.ssa04Base .mainDataBox .carInfo .Box .Data .exchange,
+.ssa04Base .mainDataBox .carInfo .Box .Data2 .exchange,
+.ssa04Base .mainDataBox .carInfo .Box .Data3 .exchange,
+.ssa04Base .mainDataBox .carInfo .Box .Data4 .exchange{background:#d90500;}
+
+
+/*車情報　情報Box　座標*/
+.ssa04Base .mainDataBox .carInfo .Coordinate01{left:0px; top:0px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate02{left:0px; top:44px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate03{left:0px; top:88px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate04{left:0px; top:132px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate05{left:0px; top:176px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate06{left:0px; top:220px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate07{left:0px; top:264px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate08{left:0px; top:308px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate09{left:0px; top:352px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate10{left:0px; top:396px;}
+
+.ssa04Base .mainDataBox .carInfo .Coordinate11{left:0px; top:440px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate12{left:160px; top:0px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate13{left:160px; top:44px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate14{left:160px; top:88px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate15{left:160px; top:352px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate16{left:320px; top:0px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate17{left:320px; top:352px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate18{left:320px; top:396px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate19{left:320px; top:440px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate20{left:480px; top:0px;}
+
+.ssa04Base .mainDataBox .carInfo .Coordinate21{left:480px; top:44px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate22{left:480px; top:88px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate23{left:480px; top:352px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate24{left:480px; top:396px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate25{left:480px; top:440px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate26{left:640px; top:0px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate27{left:640px; top:59px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate28{left:640px; top:118px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate29{left:640px; top:177px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate30{left:640px; top:278px;}
+
+.ssa04Base .mainDataBox .carInfo .Coordinate31{left:640px; top:322px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate32{left:640px; top:381px;}
+.ssa04Base .mainDataBox .carInfo .Coordinate33{left:640px; top:425px;}
+
+
+/*右カラムデータ*/
+.ssa04Base .mainDataBox .Legend,
+.ssa04Base .mainDataBox .LegendNoBoder,
+.ssa04Base .mainDataBox .Advice,
+.ssa04Base .mainDataBox .AdviceFull,
+.ssa04Base .mainDataBox .Technician,
+.ssa04Base .mainDataBox .UsersSign,
+.ssa04Base .mainDataBox .PrintButton{
+	display:block;
+	position:absolute;
+	width:154px;
+	border:#999 1px solid;
+	border-radius:6px;
+}
+.ssa04Base .mainDataBox .Legend{left:816px; 		top:120px; height:60px;}
+.ssa04Base .mainDataBox .Advice{left:816px; 		top:191px; height:198px;}
+.ssa04Base .mainDataBox .AdviceFull{left:816px; 		top:192px; height:408px;}
+.ssa04Base .mainDataBox .Technician{left:816px;  top:401px; height:69px;}
+.ssa04Base .mainDataBox .UsersSign{left:816px;   top:482px; height:69px;}
+.ssa04Base .mainDataBox .PrintButton{
+	font-family:HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro";
+	left:816px;
+	top:563px;
+	height:30px;
+	padding:7px 0 0 0;
+	background:-webkit-gradient(linear, left top, left bottom , from(#7c98ed),
+		color-stop(0.50, #4069e5), 
+		color-stop(0.51, #1e4ee1), 
+		to(#1e4ee1));
+	font-size:14px;
+	text-shadow:#2a3c74 0 -1px 0;
+	text-align:center;
+	color:#FFF;
+}
+.ssa04Base .mainDataBox .NoBorder{
+	width:156px;
+	height:62px;
+	border:none;
+}
+
+/*凡例*/
+.ssa04Base .mainDataBox .Legend .good,
+.ssa04Base .mainDataBox .Legend .inspection,
+.ssa04Base .mainDataBox .Legend .exchange{
+	display:block;
+	position:absolute;
+	width:42px; height:40px;
+	border-radius:4px;
+	border:#333 1px solid;
+	font-family:HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro";
+	font-size:12px;	line-height:14px;
+	left:10px; top:11px;
+	text-shadow:0px 0px 1px #fff;
+}
+
+.ssa04Base .mainDataBox .Legend .inspection{
+	left:56px;
+	background:-webkit-gradient(linear, left top, right bottom , from(#fff),
+		color-stop(0.48, #fff), 
+		color-stop(0.52, #ff8a00), 
+		to(#ff8a00));
+	background:-webkit-gradient(linear, 51% 50%, 50% 49%, from(#ff8a00),
+		to(#fff));
+	text-shadow:1px 0px 1px #fff;
+}
+.ssa04Base .mainDataBox .Legend .exchange{
+	left:102px;
+	text-shadow:-1px 0px 1px rgba(51,51,51,0.5);
+	background:#d90500;
+	color:#fff;
+}
+
+.ssa04Base .mainDataBox .Legend .good span{
+	display:block;
+	position:absolute;
+	top:13px;
+	width:42px;
+	text-align:center;
+}
+
+.ssa04Base .mainDataBox .Legend .inspection span,
+.ssa04Base .mainDataBox .Legend .exchange span{
+	display:block;
+	position:absolute;
+	top:7px; left:3px;
+	width:40px;
+}
+
+.ssa04Base .mainDataBox .Advice h4,
+.ssa04Base .mainDataBox .AdviceFull h4,
+.ssa04Base .mainDataBox .Technician h4,
+.ssa04Base .mainDataBox .UsersSign h4{
+	display:block;
+	position:absolute;
+	top:10px; left:10px;
+	font-weight:normal;
+	font-family:HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro";
+	font-size:12px;	line-height:14px;
+	color:#666;
+}
+.ssa04Base .mainDataBox .Advice .Messages,
+.ssa04Base .mainDataBox .AdviceFull .Messages{
+	display:block;
+	width:140px; height:154px;
+	position:absolute;
+	top:38px; left:7px;
+	font-family:HiraKakuProN-W3, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	font-size:14px;
+	line-height:30px;
+	background:url(../Images/SC3180202/ssa04AdviceLine.png);
+}
+.ssa04Base .mainDataBox .AdviceFull .Messages{
+	height:364px;
+}
+
+/*ダミーフッタ*/
+#Footer4 .footerNaviSet{ height:49px; background:url(images/ssa04footerDumy.png) 0 0 no-repeat;}
+
+
+.icrop-CustomLabel-tooltip 
+{
+    border        : 1px solid #555;
+    border-radius : 2px;
+    background    : #FFE4C4;
+    color         : #555;
+    display       : none;
+    font-size     : 12px;
+    padding       : 1px 5px;
+    box-shadow    : 4px 4px rgba(3,3,3,0.4); box-shadow: 4px 4px rgba(3,3,3,0.4); 
+    white-space   : nowrap;
+	z-index		  :	1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SA04b*/
+.ssa04Base,
+.ssa04Base2{
+	display:block;
+	position:absolute;
+	top:0; left:0;
+	width:1024px;
+	height:1521px;
+}
+.ssa04Base2{
+	height:1433px;
+}
+ #contents
+ {
+      padding:0;
+     }
+
+/* ヘッド（仮） */
+#headblock { padding:0 10px; width:1004px; height:44px; background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.05, #F4F5F7), color-stop(0.95, #A5A9B6), color-stop(0.97, #A8ACB9), to(#797F90)); }
+#headLeftButton { width:300px; float:left; }/*ヘッドボタン群*/
+#headLeftButton ul { margin-top:7px; list-style:none; }
+#headLeftButton li { margin-right:15px; height:30px; float:left; }
+#headLeftButton li.headLeftButtonBack { width:30px; background:url(../common/images/headerImage01.png)no-repeat -3px -7px; }
+#headLeftButton li.headLeftButtonNext { width:30px; background:url(../common/images/headerImage02.png)no-repeat -3px -7px; }
+#headLeftButton li.headLeftButtonGuest { width:50px; background:url(images/ico35.png)no-repeat 10px 4px; }
+#headLeftButton li.headLeftButtonGuest span { width:20px; height:16px; border:#FFF 1px solid; border-radius:8px; background:-webkit-gradient(linear, left top, left bottom, from(#F7C7CA), color-stop(0.45, #E75159), color-stop(0.5, #DD2129), to(#C00B10)); text-align:center; font-size:10px; font-weight:600; line-height:15px; color:#FFF; display:block; position:relative; top:-18px; left:25px; }
+#headLeftButton li.headLeftButtonMessage { width:50px; background:url(images/ico36.png)no-repeat 5px 4px; }
+#headLeftButton li.headLeftButtonMessage span { width:20px; height:16px; border:#FFF 1px solid; border-radius:8px; background:-webkit-gradient(linear, left top, left bottom, from(#F7C7CA), color-stop(0.45, #E75159), color-stop(0.5, #DD2129), to(#C00B10)); text-align:center; font-size:10px; font-weight:600; line-height:15px; color:#FFF; display:block; position:relative; top:-18px; left:25px; }
+#headLeftButton li a { display:block; height:30px; }
+#headTitle { margin-right:15px; width:402px; float:left; }
+#headTitle h1 { font-size:20px; font-weight:600; color:#71777F; line-height:44px; text-align:center; /*text-shadow:1px 1px 0px #FFF;*/ }/*ヘッドタイトル*/
+#headRightSearch { width:280px; float:left; }/*ヘッド検索*/
+#headRightSearch .headRightSearchArea { margin-right:24px; width:163px; float:left; }
+#headRightSearch .headRightSearchArea form#searchform1 { margin:8px 0 0 0; padding:0; width:163px; }
+/*input { background: tarnsparent; }*/
+#headRightSearch .headRightSearchArea form#searchform1 .headRightSearchAreaKeywords { padding:4px 4px 4px 24px; width:130px; height:18px; border:#999 1px solid; border-radius:14px; background: #FFF; }
+#headRightSearch .headRightSearchArea form#searchform1 .headRightSearchAreaSearchBtn { position:absolute; left:8px; top:6px; z-index:777; }
+#headRightSearch .headRightLogo { width:93px; float:left; }
+#headRightSearch .headRightLogo p { margin-top:11px; width:90px; height:22px; text-indent:-77777px; background:url(../common/images/headerImage10.png) no-repeat -1px -10px; }
+
+/*
+div#main{
+	height:1521px;
+	width:1024px;
+	overflow:hidden;
+	z-index:1;
+}
+*/
+.mainblockDialogWrap {
+	width:1024px;
+	height:1487px;
+	background: #000;
+	opacity:0.6;
+	z-index:1;
+	position:absolute;
+}
+#Footer4{
+	/*width:1024px;*/
+	height:49px;
+	overflow:hidden;
+}
+
+#Footer4 .footerNaviSet{
+	display:block;
+	position:relative;
+	width:1024px;
+	height:49px;
+}
+#Footer4 .footerNaviSet li{
+	display:block;
+	position:absolute;
+	top:1px; left:0;
+}
+#Footer4 .footerNaviSet li.leftSet03{left:934px;}
+
+.footerNaviSet li.linkerOthers{
+	display:block;
+	width:80px; height:46px;
+	position:absolute;
+	top:-1px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7b98ed), 
+							color-stop(0.50, #4169e5),
+							color-stop(0.51, #1e4ee1),
+							to(#1e4ee1));
+}
+.footerNaviSet li.linkerOthers a{
+	display:block;
+	width:80px; height:46px;
+}
+.footerNaviSet li.linkerOthers span{
+	display:block;
+	width:80px;
+	position:absolute;
+	bottom:15px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	line-height:14px;
+	text-shadow:0px -1px 1px #000000;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	S-SA04
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+
+.mainblockDialogHead { height:56px; padding-bottom:px; border-bottom: #CCC 1px solid; margin-bottom:12px; }
+.mainblockDialogHead:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.mainblockDialogHeadLeft { width:300px; float:left; }
+.mainblockDialogHeadCenter { width:245px; float:left; }
+
+.mainblockDialogHeadLeft1-1 { width: 84px; float: left; text-align: center; color:#4F5359; font-size: 14px; }
+.mainblockDialogHeadLeft1-1 span { margin-top:-10px; height:66px; display: block; }
+.mainblockDialogHeadLeft1-2 { padding-right:32px; width:184px; float: left; font-size: 20px; text-align: center; color:#71777F; font-weight:400; line-height:48px; }
+
+
+.mainblockDialogHeadCenter dl { color:#000; font-size: 13px; line-height:15px; }
+.mainblockDialogHeadCenter dl dt { width:65px; height:17px; float: left; }
+.mainblockDialogHeadCenter dl dd { padding-right:15px; width:165px; height:17px; float: left;  }
+
+.mainblockDialogHeadCenter dl dt:nth-child(1) { margin:-6px 0 3px 0; font-size: 14px; }
+.mainblockDialogHeadCenter dl dd:nth-child(2) { margin:-6px 0 3px 0; font-size: 14px; }
+.mainblockDialogHeadCenter dl dt:nth-child(3) { margin:0 0 3px 0; }
+.mainblockDialogHeadCenter dl dd:nth-child(4) { margin:0 0 3px 0; }
+
+.IcoReserve3 {
+	width:14px; height:14px;
+	border-radius:3px;
+	font-size:10px;
+	text-align:center;
+	text-shadow:0px 1px 0px #666;
+	line-height:14px;
+	color:#FFF;
+	display:block;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8BC56D), to(#8BC56D));
+	float: right;
+	margin:1px 0 0 8px;
+}
+.IcoI3 {
+	width:14px; height:14px;
+	border-radius:3px;
+	font-size:10px;
+	text-align:center;
+	text-shadow:0px 1px 0px #666;
+	line-height:14px;
+	color:#FFF;
+	display:block;
+	float: right;
+	margin:1px 0 0 8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9135DF), to(#9135DF));
+}
+
+.IcoReserve3Gray{
+	background: -webkit-gradient(linear, left top, left bottom, from(#979797), to(#979797));
+}
+.IcoI3Gray{
+	background: -webkit-gradient(linear, left top, left bottom, from(#8f8f8f), to(#8f8f8f));
+}
+
+
+.mainblockDialogHeadRight { margin-right:0px; width:409px; float:left; }
+
+.mainblockDialogHeadRight1-1 { height:38px; width:409px; margin-top:-4px; }
+.mainblockDialogHeadRight1-1 p { width:140px; float: left; font-size:14px; line-height:15px; color:#656565; margin-top:-2px; }
+.mainblockDialogHeadRight1-1 dl { width:269px; float: left; text-align:right; font-size:14px; color:#656565; }
+.mainblockDialogHeadRight1-1 dl dt { padding-right:10px; margin-left:10px; width:127px; display:inline; }
+.mainblockDialogHeadRight1-1 dl dd { margin:0; padding:0; width:112px; display:inline; text-align: right; font-size:18px; }
+
+
+.mainblockDialogHeadRight1-2 { margin-left:70px; padding:0; width:340px; height:38px; font-size:12px; color:#656565; }
+
+.mainblockDialogHeadRight1-2-1 { width:165px; float:left; }
+.mainblockDialogHeadRight1-2-1 dt { width:55px; float:left; line-height:21px; }
+.mainblockDialogHeadRight1-2-1 dd { margin-right:40px; width:70px; float:left; line-height:21px; }
+
+.mainblockDialogHeadRight1-2-2 { margin:0px; width:175px; display:inline; text-align: right; float:left; }
+.mainblockDialogHeadRight1-2-2 dt { margin:0px; width:100px; display:inline; line-height:21px; }
+.mainblockDialogHeadRight1-2-2 dd { padding-left:10px; width:65px; display:inline; line-height:21px; }
+
+
+.mainblockDialogHeadLeft1-2 {
+	display:block;
+	width:184px;
+	padding-right:32px;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	color:#000;
+	font-weight:400;
+	line-height:22px;
+}
+
+.mainblockDialogHeadLeft1-2 .shopName{
+	display:block;
+	text-align:center;
+	font-weight:bold;
+}
+.mainblockDialogHeadLeft1-2 .innerMyTitle{
+	display:block;
+	text-align:center;
+	font-weight:bold;
+}
+
+.mainblockDialogHeadCenter dl dd:nth-child(2){font-weight:bold;}
+
+.mainblockDialogHeadRight1-1{
+	font-weight:bold;
+}
+
+.mainblockDialogHeadRight1-1 p,
+.mainblockDialogHeadRight1-1 dl,
+.mainblockDialogHeadRight1-2{
+	color:#000;
+}
+
+.mainblockDialogHeadRight1-2{
+	color:#000;
+}
+
+/*
+//////////////////////////////////////////////////////////////////////////////*/
+
+.ssa04Base .mainDataBox{
+	background:#FFF;
+	width:954px;
+	height:1450px;
+	padding:15px 15px;
+	margin-left:20px;
+}
+.ssa04Base .mainDataBox2{
+	height:1363px;
+}
+
+.ssa04CassetteList{
+	position:relative;
+	clear:both;
+	width:954px;
+	height:1050px;
+	display:block;
+}
+.ssa04CassetteList ul{
+	width:954px;
+	height:1050px;
+}
+
+.ssa04CassetteList li{
+	position:absolute;
+	width:180px;
+	border:#999999 1px solid;
+	border-radius:5px;
+	overflow:hidden;
+	font-size:14px;
+}
+.ssa04CassetteList li.Cassette1{height:101px;}
+.ssa04CassetteList li.Cassette2{height:142px;}
+.ssa04CassetteList li.Cassette3{height:183px;}
+.ssa04CassetteList li.Cassette5{height:265px;}
+
+.ssa04CassetteList li:nth-child(1){left:0; top:0;}
+.ssa04CassetteList li:nth-child(2){left:0; top:123px;}
+.ssa04CassetteList li:nth-child(3){left:0; top:246px;}
+.ssa04CassetteList li:nth-child(4){left:0; top:410px;}
+.ssa04CassetteList li:nth-child(5){left:0; top:533px;}
+
+/* 2012/8/8 JIAN 备胎/损伤/异常/磨耗 的字压住了下面的线 处理 START  */
+/*　.ssa04CassetteList li:nth-child(6){left:0; top:656px;｝  */
+.ssa04CassetteList li:nth-child(6){left:0; top:656px;}
+/* 2012/8/8 JIAN 备胎/损伤/异常/磨耗 的字压住了下面的线 处理 END  */
+
+.ssa04CassetteList li:nth-child(7){left:0; top:943px;}
+
+.ssa04CassetteList li:nth-child(8){left:193px; top:0;}
+.ssa04CassetteList li:nth-child(9){left:193px; top:164px;}
+.ssa04CassetteList li:nth-child(10){left:193px; top:287px;}
+.ssa04CassetteList li:nth-child(11){left:193px; top:451px;}
+.ssa04CassetteList li:nth-child(12){left:193px; top:574px;}
+.ssa04CassetteList li:nth-child(13){left:193px; top:697px;}
+.ssa04CassetteList li:nth-child(14){left:193px; top:861px;}
+
+.ssa04CassetteList li:nth-child(15){left:386px; top:0;}
+.ssa04CassetteList li:nth-child(16){left:386px; top:123px;}
+.ssa04CassetteList li:nth-child(17){left:386px; top:287px;}
+.ssa04CassetteList li:nth-child(18){left:386px; top:410px;}
+.ssa04CassetteList li:nth-child(19){left:386px; top:697px;}
+.ssa04CassetteList li:nth-child(20){left:386px; top:902px;}
+
+.ssa04CassetteList li:nth-child(21){left:579px; top:0;}
+.ssa04CassetteList li:nth-child(22){left:579px; top:164px;}
+.ssa04CassetteList li:nth-child(23){left:579px; top:287px;}
+.ssa04CassetteList li:nth-child(24){left:579px; top:410px;}
+.ssa04CassetteList li:nth-child(25){left:579px; top:533px;}
+.ssa04CassetteList li:nth-child(26){left:579px; top:656px;}
+.ssa04CassetteList li:nth-child(27){left:579px; top:779px;}
+.ssa04CassetteList li:nth-child(28){left:579px; top:902px;}
+
+.ssa04CassetteList li:nth-child(29){left:772px; top:0;}
+.ssa04CassetteList li:nth-child(30){left:772px; top:123px;}
+.ssa04CassetteList li:nth-child(31){left:772px; top:246px;}
+.ssa04CassetteList li:nth-child(32){left:772px; top:410px;}
+.ssa04CassetteList li:nth-child(33){left:772px; top:533px;}
+.ssa04CassetteList li:nth-child(34){left:772px; top:656px;}
+.ssa04CassetteList li:nth-child(35){left:772px; top:779px;}
+.ssa04CassetteList li:nth-child(36){left:772px; top:902px;}
+
+
+.ssa04CassetteList li .CassetteTitle,
+.ssa04CassetteList li .CassetteTitleCyan{
+	width:180px;
+	height:60px;
+	border-bottom:#999999 1px solid;
+	border-radius:4px 4px 0 0;
+}
+.ssa04CassetteList li p.TitleText1,
+.ssa04CassetteList li p.TitleText2,
+
+/* 2012/8/8 JIAN 标签的字没有居中 处理 START  */
+.ssa04CassetteList li p.TitleText4,
+/* 2012/8/8 JIAN 标签的字没有居中 处理 END  */
+
+.ssa04CassetteList li p.TitleText3{
+	display:block;
+	font-size:14px;
+	line-height:17px;
+	font-weight:bold;
+	color:#333333;
+	padding:21px 0 0 51px;
+}
+.ssa04CassetteList li p.TitleText2{
+	padding:13px 0 0 51px;
+}
+.ssa04CassetteList li p.TitleText3{
+	padding:5px 0 0 51px;
+}
+/* 2012/8/8 JIAN 标签的字没有居中 处理 START  */
+.ssa04CassetteList li p.TitleText4
+{
+  padding:21px 0 0 51px;
+}
+/* 2012/8/8 JIAN 标签的字没有居中 处理 END  */
+
+.ssa04CassetteList li .Column1,
+.ssa04CassetteList li .Column2,
+.ssa04CassetteList li .Column3,
+.ssa04CassetteList li .Column4,
+.ssa04CassetteList li .Column5,
+.ssa04CassetteList li .Column1b,
+.ssa04CassetteList li .Column2b,
+.ssa04CassetteList li .Column1c{
+	position:absolute;
+	left:9px;
+	width:162px;
+	height:28px;
+}
+.ssa04CassetteList li .Column1{top:67px;}
+.ssa04CassetteList li .Column2{top:108px;}
+.ssa04CassetteList li .Column3{top:149px;}
+.ssa04CassetteList li .Column4{top:190px;}
+.ssa04CassetteList li .Column5{top:231px;}
+
+.ssa04CassetteList li .Column1b{top:83px;}
+.ssa04CassetteList li .Column2b{top:133px;}
+
+.ssa04CassetteList li .Column1c{top:88px;}
+
+
+.ssa04CassetteList li .ColumnText01,
+.ssa04CassetteList li .ColumnText02a,
+.ssa04CassetteList li .ColumnText02b,
+.ssa04CassetteList li .ColumnText01b{
+	font-size:13px;
+	line-height:15px;
+	padding:3px 0 0 0;
+}
+.ssa04CassetteList li .ColumnText02a{
+	width:100px;
+}
+/* .ssa04CassetteList li .ColumnText02a{ */
+/* 	width:45px; */
+/* } */
+.ssa04CassetteList li .ColumnText02b{
+	position:absolute;
+	top:0;
+	left:38px;
+	width:85px;
+	text-align:right;
+}
+.ssa04CassetteList li .ColumnText01b{
+	margin:-8px 0 0 0;
+}
+
+
+.ssa04CassetteList li .Square1,
+.ssa04CassetteList li .Square2,
+.ssa04CassetteList li .Square3,
+.ssa04CassetteList li .Square3Red,
+.ssa04CassetteList li .Square4,
+.ssa04CassetteList li .Square4Color{
+	position:absolute;
+	right:0;
+	top:0;
+	overflow:hidden;
+	width:26px;
+	height:26px;
+	background:#FFF;
+	border:#333333 1px solid;
+	border-radius:5px;
+	font-size:12px;
+	line-height:26px;
+	font-weight:bold;
+	color:#333333;
+	text-align:center;
+}
+
+.ssa04CassetteList li .Square2{
+	border:#333333 1px solid;
+}
+.ssa04CassetteList li .Square3{
+	background:#585858;
+}
+.ssa04CassetteList li .Square3Red{
+	background:#d90500;
+}
+.ssa04CassetteList li .Square4{
+	background:-webkit-gradient(linear, left top, right bottom , from(#ffffff),
+		color-stop(0.50, #ffffff), 
+		color-stop(0.51, #828282), 
+		to(#828282));
+}
+.ssa04CassetteList li .Square4Color{
+	background:-webkit-gradient(linear, left top, right bottom , from(#ffffff),
+		color-stop(0.50, #ffffff), 
+		color-stop(0.51, #ff8a00), 
+		to(#ff8a00));
+}
+
+
+.ssa04CassetteList li .GrayBox1,
+.ssa04CassetteList li .GrayBox2,
+.ssa04CassetteList li .GrayBox3,
+.ssa04CassetteList li .GrayBox5{
+	position:absolute;
+	overflow:hidden;
+	left:0;
+	top:0;
+	width:180px;
+	background:#000;
+	opacity:0.15;
+	border-radius:4px;
+	z-index:999;
+}
+.ssa04CassetteList li .GrayBox1{height:101px;}
+.ssa04CassetteList li .GrayBox2{height:142px;}
+.ssa04CassetteList li .GrayBox3{height:183px;}
+.ssa04CassetteList li .GrayBox5{height:265px;}
+
+
+
+.ssa04Button{
+	position:relative;
+	border-top:#CCC 1px solid;
+	width:954px;
+	height:212px;
+	margin:15px 0 0 0;
+	padding:15px 0 0 0;
+}
+.ssa04Button .LegendLeft{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:62px;
+	height:210px;
+	border-radius:6px;
+	border:#999999 1px solid;
+}
+.ssa04Button .LegendLeft .good,
+.ssa04Button .LegendLeft .inspection,
+.ssa04Button .LegendLeft .inspectionColor,
+.ssa04Button .LegendLeft .exchange,
+.ssa04Button .LegendLeft .exchangeRed{
+	display:block;
+	position:absolute;
+	width:38px; height:38px;
+	border-radius:4px;
+	border:#333 1px solid;
+	font-size:11px;	line-height:14px;
+	font-weight:bold;
+	left:11px; top:22px;
+	text-shadow:0px 0px 1px #fff;
+	line-height:14px;
+}
+
+.ssa04Button .LegendLeft .inspection,
+.ssa04Button .LegendLeft .inspectionColor{
+	top:85px;
+	background:-webkit-gradient(linear, left top, right bottom , from(#fff),
+		color-stop(0.48, #fff), 
+		color-stop(0.52, #828282), 
+		to(#828282));
+	background:-webkit-gradient(linear, 51% 50%, 50% 49%, from(#828282),
+		to(#fff));
+	text-shadow:0px 1px 0px #fff;
+}
+.ssa04Button .LegendLeft .inspectionColor{
+	background:-webkit-gradient(linear, 51% 50%, 50% 49%, from(#ff8a00),
+		to(#FFF));
+}
+
+.ssa04Button .LegendLeft .exchange,
+.ssa04Button .LegendLeft .exchangeRed{
+	top:145px;
+	text-shadow:0px -1px 0px rgba(0,0,0,0.25);
+	background:#585858;
+	color:#fff;
+}
+.ssa04Button .LegendLeft .exchangeRed{
+	background:#d90500;
+}
+
+.ssa04Button .LegendLeft .good span{
+	display:block;
+	position:absolute;
+	top:11px;
+	width:38px;
+	text-align:center;
+}
+
+.ssa04Button .LegendLeft .inspection span,
+.ssa04Button .LegendLeft .inspectionColor span,
+.ssa04Button .LegendLeft .exchange span,
+.ssa04Button .LegendLeft .exchangeRed span{
+	display:block;
+	position:absolute;
+	width:38px;
+	line-height:2;
+	text-align:center;
+}
+
+
+
+.ssa04Button .centerBox,
+.ssa04Button .centerBoxWide{
+	position:absolute;
+	left:76px;
+	bottom:0px;
+	width:710px;
+	height:210px;
+	border-radius:6px;
+	border:#999999 1px solid;
+	font-size:12px;
+	color:#000;
+}
+.ssa04Button .centerBoxWide{
+	width:876px;
+}
+.ssa04Button .centerBox .Title,
+.ssa04Button .centerBoxWide .Title{
+	position:absolute;
+	left:10px;
+	top:10px;
+	font-weight:bold;
+	line-height:12px;
+}
+/*.ssa04Button .centerBox .TextArea*/
+.ssa04Button .centerBoxWide .TextArea{
+	background:url(../Images/SC3180202/TextBoder.png) 0 0 repeat;
+	position:absolute;
+	left:10px;
+	top:24px;
+	width:856px;
+	height:176px;
+	line-height:29px;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	word-wrap: break-word ;
+	word-break : break-all;
+
+}
+/*2012-6-12*/
+.altdiv
+{
+     
+	opacity:.99;
+	 border        : 1px solid #555;
+    /*border-radius : 2px;*/
+    background-color    : #FFE4C4;
+    color         : #555;
+    display       : none;
+    font-size     : 12px;
+	margin-top:8px;
+	width :850px;
+	word-wrap: break-word ;
+	word-break : break-all;
+	line-height:25px;
+	box-shadow    : 4px 4px rgba(3,3,3,0.4); box-shadow: 4px 4px rgba(3,3,3,0.4); 
+	padding:5px;
+	}
+.ssa04Button .rightBox{
+	position:absolute;
+	right:0;
+	bottom:0px;
+	width:154px;
+	height:210px;
+	border-radius:6px;
+	border:#999999 1px solid;
+	font-size:12px;
+	color:#000;
+}
+.ssa04Button .rightBox .Title{
+	position:absolute;
+	left:10px;
+	top:10px;
+	font-weight:bold;
+	line-height:12px;
+}
+
+
+.PrintBotton{
+	position:absolute;
+	left:443px;
+	bottom:20px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#7C98ED),
+					color-stop(50%, #426BE5),
+					color-stop(50%, #1E4EE1),
+					to(#1E4EE1));
+	border:#767676 1px solid;
+	border-radius:6px;
+	width:87px;
+	height:29px;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+	text-shadow:#535353 0 -1px 0;
+	text-align:center;
+	line-height:30px;
+	overflow:hidden;
+}
+#footblock { padding:0 10px 0 20px; width:994px; height:49px; background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.03, #939393), color-stop(0.05, #3E3E3E), color-stop(0.49, #212121), color-stop(0.5, #000)); }
+#footblockButton { width:679px; float:left; }/*フッタボタン群*/
+#footblockButton ul { margin-top:7px; list-style:none; }
+#footblockButton li { margin-right:15px; width:78px; height:39px; border-top:#4E4E4E 1px solid; border-right:#000 1px solid; border-left:#4E4E4E 1px solid; border-left-top-radius:3px; border-right-top-radius:3px; display:block; float:left; text-align:center; }
+#footblockButton li a { padding-top:27px; font-size:10px; line-height:12px; color:#ADADAD; display:block; }
+#footblockButton li a.footblockButtonMainmenu { background:url(images/footImage01.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonGuestmanage { background:url(images/footImage02.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonMakeRO { background:url(images/footImage03.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonContents { background:url(images/footImage04.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonSMB { background:url(images/footImage05.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonSchdule { background:url(images/footImage06.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonTelbook { background:url(images/footImage07.png) no-repeat center 3px; }
+#footblockButton li.footblockButtonmenu { background: -webkit-gradient(linear, left top, left bottom, from(#2C2C2C), color-stop(0.49, #151515), color-stop(0.5, #000000), to(#000000)); }
+#footblockButton li a.footblockButtonMainmenuOn { background:url(images/footImage01.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonGuestmanageOn { background:url(images/footImage02.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonMakeROOn { background:url(images/footImage03.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonContentsOn { background:url(images/footImage04.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonSMBOn { background:url(images/footImage05.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonSchduleOn { background:url(images/footImage06.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonTelbookOn { background:url(images/footImage07.png) no-repeat center 3px; }
+#footblockButton li.footblockButtonmenuOn { background: -webkit-gradient(linear, left top, left bottom, from(#939191), color-stop(0.49, #424242), color-stop(0.5, #3C3B3B), to(#2C2C2C)); }
+
+#footblockButton li a.footblockButtonAddWorks { background:url(images/ico73.png) no-repeat center 3px; }
+#footblockButton li a.footblockButtonAddWorksOn { background-image:url(images/ico72.png); background-repeat: no-repeat; background-position: center 3px; }
+
+#footblockButton li a.footblockButtonPreparation { background:url(images/ico81.png) no-repeat center 3px; }
+
+#footblockButton li a.footblockButtonFinish { background:url(images/ico74.png) no-repeat center 1px; }
+
+#footblockButton2 { margin-right:10px; width:200px; height:49px; text-align:right; float:right; }
+.footblockButton2 p:nth-child(1) { width:80px; height:49px; background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #7C98ED), color-stop(0.49, #4169E5), color-stop(0.5, #1E4EE1), to(#1D4AD6)); float:right; }
+#footblockButton2 p:nth-child(2) { margin-right:10px; width:80px; height:49px; background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #CD6C74), color-stop(0.49, #B72F3A), color-stop(0.5, #B01825), to(#B01825)); float:right; }
+.footblockButton3 p:nth-child(1) { background-color:Gray; width:80px; height:49px; background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, Gray), color-stop(0.04, Gray), color-stop(0.49, Gray), color-stop(0.5, Gray), to(Gray)); float:right;}
+#footblockButton2 a { height:49px; display:block; font-size:14px; font-weight:600; line-height:50px; color:#FFF; text-align: center; text-shadow:-1px -1px 0px #333; }
+#footblockButton2 a.footblockButton22l { padding-top:9px; height:40px; line-height:17px; }
+
+a
+{
+     text-decoration:none;
+    }
+    
+    
+    /*　サーバー処理中のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#serverProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:#000;
+	z-index:100;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#serverProcessOverlayBlack.open { opacity:0.6; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#serverProcessIcon {
+	position:absolute;
+	background:url(../Images/SC3180202/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:324px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+#serverProcessIcon.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+    /*---------------------------------------
+  新しいヘッダー
+---------------------------------------*/
+.mainblockDialogHead{
+	position:relative;
+	width:954px;
+}
+
+.mainblockDialogHead .HeadTitle{
+	position:absolute;
+	left:98px;
+	top:-7px;
+	display:block;
+	width:758px;
+	font-size:18px;
+	line-height:20px;
+	color:#000000;
+	text-align:center;
+	font-weight:bold;
+}
+
+.mainblockDialogHead .HeadLogo{
+	position:absolute;
+	right:0;
+	top:-9px;
+	width:140px;
+}
+
+.mainblockDialogHead .HeadInBox1,
+.mainblockDialogHead .HeadInBox2,
+.mainblockDialogHead .HeadInBox3,
+.mainblockDialogHead .HeadInBox4,
+.mainblockDialogHead .HeadInBox5{
+	position:absolute;
+	bottom:2px;
+	height:36px;
+	overflow:hidden;
+	font-size:13px;
+	line-height:18px;
+	color:#000000;
+}
+.mainblockDialogHead .HeadInBox1{
+	left:98px;
+	width:211px;
+}
+.mainblockDialogHead .HeadInBox2{
+	left:309px;
+	width:150px;
+}
+.mainblockDialogHead .HeadInBox3{
+	left:459px;
+	width:171px;
+}
+.mainblockDialogHead .HeadInBox4{
+	left:630px;
+	width:187px;
+}
+.mainblockDialogHead .HeadInBox5{
+	left:817px;
+	width:137px;
+}
+
+.mainblockDialogHead .HeadInBox5 span.Icn1,
+.mainblockDialogHead .HeadInBox5 span.Icn2{
+	background:url(../Images/SC3180202/Headicn1.png) 0 1px no-repeat;
+	padding:0 0 0 17px;
+	display:block;
+}
+.mainblockDialogHead .HeadInBox5 span.Icn2{
+	background:url(../Images/SC3180202/Headicn2.png) 0 1px no-repeat;
+}
+
+.hidTextBoxHeight
+{
+    overflow:hidden;
+     height:50px;
+     display:block;
+     float:left;
+}

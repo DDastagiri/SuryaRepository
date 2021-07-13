@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ウォーニング詳細画面（ポップアップ）
+------------------------------------------------------------------------------*/
+.popWindowBase .innerDataBox .InnerDatas{
+	position:absolute;
+	width:357px;
+	height:100%;
+	left:9px;
+}
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox01,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:119px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:0 0 10px 0;
+	clear:both;
+}
+.popWindowBase .innerDataBox .InnerDatas .scroll-inner
+{
+    padding-bottom:1px;
+}
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox03{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	/*height:119px;*/
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:0 0 10px 0;
+	clear:both;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox02{height:218px;}
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 li,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 li{
+	display:block;
+	width:355px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 li{
+	height:218px;
+}
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 li:first-child,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 li:first-child,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 li:last-child,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 li:last-child,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 dl,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dl{
+	display:block;
+	width:365px;
+	height:29px;
+	overflow:hidden;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dl{
+	display:block;
+	width:365px;
+	overflow:hidden;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dl{height:218px;}
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 dt,
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 dd,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dt,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dd,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dt,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dd{
+	display:block;
+	float:left;
+	line-height:29px;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dt,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dd{height:218px; line-height:218px;}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dt,
+
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 dt,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dt,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 dt p,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dt p,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dt p{
+	display:block;
+	padding:0 10px 0 0;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dt p{
+	padding:0 6px 0 0;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 dd,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dd,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dd{
+	position:relative;
+	width:284px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dd{
+	word-break:break-all;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox01 dd p,
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dd p,
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dd p{
+	display:block;
+	padding:0 0 0 10px;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox02 dd p{
+	padding:10px 0 0 11px;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 dd p{
+	padding:4px 0 0 10px;
+	line-height:20px;
+}
+
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 li{
+	height:auto;min-height:98px;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 table
+{
+	border:0px;
+	border-collapse:collapse;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 table td
+{
+	border:0px;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 td:first-child{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 td:last-child{
+	position:relative;
+	width:284px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+	vertical-align:top;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 td:first-child p{
+	display:block;
+	padding:0 6px 0 0;
+}
+.popWindowBase .innerDataBox .InnerDatas .ListBox03 td:last-child p{
+	display:block;
+	padding:4px 0 0 9px;
+	line-height:20px;
+}
+
+.Description_Value_Detail
+{
+    width: 269px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    resize: none;
+    line-height: 20px;
+    /*height:20px;*/
+}
+
+
+
+
+

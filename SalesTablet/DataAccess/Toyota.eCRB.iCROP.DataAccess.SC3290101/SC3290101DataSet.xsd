@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3290101DataSet" targetNamespace="http://tempuri.org/SC3290101DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3290101DataSet.xsd" xmlns="http://tempuri.org/SC3290101DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3290101DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3290101DataSet" msprop:Generator_UserDSName="SC3290101DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IrregularInfo" msprop:Generator_TableClassName="IrregularInfoDataTable" msprop:Generator_TableVarName="tableIrregularInfo" msprop:Generator_RowChangedName="IrregularInfoRowChanged" msprop:Generator_TablePropName="IrregularInfo" msprop:Generator_RowDeletingName="IrregularInfoRowDeleting" msprop:Generator_RowChangingName="IrregularInfoRowChanging" msprop:Generator_RowEvHandlerName="IrregularInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="IrregularInfoRowDeleted" msprop:Generator_RowClassName="IrregularInfoRow" msprop:Generator_UserTableName="IrregularInfo" msprop:Generator_RowEvArgName="IrregularInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRREG_CLASS_CD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IRREG_CLASS_CD" msprop:Generator_ColumnVarNameInTable="columnIRREG_CLASS_CD" msprop:Generator_ColumnPropNameInTable="IRREG_CLASS_CDColumn" msprop:Generator_UserColumnName="IRREG_CLASS_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="IRREG_ITEM_CD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IRREG_ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnIRREG_ITEM_CD" msprop:Generator_ColumnPropNameInTable="IRREG_ITEM_CDColumn" msprop:Generator_UserColumnName="IRREG_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RELATION_CD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RELATION_CD" msprop:Generator_ColumnVarNameInTable="columnRELATION_CD" msprop:Generator_ColumnPropNameInTable="RELATION_CDColumn" msprop:Generator_UserColumnName="RELATION_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="IRREG_LIST_DISP_NAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IRREG_LIST_DISP_NAME" msprop:Generator_ColumnVarNameInTable="columnIRREG_LIST_DISP_NAME" msprop:Generator_ColumnPropNameInTable="IRREG_LIST_DISP_NAMEColumn" msprop:Generator_UserColumnName="IRREG_LIST_DISP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SORT_ORDER" msprop:Generator_ColumnVarNameInTable="columnSORT_ORDER" msprop:Generator_ColumnPropNameInRow="SORT_ORDER" msprop:Generator_ColumnPropNameInTable="SORT_ORDERColumn" msprop:Generator_UserColumnName="SORT_ORDER" type="xs:int" minOccurs="0" />
+              <xs:element name="IRREG_STAFF_COUNT" msprop:Generator_ColumnVarNameInTable="columnIRREG_STAFF_COUNT" msprop:Generator_ColumnPropNameInRow="IRREG_STAFF_COUNT" msprop:Generator_ColumnPropNameInTable="IRREG_STAFF_COUNTColumn" msprop:Generator_UserColumnName="IRREG_STAFF_COUNT" type="xs:int" minOccurs="0" />
+              <xs:element name="IRREG_COUNT" msprop:Generator_ColumnVarNameInTable="columnIRREG_COUNT" msprop:Generator_ColumnPropNameInRow="IRREG_COUNT" msprop:Generator_ColumnPropNameInTable="IRREG_COUNTColumn" msprop:Generator_UserColumnName="IRREG_COUNT" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActivityDelayInfo" msprop:Generator_TableClassName="ActivityDelayInfoDataTable" msprop:Generator_TableVarName="tableActivityDelayInfo" msprop:Generator_RowChangedName="ActivityDelayInfoRowChanged" msprop:Generator_TablePropName="ActivityDelayInfo" msprop:Generator_RowDeletingName="ActivityDelayInfoRowDeleting" msprop:Generator_RowChangingName="ActivityDelayInfoRowChanging" msprop:Generator_RowEvHandlerName="ActivityDelayInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivityDelayInfoRowDeleted" msprop:Generator_RowClassName="ActivityDelayInfoRow" msprop:Generator_UserTableName="ActivityDelayInfo" msprop:Generator_RowEvArgName="ActivityDelayInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRREG_STAFF_COUNT" msprop:Generator_ColumnVarNameInTable="columnIRREG_STAFF_COUNT" msprop:Generator_ColumnPropNameInRow="IRREG_STAFF_COUNT" msprop:Generator_ColumnPropNameInTable="IRREG_STAFF_COUNTColumn" msprop:Generator_UserColumnName="IRREG_STAFF_COUNT" type="xs:int" minOccurs="0" />
+              <xs:element name="IRREG_COUNT" msprop:Generator_ColumnVarNameInTable="columnIRREG_COUNT" msprop:Generator_ColumnPropNameInRow="IRREG_COUNT" msprop:Generator_ColumnPropNameInTable="IRREG_COUNTColumn" msprop:Generator_UserColumnName="IRREG_COUNT" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

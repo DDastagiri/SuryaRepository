@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3110101DataSet" targetNamespace="http://tempuri.org/SC3110101DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3110101DataSet.xsd" xmlns="http://tempuri.org/SC3110101DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3110101DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3110101DataSet" msprop:Generator_UserDSName="SC3110101DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3110101TestDriveCarInfo" msprop:Generator_TableClassName="SC3110101TestDriveCarInfoDataTable" msprop:Generator_TableVarName="tableSC3110101TestDriveCarInfo" msprop:Generator_TablePropName="SC3110101TestDriveCarInfo" msprop:Generator_RowDeletingName="SC3110101TestDriveCarInfoRowDeleting" msprop:Generator_UserTableName="SC3110101TestDriveCarInfo" msprop:Generator_RowChangingName="SC3110101TestDriveCarInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3110101TestDriveCarInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3110101TestDriveCarInfoRowDeleted" msprop:Generator_RowEvArgName="SC3110101TestDriveCarInfoRowChangeEvent" msprop:Generator_RowChangedName="SC3110101TestDriveCarInfoRowChanged" msprop:Generator_RowClassName="SC3110101TestDriveCarInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TESTDRIVECARID" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARID" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARID" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARIDColumn" msprop:Generator_UserColumnName="TESTDRIVECARID" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTDRIVECARSTATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARSTATUS" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARSTATUS" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARSTATUSColumn" msprop:Generator_UserColumnName="TESTDRIVECARSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="IMAGEFILE" msprop:Generator_ColumnVarNameInTable="columnIMAGEFILE" msprop:Generator_ColumnPropNameInRow="IMAGEFILE" msprop:Generator_ColumnPropNameInTable="IMAGEFILEColumn" msprop:Generator_UserColumnName="IMAGEFILE" type="xs:string" minOccurs="0" />
+              <xs:element name="LOGO_NOTSELECTED" msprop:Generator_ColumnVarNameInTable="columnLOGO_NOTSELECTED" msprop:Generator_ColumnPropNameInRow="LOGO_NOTSELECTED" msprop:Generator_ColumnPropNameInTable="LOGO_NOTSELECTEDColumn" msprop:Generator_UserColumnName="LOGO_NOTSELECTED" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADENAME" msprop:Generator_ColumnVarNameInTable="columnGRADENAME" msprop:Generator_ColumnPropNameInRow="GRADENAME" msprop:Generator_ColumnPropNameInTable="GRADENAMEColumn" msprop:Generator_UserColumnName="GRADENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CORTCOLOR" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CORTCOLOR" msprop:Generator_ColumnVarNameInTable="columnCORTCOLOR" msprop:Generator_ColumnPropNameInTable="CORTCOLORColumn" msprop:Generator_UserColumnName="CORTCOLOR" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATEDATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTDRIVECARNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARNAME" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARNAME" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARNAMEColumn" msprop:Generator_UserColumnName="TESTDRIVECARNAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3110101InsertTestDriveCarStatus" msprop:Generator_TableClassName="SC3110101InsertTestDriveCarStatusDataTable" msprop:Generator_TableVarName="tableSC3110101InsertTestDriveCarStatus" msprop:Generator_TablePropName="SC3110101InsertTestDriveCarStatus" msprop:Generator_RowDeletingName="SC3110101InsertTestDriveCarStatusRowDeleting" msprop:Generator_UserTableName="SC3110101InsertTestDriveCarStatus" msprop:Generator_RowChangingName="SC3110101InsertTestDriveCarStatusRowChanging" msprop:Generator_RowEvHandlerName="SC3110101InsertTestDriveCarStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3110101InsertTestDriveCarStatusRowDeleted" msprop:Generator_RowEvArgName="SC3110101InsertTestDriveCarStatusRowChangeEvent" msprop:Generator_RowChangedName="SC3110101InsertTestDriveCarStatusRowChanged" msprop:Generator_RowClassName="SC3110101InsertTestDriveCarStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTDRIVECARID" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARID" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARID" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARIDColumn" msprop:Generator_UserColumnName="TESTDRIVECARID" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTDRIVECARSTATUS" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARSTATUS" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARSTATUS" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARSTATUSColumn" msprop:Generator_UserColumnName="TESTDRIVECARSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="ACCOUNT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3110101CarStatusInfo" msprop:Generator_TableClassName="SC3110101CarStatusInfoDataTable" msprop:Generator_TableVarName="tableSC3110101CarStatusInfo" msprop:Generator_TablePropName="SC3110101CarStatusInfo" msprop:Generator_RowDeletingName="SC3110101CarStatusInfoRowDeleting" msprop:Generator_UserTableName="SC3110101CarStatusInfo" msprop:Generator_RowChangingName="SC3110101CarStatusInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3110101CarStatusInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3110101CarStatusInfoRowDeleted" msprop:Generator_RowEvArgName="SC3110101CarStatusInfoRowChangeEvent" msprop:Generator_RowChangedName="SC3110101CarStatusInfoRowChanged" msprop:Generator_RowClassName="SC3110101CarStatusInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTDRIVECARID" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARID" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARID" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARIDColumn" msprop:Generator_UserColumnName="TESTDRIVECARID" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADENAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="GRADENAME" msprop:Generator_ColumnVarNameInTable="columnGRADENAME" msprop:Generator_ColumnPropNameInTable="GRADENAMEColumn" msprop:Generator_UserColumnName="GRADENAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CORTCOLOR" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CORTCOLOR" msprop:Generator_ColumnVarNameInTable="columnCORTCOLOR" msprop:Generator_ColumnPropNameInTable="CORTCOLORColumn" msprop:Generator_UserColumnName="CORTCOLOR" type="xs:string" minOccurs="0" />
+              <xs:element name="VCLSERIESCD" msprop:Generator_ColumnVarNameInTable="columnVCLSERIESCD" msprop:Generator_ColumnPropNameInRow="VCLSERIESCD" msprop:Generator_ColumnPropNameInTable="VCLSERIESCDColumn" msprop:Generator_UserColumnName="VCLSERIESCD" type="xs:string" minOccurs="0" />
+              <xs:element name="VCLMODELCD" msprop:Generator_ColumnVarNameInTable="columnVCLMODELCD" msprop:Generator_ColumnPropNameInRow="VCLMODELCD" msprop:Generator_ColumnPropNameInTable="VCLMODELCDColumn" msprop:Generator_UserColumnName="VCLMODELCD" type="xs:string" minOccurs="0" />
+              <xs:element name="BODYCLRCD" msprop:Generator_ColumnVarNameInTable="columnBODYCLRCD" msprop:Generator_ColumnPropNameInRow="BODYCLRCD" msprop:Generator_ColumnPropNameInTable="BODYCLRCDColumn" msprop:Generator_UserColumnName="BODYCLRCD" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTDRIVECARSTATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARSTATUS" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARSTATUS" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARSTATUSColumn" msprop:Generator_UserColumnName="TESTDRIVECARSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATEDATE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="TESTDRIVECARNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TESTDRIVECARNAME" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVECARNAME" msprop:Generator_ColumnPropNameInTable="TESTDRIVECARNAMEColumn" msprop:Generator_UserColumnName="TESTDRIVECARNAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3110101ModelPictureInfo" msprop:Generator_TableClassName="SC3110101ModelPictureInfoDataTable" msprop:Generator_TableVarName="tableSC3110101ModelPictureInfo" msprop:Generator_TablePropName="SC3110101ModelPictureInfo" msprop:Generator_RowDeletingName="SC3110101ModelPictureInfoRowDeleting" msprop:Generator_UserTableName="SC3110101ModelPictureInfo" msprop:Generator_RowChangingName="SC3110101ModelPictureInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3110101ModelPictureInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3110101ModelPictureInfoRowDeleted" msprop:Generator_RowEvArgName="SC3110101ModelPictureInfoRowChangeEvent" msprop:Generator_RowChangedName="SC3110101ModelPictureInfoRowChanged" msprop:Generator_RowClassName="SC3110101ModelPictureInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IMAGEFILE" msprop:Generator_ColumnVarNameInTable="columnIMAGEFILE" msprop:Generator_ColumnPropNameInRow="IMAGEFILE" msprop:Generator_ColumnPropNameInTable="IMAGEFILEColumn" msprop:Generator_UserColumnName="IMAGEFILE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3110101ModelLogoInfo" msprop:Generator_TableClassName="SC3110101ModelLogoInfoDataTable" msprop:Generator_TableVarName="tableSC3110101ModelLogoInfo" msprop:Generator_TablePropName="SC3110101ModelLogoInfo" msprop:Generator_RowDeletingName="SC3110101ModelLogoInfoRowDeleting" msprop:Generator_UserTableName="SC3110101ModelLogoInfo" msprop:Generator_RowChangingName="SC3110101ModelLogoInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3110101ModelLogoInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3110101ModelLogoInfoRowDeleted" msprop:Generator_RowEvArgName="SC3110101ModelLogoInfoRowChangeEvent" msprop:Generator_RowChangedName="SC3110101ModelLogoInfoRowChanged" msprop:Generator_RowClassName="SC3110101ModelLogoInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGO_NOTSELECTED" msprop:Generator_ColumnVarNameInTable="columnLOGO_NOTSELECTED" msprop:Generator_ColumnPropNameInRow="LOGO_NOTSELECTED" msprop:Generator_ColumnPropNameInTable="LOGO_NOTSELECTEDColumn" msprop:Generator_UserColumnName="LOGO_NOTSELECTED" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3110101ExistStatus" msprop:Generator_TableClassName="SC3110101ExistStatusDataTable" msprop:Generator_TableVarName="tableSC3110101ExistStatus" msprop:Generator_TablePropName="SC3110101ExistStatus" msprop:Generator_RowDeletingName="SC3110101ExistStatusRowDeleting" msprop:Generator_UserTableName="SC3110101ExistStatus" msprop:Generator_RowChangingName="SC3110101ExistStatusRowChanging" msprop:Generator_RowEvHandlerName="SC3110101ExistStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3110101ExistStatusRowDeleted" msprop:Generator_RowEvArgName="SC3110101ExistStatusRowChangeEvent" msprop:Generator_RowChangedName="SC3110101ExistStatusRowChanged" msprop:Generator_RowClassName="SC3110101ExistStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

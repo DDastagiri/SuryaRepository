@@ -1,0 +1,103 @@
+html > * {
+ -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body  {
+    overflow: hidden;
+  	background: -webkit-gradient(linear, center top, center bottom, from(#E5E5E5), to(#B4B4B4));
+}
+
+li { list-style:none; margin:0px; text-indent: 0px; padding: 0px; }
+
+#MstPG_LoadingScreen
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:Black;
+    opacity:0.6;
+    z-index:100001;
+    display:none;
+}
+
+#MstPG_LoadingWrap
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 640px;
+    height: 919px;
+}
+
+#MstPG_LoadingScreen .loadingIcn
+{
+	display:block;
+	width:76px;
+	height:76px;
+	animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+/* コンテンツ領域
+------------------------------------------------------------------------------*/
+div#BaseBox{
+	width:640px;
+    height: 919px;
+}
+
+/* Header
+------------------------------------------------------------------------------*/
+div#header 
+{
+	width: 640px;
+	height: 92px;
+	color: #717880;
+	text-align: center;
+	background: -webkit-gradient(linear, center top, center bottom, from(#F4F5F7), to(#AAAEBB));
+	text-shadow:0px 2px 1px #E0E2E7;
+	box-shadow: 0px 1px 1px #C6C8CA;
+	position: relative;
+}
+
+/*
+ヘッダー右側のボタングループ 
+*/
+#header .rightButtonsGroup
+{
+	position: absolute;
+	left: 492px;
+	top: 30px;
+}
+#header .rightButtonsGroup .imageIcon 
+{
+    width:135px;
+    height:33px;
+}
+
+/* 画面タイトル */
+#header h1 
+{
+    width: 100%;
+	position: absolute;
+	top: 20px;
+    text-align:center;
+    font-weight:bold;
+    color:#686c74;
+}
+
+#header h1 .HeaderTitle
+{
+	font-size: 38px;
+}
+
+.MasterPageSmallEllipsis
+{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

@@ -1,0 +1,190 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* nssv00Login用CSS　ここから
+------------------------------------------------------------------------------*/
+
+div#mainLogin
+{
+    height:1080px;
+	width:1920px;
+	overflow:auto;
+	display:block;
+	position:relative;
+	z-index:1;
+	background-image:url(../Images/SC3210101/nssv00login.png);
+}
+
+#mainLogin #contents{
+	width:466px;
+	margin:408px auto 0;
+	vertical-align:middle;
+}
+
+#login{
+	/*margin-bottom:128px;*/
+	margin-bottom:30px;
+}
+
+#loginId,
+#loginPw{
+	position:relative;
+	width:auto;
+	background:#FFFFFF;
+	height:68px;
+	font-size:26px;
+	line-height:28px;
+	color:#cccccc;
+	padding:0 0 0 26px;
+}
+#loginId{
+	border-bottom:#c5c5c5 1px solid;
+	border-radius: 15px 15px 0px 0px;
+}
+#loginPw{
+	border-radius: 0px 0px 15px 15px;
+	margin:0 0 48px 0;
+}
+#loginIdText,
+#loginPwText{
+	position:absolute;
+	top:20px;
+	left:26px;
+}
+
+#loginId #id,
+#loginPw #password{
+	width: 420px;
+	position: relative;
+	display:block;
+	top: 8px;
+	left: 0px;
+	border:none;
+	/*z-index:1;*/
+	z-index:auto;
+	font-size:26px;
+	line-height:28px;
+}
+#loginId #id{
+	padding:0px;
+	top:17px;
+	color:#333;
+	text-valign:center;
+}
+#loginPw #password{
+	padding:0px;
+	top:16px;
+	color:#333;
+	text-valign:center;
+}
+
+
+
+#loginBtn{
+	border:#343434 1px solid;
+	border-radius: 15px;
+	box-shadow: 0px 1px 1px #FFF;
+	padding:22px 0 0 0;
+	text-align:center;
+	text-shadow:#333 0 -1px 0px;
+	color:#8a8a8a;
+	font-size:26px;
+	line-height:28px;
+	height:54px;
+}
+
+#logOnBtn02{
+	border:#343434 1px solid;
+	border-radius: 15px;
+	box-shadow: 0px 1px 1px #FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b4e66b), 
+							to(#4b760e));
+	text-align:center;
+	text-valign:top;
+	text-shadow:#4f6c24 0 -1px 0px;
+	color:#FFF;
+	font-size:26px;
+	height:76px;
+	width:466px;
+}
+
+#btnRefresh{
+	border:#5b5b5b 1px solid;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	border-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e66b), to(#49740d));
+	padding:15px 0px 13px 0px;
+	text-align:center;
+	text-shadow:1px -1px #393939;
+	width:100px;
+	font-size:18px;
+}
+#pnlError{
+    position: absolute;
+    top: 300px;
+}
+
+.mousUp{
+	background: -webkit-gradient(linear, left top, left bottom, from(#737373), to(#393939));
+	color:#fff;
+}
+.mousDown{
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e56a), to(#4b760d));
+	color:#fff;
+}
+
+.loginChar{
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+
+
+.loading{
+	position:relative;
+	height:87px;	
+	background:#FFF;
+	margin:0 0 48px 0;
+	padding:50px 0 0 42px;
+	text-align:center;
+	border-radius:15px;
+	font-size:20px;
+	line-height:36px;
+	font-weight:bold;
+}
+.loadingIcn{
+	position:absolute;
+	display:block;
+	width:32px;
+	height:32px;
+	animation: LoadingAnimation 1.0s infinite linear;
+	left:152px;
+	overflow:hidden;
+	top:52px;
+}
+
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+.icrop-CustomTextBox {
+	height: 26px;
+}
+
+
+/* nssv0Login0用CSS　ここまで
+------------------------------------------------------------------------------*/
+
+.icrop-CustomTextBox {
+    height: 34px;
+}
+
+

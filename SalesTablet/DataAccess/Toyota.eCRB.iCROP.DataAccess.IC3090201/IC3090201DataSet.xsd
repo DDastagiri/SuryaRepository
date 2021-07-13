@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3090201DataSet" targetNamespace="http://tempuri.org/IC3090201DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3090201DataSet.xsd" xmlns="http://tempuri.org/IC3090201DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3090201DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3090201DataSet" msprop:Generator_UserDSName="IC3090201DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3090201Dual" msprop:Generator_TableClassName="IC3090201DualDataTable" msprop:Generator_TableVarName="tableIC3090201Dual" msprop:Generator_TablePropName="IC3090201Dual" msprop:Generator_RowDeletingName="IC3090201DualRowDeleting" msprop:Generator_UserTableName="IC3090201Dual" msprop:Generator_RowChangingName="IC3090201DualRowChanging" msprop:Generator_RowEvHandlerName="IC3090201DualRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3090201DualRowDeleted" msprop:Generator_RowEvArgName="IC3090201DualRowChangeEvent" msprop:Generator_RowChangedName="IC3090201DualRowChanged" msprop:Generator_RowClassName="IC3090201DualRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEQUENCE" msprop:Generator_ColumnVarNameInTable="columnSEQUENCE" msprop:Generator_ColumnPropNameInRow="SEQUENCE" msprop:Generator_ColumnPropNameInTable="SEQUENCEColumn" msprop:Generator_UserColumnName="SEQUENCE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3090201PushAccount" msprop:Generator_TableClassName="IC3090201PushAccountDataTable" msprop:Generator_TableVarName="tableIC3090201PushAccount" msprop:Generator_TablePropName="IC3090201PushAccount" msprop:Generator_RowDeletingName="IC3090201PushAccountRowDeleting" msprop:Generator_UserTableName="IC3090201PushAccount" msprop:Generator_RowChangingName="IC3090201PushAccountRowChanging" msprop:Generator_RowEvHandlerName="IC3090201PushAccountRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3090201PushAccountRowDeleted" msprop:Generator_RowEvArgName="IC3090201PushAccountRowChangeEvent" msprop:Generator_RowChangedName="IC3090201PushAccountRowChanged" msprop:Generator_RowClassName="IC3090201PushAccountRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="ACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

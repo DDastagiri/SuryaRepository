@@ -1,0 +1,5706 @@
+﻿/*//////////////////////////////////////////////////////////////////////////////
+//SC3080201.css
+//─────────────────────────────────────
+//機能： 顧客詳細
+//補足： 
+//作成： 2011/11/08 TCS 山口
+//更新： 2012/04/12 TCS 安田 【SALES_2】重要連絡の対応者の項目位置ずれ（ユーザー課題 No.38）
+//更新： 2012/05/09 TCS 河原 【SALES_1A】お客様メモエリアで左スワイプで、商談メモへ切り替えられない
+//更新： 2012/06/01 TCS 河原 FS開発
+//更新： 2013/01/22 TCS 河原 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発
+//更新： 2013/10/03 TCS 藤井,市川 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス）
+//更新： 2013/11/29 TCS 市川 Aカード情報相互連携開発
+//更新： 2013/12/25 TCS 市川 Aカード情報相互連携開発 追加要望
+//更新： 2014/02/12 TCS 高橋 受注後フォロー機能開発に向けたシステム設計
+//更新： 2014/08/26 TCS 外崎 SNS連携機能各国展開に向けた追加機能開発
+//更新： 2015/04/01 TCS 外崎 セールスタブレット:M014 
+//更新： 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1
+//更新： 2018/08/27 TCS 佐々木    TKM Next Gen e-CRB Project Application development Block B-1
+//更新： 2018/11/22 TCS 三浦 活動区分「3,4」選択時、理由を選択できるようにする(TR-SLT-TMT-20180611-001)
+//////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  N-SC全体　CSS
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-40
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/* contents.css　div#mainにbackgroundを追加 */
+
+
+#custDtlPage1 #scNscCustomerLeftArea {
+	width:483px;
+	float:left;
+}
+#custDtlPage1 #scNscCustomerRightArea {
+	width:483px;
+	float:right;
+}
+#custDtlPage1 .scNscCustomerInfoArea h4{
+	font-size:0.9em;
+	margin-bottom:6px;
+}
+
+
+/* contents.css　contents,contentTitleを一部上書 */
+
+#custDtlPage1 #scNscLeftArea .contentTitle,
+#custDtlPage1 #scNscRightArea .contentTitle  {
+	font-size:16px;
+	font-weight:bold;
+	padding:3px 0 3px 16px;
+}
+
+
+
+
+/***********************************
+	nsc40 顧客個人情報エリア
+***********************************/
+
+#custDtlPage1 .scNscCustomerInfoArea {
+	width:450px;
+	height:572px;
+	margin:0 auto;
+	color:#666;
+}
+#custDtlPage1 .scNscCustomerInfoArea hr {
+	display:block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	margin:6px 0 1px 0;
+}
+
+/* 写真+名前ID */
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameArea {
+	margin:15px 0 0;
+}
+/*#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameArea .scNscCustomerPhoto {
+	width:70px;
+	float:left;
+}*/
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameArea .scNscCustomerName {
+	width:380px;
+	float:left;
+	font-size:1.6em;
+	line-height:1em;
+	font-weight:bold;
+	padding:12px 0 0;
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameArea .scNscCustomerName .scNscCustomerNameId{
+	font-size:0.5em;
+	vertical-align: middle;
+    display: inline-block;
+    height: 27px;
+}
+
+/* アドレス情報 */
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea {
+	width:450px;
+	font-size:12.5px;
+	/* margin:2px 0 0;*/
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea th{
+	width:20px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea td{
+	width:205px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea .scNscCustomerAddressBlueTxt{
+	color:#395587;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea .aliginMiddle{
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) START */
+    /* vertical-align: middle; */
+    vertical-align: top;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) END */
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea .aliginTop{
+    vertical-align: top;
+}
+/*
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea .paddingTop4{
+    padding-top:3px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerAddressArea .paddingTop6{
+    padding-top:3px;
+}
+*/
+
+#custDtlPage1 .scNscCustomerAddressStyle
+{
+    line-height: 18px;
+    background-color: Transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #395587;
+    position: relative;
+    right: 3px;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) START */
+    font-size:13px;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) END */
+}
+
+/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) START */
+#MobileLabel{font-size:12px;}
+#TelLabel{font-size:12px;}
+/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) END */
+
+/************************************
+	nsc40 保有車種エリア
+************************************/
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea {
+	width:450px;
+	margin:8px 0 10px;
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea h4{
+	display:block;
+	width:400px;
+	float:left;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeNumber {
+	width:34px;
+	height:15px;
+	padding:2px 0 0;
+	float:right;
+	background-image: url(../Images/SC3080201/scNscCustomerCarTypeNumberBack.png);
+	background-repeat: no-repeat;
+	font-size:0.6em;
+	text-align:center;
+	color:#FFF;
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeLeftArea {
+	width:225px;
+	float:left;
+	margin:0;
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeLeftArea .CarType{
+	height:30px;
+	font-size:12px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeLeftArea .CarType td{
+	text-align:left;
+	vertical-align:middle;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeLeftArea .CarTypeBoldText{
+	line-height:24px;
+	/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) START */
+	/* font-size:22px; */
+	font-size:24px;
+	font-weight:bold;
+	/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) END */
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeRightArea {
+	width:225px;
+	float:left;
+	margin:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeLogo {
+	margin:5px 0 0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData1 {
+	width:225px;
+	font-weight:bold;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData1Th{
+	width:20px;
+	vertical-align: top;
+	padding:3px 0;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData1Td1{
+	width:205px;
+	vertical-align: top;
+	padding:3px 0;
+	font-size:14px;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData1Td2{
+	width:205px;
+	vertical-align: top;
+	padding:3px 0;
+	font-size:12px;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData2 {
+	width:225px;
+	font-weight:bold;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData2 th{
+	width:30px;
+	font-size:11px;
+	font-weight:normal;
+	text-align:center;
+	vertical-align: top;
+	padding:1px 0;
+	color:#FFF;
+	background-color:#808080;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	border-spacing:0;
+	overflow:hidden;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData2 td{
+	width:87px;
+	vertical-align: top;
+	padding:1px 0 1px 10px;
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) START */
+	/* font-size:11px; */
+	font-size:12px;
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.100) END */
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData2 td.kmBox{
+	width:65px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData2 td.kmBox0{
+	width:auto;
+	padding:2px 0 1px 0px;
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData2 .Renewal{
+	color:#8c8c8c;
+	font-size:10px;
+	padding-top:4px;
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData3 {
+	width:450px;
+	margin:10px 0 0;
+	/* padding:5px 10px 3px;*/
+	padding:6px 0px 6px 10px;
+	font-size:0.8em;
+	font-weight:bold;
+	background-color:#f2f2f2;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData3 th {
+	width:30px;
+	vertical-align: top;
+	border-spacing:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeArea .scNscCustomerCarTypeData3 td {
+	width:185px;
+	/*
+    vertical-align: top;
+	padding:11px 0 0 0;
+    padding:0px 0px 0px 0px
+    */
+	border-spacing:0;
+}
+
+
+
+
+
+/************************************
+	nsc40 顧客関連情報エリア
+************************************/
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedArea {
+	width:450px;
+	margin:8px 0 0;
+	padding:0 0 8px 0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon {
+	width:104px;
+	height:43px;
+	padding:0;
+	border:1px solid #b7b7b7;
+	border-radius: 5px;
+	border-radius: 5px;
+	float:left;
+	background-image: url(images/scNscCustomerInfoIcon1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon .scNscCustomerConnectedIconNumbar {
+	width:99px;
+	height:18px;
+	padding:2px 5px 0 0;
+	text-align:right;
+	font-size:0.6em;
+	color:#666;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon .scNscCustomerConnectedIconTxt {
+	width:106px;
+	height:13px;
+	padding:14px 0 0 0;
+	text-align:center;
+	font-size:10px;
+	color:#385388;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon .scNscCustomerConnectedIconTxtNoSelect {
+	width:106px;
+	height:13px;
+	padding:17px 0 0 0;
+	text-align:center;
+	font-size:10px;
+	color:#385388;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon1 {
+	/*background-image: url(../Images/SC3080201/scNscCustomerInfoIcon1.png);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin:0 8px 0 0;
+	height:50px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnected2 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin:0 8px 0 0;
+	height:50px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon2 {
+	/*background-image: url(../Images/SC3080201/scNscCustomerInfoIcon2.png);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin:0 8px 0 0;
+	height:50px;
+}
+
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon3 {
+	/*background-image: url(../Images/SC3080201/scNscCustomerInfoIcon3.png);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin:0 8px 0 0;
+	height:50px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIcon4 {
+	/*background-image: url(../Images/SC3080201/scNscCustomerInfoIcon4.png);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin:0;
+	height:50px;
+}
+
+
+/************************************
+	nsc40 顧客メモエリア
+************************************/
+
+/*.scNscCustomerInfoArea .scNscCustomerMemoArea {
+	width:450px;
+	margin:11px 0 0;
+}
+.scNscCustomerInfoArea .scNscCustomerMemoPaper {
+	width:440px;
+	background-color: #FFF;
+	border: 1px solid #b3b3b3;
+	padding:5px 5px 0 5px;
+	height:90px;
+}
+.scNscCustomerInfoArea .scNscCustomerMemoPaperDay {
+	color:#999;
+	font-size:0.7em;
+	text-align:right;
+	line-height:18px;
+}
+.scNscCustomerInfoArea .scNscCustomerMemoPaperTxt {
+	min-height:71px;
+	color:#666;
+	font-size:12px;
+	line-height:18px;
+	text-align:left;
+	background-image: url(../Images/SC3080201/scNscCustomerMemoBack.png);
+}
+*/
+
+/************************************
+	nsc40 顧客メモエリア
+************************************/
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerMemoArea {
+	width:450px;
+	margin:11px 0 0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerMemoPaper {
+	width:440px;
+	background-color: #FFF;
+	border: 1px solid #b3b3b3;
+	padding:5px 5px 0px 5px;
+	/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 START */
+	height:53px;
+	/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 START */
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerMemoPaperDay {
+	color:#999;
+	font-size:0.7em;
+	text-align:right;
+	line-height:20px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerMemoPaperTxt 
+{
+	/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 START */
+    /* 2012/03/13 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.53) START */
+	min-height:34px;
+	/* 2012/03/13 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.53) END */
+	/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 START */
+	color:#666;
+	font-size:0.75em;
+	line-height:18px;
+	text-align:left;
+	background-image: url(../Images/SC3080201/scNscCustomerMemoBack.png);
+}
+
+#custDtlPage1 #CustomerMemoLabel{
+    font-size: 12px;    
+    line-height: 18px;
+    background-color: Transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url(../Images/SC3080201/scNscCustomerMemoBack.png);
+    background-position: 0px 0px;
+    position: relative;
+    top: -5px;
+    left: 0px;
+    color: #666;
+}
+
+/***********************
+	コンタクト履歴エリア
+***********************/
+/*2012/02/15 TCS 山口 【SALES_2】 START*/
+#custDtlPage1 .scNscCurriculumArea {
+	width:450px;
+	height:577px;
+	margin:10px auto 0;
+	color:#666;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumTabArea{
+	padding:7px 0 0;
+	
+    position: relative;
+	top: 1px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumTabAllAc{
+	width:106px;
+	height:29px;
+	padding:8px 0 0;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	border-radius:5px 5px 0px 0px;
+	/*border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;*/
+	
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #b7b7b7;
+	border-right-color: #b7b7b7;
+	border-left-color: #b7b7b7;
+	float:left;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumTabSalesOff{
+	width:106px;
+	height:28px;
+	padding:8px 0 0;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:0px -1px 0px #666;
+	color:#FFF;
+	border-radius:5px 5px 0px 0px;
+	/*border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb0b4),to(#666d74));
+	float:left;
+	border: 1px solid #b7b7b7;
+}
+
+/* 更新： 2013/01/22 TCS 河原 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumTabServiceOff{
+	width:106px;
+	height:28px;
+	padding:8px 0 0;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:0px -1px 0px #666;
+	color:#FFF;	
+	border-radius:5px 5px 0px 0px;
+	/*border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb0b4),to(#666d74));
+	float:left;
+	border: 1px solid #b7b7b7;
+}
+/* 更新： 2013/01/22 TCS 河原 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumTabCrOff{
+	width:106px;
+	height:28px;
+	padding:8px 0 0;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:0px -1px 0px #666;
+	color:#FFF;	
+	border-radius:5px 5px 0px 0px;
+	/*border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb0b4),to(#666d74));
+	float:left;
+	border: 1px solid #b7b7b7;
+}
+
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumTabMargin{
+	width:6px;
+	height:37px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b7b7b7;
+	float:left;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListArea{
+	width:448px;
+	height:516px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #b7b7b7;
+	border-bottom-color: #b7b7b7;
+	border-left-color: #b7b7b7;
+	
+    background-color:White;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox{
+	
+	/*height:500px;*/
+	padding:5px 15px 0 15px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox table{
+	width:408px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListBackGray{
+	background-color:#f0f0f0;
+	height:45px;
+	overflow: hidden;
+	/*background-size:100% 100%,auto;*/
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListBackWhite{
+	height:45px;
+	overflow: hidden;
+	/*background-size:100% 100%,auto;*/
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListIcon1{
+	display: inline-block;
+	width:40px;
+	text-align:center;
+    vertical-align: top;
+    padding: 12px 0px 0px 0px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt1{
+	display: inline-block;
+	width:200px;
+	padding:7px 0px 5px 0px;
+	font-size:0.9em;
+	font-weight:bold;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt1 .scNscCurriculumListTxt1Label{
+	display: inline-block;
+	width:165px;
+}
+/* 2014/02/12 受注後フォロー機能開発に向けたシステム設計 START */
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt1Lng{
+	display: inline-block;
+	width:275px;
+	padding:7px 0px 5px 0px;
+	font-size:0.9em;
+	font-weight:bold;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt1Lng .scNscCurriculumListTxt1Label{
+	display: inline-block;
+	width:275px;
+}
+/* 2014/02/12 受注後フォロー機能開発に向けたシステム設計 END */
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxtDay {
+	font-size:0.7em;
+	font-weight:normal;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListIcon2{
+	display: inline-block;
+	width:75px;
+	vertical-align: top;
+    padding: 12px 0px 0px 0px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListIcon3{
+	display: inline-block;
+	width:20px;
+	vertical-align: top;
+    padding: 16px 0px 0px 7px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt2{
+	display: inline-block;
+	width:50px;
+	padding:0px 0;
+	font-size:0.9em;
+	font-weight:bold;
+	vertical-align: top;
+    padding: 16px 0px 0px 0px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt2 .scNscCurriculumListTxt1Label{
+	display: inline-block;
+	width:50px;
+}
+
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .contactHistoryCrArea{
+    width: 375px;
+    font-size: 12px;
+    line-height: 18px;
+    word-break: break-all;
+    padding: 0px 7px 0px 40px;
+    
+}
+
+
+
+/*2012/02/15 TCS 山口 【SALES_2】 END*/
+/* 2013/01/22 TCS 河原 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+.mileageTextLabel{
+	display: inline-block;
+	width:95px;
+}
+.infomationTextLavel{
+	display: inline-block;
+	width:100px;
+}
+
+.menteTextLavel{
+	display: inline-block;
+	width:95px;
+	width:80px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt3{
+	display: inline-block;
+	width:90px;
+	padding:7px 0px 5px 0px;
+	font-size:0.9em;
+	font-weight:bold;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt4{
+	display: inline-block;
+	width:95px;
+	font-size:0.9em;
+	font-weight:bold;
+	position: relative;
+	top:3px;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .scNscCurriculumListTxt5{
+	display: inline-block;
+	width:80px;
+	padding:16px 5px 5px 5px;
+	vertical-align: top;
+	font-size:0.9em;
+	font-weight:bold;
+}
+#custDtlPage1 .scNscCurriculumArea .scNscCurriculumListBox .contactHistoryServiceArea{
+	padding: 0px 7px 0px 245px;
+	width:100px;
+    
+}
+.contactHistoryServiceArea .cnt{
+	font-weight:bold;
+	margin-right:5px;
+}
+
+.contactHistoryServiceArea .menteinfo{
+	width:90px;
+}
+
+
+/* 2013/01/22 TCS 河原 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+
+.contactHistoryServiceArea .mainteamount{
+	font-weight:bold;
+	margin-right:5px;
+	margin-left:10px;
+}
+
+.mainte{
+ 	width:170px;   
+}
+
+.amount{
+	width:170px;
+}
+/* 2013/01/22 TCS 河原 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-414
+//
+//////////////////////////////////////////////////////////////////////////////*/
+/***********************
+	nsc 414 
+***********************/
+
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameAreaNotSelected{
+	display:block;
+	position:relative;
+	width:451px;
+	height:160px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeAreaNotSelected{
+	display:block;
+	position:relative;
+	width:451px;
+	height:115px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameAreaNotSelected .NotSelectImage,
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeAreaNotSelected .NotSelectImage{
+	position:absolute;
+	left:0; top:15px;
+	width:457px;
+}
+
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeAreaNotSelected .NotSelectImage{ top:10px;}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameAreaNotSelected .NotSelectImage img,
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeAreaNotSelected .NotSelectImage img{
+	position:absolute; top:0; left:0;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameAreaNotSelected .NotSelectImage h4,
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerCarTypeAreaNotSelected .NotSelectImage h4{
+	display:block;
+	position:absolute;
+	left:12px; top:12px;
+	width:350px; color:#676767;
+	font-size:18px; font-weight:bold;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerConnectedIconNoSelect {
+	width:104px;
+	height:43px;
+	padding:0;
+	border:1px solid #b7b7b7;
+	border-radius: 5px;
+	border-radius: 5px;
+	float:left;
+	
+}
+#custDtlPage1 .scNscCustomerConnectedArea{display:block; position:relative; width:451px; height:70px;}
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin1,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin2,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin3,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin4,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin5{
+	position:absolute;
+	top:31px; left:0;
+	font-size:10px; line-height:12px;
+	color:#375388;
+}
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin1{left:0;}
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin2{left:116px;}
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin3{left:231px;}
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin4{left:345px;}
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin5{left:3px;}
+
+
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin1 span,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin2 span,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin3 span,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin4 span,
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin5 span{
+	position:absolute;
+	display:block;
+	width:105px;
+	top:8px;
+	text-align:center;
+}
+#custDtlPage1 .scNscCustomerConnectedArea .scNscCustomerMargin4 span{top:10px;}
+
+#custDtlPage1 #scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemGrayTxt{
+	color:#aaa;
+}
+#custDtlPage1 .scNscCustomerEditingHadder .scNscCustomerCarsRegistButton{
+	display:block;
+	position:absolute;
+	top:8px; left:405px;
+	width:92px;
+	height:32px;
+	overflow:hidden;
+}
+#custDtlPage1 .scNscCustomerEditingHadder .scNscCustomerCarsRegistButton a{
+	position:absolute;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	border-right:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:5;
+	
+}
+#custDtlPage1 .scNscCustomerEditingHadder .scNscCustomerCarsRegistButton .Arrow{
+	display:block;
+	position:absolute;
+	left:65px; top:4px;
+	width:20px; height:20px;
+	border-radius:4px;
+	background: -webkit-gradient(linear, right top, left bottom, from(#576174), 
+							color-stop(0.475, #0d1734),
+							color-stop(0.476, #000b29),
+							to(#000b29));
+	transform: rotate(-45deg);
+	z-index:1;
+	border:#25272b 1px solid;
+}
+
+
+#custDtlPage1 #scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem414a table {
+	width:460px;
+}
+#custDtlPage1 #scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem414a th{
+	width:90px;
+}
+#custDtlPage1 #scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem414a td{
+	width:174px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-45～47・49
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	ポップアップ用  
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#custDtlPage1 .popUpJobSelect {
+	width:427px;
+	position:absolute;
+	left:27px;
+	top:138px;
+}
+
+/*.popUpHobbySelect {
+	width:427px;
+	position:absolute;
+	left:60px;
+	top:58px;
+}*/
+#custDtlPage1 .popUpHobbySelect {
+
+
+}
+#custDtlPage1 .popUpFamilySelect {
+	width:327px;
+	position:absolute;
+	left:-22px;
+	top:-12px;
+}
+#custDtlPage1 .popUpFamilySelectTen {
+	top:26px;
+}
+
+#custDtlPage1 .popUpInputSelect {
+	width:380px;
+	position:absolute;
+	left:60px;
+	top:58px;
+}
+/*
+.popUpInputSelect .TextArea{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	color:#b3b3b3;
+	font-size:14px;
+	line-height:19px;
+	padding:10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+}
+.popUpInputSelect .TextArea span{
+	display:block;
+	border-left:#426bf2 3px solid;
+	padding:0 0 0 4px;
+}*/
+
+#custDtlPage1 .TextArea{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	/* 2012/03/12 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.120) START */
+	/* color:#666; */
+	color:#393939;
+	/* 2012/03/12 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.120) END */
+	font-size:14px;
+	line-height:19px;
+	padding:10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+
+}
+#custDtlPage1 .TextArea span{
+	display:block;
+	color:#666;
+	border-left:#426bf2 3px solid;
+	padding:0 0 0 4px;
+}
+
+#custDtlPage1 .popUpHeader {
+	background:url(../Images/SC3080201/popUpHeader.png) no-repeat;
+	padding:20px 29px 1px 27px;
+	margin:0;
+	height:42px;
+	width:371px;
+}
+#custDtlPage1 .popUpHeaderPt02 {
+	background:url(images/popUpHeader02.png) no-repeat;
+	padding:21px 29px 0 27px;
+	margin:0;
+	height:42px;
+	width:324px;
+}
+
+#custDtlPage1 .popUpHeaderFamily div.btnL,
+#custDtlPage1 .popUpHeader div.btnL {
+	width:80px;
+	float:left;
+	text-align:center;
+}
+
+#custDtlPage1 .popUpHeaderFamily div.btnL a,
+#custDtlPage1 .popUpHeader div.btnL a {
+	background:url(../Images/SC3080201/btnPopUpCancel.png) no-repeat;
+	display:block;
+	width:80px;
+	height:30px;
+	font-size:0.75em;
+	line-height:30px;
+	color:#FFF;
+	/* text-shadow: 0px -1px 1px #000;*/
+}
+
+#custDtlPage1 .popUpHeaderFamily div.btnR,
+#custDtlPage1 .popUpHeader div.btnR {
+	width:80px;
+	float:right;
+	text-align:center;
+}
+
+#custDtlPage1 .popUpHeaderFamily div.btnR a,
+#custDtlPage1 .popUpHeader div.btnR a {
+	background:url(../Images/SC3080201/btnPopUpSend.png) no-repeat;
+	display:block;
+	width:80px;
+	height:30px;
+	font-size:0.75em;
+	line-height:30px;
+	color:#FFF;
+	/* text-shadow: 0px -1px 1px #000;*/
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	text-shadow: 0px -1px 1px black;
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+
+/*.popUpHeader h3.popUpTitle {
+	font-size:20px;
+	color:#FFF;
+	text-shadow: 1px 0px 2px #000;
+	width:205px;
+	margin:0 0 0 2px;
+	text-align:center;
+	float:left;
+}*/
+#custDtlPage1 .popUpHeader h3.popUpTitle02 {
+	font-size:20px;
+	color:#FFF;
+	text-shadow: 1px 0px 2px #000;
+	width:155px;
+	margin:0 0 0 2px;
+	text-align:center;
+	float:left;
+}
+
+/*.popUpFooterJob {
+	background:url(images/popUpFooterJob.png) no-repeat;
+	width:427px;
+	height:59px;
+	clear:both;
+}*/
+
+#custDtlPage1 .popUpFooterHobby {
+	background:url(../Images/SC3080201/popUpFooterHobby.png) no-repeat;
+	width:427px;
+	height:14px;/*2013/11/29 TCS 市川 Aカード情報相互連携開発 EDIT*/
+	clear:both;
+	display:block;
+}
+/* 2013/11/29 TCS 市川 Aカード情報相互連携開発 DELETE */
+
+#custDtlPage1 .popUpBG {
+	position:relative;
+	background:url(../Images/SC3080201/popUpBG.png) repeat-y;
+	padding:0 29px 0 28px;
+	width:370px;
+	/*2013/11/29 TCS 市川 Aカード情報相互連携開発 DELETE*/
+}
+
+#custDtlPage1 .popUpBG02 {
+	position:relative;
+	background:url(../Images/SC3080201/popUpBG02.png) repeat-y;
+	padding:0 29px 0 28px;
+	width:323px;
+	height:316px;
+}
+
+
+/*.popUpArea4columns,*/
+#custDtlPage1 .popUpArea,
+#custDtlPage1 .popUpAreaAdding {
+	position:absolute;
+	background: -moz-linear-gradient(top, #FFF, #e7e7e7); 
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e6e6e6));
+	padding:10px 5px 0px;
+	border-radius: 7px;
+	box-shadow:inset 0px 3px 3px #a2a2a2;
+	/* 2013/11/29 TCS 市川 Aカード情報相互連携開発 DELETE */
+	width:360px;
+	top:-7px;
+	left:28px;
+}
+
+/* 2013/11/29 TCS 市川 Aカード情報相互連携開発 DELETE */
+#custDtlPage1 .popUpAreaAdding{
+	width:313px;
+	height:319px;
+}
+
+#custDtlPage1 .popUpAreaHeight325 {
+	height:311px;
+}
+
+/* アイコン */
+
+#custDtlPage1 .occupationPopUpIcon,
+#custDtlPage1 .hobbyPopUpIcon {
+	float:left;
+	width:80px;
+	height:auto;
+	margin:0 5px 10px;
+}
+
+#custDtlPage1 .occupationPopUpIcon a,
+#custDtlPage1 .hobbyPopUpIcon a{
+	display:block;
+	height:70px;
+	width:80px;
+	position:relative;
+}
+
+#custDtlPage1 .occupationPopUpIcon span,
+#custDtlPage1 .hobbyPopUpIcon span{
+	position:absolute;
+	display:block;
+	bottom:5px;
+	text-align:center;
+	color:#666666;
+	width:80px;
+	font-size:11px;
+	line-height:13px;
+}
+#custDtlPage1 .occupationPopUpIcon .selectedButton span,
+#custDtlPage1 .hobbyPopUpIcon .selectedButton span{
+	color:#FFF;
+}
+
+
+#custDtlPage1 .popUpIconClear {
+	clear:both;
+}
+#custDtlPage1 .popUpIconMgn{
+	margin:0 5px 3px;
+}
+
+
+/* 職業アイコン */
+
+#custDtlPage1 .jobIcon01 a {background:url(../Images/SC3080201/iconJob01Agricultural.png) no-repeat; }
+#custDtlPage1 .jobIcon02 a {background:url(../Images/SC3080201/iconJob02Manufacturing.png) no-repeat;}
+#custDtlPage1 .jobIcon03 a {background:url(../Images/SC3080201/iconJob03Telecommunications.png) no-repeat;}
+#custDtlPage1 .jobIcon04 a {background:url(../Images/SC3080201/iconJob04FinanceIndustry.png)no-repeat;}
+#custDtlPage1 .jobIcon05 a {background:url(../Images/SC3080201/iconJob05RealEstate.png) no-repeat;}
+#custDtlPage1 .jobIcon06 a {background:url(../Images/SC3080201/iconJob06Restaurant.png) no-repeat;}
+#custDtlPage1 .jobIcon07 a {background:url(../Images/SC3080201/iconJob07MedicalWelfare.png) no-repeat;}
+#custDtlPage1 .jobIcon08 a {background:url(../Images/SC3080201/iconJob08EducationSupport.png) no-repeat;}
+#custDtlPage1 .jobIcon09 a {background:url(../Images/SC3080201/iconJob09Service.png)no-repeat;}
+#custDtlPage1 .jobIcon10 a {background:url(../Images/SC3080201/iconHobby10Nightlife.png) no-repeat;}
+#custDtlPage1 .jobIcon11 a {background:url(../Images/SC3080201/iconJob11Student.png) no-repeat;}
+#custDtlPage1 .jobIcon12 a {background:url(../Images/SC3080201/iconJob12Other.png)no-repeat;}
+
+#custDtlPage1 .jobIcon01 .selectedButton {background:url(../Images/SC3080201/iconJob01Agricultural_on.png) no-repeat; }
+#custDtlPage1 .jobIcon02 .selectedButton {background:url(../Images/SC3080201/iconJob02Manufacturing_on.png) no-repeat;}
+#custDtlPage1 .jobIcon03 .selectedButton {background:url(../Images/SC3080201/iconJob03Telecommunications_on.png) no-repeat;}
+#custDtlPage1 .jobIcon04 .selectedButton {background:url(../Images/SC3080201/iconJob04FinanceIndustry_on.png)no-repeat;}
+#custDtlPage1 .jobIcon05 .selectedButton {background:url(../Images/SC3080201/iconJob05RealEstate_on.png) no-repeat;}
+#custDtlPage1 .jobIcon06 .selectedButton {background:url(../Images/SC3080201/iconJob06Restaurant_on.png) no-repeat;}
+#custDtlPage1 .jobIcon07 .selectedButton {background:url(../Images/SC3080201/iconJob07MedicalWelfare_on.png) no-repeat;}
+#custDtlPage1 .jobIcon08 .selectedButton {background:url(../Images/SC3080201/iconJob08EducationSupport_on.png) no-repeat;}
+#custDtlPage1 .jobIcon09 .selectedButton {background:url(../Images/SC3080201/iconJob09Service_on.png)no-repeat;}
+#custDtlPage1 .jobIcon10 .selectedButton {background:url(../Images/SC3080201/iconJob10Official_on.png) no-repeat;}
+#custDtlPage1 .jobIcon11 .selectedButton {background:url(../Images/SC3080201/iconJob11Student_on.png) no-repeat;}
+#custDtlPage1 .jobIcon12 .selectedButton {background:url(../Images/SC3080201/iconJob12Other_on.png)no-repeat;}
+
+/* 趣味アイコン */
+
+/*.hobbyIcon01 a {background:url(../Images/SC3080201/iconHobby01Golf.png) no-repeat;}
+.hobbyIcon02 a {background:url(../Images/SC3080201/iconHobby02Cycling.png) no-repeat;}
+.hobbyIcon03 a {background:url(../Images/SC3080201/iconHobby03WaterSports.png) no-repeat;}
+.hobbyIcon04 a {background:url(../Images/SC3080201/iconHobby04Winter.png) no-repeat;}
+.hobbyIcon05 a {background:url(../Images/SC3080201/iconHobby05Fishing.png) no-repeat;}
+.hobbyIcon06 a {background:url(../Images/SC3080201/iconHobby06Basketball.png) no-repeat;}
+.hobbyIcon07 a {background:url(../Images/SC3080201/iconHobby07Soccer.png) no-repeat;}
+.hobbyIcon08 a {background:url(../Images/SC3080201/iconHobby08Game.png) no-repeat;}
+.hobbyIcon09 a {background:url(../Images/SC3080201/iconHobby09FilmMusic.png) no-repeat;}
+.hobbyIcon10 a {background:url(../Images/SC3080201/iconHobby10Nightlife.png) no-repeat;}
+.hobbyIcon11 a {background:url(../Images/SC3080201/iconHobby11Reading.png) no-repeat;}
+.hobbyIcon12 a {background:url(../Images/SC3080201/iconHobby12Shopping.png) no-repeat;}
+.hobbyIcon13 a {background:url(../Images/SC3080201/iconHobby13Drive.png) no-repeat;}
+.hobbyIcon14 a {background:url(../Images/SC3080201/iconHobby14Travel.png) no-repeat;}
+.hobbyIcon15 a {background:url(../Images/SC3080201/iconHobby15Outdoor.png) no-repeat;}
+.hobbyIcon16 a {background:url(../Images/SC3080201/iconHobby16Other.png) no-repeat;}/*
+
+.hobbyIcon01 .selectedButton {background:url(../Images/SC3080201/conHobby01Golf_on.png) no-repeat;}
+.hobbyIcon02 .selectedButton {background:url(../Images/SC3080201/conHobby02Cycling_on.png) no-repeat;}
+.hobbyIcon03 .selectedButton {background:url(../Images/SC3080201/conHobby03WaterSports_on.png) no-repeat;}
+.hobbyIcon04 .selectedButton {background:url(../Images/SC3080201/conHobby04Winter_on.png) no-repeat;}
+.hobbyIcon05 .selectedButton {background:url(../Images/SC3080201/conHobby05Fishing_on.png) no-repeat;}
+.hobbyIcon06 .selectedButton {background:url(../Images/SC3080201/conHobby06Basketball_on.png) no-repeat;}
+.hobbyIcon07 .selectedButton {background:url(../Images/SC3080201/conHobby07Soccer_on.png) no-repeat;}
+.hobbyIcon08 .selectedButton {background:url(../Images/SC3080201/conHobby08Game_on.png) no-repeat;}
+.hobbyIcon09 .selectedButton {background:url(../Images/SC3080201/conHobby09FilmMusic_on.png) no-repeat;}
+.hobbyIcon10 .selectedButton {background:url(../Images/SC3080201/conHobby10Nightlife_on.png) no-repeat;}
+.hobbyIcon11 .selectedButton {background:url(../Images/SC3080201/conHobby11Reading_on.png) no-repeat;}
+.hobbyIcon12 .selectedButton {background:url(../Images/SC3080201/conHobby12Shopping_on.png) no-repeat;}
+.hobbyIcon13 .selectedButton {background:url(../Images/SC3080201/conHobby13Drive_on.png) no-repeat;}
+.hobbyIcon14 .selectedButton {background:url(../Images/SC3080201/conHobby14Travel_on.png) no-repeat;}
+.hobbyIcon15 .selectedButton {background:url(../Images/SC3080201/conHobby15Outdoor_on.png) no-repeat;}
+.hobbyIcon16 .selectedButton {background:url(../Images/SC3080201/conHobby16Other_on.png) no-repeat;}
+
+/* 家族 */
+
+#custDtlPage1 .popUpHeaderFamily {
+	width:319px;
+	height:44px;
+	padding:20px 28px 0;
+	margin:0;
+	background:url(../Images/SC3080201/popUpHeaderFamily.png) no-repeat;
+}
+
+#custDtlPage1 .popUpHeaderFamily h3.popUpTitle {
+	font-size:20px;
+	color:#FFF;
+	text-shadow: 1px 0px 2px #000;
+	width:155px;
+	margin:0 0 0 2px;
+	text-align:center;
+	float:left;
+}
+
+#custDtlPage1 .popUpFooterFamily {
+	background:url(../Images/SC3080201/popUpFooterFamily.png) no-repeat;
+	width:375px;
+	height:61px;
+	clear:both;
+}
+
+#custDtlPage1 .popUpBGFamily {
+	position:relative;
+	background:url(../Images/SC3080201/popUpBGFamily.png) repeat-y;
+	width:319px;
+	padding:0 28px;
+	height:311px;
+}
+
+/*.familyAreaScroll {
+	position:absolute;
+	width:313px;
+	height:311px;
+	padding:0px 2px 0px;
+	background: -moz-linear-gradient(top, #FFF, #e7e7e7); 
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e7e7e7));
+	border-radius: 7px;
+	box-shadow:inset 0px 3px 3px #a2a2a2;
+	height:325px;
+	width:315px;
+	top:-7px;
+	left:28px;
+}
+.familyAreaScrollTen{
+	height:348px;
+}*/
+
+/*.familyCountArea {
+	width:298px;
+	margin: 6px auto 10px;
+}*/
+
+/*.familyBirthday h4,
+.familyCountArea h4 {
+	font-weight:normal;
+	color:#666;
+	margin:0 0 4px;
+	font-size:13px;
+}*/
+
+/*.familyCountBox {
+	position:relative;
+	background:url(../Images/SC3080201/bgFamilyCount.png) no-repeat;
+	width:284px;
+	height:auto;
+	padding:10px 0 11px 16px;
+}*/
+#custDtlPage1 .familyCountBoxTen {
+	position:relative;
+	background:url(../Images/SC3080201/bgFamilyCountTen.png) no-repeat;
+	width:284px;
+	height:auto;
+	padding:10px 0 11px 16px;
+}
+#custDtlPage1 .familyCountBox .Triangular{
+	position:absolute;
+	width:10px;
+	height:8px;
+	background:url(../Images/SC3080201/Triangular.png) 0 0 no-repeat;
+	left:282px;
+	top:32px;
+}
+#custDtlPage1 .familyCountBoxTen .TriangularTen{
+	position:absolute;
+	width:10px;
+	height:8px;
+	background:url(../Images/SC3080201/Triangular02.png) 0 0 no-repeat;
+	left:282px;
+	top:69px;
+}
+
+/*
+.familyCountBox a,
+.familyCountBoxTen a {
+	background:url(../Images/SC3080201/btnFamilyCount.png) no-repeat;
+	width:27px;
+	height:27px;
+	line-height:27px;
+	font-size:16px;
+	color:#000;
+	text-align:center;
+	margin:0 13px;
+	display:block;
+	float:left;
+}*/
+#custDtlPage1 .familyCountBoxTen a.Ten{
+	margin:10px 13px 0 13px;
+}
+
+#custDtlPage1 .familyCountBox .selectedButton,
+#custDtlPage1 .familyCountBoxTen .selectedButton{
+	background:url(../Images/SC3080201/bgFamilyCountOn.png) no-repeat;
+	color:#FFF;
+	text-shadow: 0px -1px 1px #000;
+}
+
+/*.familyBirthday
+{
+    width: 299px;
+    height: 400px;
+    margin: 0 auto 9px;
+}*/
+
+/*.familyBirthday table {
+	background-image: url(../Images/SC3080201/btmFamilyBirth.png), url(../Images/SC3080201/topFamilyBirth.png);
+	background-repeat: no-repeat no-repeat;
+	background-position: left bottom, left top;
+}*/
+#custDtlPage1 .familyTopImageLine
+{
+    background-image: url(../Images/SC3080201/topFamilyBirth.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+#custDtlPage1 .familyTable
+{
+    width: 300px; 
+    height: auto;
+}
+#custDtlPage1 .familyTableScroll
+{
+    height: 190px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#custDtlPage1 .familyTableAuto
+{
+    height: auto; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+/*.familyTopBtmImage
+{
+    background-image: url(../Images/SC3080201/topFamilyBirth.png), url(../Images/SC3080201/btmFamilyBirth.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, left bottom;
+}
+
+.familyBtmImage {
+    background-image: url(../Images/SC3080201/btmFamilyBirth.png),url(../Images/SC3080201/bgFamilyBirth.png);
+	background-repeat: no-repeat, repeat;
+	background-position: left bottom, left center;
+	border:none;
+}
+
+.familyTopImage
+{
+    background-image: url(../Images/SC3080201/topFamilyBirth.png), url(../Images/SC3080201/bgFamilyBirth.png);
+    background-repeat: no-repeat, repeat;
+    background-position: left top, left center;
+}
+*/
+
+#custDtlPage1 .familyTopImage
+{
+    background-image: url(../Images/SC3080201/topFamilyBirth.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 9px;
+    
+    
+}
+
+#custDtlPage1 .familyBtmImage {
+    background-image: url(../Images/SC3080201/btmFamilyBirth.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+    height: 10px;
+}
+
+#custDtlPage1 .familyBgImage {
+    background-image: url(../Images/SC3080201/bgFamilyBirth.png);
+	background-repeat: repeat;
+	background-position: left center;
+
+}
+
+
+/*.familyBirthday td {
+    background:url(../Images/SC3080201/ListArrowGr.png) no-repeat 270px 50%;
+	font-size:14px;
+	padding:10px 24px;
+	border-bottom:1px solid #BBBBBB;
+	font-weight:bold;
+}*/
+
+#custDtlPage1 .familyTableTd {
+    background:url(../Images/SC3080201/ListArrowGr.png) no-repeat 270px 50%;
+	font-size:14px;
+	padding:10px 24px;
+	border-bottom:1px solid #BBBBBB;
+	font-weight:bold;
+}
+
+#custDtlPage1 .familyTableTdBtm {
+    background:url(../Images/SC3080201/ListArrowGr.png) no-repeat 270px 50%;
+	font-size:14px;
+	padding:10px 24px;
+	font-weight:bold;
+}
+
+#custDtlPage1 .familyBirthday td span.type {
+	color:#324f85;
+	width:58px;
+	display:block;
+	float:left;
+	text-align:right;
+	padding:0 20px 0 0;
+	margin:0 30px 0 0;
+}
+
+#custDtlPage1 .familyBirthday td span.noEntry {
+	color:#999;
+}
+
+#custDtlPage1 .familyBirthday td.last {
+	border:none;
+}
+#custDtlPage1 .familyBirthday td span.FontBlack {
+	color:#000000;
+}
+#custDtlPage1 .familyBirthday td span.FontBlue {
+	color:#324f85;
+}
+#custDtlPage1 .familyBirthday td span.FontGray {
+	color:#919191;
+}
+
+/* 確認用背景画像 */
+
+#custDtlPage1 .confirmHeader {
+	width:1024px;
+	height:64px;
+	margin:0;
+	padding:0;
+}
+
+#custDtlPage1 .confirmHeaderImg45 {background:url(images/headerN-SC-45.png) no-repeat;}
+#custDtlPage1 .confirmHeaderImg46 {background:url(images/headerN-SC-46.png) no-repeat;}
+#custDtlPage1 .confirmHeaderImg47 {background:url(images/headerN-SC-47.png) no-repeat;}
+
+#custDtlPage1 .confirmContents {
+	width:1024px;
+	height:655px;
+	margin:0;
+	padding:0;
+}
+
+#custDtlPage1 .confirmContents45 {background:url(images/contentsN-SC-45.png) no-repeat}
+#custDtlPage1 .confirmContents46 {background:url(images/contentsN-SC-45.png) no-repeat}
+#custDtlPage1 .confirmContents47 {background:url(images/contentsN-SC-45.png) no-repeat}
+
+#custDtlPage1 .confirmFooter {
+	width:1024px;
+	height:49px;
+	background:url(images/footerN-SC-45.png) no-repeat;
+	margin:0;
+	padding:0;
+}
+
+/* 確認用背景画像_end */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	TCV N-CV-48
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#custDtlPage1 .BGPopUpContactSelectSample {margin:0;padding:0;}
+
+#custDtlPage1 .scNscPopUpContactSelectHeader div.btnL {
+	width:80px;
+	float:left;
+	text-align:center;
+	background:url(images/scNscbtnPopUpCancel.png) no-repeat;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectHeader div.btnR {
+	width:80px;
+	float:right;
+	text-align:center;
+	background:url(images/scNscbtnPopUpSend.png) no-repeat;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectHeader div.btnL,
+#custDtlPage1 .scNscPopUpContactSelectHeader div.btnR {
+	width:80px;
+	height:30px;
+	font-size:13px;
+	line-height:30px;
+	color:#FFF;
+	text-shadow: 0px -1px 1px #000;
+	font-weight:bold;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectHeader h3.popUpTitle {
+	font-size:20px;
+	color:#FFF;
+	text-shadow: 1px 0px 2px #000;
+	width:266px;
+	margin:0 0 0 2px;
+	text-align:center;
+	float:left;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectFootetr
+{
+    background-image: url(../Images/SC3080201/scNscPopUpArrowBottom.png);
+    background-repeat: no-repeat;
+    background-position: 336px bottom;
+    padding: 0 0 42px 0;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBG {
+	background:url(../Images/SC3080201/scNscPopUpBGContactSelect.png) repeat-y;
+	padding:0 29px 0 28px;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectArea {
+	background: -moz-linear-gradient(top, #FFF, #e7e7e7); 
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e7e7e7));
+	padding:4px 10px;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtnMiddleOff {
+	background:url(../Images/SC3080201/scNscContactSelectBtnMiddleOff.png) no-repeat;
+	width:74px;
+	height:38px;
+	padding:5px 0;
+	text-align:center;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtnMiddleOn {
+	background:url(../Images/SC3080201/scNscContactSelectBtnMiddleOn.png) no-repeat;
+	width:74px;
+	height:38px;
+	padding:5px 0;
+	text-align:center;
+}
+
+#custDtlPage1 .scNscPopUpDaySelectBtnSmallOff {
+	background:url(../Images/SC3080201/scNscContactSelectBtnSmallOff.png) no-repeat;
+	width:50px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	font-size:12px;
+	color:#4c4c4c;
+}
+
+#custDtlPage1 .scNscPopUpDaySelectBtnSmallOn {
+	background:url(../Images/SC3080201/scNscContactSelectBtnSmallOn.png) no-repeat;
+	width:50px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	text-shadow: 0px -1px 1px #000;
+}
+
+#custDtlPage1 .scNscPopUpTimeSelectBtnMiddleOff {
+	background:url(../Images/SC3080201/scNscContactSelectBtnMiddleOff.png) no-repeat;
+	width:74px;
+	height:50px;
+	text-align:center;
+	font-size:12px;
+	color:#4c4c4c;
+	display:table-cell;
+	margin-bottom:17px;
+}
+
+#custDtlPage1 .scNscTimeText01
+{
+    line-height: 50px;
+}
+
+#custDtlPage1 .scNscTimeText02 
+{
+	padding:5px 0 0;
+	height:45px;
+}
+
+#custDtlPage1 .scNscPopUpTimeSelectBtnMiddleOn {
+	background:url(../Images/SC3080201/scNscContactSelectBtnMiddleOn.png) no-repeat;
+	width:74px;
+	height:50px;
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	text-shadow: 0px -1px 1px #000;
+	display:table-cell;
+	margin-bottom:17px;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtnArea {
+	margin:0 0 14px;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtnAreaNoMargin {
+	margin:0;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtnArea h4 {
+	font-size:12px;
+	color:#666;
+	margin:0 0 6px;
+	width:200px;
+	float:left;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtnArea p.DayOrWeek{
+	width:150px;
+	float:right;
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+	text-align:right;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtnArea span.dayBlue {
+	color:#375388;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtBox {
+	clear:both;
+}
+#custDtlPage1 .scNscPopUpContactSelectBtBoxH50{
+	height:50px; overflow:hidden;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtBox p {
+	font-weight:bold;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+#custDtlPage1 .scNscPopUpContactSelectBtBox p.last {
+	font-weight:bold;
+	margin:0;
+	float:left;
+}
+
+
+#custDtlPage1 .scNscPopUpContactSelectBtBox div.clear {
+	clear:both;
+}
+
+/* ポップアップ */
+
+#custDtlPage1 .scNscPopUpContactSelect {
+	position:absolute;
+	top:60px;
+	left:60px;
+	width:449px;
+	padding:0 0 36px;
+	background-image:url(images/scNscPopUpArrowBottom.png);
+	background-repeat: no-repeat;
+	background-position:336px bottom;
+}
+#custDtlPage1 .scNscPopUpContactSelect48{
+	top:0px;
+	left:57px;
+}
+#custDtlPage1 .scNscPopUpContactSelectWindownBox 
+{
+    
+	width:447px;
+	height:430px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#custDtlPage1 .WindownBox48{
+	height:404px;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.052, rgba(29,40,59,0.9)),
+							color-stop(0.0525, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#custDtlPage1 .scNscPopUpContactSelectHeader {
+	position:relative;
+	width:447px;
+	height:45px;
+}
+#custDtlPage1 .scNscPopUpContactSelectHeader h3 {
+	position:absolute;
+	width:250px;
+	height:36px;
+	top:7px;
+	left:95px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#custDtlPage1 .scNscPopUpContactSelectHeader .scNscPopUpContactCancelButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:27px;
+	padding:0 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	text-shadow: 0px -1px 1px black;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+#custDtlPage1 .scNscPopUpContactSelectHeader .scNscPopUpContactCompleteButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:20px;
+	padding:7px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	text-shadow: 0px -1px 1px black;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+#custDtlPage1 .scNscPopUpContactSelectListArea
+{
+    font-size: 0.9em;
+    width: 412px;
+    height: 331px;
+    margin: 0 auto;
+    padding: 9px 10px 9px 10px;
+    border: #a5a5a5 1px solid;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-49
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	保有車両選択 ポップアップ用
+//
+//////////////////////////////////////////////////////////////////////////////*/
+#custDtlPage1 .confirmContents49 {background:url(images/contentsN-SC-45.png) no-repeat; position:relative;}
+
+#scNscSelectionWindownVehicleSelect {
+	position:absolute;
+	top:0px;
+	left:467px;
+	width:503px;
+	height:615px;
+	padding:0 0 0 17px;
+	background-image: url(../Images/SC3080201/scNscCustomerEditingWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 0px 175px;
+}
+#scNscSelectionWindownBoxVehicleSelect {
+	width:503px;
+	height:615px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 3px 6px #444;
+	/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.118) START */
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));*/
+	/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.118) END */
+	
+	/* 2012/03/21 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.115) START */
+	background: -webkit-gradient(linear, left top, left bottom, from(#565F72), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+    /* 2012/03/21 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.115) END */ 
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListArea {
+	font-size:0.9em;
+	width:490px;
+	height:603px;
+	margin:5px auto 0;
+	border-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox {
+	/* 2012/03/21 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.115) START */
+	/* width:490px;
+	height:603px; */
+	width:489px;
+	height:594px;
+	top:9px;
+	/* 2012/03/21 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.115) END */
+	
+	margin:0 auto 0;
+	overflow:hidden;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionCassette1{
+	background-color:#CCC;
+	background: -webkit-gradient(linear, left top, left bottom, from(#dfe2e7), 
+							to(#cccccc));
+	/*border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;*/
+	padding:12px 11px 11px 31px;
+}
+
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionCassette2{
+	background-color:#CCC;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3694dd), 
+							to(#015fe6));
+	padding:12px 11px 11px 31px;
+}
+
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionCassette3{
+	border-bottom:#cccccc 1px solid;
+	padding:12px 11px 11px 31px;
+}
+
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionCassetteLeft{
+	float:left;
+	width:200px;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionCassetteRight{
+	float:right;
+	width:230px;
+}
+
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionList1Black{
+	padding:2px 0 2px 22px;
+	background:url(../Images/SC3080201/nsc49Icn1Black.png) 2px 2px no-repeat;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionList2Black{
+	padding:5px 0 2px 22px;
+	background:url(../Images/SC3080201/nsc49Icn2Black.png) 2px 2px no-repeat;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionList1White{
+	padding:2px 0 2px 22px;
+	background:url(../Images/SC3080201/nsc49Icn1White.png) 2px 2px no-repeat;
+	color:#FFF;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscSelectionList2White{
+	padding:5px 0 2px 22px;
+	background:url(../Images/SC3080201/nsc49Icn2White.png) 2px 2px no-repeat;
+	color:#FFF;
+}
+
+
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .CarTypeBlack{
+	height:30px;
+	font-size:12px;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .CarTypeBlack td{
+	text-align:left;
+	vertical-align:middle;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .CarTypeBoldTextBlack{
+	
+	font-size:22px;
+	line-height:24px;
+}
+
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .CarTypeWhite{
+	height:30px;
+	font-size:12px;
+	color:#FFF;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .CarTypeWhite td{
+	text-align:left;
+	vertical-align:middle;
+	color:#FFF;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .CarTypeBoldTextWhite{
+	
+	font-size:22px;
+	line-height:24px;
+	color:#FFF;
+}
+
+
+
+/* テーブル */
+
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData1, 
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData2{
+	width:225px;
+	font-weight:bold;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData1 th{
+	padding:0 0 5px 0;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData1 th p{
+	width:30px;
+	font-size:0.7em;
+	font-weight:normal;
+	text-align:center;
+	vertical-align: top;
+	padding:1px 0;
+	color:#FFF;
+	background-color:#808080;	
+	overflow:hidden;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData1 td{
+	width:87px;
+	vertical-align: top;
+	padding:1px 0 6px 10px;
+	font-size:0.7em;
+	color:#666666;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData2 th{
+	padding:0 0 5px 0;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData2 th p{
+	width:30px;
+	font-size:0.7em;
+	font-weight:normal;
+	text-align:center;
+	vertical-align: top;
+	padding:1px 0;
+	color:#808080;
+	background-color:#FFFFFF;
+	overflow:hidden;
+}
+#scNscSelectionWindownBoxVehicleSelect .scNscSelectionListBox .scNscCustomerCarTypeData2 td{
+	width:87px;
+	vertical-align: top;
+	padding:1px 0 6px 10px;
+	font-size:0.7em;
+	color:#FFFFFF;
+	text-shadow:0px -1px 1px #333;
+}
+
+/*	tcv N-SC-49
+//////////////////////////////////////////////////////////////////////////////*/
+
+/* ポップアップ */
+
+#custDtlPage1 .scNsc51PopUpModelSelect {
+	position:absolute;
+	top:300px;
+	left:105px;
+	width:314px;
+	padding:17px 0 0;
+	z-index:100;
+}
+
+#custDtlPage1 .scNsc51PopUpBoxMgn {
+	top:370px;
+}
+
+#custDtlPage1 .scNsc51PopUpModelSelectArrow {
+	position:absolute;
+	top:1px;
+	left:26px;
+	width:314px;
+	padding:17px 0 0;
+	z-index:101;
+	background:url(images/scNscPopUpArrowTop.png);
+	background-repeat: no-repeat;
+	background-position:120px top;
+}
+
+#custDtlPage1 .scNsc51PopUpModelSelectWindownBox {
+	width:314px;
+	height:auto;
+	padding:0 0 5px 0;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+						color-stop(0.075, #2a3445),
+						color-stop(0.075, #0f1623),
+						to(#030b19));
+}
+
+#custDtlPage1 .scNsc51PopUpModelSelectHeader {
+	position:relative;
+	width:314px;
+	height:45px;
+}
+
+#custDtlPage1 .scNsc51PopUpModelSelectHeader .scNscPopUpContactCancelButton {
+	position:absolute;
+	top:7px;
+	left:4px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:80px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+}
+#custDtlPage1 .scNsc51PopUpModelSelectHeader .scNscPopUpContactCancelButton a{
+	color:#FFF;
+}
+
+#custDtlPage1 .scNsc51PopUpModelSelectHeader .scNscPopUpContactCompleteButton {
+	position:absolute;
+	top:7px;
+	right:4px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center; 
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+
+#custDtlPage1 .scNsc51PopUpModelSelectListArea {
+	font-size:0.9em;
+	width:284px;
+	margin:0 auto;
+	padding:10px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+
+
+
+#custDtlPage1 .NoBorderTable
+{
+    border-spacing:0;
+}
+
+#custDtlPage1 .NoBorderTable th
+{
+    border-spacing:0;
+}
+
+#custDtlPage1 .NoBorderTable td
+{
+    border-spacing:0;
+}
+
+
+
+/**********************************************
+	顧客情報編集 START
+**********************************************/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-40
+//
+//////////////////////////////////////////////////////////////////////////////*/
+#scNscCustomerEditingWindown {
+	position:absolute;
+	top:0px;
+	left:450px;
+	width:513px;
+	height:613px;
+	z-index:100;
+	padding:0 0 0 35px;
+	background-image: url(../Images/SC3080205/WindownArrowbk.png);
+	background-repeat: no-repeat;
+	background-position: 0px 50px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox {
+	width:503px;
+	height:613px;
+	background-color:#666;
+	border:#1c232f 1px solid;
+	box-shadow:0px 3px 6px #444;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.001, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.0355, rgba(29,40,59,0.9)),
+							color-stop(0.0356, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+	border-radius:8px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingHadder {
+	position:relative;
+	width:503px;
+	height:45px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingHadder h3 {
+	position:absolute;
+	width:266px;
+	height:36px;
+	top:9px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+    left: 116px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCancellButton {
+    text-decoration: none;
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:26px;
+	padding:0 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+}
+
+#cancelButtonLabel,
+#completionButtonLabel,
+#vehicleCancelButtonLabel,
+#vehicleCompletionButtonLabel,
+#ContactHeaderCancelLabel,
+#ContactHeaderCancelLabel{
+	position:relative;
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/* top:7px; */
+	font-size: 1em;
+    line-height: 27px;
+    color: white;
+    text-shadow: 0px -1px 1px black;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) END */
+    white-space: pre;
+    overflow: hidden;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCompletionButton {
+    text-decoration: none;
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:27px;
+	padding:0 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+	z-index:101;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCompletionButton2{
+    text-decoration: none;
+	position:absolute;
+	top:7px;
+	right:18px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:27px;
+	padding:0 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	border-right:none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:101;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCompletionArrow{
+    text-decoration: none;
+	position:absolute;
+	top:11px;
+	right:10px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:22px;
+	height:20px;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, right top, left bottom, from(#576174), 
+							color-stop(0.475, #0d1734),
+							color-stop(0.476, #000b29),
+							to(#000b29));
+	transform: rotate(-45deg);
+	border:#25272b 1px solid;
+	z-index:100;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCancellButton2{
+	text-decoration: none;
+	position:absolute;
+	top:7px;
+	left:10px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	border-left:none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:101;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCancellButtonArrow{
+	text-decoration: none;
+	position:absolute;
+	top:11px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:22px;
+	height:20px;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, right top, left bottom, from(#576174), 
+							color-stop(0.475, #0d1734),
+							color-stop(0.476, #000b29),
+							to(#000b29));
+	transform: rotate(-45deg);
+	border:#25272b 1px solid;
+	z-index:100;
+}
+
+
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListArea {
+	font-size:0.9em;
+	width:490px;
+	height:561px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox {
+	width:1500px;
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.64) START */
+	/* height:545px; */
+	height: 560px;
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.64) END */
+	margin:0 auto 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 0;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox2 {
+   width: 485px;
+   /* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.64) START */
+   /* height:530px; */
+   height:560px;
+   margin-top:13px;
+   /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.64) END */
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemBox {
+	width:460px;
+	margin-left:15px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem1 {
+	float:left;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	width: 338px;*/
+	width: 460px;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem2 {
+	float:right;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem3 {
+	float:left;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem4 {
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	float:right;*/
+	float:left;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingNameTitle {
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	float:right;*/
+	float:left;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingNameTitle table { 
+	width:460px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingNameTitle th{
+	font-size:11px;
+	font-weight:bold;
+	width:90px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingNameTitle td{
+	font-weight:bold;
+	color:#333333;
+	width:349px;
+}
+/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 START */
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingPrivateFleetItem,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustOrgnz,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustSubCtgry2 {
+  	float:right;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingPrivateFleetItem table,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustOrgnz table,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustSubCtgry2 table {
+    width:460px;
+}
+/*2015/04/01 TCS 外崎 セールスタブレット:M014 START*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingPrivateFleetItem th,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustOrgnz th,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustSubCtgry2 th{
+    font-size:11px;
+	font-weight:bold;
+	width:90px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingPrivateFleetItem td,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustOrgnz td,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingCustSubCtgry2 td {
+    font-weight:bold;
+	color:#333333;
+	width:349px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 END */
+/*2015/04/01 TCS 外崎 セールスタブレット:M014 END*/
+
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox.scNscCustomerEditingActvctgry {
+	float:right;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem1 table { 
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	width:338px;*/
+	width:460px;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem1 th{
+	font-size:11px;
+	font-weight:bold;
+	width:90px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem1 td{
+	font-weight:bold;
+	color:#333333;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	width:227px;*/
+	width:349px;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem2 table {
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem2 td{
+	font-weight:bold;
+	color:#333333;
+	width:98px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem3 table {
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	width:223px;*/
+	width:460px;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+	table-layout:fixed;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem3 th{
+	font-size:11px;
+	font-weight:bold;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	color:#666666;*/
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+	width:90px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem3 td{
+	font-weight:bold;
+	color:#333333;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	width:50px;*/
+	width:auto;
+	padding:5px 0px 5px 5px;
+	font-size:11px;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem4 table {
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	width:223px;*/
+	width:460px;
+	table-layout:fixed;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+    height: 30px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem4 th{
+	font-size:11px;
+	font-weight:bold;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	color:#666666;*/
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+	width:90px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem4 td{
+	font-weight:bold;
+	color:#333333;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	width:50px;*/
+	width:auto;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem5 table {
+	font-weight:bold;
+	width:460px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem5 th{
+	font-size:11px;
+	font-weight:bold;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	color:#666666;*/
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+	width:90px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem5 td{
+	color:#333333;
+	width:349px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem6{
+	position:relative;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem6 table {
+	width:auto;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem6 th{
+	font-size:11px;
+	width:90px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem6 td{
+	width:104px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem7 table {
+	width:460px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem7 td{
+	width:460px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem8 table {
+	font-weight:bold;
+	width:460px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem8 th{
+	font-size:11px;
+	font-weight:bold;
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/*	color:#666666;*/
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+	width:90px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItem8 td{
+	color:#333333;
+	width:180px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox th{
+	padding:5px 5px;
+	font-size:0.9em;
+	text-align:right;
+	font-weight:normal;
+	height:35px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox td{
+	padding:5px 5px;
+	font-size:1em;
+	text-align:left;
+	font-weight:bold;
+	height:35px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemRedTxt{
+	color:#d74747;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemBlueTxt{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingNameTitleItemBlueTxt{
+	color:#375388;
+	vertical-align:middle;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemGrayTxt{
+	color:#666;
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemHeavyGrayTxt{
+	color:#666666;
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemWeightNormalTxt{
+	font-weight:normal;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemTxtCenter{
+	text-align:center;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListItemArrowBack{
+	background-image: url(../Images/SC3080205/scNscCustomerEditingListBackArrow.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingZipButton{
+	padding:6px 0 0 0;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .icrop-DateTimeSelector {
+    -webkit-appearance: none;
+    border-width: 0px;
+    text-align:left;
+    font-size:16px;
+}
+
+.disableButton
+{
+    display: none;
+}
+.disableLabel
+{
+    display: none;
+}
+
+# .icon01{
+	display:block;
+	position:relative;
+	float:right;
+    top: 0px;
+    left: -5px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scMunCheck{
+	color:#000;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scGirlCheck{
+	color:#000;
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scOtherCheck{
+	color:#000;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scUnknownCheck{
+	color:#000;
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scKojinCheck{
+	color:#000;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scHoujinCheck{
+	color:#000;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scSmsCheck{
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scEmailCheck{
+	font-weight:bold;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scDmailCheck{
+	font-weight:bold;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .Dmail{
+	background-repeat: no-repeat;
+	background-position: right center;
+	position:absolute;
+	width:102px;
+	height:28px;
+	display:block;
+	overflow:hidden;
+	float:right;
+	padding:8px 5px 5px 5px;
+	top:0;
+	left:340px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scBuleCheck{
+	color:#375388;
+}
+
+/**********************************************
+	顧客情報編集 END
+**********************************************/
+
+/*******************************************
+	顧客情報編集　スライドイン実装 START
+*******************************************/
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+//#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox { width: 1500px; -webkit-transition: transform 500ms ease-in-out 0; }
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox { width: 2500px; -webkit-transition: transform 500ms ease-in-out 0; }
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox.page1 { transform:translate3d(0px,0px,0px); }
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox.page2 { transform:translate3d(-500px,0px,0px); }
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox.page3 { transform:translate3d(-1000px,0px,0px); }
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox.page4 { transform:translate3d(-1500px,0px,0px); }
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .scNscCustomerEditingListBox.page5 { transform:translate3d(-2000px,0px,0px); }
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+/*******************************************
+	顧客情報編集　スライドイン実装 END
+*******************************************/
+
+
+
+/**********************************************
+	車両情報編集 START
+**********************************************/
+#scVehicleEditingWindown {
+	position:absolute;
+	top:0px;
+	left:445px;
+	width:503px;
+	height:613px;
+	z-index:101;
+	padding:0 0 0 35px;
+	background-image: url(../Images/SC3080205/WindownArrowbk.png);
+	background-repeat: no-repeat;
+	background-position: 0px 250px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox {
+	width:503px;
+	height:613px;
+	background-color:#666;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 0px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.001, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.0355, rgba(29,40,59,0.9)),
+							color-stop(0.0356, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+	border-radius:8px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingHadder {
+	position:relative;
+	width:503px;
+	height:45px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingHadder h3 {
+	position:absolute;
+	width:266px;
+	height:36px;
+	top:9px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+    left: 116px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleCarsRegistButton{
+	display:block;
+	position:absolute;
+	top:8px; left:405px;
+	width:92px;
+	height:32px;
+	overflow:hidden;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleCarsRegistButton a{
+	position:absolute;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	border-right:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:5;
+	
+}
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleCarsRegistButton .Arrow{
+	display:block;
+	position:absolute;
+	left:65px; top:4px;
+	width:20px; height:20px;
+	border-radius:4px;
+	background: -webkit-gradient(linear, right top, left bottom, from(#576174), 
+							color-stop(0.475, #0d1734),
+							color-stop(0.476, #000b29),
+							to(#000b29));
+	transform: rotate(-45deg);
+	z-index:1;
+	border:#25272b 1px solid;
+}
+
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:26px;
+	padding:0 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:27px;
+	padding:0 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListArea {
+	font-size:0.9em;
+	width:490px;
+	height:561px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListBox {
+	width:1500px;
+	height:560px;
+	margin:0 auto 0;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListBox2 {
+   width: 485px;
+   height:560px;
+   margin-top:15px;
+   left: 0px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemBox {
+	width:460px;
+	margin-left:15px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem1 {
+	float:left;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem2 {
+	float:right;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem3 {
+	float:left;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem4 {
+	float:right;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem1 table { 
+	width:338px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem1 th{
+	font-size:11px;
+	font-weight:bold;
+	width:90px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem1 td{
+	font-weight:bold;
+	color:#333333;
+	width:227px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem2 table {
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem2 td{
+	font-weight:bold;
+	color:#333333;
+	width:98px;
+}
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem3 table {
+	width:223px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem3 th{
+	font-size:11px;
+	font-weight:bold;
+	color:#666666;
+	width:90px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem3 td{
+	font-weight:bold;
+	color:#333333;
+	width:50px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem4 table {
+	width:223px;
+    height: 30px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem4 th{
+	font-size:11px;
+	font-weight:bold;
+	color:#666666;
+	width:90px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem4 td{
+	font-weight:bold;
+	color:#333333;
+	width:50px;
+}
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem10 {
+	left:340px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scNscVehicleEditingActvctgry {
+	float:right;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem5 table {
+	font-weight:bold;
+	width:460px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem5 th{
+	font-size:11px;
+	font-weight:bold;
+	color:#666666;
+	width:90px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem5 td{
+	color:#333333;
+	width:349px;
+}
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem6{
+	position:relative;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem6 table {
+	width:auto;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem6 th{
+	width:90px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem6 td{
+	width:104px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem7 table {
+	width:460px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem7 td{
+	width:460px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem8 table {
+	font-weight:bold;
+	width:460px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem8 th{
+	font-size:11px;
+	font-weight:bold;
+	color:#666666;
+	width:90px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItem8 td{
+	color:#333333;
+	width:180px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scGBookCheck{
+	font-weight:bold;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox th{
+	padding:5px 5px;
+	font-size:0.9em;
+	text-align:right;
+	font-weight:normal;
+	height:35px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox td{
+	padding:5px 5px;
+	font-size:1em;
+	text-align:left;
+	font-weight:bold;
+	height:35px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingActvctgry{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+/* 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 START */
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scNscVehicleEditingModelYear {
+	float:right;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingModelYear{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+/* 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 END   */
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scNscCustomerEditingListItemArrowBack{
+	background-image: url(../Images/SC3080205/scNscCustomerEditingListBackArrow.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemBottomBorder2{
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemRedTxt{
+	color:#d74747;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemBlueTxt{
+	color:#375388;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemGrayTxt{
+	color:#666;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemWeightNormalTxt{
+	font-weight:normal;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemTxtCenter{
+	text-align:center;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemCloseBack{
+	background-image: url(/Images/SC3080205/scVehicleEditingListBackClose.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemArrowBack{
+	background-image: url(/Images/SC3080205/scVehicleEditingListBackArrow.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemCheckBack{
+	background-image: url(/Images/SC3080205/scVehicleEditingListBackCheck.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListItemCloseMagnifyingBack{
+	background-image: url(/Images/SC3080205/scVehicleEditingListBackClose.png), url(/Images/SC3080205/scVehicleEditingListBackMagnifying.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position:  300px center, right center;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .disableButton
+{
+    display: none;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleAppendCompletionButton {
+	position:relative;
+	display:block;
+	color:#aaaaaa;
+	text-align:center;
+	vertical-align:middle;
+	width:440px;
+	height:23px;
+	top:0;
+	padding:-3px 0 0 0;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleAppendCompletionButton2 {
+	position:absolute;
+	display:block;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+	border:#999999 0px solid;
+	font-size:14px;
+    font-weight:bold;
+	color:#000;
+	width:440px;
+	height:23px;
+	text-align:center;
+	padding:0px 0px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .icrop-DateTimeSelector {
+    -webkit-appearance: none;
+    border-width: 0px;
+    text-align:left;
+    font-size:16px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scBuleCheck{
+	color:#375388;
+}
+input
+{
+    border-width: 0px;
+}
+
+/*******************************************
+	車両情報編集　スライドイン実装 START
+*******************************************/
+/* 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 START */
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListBox { width: 1500px; -webkit-transition: transform 500ms ease-in-out 0; }
+/* 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 END   */
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListBox.page1 { transform:translate3d(0px,0px,0px); }
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListBox.page2 { transform:translate3d(-500px,0px,0px); }
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListBox.page3 { transform:translate3d(-1000px,0px,0px); }
+/* 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 START */
+#scVehicleEditingWindown #scVehicleEditingWindownBox .scVehicleEditingListBox.page4 { -webkit-transform:translate3d(-500px,0px,0px); }
+/* 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 END   */
+/*******************************************
+	車両情報編集　スライドイン実装 END
+*******************************************/
+
+
+/* 長谷川追加分 */
+#custDtlPage1 .popupIconTextCenter
+{
+    text-align: center;
+    position: relative;
+    left: 4px;
+}
+#custDtlPage1 .scNscCustomerInfoArea .scNscCustomerNameArea .scNscCustomerPhoto {
+	width:70px;
+	float:left;
+}
+
+#custDtlPage1 #facePictureTable
+{
+    height:60px;
+    width:60px;
+	border: 1px solid #ccc;
+	border-radius:5px;
+}
+
+#custDtlPage1 #facePictureLabel
+{
+    font-size: 12px;
+	color: #395587;
+}
+
+#custDtlPage1 .NoBorderTable
+{
+    border-spacing:0;
+}
+
+#custDtlPage1 .NoBorderTable th
+{
+    border-spacing:0;
+}
+
+#custDtlPage1 .NoBorderTable td
+{
+    border-spacing:0;
+}
+
+#custDtlPage1 .CustomerRelatedTitleFont
+{
+    font-size: 10px;
+    color: #385388;
+    padding-top: 5px;
+}
+#custDtlPage1 #CustomerRelatedHobbySelectedImage,
+#custDtlPage1 #CustomerRelatedFamilySelectedImage,
+#custDtlPage1 #CustomerRelatedOccupationSelectedImage
+{
+    background-repeat:no-repeat;
+    background-position:center center;
+    height: 50px;
+}
+
+#custDtlPage1 #CustomerRelatedFamilySelectedImage
+{
+    background-image: url(../Images/SC3080201/scNscCustomerInfoIcon2.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactSelectedImage .ContactCount,
+#custDtlPage1 #CustomerRelatedHobbySelectedImage .HobbyCount,
+#custDtlPage1 #CustomerRelatedFamilySelectedImage .FamilyCount,
+#custDtlPage1 #CustomerRelatedOccupationSelectedImage .OccupationCount
+{
+    width: 99px;
+    height: 18px;
+    padding: 2px 5px 0 0;
+    text-align: right;
+    font-size: 0.6em;
+    color: #666;
+}
+
+#custDtlPage1 #CustomerRelatedHobbySelectedImage .HobbyText,
+#custDtlPage1 #CustomerRelatedFamilySelectedImage .FamilyText,
+#custDtlPage1 #CustomerRelatedOccupationSelectedImage .OccupationText
+{
+    width: 106px;
+    height: 13px;
+    padding: 14px 0 0 0;
+    text-align: center;
+}
+
+#custDtlPage1 #CustomerRelatedContactSelectedImage .ContactText
+{
+    width: 106px;
+    height: 13px;
+    text-align: center;
+    position: relative;
+    top: -18px;
+}
+
+#custDtlPage1 #CustomerRelatedContactArea,
+#custDtlPage1 #CustomerRelatedHobbyArea,
+#custDtlPage1 #CustomerRelatedFamilyArea,
+#custDtlPage1 #CustomerRelatedOccupationArea
+{
+    width:104px;
+    height:50px;
+    border: 1px solid #B7B7B7;
+    border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 8px 0 0;
+}
+
+#custDtlPage1 #CustomerRelatedContactArea
+{
+    margin: 0px;
+}
+
+#custDtlPage1 #NewEditCustomerOccupationPanel
+{
+    height:100%;
+}
+
+#custDtlPage1 #CustomerRelatedOccupationPopupArea
+{
+    width: 427px;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 21;
+    /*2013/11/29 TCS 市川 Aカード情報相互連携開発 START*/
+     left:100px;
+     background-image: url(../Images/SC3080201/scNscCustomerEditingWindownArrow.png);
+     background-repeat:no-repeat;
+     top: -12px;
+     background-position: 10px 433px;
+    /*2013/11/29 TCS 市川 Aカード情報相互連携開発 END*/
+}
+
+/*2013/11/29 TCS 市川 Aカード情報相互連携開発 START*/
+#custDtlPage1 #CustomerRelatedOccupationPopupArea.row7
+{
+     top: -12px;
+     background-position: 10px 425px;
+}
+#custDtlPage1 #CustomerRelatedOccupationPopupArea.row6
+{
+     top: 68px;
+     background-position: 10px 345px;
+}
+#custDtlPage1 #CustomerRelatedOccupationPopupArea.row5
+{
+     top: 148px;
+     background-position: 10px 265px;
+}
+#custDtlPage1 #CustomerRelatedOccupationPopupArea.row4
+{
+     top: 228px;
+     background-position: 10px 185px;
+}
+#custDtlPage1 #CustomerRelatedOccupationPopupArea.row3
+{
+     top: 308px;
+     background-position: 10px 105px;
+}
+#custDtlPage1 #CustomerRelatedOccupationPopupArea.row2
+{
+     top:308px;
+     background-position: 10px 105px;
+}
+#custDtlPage1 #CustomerRelatedOccupationPopupArea.row1
+{
+     top: 308px;
+     background-position: 10px 105px;
+}
+/*2013/11/29 TCS 市川 Aカード情報相互連携開発 END*/
+
+
+#custDtlPage1 #CustomerRelatedFamilyPopupArea
+{
+    width: 327px;
+    position: absolute;
+    left: 7px;
+    top: 0px;
+    z-index:21;
+}
+
+#custDtlPage1 .popUpIcon
+{
+    float: left;
+    width: 80px;
+	/*2013/11/29 TCS 市川 Aカード情報相互連携開発 DELETE*/
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+#custDtlPage1 .popUpIcon a
+{
+    display: block;
+    height: 70px;
+    width: 80px;
+    position: relative;
+}
+
+#custDtlPage1 .popUpIcon span
+{
+    position: absolute;
+    display: block;
+    bottom: 5px;
+    text-align: center;
+    color: #666;
+    width: 80px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+#custDtlPage1 .popUpIcon span.selectedFont
+{
+    color: white;
+}
+
+#custDtlPage1 .popUpHeader div.btnL {
+    position: absolute;
+    
+}
+
+#custDtlPage1 .popUpHeader div.btnR {
+    position: absolute;
+    top: 20px;
+    left: 318px;
+}
+
+#custDtlPage1 #CustomerRelatedOccupationPageArea .occupationOtherRelationship
+{
+    transform: translate3d(0px,0px,0px);
+}
+
+#custDtlPage1 #CustomerRelatedOccupationPageArea { width: 740px; position: relative; }
+#custDtlPage1 #CustomerRelatedOccupationPageArea.page1 { transform: translate3d(370px,0px,0px); }
+#custDtlPage1 #CustomerRelatedOccupationPageArea.page2 { transform: translate3d(-370px,0px,0px); }
+
+#custDtlPage1 .familyCountTitle {
+	width:298px;
+	margin: 6px auto 0px;
+}
+
+#custDtlPage1 .familyCountBox {
+	background:url(../Images/SC3080201/bgFamilyCountTen.png) no-repeat;
+	margin: 0px auto 10px;
+	/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.126) START */
+	width:285px;
+	/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.126) END */
+	padding:10px 0 11px 16px;
+	background-size:100% 100%,auto;
+    height: 25px;
+	overflow: hidden;
+	position: relative;
+}
+
+#custDtlPage1 .familyCountBox ul {
+    letter-spacing:-.40em;
+}
+
+#custDtlPage1 .familyCountBox li {
+	display:inline-block;
+	letter-spacing:normal;
+}
+
+#custDtlPage1 .familyCountBox a {
+	background:url(../Images/SC3080201/btnFamilyCount.png) no-repeat;
+	width:27px;
+	height:27px;
+	line-height:27px;
+	font-size:16px;
+	color:#000;
+	text-align:center;
+	margin:0 13px;
+	display:block;
+}
+
+/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.131) START */
+#custDtlPage1 .familyCountBox .TriangulArrowDown{
+	position:absolute;
+	width:20px;
+	height:10px;
+	background:url(../Images/SC3080201/Triangular.png) 0 0 no-repeat;
+	left:270px;
+	top: 25px;
+	margin: 10px 0 0 12px;
+}
+
+#custDtlPage1 .familyCountBox .TriangulArrowUp{
+	position:absolute;
+	width:20px;
+	height:20px;
+	background:url(../Images/SC3080201/Triangular02.png) 0 0 no-repeat;
+	left:270px;
+	margin: 8px 0 0 12px;
+	top: 60px;
+}
+/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.131) END */
+
+#custDtlPage1 .familyBirthdayTitle h4,
+#custDtlPage1 .familyCountTitle h4 {
+	font-weight:normal;
+	color:#666;
+	margin:0 0 4px;
+	font-size:13px;
+}
+
+#custDtlPage1 .familyBirthdayTitle h4.TitleLeft 
+{
+    position:absolute;
+    float: left;
+    width: 100px;
+}
+/* 2013/12/25 TCS 市川 Aカード情報相互連携開発 追加要望 START */
+#custDtlPage1 .familyBirthdayTitle h4.TitleCenter 
+{
+    float: right;
+    width: 192px;
+    left:110px;
+}
+/* 2013/12/25 TCS 市川 Aカード情報相互連携開発 追加要望 END */
+
+#custDtlPage1 .familyRelationship,
+#custDtlPage1 .familyBirthdayTitle{
+    width: 298px;
+    margin: 0 auto;
+}
+
+#custDtlPage1 .familyBirthdayListArea{
+    width: 298px;
+    margin: 0 auto 9px;
+    padding-bottom:10px;
+}
+
+
+
+#custDtlPage1 .familyBirthdayListArea ul {
+	background-image: url(../Images/SC3080201/btmFamilyBirthB.png), url(../Images/SC3080201/topFamilyBirthB.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: left bottom, left top;
+    width: 299px;
+}
+
+#custDtlPage1 .familyBirthdayListArea li
+{
+	font-size:14px;
+	/*padding:10px 24px;*/
+	padding:10px 5px;
+	border-bottom:1px solid #BBBBBB;
+	font-weight:bold;
+	-webkit-tap-highlight-color:rgba(0,0,0,0.2);
+}
+
+#custDtlPage1 .familyBirthdayListArea li span.FontBlack {
+    color: black;
+}
+
+/*#custDtlPage1 .familyBirthdayListArea li span.type
+{
+    color: #324F85; 
+    width: 90px;
+    display: block;
+    float: left;
+    text-align: right;
+    padding: 0 0 0 0; 
+}*/
+#custDtlPage1 .familyBirthdayListArea li span.type {
+    color: #324F85;
+    /*width: 52px;*/
+    width: 90px;
+    display: block;
+    float: left;
+    text-align: right;
+    margin: 0 25px 0 0;
+    /*padding: 0 25px 0 0;*/
+    /*margin: 0 25px 0 0;*/
+}
+
+#custDtlPage1 .familyBirthdayListArea li:first-child span.type {
+    color: #C0C0C0;
+}
+
+#custDtlPage1 .familyBirthdayListArea li input
+{
+    color: #324F85;
+    font-size: 14px;
+    font-weight: bold;
+    
+    -webkit-appearance:none;
+    border-width: 0px;
+}
+
+#custDtlPage1 .familyBirthdayListArea li:first-child input {
+    color: black;
+}
+
+/*#custDtlPage1 .familyBirthdayListArea li span.Calendar
+{
+    color: #324F85;
+    width: 30px;
+    float: right;
+    text-align: right;
+    padding-left: 30px;
+    margin-left: 30px;
+}*/
+#custDtlPage1 .familyBirthdayListArea li span.Calendar {
+    color: #324F85;
+    width: 30px;
+    display: block;
+    float: right;
+    text-align: right;
+    padding: 0 20px 0 0;
+    margin: 0 0 0 20px;
+}
+
+#custDtlPage1 .familyBirthdayListArea li:last-child
+{
+	border-bottom:none;
+}
+
+#custDtlPage1 li.familyBirthdayListAreaNoBorder
+{
+	border-bottom:none;
+}
+
+#custDtlPage1 .familyBirthdayListArea li.displaynone
+{
+    display:none;
+}
+
+#custDtlPage1 .popUpHeader h3.popUpTitle {
+	font-size:20px;
+	color:#FFF;
+	text-shadow:#333333 0px -1px 0px;
+	width:100%;
+	margin:0 0 0 2px;
+	text-align:center;
+	float:left;
+}
+
+#custDtlPage1 .popUpFooterJob {
+	background:url(../Images/SC3080201/popUpFooterJob.png) no-repeat;
+	width:427px;
+	height:14px;/*2013/11/29 TCS 市川 Aカード情報相互連携開発 EDIT*/
+	clear:both;
+}
+
+#custDtlPage1 .familyAreaScroll {
+	/*width:313px;
+	height:311px;*/
+	/*background: -moz-linear-gradient(top, #FFF, #e7e7e7); */
+	position:absolute;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e7e7e7));
+	border-radius: 7px;
+	
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.128) START */
+	/*box-shadow:inset 0px 3px 3px #a2a2a2;
+	height:325px;
+	top:-7px;
+    padding:0px 2px 0px; */
+	padding: 0 0.08em 0 0.08em;
+	height:319px;
+	top:1px;
+	/* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.128) END */
+	
+	width:315px;
+	overflow:hidden;
+}
+
+#custDtlPage1 #CustomerRelatedFamilyPageArea { width: 960px; position: relative; }
+#custDtlPage1 #CustomerRelatedFamilyPageArea.page1 { transform:translate3d(320px,0px,0px); }
+#custDtlPage1 #CustomerRelatedFamilyPageArea.page2 { transform:translate3d(-320px,0px,0px); }
+#custDtlPage1 #CustomerRelatedFamilyPageArea.page3 { transform:translate3d(640px,0px,0px); }
+
+#custDtlPage1 #familyRelationship{
+    margin-top: 10px;
+    padding-bottom:15px;
+}
+
+#custDtlPage1 #familyRelationship li{
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	background-color:#FFFFFF;
+    padding: 10px 12px 10px 30px;
+    font-size: 16px;
+    overflow: hidden;
+    height: 21px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+}
+
+#custDtlPage1 .familyRelationshipOn {
+	background-image: url(../Images/SC3080201/scNscPopUpListCheckMark.png);
+	background-repeat: no-repeat;
+    background-position: 13px 13px;
+    color: #345186;
+}
+
+#custDtlPage1 #familyRelationship li:first-child{
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+}
+
+#custDtlPage1 #familyRelationship li:last-child{
+	border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft: 8px;
+}
+
+#custDtlPage1 .familyOtherRelationship
+{
+    width: 310px;
+    margin: 0 auto;
+    position:relative;
+    top:10px;
+    transform:translate3d(0px,0px,0px);
+}
+
+#custDtlPage1 .familyBirthdayListArea input {
+    /* 2012/03/12 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.130) START */
+/* 2013/10/06 TCS 市川 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） MODIFY START */
+/* 2013/12/25 TCS 市川  Aカード情報相互連携開発 追加要望 START */
+    width: 160px;
+/* 2013/12/25 TCS 市川  Aカード情報相互連携開発 追加要望 END */
+/* 2013/10/06 TCS 市川 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） MODIFY END */
+    text-align: center;
+    /* 2012/03/12 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.130) END */
+}
+
+#custDtlPage1 #CustomerRelatedHobbyPopupArea{
+    width: 427px;
+    position: absolute;
+    z-index:21;
+	left:330px;
+    background-image: url(../Images/SC3080201/scNscCustomerEditingWindownArrow.png);
+    background-repeat:no-repeat;
+    top: -12px;
+    background-position: 10px 433px;
+}
+/*2013/11/29 TCS 市川 Aカード情報相互連携開発 START*/
+#custDtlPage1 #CustomerRelatedHobbyPopupArea.row7
+{
+     top: -12px;
+     background-position: 10px 425px;
+}
+#custDtlPage1 #CustomerRelatedHobbyPopupArea.row6
+{
+     top: 68px;
+     background-position: 10px 345px;
+}
+#custDtlPage1 #CustomerRelatedHobbyPopupArea.row5
+{
+     top: 148px;
+     background-position: 10px 265px;
+}
+#custDtlPage1 #CustomerRelatedHobbyPopupArea.row4
+{
+     top: 228px;
+     background-position: 10px 185px;
+}
+#custDtlPage1 #CustomerRelatedHobbyPopupArea.row3
+{
+     top: 308px;
+     background-position: 10px 105px;
+}
+#custDtlPage1 #CustomerRelatedHobbyPopupArea.row2
+{
+     top:308px;
+     background-position: 10px 105px;
+}
+#custDtlPage1 #CustomerRelatedHobbyPopupArea.row1
+{
+     top: 308px;
+     background-position: 10px 105px;
+}
+/* 2013/11/29 TCS 市川 Aカード情報相互連携開発 END */
+#custDtlPage1 #CustomerRelatedHobbyPopupPageArea
+{
+    overflow:hidden;
+    width: 740px; 
+    position: relative; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e6e6e6));
+    
+}
+#custDtlPage1 #CustomerRelatedHobbyPopupPageArea.page1 { transform:translate3d(370px,0px,0px); }
+#custDtlPage1 #CustomerRelatedHobbyPopupPageArea.page2 { transform:translate3d(-370px,0px,0px); }
+
+
+#custDtlPage1 .CustomerRelatedHobbyPopupPage{
+    width:370px;
+    /* 2013/11/27 TCS 市川 Aカード情報相互連携開発 DELETE */
+    float:left;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.126) START */
+    padding: 0.2em 0 0 0;
+    /* 2012/03/14 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.126) END */
+}
+
+#custDtlPage1 #CustomerRelatedHobbyPopupOtherWrap
+{
+    padding:0px 10px;
+    transform:translate3d(0px,0px,0px);
+}
+
+#custDtlPage1 .HobbyPopupBG4columns {
+	position:relative;
+	background:url(../Images/SC3080201/popUpBG.png) repeat-y;
+	padding:0 29px 0 28px;
+	width:370px;
+    /* 2013/11/27 TCS 市川 Aカード情報相互連携開発 START */
+    overflow:hidden;
+    /* 2013/11/27 TCS 市川 Aカード情報相互連携開発 END */    
+}
+
+#custDtlPage1 .HobbyPopupArea4columns {
+	/*position:absolute;*/
+	padding:10px 0px 0px;
+	border-radius: 7px;
+	box-shadow:inset 0px 3px 3px #a2a2a2;
+	width:370px;
+	/* top:-7px; */
+}
+
+#custDtlPage1 .hobbyIcon
+{
+    float: left;
+    width: 80px;
+    height: 70px;
+    margin: 0px 0px 10px 10px;
+    position:relative;
+    text-align: center;
+    background-repeat:no-repeat;
+}
+
+#custDtlPage1 .hobbyIcon span 
+{
+    position:relative;
+    top:45px;
+    text-align: center;
+    color: #666;
+    width: 80px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+#custDtlPage1 .hobbyIcon span.selectedButton {
+    color: white;
+}
+
+#CustomerRelatedContactPopupArea
+{
+    z-index:21;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul
+{
+    /* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.136) START */
+    /* letter-spacing:-.40em; */
+    letter-spacing:-.28em;
+    /* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.136) END */
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea li
+{
+    display:inline-block;
+    vertical-align:top;
+	letter-spacing:normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #4C4C4C;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect5Button li {
+    background: url(../Images/SC3080201/scNscContactSelectBtnMiddleOff.png) no-repeat;
+    width: 74px;
+    height: 40px;
+    padding: 5px 0px;
+    text-align: center;
+    margin: 0px 10px 0px 0px;
+    vertical-align:middle;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect5Button li:nth-child(5n) {
+    margin: 0px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect5Button li:last-child {
+    margin: 0px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect5Button li.scNscPopUpContactSelectBtnMiddleOn {
+    background: url(../Images/SC3080201/scNscContactSelectBtnMiddleOn.png) no-repeat;
+    color: white;
+    text-shadow: 0px -1px 1px black;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect7Button li {
+    background: url(../Images/SC3080201/scNscContactSelectBtnSmallOff.png) no-repeat;
+    width: 50px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    margin: 0px 10px 0px 0px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect7Button li.scNscPopUpDaySelectBtnSmallOn {
+    background: url(../Images/SC3080201/scNscContactSelectBtnSmallOn.png) no-repeat;
+    color: white;
+    text-shadow: 0px -1px 1px black;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect7Button li:last-child {
+    margin: 0px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea .TimeZoneTitle
+{
+    height:24px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea .TimeZoneTitle h4
+{
+    float:left;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea .TimeZoneTitle p
+{
+    float:right;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea  h4 {
+    font-size: 12px;
+    color: #666;
+    margin: 0px 0px 6px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea .ContactWish,
+#custDtlPage1 #CustomerRelatedContactPopupArea .ContactWeek1,
+#custDtlPage1 #CustomerRelatedContactPopupArea .ContactTime1,
+#custDtlPage1 #CustomerRelatedContactPopupArea .ContactWeek2
+{
+    margin: 0px 0px 14px 0px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea .ContactTime2
+{
+    margin: 0px;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea .TimeZoneTitle p.DayOrWeek{
+	width:180px;
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+	text-align:right;
+	/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.136) START */
+	margin: 0 2px 0 0;
+	/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.136) END */
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea .TimeZoneTitle span.dayBlue {
+	color:#375388;
+	/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.136) START */
+	margin: 0 1px 0 0;
+	/* 2012/03/13 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.136) END */
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolWrap div.ContactToolIcon
+{
+    width:38px;
+    height:38px;
+    background-repeat:no-repeat;
+    margin: 0px auto;
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolMobileLi div.ContactToolIcon
+{
+    background:url(../images/SC3080201/scNscContactSelectIconMobileOff.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolMobileLi div.selected
+{
+    background:url(../images/SC3080201/scNscContactSelectIconMobileOn.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolTelLi div.ContactToolIcon
+{
+    background:url(../images/SC3080201/scNscContactSelectIconTelOff.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolTelLi div.selected
+{
+    background:url(../images/SC3080201/scNscContactSelectIconTelOn.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolSMSLi div.ContactToolIcon
+{
+    background:url(../images/SC3080201/scNscContactSelectIconSMSOff.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolSMSLi div.selected
+{
+    background:url(../images/SC3080201/scNscContactSelectIconSMSOn.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolEmailLi div.ContactToolIcon
+{
+    background:url(../images/SC3080201/scNscContactSelectIconEmailOff.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolEmailLi div.selected
+{
+    background:url(../images/SC3080201/scNscContactSelectIconEmailOn.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolDMLi div.ContactToolIcon
+{
+    background:url(../images/SC3080201/scNscContactSelectIconDMOff.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea #ContactToolDMLi div.selected
+{
+    background:url(../images/SC3080201/scNscContactSelectIconDMOn.png);
+}
+
+#custDtlPage1 #CustomerRelatedContactPopupArea ul.scNscPopUpContactSelect5Button li .Center
+{
+    width: 74px;
+    height: 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+}
+
+
+/***********************
+	nsc43 お客様メモ
+***********************/
+
+#CustomerMemoEdit
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1018px;
+    height: 649px;
+    cursor: auto;
+    color: black;
+    overflow: hidden;
+    border: 0px solid black;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E4E4E4), to(#B7B7B7));
+}
+
+
+
+/***********************
+	顧客編集ポップアップ表示隠しボタン用
+***********************/
+#custDtlPage1 .CustomerPopUpOpen
+{
+    /*top: 320px;
+    right: 540px;*/
+    top: 50px;
+    right: 550px;
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 0;
+ 
+}
+    
+
+
+/***********************
+	車両選択、編集ポップアップ表示隠しボタン用
+***********************/
+#custDtlPage1 .CustomerCarPopUpOpen
+{
+    /*top: 320px;
+    right: 540px;*/
+    top: 200px;
+    right: 550px;
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 0;
+}
+
+
+/***********************
+	顧客詳細 (敬称リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle
+{
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle .ListBox01{
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle .ListBox01 .dataWind2{
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle ul.nscListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle .nscListBoxSetIn li
+{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle .nscListBoxSetIn .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindNameTitle .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .namecdHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dispHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .nameTitleLabel{
+	display:block;
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .privateFleetHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+
+/*******************************************
+	顧客詳細 (ポップアップ活動区分) START
+*******************************************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry{
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:545px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .ListBox01{
+	margin:15px 13px 0 13px;
+	width:296px
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry ul.actvctgryListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:457px;
+	font-weight:bold;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry li{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .actvctgryListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .actvctgryListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .actvctgryListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .ListBox01 .dataWind2{
+	width:480px;
+	height: 550px;
+    overflow-y: hidden;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .actvctgryHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindActvctgry .actvctgryLabel{
+	display:block;
+}
+/*******************************************
+	顧客詳細 (ポップアップ活動区分) END
+*******************************************/
+
+/*******************************************
+	顧客詳細 (ポップアップ情報不備詳細) START
+*******************************************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason{
+	position:absolute;
+	left:1004px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:6;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .ListBox01{
+	margin:13px 13px 0 12px;
+	width:296px
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason ul.reasonListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:457px;
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .reasonListBoxSetIn li{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .reasonListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .reasonListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .reasonListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .ListBox01 .dataWind2{
+	width:480px;
+	height: 550px;
+    overflow-y: hidden;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .reasoncdHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+/* 2018/11/22 TCS 三浦 活動区分「3,4」選択時、理由を選択できるようにする(TR-SLT-TMT-20180611-001) START */
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .actvctgryidHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+/* 2018/11/22 TCS 三浦 活動区分「3,4」選択時、理由を選択できるようにする(TR-SLT-TMT-20180611-001) END */
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindReason .reasoncdLabel{
+	display:block;
+}
+/*******************************************
+	顧客詳細 (ポップアップ情報不備詳細) END
+*******************************************/
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear{
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:550px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .ListBox01{
+	margin:15px 13px 0 13px;
+	width:296px
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear ul.modelYearListBoxSetIn {
+	-webkit-border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:457px;
+	font-weight:bold;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear li{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .endRow{
+	border-bottom:none;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .modelYearListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .modelYearListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .modelYearListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .ListBox01 .dataWind2{
+	width:480px;
+	height: 550px;
+    overflow-y: hidden;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .modelYearCdHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindModelYear .modelYearLabel{
+	display:block;
+}
+/*******************************************
+	車両編集 (ポップアップ年式) END
+*******************************************/
+/* 2018/06/18 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 END */
+
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 START*/
+/***********************
+	顧客詳細 (個人法人項目リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem
+{
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem .ListBox01{
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem .ListBox01 .dataWind2{
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem ul.privateFleetItemListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem .privateFleetItemListBoxSetIn li
+{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem .privateFleetItemListBoxSetIn .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem .privateFleetItemListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem .privateFleetItemListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindPrivateFleetItem .privateFleetItemListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .privateFleetItemHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .fleetHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .privateFleetItemLabel{
+	display:block;
+}
+/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 START */
+/***********************
+	顧客詳細 (顧客組織リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz {
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz .ListBox01 {
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz .ListBox01 .dataWind2 {
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz ul.custOrgnzListBoxSetIn {
+	-webkit-border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz ul.custOrgnzListBoxSetIn:empty {
+	display: none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz .custOrgnzListBoxSetIn li {
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz .custOrgnzListBoxSetIn .endRow {
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz .custOrgnzListBoxSetIn li.Arrow {
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz .custOrgnzListBoxSetIn li.Blue {
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustOrgnz .custOrgnzListBoxSetIn .Selection {
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .custOrgnzHidden {
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .custOrgnzLabel {
+	display:block;
+}
+/***********************
+	顧客詳細 (サブカテゴリ2リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 {
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 .ListBox01 {
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 .ListBox01 .dataWind2 {
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 ul.custSubCtgry2ListBoxSetIn {
+	-webkit-border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 .custSubCtgry2ListBoxSetIn li {
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 .custSubCtgry2ListBoxSetIn .endRow {
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 .custSubCtgry2ListBoxSetIn li.Arrow {
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 .custSubCtgry2ListBoxSetIn li.Blue {
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCustSubCtgry2 .custSubCtgry2ListBoxSetIn .Selection {
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .custSubCtgry2Hidden {
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .custSubCtgry2Label {
+	display:block;
+}
+/* 2018/08/27 TCS 佐々木 TKM Next Gen e-CRB Project Application development Block B-1 END */
+/***********************
+	顧客詳細 (州リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState
+{
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState .ListBox01{
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState .ListBox01 .dataWind2{
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState ul.stateListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState .stateListBoxSetIn li
+{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState .stateListBoxSetIn .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState .stateListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState .stateListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindState .stateListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .stateHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .stateLabel{
+	display:block;
+}
+/***********************
+	顧客詳細 (地域リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict
+{
+	position:absolute;
+	left:1004px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict .ListBox01{
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict .ListBox01 .dataWind2{
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict ul.districtListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict .districtListBoxSetIn li
+{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict .districtListBoxSetIn .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict .districtListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict .districtListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindDistrict .districtListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .districtHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .districtLabel{
+	display:block;
+}
+/***********************
+	顧客詳細 (市リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity
+{
+	position:absolute;
+	left:1506px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity .ListBox01{
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity .ListBox01 .dataWind2{
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity ul.cityListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity .cityListBoxSetIn li
+{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity .cityListBoxSetIn .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity .cityListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity .cityListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindCity .cityListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .cityHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .cityLabel{
+	display:block;
+}
+/***********************
+	顧客詳細 (地区リスト)
+***********************/
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation
+{
+	position:absolute;
+	left:2008px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation .ListBox01{
+   width: 480px;
+   height:560px;
+   left: 0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation .ListBox01 .dataWind2{
+	width:460px;
+	margin-top:14px;
+	margin-bottom:13px;
+	margin-left:13px;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation ul.locationListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:458px;
+	font-weight:bold;
+}
+
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation .locationListBoxSetIn li
+{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation .locationListBoxSetIn .endRow{
+	border-bottom:none;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation .locationListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation .locationListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .dataWindLocation .locationListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .locationHidden,
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .locationZipHidden
+{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scNscCustomerEditingWindown #scNscCustomerEditingWindownBox .locationLabel{
+	display:block;
+}
+/*2013/11/29 TCS 各務 Aカード情報相互連携開発 END*/
+
+
+/*******************************************
+	車両編集 (ポップアップ活動区分) START
+*******************************************/
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry{
+	position:absolute;
+	left:502px; 
+    top:0px;
+	width:480px;
+	height:545px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:5;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .ListBox01{
+	margin:15px 13px 0 13px;
+	width:296px
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry ul.actvctgryListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:457px;
+	font-weight:bold;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry li{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .endRow{
+	border-bottom:none;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .actvctgryListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .actvctgryListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .actvctgryListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .ListBox01 .dataWind2{
+	width:480px;
+	height: 550px;
+    overflow-y: hidden;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .actvctgryHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindActvctgry .actvctgryLabel{
+	display:block;
+}
+/*******************************************
+	車両編集 (ポップアップ活動区分) END
+*******************************************/
+
+/*******************************************
+	車両編集 (ポップアップ情報不備詳細) START
+*******************************************/
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason{
+	position:absolute;
+	left:1004px; 
+    top:0px;
+	width:480px;
+	height:560px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+	z-index:6;
+}
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .ListBox01{
+	margin:11px 13px 0 12px;
+	width:296px
+}
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason ul.reasonListBoxSetIn {
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:457px;
+	font-weight:bold;
+}
+
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .reasonListBoxSetIn li{
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:20px 0 10px 40px;
+	font-size:18px;
+	line-height:20px;
+	
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .reasonListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .reasonListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .reasonListBoxSetIn .Selection{
+	background:url(../Images/SC3080205/nsc60CheckIcn.png);
+	background-position:20px 23px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .ListBox01 .dataWind2{
+	width:480px;
+	height: 550px;
+    overflow-y: hidden;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .reasoncdHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+/* 2018/11/22 TCS 三浦 活動区分「3,4」選択時、理由を選択できるようにする(TR-SLT-TMT-20180611-001) START */
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .actvctgryidHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+/* 2018/11/22 TCS 三浦 活動区分「3,4」選択時、理由を選択できるようにする(TR-SLT-TMT-20180611-001) END */
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .reasoncdLabel{
+	display:block;
+}
+#scVehicleEditingWindown #scVehicleEditingWindownBox .dataWindReason .endRow{
+	border-bottom:none;
+}
+/*******************************************
+	車両編集 (ポップアップ情報不備詳細) END
+*******************************************/
+
+
+/*****************************************
+　　「...」、文字カット
+*****************************************/
+#custDtlPage1 .ellipsis{
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+#custDtlPage1 .styleCut{
+    overflow:hidden; 
+    white-space: pre;
+}
+
+/*****************************************
+　　CustomTextbox文字にじみ対応
+*****************************************/
+#custDtlPage1 .occupationOtherRelationship .icrop-CustomTextBox-label
+{
+    top: 4px;
+}
+
+#custDtlPage1 .familyOtherRelationship .icrop-CustomTextBox-label
+{
+    top: 4px;
+}
+
+#custDtlPage1 #CustomerRelatedHobbyPopupOtherWrap .icrop-CustomTextBox-label
+{
+    top: 4px;
+}
+
+/*******************************************
+	顧客関連情報
+*******************************************/
+#custDtlPage1 .scNscCustomerInfoArea #CustomerRelatedArea{
+/*	margin:6px 0px 8px 0px;*/
+margin:12px 0px 0px 0px;
+}
+
+
+
+
+/*2012/02/15 TCS 山口 【SALES_2】 START*/
+/****************************************
+CSSurvey
+****************************************/
+
+#custDtlPage1 .CSSurveyBtn{
+	display:block;
+	width:80px; height:29px;
+	position:absolute;
+	left:387px; top:90px;
+	border-radius:5px;
+}
+#custDtlPage1 .colorSetOFF{
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f3f6), to(#a7abb8));
+	border:#b6b8be 1px solid;
+	color:#666;
+	text-shadow:0px 1px 0px #fff;
+	position:absolute;
+}
+#custDtlPage1 .colorSetON{
+	background: -webkit-gradient(linear, left top, left bottom, from(#2a5cb5), to(#72aafb));
+	border:#19499a 1px solid;
+	color:#FFF;
+	text-shadow:0px -1px 0px #000;
+	position:absolute;
+}
+#custDtlPage1 .CSSurveyBtn span{
+	display:block;
+/* 2013/10/03 TCS 藤井 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） DELETE START */
+/* 2013/10/03 TCS 藤井 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） DELETE  */
+	width:80px; height:14px; top:8px;
+	font-size:13px; line-height:12px;
+	text-align:center;
+}
+
+/****************************************
+自／未、個／法
+****************************************/
+#custDtlPage1 .mainblockContentLeftCustomerNameIco01{
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    margin: 0px 0px 0px 12px;
+    vertical-align: middle;
+/*
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px -1px 0px #666;
+    line-height: 24px;
+    color: white;
+    background-color:#7F838A;
+*/
+}
+#custDtlPage1 .mainblockContentLeftCustomerNameIco02{
+    width: 23px;
+    height: 23px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px -1px 0px #666;
+    line-height: 24px;
+    color: white;
+    display: inline-block;
+    background-color:#7F838A;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#7F838A), to(#7F838A));
+    box-shadow: inset 0px 1px 0px #666666;*/
+    /* 2013/11/28 TCS市川 Aカード情報相互連携開発 DELETE */
+    vertical-align: middle;
+}
+#custDtlPage1 .mainblockContentLeftCustomerNameIco03{
+    width: 23px;
+    height: 23px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px -1px 0px #666;
+    line-height: 24px;
+    color: white;
+    display: inline-block;
+    background-color:#7F838A;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#7F838A), to(#7F838A));
+    box-shadow: inset 0px 1px 0px #666666;*/
+    vertical-align: middle;
+}
+
+/****************************************
+重要連絡
+****************************************/
+#custDtlPage1 .nsc40-02Text01{
+	height:23px;
+	font-size:14px;
+	line-height:15px;
+	color:#646464;
+	margin-top:-8px;
+	padding: 6px 0 0 0;
+	font-weight:bold;
+	
+}
+#custDtlPage1 .nsc40-02TableBox{
+	position:relative;
+	width:449px;
+	height:71px;
+	margin:0 0 5px 0;
+	color:#666666;
+}
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxLeft{
+	position:absolute;
+	float:left;
+	border:#666 1px solid;
+	border-top-left-radius:6px;
+	border-bottom-left-radius:6px;
+	width:336px;
+	height:69px;
+	overflow:hidden;
+	background-color:#FFF;
+	
+    z-index:2;
+	background-size:100% 100%,auto;
+}
+
+#custDtlPage1 .arrowOpen{
+	background:url(../Images/SC3080201/nsc40_Arrow01.png) 4px 7px no-repeat;
+	position: absolute;
+	width: 20px;
+    height: 20px;
+    left: 314px;
+    top: 47px;
+    z-index:10;
+}
+
+#custDtlPage1 .arrowClose{
+	background:url(../Images/SC3080201/nsc40_Arrow02.png) 4px 6px no-repeat;
+	position: absolute;
+	width: 20px;
+    height: 20px;
+    left: 314px;
+    top: 218px;
+    z-index:10;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxLeft .textBox01{
+	padding:7px 0 0 14px;
+	font-size:14px;
+	line-height:16px;
+	z-index:2;
+	width: 210px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxLeft .textBox01 #ComplaintCategoryLabel{
+	width: 210px;
+    display: inline-block;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxLeft .textBox02{
+	padding:2px 14px 3px 14px;
+	font-size:12px;
+	line-height:21px;
+	
+    height:201px;
+    width: 306px;    
+	z-index:2;
+	word-break: break-all;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxLeft .textData{
+	font-size:10px;
+	line-height:12px;
+	z-index:2;
+	display: inline-block;
+    width: 100px;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxLeft .textData #ReceptionDateLabel{
+    width: 100px;
+    display: inline-block;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxRight{
+	float:right;
+	border:#666 1px solid;
+	border-left:none;
+	border-top-right-radius:6px;
+	border-bottom-right-radius:6px;
+	width:110px;
+	height:69px;
+	overflow:hidden;
+}
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxRight .textBox01{
+	font-size:14px;
+	padding:8px 0 2px 10px;
+	width: 95px;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxRight .textBox01 #ComplaintStatusLabel{
+    width: 95px;
+    display: inline-block;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxRight .textBox02{
+	
+	padding:0 0 0 10px;
+	font-size:12px;
+	line-height:19px;
+}
+
+#custDtlPage1 .nsc40-02TableBox .nsc40-02BoxRight .textBox02 #ComplaintAccount
+{
+	/* 2012/04/12 TCS 安田 【SALES_2】重要連絡の対応者の項目位置ずれ（ユーザー課題 No.38） START */
+    float: right;
+	/*'2012/04/12 TCS 安田 【SALES_2】重要連絡の対応者の項目位置ずれ（ユーザー課題 No.38） END*/
+    
+    width: 75px;
+    display: inline-block;
+}
+
+/****************************************
+CustomRepeater
+****************************************/
+#custDtlPage1 .scNscCurriculumListArea .icrop-CustomRepeater-progress-inner{
+    background-color:Transparent;
+}
+
+#custDtlPage1 .scNscCurriculumListArea .icrop-CustomRepeater-inner-top{
+    background-color:Transparent;
+}
+
+#custDtlPage1 .scNscCurriculumListArea .icrop-CustomRepeater-inner-bottom{
+    background-color:Transparent;
+}
+
+#custDtlPage1 .scNscCurriculumListArea .icrop-CustomRepeater-inner-topPager{
+    background-color:Transparent;
+	color:#4b7dda; font-size:16px;
+	text-align:center;
+	display:none;
+}
+
+#custDtlPage1 .scNscCurriculumListArea .icrop-CustomRepeater-inner-bottomPager{
+    background-color:Transparent;
+	color:#4b7dda; font-size:16px;
+	text-align:center;
+	display:none;
+}
+
+#custDtlPage1 .scNscCurriculumListArea .icrop-CustomRepeater-inner-topPager-label{
+    background-color:Transparent;
+	color:#4b7dda; font-size:16px;
+}
+
+#custDtlPage1 .scNscCurriculumListArea .icrop-CustomRepeater-inner-bottomPager-label{
+    background-color:Transparent;
+	color:#4b7dda; font-size:16px;
+}
+
+/****************************************
+太字
+****************************************/
+#custDtlPage1 .fontBold{
+    font-weight: bold;
+}
+
+/****************************************
+ポップアップ系OPEN時の他ボタン制御
+****************************************/
+#custDtlPage1 #messageWinPopupBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:-20px; 
+	left:-18px;
+	background:;
+	z-index:1;
+	width:1024px;
+	height:656px;
+	display:none;
+}
+
+#custDtlPage1 #messageWinPopupBlack.open { display:block; }
+
+/*2012/02/15 TCS 山口 【SALES_2】 END*/
+
+/*2012/03/08 TCS 山口 【SALES_2】性能改善 START*/
+/****************************************
+ポップアップ系処理中アニメーション変更
+****************************************/
+#registOverlayBlack.popupLoadingBackgroundColor.open {
+    opacity: 0;
+}
+/* 2013/11/27 TCS 市川 Aカード情報相互連携開発 START */
+#processingServer.occupationPopupLoadingAnimation.show {
+    left: 320px;
+    top: 480px;
+}
+/* 2013/11/27 TCS 市川 Aカード情報相互連携開発 END */
+#processingServer.familyPopupLoadingAnimation.show {
+    left: 200px;
+    top: 270px;
+}
+/* 2013/11/27 TCS 市川 Aカード情報相互連携開発 START */
+#processingServer.hobbyPopupLoadingAnimation.show {
+    left: 550px;
+    top: 480px;
+}
+/* 2013/11/27 TCS 市川 Aカード情報相互連携開発 END */
+#processingServer.contactPopupLoadingAnimation.show {
+    left: 285px;
+    top: 270px;
+}
+#processingServer.carSelectPopupLoadingAnimation.show {
+    left: 750px;
+    top: 350px;
+}
+#processingServer.carEditPopupLoadingAnimation.show {
+    left: 740px;
+    top: 350px;
+}
+#processingServer.customerEditPopupLoadingAnimation.show {
+    left: 750px;
+    top: 350px;
+}
+/*2012/03/08 TCS 山口 【SALES_2】性能改善 END*/
+
+/* 2012/03/12 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.134,126) START */
+#ContactVisiblePanel {
+    width: 412px;
+    margin: 0.1em 0 0 0.13em;
+}
+/* 2012/03/12 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.134,126) END */
+
+/* 2012/05/09 TCS 河原 【SALES_1A】お客様メモエリアで左スワイプで、商談メモへ切り替えられない START */
+#CustomerMemoDummyArea{
+    position:absolute;
+    top:500px;
+    left:20px;
+    width:445px;
+    height:90px;
+    opacity:0;
+}
+/* 2012/05/09 TCS 河原 【SALES_1A】お客様メモエリアで左スワイプで、商談メモへ切り替えられない END */
+
+/* 2012/06/01 TCS 河原 FS開発 START */
+.Sns_Icon
+{
+    /*background:url(../images/SC3080202/scNscIconSelectCarButtonOn.png) no-repeat;*/
+    width:29px;
+    text-align:center;
+    color:#FFF;
+    font-weight:bold;
+    margin:0px 0px 0px 0px;
+    font-size:12px;
+    padding:0px 0px 0px 0px;
+    height:29px;
+    float:left;
+}
+
+/* renrenのアイコンの位置 */
+#Icon_Renren{
+    position:absolute;
+    top:20px;
+    left:321px;
+    left:379px;
+    /* 2014/08/26 TCS 外崎 SNS連携機能各国展開に向けた追加機能開発 START */
+    background:url(../../SNS/Icon/renren.png) no-repeat;
+    /* 2014/08/26 TCS 外崎 SNS連携機能各国展開に向けた追加機能開発 END */
+}
+
+/* kaixinのアイコンの位置 */
+#Icon_Kaixin{
+    position:absolute;
+    top:20px;
+    left:379px;
+    left:321px;
+    /* 2014/08/26 TCS 外崎 SNS連携機能各国展開に向けた追加機能開発 START */
+    background:url(../../SNS/Icon/kaixin.png) no-repeat;
+    /* 2014/08/26 TCS 外崎 SNS連携機能各国展開に向けた追加機能開発 END */
+}
+
+/* weiboのアイコンの位置 */
+#Icon_Weibo{
+    position:absolute;
+    top:20px;
+    left:437px;
+    /* 2014/08/26 TCS 外崎 SNS連携機能各国展開に向けた追加機能開発 START */
+    background:url(../../SNS/Icon/weibo.png) no-repeat;
+    /* 2014/08/26 TCS 外崎 SNS連携機能各国展開に向けた追加機能開発 END */
+}
+
+#SnsIdInputPopup {
+    position:absolute;
+    top:42px;
+	width:314px;
+	padding:0;
+	z-index:100;
+	display:none;
+}
+
+#custDtlPage1 .SnsIdInputPopupArrowOther {
+	position:relative;
+	top:1px;
+	left:20px;
+    width:314px;
+	padding:17px 0 0;
+	z-index:101;
+	background:url(../images/SC3080202/scNscPopUpArrowTop.png);
+	background-repeat: no-repeat;
+	background-position:120px top;
+}
+
+#custDtlPage1 .PopUpCancelButton {
+    position:absolute;
+    top:7px;
+    left:4px;
+    display:block;
+    color:#FFF;
+    font-size:0.75em;
+    text-align:center;
+    width:80px;
+    height:27px;
+    padding:0 0 0 0;
+    border:#25272b 1px solid;
+    border-left:none;
+    box-shadow:0px 1px 0px #6e727b;
+    border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+    color-stop(0.50, #0d1734),
+    color-stop(0.501, #000b29),
+    to(#000b29));
+    z-index:2;
+}
+
+#custDtlPage1 .PopUpCompleteButton {
+    position:absolute;
+    right:4px;
+    display:block;
+    color:#FFF;
+    font-size:0.75em;
+    text-align:center; 
+    width:78px;
+    height:27px;
+    padding:5 0 0 0;
+    border:#25272b 1px solid;
+    box-shadow:0px 1px 0px #6e727b;
+    border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+        color-stop(0.50, #376fe0),
+        color-stop(0.501, #2361dd),
+        to(#2361dd));
+    top:6px;
+    text-shadow: 0px -1px 1px black;
+}
+
+#custDtlPage1 .PopUpCancelButton span,
+#custDtlPage1 .PopUpCompleteButton{
+    height:27px;
+    line-height:27px;
+    text-shadow: 0px -1px 1px black;
+}
+
+#custDtlPage1 .SnsIdInputPopupWindownBox {
+    height:auto;
+    padding:0 0 5px 0;
+    background-color:#666;
+    border-radius:8px;
+    background:#FFF;
+    border:#1c232f 1px solid;
+    box-shadow:0px 0px 12px #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+    color-stop(0.075, #2a3445),
+    color-stop(0.075, #0f1623),
+    to(#030b19));
+}
+
+#custDtlPage1 .SnsIdInputPopupHeader {
+    position:relative;
+    width:314px;
+    height:45px;
+}
+
+#custDtlPage1 .SnsIdInputPopupHeader h3 {
+    position:absolute;
+    width:135px;
+    height:36px;
+    top:7px;
+    left:90px;
+    text-align:center;
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+    font-size:20px;
+}
+
+#custDtlPage1 #SnsIdInputPopupInputTextWrap
+{
+    box-sizing:border-box;
+    /*margin:0px 10px 0px;*/
+    
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    
+    border-radius:8px;
+    padding:3px 8px;
+    background-color:#FFFFFF;
+}
+
+#custDtlPage1 #SnsIdInputPopupInputText  
+{
+    border:none; 
+    outline:none; 
+    font-size:13px; 
+}
+
+#custDtlPage1 .SnsIdInputPopupListArea {
+    font-size:0.9em;
+    width:300px;
+    margin:0 auto;
+    /*padding: 8px;*/
+    border:#a5a5a5 1px solid;
+    border-radius:8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+                            color-stop(0.018, #fff),
+                            color-stop(0.6, #fff),
+                            to(#e6e6e6));
+}
+
+#KeywordSearch
+{
+    position:relative;
+    top:-30px;
+    left:296px;
+    margin:0px 0px -25px 0px;
+    width:150px;
+    text-align:center;
+    padding:4px 0 0;
+    height:23px;
+    float:left;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/* 非活性のときのボタンデザイン */
+.buttonOff{
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2f3f6), to(#a7abb8));
+    border:#b6b8be 1px solid;
+    color:#666;
+    text-shadow:0px 1px 0px #fff;
+}
+
+/* 活性のときのボタンデザイン */
+.buttonOn{
+    background: -webkit-gradient(linear, left top, left bottom, from(#2a5cb5), to(#72aafb));
+    border:#19499a 1px solid;
+    color:#FFF;
+    text-shadow:0px -1px 0px #000;
+}
+
+#KeywordSearchInputPopup {
+    position:absolute;
+    top:390px;
+    left:106px;
+	width:600px;
+	padding:0;
+	z-index:100;
+	display:none;
+}
+
+#custDtlPage1 .KeywordSearchInputPopupArrowOther {
+	position:relative;
+	top:1px;
+	left:146px;
+    width:600px;
+	padding:17px 0 0;
+	z-index:101;
+	background:url(../images/SC3080202/scNscPopUpArrowTop.png);
+	background-repeat: no-repeat;
+	background-position:120px top;
+}
+
+#custDtlPage1 .KeywordSearchInputPopupWindownBox {
+    height:auto;
+    padding:0 0 5px 0;
+    background-color:#666;
+    border-radius:8px;
+    background:#FFF;
+    border:#1c232f 1px solid;
+    box-shadow:0px 0px 12px #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+    color-stop(0.075, #2a3445),
+    color-stop(0.075, #0f1623),
+    to(#030b19));
+}
+
+#custDtlPage1 .KeywordSearchInputPopupHeader {
+    position:relative;
+    width:600px;
+    height:45px;
+}
+
+#custDtlPage1 .KeywordSearchInputPopupHeader h3 {
+    position:absolute;
+    width:378px;
+    height:36px;
+    top:7px;
+    left:90px;
+    text-align:center;
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+    font-size:20px;
+}
+
+#custDtlPage1 #KeywordSearchInputPopupInputTextWrap
+{
+    box-sizing:border-box;
+    /*margin:0px 10px 0px;*/
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-radius:8px;
+    padding:3px 8px;
+    background-color:#FFFFFF;
+}
+
+#custDtlPage1 #KeywordSearchInputPopupInputText  
+{
+    border:none; 
+    outline:none; 
+    font-size:13px; 
+}
+
+#custDtlPage1 .KeywordSearchInputPopupListArea {
+    font-size:0.9em;
+    width:586px;
+    margin:0 auto;
+    /*padding: 8px;*/
+    border:#a5a5a5 1px solid;
+    border-radius:8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+                            color-stop(0.018, #fff),
+                            color-stop(0.6, #fff),
+                            to(#e6e6e6));
+}
+
+#custDtlPage1 .scNscCustomerNameId {
+	width:380px;
+	float:left;
+	line-height:1em;
+	font-weight:bold;
+	padding:9px 0 0;
+	font-size:0.8em;
+	vertical-align: middle;
+    display: inline-block;
+    height: 21px;
+}
+
+/* 2012/06/01 TCS 河原 FS開発 END */

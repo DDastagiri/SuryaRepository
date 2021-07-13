@@ -1,0 +1,489 @@
+﻿/*/-------------------------------------------------------------------------
+//smb.css
+//--------------------------------------------------------------------------
+//機能：smbメイン画面
+//作成：2012/12/22 TMEJ 張 タブレット版SMB機能開発(工程管理)
+//更新：2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発
+//更新：2017/08/30 NSK 竹中(悠) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加
+//更新：2017/10/04 NSK 竹中(璃) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加_検証障害
+---------------------------------------------------------------------------*/
+
+@charset "utf-8";
+/* CSS Document */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  SMB共通
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#main > #contents { padding:0px; }
+
+.SMB_MainOutFrame * ,
+#SubArea *
+{
+	transform:translateZ(0px);
+}
+
+.SMB_MainOutFrame{
+	overflow:hidden;
+	width:989px;
+	height:624px;
+}
+.SMB_Main{
+	position:relative;
+	overflow:hidden;
+	width:982px;
+	height:617px;
+	border-right:#000 1px solid;
+	border-bottom:#000 1px solid;
+	box-shadow:1px 1px 6px #6a6a6a ;
+}
+
+/* SMBロゴ
+------------------------------------------------------------------------------*/
+.SMBLogo{
+	position:relative;
+	background:url(../images/SC3240101/smb_logo.png) 0 0 no-repeat;
+	width:142px;
+	height:33px;
+	z-index:4;
+}
+.SMBLogo .LeftButton_trimming{
+	position:absolute;
+	left:0px; top:0px;
+	height:36px; width:25px;
+}
+.SMBLogo .LeftButton_trimming input{
+	position:absolute;
+	left:5px; top:9px;
+	height:16px; width:11px;
+}
+.SMBLogo .RightButton_trimming{
+	position:absolute;
+	right:0px; top:0px;
+	height:36px; width:25px;
+}
+.SMBLogo .RightButton_trimming input{
+	position:absolute;
+	right:5px; top:9px;
+	height:16px; width:11px;
+}
+.SMBLogo .Date{
+	position:absolute;
+	left:0; top:7px;
+	width:142px;
+	line-height:18px;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+}
+.SMBLogo .Date #dtCalendar{
+    left: 18px; top:0px;
+    position: absolute;
+    width: 123px;
+}
+
+/* 左側
+------------------------------------------------------------------------------*/
+.NameList{
+	position:absolute;
+	left:0; top:33px;
+	/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 START */
+	/*width:142px;*/
+	width:153px;
+	/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 END */
+	height:600px;
+	/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 START */
+	/*box-shadow:2px 2px 18px #000;*/
+	/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 END */
+	font-size:12px;
+	line-height:17px;
+	font-weight:bold;
+	z-index:3;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	visibility:hidden;
+}
+.NameList #divScrollStall
+{
+	position:absolute;
+	left:0; top:0px;
+	width:142px;
+}
+.NameList ul{
+	display:block;
+	width:142px;
+}
+.NameList li{
+	display:block;
+	position:absolute;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#353535),
+            color-stop(0.51, #353535),
+            color-stop(0.51, #181818),
+						to(#181818));
+	width:142px;
+	height:73px;
+	left:0px;
+}
+.NameList li:nth-child(even){
+	background: -webkit-gradient(linear, left top, left bottom, from(#202020),
+            color-stop(0.51, #202020),
+            color-stop(0.51, #000000),
+						to(#000000));
+}
+.NameList li.RedBack{
+	background: -webkit-gradient(linear, left top, left bottom, from(#2d0000),
+            color-stop(0.40, #9e0000),
+            color-stop(0.60, #9e0000), 
+						to(#2d0000));
+}
+.NameList li.WhiteBack{
+    background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf),             color-stop(0.51, #d6d6d6),             color-stop(0.51, #bbbaba),             to(#bfbfbf));
+    color: #434040;
+}
+.NameList li .Stole,
+.NameList li .Technician{
+	position:absolute;
+	border-top:#000 1px solid;
+	border-left:#000 1px solid;
+	box-shadow:inset 1px 1px 0px #555555;
+	height:72px;
+	text-shadow:0 -1px 1px rgba(0, 0, 0, 0.8);
+	overflow:hidden;
+	top:0px;
+}
+.NameList li .Stole{left:0; width:55px}
+.NameList li .Technician{left:56px; width:85px}
+
+.NameList li .Technician .TechnicianName
+{
+    padding-left:4px;
+    line-height:18px;
+    width:78px;
+    display:block;
+}
+.NameList li .Technician .TechnicianName1{
+    line-height:72px;
+}
+.NameList li .Technician .TechnicianName2{
+    line-height:36px;
+}
+.NameList li .Technician .TechnicianName3{
+    line-height:24px;
+}
+.NameList li .Technician .TextAlignRight{
+    text-align:right;
+    padding-right:4px;
+}
+
+ .SelectedStole,
+ .SelectedStole:nth-child(even){
+	background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf),
+            color-stop(0.51, #d6d6d6),
+            color-stop(0.51, #bbbaba),
+						to(#bfbfbf));	
+}
+.SelectedStole p,
+.SelectedStole span
+{
+    color:#434040;
+    text-shadow:0 1px -1px rgba(255, 255, 255, 0.8);
+}
+.NameList li .Stole:after,
+.NameList li .Technician:after{
+	clear:both;
+}
+.NameList li .Stole{
+	width:55px;
+	font-size:16px;
+}
+
+.NameList li .Stole p{
+	position:absolute;
+	top:50%;
+	margin-top:-8px;
+	display:block;
+	text-align:center;
+	width:100%;
+}
+.NameList li .Technician p{
+	position:absolute;
+	top:50%;
+	margin-top:-17px;
+	display:block;
+	padding:0 0 0 4px;
+}
+
+/* タイムライン
+------------------------------------------------------------------------------*/
+.TimeLine{
+	position:absolute;
+	right:0; top:0;
+	width:840px;
+	height:33px;
+	box-shadow:2px 2px 18px #000;
+	overflow:hidden;
+	z-index:2;
+}
+.TimeLine .TimeLine_Time{
+	position:absolute;
+	right:0; top:0;
+}
+
+.TimeLine #divScrollTime{
+	width:1680px;
+	height:33px;
+	left:0px;
+}
+.TimeLine .TimeLine_Time .TimeCassette{
+	width:167px;
+	height:33px;
+	float:left;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3f3f3f),color-stop(0.50, #3f3f3f),color-stop(0.50, #000000),to(#000000));
+	border-left:#000 1px solid;
+	box-shadow:inset 1px 0px 0px #555555;
+	text-align:center;
+	font-size:18px;
+	line-height:33px;
+	font-weight:bold;
+	text-shadow:0 -1px 2px rgba(0, 0, 0, 0.8);
+}
+.TimeLine .TimeLine_Time .TimeCassetteHalfWidth{
+	width:83px;
+}
+/* チップエリア
+------------------------------------------------------------------------------*/
+.ChipArea_OutFrame{
+	left:0px; top:0px;
+	width:983px;
+	height:617px;
+	overflow:hidden;
+	position:absolute;
+}
+
+.ChipArea_trimming{
+	left:0px; top:0px;
+	width:983px;
+	height:617px;
+	overflow:hidden;
+	position:absolute;
+}
+
+.ChipArea_trimming .ChipArea{
+	position:absolute;
+	left:0px; top:33px;
+	width:1680px;
+	height:1168px;
+	position:absolute;
+	overflow:hidden;
+}
+.ChipArea .ChipAreaBkGround{
+    position:absolute;
+	left:143px; top:1px;
+	width:100%;
+	height:100%;
+	background-image:url(../images/SC3240101/BackTable.png);
+    background-repeat:repeat;
+}
+
+.ChipArea .ChipAreaBkGround .TapBlueBack
+{
+    background:rgba(55, 55, 255, 0.5);     
+}
+.ChipArea .ChipAreaBkGround .TbGrayBack
+{
+    background:rgba(255, 255, 255, 0.25);
+}
+.ChipArea .ChipAreaBkGround .TbWhiteBack
+{
+    background:rgba(255, 255, 255, 0.5);
+}
+
+.RedBack{
+	background: -webkit-gradient(linear, left top, left bottom, from(#2d0000),
+            color-stop(0.40, #9e0000),
+            color-stop(0.60, #9e0000), 
+						to(#2d0000));
+}
+
+.TbRow
+{
+    position:absolute;
+    height:73px;
+    left:143px;
+}
+
+#BlueDiv
+{
+    visibility:hidden;
+    height:71px;
+    width:41px;
+    position:absolute;
+    top:1px;
+    z-index:2;
+}
+
+.RestArea
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 168px;
+    height: 72px;
+    background: rgba(102,102,102,0.65);
+    z-index: 1;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.8);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height:72px;
+    font-weight: bold;
+    text-align: center;
+    color: #cccccc;
+    overflow: hidden;
+}
+
+.UnavaliableChip .ShadowBox
+{
+    background: #989898;
+    opacity: 0.65;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    overflow:hidden;
+}
+.UnavaliableChip .TapBlueBack
+{
+    background: rgba(0, 0, 255, 0.5);
+    opacity: 0.3;
+}
+.UnavaliableChip
+{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 0px #CCC, inset 2px 2px 1px #CCC;
+    width: 100%;
+    height: 72px;
+    display: block;
+    margin: 0 1px 0px 0;
+    opacity: 1;
+    font-size: 16px;
+    /* 2017/08/30 NSK 竹中(悠) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加 START */
+    /* line-height: 71px; */
+    line-height: 36px;
+    /* 2017/08/30 NSK 竹中(悠) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加 END */
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+}
+/* 2017/10/4 NSK 竹中(璃) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加_検証障害 START */
+.UnavaliableChip #UnavailableUpperText
+{
+    height: 50%;
+    width: 100%;
+    display: block;
+    overflow:hidden;
+}
+.UnavaliableChip #UnavailableLowerText
+{
+    height: 50%;
+    width: 100%;
+    display: block;
+    overflow:hidden;
+}
+/* 2017/10/4 NSK 竹中(璃) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加_検証障害 END */
+
+/* 現在時刻線
+------------------------------------------------------------------------------*/
+.TimingLineSet{
+	position:absolute;
+	/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 START */
+	/*left:1024px; top:0;*/
+	left:1024px; top:33px;
+	/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 END */
+	width:14px;
+	height:1168px;
+	font-size:1%;
+	line-height:0%;	
+	z-index:900;
+	background-image:-webkit-gradient(linear, left top, right top, from(rgba(255, 0, 18, 0)),
+            color-stop(0.50, rgba(255, 0, 18, 0.4)),
+						to(rgba(255, 0, 18, 0)));
+}
+.TimingLineSet .TimingLine01,
+.TimingLineSet .TimingLine02,
+.TimingLineSet .TimingLine03{
+	position:absolute;
+	top:0;
+	width:1px;
+	height:1168px;
+}
+.TimingLineSet .TimingLine01{
+	background:rgba(255, 54, 0, 0.5);
+	left:5px;
+}
+.TimingLineSet .TimingLine02{
+	background:rgba(255, 54, 0, 1);
+	left:6px;
+}
+.TimingLineSet .TimingLine03{
+	background:rgba(255, 54, 0, 0.8);
+	left:7px;
+}
+.TimingLineDeli{
+	position:absolute;
+	left:1024px; top:0;
+	width:14px;
+	height:1168px;
+	font-size:1%;
+	line-height:0%;	
+	z-index:900;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 204, 0, 0)),                     color-stop(0.50, rgba(255, 204, 0, 0.4)),                     to(rgba(255, 204, 0, 0)));
+}
+
+.TimingLineDeli .TimingLine01,
+.TimingLineDeli .TimingLine02,
+.TimingLineDeli .TimingLine03{
+	position:absolute;
+	top:0;
+	width:1px;
+	height:1168px;
+}
+.TimingLineDeli .TimingLine01{
+	background:rgba(255, 204, 0, 0.5);
+	left:5px;
+}
+.TimingLineDeli .TimingLine02{
+	background:rgba(255, 204, 0, 1);
+	left:6px;
+}
+.TimingLineDeli .TimingLine03{
+	background:rgba(255, 204, 0, 0.8);
+	left:7px;
+}
+/***************************************************************
+* メインストール画面に　アクティブインジケーター
+****************************************************************/
+#MainAreaActiveIndicator {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:300px;
+	left:496px;
+	width:38px;
+	height:38px;
+	z-index:10002;
+}
+#MainAreaActiveIndicator.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+

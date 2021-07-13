@@ -1,0 +1,18 @@
+﻿/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SC3050704.css
+─────────────────────────────────────
+機能： MOP/DOP設定設定
+補足： 
+作成： 2012/12/06 TMEJ 三和
+─────────────────────────────────────*/
+
+#comingSoon {
+	position:absolute;
+	background:url(../Images/SC3050704/Coming_Soon.png) no-repeat;
+	display:block;
+	top:300px;
+	left:365px;
+	width:500px;
+	height:500px;
+	z-index:100;
+}

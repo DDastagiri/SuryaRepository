@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * SC3100304_01.css
+ * ──────────────────────────────────
+ * 機能： ウェルカムボード
+ * 補足： 待機画面
+ * 作成： 2013/03/13 TMEJ t.shimamura
+ * 更新： -
+ * ──────────────────────────────────
+ */
+
+/*待機画面
+--------------------------------------*/
+.WB01Main{
+	position:relative;
+	width:1920px;
+	height:1080px;
+	background:url(../Images/SC3100304/wb01_mainbackimg.png) 0 0 no-repeat;
+}
+.WB01Main .WB01_Header{
+	position:absolute;
+	left:0; top:0;
+	background:url(../Images/SC3100304/wb01_hdback.png) 0 0 no-repeat;
+	width:1920px;
+	height:198px;
+}
+.WB01Main .WB01_Header .HdLogo01{
+	position:absolute;
+	right:302px; top:42px;
+	background:url(../Images/SC3100304/wb01_hdlogo01.png) 0 0 no-repeat;
+	width:168px;
+	height:30px;
+}
+.WB01Main .WB01_Header .HdLogo02{
+	position:absolute;
+	right:63px; top:42px;
+	background:url(../Images/SC3100304/wb01_hdlogo02.png) 0 0 no-repeat;
+	width:209px;
+	height:30px;
+}
+
+
+
+.WB01Main .WB01_BranchNameBox{
+	position:absolute;
+	left:108px; top:232px;
+	background:url(../Images/SC3100304/wb01_backimg01.png) 0 0 no-repeat;
+	width:628px;
+	height:218px;
+}
+.WB01Main .WB01_BranchNameBox .WB01_BranchName{
+	position:absolute;
+	left:75px; top:83px;
+	display:compact;
+	color:#FFF;
+	font-size:50px;
+	transform: rotate(1deg);
+	transform: rotate(1deg);
+	width: 520px;
+}
+
+.WB01Main .WB01_LogoBox{
+	position:absolute;
+	left:781px; top:219px;
+	background:url(../Images/SC3100304/wb01_backimg02.png) 0 0 no-repeat;
+	width:373px;
+	height:440px;
+}
+.WB01Main .WB01_LogoBox .Logo01{
+	position:absolute;
+	left:92px; top:53px;
+	background:url(../Images/SC3100304/wb01_logo01.png) 0 0 no-repeat;
+	width:198px;
+	height:163px;
+}
+.WB01Main .WB01_LogoBox .Logo02{
+	position:absolute;
+	left:72px; top:239px;
+	background:url(../Images/SC3100304/wb01_logo02.png) 0 0 no-repeat;
+	width:234px;
+	height:32px;
+}
+
+.WB01Main .WB01_ImgBox{
+	position:absolute;
+	right:0; top:195px;
+	background:url(../Images/SC3100304/wb01_img.png) 0 0 no-repeat;
+	width:719px;
+	height:450px;
+}
+
+.WB01Main .WB01_Car01,
+.WB01Main .WB01_Car02,
+.WB01Main .WB01_Car03,
+.WB01Main .WB01_Car04,
+.WB01Main .WB01_Car05{
+	position:absolute;
+}
+.WB01Main .WB01_Car01{
+	left:8px; top:640px;
+	background:url(../Images/SC3100304/wb01_car01.png) 0 0 no-repeat;
+	width:650px;
+	height:373px;
+	z-index:3;
+}
+.WB01Main .WB01_Car02{
+	left:201px; top:535px;
+	background:url(../Images/SC3100304/wb01_car02.png) 0 0 no-repeat;
+	width:676px;
+	height:344px;
+	z-index:2;
+}
+.WB01Main .WB01_Car03{
+	left:769px; top:528px;
+	background:url(../Images/SC3100304/wb01_car03.png) 0 0 no-repeat;
+	width:402px;
+	height:315px;
+	z-index:1;
+}
+.WB01Main .WB01_Car04{
+	left:1111px; top:568px;
+	background:url(../Images/SC3100304/wb01_car04.png) 0 0 no-repeat;
+	width:477px;
+	height:303px;
+	z-index:2;
+}
+.WB01Main .WB01_Car05{
+	right:0px; top:687px;
+	background:url(../Images/SC3100304/wb01_car05.png) 0 0 no-repeat;
+	width:708px;
+	height:335px;
+	z-index:3;
+}
+
+
+

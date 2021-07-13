@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Custom Controls</title>
+	
+	<link type="text/css" href="Styles/common.css" rel="stylesheet" />
+	<link type="text/css" href="Styles/Controls.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="Scripts/jquery-1.4.4.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CheckButton.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CheckMark.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomButton.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomGridView.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomLabel.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomTextBox.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.DateTimeSelector.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.flickable.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.json-2.3.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.popover.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.PopOverForm.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.SegmentedButton.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.SwitchButton.js"></script>
+</head>
+
+<body>
+<h3>CustomTextBox</h3>
+    <span id="customLabel1" style="display:inline-block; width:80px; height:30px;">あいうえおあいうえおあいうえおあいうえお</span>
+	<input id="input1" type="text" /><button id="input1DisabledButton">disabled</button><br/>
+	<input id="inputDate" type="date" /><button id="inputDateDisabledButton">disabled</button><br/>
+	<div id="divButton" style="width:80px; height:70px; border:1px solid black;"></div><button id="divButtonDisabledButton">disabled</button><button id="divButtonCountButton">count up</button><br/>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#customLabel1").CustomLabel({ useEllipsis: true });
+	        $("#input1").CustomTextBox();
+	        $("#input1DisabledButton").click(function (e) {
+	            if ($("#input1").CustomTextBox("disabled") === true) {
+	                $("#input1").CustomTextBox("disabled", false);
+	            } else {
+	                $("#input1").CustomTextBox("disabled", true);
+	            }
+
+	        });
+
+	        $("#inputDate").DateTimeSelector();
+	        $("#inputDateDisabledButton").click(function (e) {
+	            if ($("#inputDate").DateTimeSelector("disabled") === true) {
+	                $("#inputDate").DateTimeSelector("disabled", false);
+	            } else {
+	                $("#inputDate").DateTimeSelector("disabled", true);
+	            }
+
+	        });
+
+	        $("#divButton").CustomButton({
+	            label: "Hello",
+	            iconUrl: "Styles/Images/button01.png",
+	            click: function (e) {
+	                alert("clicked!");
+	            }
+	        });
+	        $("#divButtonDisabledButton").click(function (e) {
+	            if ($("#divButton").CustomButton("disabled") === true) {
+	                $("#divButton").CustomButton("disabled", false);
+	            } else {
+	                $("#divButton").CustomButton("disabled", true);
+	            }
+
+	        });
+	        $("#divButtonCountButton").click(function (e) {
+	            $("#divButton").CustomButton("badgeCount", (($("#divButton").CustomButton("badgeCount")) + 1));
+	        });
+	    });
+	</script>
+	
+	<br/><br/>
+	
+	<ul id="radio1">
+		<li><input type="radio" name="radio1" value="1">Good</li>
+		<li><input type="radio" name="radio1" value="2">Bad</li>		
+	</ul>
+	<button id="radio1DisabledButton">disabled</button><br/>
+	<br/>
+	
+	<div><input id="checkButton1" type="checkbox" name="checkX" value="1" style="width:80px;height:70px;" /></div>
+	<div><input id="switchButton1" type="checkbox" name="checkX" value="2" style="width:80px;height:30px;" /></div>
+	
+	<div>
+		<input id="checkMark1" type="checkbox" name="checkY" value="1" />CheckButton1
+	</div>
+	<div>
+		<input id="checkMark2" type="checkbox" name="checkY" value="2" checked="checked" style="width:20px;height:16px;" />CheckButton2
+	</div>
+	
+	<script type="text/javascript">
+	    $(function () {
+	        $("#radio1").SegmentedButton({
+	            formName: "radio1",
+	            select: function (value) {
+	                alert("selected value:" + value);
+	            }
+	        });
+	        $("#radio1DisabledButton").click(function (e) {
+	            if ($("#radio1").SegmentedButton("disabled") === true) {
+	                $("#radio1").SegmentedButton("disabled", false);
+	            } else {
+	                $("#radio1").SegmentedButton("disabled", true);
+	            }
+	        });
+
+	        $("#checkButton1").CheckButton({
+	            label: "Hello",
+	            offIconUrl: "Styles/Images/button01.png",
+	            onIconUrl: "Styles/Images/button01_on.png",
+	            check: function (value) {
+	                alert("#checkButton1.check:" + value);
+	            }
+	        });
+	        $("#switchButton1").SwitchButton({
+	            onLabel: "ON",
+	            offLabel: "OFF",
+	            check: function (value) {
+	                alert("#switchButton1.check:" + value);
+	            }
+	        });
+
+	        $("#checkMark1").CheckMark();
+	        $("#checkMark2").CheckMark({ onIconUrl: "Styles/Images/checkMark02.png" });
+
+	    });
+	</script>
+
+
+
+</body>
+</html>

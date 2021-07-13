@@ -1,0 +1,213 @@
+﻿<%@ Master Language="VB" Inherits="Toyota.eCRB.SystemFrameworks.Web.CommonMasterPage" %>
+<!DOCTYPE html>
+<html lang="ja">
+<head id="Head1" runat="server">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no" />
+
+    <%'タイトル %>
+    <title><asp:Literal ID="MstPG_WindowTitle" runat="server"/></title>
+    
+    <%'スタイルシート %>
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/Style.css"))%>" />
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/jquery.popover.css"))%>" />
+   	<link rel="stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/Controls.css"))%>" />
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/CommonMasterPage.css"))%>" />
+
+    <%'スクリプト %>
+    <%
+        Dim domain As String = Session("Toyota.eCRB.SystemFrameworks.Web.")
+        If Not IsNothing(domain) Then
+            Response.Write("<script type='text/javascript'>document.domain = '" & domain & "';</script>")
+        End If
+    %>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery-1.5.2.min.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.ui.ipad.altfix.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.flickable.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.json-2.3.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.popover.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.fingerscroll.js"))%>"></script>
+
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/icropScript.js"))%>"></script>
+
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.VScroll.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CheckMark.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomLabel.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomTextBox.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.DateTimeSelector.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.PopOverForm.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.SegmentedButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.SwitchButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomRepeater.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.NumericKeypad.js"))%>"></script>
+
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/CommonMasterPage.js"))%>"></script>
+
+    <%'HEAD部分の穴あけ %>
+    <asp:ContentPlaceHolder id="head" runat="server"/>
+</head>
+<body onload="blinkImage()" style="-webkit-user-select:none">
+<script type="text/javascript">
+    icropScript.ui.words.reload = <%= HttpUtility.JavaScriptStringEncode(WebWordUtility.GetWord("MASTERPAGEMAIN",20), True) %>;
+    <%
+        Dim enableScriptErrorNotification As Object = Toyota.eCRB.SystemFrameworks.Core.SystemConfiguration.Current.Manager.EnvironmentSetting.GetSetting(String.Empty).GetValue("EnableScriptErrorNotification")
+        If (enableScriptErrorNotification IsNot Nothing) Then
+            Response.Write(String.Format("icropScript.ui.enableScriptErrorNotification = {0};", CStr(enableScriptErrorNotification).toLower()))
+        End If
+    %>    
+</script>
+<div id="bodyFrame">
+<form id="this_form" runat="server">
+    <div id="MstPG_LoadingScreen">
+        <div id="MstPG_LoadingWrap">
+            <div class="loadingIcn">
+                <img src="<%=ResolveClientUrl("~/Styles/Images/animeicn-1.png")%>" width="38" height="38" alt="" />
+            </div>
+        </div>
+    </div>
+<div id="BaseBox"><%'サイズ確認用のタグです %>
+    <div id="container"><%'←全体を含むタグです。 %>
+        <div id="MstPG_registOverlayBlack"></div>
+        <%'ここからヘッダ %>
+        <div id="header">
+            <%'左側のボタングループ %>
+            <ul id="MstPG_LeftButtonsGroup" class="leftButtonsGroup">
+                <li class="prevButton"><asp:LinkButton ID="MstPG_BackLinkButton" runat="server" OnClick="BackButton_Click" /></li>
+                <li class="nextButton"><asp:LinkButton ID="MstPG_NextLinkButton" runat="server" Visible="false" /></li>
+                <li class="visitorButton_blink">
+                  <asp:Panel ID="visitorButtonPanel" runat="server">
+                    <div id="divVisitorblink">
+                      <image src="../Styles/Images/MasterPage/VisitorIcon_off.png" id="myVisit_blink" height="30" style="display:none"/>
+                      <image src="../Styles/Images/MasterPage/VisitorIcon_off.png" id="myVisit" height="30" />
+                      <div id="addStatusVisitor" class="addStatusVisitor"><asp:Label runat="server" ID="MstPG_lblVisitor"/></div>
+                    </div>
+                  </asp:Panel>
+                </li>
+                <li class="forumButton_blink">
+                  <asp:Panel ID="forumButtonPanel" runat="server">
+                    <div id="divForumblink">
+                      <image src="../Styles/Images/headerImage04.png" id="myIMG_blink" height="30" style="display:none"/>
+                      <image src="../Styles/Images/headerImage04.png" id="myIMG" height="30"/>
+                      <div id="addStatus" class="addStatus"><asp:Label runat="server" ID="MstPG_lblForum"/></div>
+                    </div>
+                  </asp:Panel>
+                </li>
+            </ul>
+			<div id="MstPG_SearchType">
+                <icrop:SegmentedButton ID="MstPG_SearchTypeSegmenteButton_Service" runat="server" OnClientSelect="MstPG_SearchTypeSegmenteButton_select" Visible="false">
+                    <asp:ListItem Value="1" Selected="True"></asp:ListItem>
+                    <asp:ListItem Value="2"></asp:ListItem>
+                    <asp:ListItem Value="3"></asp:ListItem>
+                    <asp:ListItem Value="4"></asp:ListItem>
+                    <asp:ListItem Value="5"></asp:ListItem>
+                </icrop:SegmentedButton>
+			    <icrop:SegmentedButton ID="MstPG_SearchTypeSegmenteButton" runat="server" OnClientSelect="MstPG_SearchTypeSegmenteButton_select">
+                    <asp:ListItem Value="2" Selected="True"></asp:ListItem>
+                    <asp:ListItem Value="4"></asp:ListItem>
+                    <%--2013/12/20 TCS 市川 Aカード情報相互連携開発 追加要望 START --%>
+                    <asp:ListItem Value="6"></asp:ListItem>
+                    <%--2013/12/20 TCS 市川 Aカード情報相互連携開発 追加要望 END --%>
+                    <asp:ListItem Value="1"></asp:ListItem>
+                    <asp:ListItem Value="3"></asp:ListItem>
+                </icrop:SegmentedButton>
+
+                <div style="display:none;">
+                    <input ID="MstPG_FocusinDummyButton" Text="focusin" OnClick="FocusInCustomerSearchTextBox();">
+                </div>
+			</div>	
+            <%'右側のボタングループ %>
+            <div id="MstPG_RightButtonsGroup" class="rightButtonsGroup">
+                <asp:Panel ID="MstPG_CustomerSearchTextBoxPanel" runat="server">
+                    <% If Not _DispSearch() Then%><div style="display:none;"><%End If%>
+                    <div id="MstPG_CustomerSearchArea">
+                        <asp:ImageButton runat="server" ID="MstPG_CustomerSearchButton" ImageUrl="~/Styles/Images/serchImage01.png" OnClick="MstPG_CustomerSearchButton_Click" OnClientClick="return clickMstPGCustomerSearch();" />
+                        <div id="MstPG_CustomerSearchTextBoxArea" style="display:inline-block;">
+                            <icrop:CustomTextBox type="search" ID="MstPG_CustomerSearchTextBox" runat="server"/>
+                        </div>
+                    </div>
+                    <% If Not _DispSearch() Then%></div><%End If%>
+                </asp:Panel>
+
+                <div>
+                    <asp:ImageButton ID="MstPG_IcropIcon" runat="server" CssClass="imageIcon" ImageUrl="~/Styles/Images/headerImage10.png" />
+                    <icrop:PopOver ID="MstPG_PopOver1" runat="server" TriggerClientID="MstPG_IcropIcon" Height="44px" Width="200px" >
+                    </icrop:PopOver>
+                </div>
+            </div>
+            <h1>
+                <asp:Label ID="MstPG_TitleLabel" runat="server" CssClass="HeaderTitle" EnableViewState="false" />
+                <asp:Label ID="MstPG_StaffInfo" runat="server" CssClass="HeaderStaff" style="display:none;" />
+            </h1>
+        </div>
+        <%'ここまでヘッダ %>
+
+        <%'メイン%>
+        <div id="main">
+            <%'ここから各コンテンツ %>
+            <div id="contents">
+                <%'コンテンツ部分の穴あけ %>
+                <asp:ContentPlaceHolder id="content" runat="server"/>
+                <div id="MstPG_processingServer"></div>
+            </div>
+            <%'ここまで各コンテンツ %>
+        </div>
+        <%'ここからフッタ %>
+	    <div id="foot">
+            <div class="footerNavi">
+                <div id="MstPG_LockArea">
+                    <asp:Image ID="MstPG_OperationLockedImage" runat="server" Visible="false" />
+                    <asp:HiddenField ID="MstPG_OperationLocked" runat="server" />
+                    
+                    <asp:HiddenField ID="MstPG_PresenceCategory" runat="server" />
+                    <asp:HiddenField ID="MstPG_PresenceDetail" runat="server" />
+
+                </div>
+                <asp:Panel ID="MstPG_FooterButton" runat="server"></asp:Panel>
+                <%--2014/03/10 TCS 武田 受注後フォロー機能開発 START --%>
+                <asp:Panel ID="MstPG_NextFooterArea" runat="server">
+                    <img src="../Styles/Images/MasterPage/FooterNaviIcnDw.png" id="MstPG_NextFooterButton" OnClick="footerPaging();"/>
+                    <asp:Label ID="MstPG_NextFooterLabel" runat="server"/>
+                </asp:Panel>
+                <%--2014/03/10 TCS 武田 受注後フォロー機能開発 END --%>
+                <%'コンテンツ部分の穴あけ %>
+                <div>
+                    <asp:ContentPlaceHolder id="footer" runat="server"/>
+                </div>
+            </div>
+	    </div>
+
+        <%'ここまでフッタ %>
+        <div id="hidden" style="display:none;">
+            <asp:TextBox ID="MstPG_CustomerSearchTypeWordRegNoTextBox" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_CustomerSearchTypeWordNameTextBox" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_CustomerSearchTypeWordVinTextBox" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_CustomerSearchTypeWordTelTextBox" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_CustomerSearchTypeWordROTextBox" runat="server" type="hidden"></asp:TextBox>
+            <%--2013/12/20 TCS 市川 Aカード情報相互連携開発 追加要望 START --%>
+            <asp:TextBox ID="MstPG_CustomerSearchTypeWordSocialNumTextBox" runat="server" type="hidden"></asp:TextBox>
+            <%--2013/12/20 TCS 市川 Aカード情報相互連携開発 追加要望 END --%>
+            <asp:TextBox ID="MstPG_CustomerSearchWordNoDataTextBox" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_CustomerSearchWordNoSelectTextBox" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_TCV_Params" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_Title_Notice" runat="server" type="hidden"></asp:TextBox>
+            <asp:TextBox ID="MstPG_Title_Visitor" runat="server" type="hidden"></asp:TextBox>
+            
+            <asp:HiddenField ID="MstPG_RefreshTimerTime" runat="server" />
+            <asp:HiddenField ID="MstPG_RefreshTimerMessage1" runat="server" />
+        </div>
+    </div>
+</div>
+
+</form>
+</div>
+<script type="text/javascript">
+    $("#MstPG_FootItem_Sub_102").wrap("<div style='display: none;'/>");
+    $(function () { icropScript.ui.isLoading = false; });
+</script>
+</body>
+</html>

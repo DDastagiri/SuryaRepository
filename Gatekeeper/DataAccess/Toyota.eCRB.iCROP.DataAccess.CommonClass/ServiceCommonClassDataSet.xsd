@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ServiceCommonClassDataSet" targetNamespace="http://tempuri.org/ServiceCommonClassDataSet.xsd" xmlns:mstns="http://tempuri.org/ServiceCommonClassDataSet.xsd" xmlns="http://tempuri.org/ServiceCommonClassDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="icropit" IsAppSettingsProperty="true" Modifier="Assembly" Name="icropit (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.CommonUtility.ServiceCommonClass.Api.DataAccess.My.MySettings.GlobalReference.Default.icropit" Provider="Oracle.DataAccess.Client" />
+          <Connection IsAppSettingsProperty="false" Modifier="Assembly" Name="ICROPREG.ICROPIT" ParameterPrefix=":" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ServiceCommonClassDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ServiceCommonClassDataSet" msprop:Generator_UserDSName="ServiceCommonClassDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SystemSetting" msprop:Generator_TableClassName="SystemSettingDataTable" msprop:Generator_TableVarName="tableSystemSetting" msprop:Generator_TablePropName="SystemSetting" msprop:Generator_RowDeletingName="SystemSettingRowDeleting" msprop:Generator_RowChangingName="SystemSettingRowChanging" msprop:Generator_RowEvHandlerName="SystemSettingRowChangeEventHandler" msprop:Generator_RowDeletedName="SystemSettingRowDeleted" msprop:Generator_UserTableName="SystemSetting" msprop:Generator_RowChangedName="SystemSettingRowChanged" msprop:Generator_RowEvArgName="SystemSettingRowChangeEvent" msprop:Generator_RowClassName="SystemSettingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SETTING_VAL" msdata:Caption="SETTING_VALUE" msprop:Generator_ColumnVarNameInTable="columnSETTING_VAL" msprop:Generator_ColumnPropNameInRow="SETTING_VAL" msprop:Generator_ColumnPropNameInTable="SETTING_VALColumn" msprop:Generator_UserColumnName="SETTING_VAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

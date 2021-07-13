@@ -1,0 +1,100 @@
+﻿<%@ Master Language="VB" %>
+<!DOCTYPE html>
+<html lang="ja">
+<head id="Head1" runat="server">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no" />
+
+    <%'タイトル %>
+    <title></title>
+
+    <%'スタイルシート %>
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/Style.css"))%>" />
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/jquery.popover.css"))%>" />
+   	<link rel="stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/Controls.css"))%>" />
+
+    <%'スクリプト %>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery-1.5.2.min.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.ui.ipad.altfix.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.doubletap.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.flickable.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.json-2.3.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.popover.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.fingerscroll.js"))%>"></script>
+
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/icropScript.js"))%>"></script>
+    
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.VScroll.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CheckButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CheckMark.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomLabel.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomTextBox.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.DateTimeSelector.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.PopOverForm.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.SegmentedButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.SwitchButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomRepeater.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.NumericKeypad.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomCheckBox.js"))%>"></script>
+
+    <%'HEAD部分の穴あけ %>
+    <asp:ContentPlaceHolder id="head" runat="server"/>
+</head>
+<body>
+<script type="text/javascript">
+    icropScript.ui.words.reload = <%= HttpUtility.JavaScriptStringEncode(WebWordUtility.GetWord("MASTERFOOTER_SVR",20), True) %>;
+    <%
+        Dim enableScriptErrorNotification As Object = Toyota.eCRB.SystemFrameworks.Core.SystemConfiguration.Current.Manager.EnvironmentSetting.GetSetting(String.Empty).GetValue("EnableScriptErrorNotification")
+        If (enableScriptErrorNotification IsNot Nothing) Then
+            Response.Write(String.Format("icropScript.ui.enableScriptErrorNotification = {0};", CStr(enableScriptErrorNotification).toLower()))
+        End If
+        
+        'TBL_SYSTEMENVからドメイン名を取得
+        Dim systemEnv As New Toyota.eCRB.SystemFrameworks.Core.iCROP.BizLogic.SystemEnvSetting
+        Dim systemEnvParam As String = String.Empty
+        Dim drSystemEnvSetting As Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess.SystemEnvSettingDataSet.SYSTEMENVSETTINGRow = _
+            systemEnv.GetSystemEnvSetting("OTHER_LINKAGE_DOMAIN")
+
+        '取得できた場合のみ設定する
+        If Not (IsNothing(drSystemEnvSetting)) Then
+            systemEnvParam = drSystemEnvSetting.PARAMVALUE
+
+        End If
+
+        'ドメインをHiddenに格納
+        '「:」を抜いた文字列取得
+        Dim domain = systemEnvParam.Split(CChar(":"))(0)
+        'スーパードメイン名だけを取得する
+        domain = domain.Substring(domain.IndexOf(".") + 1, _
+                                    domain.Length - domain.IndexOf(".") - 1)
+        CType(FindControl("MstPG_PopupDomain"), HiddenField).Value = domain
+
+    %>
+</script>
+<div id="bodyFrame">
+<form id="this_form" runat="server">
+    <%'コンテンツ部分の穴あけ %>
+    <asp:ContentPlaceHolder id="content" runat="server"/>
+
+    <asp:HiddenField ID="MstPG_PopupDomain" runat="server" />
+</form>
+</div>
+<script type="text/javascript">
+    $(function () { icropScript.ui.isLoading = false; });
+    if ($("#MstPG_PopupDomain").val() != "" && $("#MstPG_PopupDomain").val() != undefined && $("#MstPG_PopupDomain").val() != null) {
+        try {
+            //クロスドメインの設定
+            document.domain = $("#MstPG_PopupDomain").val();
+        } catch (e) {
+            //alert("The crossing domain went wrong. ");
+        }
+    }
+
+</script>
+</body>
+</html>

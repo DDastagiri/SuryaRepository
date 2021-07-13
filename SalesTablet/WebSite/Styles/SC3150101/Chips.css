@@ -1,0 +1,492 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ChipsBase {
+    /* position:relative; */
+    /* ここから追加 */
+    position:absolute;
+	background:#FFF;
+	display:block;
+    top:10;
+	height:45px;
+	border-radius:3px;
+    /* ここまで追加 */
+}
+.ChipsBaseFilter {
+    position:absolute;
+	background:#CCC;
+	display:block;
+    top:10;
+	height:47px;
+	border-radius:3px;
+	opacity:0;
+}
+.ChipsBaseFilterNoTap {
+    position:absolute;
+	background:#CCC;
+	display:block;
+    top:10;
+	height:45px;
+	border-radius:3px;
+	opacity:0;
+}
+
+/* 文字色 */
+.TextColor {
+    color:White;
+}
+.TextColorRezTemp {
+    color:Orange;
+}
+.TextColorRezFix {
+    color:Blue;
+}
+.TextColorDeli {
+    color:Green;
+}
+.TextColorDelay {
+    color:Red;
+}
+.TextColorComp {
+    color:Gray;
+}
+
+/*
+.ChipsBase .Chip1 {
+    position:relative;
+	background:#FFF;
+	display:block;
+	height:45px;
+	border-radius:3px;
+	border:rgba(0,0,255,0.7) 1px solid;
+	border-radius:3px;
+}*/
+
+/* ここから追加 */
+.ChipFrame {
+	display:block;
+	height:45px;
+/*	border:rgba(204,0,0,0.7) 1px solid; */
+    border: 1px solid;
+	border-radius:3px;
+	overflow:hidden;
+}
+.CFRezTemp {
+    border-color:rgba(255, 153, 0, 0.7);
+}
+.CFRezFix {
+    border-color:rgba(0, 0, 255, 0.7);
+}
+.CFDeli {
+    border-color:rgba(51, 204, 51, 0.7);
+}
+.CFDelay {
+    border-color:rgba(255, 0, 0, 0.7);
+}
+.CFComp {
+    border-color:rgba(145, 145, 145, 0.7);
+}
+/* ここまで追加 */
+
+/*
+.ChipsBase .whidthType50{width:50px;}
+.ChipsBase .whidthType80{width:80px;}
+.ChipsBase .whidthType100{width:100px;}
+*/
+
+/* ここから、.Chip1を.ChipFrameに変更（最後まで） */
+.ChipFrame .UpperArea{
+	display:block;
+	height:25px;
+	margin:1px 1px 0;
+}
+
+.ChipFrame .lowerArea{
+	display:block;
+	height:19px;
+	position:relative;
+    /*
+	background: -webkit-gradient(linear, left top, left bottom, from(#0000ff), 
+						color-stop(0.5, #050cfb),
+						to(#2661e3));
+    */
+	border-radius: 0 0 2px 2px;
+	
+}
+/* ここから追加 */
+/* 0がつくクラスは店舗待ち客用
+　 1がつくクラスは預け客用 */
+.ChipFrame .LARezTemp0 {
+    border-top:#ff9900 1px solid;
+}
+.ChipFrame .LARezTemp {
+    border-top:#ff9900 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff9900), 
+						color-stop(0.5, #fb9e05),
+						to(#f0c226));
+}
+.ChipFrame .LARezFix0 {
+    border-top:#0000ff 1px solid;
+}
+.ChipFrame  .LARezFix {
+    border-top:#0000ff 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0000ff), 
+						color-stop(0.5, #050cfb),
+						to(#2661e3));
+}
+.ChipFrame .LADeli0 {
+    border-top:#33cc33 1px solid;
+}
+.ChipFrame  .LADeli {
+    border-top:#33cc33 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#33cc33), 
+						color-stop(0.5, #38d038),
+						to(#60f060));
+}
+.ChipFrame .LADelay0 {
+    border-top:#ff0000 1px solid;
+}
+.ChipFrame .LADelay {
+    border-top:#ff0000 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), 
+						color-stop(0.5, #fb0c05),
+						to(#e36126));
+}
+.ChipFrame .LAComp0 {
+    border-top:#919191 1px solid;
+}
+.ChipFrame .LAComp {
+    border-top:#919191 1px solid;
+    background: -webkit-gradient(linear, left top, left bottom, from(#919191), 
+						color-stop(0.5, #a0a0a0),
+						to(#c0c0c0));
+}
+/* ここまで追加 */
+
+.ChipFrame .UpperArea .titleLine01{
+	height:6px;
+	text-align:center;
+	font-family: HiraKakuProN-W3,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	font-size:6px; line-height:6px;
+}
+.ChipFrame .UpperArea .titleLine02{
+	height:9px;
+	text-align:center;
+	font-family: HiraKakuProN-W3,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	font-size:9px; line-height:9px;
+}
+.ChipFrame .UpperArea .time{
+	height:8px;
+	text-align:right;
+	font-family: HiraKakuProN-W3,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	font-size:9px; line-height:9px;
+}
+
+/* 来店客のPin */
+.ChipFrame .lowerArea .AddIcon01{
+	display:block;
+	width:7px; height:8px;
+	position:absolute;
+	top:-8px; left:2px;
+    /*background:url(../Images/SC3150101/IconBlue03.png) 0 0 no-repeat;*/
+}
+.ChipFrame .lowerArea .WalkInRezTemp {
+    background:url(../Images/SC3150101/IconPinA03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .WalkInRezFix {
+    background:url(../Images/SC3150101/IconPinA04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .WalkInDeli {
+    background:url(../Images/SC3150101/IconPinA02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .WalkInDelay {
+    background:url(../Images/SC3150101/IconPinA01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .WalkInComp {
+    background:url(../Images/SC3150101/IconPinA05.png) 0 0 no-repeat;
+}
+
+
+
+.ChipFrame .lowerArea .AddIcon02{
+	float:left;
+	display:block;
+	width:15px; height:14px;
+	margin:3px 0 0 3px;
+	float:left;
+	/*background:url(../Images/SC3150101/IconBlue01.png) 0 0  no-repeat;*/
+}
+.ChipFrame .lowerArea .CrryInRezTemp0 {
+    background:url(../Images/SC3150101/IconCarB02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezTemp1 {
+    background:url(../Images/SC3150101/IconCarA02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezTemp2 {
+    background:url(../Images/SC3150101/IconCarA02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezTemp3 {
+    background:url(../Images/SC3150101/IconCarA02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezTemp4 {
+    background:url(../Images/SC3150101/IconCarA02.png) 0 0 no-repeat;
+}
+
+.ChipFrame .lowerArea .CrryInRezFix0 {
+    background:url(../Images/SC3150101/IconCarB04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezFix1 {
+    background:url(../Images/SC3150101/IconCarA04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezFix2 {
+    background:url(../Images/SC3150101/IconCarA04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezFix3 {
+    background:url(../Images/SC3150101/IconCarA04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInRezFix4 {
+    background:url(../Images/SC3150101/IconCarA04.png) 0 0 no-repeat;
+}
+
+.ChipFrame .lowerArea .CrryInDeli0 {
+    background:url(../Images/SC3150101/IconCarB03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDeli1 {
+    background:url(../Images/SC3150101/IconCarA03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDeli2 {
+    background:url(../Images/SC3150101/IconCarA03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDeli3 {
+    background:url(../Images/SC3150101/IconCarA03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDeli4 {
+    background:url(../Images/SC3150101/IconCarA03.png) 0 0 no-repeat;
+}
+
+.ChipFrame .lowerArea .CrryInDelay0 {
+    background:url(../Images/SC3150101/IconCarB01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDelay1 {
+    background:url(../Images/SC3150101/IconCarA01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDelay2 {
+    background:url(../Images/SC3150101/IconCarA01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDelay3 {
+    background:url(../Images/SC3150101/IconCarA01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInDelay4 {
+    background:url(../Images/SC3150101/IconCarA01.png) 0 0 no-repeat;
+}
+
+.ChipFrame .lowerArea .CrryInComp0 {
+    background:url(../Images/SC3150101/IconCarB05.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInComp1 {
+    background:url(../Images/SC3150101/IconCarA05.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInComp2 {
+    background:url(../Images/SC3150101/IconCarA05.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInComp3 {
+    background:url(../Images/SC3150101/IconCarA05.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .CrryInComp4 {
+    background:url(../Images/SC3150101/IconCarA05.png) 0 0 no-repeat;
+}
+
+/* 入庫予定時間の描画用 */
+.ChipFrame .lowerArea .AddIcon02Text{
+	float:left;
+	display:block;
+	width:15px; height:16px;
+	/*margin:1px 0 0 0px;*/
+	background:rgba(255,255,255,1);
+	border:rgba(255,255,255,1) 1px solid;
+	border-radius:2px;
+	text-align:center;
+	font-size:6px; line-height:16px;
+	padding:0;
+}
+
+/* 入庫状態のエリアに作業開始後の状態描画用 */
+.ChipFrame .lowerArea .AddIcon02Working{
+	float:left;
+	display:block;
+	width:15px; height:16px;
+	/*margin:1px 0 0 0px;*/
+	background:rgba(255,255,255,1);
+	border:rgba(255,255,255,1) 1px solid;
+	border-radius:2px;
+	padding:0;
+}
+.ChipFrame .lowerArea .AddIcon02Working li{
+	display:block;
+	text-align:center;
+	font-size:6px; line-height:6px;
+}
+.ChipFrame .lowerArea .AddIcon02Working li.Down{
+	height:4px;
+	background:url(../Images/SC3150101/IconDown.png) center center no-repeat;
+	
+}
+
+.ChipFrame .lowerArea .AddIcon03{
+	display:block;
+	width:20px; height:14px;
+	margin:3px 3px 0 0;
+	float:right;
+	/*background:url(../Images/SC3150101/IconBlue02.png) 0 0  no-repeat;*/
+	background:url(../Images/SC3150101/IconLowerRightA06.png) 0 0 no-repeat;
+}
+/* 車検アイコン */
+.ChipFrame .lowerArea .Inspection {
+    background:url(../Images/SC3150101/IconLowerRightTaypeA00.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .InspectionRezTemp {
+    background:url(../Images/SC3150101/IconLowerRightTaypeA02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .InspectionRezFix {
+    background:url(../Images/SC3150101/IconLowerRightTaypeA04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .InspectionDeli {
+    background:url(../Images/SC3150101/IconLowerRightTaypeA03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .InspectionDelay {
+    background:url(../Images/SC3150101/IconLowerRightTaypeA01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .InspectionComp {
+    background:url(../Images/SC3150101/IconLowerRightTaypeA05.png) 0 0 no-repeat;
+}
+/* 一般点検アイコン */
+.ChipFrame .lowerArea .General {
+    background:url(../Images/SC3150101/IconLowerRightTaypeB00.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .GeneralRezTemp {
+    background:url(../Images/SC3150101/IconLowerRightTaypeB02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .GeneralRezFix {
+    background:url(../Images/SC3150101/IconLowerRightTaypeB04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .GeneralDeli {
+    background:url(../Images/SC3150101/IconLowerRightTaypeB03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .GeneralDelay {
+    background:url(../Images/SC3150101/IconLowerRightTaypeB01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .GeneralComp {
+    background:url(../Images/SC3150101/IconLowerRightTaypeB05.png) 0 0 no-repeat;
+}
+/* 新車点検アイコン */
+.ChipFrame .lowerArea .Newcar {
+    background:url(../Images/SC3150101/IconLowerRightTaypeF00.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .NewcarRezTemp {
+    background:url(../Images/SC3150101/IconLowerRightTaypeF02.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .NewcarRezFix {
+    background:url(../Images/SC3150101/IconLowerRightTaypeF04.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .NewcarDeli {
+    background:url(../Images/SC3150101/IconLowerRightTaypeF03.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .NewcarDelay {
+    background:url(../Images/SC3150101/IconLowerRightTaypeF01.png) 0 0 no-repeat;
+}
+.ChipFrame .lowerArea .NewcarComp {
+    background:url(../Images/SC3150101/IconLowerRightTaypeF05.png) 0 0 no-repeat;
+}
+
+/* 定期点検の描画用CSS */
+.ChipFrame .lowerArea .AddIcon03Periodic{
+    position:relative;
+	display:block;
+	width:20px; height:17px;
+	margin:1px 2px 0 0;
+	float:right;
+	/*
+	color:#FFF;
+    */
+	font-weight:bold;
+}
+.ChipFrame .lowerArea .AddIcon03Periodic li.UpText{
+	display:block;
+	text-align:right;
+	font-size:11px; line-height:11px;
+}
+.ChipFrame .lowerArea .AddIcon03Periodic li.UnderText{
+	display:block;
+	text-align:right;
+	font-size:6px; line-height:6px;
+	padding-right:1px;
+}
+
+
+
+
+
+
+/*　休憩チップ
+--------------------------*/
+.ChipRest{
+    /*
+	position:relative;
+    */
+	display:block;
+	height:45px;
+	background:rgba(0,0,0,0.3);
+	border-radius:3px;
+	opacity:0.8;
+}
+.ChipRest .NoData{
+	position:relative;
+	display:block;
+	top:5px; left:0;
+	height:35px;
+	background:rgba(100,100,100,0.8);
+	box-shadow: 1px 1px 2px rgba(51,51,51,0.7);
+	margin:0 5px 0 4px;
+	border-radius:2px;
+}
+.NoData .addText{
+	font-size:8px; line-height:8px;
+	color:#333;
+	margin-left:2px;
+	text-align:center;
+	padding:12px 0 0;
+}
+
+
+
+/*　使用不可チップ
+--------------------------*/
+
+.ChipUnavailable {
+    /*
+	position:relative;
+    */
+	display:block;
+	height:45px;
+	background:rgba(0,0,0,0.5);
+	border-radius:3px;
+	opacity:0.8;
+}
+.ChipUnavailable .Unavailable{
+	position:relative;
+	display:block;
+	top:5px; left:0;
+	height:35px;
+	background:rgba(190,190,190,0.8);
+	box-shadow: 1px 1px 2px rgba(51,51,51,0.7);
+	margin:0 5px 0 4px;
+	border-radius:2px;
+}
+.Unavailable .addText{
+	font-size:8px; line-height:8px;
+	color:#333;
+	margin-left:1px;
+	text-align:center;
+	overflow:hidden;
+	padding:12px 0 0;
+}

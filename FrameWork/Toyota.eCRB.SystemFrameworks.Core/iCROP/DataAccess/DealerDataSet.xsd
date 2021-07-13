@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DealerDataSet" targetNamespace="http://tempuri.org/DealerDataSet.xsd" xmlns:mstns="http://tempuri.org/DealerDataSet.xsd" xmlns="http://tempuri.org/DealerDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.ApplicationFrameworks.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DealerDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DealerDataSet" msprop:Generator_UserDSName="DealerDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DEALER" msdata:CaseSensitive="True" msprop:Generator_TableClassName="DEALERDataTable" msprop:Generator_TableVarName="tableDEALER" msprop:Generator_TablePropName="DEALER" msprop:Generator_RowDeletingName="DEALERRowDeleting" msprop:Generator_UserTableName="DEALER" msprop:Generator_RowChangingName="DEALERRowChanging" msprop:Generator_RowEvHandlerName="DEALERRowChangeEventHandler" msprop:Generator_RowDeletedName="DEALERRowDeleted" msprop:Generator_RowEvArgName="DEALERRowChangeEvent" msprop:Generator_RowChangedName="DEALERRowChanged" msprop:Generator_RowClassName="DEALERRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLRNM_LOCAL" msprop:Generator_ColumnVarNameInTable="columnDLRNM_LOCAL" msprop:Generator_ColumnPropNameInRow="DLRNM_LOCAL" msprop:Generator_ColumnPropNameInTable="DLRNM_LOCALColumn" msprop:Generator_UserColumnName="DLRNM_LOCAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLRNM_ENG" msprop:Generator_ColumnVarNameInTable="columnDLRNM_ENG" msprop:Generator_ColumnPropNameInRow="DLRNM_ENG" msprop:Generator_ColumnPropNameInTable="DLRNM_ENGColumn" msprop:Generator_UserColumnName="DLRNM_ENG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLRNICNM_LOCAL" msprop:Generator_ColumnVarNameInTable="columnDLRNICNM_LOCAL" msprop:Generator_ColumnPropNameInRow="DLRNICNM_LOCAL" msprop:Generator_ColumnPropNameInTable="DLRNICNM_LOCALColumn" msprop:Generator_UserColumnName="DLRNICNM_LOCAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLRNICNM_EN" msprop:Generator_ColumnVarNameInTable="columnDLRNICNM_EN" msprop:Generator_ColumnPropNameInRow="DLRNICNM_EN" msprop:Generator_ColumnPropNameInTable="DLRNICNM_ENColumn" msprop:Generator_UserColumnName="DLRNICNM_EN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDR1_LOCAL" msprop:Generator_ColumnVarNameInTable="columnADDR1_LOCAL" msprop:Generator_ColumnPropNameInRow="ADDR1_LOCAL" msprop:Generator_ColumnPropNameInTable="ADDR1_LOCALColumn" msprop:Generator_UserColumnName="ADDR1_LOCAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDR1_ENG" msprop:Generator_ColumnVarNameInTable="columnADDR1_ENG" msprop:Generator_ColumnPropNameInRow="ADDR1_ENG" msprop:Generator_ColumnPropNameInTable="ADDR1_ENGColumn" msprop:Generator_UserColumnName="ADDR1_ENG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDR2_LOCAL" msprop:Generator_ColumnVarNameInTable="columnADDR2_LOCAL" msprop:Generator_ColumnPropNameInRow="ADDR2_LOCAL" msprop:Generator_ColumnPropNameInTable="ADDR2_LOCALColumn" msprop:Generator_UserColumnName="ADDR2_LOCAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDR2_ENG" msprop:Generator_ColumnVarNameInTable="columnADDR2_ENG" msprop:Generator_ColumnPropNameInRow="ADDR2_ENG" msprop:Generator_ColumnPropNameInTable="ADDR2_ENGColumn" msprop:Generator_UserColumnName="ADDR2_ENG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POSTNO" msprop:Generator_ColumnVarNameInTable="columnPOSTNO" msprop:Generator_ColumnPropNameInRow="POSTNO" msprop:Generator_ColumnPropNameInTable="POSTNOColumn" msprop:Generator_UserColumnName="POSTNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEL" msprop:Generator_ColumnVarNameInTable="columnTEL" msprop:Generator_ColumnPropNameInRow="TEL" msprop:Generator_ColumnPropNameInTable="TELColumn" msprop:Generator_UserColumnName="TEL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAXNO" msprop:Generator_ColumnVarNameInTable="columnFAXNO" msprop:Generator_ColumnPropNameInRow="FAXNO" msprop:Generator_ColumnPropNameInTable="FAXNOColumn" msprop:Generator_UserColumnName="FAXNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLRURL" msprop:Generator_ColumnVarNameInTable="columnDLRURL" msprop:Generator_ColumnPropNameInRow="DLRURL" msprop:Generator_ColumnPropNameInTable="DLRURLColumn" msprop:Generator_UserColumnName="DLRURL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLRNMPICT" msprop:Generator_ColumnVarNameInTable="columnDLRNMPICT" msprop:Generator_ColumnPropNameInRow="DLRNMPICT" msprop:Generator_ColumnPropNameInTable="DLRNMPICTColumn" msprop:Generator_UserColumnName="DLRNMPICT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLRLGPICT" msprop:Generator_ColumnVarNameInTable="columnDLRLGPICT" msprop:Generator_ColumnPropNameInRow="DLRLGPICT" msprop:Generator_ColumnPropNameInTable="DLRLGPICTColumn" msprop:Generator_UserColumnName="DLRLGPICT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DUMMYDLRFLG" msprop:Generator_ColumnVarNameInTable="columnDUMMYDLRFLG" msprop:Generator_ColumnPropNameInRow="DUMMYDLRFLG" msprop:Generator_ColumnPropNameInTable="DUMMYDLRFLGColumn" msprop:Generator_UserColumnName="DUMMYDLRFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELFLG" msprop:Generator_ColumnVarNameInTable="columnDELFLG" msprop:Generator_ColumnPropNameInRow="DELFLG" msprop:Generator_ColumnPropNameInTable="DELFLGColumn" msprop:Generator_UserColumnName="DELFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DEALER" />
+      <xs:field xpath="mstns:DLRCD" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

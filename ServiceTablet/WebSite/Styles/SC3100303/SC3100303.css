@@ -1,0 +1,748 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  共通
+//
+//////////////////////////////////////////////////////////////////////////////*/
+#main > #contents { padding:0px; }
+
+#MainArea{
+	position:relative;
+	width:1024px;
+	height:655px;
+	background:url(../Images/SC3100303/tsl02-01_backimg.png) 0 0 no-repeat;
+	font-size:12px;
+	color:#FFF;
+	top:0px;
+	left:0px;
+}
+#Inner{
+	position:absolute;
+	left:18px; top:3px;
+}
+
+/* (2)
+------------------------------------------------------------------------------*/
+/* SMBロゴ
+------------------------------------------------------------------------------*/
+.SMBLogo{
+	position:relative;
+	width:140px;
+	height:33px;
+	z-index:4;
+}
+.SMBLogo .LeftButton_trimming{
+	position:absolute;
+	left:0px; top:0px;
+	height:36px; width:17px;
+	overflow:hidden;
+}
+.SMBLogo .LeftButton_trimming input{
+	position:absolute;
+	left:5px; top:9px;
+	height:16px; width:11px;
+}
+.SMBLogo .LeftButton{
+	position:absolute;
+	left:10px; top:10px;
+	background:#FFF;
+	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.8) inset;
+	transform: rotate(38deg) scale(1.01) skew(-15deg) translate(0px);
+	width:13px;
+	height:13px;
+}
+.SMBLogo .RightButton_trimming{
+	position:absolute;
+	right:0px; top:0px;
+	height:36px; width:17px;
+	overflow:hidden;
+}
+.SMBLogo .RightButton_trimming input{
+	position:absolute;
+	right:10px; top:9px;
+	height:16px; width:11px;
+}
+.SMBLogo .RightButton{
+	position:absolute;
+	right:10px; top:10px;
+	background:#FFF;
+	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.8) inset;
+	transform: rotate(38deg) scale(1.01) skew(-15deg) translate(0px);
+	width:13px;
+	height:13px;
+}
+.SMBLogo .Date{
+    position:absolute;
+	left:17px; top:7px;
+	width:106px;
+}
+.SMBLogo .Date #pCalendar{
+	line-height:18px;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	text-shadow: 0px -1px 0px #000;
+}
+/* TSL02-01
+---------------------------------------*/
+.tsl02-01_Title{
+	position:absolute;
+	left:0px; top:0px;
+	width:991px;
+	height:44px;
+}
+.tsl02-01_Img01{
+	position:absolute;
+	left:0px; top:44px;
+	width:991px;
+	height:593px;
+}
+
+.tsl02-01_Title .SMBLogo{
+	position:absolute;
+	top:13px;	left:5px;
+	font-size:16px; line-height:20px;
+}
+
+.tsl02-01_Title #lblTitle
+{
+    position:absolute;
+    left:0px; top:0px;
+	width:991px;
+	height:44px;
+	font-size:30px;
+	line-height:44px;
+	text-align:center;
+	text-shadow: 0px -1px 0px #000;
+	
+}
+
+.tsl02-01_Title .DivAllNumber
+{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 300px;
+    line-height: 44px;
+    font-size: 24px;
+    height: 44px;
+    text-shadow: 0px -1px 0px #000;
+}
+
+.tsl02-01_Title .DivAllNumber #lblVstCarCnt
+{
+    text-align: right;
+}
+.tsl02-01_bodyBox{
+	position:absolute;
+	left:0px; top:44px;
+	width:981px; height:584px;
+	border:#003ab7 1px solid;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	box-shadow: 1px 1px 0px 0px rgba(255,255,255,0.5),2px 2px 3px 0px rgba(255,255,255,0.4);
+}
+
+
+.tsl02-01_bodyBox .tsl02-01_innerBox{
+	position:absolute;
+	left:0px; top:0px;
+	width:3220px; height:586px;
+}
+.tsl02-01_bodyBox .TimesBox{
+	display:block;
+	width:3220px; height:584px;
+}
+.tsl02-01_bodyBox .TimesBox .hourSet{
+	width:322px;
+	display:block;
+	position:absolute;
+	top:0;
+}
+
+.tsl02-01_bodyBox .TimesBox .p01{left:0px;}
+.tsl02-01_bodyBox .TimesBox .p02{left:322px;}
+.tsl02-01_bodyBox .TimesBox .p03{left:644px;}
+.tsl02-01_bodyBox .TimesBox .p04{left:966px;}
+.tsl02-01_bodyBox .TimesBox .p05{left:1288px;}
+.tsl02-01_bodyBox .TimesBox .p06{left:1610px;}
+.tsl02-01_bodyBox .TimesBox .p07{left:1932px;}
+.tsl02-01_bodyBox .TimesBox .p08{left:2254px;}
+.tsl02-01_bodyBox .TimesBox .p09{left:2576px;}
+.tsl02-01_bodyBox .TimesBox .p10{left:2898px;}
+.tsl02-01_bodyBox .TimesBox .p11{left:3220px;}
+.tsl02-01_bodyBox .TimesBox .p12{left:3542px;}
+.tsl02-01_bodyBox .TimesBox .p13{left:3864px;}
+.tsl02-01_bodyBox .TimesBox .p14{left:4186px;}
+.tsl02-01_bodyBox .TimesBox .p15{left:4508px;}
+.tsl02-01_bodyBox .TimesBox .p16{left:4830px;}
+.tsl02-01_bodyBox .TimesBox .p17{left:5152px;}
+.tsl02-01_bodyBox .TimesBox .p18{left:5474px;}
+.tsl02-01_bodyBox .TimesBox .p19{left:5796px;}
+.tsl02-01_bodyBox .TimesBox .p20{left:6118px;}
+.tsl02-01_bodyBox .TimesBox .p21{left:6440px;}
+.tsl02-01_bodyBox .TimesBox .p22{left:6762px;}
+.tsl02-01_bodyBox .TimesBox .p23{left:7084px;}
+.tsl02-01_bodyBox .TimesBox .p24{left:7406px;}
+
+.tsl02-01_bodyBox .TimesBox .p01h{left:161px;}
+.tsl02-01_bodyBox .TimesBox .p02h{left:483px;}
+.tsl02-01_bodyBox .TimesBox .p03h{left:805px;}
+.tsl02-01_bodyBox .TimesBox .p04h{left:1127px;}
+.tsl02-01_bodyBox .TimesBox .p05h{left:1449px;}
+.tsl02-01_bodyBox .TimesBox .p06h{left:1771px;}
+.tsl02-01_bodyBox .TimesBox .p07h{left:2093px;}
+.tsl02-01_bodyBox .TimesBox .p08h{left:2415px;}
+.tsl02-01_bodyBox .TimesBox .p09h{left:2737px;}
+.tsl02-01_bodyBox .TimesBox .p10h{left:3059px;}
+.tsl02-01_bodyBox .TimesBox .p11h{left:3381px;}
+.tsl02-01_bodyBox .TimesBox .p12h{left:3703px;}
+.tsl02-01_bodyBox .TimesBox .p13h{left:4025px;}
+.tsl02-01_bodyBox .TimesBox .p14h{left:4347px;}
+.tsl02-01_bodyBox .TimesBox .p15h{left:4669px;}
+.tsl02-01_bodyBox .TimesBox .p16h{left:4991px;}
+.tsl02-01_bodyBox .TimesBox .p17h{left:5313px;}
+.tsl02-01_bodyBox .TimesBox .p18h{left:5635px;}
+.tsl02-01_bodyBox .TimesBox .p19h{left:5957px;}
+.tsl02-01_bodyBox .TimesBox .p20h{left:6279px;}
+.tsl02-01_bodyBox .TimesBox .p21h{left:6601px;}
+.tsl02-01_bodyBox .TimesBox .p22h{left:6923px;}
+.tsl02-01_bodyBox .TimesBox .p23h{left:7245px;}
+.tsl02-01_bodyBox .TimesBox .p24h{left:7567px;}
+
+.tsl02-01_bodyBox .TimesBox .hourSet h3{
+	display:block;
+	height:29px; width:100%;
+	font-size:18px;
+	line-height:29px;
+	color:#FFFFFF;
+	text-align:center;
+	text-shadow: 0px -1px 0px #000;
+	background: -webkit-gradient(linear, left top, left bottom,
+						from(#0040e4),
+            color-stop(0.50, #0040e4),
+            color-stop(0.51, #002ea3),
+						to(#002ea3));
+	
+}
+.tsl02-01_bodyBox .TimesBox .hourSet h3::before{
+	content : "";
+	display:block;
+	width:1px;	height:29px;
+	background: -webkit-gradient(linear, left top, left bottom,
+						from(#80a0f2),
+            color-stop(0.50, #80a0f2),
+            color-stop(0.51, #8097d1),
+						to(#8097d1));
+	top:0; left:0;
+	position:absolute;
+	z-index:10;
+}
+.tsl02-01_bodyBox .TimesBox .hourSet h3::after{
+	content : "";
+	display:block;
+	width:1px;	height:29px;
+	background: -webkit-gradient(linear, left top, left bottom,
+						from(#0049b7),
+            color-stop(0.50, #0049b7),
+            color-stop(0.51, #0049b7),
+						to(#0049b7));
+	top:0; right:0;
+	position:absolute;
+	z-index:11;
+}
+
+.tsl02-01_bodyBox .TimesBox .hourSet .Number{
+	font-size:16px;
+	color:#FFFFFF;
+	text-align:center;
+	text-shadow: 0px -1px 0px #000;
+	position:absolute;
+	top:9px; right:30px;
+	font-weight:800;
+}
+
+.tsl02-01_bodyBox .TimesBox .hourSet .DivNumberWord{
+	position:absolute;
+	top:10px; right:0px;
+	font-weight:800;
+	width:25px;
+	height:16px;
+}
+
+.tsl02-01_bodyBox .TimesBox .hourSet .DivNumberWord .SpanNumberWord{
+	font-size:14px;
+	color:#FFFFFF;
+	text-align:left;
+	text-shadow: 0px -1px 0px #000;
+	font-weight:800;
+}
+
+.tsl02-01_bodyBox .TimesBox .DataSet{
+	width:100%;
+	display:block;
+	position:relative;
+	background:rgba(0,0,0,0);
+	min-height:555px;
+	background: -webkit-gradient(linear, left top, right top,
+						from(rgba(255,255,255,0.2)),
+            color-stop(0.50, rgba(255,255,255,0.2)),
+            color-stop(0.50, rgba(255,255,255,0.0)),
+						to(rgba(255,255,255,0.0)));
+}
+
+.tsl02-01_bodyBox .TimesBox .DataSet::before{
+	content : "";
+	display:block;
+	width:1px;	height:100%;
+	background: -webkit-gradient(linear, left top, left bottom,
+						from(#c1f1f8),
+            color-stop(0.50, #c1f1f8),
+            color-stop(0.51, #c1f1f8),
+						to(#c1f1f8));
+	top:0; left:0;
+	position:absolute;
+	z-index:10;
+}
+
+.tsl02-01_bodyBox .TimesBox .DataSet::after{
+	content : "";
+	display:block;
+	width:1px;	height:100%;
+	background: -webkit-gradient(linear, left top, left bottom,
+						from(#0049b7),
+            color-stop(0.50, #0049b7),
+            color-stop(0.51, #0049b7),
+						to(#0049b7));
+	top:0; right:0;
+	position:absolute;
+	z-index:11;
+}
+
+#Inner .shadowBox{
+	display:block;
+	width:981px; height:555px;
+	box-shadow: 5px 5px 10px 10px rgba(30,156,238,0.5) inset;
+	position:absolute;
+	top:74px; left:0;
+	
+}
+
+#Inner .blackBackGround{
+	display:none;
+	width:981px; height:555px;
+	position:absolute;
+	top:74px; left:0;
+	background:rgba(0, 0, 0, 0.5);
+	overflow:hidden;
+}
+
+.tsl02-01_bodyBox .TimesBox .DataSet .halfLines{
+	display:block;
+	width:1px; min-height:554px;
+	border-right:#0049b7 1px dotted;
+	position:absolute;
+	top:0; left:159px;
+}
+.tsl02-01_bodyBox .TimesBox .DataSet .halfLines::before{
+	content:"";
+	display:block;
+	width:1px; min-height:554px;
+	border-right:#abf0f7 1px dotted;
+	position:absolute;
+	top:0; left:1px;
+}
+
+
+.tsl02-01_bodyBox .TimesBox .wbChipsArea{
+	width:160px; height:555px;
+	display:block;
+	position:absolute;
+	top:29px;
+	z-index:200;
+}
+
+
+.GreenTimeLine{
+	display:block;
+	position:absolute;
+	width:2px;	height:555px;
+	background:rgba(0,233,11,1.0);
+	z-index:500;
+}
+.GreenTimeLine:after{
+	content:"";
+	position:absolute;
+	width:4px;	height:555px;
+	right:-1px;
+	background:rgba(0,233,11,0.4);
+}
+.TimeLinePosition{
+	left:160px;	top:29px;
+	visibility:hidden;
+}
+
+/* TSL02-02
+---------------------------------------*/
+.tsl02-02_Img01{
+	position:absolute;
+	left:0px; bottom:41px;
+	width:1024px;
+	height:200px;
+}
+
+/* TSL02-02
+---------------------------------------*/
+.wbChipsArea{
+	
+}
+.wbChipsArea .Inner{
+	position:relative;
+	display:block;
+	width:100%;
+	height:100%;
+}
+.blackBackGround .wbChips,
+.wbChipsArea .Inner .wbChips{
+	display:block;
+	width:75px; height:51px;
+	border-radius:5px;
+	box-shadow: -1px 0px 1px 1px rgba(0,0,0,0.2) inset,1px 1px 2px 0px rgba(0,0,0,0.2);
+	position:absolute;
+	font-size:10px;
+}
+
+.blackBackGround .Grey,
+.wbChipsArea .Inner .Grey{
+	background: -webkit-gradient(linear, left top, left bottom,
+		from(#90999e),
+		color-stop(0.05, #d1dfea),
+		color-stop(0.15, #dbe6ee),
+		color-stop(0.35, #c1cfd9),
+		color-stop(0.50, #95a0a8),
+		color-stop(0.65, #c1cfd9),
+		color-stop(0.85, #c6d4df),
+		color-stop(0.95, #aebac4),
+		to(#485a5f));
+}
+
+.blackBackGround .Blue,
+.wbChipsArea .Inner .Blue{
+	background: -webkit-gradient(linear, left top, left bottom,
+		from(#2b5cae),
+		color-stop(0.05, #2b7bff),
+		color-stop(0.15, #478cff),
+		color-stop(0.35, #0055e2),
+		color-stop(0.50, #0046ba),
+		color-stop(0.65, #0050d4),
+		color-stop(0.85, #0966ff),
+		color-stop(0.95, #0051d6),
+		to(#002a6f));
+}
+.blackBackGround .Red,
+.wbChipsArea .Inner .Red{
+	background: -webkit-gradient(linear, left top, left bottom,
+		from(#a82962),
+		color-stop(0.05, #ff4397),
+		color-stop(0.15, #ff4799),
+		color-stop(0.35, #ff157e),
+		color-stop(0.50, #b80052),
+		color-stop(0.65, #e00064),
+		color-stop(0.85, #ff0d79),
+		color-stop(0.95, #d60060),
+		to(#6f0032));
+}
+.wbChipsArea .Inner .hidden{
+	visibility:hidden;
+}
+
+.blackBackGround .DistinguishedName,
+.blackBackGround .CarName,
+.blackBackGround .UserName,
+.wbChipsArea .Inner .DistinguishedName,
+.wbChipsArea .Inner .CarName,
+.wbChipsArea .Inner .UserName{
+	line-height:13px;
+	text-shadow: 0px -1px 0px #000;
+	color:#FFFFFF;
+	text-align:center;
+	width:75px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font-weight:bold;
+}
+
+.blackBackGround .DistinguishedName,
+.wbChipsArea .Inner .DistinguishedName{margin-top:5px;}
+
+.wbChipsArea .Inner .Grey .DistinguishedName,
+.wbChipsArea .Inner .Grey .CarName,
+.wbChipsArea .Inner .Grey .UserName{
+	text-shadow: 0px 1px 0px #ffffff;
+	color:#444444;
+}
+
+.blackBackGround .Inactive,
+.blackBackGround .InactiveTel,
+.wbChipsArea .Inner .Inactive,
+.wbChipsArea .Inner .InactiveTel{
+	width:100%; height:100%;
+	z-index:100;
+	border-radius:5px;
+	position:absolute;
+	top:0; left:0;
+}
+
+.blackBackGround .Inactive,
+.wbChipsArea .Inner .Inactive{ background:rgba(0,0,0,0.6);}
+.blackBackGround .InactiveTel,
+.wbChipsArea .Inner .InactiveTel{ background:url(../Images/SC3100303/wbChipTelIcon.png) rgba(0,0,0,0.6);}
+
+.wbChipsArea .Inner li:nth-child(1){top:2px; left:3px;}
+.wbChipsArea .Inner li:nth-child(2){top:2px; left:83px;}
+.wbChipsArea .Inner li:nth-child(3){top:57px; left:3px;}
+.wbChipsArea .Inner li:nth-child(4){top:57px; left:83px;}
+.wbChipsArea .Inner li:nth-child(5){top:112px; left:3px;}
+.wbChipsArea .Inner li:nth-child(6){top:112px; left:83px;}
+.wbChipsArea .Inner li:nth-child(7){top:167px; left:3px;}
+.wbChipsArea .Inner li:nth-child(8){top:167px; left:83px;}
+.wbChipsArea .Inner li:nth-child(9){top:222px; left:3px;}
+.wbChipsArea .Inner li:nth-child(10){top:222px; left:83px;}
+.wbChipsArea .Inner li:nth-child(11){top:277px; left:3px;}
+.wbChipsArea .Inner li:nth-child(12){top:277px; left:83px;}
+.wbChipsArea .Inner li:nth-child(13){top:332px; left:3px;}
+.wbChipsArea .Inner li:nth-child(14){top:332px; left:83px;}
+.wbChipsArea .Inner li:nth-child(15){top:387px; left:3px;}
+.wbChipsArea .Inner li:nth-child(16){top:387px; left:83px;}
+.wbChipsArea .Inner li:nth-child(17){top:442px; left:3px;}
+.wbChipsArea .Inner li:nth-child(18){top:442px; left:83px;}
+.wbChipsArea .Inner li:nth-child(19){top:497px; left:3px;}
+.wbChipsArea .Inner li:nth-child(20){top:497px; left:83px;}
+.wbChipsArea .Inner li:nth-child(21){top:552px; left:3px;}
+.wbChipsArea .Inner li:nth-child(22){top:552px; left:83px;}
+
+.wbChipsArea .Inner li.item001{top:75px; left:54px;}
+.wbChipsArea .Inner li.item002{top:75px; left:194px;}
+.wbChipsArea .Inner li.item003{top:75px; left:334px;}
+.wbChipsArea .Inner li.item004{top:75px; left:475px;}
+.wbChipsArea .Inner li.item005{top:75px; left:615px;}
+.wbChipsArea .Inner li.item006{top:75px; left:755px;}
+.wbChipsArea .Inner li.item007{top:75px; left:895px;}
+
+.Reception{
+	position:absolute;
+	left:0; bottom:65px;
+	width:1024px;
+	height:177px;
+	background:rgba(255, 255, 255, 0.35);
+	z-index:1000;
+}
+
+.ReceptionBack{
+	position:absolute;
+	left:-50px; top:0px;
+	background:url(../Images/SC3100303/ReceptionBack.png) 50px bottom no-repeat;
+	box-shadow:inset 0px 3px 25px #000;
+	width:1124px;
+	height:175px;
+}
+
+.ReceptionBack02{
+	position:absolute;
+	left:0px; top:1px;
+	width:1024px;
+	height:175px;
+	overflow:hidden;
+}
+
+.Reception .Triangle{
+	position:absolute;
+	left:289px; bottom:-26px;
+	background:url(../Images/SC3100303/ReceptionTriangle.png) 0 0 no-repeat;
+	width:49px;
+	height:27px;
+}
+
+.Reception .ReceptionTitle{
+	position:absolute;
+	left:50px; top:10px;
+	font-size:26px;
+	line-height:34px;
+	color:#FFF;
+	text-shadow:0 1px 0 #000;
+}
+
+.Reception .TrianglePosition07{left:770px;}
+
+@keyframes FotterBlinkInfo {
+ from {
+   opacity: 1.0;
+ }
+ to {
+   opacity: 0.2;
+ }
+}
+
+.FotterBlink{
+animation-name: FotterBlinkInfo;
+animation-duration: 0.8s;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+animation-direction: alternate;
+animation-delay: 0s;
+}
+
+.SelectedChipZIndex{
+    z-index:10;    
+}
+.BackGroundZIndex{
+    z-index:1;    
+}
+
+.InitFooterButton_Space
+{
+	width:10px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	text-align: center;
+	color:#FFF;
+	z-index:5;
+}
+.ChipFooterButton_Space
+{
+	width:12px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	text-align: center;
+	color:#FFF;
+	z-index:5;
+}
+
+#FooterButton100,
+#FooterButton200,
+#FooterButton300,
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 START*/
+/*#FooterButton400*/
+#FooterButton400,
+#FooterButton500
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 END*/
+{
+    width:78px;
+    height:44px;
+    position:relative;
+    float:right;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+#FooterButton100,
+#FooterButton200
+{
+    margin-right:5px;
+}
+
+#FooterButton300,
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 START*/
+/*#FooterButton400*/
+#FooterButton400,
+#FooterButton500
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 END*/
+{
+    margin-right:5px;
+}
+
+#FooterButtonIcon100,
+#FooterButtonIcon200,
+#FooterButtonIcon300,
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 START*/
+/*#FooterButtonIcon400*/
+#FooterButtonIcon400,
+#FooterButtonIcon500
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 END*/
+{
+	width:78px;
+	height:44px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+}
+
+#FooterButtonIcon100
+{
+    background:url(../Images/SC3100303/btnGeneralMng.png) no-repeat;
+}
+
+#FooterButtonIcon200
+{
+    background:url(../Images/SC3100303/btnVstManger_on.png) no-repeat;
+}
+
+#FooterButtonIcon300,
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 START*/
+/*#FooterButtonIcon400*/
+#FooterButtonIcon400,
+#FooterButtonIcon500
+/*2018/02/20 NSK 山田 REQ-SVT-TMT-20170615-001 来店管理に入庫予約を指定してROを発行する機能を追加 END*/
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#7c98ed),
+     color-stop(0.5, #4169e5),
+     color-stop(0.5, #1e4ee1),
+     to(#1e4ee1));
+}
+
+.FooterName
+{
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+    width: 75px;
+    height: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #7E7E7E;
+}
+
+.SelectedFooterName
+{
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+    width: 75px;
+    height: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #B0ADAD;
+}
+
+.ChipFooterName
+{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	top:14px;
+	width:79px;
+	font-size:11px;
+	font-weight:700;
+	color:rgb(255,255,255);
+	text-align:center;
+	text-shadow: 0px -1px 0px #000;
+}
+
+#ChipFooterArea
+{
+    display:none;    
+}

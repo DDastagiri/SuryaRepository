@@ -1,0 +1,111 @@
+﻿#SC3070204PopOver {
+	background: -webkit-gradient(linear, left top, left bottom, from(#565d70), 
+							color-stop(0.002, #565d70),
+							color-stop(0.069,  #323c4c),
+							color-stop(0.0691, #19202d),
+							to(#1f232a));
+	-webkit-user-select:none;
+}
+.SC3070204header {
+	position:relative;
+	width:288px;
+	height:45px;
+	z-index:1000;
+}
+
+.SC3070204header h3 {
+	position:absolute;
+	width:288px;
+	height:36px;
+	top:7px;
+	left:0; text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+
+/* ヘッダーにある取消ボタン属性 */
+#SC3070204PopUpCancelButtonLabel {
+	position:absolute;
+	top:5px;
+	left:6px;
+	display:block;
+	color:#FFF;
+    font-size:0.60em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#565f72), color-stop(0.50, #19233e), color-stop(0.501, #000b29), to(#000b29));
+	z-index:2;
+	line-height:20px;
+	text-decoration: none;
+}
+
+/* ボタン属性 */
+.SC3070204buttonStyle {
+	position:relative;
+	width:254px;
+	height:32px;
+	left:0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7a97ed), color-stop(0.50, #416ae5), color-stop(0.501, #1e4ee1), to(#1e4ee1));
+	border:#666 1px solid;
+	border-radius:4px;
+    margin:15px auto 15px; 
+	padding:6px 0 0 0;
+	text-align:center;
+	text-shadow:#2e3f74 0 -1px 0;
+	color:white;
+	line-height:28px;
+	font-size:1.1em;
+	text-decoration: none;
+}
+
+/* ボタンラベル属性 */
+.SC3070204buttonLabelStyle{
+	display: block;
+	width: 254px;
+	text-align: center;
+	color: white;
+	font-size:1.1em;
+	text-shadow: 0px -1px 1px black;
+}
+
+/*　登録時のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlackSC3070204 {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:-800px; 
+	left:-800px;
+	background:#000;
+	width:2000px;
+	height:2000px;
+	z-index:1000000;
+	display:none;
+	opacity:0;
+}
+
+#registOverlayBlackSC3070204.open { opacity:0.01; }
+
+/*　処理中アニメーション
+ -------------------------------------------------------------------------------------------*/
+#processingServerSC3070204 {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:140px;
+	left:120px;
+	width:38px;
+	height:38px;
+	z-index:1000001;
+}
+
+#processingServerSC3070204.show { display: block; }
+@keyframes LoadingAnimation {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(340deg);}
+}

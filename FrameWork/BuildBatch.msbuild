@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- ビルドスクリプトが実行されているパス -->
+    <SolutionRoot Condition="$(SolutionPath) == ''">$(MSBuildProjectDirectory)</SolutionRoot>
+
+    <!-- 基盤出力ベースフォルダ -->
+    <ReferenceBinPath>$(MSBuildProjectDirectory)\..\..\ReferenceBin</ReferenceBinPath>
+
+    <!-- 基盤が出力する各業務用サイトフォルダ -->
+    <ReferenceBinSitePath>$(ReferenceBinPath)\Batch</ReferenceBinSitePath>
+  </PropertyGroup>
+  
+
+  <Target Name="Build">
+    <!-- ソリューションのビルド -->
+    <MSBuild Projects="$(SolutionRoot)\Toyota.eCRB.SystemFrameworks.sln" Targets="Build"  />
+
+    <!-- 基盤出力ベースフォルダ の作成 -->
+    <MakeDir Directories="$(ReferenceBinPath)"/>
+
+    <!-- 基盤が出力する各業務用サイトフォルダを削除→追加 -->
+    <RemoveDir Directories="$(ReferenceBinSitePath)" />
+    <MakeDir Directories="$(ReferenceBinSitePath)"/>
+
+    <!-- 基盤が出力する各業務用サイトフォルダへコピー -->
+    <Exec Command="xcopy /E /I /F /G /R /K /Y $(FwDllOutputPath)\*.dll $(ReferenceBinSitePath)"/>
+    <Exec Command="xcopy /E /I /F /G /R /K /Y $(FwDllOutputPath)\*.config $(ReferenceBinSitePath)"/>
+    <Exec Command="xcopy /E /I /F /G /R /K /Y $(FwDllOutputPath)\BatchTrigger.exe $(ReferenceBinSitePath)"/>
+    <Exec Command="xcopy /E /I /F /G /R /K /Y $(FwDllOutputPath)\CreateBatchExe.bat $(ReferenceBinSitePath)"/>
+
+  </Target>
+</Project>

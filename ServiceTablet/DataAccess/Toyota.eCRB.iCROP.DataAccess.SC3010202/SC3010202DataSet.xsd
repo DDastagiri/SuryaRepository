@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3010202DataSet" targetNamespace="http://tempuri.org/SC3010202DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3010202DataSet.xsd" xmlns="http://tempuri.org/SC3010202DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3010202DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3010202DataSet" msprop:Generator_UserDSName="SC3010202DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3010202Target" msprop:Generator_TableClassName="SC3010202TargetDataTable" msprop:Generator_TableVarName="tableSC3010202Target" msprop:Generator_TablePropName="SC3010202Target" msprop:Generator_RowDeletingName="SC3010202TargetRowDeleting" msprop:Generator_UserTableName="SC3010202Target" msprop:Generator_RowChangingName="SC3010202TargetRowChanging" msprop:Generator_RowEvHandlerName="SC3010202TargetRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3010202TargetRowDeleted" msprop:Generator_RowEvArgName="SC3010202TargetRowChangeEvent" msprop:Generator_RowChangedName="SC3010202TargetRowChanged" msprop:Generator_RowClassName="SC3010202TargetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WALKIN" msprop:Generator_ColumnVarNameInTable="columnWalkIn" msprop:Generator_ColumnPropNameInRow="WalkIn" msprop:Generator_ColumnPropNameInTable="WalkInColumn" msprop:Generator_UserColumnName="WALKIN" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="QUOTATION" msprop:Generator_ColumnVarNameInTable="columnQUOTATION" msprop:Generator_ColumnPropNameInRow="QUOTATION" msprop:Generator_ColumnPropNameInTable="QUOTATIONColumn" msprop:Generator_UserColumnName="QUOTATION" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="TESTDRIVE" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVE" msprop:Generator_ColumnPropNameInRow="TESTDRIVE" msprop:Generator_ColumnPropNameInTable="TESTDRIVEColumn" msprop:Generator_UserColumnName="TESTDRIVE" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="EVALUATION" msprop:Generator_ColumnVarNameInTable="columnEVALUATION" msprop:Generator_ColumnPropNameInRow="EVALUATION" msprop:Generator_ColumnPropNameInTable="EVALUATIONColumn" msprop:Generator_UserColumnName="EVALUATION" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="DELIVERY" msprop:Generator_ColumnVarNameInTable="columnDELIVERY" msprop:Generator_ColumnPropNameInRow="DELIVERY" msprop:Generator_ColumnPropNameInTable="DELIVERYColumn" msprop:Generator_UserColumnName="DELIVERY" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="COLD" msprop:Generator_ColumnVarNameInTable="columnCOLD" msprop:Generator_ColumnPropNameInRow="COLD" msprop:Generator_ColumnPropNameInTable="COLDColumn" msprop:Generator_UserColumnName="COLD" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="WARM" msprop:Generator_ColumnVarNameInTable="columnWARM" msprop:Generator_ColumnPropNameInRow="WARM" msprop:Generator_ColumnPropNameInTable="WARMColumn" msprop:Generator_UserColumnName="WARM" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="HOT" msprop:Generator_ColumnVarNameInTable="columnHOT" msprop:Generator_ColumnPropNameInRow="HOT" msprop:Generator_ColumnPropNameInTable="HOTColumn" msprop:Generator_UserColumnName="HOT" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ORDERS" msprop:Generator_ColumnVarNameInTable="columnORDERS" msprop:Generator_ColumnPropNameInRow="ORDERS" msprop:Generator_ColumnPropNameInTable="ORDERSColumn" msprop:Generator_UserColumnName="ORDERS" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="SALES" msprop:Generator_ColumnVarNameInTable="columnSALES" msprop:Generator_ColumnPropNameInRow="SALES" msprop:Generator_ColumnPropNameInTable="SALESColumn" msprop:Generator_UserColumnName="SALES" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3010202ResultWalkIn" msprop:Generator_TableClassName="SC3010202ResultWalkInDataTable" msprop:Generator_TableVarName="tableSC3010202ResultWalkIn" msprop:Generator_TablePropName="SC3010202ResultWalkIn" msprop:Generator_RowDeletingName="SC3010202ResultWalkInRowDeleting" msprop:Generator_UserTableName="SC3010202ResultWalkIn" msprop:Generator_RowChangingName="SC3010202ResultWalkInRowChanging" msprop:Generator_RowEvHandlerName="SC3010202ResultWalkInRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3010202ResultWalkInRowDeleted" msprop:Generator_RowEvArgName="SC3010202ResultWalkInRowChangeEvent" msprop:Generator_RowChangedName="SC3010202ResultWalkInRowChanged" msprop:Generator_RowClassName="SC3010202ResultWalkInRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WALKIN" msprop:Generator_ColumnVarNameInTable="columnWALKIN" msprop:Generator_ColumnPropNameInRow="WALKIN" msprop:Generator_ColumnPropNameInTable="WALKINColumn" msprop:Generator_UserColumnName="WALKIN" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3010202ResultTally" msprop:Generator_TableClassName="SC3010202ResultTallyDataTable" msprop:Generator_TableVarName="tableSC3010202ResultTally" msprop:Generator_TablePropName="SC3010202ResultTally" msprop:Generator_RowDeletingName="SC3010202ResultTallyRowDeleting" msprop:Generator_UserTableName="SC3010202ResultTally" msprop:Generator_RowChangingName="SC3010202ResultTallyRowChanging" msprop:Generator_RowEvHandlerName="SC3010202ResultTallyRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3010202ResultTallyRowDeleted" msprop:Generator_RowEvArgName="SC3010202ResultTallyRowChangeEvent" msprop:Generator_RowChangedName="SC3010202ResultTallyRowChanged" msprop:Generator_RowClassName="SC3010202ResultTallyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CRACTRESULT" msdata:Caption="DELIVERY" msprop:Generator_ColumnVarNameInTable="columnCRACTRESULT" msprop:Generator_ColumnPropNameInRow="CRACTRESULT" msprop:Generator_ColumnPropNameInTable="CRACTRESULTColumn" msprop:Generator_UserColumnName="CRACTRESULT" type="xs:int" minOccurs="0" />
+              <xs:element name="CNT" msdata:Caption="COLD" msprop:Generator_ColumnVarNameInTable="columnCNT" msprop:Generator_ColumnPropNameInRow="CNT" msprop:Generator_ColumnPropNameInTable="CNTColumn" msprop:Generator_UserColumnName="CNT" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3010202ResultCRHIS" msprop:Generator_TableClassName="SC3010202ResultCRHISDataTable" msprop:Generator_TableVarName="tableSC3010202ResultCRHIS" msprop:Generator_TablePropName="SC3010202ResultCRHIS" msprop:Generator_RowDeletingName="SC3010202ResultCRHISRowDeleting" msprop:Generator_UserTableName="SC3010202ResultCRHIS" msprop:Generator_RowChangingName="SC3010202ResultCRHISRowChanging" msprop:Generator_RowEvHandlerName="SC3010202ResultCRHISRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3010202ResultCRHISRowDeleted" msprop:Generator_RowEvArgName="SC3010202ResultCRHISRowChangeEvent" msprop:Generator_RowChangedName="SC3010202ResultCRHISRowChanged" msprop:Generator_RowClassName="SC3010202ResultCRHISRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACTIONCD" msdata:Caption="QUOTATION" msprop:Generator_ColumnVarNameInTable="columnACTIONCD" msprop:Generator_ColumnPropNameInRow="ACTIONCD" msprop:Generator_ColumnPropNameInTable="ACTIONCDColumn" msprop:Generator_UserColumnName="ACTIONCD" type="xs:string" minOccurs="0" />
+              <xs:element name="CNT" msdata:Caption="TESTDRIVE" msprop:Generator_ColumnVarNameInTable="columnCNT" msprop:Generator_ColumnPropNameInRow="CNT" msprop:Generator_ColumnPropNameInTable="CNTColumn" msprop:Generator_UserColumnName="CNT" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3010202Result" msprop:Generator_TableClassName="SC3010202ResultDataTable" msprop:Generator_TableVarName="tableSC3010202Result" msprop:Generator_TablePropName="SC3010202Result" msprop:Generator_RowDeletingName="SC3010202ResultRowDeleting" msprop:Generator_UserTableName="SC3010202Result" msprop:Generator_RowChangingName="SC3010202ResultRowChanging" msprop:Generator_RowEvHandlerName="SC3010202ResultRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3010202ResultRowDeleted" msprop:Generator_RowEvArgName="SC3010202ResultRowChangeEvent" msprop:Generator_RowChangedName="SC3010202ResultRowChanged" msprop:Generator_RowClassName="SC3010202ResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WALKIN" msprop:Generator_ColumnVarNameInTable="columnWALKIN" msprop:Generator_ColumnPropNameInRow="WALKIN" msprop:Generator_ColumnPropNameInTable="WALKINColumn" msprop:Generator_UserColumnName="WALKIN" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="QUOTATION" msprop:Generator_ColumnVarNameInTable="columnQUOTATION" msprop:Generator_ColumnPropNameInRow="QUOTATION" msprop:Generator_ColumnPropNameInTable="QUOTATIONColumn" msprop:Generator_UserColumnName="QUOTATION" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="TESTDRIVE" msprop:Generator_ColumnVarNameInTable="columnTESTDRIVE" msprop:Generator_ColumnPropNameInRow="TESTDRIVE" msprop:Generator_ColumnPropNameInTable="TESTDRIVEColumn" msprop:Generator_UserColumnName="TESTDRIVE" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="EVALUATION" msprop:Generator_ColumnVarNameInTable="columnEVALUATION" msprop:Generator_ColumnPropNameInRow="EVALUATION" msprop:Generator_ColumnPropNameInTable="EVALUATIONColumn" msprop:Generator_UserColumnName="EVALUATION" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="DELIVERY" msprop:Generator_ColumnVarNameInTable="columnDELIVERY" msprop:Generator_ColumnPropNameInRow="DELIVERY" msprop:Generator_ColumnPropNameInTable="DELIVERYColumn" msprop:Generator_UserColumnName="DELIVERY" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="COLD" msprop:Generator_ColumnVarNameInTable="columnCOLD" msprop:Generator_ColumnPropNameInRow="COLD" msprop:Generator_ColumnPropNameInTable="COLDColumn" msprop:Generator_UserColumnName="COLD" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="WARM" msprop:Generator_ColumnVarNameInTable="columnWARM" msprop:Generator_ColumnPropNameInRow="WARM" msprop:Generator_ColumnPropNameInTable="WARMColumn" msprop:Generator_UserColumnName="WARM" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="HOT" msprop:Generator_ColumnVarNameInTable="columnHOT" msprop:Generator_ColumnPropNameInRow="HOT" msprop:Generator_ColumnPropNameInTable="HOTColumn" msprop:Generator_UserColumnName="HOT" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ORDERS" msprop:Generator_ColumnVarNameInTable="columnORDERS" msprop:Generator_ColumnPropNameInRow="ORDERS" msprop:Generator_ColumnPropNameInTable="ORDERSColumn" msprop:Generator_UserColumnName="ORDERS" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="SALES" msprop:Generator_ColumnVarNameInTable="columnSALES" msprop:Generator_ColumnPropNameInRow="SALES" msprop:Generator_ColumnPropNameInTable="SALESColumn" msprop:Generator_UserColumnName="SALES" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3010202BatchStartTime" msprop:Generator_TableClassName="SC3010202BatchStartTimeDataTable" msprop:Generator_TableVarName="tableSC3010202BatchStartTime" msprop:Generator_TablePropName="SC3010202BatchStartTime" msprop:Generator_RowDeletingName="SC3010202BatchStartTimeRowDeleting" msprop:Generator_UserTableName="SC3010202BatchStartTime" msprop:Generator_RowChangingName="SC3010202BatchStartTimeRowChanging" msprop:Generator_RowEvHandlerName="SC3010202BatchStartTimeRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3010202BatchStartTimeRowDeleted" msprop:Generator_RowEvArgName="SC3010202BatchStartTimeRowChangeEvent" msprop:Generator_RowChangedName="SC3010202BatchStartTimeRowChanged" msprop:Generator_RowClassName="SC3010202BatchStartTimeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_UserColumnName="StartTime" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

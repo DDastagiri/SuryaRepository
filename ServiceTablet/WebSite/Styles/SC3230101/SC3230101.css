@@ -1,0 +1,215 @@
+﻿/*/-------------------------------------------------------------------------
+//SC3230101.css
+//--------------------------------------------------------------------------
+//機能：メインメニュー(FM)画面
+//作成：
+//更新：
+---------------------------------------------------------------------------*/
+
+
+.HiddenBtn{
+    display   : none;
+    visibility: hidden;
+}
+
+/*
+#mainblock {
+	width   : 1024px;
+	background: -webkit-gradient(linear, left top, left bottom,
+              from(#E6E6E6), to(#B7B7B7));
+	height  : 655px;
+	overflow: hidden;
+}
+
+#mainblock:after {
+	content   : ".";
+	display   : block;
+	height    : 0;
+	clear     : both;
+	visibility: hidden;
+}
+
+#mainblock .mainblockWrap {padding:20px 19px 20px 19px; }
+*/
+
+div#main{
+	background: -webkit-gradient(linear, left top, left bottom,
+              from(#E6E6E6), to(#B7B7B7));
+}
+
+#mainblockContent { }
+
+#mainblockContent:after{
+	content   : ".";
+	display   : block;
+	height    : 0;
+	clear     : both;
+	visibility: hidden;
+}
+
+.AddJobApprArea{
+	margin  : 0;
+	padding : 0;
+	width   : 490px;
+	height  : 620px;
+	float   : left;
+}
+
+.InsRltApprArea{
+	margin  : 0;
+	padding : 0;
+	width   : 490px;
+	height  : 620px;
+	float   : right;
+}
+
+.ChipArea{
+/*	position  : absolute;*/
+	position  : relative;
+	top       : 0;
+	left      : 0;
+	height    : 615px;
+	width     : 487px;
+	box-shadow   : 2px 3px 4px #666;
+	border-radius: 8px;
+	float     : inherit;
+}
+
+.ContentTitle{
+	height     : 28px;
+	background : -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+               color-stop(0.50, #797d84),
+               color-stop(0.50, #6a6e76),
+               to(#6a6e76));
+	-webkit-border-top-left-radius    : 7px;
+	-webkit-border-top-right-radius   : 7px;
+	-webkit-border-bottom-left-radius : 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	display    : block;
+	text-align : center;
+	font-size  : 16px;
+	font-weight: bold;
+	line-height: 28px;
+	color      : #FFFFFF;
+	margin     : auto;
+	overflow   : auto;
+}
+
+.ContentTitle .TitleLabel{
+	display     : block;
+	text-align  : center;
+	margin-left : 25px;
+}
+
+.ContentTitleCount{
+	font-weight : bold;
+	position    : absolute;
+	right       : 9px;
+	top         : 7px;
+	width       : 25px;
+	height      : 14px;
+	font-size   : 14px;
+	line-height : 14px;
+	color       : #FFF;
+	text-align  : right;
+	z-index     : 20;
+}
+
+.ContentTitleCount .CountLabel{
+	display : block;
+	width   : 100%;
+}
+
+.InBox{
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF),
+              color-stop(0.70, #FFF),
+              to(#dfdfdf));
+	border       : #999999 1px solid;
+	border-top   : none;
+	border-radius: 0 0 7px 7px;
+	width     : 485px;
+	height    : 586px;
+/*	overflow  : auto;*/
+/*	-webkit-overflow-scrolling: touch;*/
+}
+
+.InBox ul{
+	position : relative;
+	display  : block;
+	width    : 100%;
+	height   : 586px;
+}
+
+.InBox li{
+	position : absolute;
+	display  : block;
+	width    : 79px;
+	height   : 57px;
+	background-repeat  : no-repeat;
+	background-position: center top;
+}
+
+.InBox li .Chip{
+	padding  : 25px 0 0 0;
+	font-size: 10px;
+	color    : #666666;
+	margin-top: 5px;
+}
+
+.InBox li .Chip .RegNumLabel{
+	display     : block;
+	text-align  : center;
+	font-weight : bold;
+	width       : 100%;
+	height      : 10px;
+	padding     : 2px 0 2px 0;
+}
+
+.InBox li .Chip .ROCreateTime{
+	display     : block;
+	text-align  : center;
+	width       : 100%;
+	height      : 10px;
+	padding     : 2px 0 10px 0;
+}
+
+.InBox li .Chip .StallName{
+	display     : block;
+	text-align  : center;
+	width       : 50%;
+	height      : 10px;
+	padding     : 2px 0 10px 0;
+	float       : left;
+}
+
+.InBox li .Chip .RSLTEndTime{
+	display     : block;
+	text-align  : center;
+	width       : 50%;
+	height      : 10px;
+	padding     : 2px 0 10px 0;
+	float       : right;
+}
+
+.InBox li.CarIcon01{background-image:url("../images/SC3230101/sfm01_caricon01.png"); background-position:16px 5px;}
+.InBox li.CarIcon02{background-image:url("../images/SC3230101/sfm01_caricon02.png"); background-position:16px 5px;}
+.InBox li.CarIcon03{background-image:url('../images/SC3230101/sfm01_caricon03.png'); background-position:16px 5px;}
+.InBox li.CarIcon04{background-image:url('../images/SC3230101/sfm01_caricon04.png'); background-position:16px 5px;}
+.InBox li.CarIcon05{background-image:url('../images/SC3230101/sfm01_caricon05.png'); background-position:16px 5px;}
+.InBox li.CarIcon06{background-image:url('../images/SC3230101/sfm01_caricon06.png'); background-position:16px 5px;}
+
+.InBox li.CarIcon01withPMark{background-image:url("../images/SC3230101/15_13_P.png"),url("../images/SC3230101/sfm01_caricon01.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon02withPMark{background-image:url("../images/SC3230101/15_13_P.png"),url("../images/SC3230101/sfm01_caricon02.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon03withPMark{background-image:url('../images/SC3230101/15_13_P.png'),url("../images/SC3230101/sfm01_caricon03.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon04withPMark{background-image:url('../images/SC3230101/15_13_P.png'),url("../images/SC3230101/sfm01_caricon04.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon05withPMark{background-image:url('../images/SC3230101/15_13_P.png'),url("../images/SC3230101/sfm01_caricon05.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon06withPMark{background-image:url('../images/SC3230101/15_13_P.png'),url("../images/SC3230101/sfm01_caricon06.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+
+.InBox li.CarIcon01withLMark{background-image:url("../images/SC3230101/15_13_L.png"),url("../images/SC3230101/sfm01_caricon01.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon02withLMark{background-image:url("../images/SC3230101/15_13_L.png"),url("../images/SC3230101/sfm01_caricon02.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon03withLMark{background-image:url('../images/SC3230101/15_13_L.png'),url("../images/SC3230101/sfm01_caricon03.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon04withLMark{background-image:url('../images/SC3230101/15_13_L.png'),url("../images/SC3230101/sfm01_caricon04.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon05withLMark{background-image:url('../images/SC3230101/15_13_L.png'),url("../images/SC3230101/sfm01_caricon05.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+.InBox li.CarIcon06withLMark{background-image:url('../images/SC3230101/15_13_L.png'),url("../images/SC3230101/sfm01_caricon06.png");background-repeat:no-repeat,no-repeat;background-position:48px 0px,16px 5px;}
+
+

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SystemSharedDataSet" targetNamespace="http://tempuri.org/SystemSharedDataSet.xsd" xmlns:mstns="http://tempuri.org/SystemSharedDataSet.xsd" xmlns="http://tempuri.org/SystemSharedDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="OracleConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="OracleConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.OracleConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SystemSharedDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SystemSharedDataSet" msprop:Generator_UserDSName="SystemSharedDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DateTimeFormTable" msdata:CaseSensitive="True" msprop:Generator_TableClassName="DateTimeFormTableDataTable" msprop:Generator_TableVarName="tableDateTimeFormTable" msprop:Generator_TablePropName="DateTimeFormTable" msprop:Generator_RowDeletingName="DateTimeFormTableRowDeleting" msprop:Generator_UserTableName="DateTimeFormTable" msprop:Generator_RowChangingName="DateTimeFormTableRowChanging" msprop:Generator_RowEvHandlerName="DateTimeFormTableRowChangeEventHandler" msprop:Generator_RowDeletedName="DateTimeFormTableRowDeleted" msprop:Generator_RowEvArgName="DateTimeFormTableRowChangeEvent" msprop:Generator_RowChangedName="DateTimeFormTableRowChanged" msprop:Generator_RowClassName="DateTimeFormTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CNTCD" msprop:Generator_ColumnVarNameInTable="columnCNTCD" msprop:Generator_ColumnPropNameInRow="CNTCD" msprop:Generator_ColumnPropNameInTable="CNTCDColumn" msprop:Generator_UserColumnName="CNTCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONVID" msprop:Generator_ColumnVarNameInTable="columnCONVID" msprop:Generator_ColumnPropNameInRow="CONVID" msprop:Generator_ColumnPropNameInTable="CONVIDColumn" msprop:Generator_UserColumnName="CONVID" type="xs:long" />
+              <xs:element name="FORMAT" msprop:Generator_ColumnVarNameInTable="columnFORMAT" msprop:Generator_ColumnPropNameInRow="FORMAT" msprop:Generator_ColumnPropNameInTable="FORMATColumn" msprop:Generator_UserColumnName="FORMAT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DateTimeFormTable" />
+      <xs:field xpath="mstns:CNTCD" />
+      <xs:field xpath="mstns:CONVID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

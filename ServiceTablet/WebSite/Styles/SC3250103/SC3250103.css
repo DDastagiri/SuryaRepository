@@ -1,0 +1,241 @@
+﻿@charset "utf-8";
+/*/-------------------------------------------------------------------------
+//SC3230103.css
+//--------------------------------------------------------------------------
+//機能：部品説明　スタイルシート
+//
+//作成：2014/08/XX NEC 上野	初版作成
+//更新：
+
+---------------------------------------------------------------------------*/
+
+#main #contents  {
+    padding:0px; 
+}
+
+body {
+	font-family:Helvetica, sans-serif;
+}
+
+.HeadLeft1-3Off, .hiddenCss{
+	visibility:hidden;
+}
+
+
+/* スクロール枠*/
+#mainScroll{
+    height:655px;
+    background-color:#e3e3e3;
+}
+
+/* コンテンツ枠*/
+#contentsMain{
+/*	position:relative;*/
+	background:#e3e3e3;
+	width:auto;
+	padding:20px 2px;
+	color:#333;
+}
+
+#contentsBox {
+/*	position: relative;*/
+	width: 986px;
+/*	height:615px;*/
+	margin: 0 35px 0 0;
+	padding: 0;
+	border-radius: 8px;
+	background-color: #FFF;
+	background: -webkit-gradient(linear, left top, left bottom, 	from(#FFFFFF), color-stop(0.51, #FEFEFE), to(#e2e2e2));
+	border: #adadad 1px solid;
+	box-shadow: 3px 3px 4px #666;
+}
+
+/*************************
+*
+*コンテンツ上部フォーム
+*
+**************************/
+
+#contentsArea {
+	padding:0 0 15px;
+	margin:0 3px;
+	display:block;
+
+	}
+
+/*************************
+*
+*コンテンツ下部エリア
+*
+**************************/
+
+
+/*******コンテンツ大タイトル*******/
+#contentsTitle {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color:#00A0B9;
+	width:986px;
+	height:40px;
+	margin-left:-3px;
+	position:relative;
+}
+
+#contentsTitle h2{
+	color:#FFF;
+	font-size:16px; line-height:40px;
+	position:absolute;
+	height:40px; display:block;
+	top:0px;
+	left:22px;
+	}
+	
+#contentsTitle h3{
+	color:#FFF;
+	font-size:28px;
+	text-align:center;
+	line-height:42px;
+	}
+
+
+/*******コンテンツ中タイトル*******/
+
+.pdcontentBox {
+	margin:20px 0 15px;
+	background: #FFF;
+	border: #a5a5a5 1px solid;
+	border-radius: 7px 7px 7px 7px;
+	box-shadow: 3px 3px 3px #666;
+	background: -webkit-gradient(linear, left top, left bottom,
+	from(#ebebeb),
+	color-stop(0.3, #fff),
+	color-stop(0.7, #fff),
+	to(#dfdfdf));
+	overflow:auto;
+}
+
+.pdcontentBox h4{
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color:#00A0B9;
+	height:35px;
+	color:#FFF;
+	font-size:20px;
+	padding:0 0 0 15px;
+	font-weight:normal;
+	line-height:35px;
+	}
+	
+
+/* コンテンツ非表示 */
+.OnlyTitleBar
+{
+    height:35px;
+}
+
+/* コンテンツ１高さ */
+.ShowContents1Before
+{
+    height:501px;
+}
+
+.ShowContents1
+{
+    height:768px;
+}
+
+/* コンテンツ２高さ */
+.ShowContents2
+{
+    height:450px;
+}
+
+/* コンテンツ３高さ */
+.ShowContents3
+{
+    height:174px;
+}
+
+/* コンテンツ４高さ */
+.ShowContents4
+{
+    height:567px;
+}
+
+/* コンテンツ５高さ */
+.ShowContents5
+{
+    height:256px;
+}
+
+/**************各コンテンツのクルクルアイコン**************/
+
+#ServerProcessIcon1,
+#ServerProcessIcon2,
+#ServerProcessIcon3,
+#ServerProcessIcon4,
+#ServerProcessIcon5 {
+	position:absolute;
+	background:url(../images/SC3250103/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	left:50%;
+	width:38px;
+	height:38px;
+	z-index:100;
+	margin: -19px 0px 0px -19px;
+}
+
+#ServerProcessIcon1 {
+	top:233px;
+}
+
+#ServerProcessIcon2 {
+	top:166px;
+}
+
+#ServerProcessIcon3 {
+	top:69px;
+}
+
+#ServerProcessIcon4 {
+	top:266px;
+}
+
+#ServerProcessIcon5 {
+	top:110px;
+}
+
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+	
+/*************アイフレーム**************/
+
+iframe.ContentsFrame {
+	border:0;
+	width:979px;
+	}
+
+#iFrame2 {
+    height: 400px;
+}
+
+/**************フッターボタン**************/
+
+/*Cartボタン*/
+#imgCart{
+	width: 78px;
+	height: 47px;
+	background-repeat: no-repeat;
+	}
+.Cart_Enable {
+	background-image: url("../Images/SC3250103/footerIcon08.png");
+	}
+.Cart_Disable {
+	background-image: url("../Images/SC3250103/footerIcon08_Disable.png");
+	}
+
+
+
+

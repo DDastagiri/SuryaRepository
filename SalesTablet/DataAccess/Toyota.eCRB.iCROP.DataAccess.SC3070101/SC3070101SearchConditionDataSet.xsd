@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3070101SearchConditionDataSet" targetNamespace="http://tempuri.org/SC3070101SearchConditionDataSet.xsd" xmlns:mstns="http://tempuri.org/SC3070101SearchConditionDataSet.xsd" xmlns="http://tempuri.org/SC3070101SearchConditionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3070101SearchConditionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3070101SearchConditionDataSet" msprop:Generator_UserDSName="SC3070101SearchConditionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GradeConditionDataTable" msprop:Generator_TableClassName="GradeConditionDataTableDataTable" msprop:Generator_TableVarName="tableGradeConditionDataTable" msprop:Generator_RowChangedName="GradeConditionDataTableRowChanged" msprop:Generator_TablePropName="GradeConditionDataTable" msprop:Generator_RowDeletingName="GradeConditionDataTableRowDeleting" msprop:Generator_RowChangingName="GradeConditionDataTableRowChanging" msprop:Generator_RowEvHandlerName="GradeConditionDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="GradeConditionDataTableRowDeleted" msprop:Generator_RowClassName="GradeConditionDataTableRow" msprop:Generator_UserTableName="GradeConditionDataTable" msprop:Generator_RowEvArgName="GradeConditionDataTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ModelCode" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ModelCode" msprop:Generator_ColumnVarNameInTable="columnModelCode" msprop:Generator_ColumnPropNameInTable="ModelCodeColumn" msprop:Generator_UserColumnName="ModelCode" type="xs:string" minOccurs="0" />
+              <xs:element name="GradeName" msprop:Generator_ColumnVarNameInTable="columnGradeName" msprop:Generator_ColumnPropNameInRow="GradeName" msprop:Generator_ColumnPropNameInTable="GradeNameColumn" msprop:Generator_UserColumnName="GradeName" type="xs:string" minOccurs="0" />
+              <xs:element name="VclSeriesCode" msprop:Generator_ColumnVarNameInTable="columnVclSeriesCode" msprop:Generator_ColumnPropNameInRow="VclSeriesCode" msprop:Generator_ColumnPropNameInTable="VclSeriesCodeColumn" msprop:Generator_UserColumnName="VclSeriesCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Suffix" msprop:Generator_ColumnVarNameInTable="columnSuffix" msprop:Generator_ColumnPropNameInRow="Suffix" msprop:Generator_ColumnPropNameInTable="SuffixColumn" msprop:Generator_UserColumnName="Suffix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SuffixConditionDataTable" msprop:Generator_TableClassName="SuffixConditionDataTableDataTable" msprop:Generator_TableVarName="tableSuffixConditionDataTable" msprop:Generator_RowChangedName="SuffixConditionDataTableRowChanged" msprop:Generator_TablePropName="SuffixConditionDataTable" msprop:Generator_RowDeletingName="SuffixConditionDataTableRowDeleting" msprop:Generator_RowChangingName="SuffixConditionDataTableRowChanging" msprop:Generator_RowEvHandlerName="SuffixConditionDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="SuffixConditionDataTableRowDeleted" msprop:Generator_RowClassName="SuffixConditionDataTableRow" msprop:Generator_UserTableName="SuffixConditionDataTable" msprop:Generator_RowEvArgName="SuffixConditionDataTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SuffixName" msprop:Generator_ColumnVarNameInTable="columnSuffixName" msprop:Generator_ColumnPropNameInRow="SuffixName" msprop:Generator_ColumnPropNameInTable="SuffixNameColumn" msprop:Generator_UserColumnName="SuffixName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ExteriorConditionDataTable" msprop:Generator_TableClassName="ExteriorConditionDataTableDataTable" msprop:Generator_TableVarName="tableExteriorConditionDataTable" msprop:Generator_RowChangedName="ExteriorConditionDataTableRowChanged" msprop:Generator_TablePropName="ExteriorConditionDataTable" msprop:Generator_RowDeletingName="ExteriorConditionDataTableRowDeleting" msprop:Generator_RowChangingName="ExteriorConditionDataTableRowChanging" msprop:Generator_RowEvHandlerName="ExteriorConditionDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="ExteriorConditionDataTableRowDeleted" msprop:Generator_RowClassName="ExteriorConditionDataTableRow" msprop:Generator_UserTableName="ExteriorConditionDataTable" msprop:Generator_RowEvArgName="ExteriorConditionDataTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExteriorColorCode" msprop:Generator_ColumnVarNameInTable="columnExteriorColorCode" msprop:Generator_ColumnPropNameInRow="ExteriorColorCode" msprop:Generator_ColumnPropNameInTable="ExteriorColorCodeColumn" msprop:Generator_UserColumnName="ExteriorColorCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ExteriorColorName" msprop:Generator_ColumnVarNameInTable="columnExteriorColorName" msprop:Generator_ColumnPropNameInRow="ExteriorColorName" msprop:Generator_ColumnPropNameInTable="ExteriorColorNameColumn" msprop:Generator_UserColumnName="ExteriorColorName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3070101DmsCodeMap" msprop:Generator_TableClassName="SC3070101DmsCodeMapDataTable" msprop:Generator_TableVarName="tableSC3070101DmsCodeMap" msprop:Generator_TablePropName="SC3070101DmsCodeMap" msprop:Generator_RowDeletingName="SC3070101DmsCodeMapRowDeleting" msprop:Generator_RowChangingName="SC3070101DmsCodeMapRowChanging" msprop:Generator_RowEvHandlerName="SC3070101DmsCodeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3070101DmsCodeMapRowDeleted" msprop:Generator_UserTableName="SC3070101DmsCodeMap" msprop:Generator_RowChangedName="SC3070101DmsCodeMapRowChanged" msprop:Generator_RowEvArgName="SC3070101DmsCodeMapRowChangeEvent" msprop:Generator_RowClassName="SC3070101DmsCodeMapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DMS_CD_1" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DMS_CD_1" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_1" msprop:Generator_ColumnPropNameInTable="DMS_CD_1Column" msprop:Generator_UserColumnName="DMS_CD_1" type="xs:string" minOccurs="0" />
+              <xs:element name="DMS_CD_2" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DMS_CD_2" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_2" msprop:Generator_ColumnPropNameInTable="DMS_CD_2Column" msprop:Generator_UserColumnName="DMS_CD_2" type="xs:string" minOccurs="0" />
+              <xs:element name="DMS_CD_3" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DMS_CD_3" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_3" msprop:Generator_ColumnPropNameInTable="DMS_CD_3Column" msprop:Generator_UserColumnName="DMS_CD_3" type="xs:string" minOccurs="0" />
+              <xs:element name="ICROP_CD_1" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ICROP_CD_1" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_1" msprop:Generator_ColumnPropNameInTable="ICROP_CD_1Column" msprop:Generator_UserColumnName="ICROP_CD_1" type="xs:string" minOccurs="0" />
+              <xs:element name="ICROP_CD_2" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ICROP_CD_2" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_2" msprop:Generator_ColumnPropNameInTable="ICROP_CD_2Column" msprop:Generator_UserColumnName="ICROP_CD_2" type="xs:string" minOccurs="0" />
+              <xs:element name="ICROP_CD_3" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ICROP_CD_3" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_3" msprop:Generator_ColumnPropNameInTable="ICROP_CD_3Column" msprop:Generator_UserColumnName="ICROP_CD_3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

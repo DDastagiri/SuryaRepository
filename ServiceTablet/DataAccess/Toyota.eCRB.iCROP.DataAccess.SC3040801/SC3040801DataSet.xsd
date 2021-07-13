@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3040801DataSet" targetNamespace="http://tempuri.org/SC3040801DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3040801DataSet.xsd" xmlns="http://tempuri.org/SC3040801DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3040801DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3040801DataSet" msprop:Generator_UserDSName="SC3040801DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GetSalesNotice" msprop:Generator_TableClassName="GetSalesNoticeDataTable" msprop:Generator_TableVarName="tableGetSalesNotice" msprop:Generator_TablePropName="GetSalesNotice" msprop:Generator_RowDeletingName="GetSalesNoticeRowDeleting" msprop:Generator_UserTableName="GetSalesNotice" msprop:Generator_RowChangingName="GetSalesNoticeRowChanging" msprop:Generator_RowEvHandlerName="GetSalesNoticeRowChangeEventHandler" msprop:Generator_RowDeletedName="GetSalesNoticeRowDeleted" msprop:Generator_RowEvArgName="GetSalesNoticeRowChangeEvent" msprop:Generator_RowChangedName="GetSalesNoticeRowChanged" msprop:Generator_RowClassName="GetSalesNoticeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOTICEREQID" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQID" msprop:Generator_ColumnPropNameInRow="NOTICEREQID" msprop:Generator_ColumnPropNameInTable="NOTICEREQIDColumn" msprop:Generator_UserColumnName="NOTICEREQID" type="xs:long" minOccurs="0" />
+              <xs:element name="NOTICEREQCTG" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NOTICEREQCTG" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQCTG" msprop:Generator_ColumnPropNameInTable="NOTICEREQCTGColumn" msprop:Generator_UserColumnName="NOTICEREQCTG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REQCLASSID" msprop:Generator_ColumnVarNameInTable="columnREQCLASSID" msprop:Generator_ColumnPropNameInRow="REQCLASSID" msprop:Generator_ColumnPropNameInTable="REQCLASSIDColumn" msprop:Generator_UserColumnName="REQCLASSID" type="xs:long" minOccurs="0" />
+              <xs:element name="CRCUSTID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CRCUSTID" msprop:Generator_ColumnVarNameInTable="columnCRCUSTID" msprop:Generator_ColumnPropNameInTable="CRCUSTIDColumn" msprop:Generator_UserColumnName="CRCUSTID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="19" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTOMNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTOMNAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMNAME" msprop:Generator_ColumnPropNameInTable="CUSTOMNAMEColumn" msprop:Generator_UserColumnName="CUSTOMNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLLWUPBOX" msprop:Generator_ColumnVarNameInTable="columnFLLWUPBOX" msprop:Generator_ColumnPropNameInRow="FLLWUPBOX" msprop:Generator_ColumnPropNameInTable="FLLWUPBOXColumn" msprop:Generator_UserColumnName="FLLWUPBOX" type="xs:long" minOccurs="0" />
+              <xs:element name="NOTICEID" msprop:Generator_ColumnVarNameInTable="columnNOTICEID" msprop:Generator_ColumnPropNameInRow="NOTICEID" msprop:Generator_ColumnPropNameInTable="NOTICEIDColumn" msprop:Generator_UserColumnName="NOTICEID" type="xs:long" minOccurs="0" />
+              <xs:element name="FROMACCOUNT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FROMACCOUNT" msprop:Generator_ColumnVarNameInTable="columnFROMACCOUNT" msprop:Generator_ColumnPropNameInTable="FROMACCOUNTColumn" msprop:Generator_UserColumnName="FROMACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="26" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FROMACCOUNTNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FROMACCOUNTNAME" msprop:Generator_ColumnVarNameInTable="columnFROMACCOUNTNAME" msprop:Generator_ColumnPropNameInTable="FROMACCOUNTNAMEColumn" msprop:Generator_UserColumnName="FROMACCOUNTNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOACCOUNTNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TOACCOUNTNAME" msprop:Generator_ColumnVarNameInTable="columnTOACCOUNTNAME" msprop:Generator_ColumnPropNameInTable="TOACCOUNTNAMEColumn" msprop:Generator_UserColumnName="TOACCOUNTNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="READFLG" msprop:Generator_ColumnVarNameInTable="columnREADFLG" msprop:Generator_ColumnPropNameInRow="READFLG" msprop:Generator_ColumnPropNameInTable="READFLGColumn" msprop:Generator_UserColumnName="READFLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SENDDATE" msprop:Generator_ColumnVarNameInTable="columnSENDDATE" msprop:Generator_ColumnPropNameInRow="SENDDATE" msprop:Generator_ColumnPropNameInTable="SENDDATEColumn" msprop:Generator_UserColumnName="SENDDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STATUS" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLLWUPBOX_SEQNO" msprop:Generator_ColumnVarNameInTable="columnFLLWUPBOX_SEQNO" msprop:Generator_ColumnPropNameInRow="FLLWUPBOX_SEQNO" msprop:Generator_ColumnPropNameInTable="FLLWUPBOX_SEQNOColumn" msprop:Generator_UserColumnName="FLLWUPBOX_SEQNO" type="xs:long" minOccurs="0" />
+              <xs:element name="ORG_IMGFILE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORG_IMGFILE" msprop:Generator_ColumnVarNameInTable="columnORG_IMGFILE" msprop:Generator_ColumnPropNameInTable="ORG_IMGFILEColumn" msprop:Generator_UserColumnName="ORG_IMGFILE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOTICEMSG_DLR" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="NOTICEMSG_DLR" msprop:Generator_ColumnVarNameInTable="columnNOTICEMSG_DLR" msprop:Generator_ColumnPropNameInTable="NOTICEMSG_DLRColumn" msprop:Generator_UserColumnName="NOTICEMSG_DLR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ServiceNoticeHistory" msprop:Generator_TableClassName="ServiceNoticeHistoryDataTable" msprop:Generator_TableVarName="tableServiceNoticeHistory" msprop:Generator_TablePropName="ServiceNoticeHistory" msprop:Generator_RowDeletingName="ServiceNoticeHistoryRowDeleting" msprop:Generator_UserTableName="ServiceNoticeHistory" msprop:Generator_RowChangingName="ServiceNoticeHistoryRowChanging" msprop:Generator_RowEvHandlerName="ServiceNoticeHistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="ServiceNoticeHistoryRowDeleted" msprop:Generator_RowEvArgName="ServiceNoticeHistoryRowChangeEvent" msprop:Generator_RowChangedName="ServiceNoticeHistoryRowChanged" msprop:Generator_RowClassName="ServiceNoticeHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LISTID" msprop:Generator_ColumnVarNameInTable="columnLISTID" msprop:Generator_ColumnPropNameInRow="LISTID" msprop:Generator_ColumnPropNameInTable="LISTIDColumn" msprop:Generator_UserColumnName="LISTID" type="xs:string" minOccurs="0" />
+              <xs:element name="NOTICEREQID" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQID" msprop:Generator_ColumnPropNameInRow="NOTICEREQID" msprop:Generator_ColumnPropNameInTable="NOTICEREQIDColumn" msprop:Generator_UserColumnName="NOTICEREQID" type="xs:long" minOccurs="0" />
+              <xs:element name="NOTICEID" msprop:Generator_ColumnVarNameInTable="columnNOTICEID" msprop:Generator_ColumnPropNameInRow="NOTICEID" msprop:Generator_ColumnPropNameInTable="NOTICEIDColumn" msprop:Generator_UserColumnName="NOTICEID" type="xs:long" minOccurs="0" />
+              <xs:element name="READFLG" msprop:Generator_ColumnVarNameInTable="columnREADFLG" msprop:Generator_ColumnPropNameInRow="READFLG" msprop:Generator_ColumnPropNameInTable="READFLGColumn" msprop:Generator_UserColumnName="READFLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SESSIONVALUE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SESSIONVALUE" msprop:Generator_ColumnVarNameInTable="columnSESSIONVALUE" msprop:Generator_ColumnPropNameInTable="SESSIONVALUEColumn" msprop:Generator_UserColumnName="SESSIONVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="MESSAGE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MESSAGE" msprop:Generator_ColumnVarNameInTable="columnMESSAGE" msprop:Generator_ColumnPropNameInTable="MESSAGEColumn" msprop:Generator_UserColumnName="MESSAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG_IMGFILE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORG_IMGFILE" msprop:Generator_ColumnVarNameInTable="columnORG_IMGFILE" msprop:Generator_ColumnPropNameInTable="ORG_IMGFILEColumn" msprop:Generator_UserColumnName="ORG_IMGFILE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIMEMESSAGE" msprop:Generator_ColumnVarNameInTable="columnTIMEMESSAGE" msprop:Generator_ColumnPropNameInRow="TIMEMESSAGE" msprop:Generator_ColumnPropNameInTable="TIMEMESSAGEColumn" msprop:Generator_UserColumnName="TIMEMESSAGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUPPORTSTATUS" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="SUPPORTSTATUS" msprop:Generator_ColumnVarNameInTable="columnSUPPORTSTATUS" msprop:Generator_ColumnPropNameInTable="SUPPORTSTATUSColumn" msprop:Generator_UserColumnName="SUPPORTSTATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GetServiceNotice" msprop:Generator_TableClassName="GetServiceNoticeDataTable" msprop:Generator_TableVarName="tableGetServiceNotice" msprop:Generator_TablePropName="GetServiceNotice" msprop:Generator_RowDeletingName="GetServiceNoticeRowDeleting" msprop:Generator_UserTableName="GetServiceNotice" msprop:Generator_RowChangingName="GetServiceNoticeRowChanging" msprop:Generator_RowEvHandlerName="GetServiceNoticeRowChangeEventHandler" msprop:Generator_RowDeletedName="GetServiceNoticeRowDeleted" msprop:Generator_RowEvArgName="GetServiceNoticeRowChangeEvent" msprop:Generator_RowChangedName="GetServiceNoticeRowChanged" msprop:Generator_RowClassName="GetServiceNoticeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOTICEREQID" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQID" msprop:Generator_ColumnPropNameInRow="NOTICEREQID" msprop:Generator_ColumnPropNameInTable="NOTICEREQIDColumn" msprop:Generator_UserColumnName="NOTICEREQID" type="xs:long" minOccurs="0" />
+              <xs:element name="NOTICEID" msprop:Generator_ColumnVarNameInTable="columnNOTICEID" msprop:Generator_ColumnPropNameInRow="NOTICEID" msprop:Generator_ColumnPropNameInTable="NOTICEIDColumn" msprop:Generator_UserColumnName="NOTICEID" type="xs:long" minOccurs="0" />
+              <xs:element name="READFLG" msprop:Generator_ColumnVarNameInTable="columnREADFLG" msprop:Generator_ColumnPropNameInRow="READFLG" msprop:Generator_ColumnPropNameInTable="READFLGColumn" msprop:Generator_UserColumnName="READFLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SESSIONVALUE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SESSIONVALUE" msprop:Generator_ColumnVarNameInTable="columnSESSIONVALUE" msprop:Generator_ColumnPropNameInTable="SESSIONVALUEColumn" msprop:Generator_UserColumnName="SESSIONVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="SENDDATE" msprop:Generator_ColumnVarNameInTable="columnSENDDATE" msprop:Generator_ColumnPropNameInRow="SENDDATE" msprop:Generator_ColumnPropNameInTable="SENDDATEColumn" msprop:Generator_UserColumnName="SENDDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MESSAGE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MESSAGE" msprop:Generator_ColumnVarNameInTable="columnMESSAGE" msprop:Generator_ColumnPropNameInTable="MESSAGEColumn" msprop:Generator_UserColumnName="MESSAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG_IMGFILE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORG_IMGFILE" msprop:Generator_ColumnVarNameInTable="columnORG_IMGFILE" msprop:Generator_ColumnPropNameInTable="ORG_IMGFILEColumn" msprop:Generator_UserColumnName="ORG_IMGFILE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUPPORTSTATUS" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="SUPPORTSTATUS" msprop:Generator_ColumnVarNameInTable="columnSUPPORTSTATUS" msprop:Generator_ColumnPropNameInTable="SUPPORTSTATUSColumn" msprop:Generator_UserColumnName="SUPPORTSTATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GetPhotoPath" msprop:Generator_TableClassName="GetPhotoPathDataTable" msprop:Generator_TableVarName="tableGetPhotoPath" msprop:Generator_TablePropName="GetPhotoPath" msprop:Generator_RowDeletingName="GetPhotoPathRowDeleting" msprop:Generator_UserTableName="GetPhotoPath" msprop:Generator_RowChangingName="GetPhotoPathRowChanging" msprop:Generator_RowEvHandlerName="GetPhotoPathRowChangeEventHandler" msprop:Generator_RowDeletedName="GetPhotoPathRowDeleted" msprop:Generator_RowEvArgName="GetPhotoPathRowChangeEvent" msprop:Generator_RowChangedName="GetPhotoPathRowChanged" msprop:Generator_RowClassName="GetPhotoPathRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IPPATH" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IPPATH" msprop:Generator_ColumnVarNameInTable="columnIPPATH" msprop:Generator_ColumnPropNameInTable="IPPATHColumn" msprop:Generator_UserColumnName="IPPATH" type="xs:string" minOccurs="0" />
+              <xs:element name="IMGPATH" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IMGPATH" msprop:Generator_ColumnVarNameInTable="columnIMGPATH" msprop:Generator_ColumnPropNameInTable="IMGPATHColumn" msprop:Generator_UserColumnName="IMGPATH" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GetLastStatus" msprop:Generator_TableClassName="GetLastStatusDataTable" msprop:Generator_TableVarName="tableGetLastStatus" msprop:Generator_TablePropName="GetLastStatus" msprop:Generator_RowDeletingName="GetLastStatusRowDeleting" msprop:Generator_UserTableName="GetLastStatus" msprop:Generator_RowChangingName="GetLastStatusRowChanging" msprop:Generator_RowEvHandlerName="GetLastStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="GetLastStatusRowDeleted" msprop:Generator_RowEvArgName="GetLastStatusRowChangeEvent" msprop:Generator_RowChangedName="GetLastStatusRowChanged" msprop:Generator_RowClassName="GetLastStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GetTransitionParameter" msprop:Generator_TableClassName="GetTransitionParameterDataTable" msprop:Generator_TableVarName="tableGetTransitionParameter" msprop:Generator_TablePropName="GetTransitionParameter" msprop:Generator_RowDeletingName="GetTransitionParameterRowDeleting" msprop:Generator_UserTableName="GetTransitionParameter" msprop:Generator_RowChangingName="GetTransitionParameterRowChanging" msprop:Generator_RowEvHandlerName="GetTransitionParameterRowChangeEventHandler" msprop:Generator_RowDeletedName="GetTransitionParameterRowDeleted" msprop:Generator_RowEvArgName="GetTransitionParameterRowChangeEvent" msprop:Generator_RowChangedName="GetTransitionParameterRowChanged" msprop:Generator_RowClassName="GetTransitionParameterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REQCLASSID" msprop:Generator_ColumnVarNameInTable="columnREQCLASSID" msprop:Generator_ColumnPropNameInRow="REQCLASSID" msprop:Generator_ColumnPropNameInTable="REQCLASSIDColumn" msprop:Generator_UserColumnName="REQCLASSID" type="xs:long" minOccurs="0" />
+              <xs:element name="CRCUSTID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CRCUSTID" msprop:Generator_ColumnVarNameInTable="columnCRCUSTID" msprop:Generator_ColumnPropNameInTable="CRCUSTIDColumn" msprop:Generator_UserColumnName="CRCUSTID" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTKIND" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CSTKIND" msprop:Generator_ColumnVarNameInTable="columnCSTKIND" msprop:Generator_ColumnPropNameInTable="CSTKINDColumn" msprop:Generator_UserColumnName="CSTKIND" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMERCLASS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CUSTOMERCLASS" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERCLASS" msprop:Generator_ColumnPropNameInTable="CUSTOMERCLASSColumn" msprop:Generator_UserColumnName="CUSTOMERCLASS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALESSTAFFCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SALESSTAFFCD" msprop:Generator_ColumnVarNameInTable="columnSALESSTAFFCD" msprop:Generator_ColumnPropNameInTable="SALESSTAFFCDColumn" msprop:Generator_UserColumnName="SALESSTAFFCD" type="xs:string" minOccurs="0" />
+              <xs:element name="VCLID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VCLID" msprop:Generator_ColumnVarNameInTable="columnVCLID" msprop:Generator_ColumnPropNameInTable="VCLIDColumn" msprop:Generator_UserColumnName="VCLID" type="xs:string" minOccurs="0" />
+              <xs:element name="FLLWUPBOX" msprop:Generator_ColumnVarNameInTable="columnFLLWUPBOX" msprop:Generator_ColumnPropNameInRow="FLLWUPBOX" msprop:Generator_ColumnPropNameInTable="FLLWUPBOXColumn" msprop:Generator_UserColumnName="FLLWUPBOX" type="xs:long" minOccurs="0" />
+              <xs:element name="FLLWUPBOXSTRCD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FLLWUPBOXSTRCD" msprop:Generator_ColumnVarNameInTable="columnFLLWUPBOXSTRCD" msprop:Generator_ColumnPropNameInTable="FLLWUPBOXSTRCDColumn" msprop:Generator_UserColumnName="FLLWUPBOXSTRCD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesNoticeHistory" msprop:Generator_TableClassName="SalesNoticeHistoryDataTable" msprop:Generator_TableVarName="tableSalesNoticeHistory" msprop:Generator_TablePropName="SalesNoticeHistory" msprop:Generator_RowDeletingName="SalesNoticeHistoryRowDeleting" msprop:Generator_UserTableName="SalesNoticeHistory" msprop:Generator_RowChangingName="SalesNoticeHistoryRowChanging" msprop:Generator_RowEvHandlerName="SalesNoticeHistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesNoticeHistoryRowDeleted" msprop:Generator_RowEvArgName="SalesNoticeHistoryRowChangeEvent" msprop:Generator_RowChangedName="SalesNoticeHistoryRowChanged" msprop:Generator_RowClassName="SalesNoticeHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LISTID" msprop:Generator_ColumnVarNameInTable="columnLISTID" msprop:Generator_ColumnPropNameInRow="LISTID" msprop:Generator_ColumnPropNameInTable="LISTIDColumn" msprop:Generator_UserColumnName="LISTID" type="xs:string" minOccurs="0" />
+              <xs:element name="NOTICEREQID" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQID" msprop:Generator_ColumnPropNameInRow="NOTICEREQID" msprop:Generator_ColumnPropNameInTable="NOTICEREQIDColumn" msprop:Generator_UserColumnName="NOTICEREQID" type="xs:long" minOccurs="0" />
+              <xs:element name="NOTICEID" msprop:Generator_ColumnVarNameInTable="columnNOTICEID" msprop:Generator_ColumnPropNameInRow="NOTICEID" msprop:Generator_ColumnPropNameInTable="NOTICEIDColumn" msprop:Generator_UserColumnName="NOTICEID" type="xs:long" minOccurs="0" />
+              <xs:element name="ORG_IMGFILE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORG_IMGFILE" msprop:Generator_ColumnVarNameInTable="columnORG_IMGFILE" msprop:Generator_ColumnPropNameInTable="ORG_IMGFILEColumn" msprop:Generator_UserColumnName="ORG_IMGFILE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="READFLG" msprop:Generator_ColumnVarNameInTable="columnREADFLG" msprop:Generator_ColumnPropNameInRow="READFLG" msprop:Generator_ColumnPropNameInTable="READFLGColumn" msprop:Generator_UserColumnName="READFLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CANCELFLAG" msprop:Generator_ColumnVarNameInTable="columnCANCELFLAG" msprop:Generator_ColumnPropNameInRow="CANCELFLAG" msprop:Generator_ColumnPropNameInTable="CANCELFLAGColumn" msprop:Generator_UserColumnName="CANCELFLAG" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TIMEMESSAGE" msprop:Generator_ColumnVarNameInTable="columnTIMEMESSAGE" msprop:Generator_ColumnPropNameInRow="TIMEMESSAGE" msprop:Generator_ColumnPropNameInTable="TIMEMESSAGEColumn" msprop:Generator_UserColumnName="TIMEMESSAGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MESSAGE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MESSAGE" msprop:Generator_ColumnVarNameInTable="columnMESSAGE" msprop:Generator_ColumnPropNameInTable="MESSAGEColumn" msprop:Generator_UserColumnName="MESSAGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ICONIMAGE" msprop:Generator_ColumnVarNameInTable="columnICONIMAGE" msprop:Generator_ColumnPropNameInRow="ICONIMAGE" msprop:Generator_ColumnPropNameInTable="ICONIMAGEColumn" msprop:Generator_UserColumnName="ICONIMAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="SESSIONVALUE" msprop:Generator_ColumnVarNameInTable="columnSESSIONVALUE" msprop:Generator_ColumnPropNameInRow="SESSIONVALUE" msprop:Generator_ColumnPropNameInTable="SESSIONVALUEColumn" msprop:Generator_UserColumnName="SESSIONVALUE" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPORTSTATUS" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="SUPPORTSTATUS" msprop:Generator_ColumnVarNameInTable="columnSUPPORTSTATUS" msprop:Generator_ColumnPropNameInTable="SUPPORTSTATUSColumn" msprop:Generator_UserColumnName="SUPPORTSTATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GetCancelParameter" msprop:Generator_TableClassName="GetCancelParameterDataTable" msprop:Generator_TableVarName="tableGetCancelParameter" msprop:Generator_TablePropName="GetCancelParameter" msprop:Generator_RowDeletingName="GetCancelParameterRowDeleting" msprop:Generator_UserTableName="GetCancelParameter" msprop:Generator_RowChangingName="GetCancelParameterRowChanging" msprop:Generator_RowEvHandlerName="GetCancelParameterRowChangeEventHandler" msprop:Generator_RowDeletedName="GetCancelParameterRowDeleted" msprop:Generator_RowEvArgName="GetCancelParameterRowChangeEvent" msprop:Generator_RowChangedName="GetCancelParameterRowChanged" msprop:Generator_RowClassName="GetCancelParameterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOTICEREQID" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQID" msprop:Generator_ColumnPropNameInRow="NOTICEREQID" msprop:Generator_ColumnPropNameInTable="NOTICEREQIDColumn" msprop:Generator_UserColumnName="NOTICEREQID" type="xs:long" minOccurs="0" />
+              <xs:element name="NOTICEREQCTG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="NOTICEREQCTG" msprop:Generator_ColumnVarNameInTable="columnNOTICEREQCTG" msprop:Generator_ColumnPropNameInTable="NOTICEREQCTGColumn" msprop:Generator_UserColumnName="NOTICEREQCTG" type="xs:string" minOccurs="0" />
+              <xs:element name="REQCLASSID" msprop:Generator_ColumnVarNameInTable="columnREQCLASSID" msprop:Generator_ColumnPropNameInRow="REQCLASSID" msprop:Generator_ColumnPropNameInTable="REQCLASSIDColumn" msprop:Generator_UserColumnName="REQCLASSID" type="xs:long" minOccurs="0" />
+              <xs:element name="CUSTOMNAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMNAME" msprop:Generator_ColumnPropNameInRow="CUSTOMNAME" msprop:Generator_ColumnPropNameInTable="CUSTOMNAMEColumn" msprop:Generator_UserColumnName="CUSTOMNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="FROMCLIENTID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FROMCLIENTID" msprop:Generator_ColumnVarNameInTable="columnFROMCLIENTID" msprop:Generator_ColumnPropNameInTable="FROMCLIENTIDColumn" msprop:Generator_UserColumnName="FROMCLIENTID" type="xs:string" minOccurs="0" />
+              <xs:element name="TOACCOUNT" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TOACCOUNT" msprop:Generator_ColumnVarNameInTable="columnTOACCOUNT" msprop:Generator_ColumnPropNameInTable="TOACCOUNTColumn" msprop:Generator_UserColumnName="TOACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="TOCLIENTID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TOCLIENTID" msprop:Generator_ColumnVarNameInTable="columnTOCLIENTID" msprop:Generator_ColumnPropNameInTable="TOCLIENTIDColumn" msprop:Generator_UserColumnName="TOCLIENTID" type="xs:string" minOccurs="0" />
+              <xs:element name="TOACCOUNTNAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TOACCOUNTNAME" msprop:Generator_ColumnVarNameInTable="columnTOACCOUNTNAME" msprop:Generator_ColumnPropNameInTable="TOACCOUNTNAMEColumn" msprop:Generator_UserColumnName="TOACCOUNTNAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

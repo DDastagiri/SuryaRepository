@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3070402DataSet" targetNamespace="http://tempuri.org/IC3070402DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3070402DataSet.xsd" xmlns="http://tempuri.org/IC3070402DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3070402DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3070402DataSet" msprop:Generator_UserDSName="IC3070402DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3070402Cstoccupation" msprop:Generator_TableClassName="IC3070402CstoccupationDataTable" msprop:Generator_TableVarName="tableIC3070402Cstoccupation" msprop:Generator_TablePropName="IC3070402Cstoccupation" msprop:Generator_RowDeletingName="IC3070402CstoccupationRowDeleting" msprop:Generator_UserTableName="IC3070402Cstoccupation" msprop:Generator_RowChangingName="IC3070402CstoccupationRowChanging" msprop:Generator_RowEvHandlerName="IC3070402CstoccupationRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3070402CstoccupationRowDeleted" msprop:Generator_RowEvArgName="IC3070402CstoccupationRowChangeEvent" msprop:Generator_RowChangedName="IC3070402CstoccupationRowChanged" msprop:Generator_RowClassName="IC3070402CstoccupationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OCCUPATIONNO" msprop:Generator_ColumnVarNameInTable="columnOCCUPATIONNO" msprop:Generator_ColumnPropNameInRow="OCCUPATIONNO" msprop:Generator_ColumnPropNameInTable="OCCUPATIONNOColumn" msprop:Generator_UserColumnName="OCCUPATIONNO" type="xs:int" />
+              <xs:element name="OCCUPATION" msprop:Generator_ColumnVarNameInTable="columnOCCUPATION" msprop:Generator_ColumnPropNameInRow="OCCUPATION" msprop:Generator_ColumnPropNameInTable="OCCUPATIONColumn" msprop:Generator_UserColumnName="OCCUPATION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3070402Cstfamily" msprop:Generator_TableClassName="IC3070402CstfamilyDataTable" msprop:Generator_TableVarName="tableIC3070402Cstfamily" msprop:Generator_TablePropName="IC3070402Cstfamily" msprop:Generator_RowDeletingName="IC3070402CstfamilyRowDeleting" msprop:Generator_UserTableName="IC3070402Cstfamily" msprop:Generator_RowChangingName="IC3070402CstfamilyRowChanging" msprop:Generator_RowEvHandlerName="IC3070402CstfamilyRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3070402CstfamilyRowDeleted" msprop:Generator_RowEvArgName="IC3070402CstfamilyRowChangeEvent" msprop:Generator_RowChangedName="IC3070402CstfamilyRowChanged" msprop:Generator_RowClassName="IC3070402CstfamilyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FAMILYRELATIONSHIPNO" msprop:Generator_ColumnVarNameInTable="columnFAMILYRELATIONSHIPNO" msprop:Generator_ColumnPropNameInRow="FAMILYRELATIONSHIPNO" msprop:Generator_ColumnPropNameInTable="FAMILYRELATIONSHIPNOColumn" msprop:Generator_UserColumnName="FAMILYRELATIONSHIPNO" type="xs:int" minOccurs="0" />
+              <xs:element name="FAMILYRELATIONSHIP" msprop:Generator_ColumnVarNameInTable="columnFAMILYRELATIONSHIP" msprop:Generator_ColumnPropNameInRow="FAMILYRELATIONSHIP" msprop:Generator_ColumnPropNameInTable="FAMILYRELATIONSHIPColumn" msprop:Generator_UserColumnName="FAMILYRELATIONSHIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BIRTHDAY" msprop:Generator_ColumnVarNameInTable="columnBIRTHDAY" msprop:Generator_ColumnPropNameInRow="BIRTHDAY" msprop:Generator_ColumnPropNameInTable="BIRTHDAYColumn" msprop:Generator_UserColumnName="BIRTHDAY" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3070402Csthobby" msprop:Generator_TableClassName="IC3070402CsthobbyDataTable" msprop:Generator_TableVarName="tableIC3070402Csthobby" msprop:Generator_TablePropName="IC3070402Csthobby" msprop:Generator_RowDeletingName="IC3070402CsthobbyRowDeleting" msprop:Generator_UserTableName="IC3070402Csthobby" msprop:Generator_RowChangingName="IC3070402CsthobbyRowChanging" msprop:Generator_RowEvHandlerName="IC3070402CsthobbyRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3070402CsthobbyRowDeleted" msprop:Generator_RowEvArgName="IC3070402CsthobbyRowChangeEvent" msprop:Generator_RowChangedName="IC3070402CsthobbyRowChanged" msprop:Generator_RowClassName="IC3070402CsthobbyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HOBBYNO" msprop:Generator_ColumnVarNameInTable="columnHOBBYNO" msprop:Generator_ColumnPropNameInRow="HOBBYNO" msprop:Generator_ColumnPropNameInTable="HOBBYNOColumn" msprop:Generator_UserColumnName="HOBBYNO" type="xs:int" minOccurs="0" />
+              <xs:element name="HOBBY" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="HOBBY" msprop:Generator_ColumnVarNameInTable="columnHOBBY" msprop:Generator_ColumnPropNameInTable="HOBBYColumn" msprop:Generator_UserColumnName="HOBBY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3070402CstName" msprop:Generator_TableClassName="IC3070402CstNameDataTable" msprop:Generator_TableVarName="tableIC3070402CstName" msprop:Generator_TablePropName="IC3070402CstName" msprop:Generator_RowDeletingName="IC3070402CstNameRowDeleting" msprop:Generator_UserTableName="IC3070402CstName" msprop:Generator_RowChangingName="IC3070402CstNameRowChanging" msprop:Generator_RowEvHandlerName="IC3070402CstNameRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3070402CstNameRowDeleted" msprop:Generator_RowEvArgName="IC3070402CstNameRowChangeEvent" msprop:Generator_RowChangedName="IC3070402CstNameRowChanged" msprop:Generator_RowClassName="IC3070402CstNameRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTNAME" msprop:Generator_ColumnVarNameInTable="columnCSTNAME" msprop:Generator_ColumnPropNameInRow="CSTNAME" msprop:Generator_ColumnPropNameInTable="CSTNAMEColumn" msprop:Generator_UserColumnName="CSTNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAMETITLE" msdata:Caption="CSTNAME" msprop:Generator_ColumnVarNameInTable="columnNAMETITLE" msprop:Generator_ColumnPropNameInRow="NAMETITLE" msprop:Generator_ColumnPropNameInTable="NAMETITLEColumn" msprop:Generator_UserColumnName="NAMETITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

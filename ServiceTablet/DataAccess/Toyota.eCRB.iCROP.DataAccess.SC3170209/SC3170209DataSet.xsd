@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3170209DataSet" targetNamespace="http://tempuri.org/SC3170209DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3170209DataSet.xsd" xmlns="http://tempuri.org/SC3170209DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3170209DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3170209DataSet" msprop:Generator_UserDSName="SC3170209DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_T_RO_THUMBNAIL" msprop:Generator_TableClassName="TB_T_RO_THUMBNAILDataTable" msprop:Generator_TableVarName="tableTB_T_RO_THUMBNAIL" msprop:Generator_TablePropName="TB_T_RO_THUMBNAIL" msprop:Generator_RowDeletingName="TB_T_RO_THUMBNAILRowDeleting" msprop:Generator_RowChangingName="TB_T_RO_THUMBNAILRowChanging" msprop:Generator_RowEvHandlerName="TB_T_RO_THUMBNAILRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_T_RO_THUMBNAILRowDeleted" msprop:Generator_UserTableName="TB_T_RO_THUMBNAIL" msprop:Generator_RowChangedName="TB_T_RO_THUMBNAILRowChanged" msprop:Generator_RowEvArgName="TB_T_RO_THUMBNAILRowChangeEvent" msprop:Generator_RowClassName="TB_T_RO_THUMBNAILRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="THUMBNAIL_IMG_PATH" msprop:Generator_ColumnVarNameInTable="columnTHUMBNAIL_IMG_PATH" msprop:Generator_ColumnPropNameInRow="THUMBNAIL_IMG_PATH" msprop:Generator_ColumnPropNameInTable="THUMBNAIL_IMG_PATHColumn" msprop:Generator_UserColumnName="THUMBNAIL_IMG_PATH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="512" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ThumbnailSequence" msprop:Generator_TableClassName="ThumbnailSequenceDataTable" msprop:Generator_TableVarName="tableThumbnailSequence" msprop:Generator_TablePropName="ThumbnailSequence" msprop:Generator_RowDeletingName="ThumbnailSequenceRowDeleting" msprop:Generator_RowChangingName="ThumbnailSequenceRowChanging" msprop:Generator_RowEvHandlerName="ThumbnailSequenceRowChangeEventHandler" msprop:Generator_RowDeletedName="ThumbnailSequenceRowDeleted" msprop:Generator_UserTableName="ThumbnailSequence" msprop:Generator_RowChangedName="ThumbnailSequenceRowChanged" msprop:Generator_RowEvArgName="ThumbnailSequenceRowChangeEvent" msprop:Generator_RowClassName="ThumbnailSequenceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RO_THUMBNAIL_ID" msprop:Generator_ColumnVarNameInTable="columnRO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInRow="RO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInTable="RO_THUMBNAIL_IDColumn" msprop:Generator_UserColumnName="RO_THUMBNAIL_ID" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImageSorce" msprop:Generator_TableClassName="ImageSorceDataTable" msprop:Generator_TableVarName="tableImageSorce" msprop:Generator_RowChangedName="ImageSorceRowChanged" msprop:Generator_TablePropName="ImageSorce" msprop:Generator_RowDeletingName="ImageSorceRowDeleting" msprop:Generator_RowChangingName="ImageSorceRowChanging" msprop:Generator_RowEvHandlerName="ImageSorceRowChangeEventHandler" msprop:Generator_RowDeletedName="ImageSorceRowDeleted" msprop:Generator_RowClassName="ImageSorceRow" msprop:Generator_UserTableName="ImageSorce" msprop:Generator_RowEvArgName="ImageSorceRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image1" msprop:Generator_ColumnVarNameInTable="columnimage1" msprop:Generator_ColumnPropNameInRow="image1" msprop:Generator_ColumnPropNameInTable="image1Column" msprop:Generator_UserColumnName="image1" type="xs:string" minOccurs="0" />
+              <xs:element name="image2" msprop:Generator_ColumnVarNameInTable="columnimage2" msprop:Generator_ColumnPropNameInRow="image2" msprop:Generator_ColumnPropNameInTable="image2Column" msprop:Generator_UserColumnName="image2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TB_M_DMS_CODE_MAP" msprop:Generator_TableClassName="TB_M_DMS_CODE_MAPDataTable" msprop:Generator_TableVarName="tableTB_M_DMS_CODE_MAP" msprop:Generator_TablePropName="TB_M_DMS_CODE_MAP" msprop:Generator_RowDeletingName="TB_M_DMS_CODE_MAPRowDeleting" msprop:Generator_RowChangingName="TB_M_DMS_CODE_MAPRowChanging" msprop:Generator_RowEvHandlerName="TB_M_DMS_CODE_MAPRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_M_DMS_CODE_MAPRowDeleted" msprop:Generator_UserTableName="TB_M_DMS_CODE_MAP" msprop:Generator_RowChangedName="TB_M_DMS_CODE_MAPRowChanged" msprop:Generator_RowEvArgName="TB_M_DMS_CODE_MAPRowChangeEvent" msprop:Generator_RowClassName="TB_M_DMS_CODE_MAPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ICROP_CD_1" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_1" msprop:Generator_ColumnPropNameInRow="ICROP_CD_1" msprop:Generator_ColumnPropNameInTable="ICROP_CD_1Column" msprop:Generator_UserColumnName="ICROP_CD_1" type="xs:string" minOccurs="0" />
+              <xs:element name="ICROP_CD_2" msprop:Generator_ColumnVarNameInTable="columnICROP_CD_2" msprop:Generator_ColumnPropNameInRow="ICROP_CD_2" msprop:Generator_ColumnPropNameInTable="ICROP_CD_2Column" msprop:Generator_UserColumnName="ICROP_CD_2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

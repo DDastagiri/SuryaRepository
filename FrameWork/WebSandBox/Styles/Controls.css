@@ -1,0 +1,130 @@
+﻿/* コントロール共通スタイル */
+.icrop-disabled {
+	background-color:#444444;
+}
+.icrop-focused {
+	background-color: red;
+}
+.icrop-pressed {
+	background-color: red;
+}
+.icrop-selected {
+	background: #126EE4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#126EE4), to(#4F99FA));
+	-webkit-box-shadow: inset 2px 2px 2px rgba(7,52,112,.6);
+	color: #FFF;
+	text-shadow: none;
+	border-left: 1px solid rgba(0,0,0,.5);
+}
+
+
+/* コントロール固有スタイル */
+
+.icrop-CheckButton {
+	display: inline-block;
+	width:25px;
+	height:15px;
+	background-color:#FFBBBB;
+}
+.icrop-CheckButton-label 
+{
+	bottom: 2px;
+}
+
+.icrop-CheckMark 
+{
+    display: inline-block;
+    width: 38px;
+    height: 42px;
+    cursor: pointer;
+}
+.icrop-CheckMark-checked
+{
+    background-image: url(Images/checkMark01.png);
+}
+
+.icrop-CustomButton {
+}
+.icrop-CustomButton-badge {
+	top: 2px;
+	right: 2px;
+	width:10px;
+	height:10px;
+	font-size:8px;
+	background-color:#DDDDDD;
+}
+.icrop-CustomButton-label {
+	background-color:#DDFFFF;
+	bottom: 2px;
+}
+
+.icrop-CustomLabel {
+}
+.icrop-CustomLabel-tooltip {
+    border        : 1px solid #555;
+    border-radius : 2px;
+    background    : #FFE4C4;
+    color         : #555;
+    display       : none;
+    font-size     : 12px;
+    padding       : 1px 5px;
+    box-shadow    : 4px 4px rgba(3,3,3,0.4); -webkit-box-shadow: 4px 4px rgba(3,3,3,0.4); 
+    white-space   : nowrap;
+}
+
+
+.icrop-CustomTextBox {
+	height:26px;
+}
+.icrop-CustomTextBox-clear {
+	background-image: url(Images/textClear.png);
+    width: 27px;
+    height: 23px;
+}
+		
+.icrop-DateTimeSelector {
+}
+
+.icrop-PopOverForm-header {
+}
+.icrop-PopOverForm-conetnt {
+}
+.icrop-PopOverForm-back {
+	background-image: url(Images/popUpCancel.png);
+    width: 80px;
+    height: 30px;
+    color: White;
+}
+.icrop-PopOverForm-page {
+}
+
+.icrop-SegmentedButton {
+	background:-webkit-gradient(linear, left top, left bottom, from(#FFF), to(#BBB));
+	float: left;
+	border-radius:12px;
+	border: 1px solid #999;
+	-webkit-box-shadow: 1px 1px 1px #FFF;
+	list-style: none;
+}
+.icrop-SegmentedButton li {
+	float: left;
+	margin:0;
+	padding:0;
+	width:90px;
+	text-align:center;
+	border: 1px solid black;
+}
+.icrop-SegmentedButton li:first-child {
+	-webkit-border-top-left-radius:12px;
+	-webkit-border-bottom-left-radius:12px;
+}		
+.icrop-SegmentedButton li:last-child {
+	-webkit-border-top-right-radius:12px;
+	-webkit-border-bottom-right-radius:12px;
+}
+
+.icrop-SwitchButton {
+}
+.icrop-SwitchButton-switch {
+}
+		

@@ -1,0 +1,1253 @@
+/*--------------------------------------------------------------------------
+//SC3240201Small.css
+//--------------------------------------------------------------------------
+//機能：チップ詳細
+//作成：2013/07/31 TMEJ 岩城
+//更新：2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発
+---------------------------------------------------------------------------*/
+@charset "utf-8";
+
+/*チップ詳細(小)内チップ選択エリア開閉時のちらつきをなくすためのstyle*/
+#DetailSChipStatusDiv,
+#ChipDetailPopUpHeaderDiv,
+#DetailSVclInfoUl,
+#DetailSCustInfoUl,
+#DetailSTimeUl,
+#DetailSMaintenanceTypeUl,
+#detailSTableChipUl,
+#detailSTablePartsUl,
+#DetailSOrderUl,
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 START */
+/*#DetailSFailureUl,*/
+/*#DetailSResultUl,*/
+/*#DetailSAdviceUl,*/
+#DetailSMemoUl,
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 END */
+#DetailSWorkTimeUl,
+#DetailSCheckUl
+{
+    transform:translateZ(0px);
+}
+
+.ChipDetailPopStyle .dataBox .detailSInnerDataBox{
+	width:365px; 
+	height:557px;
+	overflow:hidden;
+	position:relative;
+	left:3px; top:0;
+	padding:10px 0 0 0;
+	border-radius:0 0 4px 4px;
+	margin: 0px auto;	
+}
+.ChipDetailPopStyle .dataBox .detailSInnerDataBox02{
+	width:357px; height:auto;
+	position:relative;
+	border-radius:0 0 4px 4px;
+}
+
+/***************************************************************
+* チップ詳細(小)　detailSHeadInfomation
+****************************************************************/
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation{
+	background:#f3a207;
+	box-shadow:inset 0px 0px 8px rgba(0,0,0,0.8);
+	margin-bottom:10px;
+}
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation_margin0{
+	margin-bottom:0px;
+}
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSInnaerDataBox{padding:5px 10px 0; color:#fff;}
+
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSInnaerDataBox h4{
+	height:23px;
+	font-size:21px; line-height:21px;
+	padding:0 0 3px 0;
+	border-bottom:#FFF 1px solid;
+	text-align:center;
+}
+
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSInnaerDataBox .addStatus{
+	height:38px;	border-bottom:#FFF 1px solid;
+}
+
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSInnaerDataBox .addStatus h5{
+	font-size:17px; line-height:17px;
+	padding:3px 0 2px; text-align:left;
+}
+
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSInnaerDataBox .addStatus div{
+	font-size:12px; line-height:12px; text-align:left;
+}
+
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSAddInformationBox{position:relative; font-size:12px; line-height:12px; height:22px;}
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSAddInformationBox .detailSAddInformationPlan{
+	top:3px; left:0; position:absolute;
+	display:compact;
+	text-align:left;
+}
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSAddInformationBox .detailSAddInformationArrow{
+	top:3px; right:140px; position:absolute;
+	display:compact;
+	font-size:12px;
+}
+.ChipDetailPopStyle .dataBox .detailSHeadInfomation .detailSAddInformationBox .detailSAddInformationExpected{
+	top:3px; right:0; position:absolute;
+	display:compact;
+	text-align:right;
+}
+
+
+/***************************************************************
+* チップ詳細(小)　中断中
+****************************************************************/
+.detailSInnaerDataBox .detailSaddStatus2{
+	width:337px;
+	padding-bottom:5px;
+	margin:0px 10px 0px 0px;
+}
+.detailSaddStatus2:nth-last-child(1)
+{
+	border-bottom:#FFF 1px solid;
+}
+
+#DetailSInterruptionCauseLabel{
+	font-size:17px; 
+	line-height:17px;
+	padding:3px 0 2px; 
+	text-align:left;
+}
+
+#DetailSInterruptionDetailsLabel{
+	font-size:12px; 
+	line-height:13px; 
+	text-align:left;
+}
+
+
+/***************************************************************
+* チップ詳細(小)　detailSTableEntryNo
+****************************************************************/
+
+.ChipDetailPopStyle .detailSTableEntryNo_Height01{height:89px;}
+.ChipDetailPopStyle .detailSTableEntryNo_Height02{height:119px;}
+
+.ChipDetailPopStyle .detailSTableEntryNo{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.ChipDetailPopStyle .detailSTableEntryNo li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableEntryNo li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.ChipDetailPopStyle .detailSTableEntryNo li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.ChipDetailPopStyle .detailSTableEntryNo dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.ChipDetailPopStyle .detailSTableEntryNo dt,
+.ChipDetailPopStyle .detailSTableEntryNo dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.ChipDetailPopStyle .detailSTableEntryNo dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableEntryNo dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableEntryNo dd{
+	position:relative;
+	width:284px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+}
+.ChipDetailPopStyle .detailSTableEntryNo dd p{
+	display:block;
+	padding:0 0 0 10px;
+}
+.ChipDetailPopStyle .detailSTableEntryNo dd span{
+	display:block;
+	padding:0 0 0 10px;
+}
+
+.ChipDetailPopStyle .RightIcnSet{
+	position:absolute;
+	right:12px; top:7px;
+	width:14px; height:15px;
+}
+
+.ChipDetailPopStyle .detailSTableEntryNo dd input{
+	display:block;
+	color:#324F85;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	padding:0 0 0 10px;
+}
+
+/***************************************************************
+* チップ詳細(小)　detailSTableTime
+****************************************************************/
+.ChipDetailPopStyle .detailSTableTime{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:89px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.ChipDetailPopStyle .detailSTableTime li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableTime li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.ChipDetailPopStyle .detailSTableTime li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.ChipDetailPopStyle .detailSTableTime dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.ChipDetailPopStyle .detailSTableTime dt,
+.ChipDetailPopStyle .detailSTableTime dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.ChipDetailPopStyle .detailSTableTime dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableTime dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableTime dd{
+	width:70px;
+	font-size:14px;
+	text-align:center;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableTime dd:last-child{
+	width:71px;
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableTime li:nth-child(1) dd{
+	font-size:11px;
+	color:#666666;
+}
+.ChipDetailPopStyle .detailSTableTime li:nth-child(1) dd p{
+	padding:0 5px;
+}
+.ChipDetailPopStyle .detailSTableTime li:nth-child(2) dd,
+.ChipDetailPopStyle .detailSTableTime li:nth-child(3) dd{
+	color:#324f85;
+}
+.ChipDetailPopStyle .detailSTableTime dd input{
+	display:block;
+	color:#324F85;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+}
+
+.ChipDetailPopStyle .detailSTableTime .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableTime .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* チップ詳細(小)　detailSTableMaintenance
+****************************************************************/
+.ChipDetailPopStyle .detailSTableMaintenance{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:29px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.ChipDetailPopStyle .detailSTableMaintenance li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-radius:8px;
+}
+.ChipDetailPopStyle .detailSTableMaintenance dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.ChipDetailPopStyle .detailSTableMaintenance dt,
+.ChipDetailPopStyle .detailSTableMaintenance dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.ChipDetailPopStyle .detailSTableMaintenance dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableMaintenance dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableMaintenance dd{
+	width:106px;
+	font-size:14px;
+	text-align:left;
+	color:#324f85;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableMaintenance dd span{
+	display:block;
+	padding:0 0 0 10px;
+}
+.ChipDetailPopStyle .detailSTableMaintenance dd:last-child{
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableMaintenance dd input{
+	display:block;
+	color:#324F85;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	padding:0 0 0 10px;
+}
+
+.ChipDetailPopStyle .detailSTableMaintenance .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableMaintenance .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* チップ詳細(小)　detailSTableChip
+****************************************************************/
+.ChipDetailPopStyle .detailSTableChip{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.ChipDetailPopStyle .detailSTableChip li{
+	display:block;
+	width:355px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableChip li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.ChipDetailPopStyle .detailSTableChip li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.ChipDetailPopStyle .detailSTableChip dl{
+	display:block;
+	width:355px;
+	overflow:hidden;
+}
+.ChipDetailPopStyle .detailSTableChip dt,
+.ChipDetailPopStyle .detailSTableChip dd{
+	display:block;
+	float:left;
+	height:100%;
+	line-height:29px;
+}
+.ChipDetailPopStyle .detailSTableChip dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableChip dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableChip dd{
+	width:141px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableChip dd span{
+	display:block;
+	padding:0 0 0 11px;
+}
+.ChipDetailPopStyle .detailSTableChip dd:last-child{
+	width:142px;
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableChip li:nth-child(1) dd{
+	font-size:11px;
+	text-align:center;
+	color:#666666;
+}
+.ChipDetailPopStyle .detailSTableChip li:nth-child(1) dd span{
+	padding:0 5px;
+}
+
+.ChipDetailPopStyle .detailSTableChip li{
+	/*height:89px;*/
+}
+.ChipDetailPopStyle .detailSTableChip li dl,
+.ChipDetailPopStyle .detailSTableChip li dt,
+.ChipDetailPopStyle .detailSTableChip li dd{
+	/*height:89px;*/
+}
+.ChipDetailPopStyle .detailSTableChip li dd{color:#000;}
+
+.ChipDetailPopStyle .detailSTableChip li dd .Cassette01{
+	border-bottom:#bbbbbb 1px solid;
+	display:block;
+	overflow:hidden;
+	width:142px;
+	height:29px;
+}
+.ChipDetailPopStyle .detailSTableChip li dd .Cassette01:last-child
+{
+	border-bottom:none;  
+	display:block;
+	overflow:hidden;
+	width:142px;
+	height:29px;
+}
+.ChipDetailPopStyle .detailSTableChip li dd .SingleLine
+{
+    /*color:#324f85;*/
+}
+.ChipDetailPopStyle .detailSTableChip li:nth-child(3){
+	/*background:#F2F2F2;*/
+	/*border-radius:0 0 8px 8px;*/
+}
+
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 START */
+#detailSMaintenanceNoCstApproveDt{
+    border-right:#bbbbbb 0px solid;
+    text-align:center;
+    font-size:14px;
+    color:#000;
+}
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 END */
+
+.ChipDetailPopStyle .detailSTableChip .NotMyRezIdRow{
+	background:#F2F2F2;
+}
+
+.ChipDetailPopStyle .detailSTableChip .CheckBlue{
+	background:url(../Images/SC3240201/icon_check_blue.png) 117px center no-repeat;
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableChip .CheckBlack{
+	background:url(../Images/SC3240201/icon_check_black.png) 117px center no-repeat;
+	color:#000;
+}
+
+.ChipDetailPopStyle .detailSTableChip .FontNormal{
+	font-weight:normal;
+}
+
+.ChipDetailPopStyle .detailSTableChip .FontBold{
+	font-weight:bold;
+}
+
+.ChipDetailPopStyle .detailSTableChip .BackGroundGray{
+	background-color:#F2F2F2;
+}
+
+.ChipDetailPopStyle .detailSTableChip .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableChip .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* チップ詳細(小)　detailSTableParts
+****************************************************************/
+.ChipDetailPopStyle .detailSTableParts{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.ChipDetailPopStyle .detailSTableParts li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableParts li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.ChipDetailPopStyle .detailSTableParts li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.ChipDetailPopStyle .detailSTableParts dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.ChipDetailPopStyle .detailSTableParts dt,
+.ChipDetailPopStyle .detailSTableParts dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.ChipDetailPopStyle .detailSTableParts dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableParts dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableParts dd{
+	width:284px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+}
+.ChipDetailPopStyle .detailSTableParts dd span{
+	display:block;
+	padding:0 0 0 11px;
+}
+
+.ChipDetailPopStyle .detailSTableParts li:nth-child(1) dd{
+	font-size:11px;
+	text-align:center;
+	color:#666666;
+}
+.ChipDetailPopStyle .detailSTableParts li:nth-child(1) dd p{
+	padding:0 5px;
+}
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 START */
+#detailSTablePartsNoCstApproveDt{
+    border-right:#bbbbbb 0px solid;
+    text-align:center;
+    font-size:14px;
+    color:#000;
+}
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 END */
+
+
+/***************************************************************
+* チップ詳細(小)　detailSTableOrder
+****************************************************************/
+.ChipDetailPopStyle .detailSTableOrder{
+	display:block;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+}
+.ChipDetailPopStyle .detailSTableOrder li{
+	display:block;
+	width:355px;
+	border-radius:8px;
+}
+.ChipDetailPopStyle .detailSTableOrder dl{
+	display:block;
+	width:468px;
+}
+.ChipDetailPopStyle .detailSTableOrder dt,
+.ChipDetailPopStyle .detailSTableOrder dd{
+	display:block;
+	float:left;
+	line-height:59px;
+}
+.ChipDetailPopStyle .detailSTableOrder dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+	line-height:90px;
+}
+.ChipDetailPopStyle .detailSTableOrder dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableOrder dd{
+	width:284px;
+	font-size:14px;
+	line-height:29px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableOrder dd:last-child{
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableOrder .TextareaBox{
+	padding:6px 10px;
+}
+
+.ChipDetailPopStyle .detailSTableOrder dd textarea{
+	display:block;
+	line-height:18px;
+	border: none;
+	font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    color: #324F85;
+    resize: none;
+}
+
+.ChipDetailPopStyle .detailSTableOrder .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableOrder .TextBlack{
+	color:#000;
+}
+
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 START */
+/***************************************************************
+* チップ詳細(小)　detailSTableFailure
+****************************************************************/
+/*
+.ChipDetailPopStyle .detailSTableFailure{
+	display:block;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+}
+.ChipDetailPopStyle .detailSTableFailure li{
+	display:block;
+	width:355px;
+	border-radius:8px;
+}
+.ChipDetailPopStyle .detailSTableFailure dl{
+	display:block;
+	width:468px;
+}
+.ChipDetailPopStyle .detailSTableFailure dt,
+.ChipDetailPopStyle .detailSTableFailure dd{
+	display:block;
+	float:left;
+	line-height:59px;
+}
+.ChipDetailPopStyle .detailSTableFailure dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+	line-height:90px;
+}
+.ChipDetailPopStyle .detailSTableFailure dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableFailure dd{
+	width:284px;
+	font-size:14px;
+	line-height:29px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableFailure dd:last-child{
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableFailure .TextareaBox{
+	padding:6px 10px;
+}
+
+.ChipDetailPopStyle .detailSTableFailure dd textarea{
+	display:block;
+	line-height:18px;
+	border: none;
+	font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    color: #324F85;
+    resize: none;
+}
+
+.ChipDetailPopStyle .detailSTableFailure .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableFailure .TextBlack{
+	color:#000;
+}
+*/
+
+/***************************************************************
+* チップ詳細(小)　detailSTableResult
+****************************************************************/
+/*
+.ChipDetailPopStyle .detailSTableResult{
+	display:block;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+}
+.ChipDetailPopStyle .detailSTableResult li{
+	display:block;
+	width:355px;
+	border-radius:8px;
+}
+.ChipDetailPopStyle .detailSTableResult dl{
+	display:block;
+	width:468px;
+}
+.ChipDetailPopStyle .detailSTableResult dt,
+.ChipDetailPopStyle .detailSTableResult dd{
+	display:block;
+	float:left;
+	line-height:59px;
+}
+.ChipDetailPopStyle .detailSTableResult dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+	line-height:90px;
+}
+.ChipDetailPopStyle .detailSTableResult dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableResult dd{
+	width:284px;
+	font-size:14px;
+	line-height:29px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableResult dd:last-child{
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableResult .TextareaBox{
+	padding:6px 10px;
+}
+
+.ChipDetailPopStyle .detailSTableResult dd textarea{
+	display:block;
+	line-height:18px;
+	border: none;
+	font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    color: #324F85;
+    resize: none;
+}
+
+.ChipDetailPopStyle .detailSTableResult .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableResult .TextBlack{
+	color:#000;
+}
+*/
+
+/***************************************************************
+* チップ詳細(小)　detailSTableAdvice
+****************************************************************/
+/*
+.ChipDetailPopStyle .detailSTableAdvice{
+	display:block;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+}
+.ChipDetailPopStyle .detailSTableAdvice li{
+	display:block;
+	width:355px;
+	border-radius:8px;
+}
+.ChipDetailPopStyle .detailSTableAdvice dl{
+	display:block;
+	width:468px;
+}
+.ChipDetailPopStyle .detailSTableAdvice dt,
+.ChipDetailPopStyle .detailSTableAdvice dd{
+	display:block;
+	float:left;
+	line-height:59px;
+}
+.ChipDetailPopStyle .detailSTableAdvice dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+	line-height:90px;
+}
+.ChipDetailPopStyle .detailSTableAdvice dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableAdvice dd{
+	width:284px;
+	font-size:14px;
+	line-height:29px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableAdvice dd:last-child{
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableAdvice .TextareaBox{
+	padding:6px 10px;
+}
+
+.ChipDetailPopStyle .detailSTableAdvice dd textarea{
+	display:block;
+	line-height:18px;
+	border: none;
+	font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    color: #324F85;
+    resize: none;
+}
+
+.ChipDetailPopStyle .detailSTableAdvice .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableAdvice .TextBlack{
+	color:#000;
+}
+*/
+
+/***************************************************************
+* チップ詳細(小)　detailSTableMemo
+****************************************************************/
+.ChipDetailPopStyle .detailSTableMemo{
+	display:block;
+	width:355px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+}
+.ChipDetailPopStyle .detailSTableMemo li{
+	display:block;
+	width:355px;
+	border-radius:8px;
+}
+.ChipDetailPopStyle .detailSTableMemo dl{
+	display:block;
+	width:468px;
+}
+.ChipDetailPopStyle .detailSTableMemo dt,
+.ChipDetailPopStyle .detailSTableMemo dd{
+	display:block;
+	float:left;
+	line-height:59px;
+}
+.ChipDetailPopStyle .detailSTableMemo dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+	line-height:90px;
+}
+.ChipDetailPopStyle .detailSTableMemo dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableMemo dd{
+	width:284px;
+	font-size:14px;
+	line-height:29px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableMemo dd:last-child{
+	border:none;
+}
+
+.ChipDetailPopStyle .detailSTableMemo .TextareaBox{
+	padding:6px 10px;
+}
+
+.ChipDetailPopStyle .detailSTableMemo dd textarea{
+	display:block;
+	line-height:18px;
+	border: none;
+	font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    color: #324F85;
+    resize: none;
+}
+
+.ChipDetailPopStyle .detailSTableMemo .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableMemo .TextBlack{
+	color:#000;
+}
+/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 END */
+
+/***************************************************************
+* チップ詳細(小)　detailSTableCheck
+****************************************************************/
+.ChipDetailPopStyle .detailSTableCheck{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 START */
+	/*height:89px;*/
+	height:118px;
+	/* 2013/12/04 TMEJ 下村 タブレット版SMB チーフテクニシャン機能開発 END */
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 9px 0;
+	clear:both;
+}
+.ChipDetailPopStyle .detailSTableCheck li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-bottom:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableCheck li:first-child{
+	border-radius:8px 8px 0 0;
+}
+.ChipDetailPopStyle .detailSTableCheck li:last-child{
+	border-radius:0 0 8px 8px;
+	border:none;
+}
+.ChipDetailPopStyle .detailSTableCheck dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.ChipDetailPopStyle .detailSTableCheck dt,
+.ChipDetailPopStyle .detailSTableCheck dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.ChipDetailPopStyle .detailSTableCheck dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableCheck dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSTableCheck dd{
+	width:141px;
+	font-size:14px;
+	text-align:left;
+	color:#000;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSTableCheck dd span{
+	display:block;
+	padding:0 0 0 11px;
+}
+.ChipDetailPopStyle .detailSTableCheck dd:last-child{
+	width:142px;
+	border:none;
+}
+.ChipDetailPopStyle .detailSTableCheck .CheckBlue{
+	background:url(../Images/SC3240201/icon_check_blue.png) 119px 9px no-repeat;
+}
+
+.ChipDetailPopStyle .detailSTableCheck .CheckBlack{
+	background:url(../Images/SC3240201/icon_check_black.png) 119px 9px no-repeat;
+}
+
+.ChipDetailPopStyle .detailSTableCheck .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSTableCheck .TextBlack{
+	color:#000;
+}
+
+/***************************************************************
+* チップ詳細(小)　FooterButtonSet
+****************************************************************/
+.ChipDetailPopStyle #ChipDetailSContent .FooterButtonSet{
+	width:357px;
+	height:43px;
+	overflow:hidden;
+	display:block;
+	margin:10px 0 9px 0;
+	clear:both;
+}
+.ChipDetailPopStyle #ChipDetailSContent .FooterButtonLeftDiv{
+	float:left;
+	width:174px;
+	height:40px;
+	border-radius:3px;
+}
+.ChipDetailPopStyle #ChipDetailSContent .FooterButtonLeft{
+	background:url(../Images/SC3240201/a14_icn01.png) center center no-repeat;
+	float:left;
+	width:174px;
+	height:40px;
+	border-radius:3px;
+	box-shadow:0px 1px 0px #FFF;
+	border:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle #ChipDetailSContent .FooterButtonRightDiv{
+	float:right;
+	width:169px;
+	height:40px;
+	border-radius:3px;
+}
+.ChipDetailPopStyle #ChipDetailSContent .FooterButtonRight{
+	background:url(../Images/SC3240201/a14_icn02.png) center center no-repeat;
+	float:right;
+	width:169px;
+	height:40px;
+	border-radius:3px;
+	box-shadow:0px 1px 0px #FFF;
+	border:#bbbbbb 1px solid;
+}
+
+/***************************************************************
+* チップ詳細(小)　アクティブインジケーター
+****************************************************************/
+#DetailSActiveIndicator {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:289px;
+	left:174px;
+	width:38px;
+	height:38px;
+	z-index:10002;
+}
+#DetailSActiveIndicator.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+.ChipDetailPopStyle .detailSWorkTime{
+	display:block;
+	overflow:hidden;
+	width:355px;
+	height:29px;
+	border:#bbbbbb 1px solid;
+	border-radius:9px;
+	box-shadow:0px 1px 0px #FFF;
+	background-color:#FFF;
+	margin:10px 0 0 0;
+	clear:both;
+}
+.ChipDetailPopStyle .detailSWorkTime li{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+	border-radius:8px;
+}
+.ChipDetailPopStyle .detailSWorkTime dl{
+	display:block;
+	width:355px;
+	height:29px;
+	overflow:hidden;
+}
+.ChipDetailPopStyle .detailSWorkTime dt,
+.ChipDetailPopStyle .detailSWorkTime dd{
+	display:block;
+	float:left;
+	height:29px;
+	line-height:29px;
+}
+.ChipDetailPopStyle .detailSWorkTime dt{
+	width:70px;
+	font-size:11px;
+	text-align:right;
+	color:#666666;
+	border-right:#bbbbbb 1px solid;
+}
+.ChipDetailPopStyle .detailSWorkTime dt span{
+	display:block;
+	padding:0 10px 0 0;
+}
+.ChipDetailPopStyle .detailSWorkTime dd{
+	width:284px;
+	font-size:14px;
+	text-align:left;
+	color:#324f85;
+	position:relative;
+}
+.detailSWorkTime dd .detailSLeftArrow{
+	width:25px;
+	height:29px;
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	top:0; left:0;
+}
+.detailSWorkTime dd .detailSLeftArrow span{
+	display:block;
+	width:40px; height:40px;
+	border:1px solid #32476e;
+	background:#324f85;
+	transform:skew(55deg) rotate(342deg);
+	position:absolute;
+	top:7px; left:34px;
+}
+
+.detailSWorkTime dd .detailSInputWorkTimeDiv{
+	margin:0px 0px 0px 95px;
+	width:90px;
+	text-align:center;
+}
+
+.detailSWorkTime dd .detailSRightArrow{
+	width:25px;
+	height:29px;
+	display:block;
+	position:absolute;
+	overflow:hidden;
+	top:0; right:0;
+	border-radius:0 7px 7px 0;
+}
+.detailSWorkTime dd .detailSRightArrow span{
+	display:block;
+	width:40px; height:40px;
+	border:1px solid #32476e;
+	background:#324f85;
+	transform:skew(-55deg) rotate(17deg);
+	position:absolute;
+	top:7px; left:-52px;
+}
+
+.ChipDetailPopStyle .detailSWorkTime dd input{
+	display:block;
+	color:#324F85;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+}
+
+.ChipDetailPopStyle .detailSWorkTime .TextBlue{
+	color:#324f85;
+}
+
+.ChipDetailPopStyle .detailSWorkTime .TextBlack{
+	color:#000;
+}

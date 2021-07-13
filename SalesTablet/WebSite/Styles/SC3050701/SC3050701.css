@@ -1,0 +1,433 @@
+﻿/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SC3050701.css
+─────────────────────────────────────
+機能： コンテンツメニュー設定
+補足： 
+作成： 2012/12/18 TMEJ 宇野
+─────────────────────────────────────*/
+/*─────────────────
+    メインコンテンツフレーム
+──────────────────*/
+#contents 
+{
+    width:1024px;
+    height:655px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E6E6E6), to(#B7B7B7));
+}
+#mainblockContent .mainblockContentArea 
+{
+    width:984px;
+    height:610px;
+    border:#999 1px solid;
+    border-radius:8px;
+    background: -webkit-gradient(
+                    linear, 
+                    left top, 
+                    left bottom, 
+                    from(#FFFFFF), 
+                    color-stop(0.6, #FEFEFE), 
+                    color-stop(0.7, #F4F4F4), 
+                    to(#DBDBDB)
+                );
+    box-shadow:3px 3px 4px #666666;
+}
+#mainblockContent .mainblockContentAreaWrap 
+{
+    margin:10px 20px 20px 20px;
+}
+
+/*─────────────────
+    メインコンテンツ一覧上部
+──────────────────*/
+.upside 
+{
+    padding: 0px 15px 0px 5px;
+    position:relative;
+    top:-1px;
+    z-index:1;
+}
+.upside table 
+{
+    margin:0;
+    padding:0;
+    border:0;
+    border-collapse:collapse;
+}
+.upside table td 
+{
+    padding:5px 0;
+    text-align:left;
+    border:0;
+}
+.upside table td:nth-child(1) 
+{
+    width:220px;
+}
+.upside table td:nth-child(2) 
+{
+    width:295px;
+}
+
+/* 車種選択リスト */
+.vehicle 
+{
+    width:150px;
+    height:30px;
+}
+
+/*─────────────────
+    コンテンツメニュー設定一覧エリア
+──────────────────*/
+.contentsMenuListArea 
+{
+    position:relative;
+    top:-1px;
+    z-index:1;
+    padding:10px 5px;
+}
+
+/*─────────────────
+    コンテンツメニュー設定一覧ヘッダ
+──────────────────*/
+.contentsMenuListHead 
+{
+    height:36px;
+    position:relative;
+    top:1px;
+    z-index:1;
+}
+.contentsMenuListHead table 
+{
+    margin:0;
+    padding:0;
+    border:0;
+    border-collapse:collapse;
+}
+.contentsMenuListHead table th 
+{
+    font-size:14px;
+    font-weight:400;
+    color:#FFF;
+    height:34px;
+    border:#A5A5A5 1px solid;
+    background:-webkit-gradient(linear, left top, left bottom, from(#85898F), to(#676B73));
+    
+}
+.contentsMenuListHead table td 
+{
+    padding:3px 0;
+    text-align:center;
+}
+/* メニュー名 */
+.contentsMenuListHead table th:nth-child(1) 
+{
+    width:128px;
+}
+/* アイコン画像 */
+.contentsMenuListHead table th:nth-child(2) 
+{
+    width:194px;
+}
+/* 遷移先URL */
+.contentsMenuListHead table th:nth-child(3) 
+{
+    width:467px;
+}
+/* 表示順 */
+.contentsMenuListHead table th:nth-child(4) 
+{
+    width:54px;
+}
+/* 削除 */
+.contentsMenuListHead table th:nth-child(5) 
+{
+    width:75px;
+    border-right:none;
+}
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*─────────────────
+    コンテンツメニュー設定一覧明細
+──────────────────*/
+.contentsMenuList
+{
+    height:502px;
+    overflow-y:scroll; 
+    overflow:scroll:touch;
+}
+.contentsMenuList table
+{
+    margin:0;
+    padding:0;
+    border:0;
+    border-collapse:collapse;
+}
+.contentsMenuList table th 
+{
+    font-size:14px;
+    font-weight:400;
+    color:#FFF;
+    height:34px;
+    border-right:#A5A5A5 1px solid;
+    border-left:#FFF 1px solid;
+    background:-webkit-gradient(linear, left top, left bottom, from(#85898F), to(#676B73));
+}
+.contentsMenuList table td
+{
+    padding:5px 0;
+}
+.contentsMenuList table tr:nth-child(odd)  
+{
+    background:#FFFFFF;
+}
+.contentsMenuList table tr:nth-child(even)  
+{
+    background:#DBDBDB;
+}
+/* メニュー名 */
+.contentsMenuList table td:nth-child(1)
+{
+    width:129px;
+    text-align:center;
+}
+/* メニュー名(入力欄) */
+.contentsMenuList table td:nth-child(1) input 
+{
+    padding:0 5px;
+    margin:0 auto;
+    width:108px;
+    height:30px;
+    border:#BBBBBB 1px solid;
+    border-radius:4px;
+    background:#FFF;
+    font-size:14px;
+    text-align:left;
+    color:#333;
+    line-height:20px;
+}
+/* アイコン画像 */
+.contentsMenuList table td:nth-child(2)
+{
+    width:194px;
+}
+/* アイコン */
+.contentsMenuList table td:nth-child(2) img
+{
+    width:54px;
+    height:32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: none;
+    float:left;
+    border:none;
+}
+/* アイコン画像(ファイル選択) */
+.contentsMenuList table td:nth-child(2) input 
+{
+    width:130px;
+    padding-top:6px;
+    /* 選択したファイル名が見えないように... */
+    color:Transparent;
+}
+.iconArea
+{
+    width:190px;
+    margin-left:5px;
+}
+.frameOn 
+{
+    float:left;
+    margin: 0;
+    width:52px;
+    height:30px;
+    border:#BBBBBB 1px solid;
+}
+.frameOff 
+{
+    float:left;
+    margin: 0;
+    width:54px;
+    height:32px;
+    border:none;
+}
+.reference 
+{
+    float:right;
+    width:130px;
+    margin-left:0;
+}
+/* 遷移先URL */
+.contentsMenuList table td:nth-child(3)
+{
+    width:468px;
+    text-align:center;
+}
+/* 遷移先URL(入力欄) */
+.contentsMenuList table td:nth-child(3) input 
+{
+    padding:0 5px;
+    margin:0 auto;
+    width:446px;
+    height:30px;
+    border:#BBBBBB 1px solid;
+    border-radius:4px;
+    background:#FFF;
+    font-size:14px;
+    text-align:left;
+    color:#333;
+    line-height:20px;
+}
+/* 表示順 */
+.contentsMenuList table td:nth-child(4) 
+{
+    width:55px;
+    text-align:center;
+}
+/* 表示順(入力欄) */
+.contentsMenuList table td:nth-child(4) input 
+{
+    padding:0 5px;
+    margin:0 auto;
+    width:30px;
+    height:30px;
+    border:#BBBBBB 1px solid;
+    border-radius:4px;
+    background:#FFF;
+    font-size:14px;
+    text-align:right;
+    color:#333;
+    line-height:20px;
+}
+/* 削除 */
+.contentsMenuList table td:nth-child(5) 
+{
+    width:75px;
+    padding-left:3px;
+}
+/* 削除ボタン */
+.del 
+{
+    width:65px;
+    height:30px;
+}
+.del a 
+{
+    width:60px;
+    height:30px;
+    border:#1F2124 1px solid;
+    border-radius:6px;
+    text-decoration:none;
+    display:block;
+    box-shadow:0px 1px 1px #595E66;
+    font-size:13px;
+    font-weight:400;
+    text-shadow:0px -1px 0px #151A27;
+    line-height:30px;
+    color:#FFFFFF;
+    text-align: center;
+    background:-webkit-gradient(linear, left top, left bottom, from(#aeb2b8), to(#6d7580));
+    float:right;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hidden
+{
+    display:none;
+}
+.visible
+{
+    display:block;
+}
+
+/*─────────────────
+    フッター
+──────────────────*/
+#SaveButtonLink
+{
+	background-repeat:no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7c98ec),
+            color-stop(0.50, #426ae4),
+            color-stop(0.51, #1e4ee0),
+						to(#1e4de1));
+	bottom:15px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	text-shadow:0px -1px 1px #000000;
+	width:75px; 
+	height:46px;
+	text-decoration:none;
+}
+
+#SaveButtonLabel
+{
+	display: block;
+	width: 75px;
+	bottom: 15px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight:600;
+	text-shadow: 0px -1px 1px black;
+	padding:12px 0px 6px;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#FooterOriginalButton
+{
+    height: 24px;
+    border: none;
+    position: relative;
+    float: right;
+}
+
+/*─────────────────
+    ローディングアイコン
+──────────────────*/
+/* オーバーレイ */
+#registOverlayBlack
+{
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlack.open 
+{
+    opacity:0.6;
+}
+
+/* アイコン */
+#processingServer
+{
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:300px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+#processingServer.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}

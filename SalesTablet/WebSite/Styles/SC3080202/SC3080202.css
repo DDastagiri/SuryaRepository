@@ -1,0 +1,1901 @@
+@charset "utf-8";
+
+
+#custDtlPage2 #scNscCustomerLeftArea {
+	width:483px;
+	float:left;
+}
+#custDtlPage2 #scNscCustomerRightArea {
+	width:483px;
+	float:right;
+}
+#custDtlPage2 .scNscCustomerInfoArea h4{
+	font-size:0.9em;
+	margin-bottom:7px;
+}
+
+
+
+#custDtlPage2 #scNscLeftArea .contentTitle,
+#custDtlPage2 #scNscRightArea .contentTitle  {
+	font-size:16px;
+	font-weight:bold;
+	padding:3px 0 3px 16px;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	TCV N-SC-50
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#custDtlPage2 #scNscOneBoxContentsArea {
+	width:982px;
+}
+
+#custDtlPage2 .scNscLeftContentsBox {
+	width:464px;
+	height:557px;
+	border-right:1px solid #FFF;
+	margin:9px 0 14px 14px;
+	padding:2px 12px 5px 0;
+	float:left;
+}
+
+#custDtlPage2 .scNscRightContentsBox {
+	width:462px;
+	height:557px;
+	border-left:1px solid #ccc;
+	margin:9px 13px 14px 0;
+	padding:2px 0 5px 15px;
+	float:right;
+}
+
+/* 最新活動 */
+
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+#custDtlPage2 .scNscNewActionBox {
+	padding:2px 0 10px;
+	margin:0 0 5px;
+	border-bottom:1px dotted #CCC;
+}
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+
+#custDtlPage2 .scNscNewActionBox h3 {
+	margin:0 0 8px;
+	font-size:14px;
+	color:#333;
+}
+#custDtlPage2 .scNscNewActionBox h3.Blue{
+	color:#375388;
+}
+
+#custDtlPage2 .scNscNewActionBox table 
+/* 2013/12/09 TCS 市川 Aカード情報相互連携開発 START */
+,#AcardNumOrContractNumTitle 
+,#AcardNumOrContractNumValue 
+{
+	color:#666;
+	font-size:14px;
+	height:23px;
+	border-spacing:0px;
+	font-weight:normal;
+}
+/* 2013/12/09 TCS 市川 Aカード情報相互連携開発 END */
+
+#custDtlPage2 .scNscNewActionBox table td.ActionBoxName {
+    width:100px;
+}
+
+#custDtlPage2 .scNscNewActionBox table td.ActionBoxTime {
+    width:137px;
+}
+
+#custDtlPage2 .scNscNewActionBox table td.ActionBoxMember {
+    width:38px;
+	background:url(../images/SC3080202/scNscIconMember.png) no-repeat 0 0;
+	padding:2px 0 0 24px;
+}
+
+#custDtlPage2 .scNscNewActionBox table td.ActionBoxHuman {
+    width:146px;
+	background:url(../images/SC3080202/scNscIconHuman.png) no-repeat 0 2px;
+	padding:2px 0 0 19px;
+}
+
+/* 希望車種 */
+
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+#custDtlPage2 .scNscSelectCarArea {
+	margin:0 0 4px;
+}
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+
+#custDtlPage2 .scNscSelectCarArea h3 {
+	width:66px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+	margin:0px 0px 15px 0px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+	font-size:14px;
+	color:#333;
+	float:left;
+	line-height:15px;
+}
+
+#custDtlPage2 .scNscSelectCarArea ul.scNscSelectCarButtonList {
+	width:398px;
+	float:left;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#custDtlPage2 .scNscSelectCarArea ul.scNscSelectCarButtonList li {
+	background:url(../images/SC3080202/scNscIconSelectCarButtonOff.png) no-repeat;
+	width:25px;
+	text-align:center;
+	color:#404040;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+	margin:0px 3px 0px 0px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+	font-size:12px;
+	padding:4px 0 0;
+	height:21px;
+	float:left;
+	/* font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3; */
+	
+}
+
+#custDtlPage2 .scNscSelectCarArea ul.scNscSelectCarButtonList li.scNscSelectCarButton.On.NotArrow {
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+    margin-left:18px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+}
+
+#custDtlPage2 .scNscSelectCarArea ul.scNscSelectCarButtonList li.scNscSelectCarButton.NotArrow {
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+    margin-left:18px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+}
+
+#custDtlPage2 .scNscSelectCarArea  ul.scNscSelectCarButtonList li.scNscSelectCarButton.On {
+	background:url(../images/SC3080202/scNscIconSelectCarButtonOn.png) no-repeat;
+	width:25px;
+	text-align:center;
+	color:#FFF;
+	font-weight:bold;
+	/*2013/12/16 TCS 市川 Aカード情報相互連携開発 DELETE */
+	font-size:12px;
+	padding:4px 0 0;
+	height:21px;
+	float:left;
+}
+
+#custDtlPage2 .scNscSelectCarArea  ul.scNscSelectCarButtonList li.scNscSelectCarButtonArrow {
+	background:url(../images/SC3080202/ListArrowGr.png) no-repeat 0 5px;
+	width:14px;
+	margin:0;
+	font-size:12px;
+	padding:0;
+	height:25px;
+	float:left;
+}
+
+#custDtlPage2 .scNscSelectCarArea  ul.scNscSelectCarButtonList li.scNscSelectCarButtonArrowFor {
+	background:url(../images/SC3080202/ListArrowGr.png) no-repeat 0 5px;
+	width:10px;
+	/*2013/12/16 TCS 市川 Aカード情報相互連携開発 DELETE */
+	font-size:12px;
+	padding:0;
+	height:25px;
+	float:left;
+	padding:0;
+	transform: rotateZ(180deg);
+}
+
+#custDtlPage2 .scNscSelectCarArea  ul.scNscSelectCarButtonList li.plus {
+	/*2013/12/16 TCS 市川 Aカード情報相互連携開発 DELETE */
+	padding:6px 0 0;
+}
+
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+#scNscSelectCarAreaCover
+{
+    position:absolute;
+    height:168px;
+    width:464px;
+    z-index:4;
+    background: url(../images/progress.gif) rgba(255,255,255,0.7) no-repeat center center;
+    background-size:22px 22px;
+}
+
+.scNscSelectCarButtonList .NotMost
+, .scNscSelectCarButtonArrowFor 
+, .plus 
+, .scNscSelectCarButtonArrow 
+{
+	border-style:solid;border-width:2px;border-radius:7px;
+	border-color:white;
+}
+.scNscSelectCarButtonList .Most 
+{
+	border-style:solid;border-width:2px;border-radius:7px;
+	border-color:red;
+}
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+
+#custDtlPage2 .scNscCarPictureArea {
+	width:265px;
+	height:112px;
+	float:left;
+	padding:5px 0 0 0
+}
+
+#custDtlPage2 .scNscCarStatusArea {
+	width:190px;
+	float:right;
+}
+
+#custDtlPage2 .scNscCarStatusArea ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#custDtlPage2 .scNscCarStatusArea li {
+	/* font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3; */
+	font-size:12px;
+	color:#000;
+	margin:0 0 2px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+	padding:3px 0 0 22px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+}
+
+#custDtlPage2 .scNscCarStatusArea li.scNscCarNameLogo {
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+	margin:0px 0px 0px -19px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+}
+
+#custDtlPage2 .scNscCarStatusArea li.scNscCarIconStar {
+	background:url(../images/SC3080202/scNscStatusIconStar.png) no-repeat;
+	height:18px;
+    width:165px;
+}
+#custDtlPage2 .scNscCarStatusArea li.scNscCarIconColor {
+	background:url(../images/SC3080202/scNscStatusIconColor.png) 0 2px no-repeat;
+	margin:0;
+	height:18px;
+	width:165px;
+}
+#custDtlPage2 .scNscCarStatusArea li.scNscCarIconPrice {
+	background:url(../images/SC3080202/scNscStatusIconPrice.png) no-repeat 0 6px;
+	font-size:16px;
+	padding:2px 0 0 22px;
+}
+#custDtlPage2 .scNscCarStatusArea li span.scNscCarIconCar {
+	background:url(../images/SC3080202/scNscStatusIconCar.png) no-repeat 0 -2px;
+	font-size:14px;
+	color:#375388;
+	margin:0 0 0 70px;
+	padding:2px 0 0 38px;
+	/* font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3; */
+}
+#dispSelectedPicture 
+{
+    height:112px;
+    margin:0 44px 0 43px;
+}
+#dispSelectedLogo
+{
+    height:27px;
+}
+
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+#dispSelectedMostPreferred{
+	width:190px;
+	height:17px;
+	padding-top:0px;
+	padding-left:20px;
+	position:relative;
+	left:270px;
+	top:10px;
+	font-size:9pt;
+}
+.scNscSelectCarArea .NotMost { background:url(../Images/SC3080202/scNscStatusIconNotMost.png) no-repeat 0px -1px; }
+.scNscSelectCarArea .Most { background:url(../Images/SC3080202/scNscStatusIconMost.png) no-repeat 0px -1px; }
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+
+/* 競合車種 */
+
+/* 全体枠 */
+#custDtlPage2 #scNscCompeCarArea { position:relative;  }
+#custDtlPage2 .scNscCompetingCarArea { padding:0; margin:0; }
+
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea #scNscCompetingCarAreaInner {  z-index:4; position: absolute; -webkit-transition: height 300ms ease-in-out 0; }
+/* 通常サイズ */
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea #scNscCompetingCarAreaInner.normalMode {
+	background-color:#e4e4e4;
+	padding:6px;
+	height:20px;
+	margin:0 0 10px;
+	width:452px;
+}
+
+/*拡大サイズ */
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea #scNscCompetingCarAreaInner.bigMode {
+	background-color:#e4e4e4;
+	padding:6px;
+	margin:0 0 15px;
+	z-index:100;
+	height:200px;
+	width:452px;
+	color:#666666;
+}
+
+#ScNscCompeCarScrollPane { height: 200px; margin:0 0 0 83px; }
+
+
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea table { border-collapse: collapse; margin:0 0 0 0px; position:relative; display:table; }
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .normalMode table tr { display: none; }
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .normalMode table tr:nth-child(1) { display: table-row; }
+
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea td {
+	height:20px;
+	font-size:12px;
+	border:0;
+	font-weight:bold;
+	margin:0 0 15px;
+	color:#333;
+}
+
+/* リストタイトル */
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea #scNscTitleCompeCar.titleCompeCar {
+	width:80px;
+	font-size:14px;
+	font-weight:bold;
+	position:absolute;
+	top:5px;
+	left:3px;
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+	/* $01 No.184 エリア拡大時の文字色対応 */
+	color: #333;
+}
+
+/* 競合車種メーカー名 */
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea  td.titleCompeMaker {}
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea  td.titleCompeSp    {}
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea  td.titleCompeModel {}
+
+
+
+
+/*
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr { display: none; }
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(1),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(2),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(3),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(4),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(5),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(6),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(7),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(8),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(9),
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea .bigMode table tr:nth-child(10)
+{
+    display: table-row;
+}
+*/
+
+/* 競合車種他Ｎ件 */
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea #scNscCompetingCarAreaInner p.moreCarEvent 
+{
+    display:block; 
+    padding:4px 0px 4px;
+    /* $01 No.190 10台以上の際の文字の配置修正
+    width: 70px;*/
+    width: 80px;
+    position:absolute; 
+    top:4px;
+    right:5px;
+    text-align:right;
+    font-size:12px;
+    -webkit-transition: top 300ms ease-in-out 0;
+    font-weight:normal;
+    color:#999;
+}
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea #scNscCompetingCarAreaInner p.moreCarEvent a { color:#999; }
+#custDtlPage2 #scNscCompeCarArea .scNscCompetingCarArea #scNscCompetingCarAreaInner.bigMode p.moreCarEvent { top:183px; }
+
+
+/* 条件 */
+
+#custDtlPage2 .scNscCarConditionSelectArea {
+	border-top:1px solid #CCC;
+	/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+	padding:6px 0 0;
+	/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+	position:relative;
+	top:0px;
+	margin:19px 0 1px 0;
+}
+#custDtlPage2 .scNscCarConditionSelectArea02 {
+	margin:49px 0 1px 0;
+}
+
+#custDtlPage2 .scNscCarConditionSelectArea h3 {
+	margin:4px 0 12px;
+	font-size:14px;
+	color:#666;
+/* 2013/12/09 TCS 市川 Aカード情報相互連携開発 START */
+	width:70px;
+	text-align:left;
+/* 2013/12/09 TCS 市川 Aカード情報相互連携開発 END */
+}
+
+#custDtlPage2 .scNscCarConditionSelectButtonCancel {
+	width:80px;
+	height:25px;
+	padding:0;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	border-radius: 5px;
+	font-size:12px;
+	color:#404040;
+	text-align:center;
+	display:block;
+	line-height:25px;
+	position:absolute;
+/* 2013/12/09 TCS 市川 Aカード情報相互連携開発 START */
+	left: 75px;
+/* 2013/12/09 TCS 市川 Aカード情報相互連携開発 END */
+/* 2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 START */
+	top: 6px;
+/* 2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 START */
+}
+
+#custDtlPage2 .scNscCarConditionSelectButtonComplete {
+	width:48px;
+	height:25px;
+	padding:0;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	border-radius: 5px;
+	font-size:12px;
+	color:#404040;
+	text-align:center;
+	display:block;
+	line-height:25px;
+	position:absolute;
+	left: 414px;
+	/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+	top: 6px;
+	/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+}
+
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+#custDtlPage2 .scNscCarConditionSelectList {
+	margin:0 0 0;
+}
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+
+#custDtlPage2 .scNscCarConditionSelectList h4 {
+	float:left;
+	width:50px;
+	font-size:12px;
+	color:#666;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+	height:32px;
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+	line-height:26px;
+	text-align:right;
+}
+
+#custDtlPage2 .scNscCarConditionSelectList ul {
+	width:402px;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	float:right;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li {
+	font-weight:bold;
+	padding:4px 0;
+	text-align:center;
+	color:#7f7f7f;
+	text-shadow: 0px 1px 1px #FFF;
+	float:left;
+	font-size:14px;
+	line-height:14px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:402px;
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li.Left {
+	border-top:1px solid #9b9b9b;
+	border-left:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	border-bottom-left-radius:12px;
+	-moz-border-radius-topleft: 12px;
+	border-top-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li.Center {
+	border-top:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li.Right {
+	border-top:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	border-bottom-right-radius:12px;
+	-moz-border-radius-topright: 12px;
+	border-top-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+/* on青 */
+
+#custDtlPage2 .scNscCarConditionSelectList li.Left.OnBlue {
+	border-top:1px solid #18458f;
+	border-left:1px solid #18458f;
+	border-bottom:1px solid #568bd7;
+	border-right:1px solid #9b9b9b;
+	border-bottom-left-radius:12px;
+	-moz-border-radius-topleft: 12px;
+	border-top-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e5aa5), 
+							color-stop(0.50, #407ee6),
+							color-stop(0.501, #508be9),
+							to(#568bd7));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li.Center.OnBlue {
+	border-top:1px solid #18458f;
+	border-right:1px solid #9b9b9b;
+	border-bottom:1px solid #568bd7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e5aa5), 
+							color-stop(0.50, #407ee6),
+							color-stop(0.501, #508be9),
+							to(#568bd7));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+	
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li.Right.OnBlue {
+	border-top:1px solid #18458f;
+	border-right:1px solid #18458f;
+	border-bottom:1px solid #568bd7;
+	border-bottom-right-radius:12px;
+	-moz-border-radius-topright: 12px;
+	border-top-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e5aa5), 
+							color-stop(0.50, #407ee6),
+							color-stop(0.501, #508be9),
+							to(#568bd7));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+/* onグレー */
+
+#custDtlPage2 .scNscCarConditionSelectList li.Left.OnGrey {
+	border-top:1px solid #4c4d4f;
+	border-left:1px solid #4c4d4f;
+	border-bottom:1px solid #4c4d4f;
+	border-right:1px solid #9b9b9b;
+	border-bottom-left-radius:12px;
+	-moz-border-radius-topleft: 12px;
+	border-top-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+	background: -moz-linear-gradient(top, #a7aaaf, #6b6f7a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a7aaaf), to(#6b6f7a));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li.Center.OnGrey {
+	border-top:1px solid #4c4d4f;
+	border-bottom:1px solid #4c4d4f;
+	border-right:1px solid #9b9b9b;
+	background: -moz-linear-gradient(top, #a7aaaf, #6b6f7a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a7aaaf), to(#6b6f7a));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+#custDtlPage2 .scNscCarConditionSelectList li.Right.OnGrey {
+	border-top:1px solid #4c4d4f;
+	border-bottom:1px solid #4c4d4f;
+	border-right:1px solid #4c4d4f;
+	border-bottom-right-radius:12px;
+	-moz-border-radius-topright: 12px;
+	border-top-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+	background: -moz-linear-gradient(top, #a7aaaf, #6b6f7a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a7aaaf), to(#6b6f7a));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+/* プロセスとステータス */
+
+#custDtlPage2 .scNscProcessAndStatusArea {
+	margin:0 0 15px;
+}
+
+#custDtlPage2 .scNscProcessAndStatusTitleArea {
+	margin:10px 0 4px;
+}
+
+#custDtlPage2 .scNscProcessAndStatusTitleArea h3.scNscTitleProcess {
+	width:200px;
+	font-size:14px;
+	color:#666;
+	float:left;
+}
+
+#custDtlPage2 .scNscProcessAndStatusTitleArea h3.scNscTitleStatus {
+	width:114px;
+	font-size:14px;
+	color:#666;
+	float:right;
+}
+
+#custDtlPage2 .scNscProcessAndStatusBox 
+{
+    position:relative;
+	border:1px solid #CCC;
+	background: -moz-linear-gradient(top, #fafafa, #ebebeb);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ebebeb));
+	padding:5px 10px 6px 10px;
+	margin:0 0 0 0;
+}
+
+#custDtlPage2 .scNscProcessIconList 
+{
+    /* ' 2012/02/29 TCS 小野 【SALES_2】 START */
+	/*width:330px;*/
+	/*border-right:1px solid #CCC;*/
+	/*padding:0 5px;*/
+	/*float:left;*/
+	width:660px;
+	/* ' 2012/02/29 TCS 小野 【SALES_2】 END */
+}
+
+/* ' 2012/02/29 TCS 小野 【SALES_2】 START */
+#custDtlPage2 .dispProcessArea
+{
+    width: 330px;
+    border-right: 1px solid #CCC;
+    padding: 0 5px 0 5px;
+    float: left;
+    height: 57px;
+}
+
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 START */
+#custDtlPage2 .dispProcessAreaInner
+{
+    width: 310px;
+    float: left;
+    height: 57px;
+    overflow: hidden;
+}
+
+/* ' 2012/02/29 TCS 小野 【SALES_2】 END */
+
+#custDtlPage2 .scNscProcessIconList ul.scNscProcessIconListUl {
+	margin:0;
+	padding:6px;
+	list-style-type:none;
+}
+
+#custDtlPage2 .scNscProcessIconList ul.scNscProcessIconListUl li {
+	font-size:12px;
+	color:#333333;
+	text-align:center;
+	width:70px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	font-weight:bold;
+	/* ' 2012/02/29 TCS 小野 【SALES_2】 START */
+	/* vertical-align:middle; */
+    vertical-align:bottom;
+    /* ' 2012/02/29 TCS 小野 【SALES_2】 END */
+}
+
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListDocuments { background-repeat: no-repeat; }
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListCar01     { background-repeat: no-repeat; }
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListCar02     { background-repeat: no-repeat; }
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListPrice     { background-repeat: no-repeat; }
+/* ' 2012/02/29 TCS 小野 【SALES_2】 START */
+#custDtlPage2 .scNscProcessIconList li.ProcessBookedAfterList      { background-repeat: no-repeat; }
+
+#custDtlPage2 .scNscProcessIconList li.On span{
+	color:#adadad;
+}
+
+#custDtlPage2 .scNscProcessIconList li .ProcessBookedAfterNoUse.On 
+{
+    width: 68px;
+    height: 37px;
+    position: absolute;
+    top: 2px;
+	background:url(../images/SC3080202/NoUse_Icon01.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	z-index:100
+}
+
+#custDtlPage2 .scNscProcessIconList li span{
+	/* font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro"; */
+	font-size:12px;
+	display:block;
+	width:68px;
+	position:relative;
+	top:16px;
+	color:#333333;
+	text-align:center;
+}
+
+#custDtlPage2 .RightArrow
+{
+    position: absolute;
+    left: 438px;
+    top: 20px;
+    background: url(../images/SC3080201/nsc52RightArrow.png) 0 0 no-repeat;
+    width: 22px;
+    height: 30px;
+    z-index: 10;
+    background-position-x: 6px;
+    background-position-y: 8px;
+    display: none;
+}
+
+#custDtlPage2 .LeftArrow
+{
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    background: url(../images/SC3080201/nsc52LeftArrow.png) 0 0 no-repeat;
+    width: 22px;
+    height: 30px;
+    z-index: 10;
+    background-position-x: 6px;
+    background-position-y: 8px;
+    display: none;
+}
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 END */
+
+/* ' 2012/02/29 TCS 小野 【SALES_2】 END */
+/*
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListDocuments.On {background:url(../images/SC3080202/scNscProcessIconDocumentsOn.png) no-repeat;}
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListCar01.On {background:url(../images/SC3080202/scNscProcessIconCar01On.png) no-repeat;}
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListCar02.On {background:url(../images/SC3080202/scNscProcessIconCar02On.png) no-repeat;}
+#custDtlPage2 .scNscProcessIconList li.scNscProcessIconListPrice.On {background:url(../images/SC3080202/scNscProcessIconPriceOn.png) no-repeat;}
+*/
+
+#custDtlPage2 .scNscStatusIconList {
+	width:89px;
+	text-align:center;
+	float:right;
+	padding:5px 0 0 8px;
+}
+
+/* メモ */
+
+#custDtlPage2 .scNsc50Memo {
+	border:1px solid #CCC;
+	background: -moz-linear-gradient(top, #fafafa, #ebebeb);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ebebeb));
+	border-radius: 3px;
+	border-radius: 3px; 
+	-moz-border-radius: 3px;
+	padding:3px 15px 15px;
+}
+
+#custDtlPage2 .scNsc50Memo h3 {
+	color:#666;
+	font-size:16px;
+	margin:3px 0 5px;
+	text-align:center;
+}
+
+#custDtlPage2 .scNsc50MemoArea {
+	border:1px solid #CCC;
+	background-color:#FFF;
+}
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 START */
+#custDtlPage2 .scNsc50MemoTop {
+	height:110px;/*  2013/12/09 TCS 市川 Aカード情報相互連携開発 */
+	-moz-box-shadow: 0px 3px 3px #999;
+	box-shadow: 0px 5px 5px #d7d7d7;
+	overflow:auto;
+}
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 END */
+#custDtlPage2 .scNsc50MemoBottom {
+	height:195px;
+	overflow:auto;
+}
+
+#custDtlPage2 .scNsc50MemoInBox {
+	margin:10px 16px 10px 10px;
+}
+#custDtlPage2 .InBoxMemo {
+	margin-top:5px;
+}
+
+#custDtlPage2 .scNsc50MemoInBox h4 {
+	display:block;
+	width:30px;
+	position:relative;
+	top:5px; left:370px;
+	font-size:12px;
+	margin-bottom:-20px;
+	color:#666;
+	font-weight:normal;
+	/* 2012/03/29 TCS 河原 【SALES_2】 START */
+	/* z-index:350; */
+	/* 2012/03/29 TCS 河原 【SALES_2】 END */
+	text-align:right;
+}
+
+#custDtlPage2 .scNsc50MemoInBox ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#custDtlPage2 .scNsc50MemoInBox ul.DottedBoder li{
+	position:relative;
+	border-top:none;
+	border-bottom:#ccc dashed 1px;
+	padding:3px 0;
+	font-size:12px;
+	/*height:36px;*/
+	display:block;
+}
+
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 START */
+#custDtlPage2 .scNsc50MemoInBox ul.DottedBoder .MemoHisDate {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    color: #333333;
+    width: 55px;
+    text-align: right;   
+}
+#custDtlPage2 .scNsc50MemoInBox ul.DottedBoder .MemoHisStaff {
+    position: absolute;
+    top: 2px;
+    right: 55px;
+    color: #333333;
+    width: 70px; 
+}
+#custDtlPage2 .scNsc50MemoInBox ul.DottedBoder .MemoHisStaffIcon {
+    position: absolute;
+    top: 0px;
+    right: 128px;
+    width: 18px;
+    height: 22px;
+}
+#custDtlPage2 .scNsc50MemoInBox ul.DottedBoder .MemoHisText {
+    width: 250px;
+    margin: 0px;
+    display: block;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 END */
+
+#custDtlPage2 .scNsc50MemoInBox .AddMessage {
+	position:relative;
+	z-index:10;
+	top:0px; left:10px;
+	width:388px;
+	padding:10px 0px 0px 0px;
+    box-sizing:border-box;
+}
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 START */
+#custDtlPage2 .memoTextBoxInner {
+ height:80px;  /* 2013/12/09 TCS 市川 Aカード情報相互連携開発 */
+ box-sizing:border-box; position:relative; 
+ }
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 END */
+#custDtlPage2 #todayMemoTextBox 
+{
+    font-size:12px;
+    line-height:15px;
+    min-height:150px;
+    background-color:Transparent;
+    border:none;
+    outline:none;
+    box-sizing:border-box;
+    width:100%;
+    padding:0px 30px 0px 0px;
+    margin:0px;
+    overflow:hidden;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+/*    background:url(../images/SC3080202/nsc50borderImage.gif) repeat;
+    background-position::0px -10px; */
+    position:relative; top:0px; left:0px;
+
+}
+
+/* ポップアップ
+///////////////*/
+#custDtlPage2 #activityPop_header{
+    display:none;
+}
+
+/*$01 No.169*/
+/*#custDtlPage2 #activityPop_content { position: absolute; top:100px; left:30px; display:none; z-index:500; }*/
+#custDtlPage2 #activityPop_content { position: absolute; top:75px; left:15px; display:none; z-index:500; }
+#custDtlPage2 #activityPop_content .popWind {
+	display:block;
+	position:relative;
+	width:375px;
+	height:300px;
+	z-index:500;
+}
+
+#custDtlPage2 #activityPop_content .popWind .PopUpBtn02{
+	position:absolute;
+	z-index:210;
+	top:3px;
+	left:0;
+}
+
+#custDtlPage2 #activityPop_content .popWind .PopUpBtn {
+    position: relative;
+    height: 40px;
+    color: #fff;
+    text-shadow: -1px -1px 0 #434b57;
+    text-align: center;
+    border-top: solid 1px #bec5cf;
+    border-bottom: solid 1px #3f4e63;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #acb9c9), color-stop(0.5, #8395af), color-stop(0.5, #7388a5), color-stop(1, #7488a1));
+}
+#custDtlPage2 #activityPop_content .popWind .PopUpBtn li { list-style: none; }
+
+
+#custDtlPage2 #activityPop_content .popWind .PopUpBtn02 .buttonA {
+	position:absolute;
+	top:6px; left:3px;
+	width:93px;
+	height:31px;
+	overflow:hidden;
+    font-size: 12px;
+}
+#custDtlPage2 #activityPop_content .popWind .PopUpBtn01 .buttonA .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:28px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#4f5769),
+						color-stop(0.1, #4f5769),
+						color-stop(0.9, #000b29),
+						to(#000b29));
+	z-index:1;
+}
+#custDtlPage2 #activityPop_content .popWind .PopUpBtn02 .buttonA a{
+	position:absolute;
+	left:13px;
+	display:block;
+	padding:9px 2px 8px;
+	width:74px;
+	z-index:2;
+	font-size:12px; line-height:12px;
+	color:#FFFFFF;
+	border:inset 1px #383238;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4f5769), to(#000b29));
+	border-left:none;
+}
+#custDtlPage2 #activityPop_content .popWind .PopUpBtn02 .title{
+	position:absolute;
+	top:4px; left:6px;
+	font-size:20px;
+	color:#FFFFFF;
+	display:block;
+	font-weight:bold;
+	width:364px;
+	text-align:center;
+}
+
+
+
+#custDtlPage2 #activityPop_content .popWind .baseWind1 .box {
+	position:absolute;
+	width:374px; height:295px;
+	border-radius: 9px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+						color-stop(0.075, #2a3445),
+						color-stop(0.075, #0f1623),
+						to(#030b19));
+	/*box-shadow:inset 0px 1px 0px #a6a9b4;*/
+	z-index:3;
+}
+#custDtlPage2 #activityPop_content .popWind .baseWind1 .boxBoder{
+	position:absolute;
+	padding:1px;
+	width:374px; height:297px;
+	border-radius: 9px;
+	background:#000;
+	z-index:3;
+		box-shadow: 8px 8px 15px rgba(0,0,0,0.4);
+}
+
+#custDtlPage2 #activityPop_content .popWind .baseWind1 .fuki{
+	display:block;
+	position:absolute;
+	left:1px;
+	top:1px;
+	background: -webkit-gradient(linear, left top, right bottom, from(#c5c6c8),
+	color-stop(0.4, #676e80),
+	to(#6e7585));
+	box-shadow:inset 1px 1px 0px #a6a9b4;
+	width:30px;
+	height:30px;
+	z-index:2;
+}
+#custDtlPage2 #activityPop_content .popWind .baseWind1 .fukiBoder{
+	display:block;
+	position:absolute;
+	left:12px;
+	top:-10px;
+	background:#000000;
+	width:32px;
+	height:32px;
+	z-index:2;
+	transform: rotate(45deg);
+}
+
+/* 活動履歴のデータリストを囲う枠 */
+#custDtlPage2 #activityPop_content .popWind .dataWind1{
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 43px;
+    width: 362px;
+    height: 247px;
+    border-radius: 7px;
+    box-shadow: inset 0px 3px 3px #333333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+						color-stop(0.7, #fefefe),
+						to(#e6e6e6));
+    z-index: 4;
+    box-sizing: border-box;
+    /*&01 No.171*/
+    /*padding:13px 10px;*/
+    padding: 4px 10px 8px 10px;
+}
+
+/* 活動履歴のスクロールエリア */
+/*&01 No.171*/
+/*#custDtlPage2 #activityPop_content .popWind .dataWind1 .activityPopScrollWrap { height:230px; box-sizing:border-box; }*/
+#custDtlPage2 #activityPop_content .popWind .dataWind1 .activityPopScrollWrap { height:242px; box-sizing:border-box; }
+/* UL */
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul
+{
+    display: block;
+    border-radius: 8px;
+    border: #bbbbbb 1px solid;
+    /*&01 No.171 以下追加*/
+    top: 6px;
+    bottom: 6px;
+    position: relative;
+}
+/* リスト共通 */
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul li.activityListItem
+{
+	/* font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3; */
+	border-bottom:#bbbbbb 1px solid;
+	padding:12px 0 10px 0;
+	font-size:16px;
+	line-height:18px;
+	height:18px;
+	position:relative;
+	padding-left:47px;
+	background:#FFF;
+}
+/* リスト最終行 */
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul li.activityListItem:last-child 
+{ 
+    border-bottom:none; 
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+}
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul li.activityListItem:first-child 
+{
+    border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+ }
+#custDtlPage2 li.activityListItem .crActName, #custDtlPage2 li.activityListItem .crActStatus,li.activityListItem .crActDate 
+{ 
+    display:block; 
+    float:left; 
+    box-sizing:border-box; 
+    color:#aaaaaa;
+}
+/* 各カラムのスタイル */
+#custDtlPage2 li.activityListItem .crActName   { width: 120px; }
+#custDtlPage2 li.activityListItem .crActStatus { width: 100px; }
+#custDtlPage2 li.activityListItem .crActDate   { width: 68px; overflow:hidden; font-size:12px; text-align:right; }
+
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul li.TebleBoxCheck{
+	background:#FFF url(../images/SC3080202/scNscPopUpListCheckMark.png) 16px 14px no-repeat;
+	
+}
+/* ステータス毎の文字色 */
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul li.TebleBoxCheck span { color:#324f85; }
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul li.FontBlue span { color:#324f85; }
+#custDtlPage2 #activityPop_content .popWind .dataWind1 ul li.FontBlack span { color:#000; }
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	TCV N-SC-51
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#custDtlPage2 .scNsc51MainSample {
+	width:464px;
+	height:159px;
+	margin:0 0 10px;
+	background:url(../images/SC3080202/scNsc51MainSample.png) no-repeat;
+}
+
+#custDtlPage2 .scNsc51MainSample h3 {
+	font-size:18px;
+	text-shadow:0 1px 8px #FFF;
+	padding:10px;
+	letter-spacing:5px;
+	color:#d73a3a;
+}
+
+#custDtlPage2 .scNscEntryOtherMakerCar {
+	text-align:center;
+	font-size:12px;
+	color:#999;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	border-radius: 5px;
+	padding:3px 8px 3px 8px;
+	margin:0 0 10px;
+	position:absolute;
+	width:446px;
+}
+
+
+
+
+
+
+
+
+
+#custDtlPage2 .scNsc51PopUpBoxMgn {
+	top:370px;
+}
+
+#custDtlPage2 .scNsc51PopUpModelSelectOnDeleteButton {
+	position:absolute;
+	top:300px;
+	left:105px;
+	width:354px;
+	padding:17px 0 0;
+	z-index:100;
+}
+
+
+
+
+
+#custDtlPage2 .scNsc51PopUpModelSelectWindownBoxOnDeleteButton {
+	width:314px;
+	height:337px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+						color-stop(0.065, #2a3445),
+						color-stop(0.065, #0f1623),
+						to(#030b19));
+}
+
+
+
+
+
+#custDtlPage2 .scNsc51PopUpModelSelectHeader .tgLeft{
+	position:absolute;
+	top:9px;
+	left:5px;
+	display:block;
+	width:24px;
+	height:24px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+	color-stop(0.18, #434d63),
+	color-stop(0.49, #0d1734),
+	color-stop(0.491, #000b29),
+	to(#000b29));
+	z-index:1;
+}
+
+
+
+
+#custDtlPage2 .scNsc51PopUpModelSelectListArea .DeleteBotton{
+	font-size:16px;
+	width:auto;
+	margin:9px auto 0;
+	padding:10px;
+	border:#a5a5a5 1px solid;
+	border-radius:10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cd6c74), 
+	color-stop(0.500, #b93540),
+	color-stop(0.501, #b21d2a),
+	to(#b01825));
+	color:#FFF;
+	text-shadow:#000000 0 -1px 0;
+	text-align:center;
+}
+
+#custDtlPage2 .clip{
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#custDtlPage2 .ellipsis{
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+#custDtlPage2 .input
+{
+    color:#404040;
+}
+
+
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+/* ブランド認知理由・用件ソース1st表示欄 */
+.salesParameters {font-size: 10pt;color: #666;line-height: 30px;font-weight:bold;text-align: right;}
+.salesParameters dt {width:120px;height:30px;display:inline-block;vertical-align:text-bottom;}
+.salesParameters dd {
+	width:275px;
+	height:30px;
+	display:inline-block;
+	margin-left:5px;
+	padding-right:30px;
+	color: #666;
+	background:white url(../images/SC3080202/ListArrowGr.png) no-repeat 290px 8px;
+	border:solid 1px #BBBBBB;
+	border-radius:8px;
+	vertical-align:text-bottom;
+}
+.salesParameters .salesParameterCover 
+{
+    width:275px; 
+    height:30px; 
+    background:white url(../images/progress.gif) no-repeat;
+	border-radius:8px;
+    background-position: 148px center;
+    background-size:22px 22px;
+    position: absolute; 
+    visibility: hidden;
+}
+
+
+/* 必須項目名称の赤色 */
+.mandatory{color: #d74747;}
+/* 2018/12/18 TCS 舩橋 TKM-UAT課題No.132 Demand structureの見出しを赤字に変更 START */
+.fontsmallabel
+{
+    font-size: 9px;
+}
+/* 2018/12/18 TCS 舩橋 TKM-UAT課題No.132 Demand structureの見出しを赤字に変更 END */
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+
+
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 START */
+/* 契約車種詳細情報 */
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfo
+{
+    border-top: 1px solid #CCC;
+    width: 461px;
+    height: 315px;
+    overflow:hidden;
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox
+{
+    width: 461px;
+    height: 300px;
+    padding: 13px 0 0 0;
+    overflow:auto;
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox li
+{
+    width: 461px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 26px;
+    color: #666666;
+    font-weight: bold;    
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox li.Title
+{
+    font-size: 14px;
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox li.Margin01
+{
+    padding: 0 0 21px 0;
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox li.GrayBar
+{
+    background: #dcdcdc;
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox span.ColumnName
+{
+    width: 285px;
+    float: left;
+    padding: 0 0 0 5px;
+    line-height: 32px;
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox div.BoxMain
+{
+    width: 155px;
+    float: right;
+    padding: 3px 5px 3px 0;
+}
+#AfterOdrPrcsCVDIPanel .ContractVehicleDetailInfoBox div.BoxBorder
+{
+    border: #b8b8b8 1px solid;
+    text-indent: 8px;
+    height: 26px;
+}
+
+/* 受注前/受注後切り替えボタン */
+.BeforeAfterOdrPrcsSwitchButton
+{
+    position: absolute;
+    left: 810px;
+    top: 25px;
+    width: 162px;
+    height: 27px;
+}
+.BeforeAfterOdrPrcsSwitchButton .LeftOdrPrcsButton
+{
+    border-top: #6a6b6b 1px solid;
+    border-left: #7d7f83 1px solid;
+    border-right: #7d7f83 1px solid;
+    border-bottom: #94979f 1px solid;
+    border-radius: 6px 0 0 6px;
+}
+.BeforeAfterOdrPrcsSwitchButton .RightOdrPrcsButton
+{
+    border-top: #6a6b6b 1px solid;
+    border-right: #7d7f83 1px solid;
+    border-bottom: #94979f 1px solid;
+    border-radius: 0 6px 6px 0;
+}
+.BeforeAfterOdrPrcsSwitchButton div
+{
+    float: left;
+    width: 79px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.PrcsButtonOn
+{
+    box-shadow: rgba(0,0,0,0.3) 0 4px 4px inset;
+    background: linear-gradient(180deg,rgba(173,175,179,1.00) 0%,rgba(104,109,115,1.00) 100%);
+    color: #FFF;
+    text-shadow: rgba(0,0,0,0.5) 0 -1px 0;
+}
+.PrcsButtonOff
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+    color: #717880;
+    text-shadow: rgba(255,255,255,0.75) 0 1px 0;
+}
+/* 2014/02/12 TCS 山口 受注後フォロー機能開発 END */
+
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+#dispSelectedDirectBilling{
+	width:190px;
+	height:17px;
+	padding-top:0px;
+	padding-left:3px;
+	font-size:9pt;
+	margin:10px 0px 8px 0px;
+}
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	TKMローカル
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/* 2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 START */
+
+#custDtlPage2 #conditionAreaFrame {
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 193px;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList {
+	margin:0 0 0;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList h4 {
+	float:left;
+	width:50px;
+	font-size:12px;
+	color:#666;
+	height:32px;
+	line-height:26px;
+	text-align:right;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList ul {
+	width:402px;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	float:right;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li {
+	font-weight:bold;
+	padding:4px 0;
+	text-align:center;
+	color:#7f7f7f;
+	text-shadow: 0px 1px 1px #FFF;
+	float:left;
+	font-size:14px;
+	line-height:14px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:402px;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Left {
+	border-top:1px solid #9b9b9b;
+	border-left:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	-webkit-border-bottom-left-radius:12px;
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Center {
+	border-top:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Right {
+	border-top:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	-webkit-border-bottom-right-radius:12px;
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+/* on青 */
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Left.OnBlue {
+	border-top:1px solid #18458f;
+	border-left:1px solid #18458f;
+	border-bottom:1px solid #568bd7;
+	border-right:1px solid #9b9b9b;
+	-webkit-border-bottom-left-radius:12px;
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e5aa5), 
+							color-stop(0.50, #407ee6),
+							color-stop(0.501, #508be9),
+							to(#568bd7));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Center.OnBlue {
+	border-top:1px solid #18458f;
+	border-right:1px solid #9b9b9b;
+	border-bottom:1px solid #568bd7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e5aa5), 
+							color-stop(0.50, #407ee6),
+							color-stop(0.501, #508be9),
+							to(#568bd7));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+	
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Right.OnBlue {
+	border-top:1px solid #18458f;
+	border-right:1px solid #18458f;
+	border-bottom:1px solid #568bd7;
+	-webkit-border-bottom-right-radius:12px;
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e5aa5), 
+							color-stop(0.50, #407ee6),
+							color-stop(0.501, #508be9),
+							to(#568bd7));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+/* onグレー */
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Left.OnGrey {
+	border-top:1px solid #4c4d4f;
+	border-left:1px solid #4c4d4f;
+	border-bottom:1px solid #4c4d4f;
+	border-right:1px solid #9b9b9b;
+	-webkit-border-bottom-left-radius:12px;
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+	background: -moz-linear-gradient(top, #a7aaaf, #6b6f7a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a7aaaf), to(#6b6f7a));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Center.OnGrey {
+	border-top:1px solid #4c4d4f;
+	border-bottom:1px solid #4c4d4f;
+	border-right:1px solid #9b9b9b;
+	background: -moz-linear-gradient(top, #a7aaaf, #6b6f7a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a7aaaf), to(#6b6f7a));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList li.Right.OnGrey {
+	border-top:1px solid #4c4d4f;
+	border-bottom:1px solid #4c4d4f;
+	border-right:1px solid #4c4d4f;
+	-webkit-border-bottom-right-radius:12px;
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+	background: -moz-linear-gradient(top, #a7aaaf, #6b6f7a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#a7aaaf), to(#6b6f7a));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList table {
+	width:402px;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	float:right;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	boder-collapse:collapse;
+	boder-spacing:0px;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList th {
+	font-weight:bold;
+	padding:4px 0;
+	text-align:center;
+	color:#7f7f7f;
+	text-shadow: 0px 1px 1px #FFF;
+	float:left;
+	font-size:14px;
+	line-height:14px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:24%;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList th.Left {
+	border-top:1px solid #9b9b9b;
+	border-left:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	/*
+	border-bottom:1px solid #9b9b9b;
+	-webkit-border-bottom-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+    */
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius:12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList th.Center {
+	border-top:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	/*
+	border-bottom:1px solid #9b9b9b;
+    */
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList th.Right {
+	border-top:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	/*
+	border-bottom:1px solid #9b9b9b;
+	-webkit-border-bottom-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+    */
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-right-radius:12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList td {
+	/*
+    font-weight:bold;
+    */
+	padding:4px 0;
+	text-align:center;
+	color:#7f7f7f;
+	text-shadow: 0px 1px 1px #FFF;
+	float:left;
+	font-size:14px;
+	line-height:14px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:24%;
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList td.Left {
+	border-top:1px solid #9b9b9b;
+	border-left:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	/*
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius:12px;
+    */
+	-webkit-border-bottom-left-radius:12px;
+	-moz-border-radius-bottomleft: 12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList td.Center {
+	border-top:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+
+#custDtlPage2 .scNscDemandStructureSelectList td.Right {
+	border-top:1px solid #9b9b9b;
+	border-bottom:1px solid #9b9b9b;
+	border-right:1px solid #9b9b9b;
+	/*
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-right-radius:12px;
+    */
+	-webkit-border-bottom-right-radius:12px;
+	-moz-border-radius-bottomright: 12px;
+	background: -moz-linear-gradient(top, #fbfbfb, #cacaca);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#cacaca));
+}
+.tradeincarItems 
+{
+    /*
+	font-size: 10pt;
+	color: #666;
+	line-height: 30px;
+    */
+	font-weight:bold;
+	text-align: right;
+}
+.tradeincarItems th 
+{
+    /*
+	width:120px;
+	height:30px;
+    */
+	display:inline-block;
+	vertical-align:text-bottom;
+}
+.tradeincarItems td 
+{
+    /*
+	width:275px;
+	height:30px;
+	margin-left:5px;
+	padding-right:30px;
+	color: #666;
+	border:solid 1px #BBBBBB;
+	-webkit-border-radius:8px;
+	vertical-align:text-bottom;
+	background:white url(../images/SC3080202/ListArrowGr.png) no-repeat 290px 8px;
+    */
+	display:inline-block;
+	background:white url(../images/SC3080202/ListArrowGr.png) no-repeat 290px 8px;
+}
+.tradeincarItems .tradeincarItemCover 
+{
+    /*
+    width:275px; 
+    height:30px; 
+	-webkit-border-radius:8px;
+    background-position: 148px center;
+    background-size:22px 22px;
+    */
+    background:white url(../images/progress.gif) no-repeat;
+    position: absolute; 
+    visibility: hidden;
+}
+
+.column1{ width:100px;}
+.column2{ width:100px;}
+.column3{ width:100px;}
+.column4{ width:100px;}
+.column5{ width:100px;}
+.tableHeader1{ height:33px; border:#b3b3b3 0px solid; border-bottom:none;}
+.tableHeader2{ height:33px; border:#b3b3b3 0px solid; border-bottom:none; border-left:#FFF 1px solid;}
+.tableHeader3{ height:33px; border:#b3b3b3 0px solid; border-bottom:none; border-left:#FFF 1px solid;}
+.tableHeader4{ height:33px; border:#b3b3b3 0px solid; border-bottom:none; border-left:#FFF 1px solid;}
+.tableHeader5{ height:33px; border:#b3b3b3 0px solid; border-bottom:none; border-left:#FFF 1px solid;}
+.tableHeader1,
+.tableHeader2,
+.tableHeader3,
+.tableHeader4,
+.tableHeader5{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #86898f), color-stop(1, #686c74));
+}
+
+.tableItem1{ height:33px; border:#b3b3b3 1px solid; }
+.tableItem2{ height:33px; border:#b3b3b3 1px solid; border-left:#FFF 1px solid;}
+.tableItem3{ height:33px; border:#b3b3b3 1px solid; border-left:#FFF 1px solid;}
+.tableItem4{ height:33px; border:#b3b3b3 1px solid; border-left:#FFF 1px solid;}
+.tableItem5{ height:33px; border:#b3b3b3 1px solid; border-left:#FFF 1px solid;}
+
+.noBorder
+{    
+	text-decoration: none;	
+}
+
+.ncs5001TitleTable{
+    background: -webkit-gradient(linear, left top, left bottom, from(0, #86898f), to(1, #686c74));
+	width: 400px;
+	margin-left: 60px;
+}
+
+.tableItem1,.tableItem2,.tableItem3,.tableItem4,.tableItem5{
+    font-size: 10pt;
+    color: #666;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+.ncs5001TitleTable .tableHeader1,.tableHeader2,.tableHeader3,.tableHeader4,.tableHeader5{
+	color:#FFFFFF;
+	font-weight:normal;
+}
+
+.ncs5001TitleTable th{
+	font-size:14px;
+	line-height:14px;
+	/*color:#FFF; */
+	
+}
+
+#.ncs5001TitleTableBox{
+	position:relative;
+	display:block;
+	height:79px;
+	border:#b3b3b3 1px solid; 
+	border-top:none;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	margin:0;
+	padding:0;
+}
+
+.ColorWhite{
+    background:#FFF;
+}
+
+.ColorGary{
+    background:#B3B3B3;
+}
+
+/* 2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 END */

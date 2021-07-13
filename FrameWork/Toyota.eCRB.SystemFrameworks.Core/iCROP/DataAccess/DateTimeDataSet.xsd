@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DateTimeDataSet" targetNamespace="http://tempuri.org/DateTimeDataSet.xsd" xmlns:mstns="http://tempuri.org/DateTimeDataSet.xsd" xmlns="http://tempuri.org/DateTimeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.ConnectionString1" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DateTimeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DateTimeDataSet" msprop:Generator_UserDSName="DateTimeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DATETIME" msprop:Generator_TableClassName="DATETIMEDataTable" msprop:Generator_TableVarName="tableDATETIME" msprop:Generator_TablePropName="DATETIME" msprop:Generator_RowDeletingName="DATETIMERowDeleting" msprop:Generator_UserTableName="DATETIME" msprop:Generator_RowChangingName="DATETIMERowChanging" msprop:Generator_RowEvHandlerName="DATETIMERowChangeEventHandler" msprop:Generator_RowDeletedName="DATETIMERowDeleted" msprop:Generator_RowEvArgName="DATETIMERowChangeEvent" msprop:Generator_RowChangedName="DATETIMERowChanged" msprop:Generator_RowClassName="DATETIMERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DBDATE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDBDATE" msprop:Generator_ColumnPropNameInRow="DBDATE" msprop:Generator_ColumnPropNameInTable="DBDATEColumn" msprop:Generator_UserColumnName="DBDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TIME_DIFF" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTIME_DIFF" msprop:Generator_ColumnPropNameInRow="TIME_DIFF" msprop:Generator_ColumnPropNameInTable="TIME_DIFFColumn" msprop:Generator_UserColumnName="TIME_DIFF" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SUMMERTIMEDIFF" msprop:Generator_TableClassName="SUMMERTIMEDIFFDataTable" msprop:Generator_TableVarName="tableSUMMERTIMEDIFF" msprop:Generator_TablePropName="SUMMERTIMEDIFF" msprop:Generator_RowDeletingName="SUMMERTIMEDIFFRowDeleting" msprop:Generator_UserTableName="SUMMERTIMEDIFF" msprop:Generator_RowChangingName="SUMMERTIMEDIFFRowChanging" msprop:Generator_RowEvHandlerName="SUMMERTIMEDIFFRowChangeEventHandler" msprop:Generator_RowDeletedName="SUMMERTIMEDIFFRowDeleted" msprop:Generator_RowEvArgName="SUMMERTIMEDIFFRowChangeEvent" msprop:Generator_RowChangedName="SUMMERTIMEDIFFRowChanged" msprop:Generator_RowClassName="SUMMERTIMEDIFFRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DSTIMEDIFF" msprop:Generator_ColumnVarNameInTable="columnDSTIMEDIFF" msprop:Generator_ColumnPropNameInRow="DSTIMEDIFF" msprop:Generator_ColumnPropNameInTable="DSTIMEDIFFColumn" msprop:Generator_UserColumnName="DSTIMEDIFF" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TIMEDIFF" msprop:Generator_TableClassName="TIMEDIFFDataTable" msprop:Generator_TableVarName="tableTIMEDIFF" msprop:Generator_TablePropName="TIMEDIFF" msprop:Generator_RowDeletingName="TIMEDIFFRowDeleting" msprop:Generator_UserTableName="TIMEDIFF" msprop:Generator_RowChangingName="TIMEDIFFRowChanging" msprop:Generator_RowEvHandlerName="TIMEDIFFRowChangeEventHandler" msprop:Generator_RowDeletedName="TIMEDIFFRowDeleted" msprop:Generator_RowEvArgName="TIMEDIFFRowChangeEvent" msprop:Generator_RowChangedName="TIMEDIFFRowChanged" msprop:Generator_RowClassName="TIMEDIFFRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIMEDIFF" msprop:Generator_ColumnVarNameInTable="columnTIMEDIFF" msprop:Generator_ColumnPropNameInRow="TIMEDIFF" msprop:Generator_ColumnPropNameInTable="TIMEDIFFColumn" msprop:Generator_UserColumnName="TIMEDIFF" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

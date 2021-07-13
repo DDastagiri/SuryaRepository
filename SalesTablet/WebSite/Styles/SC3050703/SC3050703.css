@@ -1,0 +1,796 @@
+﻿/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SC3050703.css
+─────────────────────────────────────
+機能： セールスポイント詳細設定
+補足： 
+作成： 2012/11/23 TMEJ 三和
+─────────────────────────────────────*/
+
+/** アングル選択 */
+.angle  
+{
+    width:945px; 
+    position:relative;
+}
+
+#thumbnailImg 
+{
+    max-height:64px;
+    vertical-align:bottom;
+}
+
+.hidden  
+{
+    display: none; 
+}
+
+.visible  
+{
+    display: block; 
+}
+
+/** 設定エリア */
+.settingArea  
+{
+    height:499px; 
+    width:953px; 
+    overflow:hidden; 
+    position:relative;
+}
+
+#imageOuter
+{
+    text-align:center;
+}
+
+#imageFrame
+{
+    border:2px solid #848284;
+}
+
+/** ポイント指定 */
+.setPoint
+{
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0px 0px 15px 0px; 
+    position:relative; 
+    /*float:left;*/
+    /*width:693px;*/
+}
+
+/* 内装ポイント */
+.pointIn {
+  display:block;
+  background:url(../Images/SC3050703/tcvNcvCar_Point.png) 0px 0px no-repeat;
+  background-position:center;
+  background-size:contain;
+  z-index:20;
+  width:47px;
+  height:100%;
+  line-height:44px;
+  vertical-align: middle;
+  text-align:center;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* 外装ポイント */
+.pointEx {
+  display:block;
+  background:url(../Images/SC3050703/tcvNcvCar_Point.png) 0px 0px no-repeat;
+  background-position:center;
+  background-size:contain;
+  z-index:20;
+  width:100%;
+  height:100%;
+  line-height:49px;
+  vertical-align: middle;
+  text-align:center;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/** グレード適合 */
+.grade  
+{
+    padding: 0px 0px 0px 0px; 
+    margin:　5px 0px 15px 0px; 
+    border: #B3B3B3 1px solid; 
+    border-radius:8px; 
+    background-color:#FFFFFF; 
+    float:left; 
+    width:210px; 
+}
+
+.grade h2  
+{
+    margin-bottom:10px; 
+    padding-left: 18px; 
+    width:155px; 
+    height:26px; 
+    color:#FFF; 
+    font-size: 16px; 
+    border-bottom-right-radius:26px; 
+    border-top-left-radius:7px; 
+    font-weight:400;
+    background:-webkit-gradient(linear, left top, left bottom, from(#8D9199), color-stop(50%, #8D9199), color-stop(50%, #696D75), to(#696D75)); 
+    float: none;
+}
+
+.grade  
+{
+    width:951px; 
+    height:150px; 
+}
+
+.gradeWrap  
+{
+    padding: 0 15px 25px; 
+    width:895px; 
+    height:83px; 
+}
+
+.gradeCheck  
+{
+    padding-bottom: 6px; 
+    list-style: none; 
+}
+
+.gradeCheck li
+{
+    float:left;
+    color:#666666; 
+    line-height:35px; 
+    width:290px;
+}
+
+.gradeCheck li:nth-child(3n+1)
+{
+    clear:left;
+}
+
+.gradeCheck li input  
+{
+    margin-right: 8px; 
+    width:30px; 
+    height:30px; 
+    border: #B3B3B3 1px solid; 
+    border-radius:4px; 
+    vertical-align:middle; 
+}
+
+.gradeCheck li input:checked  
+{
+    margin-right: 8px; 
+    width:30px; 
+    height:30px; 
+    border:1; 
+    border-radius:4px; 
+    background:url(../Images/SC3050703/ico46.png) no-repeat center center; 
+}
+
+/** 一覧 */
+.list  
+{
+    margin:5px 0px 15px 0px; 
+    color:#666666; 
+    font-size:14px; 
+    border: #B3B3B3 1px solid; 
+    border-radius:8px; 
+    background-color:#FFFFFF; 
+    width:415px; 
+    float:left; 
+}
+
+.list h2  
+{
+    margin-bottom:10px; 
+    padding-left: 18px; 
+    width:182px; 
+    height:26px; 
+    color:#FFF; 
+    font-size: 16px; 
+    border-bottom-right-radius:26px; 
+    border-top-left-radius:7px; 
+    font-weight:400;
+    background:-webkit-gradient(linear, left top, left bottom, from(#8D9199), color-stop(50%, #8D9199), color-stop(50%, #696D75), to(#696D75)); 
+    float: none;
+}
+
+.listWrap  
+{
+    padding: 10px 10px 10px; 
+    width:400px; 
+    height:270px 
+}
+
+/** 概要 */
+.summary  
+{
+    margin:5px 0px 14px 0px; 
+    color:#666666; 
+    font-size:14px; 
+    border: #B3B3B3 1px solid; 
+    border-radius:8px; 
+    background-color:#FFFFFF; 
+    width:480px; 
+    float:right; 
+}
+
+.summary h2  
+{
+    margin-bottom:-1px; 
+    padding-left: 18px; 
+    width:182px; 
+    height:26px; 
+    color:#FFF; 
+    font-size: 16px; 
+    border-bottom-right-radius:26px; 
+    border-top-left-radius:7px; 
+    font-weight:400;
+    background:-webkit-gradient(linear, left top, left bottom, from(#8D9199), color-stop(50%, #8D9199), color-stop(50%, #696D75), to(#696D75)); 
+    float: none;
+}
+
+.summaryWrap  
+{
+    padding: 0px 10px 10px; 
+    width:440px; 
+    height:60px 
+}
+
+/** 詳細 */
+.detail  
+{
+    margin:5px 0px 14px 0px; 
+    color:#666666; 
+    font-size:14px; 
+    border: #B3B3B3 1px solid; 
+    border-radius:8px; 
+    background-color:#FFFFFF; 
+    width:480px; 
+    float:right; 
+}
+
+.detail h2  
+{
+    margin-bottom:-1px; 
+    padding-left: 18px; 
+    width:182px; 
+    height:26px; 
+    color:#FFF; 
+    font-size: 16px; 
+    border-bottom-right-radius:26px; 
+    border-top-left-radius:7px; 
+    font-weight:400;
+    background:-webkit-gradient(linear, left top, left bottom, from(#8D9199), color-stop(50%, #8D9199), color-stop(50%, #696D75), to(#696D75)); 
+    float: none;
+}
+
+.detailWrap  
+{
+    padding: 0px 10px 10px; 
+    width:440px; 
+    height:60px 
+}
+
+/** 詳細(最大化) */
+.detailPopup  
+{
+    margin:5px 0px 14px 0px; 
+    color:#666666; 
+    font-size:14px; 
+    border: #B3B3B3 1px solid; 
+    border-radius:8px; 
+    background-color:#FFFFFF; 
+    width:480px; 
+    float:right; 
+}
+
+.detailPopup h2  
+{
+    margin-bottom:-1px; 
+    padding-left: 18px; 
+    width:182px; 
+    height:26px; 
+    color:#FFF; 
+    font-size: 16px; 
+    border-bottom-right-radius:26px; 
+    border-top-left-radius:7px; 
+    font-weight:400;
+    background:-webkit-gradient(linear, left top, left bottom, from(#8D9199), color-stop(50%, #8D9199), color-stop(50%, #696D75), to(#696D75)); 
+    float: none;
+}
+
+.detailWrapPopup  
+{
+    padding: 0px 10px 10px; 
+    width:440px; 
+    height:60px 
+}
+
+/** 一覧 項目 */
+.inputLabel  
+{
+    width:120px; 
+    padding-right:10px; 
+    text-align:right; 
+}
+
+/** 概要 項目 */
+.inputLabelSummary  
+{
+    width:70px; 
+    padding-right:-10px; 
+    padding-right:10px; 
+    text-align:right;
+    text-valign:right; 
+}
+
+/** 詳細 項目 */
+.inputLabelDetail  
+{
+    width:70px; 
+    padding-right:10px; 
+    text-align:right; 
+}
+
+/** 詳細(最大化) 項目 */
+.inputLabelDetailPopup  
+{
+    width:70px; 
+    padding-right:10px; 
+    text-align:right; 
+}
+
+/** 一覧 */
+.inputItem  
+{
+    padding: 5px; 
+}
+
+.inputItem input  
+{
+    padding:0 5px; 
+    margin:5 auto; 
+    width:200px; 
+    height:25px; 
+    border:#BBBBBB 1px solid; 
+    border-radius:4px; 
+    background:#FFF; 
+    font-size:14px; 
+    text-align:left; 
+    color:#333; 
+    line-height:25px; 
+}
+
+.inputItem textarea  
+{
+    padding:0 5px; 
+    margin:5 auto; 
+    width:230px; 
+    height:210px; 
+    border:#BBBBBB 1px solid; 
+    border-radius:4px; 
+    background:#FFF; 
+    font-size:14px; 
+    text-align:left; 
+    color:#333; 
+    line-height:25px; 
+}
+
+.inputItem div  
+{
+    margin-bottom:5px 
+}
+
+/** 概要 */
+.inputItemSummary  
+{
+    padding: 5px; 
+}
+
+.inputItemSummary div  
+{
+    margin-bottom:5px; 
+    width:260px; 
+}
+
+.inputItemSummaryDel  
+{
+    padding: 5px; 
+}
+
+.inputItemSummaryDel div  
+{
+    margin-bottom:5px 
+}
+
+/** 詳細 */
+.inputItemDetail  
+{
+    padding: 5px; 
+}
+
+.inputItemDetail div  
+{
+    margin-bottom:5px; 
+    width:260px;
+}
+
+.inputItemDetailDel  
+{
+    padding: 5px; 
+}
+
+.inputItemDetailDel div  
+{
+    margin-bottom:5px 
+}
+
+/** 詳細(最大化) */
+.inputItemDetailPopup  
+{
+    padding: 5px; 
+}
+
+.inputItemDetailPopup div  
+{
+    margin-bottom:5px; 
+    width:260px;
+}
+
+.inputItemDetailDelPopup  
+{
+    padding: 5px; 
+}
+
+.inputItemDetailDelPopup div  
+{
+    margin-bottom:5px 
+}
+
+/** ファイル名 */
+.file  
+{
+    padding:0 5px; 
+    margin:5 auto; 
+    width:200px; 
+    height:25px; 
+    background:#FFFFFF; 
+    font-size:14px; 
+    text-align:left; 
+    color:#999999; 
+    line-height:25px; 
+}
+
+/** ファイル参照 */
+.inputFile  
+{
+    width:300px; 
+    padding-right:10px; 
+}
+
+/** 削除ボタン */
+.del  
+{
+    width:65px; 
+    height:30px; 
+    float:right; 
+}
+
+.del a 
+{
+    width:80px;
+    height:30px;
+    border:#1F2124 1px solid;
+    border-radius:6px;
+    text-decoration:none;
+    display:block;
+    box-shadow:0px 1px 1px #595E66;
+    font-size:13px;
+    font-weight:400;
+    text-shadow:0px -1px 0px #151A27;
+    line-height:30px;
+    color:#FFFFFF;
+    text-align: center;
+    background:-webkit-gradient(linear, left top, left bottom, from(#aeb2b8), to(#6d7580));
+    float:right;
+}
+
+/** オーバーレイ背景 */
+#settings .tcvNcvPointSwindown {
+  position:absolute;
+  width:430px;
+  min-height:170px;
+  top:252px;
+  left:537px;
+  z-index:101;
+  color:#FFF;
+  border:2px solid #4c4c4c;
+  border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #666;
+  background-color: rgba(80, 80, 80, 0.8);
+}
+
+/** 一覧上部 */
+.upside  
+{
+    padding: 0px 15px 0px 0px; 
+    position:relative; 
+    top:-1px; 
+    z-index:1; 
+}
+
+/*　登録時のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlack.open { opacity:0.6; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#processingServer {
+	position:absolute;
+	background:url(../Images/SC3080201/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:300px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+#processingServer.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+#SendButtonLink{
+	background-repeat:no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7c98ec),
+            color-stop(0.50, #426ae4),
+            color-stop(0.51, #1e4ee0),
+						to(#1e4de1));
+	width:80px;
+	bottom:15px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	text-shadow:0px -1px 1px #000000;
+	width:80px; 
+	height:46px;
+	text-decoration:none;
+}
+
+#SendButtonLabel{
+	display: block;
+	width: 80px;
+	bottom: 15px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight:600;
+	text-shadow: 0px -1px 1px black;
+	padding:12px 0px 6px;
+}
+
+#DelButtonLink{
+	background-repeat:no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, from(#CD6C74),
+            color-stop(0.50, #B72F3A),
+            color-stop(0.51, #B01825),
+						to(#B01825));
+	width:80px;
+	bottom:15px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	text-shadow:0px -1px 1px #000000;
+	width:80px; 
+	height:46px;
+	text-decoration:none;
+}
+
+#DelButtonLabel{
+	display: block;
+	width: 80px;
+	bottom: 15px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight:600;
+	text-shadow: 0px -1px 1px black;
+	padding:12px 0px 6px;
+}
+
+#FooterOriginalButton
+{
+    height: 24px;
+    border: none;
+    position: relative;
+    float: right;
+}
+
+/*メインブロック*/
+#contents  
+{
+    width:1024px; 
+    height:655px; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#E6E6E6), to(#B7B7B7));
+}
+
+#mainblockContent .mainblockContentArea  
+{
+    width:984px; 
+    height:610px; 
+    border:#999 1px solid; 
+    border-radius:8px; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), 
+            color-stop(0.6, #FEFEFE), 
+            color-stop(0.7, #F4F4F4), 
+            to(#DBDBDB)); 
+    box-shadow:3px 3px 4px #666666; 
+}
+
+#mainblockContent .mainblockContentAreaWrap { margin:16px; }
+
+#mainblockContent:after  
+{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+}
+
+#mainblockContent h2  
+{
+    width:280px; 
+    height:25px; 
+    border-top-left-radius:7px; 
+    border-bottom-right-radius:25px; 
+    font-size:14px; 
+    text-indent:14px; 
+    line-height:26px; 
+    color:#FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E929A), color-stop(0.49, #797D84), color-stop(0.5, #6A6E76), to(#5D616A)); 
+    font-weight:400; 
+}
+
+/*文字を設定されたWidthに合わせて...表示*/
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#settings .mainblockContentArea h2 { margin-bottom:10px; padding-left: 18px; width:182px; height:26px; color:#FFF; font-size: 16px; border-bottom-right-radius:26px; border-top-left-radius:7px; font-weight:400;
+background:-webkit-gradient(linear, left top, left bottom, from(#8D9199), color-stop(50%, #8D9199), color-stop(50%, #696D75), to(#696D75)); float: none;}
+
+/* 画像ポップアップ */
+.tcvNcvPointBigWindowbBox{
+  position:absolute;
+  width:1024px;
+  height:656px;
+  min-height:170px;
+  top:43px;
+  left:0px;
+  z-index:60001;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tcvNcvPointBigWindowbBox .tcvNcvPointBigWindowBackFrame{
+  position:absolute;
+  width:874px;
+  min-height:503px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  top:50px;
+  left:75px;
+  z-index:1;
+}
+.tcvNcvPointBigWindowbBox .tcvNcvPointBigWindowBackFrame .tcvNcvPointBigWindowBackFrameClose {
+  position:absolute;
+  width:29px;
+  min-height:29px;
+  top:-14px;
+  left:-14px;
+}
+.tcvNcvPointBigWindowbBox .tcvNcvPointBigWindowBackFrame h4{
+  width:534px;
+  margin:0 auto;
+  padding:20px 0 0;
+  font-size:1.8em;
+  color:#666;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #666;
+}
+.tcvNcvPointBigWindowbBox .tcvNcvPointBigWindowBackFrame .tcvNcvPointContentsArea {
+  width:534px;
+  margin:15px auto 0px;
+}
+.tcvNcvPointBigWindowbBox .tcvNcvPointBigWindowBackFrame .tcvNcvPointContentsArea .tcvNcvPointImgArea {
+  width:534px;
+  float:left;
+  overflow:scroll: touch;
+}
+.tcvNcvPointBigWindowbBox .tcvNcvPointBigWindowBackFrame .tcvNcvPointContentsArea .tcvNcvPointVideoArea {
+  width:534px;
+  float:left;
+}
+.tcvNcvPointBigWindowbBox .tcvNcvPointBigWindowBackFrame .tcvNcvPointContentsArea .tcvNcvPointTxtArea {
+  width:284px;
+  float:left;
+  font-size:1em;
+  line-height:1.8em;
+  color:#666;
+  font-weight: bold;
+  overflow:scroll: touch;
+}
+
+/* 以下 基本設定 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td	{
+	margin: 0;	padding: 0;
+}
+
+input{
+	background-color: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
+	color: rgba(255, 255, 255, 0);
+	-webkit-appearance: none;}
+
+li{
+	list-style:none;
+	margin:0px;
+	text-indent: 0px;
+	padding: 0px;
+}
+
+hr {
+	display: none;
+	clear:both;
+}
+
+
+.clearboth{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	color:#FFFFFF;
+	font-size:1px;
+	line-height:1px;
+	text-indent:-3000px;
+	height:1px;
+}
+
+
+#loadingPopup {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:290px;
+	left:500px;
+	width:21px;
+	height:22px;
+	z-index:10;
+}

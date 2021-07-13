@@ -1,0 +1,1102 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+
+.TC_BG01{
+    background:-webkit-gradient(linear, left top, left bottom, from(#8d9199),
+               color-stop(0.50, #797d84),
+               color-stop(0.51, #6a6e76),
+               to(#5e626b));
+}
+.TC_BG02{
+    background:#FFF;
+}
+.TC_BG03{
+    background:#efefef;
+}
+.TC_BG04{
+    background:-webkit-gradient(linear, left top, left bottom, from(#78a0f3),
+               color-stop(0.50, #386fe0),
+               color-stop(0.51, #2663dd),
+               to(#2361da));
+}
+.TC_BG05{
+	background:-webkit-gradient(linear, left top, left bottom, from(#b5b5b5),
+               color-stop(0.50, #8c8c8c),
+               color-stop(0.51, #818181),
+			   to(#7e7e7e));
+	border-top:#808080 1px solid;
+	border-left:#626262 1px solid;
+	border-right:#626262 1px solid;
+	border-bottom:#6f6f6f 1px solid;
+	color:#c6c6c6;
+	text-shadow:#757575 0 -2px 1px;
+}
+
+
+/**---------------------------------------*/
+#Operation_Contents{
+	overflow:hidden;
+    width:640px;
+    height:733px;
+    background:-webkit-linear-gradient(270deg,rgba(243, 243, 243, 1.00) 0%,rgba(216, 216, 216, 1.00) 100%);
+		background:#c4c4c4;
+    padding-top:15px;
+		box-sizing:border-box;
+}
+#Operation_Contents .InnerBox{
+	width:611px;
+	height:703px;
+	margin:0 auto;
+	border:#3a3a3a 1px solid;
+	background:#292929;
+	
+  box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.5);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.5) inset;
+	box-sizing:border-box;
+	padding:15px 0 0px 0px;
+	position:relative;
+
+  border-radius: 1px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+#Operation_Contents .InnerBox .InnerScrollDiv{
+    width:611px;
+	height:auto;
+}
+
+#Operation_Contents .InnerBox .UpShadow{
+	width:611px; height:703px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.5) inset;
+	box-sizing:border-box;
+	position:absolute; top:0; left:0;
+	display:none;
+}
+
+
+
+
+.WCBoxType01{
+	width:580px;
+	height:108px;
+	display:block;
+	border-radius: 9px;
+	box-sizing:border-box;
+	background:-webkit-gradient(linear, left top, left bottom,
+		from(#fdfdfe),
+		color-stop(0.30, #e9e9e8),
+		color-stop(0.57, #fafbfb),
+		color-stop(0.98, #cdcece),
+		to(#b3b1b2));
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-bottom:7px;
+	position:relative;
+	border-top:#5e5b5b 1px solid;
+	border-bottom:#6c6867 1px solid;
+	margin-left:14px;
+	z-index:1;
+}
+
+
+.WCBoxType01 .line01{
+	display:block;
+	width:29px; height:106px;
+	border-right:#8a8a8a 1px solid;
+  
+}
+.WCBoxType01 .HeadBox{
+	display:block;
+	width:436px; height:61px;
+	position:absolute;
+	top:-1px; left:31px;
+	line-height:61px;
+	font-size:20px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+	padding-left:5px;
+	box-sizing:border-box;
+}
+.WCBoxType01 .HeadBox.Blue{	background:#004ce7; border-top:#001e5b 1px solid;}/* border-top:#001e5b 1px solid;*/
+.WCBoxType01 .HeadBox.Green{background:#00ac93; border-top:#004238 1px solid;}/* */
+
+.WCBoxType01 .HeadBox .NumberBox{
+	display:block;
+	width:240px; height:59px;
+	font-size:24px;
+	position:absolute;
+	/*2018/07/09 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 START*/
+	/*right:15px;*/
+	right:35px;
+    /*2018/07/09 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 END*/
+	top:0px;
+	padding-right: 2px;
+	overflow:hidden;
+}
+.WCBoxType01 .HeadBox .Number{
+	position:absolute;
+	right:0px;
+	text-overflow:unset;
+}
+/*2018/07/09 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 START*/
+.WCBoxType01 .HeadBox .TkmIconL {
+    position:absolute;
+    right:3px;
+    top:17px;
+    width:24px;
+    height:25px;
+    font-size:20px;	
+    color:#000;
+    text-align:center;
+    text-shadow:0px 1px 0px #666;
+    background-color:#00b050;
+    border-radius:4px;
+    line-height:25px;
+    border: solid 3px #FFF;
+}
+.WCBoxType01 .HeadBox .TkmIconP {
+    position:absolute;
+    right:3px;
+    top:17px;
+    width:24px;
+    height:25px;
+    font-size:20px;
+    color:#000;
+    text-align:center;
+    text-shadow:0px 1px 0px #666;
+    background-color: #ffff00;
+    border-radius:4px;
+    line-height:25px;
+    border: solid 3px #FFF;
+}
+/*2018/07/09 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 END*/
+.WCBoxType01 .FootBox{
+	display:block;
+	width:436px; height:46px;
+	position:absolute;
+	top:61px; left:31px;
+	line-height:46px;
+	font-size:20px;
+	color:#333333;
+	text-shadow:-1px -1px 1px rgba(255,255,255,0.5);
+	padding-left:20px;
+	box-sizing:border-box;
+}
+.WCBoxType01 .FootBox .TimeBox{
+	display:block;
+	width:120px; height:33px;
+	font-size:25px;
+	line-height:33px;
+	position:absolute;
+	right:12px; top:7px;
+	text-align:center;
+	box-sizing:border-box;
+}
+.WCBoxType01 .FootBox .TimeBox.Red{
+	color:#ffffff; background:#ff0000;
+  box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.5) inset,
+						  1px 1px 1px rgba(0, 0, 0, 0.5) inset;
+}
+.WCBoxType01 .RightBox{
+	width:112px; height:106px;
+	display:block;
+	position:absolute;
+	right:0; top:0;
+	border-left:#929292 1px solid;
+	
+}
+
+.WCBoxType01 .RightBox .icHuman,
+.WCBoxType01 .RightBox .icTime{
+	display:block;
+	width:92px; height:42px;
+	background: #ffc600;
+	border-radius:9px;
+  box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5) inset,
+						  1px 1px 2px rgba(0, 0, 0, 0.5) inset;
+	position:absolute;
+}
+.WCBoxType01 .RightBox .icHuman{top:10px; left:8px;}
+.WCBoxType01 .RightBox .icTime{top:58px; left:8px;}
+
+.WCBoxType01 .RightBox .icHuman span{
+	display:block; width:92px; height:42px;
+	background:url(../images/SC3340101/cw_icon_h.png) center center no-repeat;
+	border-radius:10px;
+}
+.WCBoxType01 .RightBox .icTime span{
+	display:block; width:92px; height:42px;
+	background:url(../images/SC3340101/cw_icon_t.png) center center no-repeat;
+	border-radius:10px;
+}
+
+.InnerBox .boderLine{
+	height:1px;
+	background:#4d4d4d;
+	border-top:#000000 1px solid;
+	border-bottom:#6a6a6a 1px solid;
+	font-size:1px; line-height:1px;
+	margin-bottom:8px;
+}
+
+.insiderSelect{
+    display:block;
+	width:640px; 
+	height:826px;
+	position:absolute;
+    left:0;
+	background:rgba(0,0,0,0.5);
+	z-index: 2;   
+ }
+ 
+.SelectWindow{
+	display:block;
+	width:640px; 
+	height:110px;
+	position:absolute;
+	top:0; left:0;
+	background:rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.SelectWindowLeft{
+	display:block;
+	width:15px; 
+	height:701px;
+	position:absolute;
+	top:110px; left:0;
+	background:rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.SelectWindowRight{
+	display:block;
+	width:15px; 
+	height:701px;
+	position:absolute;
+	top:110px; left:624px;
+	background:rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.SelectWindowBottom{
+	display:block;
+	width:640px; 
+	height:14px;
+	position:absolute;
+	top:811px; left:0;
+	background:rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+.SelectWindow .WCBoxType01.WindItem01{
+	position:absolute;
+	top:119px; left:14px;
+	
+}
+
+.WCBoxType01 .DelayState {
+    width: 580px;
+    height: 108px;
+    border-radius: 9px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background: rgba(255,0,0,0.3);
+    background: rgba(255,0,0,1);
+    background: -webkit-gradient(linear, left top, left bottom,     from(#fb0f00),     color-stop(0.30, #ea0e00),     color-stop(0.57, #fb0f00),     color-stop(0.98, #cd0c00),     to(#b90b00));
+    border-top: #fc0f00 1px solid;
+    border-bottom: #150100 1px solid;
+}
+
+.WCBoxType01 .DelayL {
+    color: #ffffff;
+}
+
+
+#SelectDiv{
+	overflow:hidden;
+    width:640px;
+    height:811px;
+    padding-top:108px;
+		box-sizing:border-box;
+}
+
+.SelectSearchBox{
+	position:absolute;
+	width:639px;
+	height:93px;
+}
+
+
+/**---------------------------------------*/
+#Operation_Contents .Top_Box{
+    width:608px;
+    background:#FFF;
+    border:#c9c9c9 1px solid;
+    box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+    margin:0 auto;
+	position:relative;
+	padding:0 0 1px 0;
+}
+#Operation_Contents .Top_BoxBottomOut{
+	position:relative;
+	top:-1px;
+	overflow:hidden;
+    width:100%;
+	height:131px;
+}
+
+#Operation_Contents .BoxBottom{
+    width:396px;
+    background:#FFF;
+    border:#c9c9c9 1px solid;
+	border-top:none;
+    box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+    margin:0 227px 0 15px;
+	position:relative;
+	padding:1px 0 0 0;
+}
+
+
+#Operation_Contents .Top_Box .Customer_Box{
+	width:366px;
+	height:99px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:0 0  14px 14px;
+}
+
+#Operation_Contents .Top_Box .Customer_Box .InBox_Header{
+	display:block;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Top_Box .Customer_Box .InBox_Header .Text_Type01{
+	text-align:center;
+/*	margin-left:14px;*/
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+#Operation_Contents .Top_Box .Customer_Box .InBox_Column{
+	display:block;
+	height:54px; line-height:54px; text-align:center;
+}
+#Operation_Contents .Top_Box .Customer_Box .InBox_Column.Red{
+	background:#ff0000;
+}
+#Operation_Contents .Top_Box .Customer_Box .InBox_Column .Text_Type02{
+	text-align:center;
+/*	margin-left:14px;*/
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+}
+#Operation_Contents .Top_Box .Customer_Box .InBox_Column.Red .Text_Type02{
+	color:#FFF;
+}
+
+
+#Operation_Contents .AGV_Box{
+	position:absolute;
+	left:428px; top:16px;
+	width:195px;
+	height:99px;
+    background:#FFF;
+    border:#c9c9c9 1px solid;
+    box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+}
+
+#Operation_Contents .AGV_Box .AGV_Btn{
+	border-top: #5671AB 1px solid;
+	border-left: #3C5FA4 1px solid;
+	border-right: #3C5FA4 1px solid;
+	border-bottom: #4669AC 1px solid;
+	border-radius: 12px;
+	display:block;
+	width:165px; height:69px;
+	position:absolute;
+	right:14px; bottom:14px;
+	color:#FFF; text-shadow:#000 0 -1px 1px;
+	font-size:40px; line-height:69px;
+	text-align:center;
+}
+
+
+
+#Operation_Contents .Top_Box .TimeSet_Box{
+	position:relative;
+	width:580px;
+	height:101px;
+	margin:15px auto 0px;
+}
+#Operation_Contents .Top_Box .TimeSet_Box .Time_Box01,
+#Operation_Contents .Top_Box .TimeSet_Box .Time_Box02,
+#Operation_Contents .Top_Box .TimeSet_Box .Time_Box03{
+	position:absolute;
+	width:181px;
+	height:98px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+}
+#Operation_Contents .Top_Box .TimeSet_Box .Time_Box01{left:0; top:0;}
+#Operation_Contents .Top_Box .TimeSet_Box .Time_Box02{left:198px; top:0;}
+#Operation_Contents .Top_Box .TimeSet_Box .Time_Box03{right:0; top:0;}
+#Operation_Contents .Top_Box .TimeSet_Box .InBox_Header{
+	width:181px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+#Operation_Contents .Top_Box .TimeSet_Box .InBox_Header .Text_Type01{
+	text-align:left;
+/*	margin-left:14px;*/
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	text-align:center;
+}
+#Operation_Contents .Top_Box .TimeSet_Box .Text_Type{
+	text-align:center;
+	height:54px;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+}
+
+
+
+
+#Operation_Contents .Top_Box .Vehicle_Box{
+	position:relative;
+	width:578px;
+	height:194px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:14px auto 13px; 
+}
+
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Header{
+	width:578px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Header .Text_Type01{
+	text-align:left;
+	margin-left:14px;
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	float:left;
+}
+
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Header .Text_Type02{
+    text-align:right;
+		margin-right:14px;
+    font-size:34px;
+    line-height:44px;
+    color:#FFF;
+    text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+		float:right;
+}
+#Operation_Contents .Top_Box .ProgressDatas{
+	box-sizing:border-box;
+	padding:21px 14px 17px 14px;
+}
+#Operation_Contents .Top_Box .ProgressDatas .InBox_Header{
+	width:351px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Top_Box .ProgressDatas .InBox_Column{
+	display:block;
+	height:54px; line-height:54px; text-align:center;
+}
+
+#Operation_Contents .Top_Box .ProgressDatas .InBox_Header .Text_Type01{
+	text-align:left;
+	margin-left:0px;
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	float:none;
+	text-align:center;
+}
+#Operation_Contents .Top_Box .ProgressDatas .InBox_Column .Text_Type02{
+	margin-left:0px;
+	font-size:34px;
+	line-height:54px;
+}
+#Operation_Contents .Top_Box .ProgressDatas .timelinesA,
+#Operation_Contents .Top_Box .ProgressDatas .timelinesB{
+	display:block; list-style:none; padding:0; margin:0;
+	clear:both;
+}
+#Operation_Contents .Top_Box .ProgressDatas .timelinesA.mgtop01{margin-top:6px;}
+#Operation_Contents .Top_Box .ProgressDatas .timelinesA li{
+	width:90px; height:23px; line-height:18px; font-size:24px;
+	display:block; float:left; margin-right:2px; text-align:center;
+}
+#Operation_Contents .Top_Box .ProgressDatas .timelinesA li:last-child{ margin:0;}
+.timelinesA li.textColor01{ color:rgba(102,102,102,0.5);}
+.timelinesA li.textColor02{ color:#666666;}
+.timelinesA li.textColor03{ color:#003cff;}
+.timelinesA li.textColor04{ color:#ff0000;}
+#Operation_Contents .Top_Box .ProgressDatas .timelinesB{height:87px;}
+#Operation_Contents .Top_Box .ProgressDatas .timelinesB li{
+	display:block; border:#c9c9c9 1px solid;
+	width:88px; height:85px; line-height:85px; font-size:48px;
+	display:block; float:left; margin-right:2px; text-align:center;
+}
+#Operation_Contents .Top_Box .ProgressDatas .timelinesB li:last-child{ margin:0;}
+.timelinesB li.BoxColor01{ background:#b3b2b3; box-shadow: 0 0 20px rgba(51,51,51,0.5) inset; color:#8c8c8c; text-shadow: 0 2px 1px #c6c6c6;}
+.timelinesB li.BoxColor02{ background:#003cff; box-shadow: 0 0 20px rgba(0,45,19,0.7) inset;  color:#ffffff; text-shadow: 0 -2px 1px #001e7f;}
+.timelinesB li.BoxColor03{ background:#f5f5f5; box-shadow: 0 0 20px rgba(184,184,184,0.5) inset; color:#8c8c8c; text-shadow: 0 2px 1px #c6c6c6;}
+.timelinesB li.BoxColor04{ background:#ff0000; box-shadow: 0 0 20px rgba(191,0,0,0.7) inset;  color:#ffffff; text-shadow: 0 -2px 1px #810000;}
+
+
+
+
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column01{
+	width:578px;
+	height:54px;
+	border-bottom:#c9c9c9 1px solid;
+	position:relative;
+}
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column01 .Text_Type03{
+	text-align:left;
+	font-size:24px;
+	line-height:54px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:14px;
+}
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column01 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+}
+
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column02{
+	width:578px;
+	height:53px;
+	border-top:#FFF 1px solid;
+	border-bottom:#c9c9c9 1px solid;
+	position:relative;
+}
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column02 .Text_Type03{
+	text-align:left;
+	font-size:24px;
+	line-height:54px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:14px;
+}
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column02 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+}
+
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column03{
+	width:578px;
+	height:54px;
+	position:relative;
+}
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column03 .Text_Type03{
+	text-align:left;
+	font-size:24px;
+	line-height:54px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:14px;
+}
+#Operation_Contents .Top_Box .Vehicle_Box .InBox_Column03 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+}
+
+
+#Operation_Contents .Center_Box{
+	width:608px;
+	height:304px;
+	background:#FFF;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+	margin:15px auto 0;
+}
+
+#Operation_Contents .Center_Box .Operation_Box{
+	width:578px;
+	height:274px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:14px auto 0; 
+}
+
+#Operation_Contents .Center_Box .Operation_Box .InBox_Header{
+	width:578px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Center_Box .Operation_Box .InBox_Header .Text_Type01{
+	text-align:left;
+	margin-left:14px;
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column01{
+	width:578px;
+	height:54px;
+	border-bottom:#c9c9c9 1px solid;
+	position:relative;
+}
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column01 .Text_Type03{
+	text-align:left;
+	font-size:24px;
+	line-height:54px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:14px;
+}
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column01 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+}
+
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column02{
+	width:578px;
+	height:53px;
+	border-top:#FFF 1px solid;
+	border-bottom:#c9c9c9 1px solid;
+	position:relative;
+}
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column02 .Text_Type03{
+	text-align:left;
+	font-size:24px;
+	line-height:54px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:14px;
+}
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column02 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+}
+
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column03{
+	width:578px;
+	height:119px;
+	position:relative;
+}
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column03 .Text_Type03{
+	text-align:left;
+	font-size:24px;
+	line-height:24px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:14px; left:14px;
+}
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column03 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+	line-height:36px;
+}
+#Operation_Contents .Center_Box .Operation_Box .InBox_Column03 .Scroll_Type{
+	width:450px;
+	height:105px;
+	overflow-y:scroll;
+	margin-top:7px;
+}
+
+
+#Operation_Contents .Bottom_Box{
+	width:608px;
+	height:184px;
+	background:#FFF;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+	margin:15px auto 0;
+}
+
+#Operation_Contents .Bottom_Box .Location_Box{
+	width:378px;
+	height:154px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:14px 0px 0px 14px; 
+	float:left;
+}
+
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Header{
+	width:378px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Header .Text_Type01{
+	text-align:left;
+	margin-left:14px;
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Column01{
+	width:378px;
+	height:54px;
+	border-bottom:#c9c9c9 1px solid;
+	position:relative;
+}
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Column01 .Text_Type03{
+	text-align:left;
+	font-size:21px;
+	line-height:54px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:14px;
+}
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Column01 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+}
+
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Column02{
+	width:378px;
+	height:53px;
+	border-top:#FFF 1px solid;
+	border-bottom:#c9c9c9 1px solid;
+	position:relative;
+}
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Column02 .Text_Type03{
+	text-align:left;
+	font-size:21px;
+	line-height:54px;
+	color:#838383;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:14px;
+}
+#Operation_Contents .Bottom_Box .Location_Box .InBox_Column02 .Text_Type02{
+	text-align:left;
+	font-size:34px;
+	line-height:54px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:auto; left:120px;
+}
+
+#Operation_Contents .Bottom_Box .Case_Box{
+	width:183px;
+	height:154px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:14px 14px 0px 0px; 
+	float:right;
+}
+
+#Operation_Contents .Bottom_Box .Case_Box .InBox_Header{
+	width:183px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Bottom_Box .Case_Box .InBox_Header .Text_Type01{
+	text-align:left;
+	margin-left:14px;
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+#Operation_Contents .Bottom_Box .Case_Box .InBox_Column{
+	width:183px;
+	height:109px;
+}
+#Operation_Contents .Bottom_Box .Case_Box .InBox_Column .Text_Type02{
+	text-align:center;
+	font-size:34px;
+	line-height:109px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+}
+
+
+
+
+#Operation_Contents .Current_Box{
+	width:608px;
+	height:auto;
+	background:#FFF;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+	margin:0 auto 0;
+}
+#Operation_Contents .Current_Box .Operation_Box{
+	width:578px;
+	height:347px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:14px auto 0; 
+}
+
+#Operation_Contents .Current_Box .Operation_Box .InBox_Header{
+	width:578px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Current_Box .Operation_Box .InBox_Header .Text_Type01{
+	text-align:left;
+	margin-left:14px;
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+#Operation_Contents .Current_Box .Operation_Box .CuBox,
+#Operation_Contents .Current_Box .Operation_Next .CuBox{
+	position:relative;
+	width:578px;
+	height:54px;
+	border-bottom:#c9c9c9 1px solid;
+	font-size:34px;
+	line-height:38px;
+	color:#666666;
+}
+#Operation_Contents .Next_Box .Operation_Next .CuBox{
+	border:none;
+}
+#Operation_Contents .Current_Box .Operation_Box .CuBox .Tcicon,
+#Operation_Contents .Current_Box .Operation_Next .CuBox .Tcicon{
+	position:absolute;
+	left:14px; top:8px;
+	background:url(../images/tcicon_open.png) 0 0 no-repeat;
+	width:38px; height:38px;
+}
+#Operation_Contents .Current_Box .Operation_Box .CuBox .TextArea,
+#Operation_Contents .Current_Box .Operation_Next .CuBox .TextArea{
+	padding:8px 0 0 65px;
+}
+#Operation_Contents .Current_Box .Operation_Box .CuBox .Time,
+#Operation_Contents .Current_Box .Operation_Next .CuBox .Time{
+	position:absolute;
+	right:14px; top:6px;
+}
+#Operation_Contents .Current_Box .Operation_Box .BtnBox{
+	position:relative;
+	width:578px;
+	height:246px;
+	background:#efefef;
+	border-top:#FFFFFF 1px solid;
+}
+#Operation_Contents .Current_Box .OK_Btn{
+	border-top: #5671AB 1px solid;
+	border-left: #3C5FA4 1px solid;
+	border-right: #3C5FA4 1px solid;
+	border-bottom: #4669AC 1px solid;
+	border-radius: 10px;
+	display:block;
+	width:548px; height:217px;
+	position:absolute;
+	left:14px; top:14px;
+	color:#FFF; text-shadow:#000 0 -1px 1px;
+	font-size:48px; line-height:217px;
+	text-align:center;
+
+}
+#Operation_Contents .Current_Box .OK_Btn.TC_BG05{
+	background:-webkit-gradient(linear, left top, left bottom, from(#b5b5b5),
+               color-stop(0.50, #8c8c8c),
+               color-stop(0.51, #818181),
+			   to(#7e7e7e));
+	border-top:#808080 1px solid;
+	border-left:#626262 1px solid;
+	border-right:#626262 1px solid;
+	border-bottom:#6f6f6f 1px solid;
+	color:#c6c6c6;
+	text-shadow:#757575 0 -2px 1px;
+}
+
+#Operation_Contents .Current_Box .Operation_Box.Open{
+	position:relative;
+	height:auto;
+	overflow:hidden;
+}
+#Operation_Contents .Current_Box .Operation_Box.Open .CuBox{
+	box-shadow:rgba(0,0,0,0.2) 0 1px 18px;
+}
+#Operation_Contents .Current_Box .Open ul{
+	border-bottom:#c9c9c9 1px solid;
+	height:210px;
+	display:block;
+	padding:20px 0 10px 0;
+	color:#666666;
+}
+#Operation_Contents .Current_Box .Open ul li{
+	position:relative;
+	display:block;
+	padding:0 10px 0 164px;
+	text-indent:-20px;
+	line-height:40px;
+	font-size:32px;
+	margin-bottom:24px;
+}
+#Operation_Contents .Current_Box .Open .MMBox{
+	position:absolute;
+	left:14px; top:-8px;
+	width:112px; height:50px;
+	border-radius:10px;
+	font-size:34px;
+	line-height:50px;
+}
+#Operation_Contents .Current_Box .Open .MMBox p{
+	display:block;
+	padding:0 0 0 17px;
+	text-indent:0;
+}
+#Operation_Contents .Current_Box .Open .MMBox span{
+	position:absolute;
+	right:8px; top:0;
+	display:block;
+	height:50px;
+	font-size:24px;
+	color:#b9b9b9;
+}
+
+#Operation_Contents .Current_Box .Operation_Box.Open .CuBox .Tcicon{
+	background:url(../images/tcicon_close.png) 0 0 no-repeat;
+}
+
+
+
+#Operation_Contents .Current_Box .Operation_Next{
+	width:578px;
+	height:99px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:14px auto 14px; 
+}
+
+#Operation_Contents .Current_Box .Operation_Next .InBox_Header{
+	width:578px;
+	height:44px;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+#Operation_Contents .Current_Box .Operation_Next .InBox_Header .Text_Type01{
+	text-align:left;
+	margin-left:14px;
+	font-size:34px;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+
+
+.TC_BG01{
+	background:-webkit-gradient(linear, left top, left bottom, from(#8d9199),
+               color-stop(0.50, #797d84),
+               color-stop(0.51, #6a6e76),
+			   to(#5e626b));
+	box-shadow:0px -1px 1px #a2a6ac inset;
+}
+.TC_BG02{
+	background:#FFF;
+}
+.TC_BG03{
+	background:#efefef;
+}
+
+.TypeN{
+	border:#b0b0b0 1px solid;	
+}
+.TypeB{
+	background:#003cff;
+	border:#002ab3 1px solid;
+	color:#FFF;
+}
+.TypeR{
+	background:#ff0000;
+	border:#b30000 1px solid;
+	color:#FFF;
+}
+.WCBoxType01 .Model{
+/*2018/07/09 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 START*/
+    /*width:243px;*/
+    width:223px;
+/*2018/07/09 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、Lマークなどを表示 END*/
+    display: inline-block;
+    vertical-align:middle;
+}
+.WCBoxType01 .TimeBox{
+    width:120px;
+    display: inline-block;
+}
+
+.WCBoxType01 .DelayBkColor {
+    background: red;
+    color: #ffffff;
+}

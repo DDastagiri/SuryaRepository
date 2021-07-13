@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document 3110101 */
+
+body
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+                            color-stop(0.005, #fff),
+                            color-stop(0.6, #fff),
+                            to(#e6e6e6));    
+}
+
+/**
+ * popUpWindow Panelスタイル
+ *-------------------------------------------------------------
+ */
+#Panel_SC3110101
+{
+    width :358px;
+    height:415px;    
+}
+
+/**
+ * popUpWindow iframeスタイル
+ *-------------------------------------------------------------
+ */
+#Frame_SC3110101
+{
+    width :362px;
+    height:415px;
+    border-width:0px;
+}
+
+/* 5件以上スクロール処理 */
+.innerDataBox{
+	width :355px;
+	height:415px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+/**
+ * popUpWindow 試乗車リスト
+ *-------------------------------------------------------------
+ */
+.innerDataBox .listCarHandling{
+	display:block;
+	padding-bottom:6px;
+}
+
+.innerDataBox .listCarHandling li
+{
+    /* panel内のマージン */
+    margin-top:4px;
+    margin-bottom:8px;
+    
+	display:block;
+	position:relative;
+	border:#666 1px solid;
+	height:94px;
+	width:345px;
+	border-radius:4px;
+	
+	background:#FFF;
+	
+}
+ /**車の情報**/
+.innerDataBox .listCarHandling li .CarInfo{
+	top:0; left:0;
+	position:relative;
+}
+
+.innerDataBox .listCarHandling li .CarInfo .CarImage,
+.innerDataBox .listCarHandling li .CarInfo .CarName,
+.innerDataBox .listCarHandling li .CarInfo .CarID,
+.innerDataBox .listCarHandling li .CarInfo .CarColor{
+	display:compact;
+	position:absolute;
+	top:10px; left:10px;
+	z-index:auto;
+}
+
+.innerDataBox .listCarHandling li .CarInfo .CarImage{
+	top:6px; left:8px;
+}
+.innerDataBox .listCarHandling li .CarInfo .CarName{
+	top:6px; left:140px;
+}
+.innerDataBox .listCarHandling li .CarInfo .CarID,
+.innerDataBox .listCarHandling li .CarInfo .CarColor{
+	top:42px;
+	left:144px;
+	background:url(../Images/SC3110101/starIcon.png) 0 0 no-repeat;
+	text-indent:24px;
+	/* font-family:"HiraKakuProN-W6","ヒラギノ角ゴ Pro W6"; */
+	font-size:12px; line-height:12px;
+	padding-top:3px;
+	padding-bottom:5px;
+}
+.innerDataBox .listCarHandling li .CarInfo .CarColor{
+	background:url(../Images/SC3110101/colorIcon.png) 0 0 no-repeat;
+	top:62px;
+}
+
+.ellipsis
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/**
+ * popUpWindow 試乗車リスト　使用中
+ *-------------------------------------------------------------
+ */
+.innerDataBox .listCarHandling li .inUse{
+	display:block;
+	position:absolute;
+	top:0; left:0;
+	z-index:900;
+	background:rgba(0,0,0,0.7);
+	width:345px; height:94px;
+	overflow:hidden;
+	border-radius:3px;
+}
+
+
+/**
+ * ここから0件の場合のCSS
+ *-------------------------------------------------------------
+ */
+
+.innerDataBox .listCarHandling li .CarNoData{
+	display:block;
+	height:35px;	width:190px;
+	position:absolute;
+	top:28px; left:152px;
+	/* font-family:HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro"; */
+	color:#666;
+	font-size:14px; line-height:20px;
+}
+
+
+.popover>.content {
+  min-width: 15em;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+   font-size:0.9em;
+    padding:8px 0px 0px 10px;
+    margin: 5px;
+    border:#a5a5a5 1px solid;
+    border-radius:5px;
+ }
+
+/**
+ * スピンアイコン
+ *-------------------------------------------------------------
+ */
+
+/* オーバーレイ
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlackSC3110101 {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	width:362px;
+	height:415px;
+	z-index:10001;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlackSC3110101.open { opacity:0.01; }
+
+/* 処理中アイコン表示
+ -------------------------------------------------------------------------------------------*/
+#processingServerSC3110101 {
+	position:absolute;
+	background:url(../Images/SC3110101/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:188px;
+	left:162px;
+	width:38px;
+	height:38px;
+	z-index:10002;
+}
+#processingServerSC3110101.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+/**
+ * ヘッダー用CSS
+ *-------------------------------------------------------------
+ */
+
+/* ポップアップのキャンセルボタン
+-------------------------------------------------------------------*/
+.PopupCancelButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:white;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+    font-size: 0.60em;
+    border:#25272b 1px solid;
+    border-left:none;
+    box-shadow:0px 1px 0px #6e727b;
+    border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+                                    color-stop(0.50, #0d1734),
+                                    color-stop(0.501, #000b29),
+                                    to(#000b29));
+    z-index:2;
+}
+
+/* ポップアップの完了ボタン
+--------------------------------------------------------*/
+.PopupRegistButton {
+    text-decoration: none;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    display: block;
+    color: white;
+    font-size: 0.60em;
+    text-align: center;
+    width: 78px;
+    height: 22px;
+    padding: 5px 0 0 0;
+    border: #25272B 1px solid;
+    box-shadow: 0px 1px 0px #6E727B;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6F96E8), 
+     color-stop(0.50, #376FE0),
+     color-stop(0.501, #2361DD),
+     to(#2361DD));
+}
+
+/* ポップアップのタイトル
+--------------------------------------------------------*/
+.PopupTitle {
+    position:relative;
+    /*width:135px;*/
+	height:45px;
+	top:8px;
+	/*left:90px;*/
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+	font-size:20px;
+    /*font-size: 1.00em;*/
+}

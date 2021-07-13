@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3290103DataSet" targetNamespace="http://tempuri.org/SC3290103DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3290103DataSet.xsd" xmlns="http://tempuri.org/SC3290103DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3290103DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3290103DataSet" msprop:Generator_UserDSName="SC3290103DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IrregularDetailInfo" msprop:Generator_TableClassName="IrregularDetailInfoDataTable" msprop:Generator_TableVarName="tableIrregularDetailInfo" msprop:Generator_RowChangedName="IrregularDetailInfoRowChanged" msprop:Generator_TablePropName="IrregularDetailInfo" msprop:Generator_RowDeletingName="IrregularDetailInfoRowDeleting" msprop:Generator_RowChangingName="IrregularDetailInfoRowChanging" msprop:Generator_RowEvHandlerName="IrregularDetailInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="IrregularDetailInfoRowDeleted" msprop:Generator_RowClassName="IrregularDetailInfoRow" msprop:Generator_UserTableName="IrregularDetailInfo" msprop:Generator_RowEvArgName="IrregularDetailInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRREG_CLASS_CD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IRREG_CLASS_CD" msprop:Generator_ColumnVarNameInTable="columnIRREG_CLASS_CD" msprop:Generator_ColumnPropNameInTable="IRREG_CLASS_CDColumn" msprop:Generator_UserColumnName="IRREG_CLASS_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="IRREG_ITEM_CD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IRREG_ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnIRREG_ITEM_CD" msprop:Generator_ColumnPropNameInTable="IRREG_ITEM_CDColumn" msprop:Generator_UserColumnName="IRREG_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGNZ_NAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ORGNZ_NAME" msprop:Generator_ColumnVarNameInTable="columnORGNZ_NAME" msprop:Generator_ColumnPropNameInTable="ORGNZ_NAMEColumn" msprop:Generator_UserColumnName="ORGNZ_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="STF_CD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STF_CD" msprop:Generator_ColumnVarNameInTable="columnSTF_CD" msprop:Generator_ColumnPropNameInTable="STF_CDColumn" msprop:Generator_UserColumnName="STF_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="STF_NAME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STF_NAME" msprop:Generator_ColumnVarNameInTable="columnSTF_NAME" msprop:Generator_ColumnPropNameInTable="STF_NAMEColumn" msprop:Generator_UserColumnName="STF_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MONTH_TARGET" msprop:Generator_ColumnVarNameInTable="columnMONTH_TARGET" msprop:Generator_ColumnPropNameInRow="MONTH_TARGET" msprop:Generator_ColumnPropNameInTable="MONTH_TARGETColumn" msprop:Generator_UserColumnName="MONTH_TARGET" type="xs:int" minOccurs="0" />
+              <xs:element name="PROGRESS_TARGET" msprop:Generator_ColumnVarNameInTable="columnPROGRESS_TARGET" msprop:Generator_ColumnPropNameInRow="PROGRESS_TARGET" msprop:Generator_ColumnPropNameInTable="PROGRESS_TARGETColumn" msprop:Generator_UserColumnName="PROGRESS_TARGET" type="xs:int" minOccurs="0" />
+              <xs:element name="RSLT_COUNT" msprop:Generator_ColumnVarNameInTable="columnRSLT_COUNT" msprop:Generator_ColumnPropNameInRow="RSLT_COUNT" msprop:Generator_ColumnPropNameInTable="RSLT_COUNTColumn" msprop:Generator_UserColumnName="RSLT_COUNT" type="xs:int" minOccurs="0" />
+              <xs:element name="ACHIEVE_RATE" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="ACHIEVE_RATE" msprop:Generator_ColumnVarNameInTable="columnACHIEVE_RATE" msprop:Generator_ColumnPropNameInTable="ACHIEVE_RATEColumn" msprop:Generator_UserColumnName="ACHIEVE_RATE" type="xs:int" minOccurs="0" />
+              <xs:element name="FLLW_COMPLETE_FLG" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FLLW_COMPLETE_FLG" msprop:Generator_ColumnVarNameInTable="columnFLLW_COMPLETE_FLG" msprop:Generator_ColumnPropNameInTable="FLLW_COMPLETE_FLGColumn" msprop:Generator_UserColumnName="FLLW_COMPLETE_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="FLLW_EXPR_DATE" msprop:Generator_ColumnVarNameInTable="columnFLLW_EXPR_DATE" msprop:Generator_ColumnPropNameInRow="FLLW_EXPR_DATE" msprop:Generator_ColumnPropNameInTable="FLLW_EXPR_DATEColumn" msprop:Generator_UserColumnName="FLLW_EXPR_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FLLW_PIC_STF_CD" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FLLW_PIC_STF_CD" msprop:Generator_ColumnVarNameInTable="columnFLLW_PIC_STF_CD" msprop:Generator_ColumnPropNameInTable="FLLW_PIC_STF_CDColumn" msprop:Generator_UserColumnName="FLLW_PIC_STF_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

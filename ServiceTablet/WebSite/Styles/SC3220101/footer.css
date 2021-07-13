@@ -1,0 +1,113 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#InitFooterArea
+{
+	width:100%;
+	height:100%
+}
+
+.InitFooterButton_Space
+{
+/*	width:225px;*/
+/*	width:283px;*/
+	width:200px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	text-align: center;
+	color:#FFF;
+	z-index:5;
+}
+
+.FooterButtonName
+{
+	display:block;
+	width:76px;
+	position:absolute;
+	bottom:2px;
+	font-size:10px;
+	line-height:10px;
+	text-align:center;
+	background-color:transparent;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color:#434343;
+}
+
+#FooterButton100
+{
+	width:78px;
+	height:42px;
+	background-position:center top;
+	background-repeat:no-repeat;
+/* 2013/06/03 TMEJ 小澤 【A.STEP2】次世代e-CRBサービスタブレット 新DB適応に向けた機能開発START */
+/*	float:left;*/
+/*	margin-left:5px;*/
+/*	margin-top:1px;*/
+/*	position:relative;*/
+	position:absolute;
+	left:850px;
+/* 2013/06/03 TMEJ 小澤 【A.STEP2】次世代e-CRBサービスタブレット 新DB適応に向けた機能開発END */
+	border-radius:4px;
+}
+#FooterButtonIcon100
+{
+	width:78px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3220101/btn050.png) no-repeat;
+}
+
+#FooterButton200
+{
+	width:78px;
+	height:42px;
+	background-position:center top;
+	background-repeat:no-repeat;
+/* 2013/06/03 TMEJ 小澤 【A.STEP2】次世代e-CRBサービスタブレット 新DB適応に向けた機能開発START */
+/*	float:left;*/
+/*	margin-left:5px;*/
+/*	margin-top:1px;*/
+/*	position:relative;*/
+	position:absolute;
+	left:934px;
+/* 2013/06/03 TMEJ 小澤 【A.STEP2】次世代e-CRBサービスタブレット 新DB適応に向けた機能開発END */
+	border-radius:4px;
+}
+#FooterButtonIcon200
+{
+	width:78px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3220101/btn040.png) no-repeat;
+}
+
+/* 2013/12/10 TMEJ 河原 次世代サービス 工程管理機能開発 START */
+#FooterButton300 {
+    
+    display:block;
+    position:absolute;
+    left:930px;
+	width:80px; height:44px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#7c98ed),
+		color-stop(0.55, #4169e5),
+		color-stop(0.55, #1e4ee1),
+		to(#1e4ee1));
+    
+    
+}
+.FooterLabel{
+	color:#FFF; font-size:14px;
+	font-weight: bold;
+	line-height:47px;
+	text-align:center;
+	text-shadow:0px -1px 1px #000;
+}
+/* 2013/12/10 TMEJ 河原 次世代サービス 工程管理機能開発 END */

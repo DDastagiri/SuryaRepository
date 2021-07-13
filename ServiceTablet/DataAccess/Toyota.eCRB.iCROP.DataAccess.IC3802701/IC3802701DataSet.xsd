@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3802701DataSet" targetNamespace="http://tempuri.org/IC3802701DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3802701DataSet.xsd" xmlns="http://tempuri.org/IC3802701DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3802701DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3802701DataSet" msprop:Generator_UserDSName="IC3802701DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3802701StringValue" msprop:Generator_TableClassName="IC3802701StringValueDataTable" msprop:Generator_TableVarName="tableIC3802701StringValue" msprop:Generator_TablePropName="IC3802701StringValue" msprop:Generator_RowDeletingName="IC3802701StringValueRowDeleting" msprop:Generator_UserTableName="IC3802701StringValue" msprop:Generator_RowChangingName="IC3802701StringValueRowChanging" msprop:Generator_RowEvHandlerName="IC3802701StringValueRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701StringValueRowDeleted" msprop:Generator_RowEvArgName="IC3802701StringValueRowChangeEvent" msprop:Generator_RowChangedName="IC3802701StringValueRowChanged" msprop:Generator_RowClassName="IC3802701StringValueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COL1" msprop:Generator_ColumnVarNameInTable="columnCOL1" msprop:Generator_ColumnPropNameInRow="COL1" msprop:Generator_ColumnPropNameInTable="COL1Column" msprop:Generator_UserColumnName="COL1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701DmsDlrBrn" msprop:Generator_TableClassName="IC3802701DmsDlrBrnDataTable" msprop:Generator_TableVarName="tableIC3802701DmsDlrBrn" msprop:Generator_TablePropName="IC3802701DmsDlrBrn" msprop:Generator_RowDeletingName="IC3802701DmsDlrBrnRowDeleting" msprop:Generator_UserTableName="IC3802701DmsDlrBrn" msprop:Generator_RowChangingName="IC3802701DmsDlrBrnRowChanging" msprop:Generator_RowEvHandlerName="IC3802701DmsDlrBrnRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701DmsDlrBrnRowDeleted" msprop:Generator_RowEvArgName="IC3802701DmsDlrBrnRowChangeEvent" msprop:Generator_RowChangedName="IC3802701DmsDlrBrnRowChanged" msprop:Generator_RowClassName="IC3802701DmsDlrBrnRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DMS_DLR_CD" msprop:Generator_ColumnVarNameInTable="columnDMS_DLR_CD" msprop:Generator_ColumnPropNameInRow="DMS_DLR_CD" msprop:Generator_ColumnPropNameInTable="DMS_DLR_CDColumn" msprop:Generator_UserColumnName="DMS_DLR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DMS_BRN_CD" msprop:Generator_ColumnVarNameInTable="columnDMS_BRN_CD" msprop:Generator_ColumnPropNameInRow="DMS_BRN_CD" msprop:Generator_ColumnPropNameInTable="DMS_BRN_CDColumn" msprop:Generator_UserColumnName="DMS_BRN_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701SystemSettingValue" msprop:Generator_TableClassName="IC3802701SystemSettingValueDataTable" msprop:Generator_TableVarName="tableIC3802701SystemSettingValue" msprop:Generator_TablePropName="IC3802701SystemSettingValue" msprop:Generator_RowDeletingName="IC3802701SystemSettingValueRowDeleting" msprop:Generator_UserTableName="IC3802701SystemSettingValue" msprop:Generator_RowChangingName="IC3802701SystemSettingValueRowChanging" msprop:Generator_RowEvHandlerName="IC3802701SystemSettingValueRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701SystemSettingValueRowDeleted" msprop:Generator_RowEvArgName="IC3802701SystemSettingValueRowChangeEvent" msprop:Generator_RowChangedName="IC3802701SystemSettingValueRowChanged" msprop:Generator_RowClassName="IC3802701SystemSettingValueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LINK_SEND_TIMEOUT_VAL" msprop:Generator_ColumnVarNameInTable="columnLINK_SEND_TIMEOUT_VAL" msprop:Generator_ColumnPropNameInRow="LINK_SEND_TIMEOUT_VAL" msprop:Generator_ColumnPropNameInTable="LINK_SEND_TIMEOUT_VALColumn" msprop:Generator_UserColumnName="LINK_SEND_TIMEOUT_VAL" type="xs:string" minOccurs="0" />
+              <xs:element name="DIST_CD" msprop:Generator_ColumnVarNameInTable="columnDIST_CD" msprop:Generator_ColumnPropNameInRow="DIST_CD" msprop:Generator_ColumnPropNameInTable="DIST_CDColumn" msprop:Generator_UserColumnName="DIST_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SEND_RELATION_STATUS" msprop:Generator_ColumnVarNameInTable="columnSEND_RELATION_STATUS" msprop:Generator_ColumnPropNameInRow="SEND_RELATION_STATUS" msprop:Generator_ColumnPropNameInTable="SEND_RELATION_STATUSColumn" msprop:Generator_UserColumnName="SEND_RELATION_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_FORMAT" msprop:Generator_ColumnVarNameInTable="columnDATE_FORMAT" msprop:Generator_ColumnPropNameInRow="DATE_FORMAT" msprop:Generator_ColumnPropNameInTable="DATE_FORMATColumn" msprop:Generator_UserColumnName="DATE_FORMAT" type="xs:string" minOccurs="0" />
+              <xs:element name="LINK_URL_STATUS_INFO" msdata:Caption="LINK_URL_RESV_INFO" msprop:Generator_ColumnVarNameInTable="columnLINK_URL_STATUS_INFO" msprop:Generator_ColumnPropNameInRow="LINK_URL_STATUS_INFO" msprop:Generator_ColumnPropNameInTable="LINK_URL_STATUS_INFOColumn" msprop:Generator_UserColumnName="LINK_URL_STATUS_INFO" type="xs:string" minOccurs="0" />
+              <xs:element name="STAFF_SHOW_FLG" msprop:Generator_ColumnVarNameInTable="columnSTAFF_SHOW_FLG" msprop:Generator_ColumnPropNameInRow="STAFF_SHOW_FLG" msprop:Generator_ColumnPropNameInTable="STAFF_SHOW_FLGColumn" msprop:Generator_UserColumnName="STAFF_SHOW_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS_CD_CONV_FLG" msprop:Generator_ColumnVarNameInTable="columnSTATUS_CD_CONV_FLG" msprop:Generator_ColumnPropNameInRow="STATUS_CD_CONV_FLG" msprop:Generator_ColumnPropNameInTable="STATUS_CD_CONV_FLGColumn" msprop:Generator_UserColumnName="STATUS_CD_CONV_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="LINK_SOAP_VERSION" msprop:Generator_ColumnVarNameInTable="columnLINK_SOAP_VERSION" msprop:Generator_ColumnPropNameInRow="LINK_SOAP_VERSION" msprop:Generator_ColumnPropNameInTable="LINK_SOAP_VERSIONColumn" msprop:Generator_UserColumnName="LINK_SOAP_VERSION" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701StopInformation" msprop:Generator_TableClassName="IC3802701StopInformationDataTable" msprop:Generator_TableVarName="tableIC3802701StopInformation" msprop:Generator_TablePropName="IC3802701StopInformation" msprop:Generator_RowDeletingName="IC3802701StopInformationRowDeleting" msprop:Generator_UserTableName="IC3802701StopInformation" msprop:Generator_RowChangingName="IC3802701StopInformationRowChanging" msprop:Generator_RowEvHandlerName="IC3802701StopInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701StopInformationRowDeleted" msprop:Generator_RowEvArgName="IC3802701StopInformationRowChangeEvent" msprop:Generator_RowChangedName="IC3802701StopInformationRowChanged" msprop:Generator_RowClassName="IC3802701StopInformationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STOP_SEQ_NUM" msprop:Generator_ColumnVarNameInTable="columnSTOP_SEQ_NUM" msprop:Generator_ColumnPropNameInRow="STOP_SEQ_NUM" msprop:Generator_ColumnPropNameInTable="STOP_SEQ_NUMColumn" msprop:Generator_UserColumnName="STOP_SEQ_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="STOP_START" msprop:Generator_ColumnVarNameInTable="columnSTOP_START" msprop:Generator_ColumnPropNameInRow="STOP_START" msprop:Generator_ColumnPropNameInTable="STOP_STARTColumn" msprop:Generator_UserColumnName="STOP_START" type="xs:string" minOccurs="0" />
+              <xs:element name="STOP_END" msprop:Generator_ColumnVarNameInTable="columnSTOP_END" msprop:Generator_ColumnPropNameInRow="STOP_END" msprop:Generator_ColumnPropNameInTable="STOP_ENDColumn" msprop:Generator_UserColumnName="STOP_END" type="xs:string" minOccurs="0" />
+              <xs:element name="STOP_REASON" msprop:Generator_ColumnVarNameInTable="columnSTOP_REASON" msprop:Generator_ColumnPropNameInRow="STOP_REASON" msprop:Generator_ColumnPropNameInTable="STOP_REASONColumn" msprop:Generator_UserColumnName="STOP_REASON" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701JobResult" msprop:Generator_TableClassName="IC3802701JobResultDataTable" msprop:Generator_TableVarName="tableIC3802701JobResult" msprop:Generator_TablePropName="IC3802701JobResult" msprop:Generator_RowDeletingName="IC3802701JobResultRowDeleting" msprop:Generator_UserTableName="IC3802701JobResult" msprop:Generator_RowChangingName="IC3802701JobResultRowChanging" msprop:Generator_RowEvHandlerName="IC3802701JobResultRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701JobResultRowDeleted" msprop:Generator_RowEvArgName="IC3802701JobResultRowChangeEvent" msprop:Generator_RowChangedName="IC3802701JobResultRowChanged" msprop:Generator_RowClassName="IC3802701JobResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JOB_RSLT_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_RSLT_ID" msprop:Generator_ColumnPropNameInRow="JOB_RSLT_ID" msprop:Generator_ColumnPropNameInTable="JOB_RSLT_IDColumn" msprop:Generator_UserColumnName="JOB_RSLT_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RSLT_START_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_START_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_START_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_START_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_START_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RSLT_END_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_END_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_END_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_END_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_END_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STOP_REASON_TYPE" msprop:Generator_ColumnVarNameInTable="columnSTOP_REASON_TYPE" msprop:Generator_ColumnPropNameInRow="STOP_REASON_TYPE" msprop:Generator_ColumnPropNameInTable="STOP_REASON_TYPEColumn" msprop:Generator_UserColumnName="STOP_REASON_TYPE" type="xs:long" minOccurs="0" />
+              <xs:element name="STOP_MEMO" msprop:Generator_ColumnVarNameInTable="columnSTOP_MEMO" msprop:Generator_ColumnPropNameInRow="STOP_MEMO" msprop:Generator_ColumnPropNameInTable="STOP_MEMOColumn" msprop:Generator_UserColumnName="STOP_MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_STATUS" msdata:Caption="BREAK" msprop:Generator_ColumnVarNameInTable="columnJOB_STATUS" msprop:Generator_ColumnPropNameInRow="JOB_STATUS" msprop:Generator_ColumnPropNameInTable="JOB_STATUSColumn" msprop:Generator_UserColumnName="JOB_STATUS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701DispatchInfo" msprop:Generator_TableClassName="IC3802701DispatchInfoDataTable" msprop:Generator_TableVarName="tableIC3802701DispatchInfo" msprop:Generator_TablePropName="IC3802701DispatchInfo" msprop:Generator_RowDeletingName="IC3802701DispatchInfoRowDeleting" msprop:Generator_UserTableName="IC3802701DispatchInfo" msprop:Generator_RowChangingName="IC3802701DispatchInfoRowChanging" msprop:Generator_RowEvHandlerName="IC3802701DispatchInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701DispatchInfoRowDeleted" msprop:Generator_RowEvArgName="IC3802701DispatchInfoRowChangeEvent" msprop:Generator_RowChangedName="IC3802701DispatchInfoRowChanged" msprop:Generator_RowClassName="IC3802701DispatchInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEQ_NO" msprop:Generator_ColumnVarNameInTable="columnSEQ_NO" msprop:Generator_ColumnPropNameInRow="SEQ_NO" msprop:Generator_ColumnPropNameInTable="SEQ_NOColumn" msprop:Generator_UserColumnName="SEQ_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_DTL_ID" msprop:Generator_ColumnPropNameInRow="JOB_DTL_ID" msprop:Generator_ColumnPropNameInTable="JOB_DTL_IDColumn" msprop:Generator_UserColumnName="JOB_DTL_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DMS_JOB_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnDMS_JOB_DTL_ID" msprop:Generator_ColumnPropNameInRow="DMS_JOB_DTL_ID" msprop:Generator_ColumnPropNameInTable="DMS_JOB_DTL_IDColumn" msprop:Generator_UserColumnName="DMS_JOB_DTL_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="VCL_VIN" msprop:Generator_ColumnVarNameInTable="columnVCL_VIN" msprop:Generator_ColumnPropNameInRow="VCL_VIN" msprop:Generator_ColumnPropNameInTable="VCL_VINColumn" msprop:Generator_UserColumnName="VCL_VIN" type="xs:string" minOccurs="0" />
+              <xs:element name="RO_NUM" msprop:Generator_ColumnVarNameInTable="columnRO_NUM" msprop:Generator_ColumnPropNameInRow="RO_NUM" msprop:Generator_ColumnPropNameInTable="RO_NUMColumn" msprop:Generator_UserColumnName="RO_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="START_DATETIME" msprop:Generator_ColumnVarNameInTable="columnSTART_DATETIME" msprop:Generator_ColumnPropNameInRow="START_DATETIME" msprop:Generator_ColumnPropNameInTable="START_DATETIMEColumn" msprop:Generator_UserColumnName="START_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="END_DATETIME" msprop:Generator_ColumnVarNameInTable="columnEND_DATETIME" msprop:Generator_ColumnPropNameInRow="END_DATETIME" msprop:Generator_ColumnPropNameInTable="END_DATETIMEColumn" msprop:Generator_UserColumnName="END_DATETIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701JobDetail" msprop:Generator_TableClassName="IC3802701JobDetailDataTable" msprop:Generator_TableVarName="tableIC3802701JobDetail" msprop:Generator_TablePropName="IC3802701JobDetail" msprop:Generator_RowDeletingName="IC3802701JobDetailRowDeleting" msprop:Generator_UserTableName="IC3802701JobDetail" msprop:Generator_RowChangingName="IC3802701JobDetailRowChanging" msprop:Generator_RowEvHandlerName="IC3802701JobDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701JobDetailRowDeleted" msprop:Generator_RowEvArgName="IC3802701JobDetailRowChangeEvent" msprop:Generator_RowChangedName="IC3802701JobDetailRowChanged" msprop:Generator_RowClassName="IC3802701JobDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JOB_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_DTL_ID" msprop:Generator_ColumnPropNameInRow="JOB_DTL_ID" msprop:Generator_ColumnPropNameInTable="JOB_DTL_IDColumn" msprop:Generator_UserColumnName="JOB_DTL_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_INSTRUCT_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_INSTRUCT_ID" msprop:Generator_ColumnPropNameInRow="JOB_INSTRUCT_ID" msprop:Generator_ColumnPropNameInTable="JOB_INSTRUCT_IDColumn" msprop:Generator_UserColumnName="JOB_INSTRUCT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_INSTRUCT_SEQ" msprop:Generator_ColumnVarNameInTable="columnJOB_INSTRUCT_SEQ" msprop:Generator_ColumnPropNameInRow="JOB_INSTRUCT_SEQ" msprop:Generator_ColumnPropNameInTable="JOB_INSTRUCT_SEQColumn" msprop:Generator_UserColumnName="JOB_INSTRUCT_SEQ" type="xs:long" minOccurs="0" />
+              <xs:element name="JOB_CD" msprop:Generator_ColumnVarNameInTable="columnJOB_CD" msprop:Generator_ColumnPropNameInRow="JOB_CD" msprop:Generator_ColumnPropNameInTable="JOB_CDColumn" msprop:Generator_UserColumnName="JOB_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_STF_GROUP_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_STF_GROUP_ID" msprop:Generator_ColumnPropNameInRow="JOB_STF_GROUP_ID" msprop:Generator_ColumnPropNameInTable="JOB_STF_GROUP_IDColumn" msprop:Generator_UserColumnName="JOB_STF_GROUP_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_STATUS" msprop:Generator_ColumnVarNameInTable="columnJOB_STATUS" msprop:Generator_ColumnPropNameInRow="JOB_STATUS" msprop:Generator_ColumnPropNameInTable="JOB_STATUSColumn" msprop:Generator_UserColumnName="JOB_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="RSLT_START_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_START_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_START_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_START_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_START_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RSLT_END_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_END_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_END_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_END_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_END_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STOP_REASON_TYPE" msprop:Generator_ColumnVarNameInTable="columnSTOP_REASON_TYPE" msprop:Generator_ColumnPropNameInRow="STOP_REASON_TYPE" msprop:Generator_ColumnPropNameInTable="STOP_REASON_TYPEColumn" msprop:Generator_UserColumnName="STOP_REASON_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="STALL_ID" msprop:Generator_ColumnVarNameInTable="columnSTALL_ID" msprop:Generator_ColumnPropNameInRow="STALL_ID" msprop:Generator_ColumnPropNameInTable="STALL_IDColumn" msprop:Generator_UserColumnName="STALL_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="INSPECTION_APPROVAL_STF_CD" msprop:Generator_ColumnVarNameInTable="columnINSPECTION_APPROVAL_STF_CD" msprop:Generator_ColumnPropNameInRow="INSPECTION_APPROVAL_STF_CD" msprop:Generator_ColumnPropNameInTable="INSPECTION_APPROVAL_STF_CDColumn" msprop:Generator_UserColumnName="INSPECTION_APPROVAL_STF_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="INSPECTION_NEED_FLG" msprop:Generator_ColumnVarNameInTable="columnINSPECTION_NEED_FLG" msprop:Generator_ColumnPropNameInRow="INSPECTION_NEED_FLG" msprop:Generator_ColumnPropNameInTable="INSPECTION_NEED_FLGColumn" msprop:Generator_UserColumnName="INSPECTION_NEED_FLG" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701StallInformation" msprop:Generator_TableClassName="IC3802701StallInformationDataTable" msprop:Generator_TableVarName="tableIC3802701StallInformation" msprop:Generator_TablePropName="IC3802701StallInformation" msprop:Generator_RowDeletingName="IC3802701StallInformationRowDeleting" msprop:Generator_UserTableName="IC3802701StallInformation" msprop:Generator_RowChangingName="IC3802701StallInformationRowChanging" msprop:Generator_RowEvHandlerName="IC3802701StallInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701StallInformationRowDeleted" msprop:Generator_RowEvArgName="IC3802701StallInformationRowChangeEvent" msprop:Generator_RowChangedName="IC3802701StallInformationRowChanged" msprop:Generator_RowClassName="IC3802701StallInformationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STALL_USE_ID" msprop:Generator_ColumnVarNameInTable="columnSTALL_USE_ID" msprop:Generator_ColumnPropNameInRow="STALL_USE_ID" msprop:Generator_ColumnPropNameInTable="STALL_USE_IDColumn" msprop:Generator_UserColumnName="STALL_USE_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STALL_ID" msprop:Generator_ColumnVarNameInTable="columnSTALL_ID" msprop:Generator_ColumnPropNameInRow="STALL_ID" msprop:Generator_ColumnPropNameInTable="STALL_IDColumn" msprop:Generator_UserColumnName="STALL_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_ID" msprop:Generator_ColumnPropNameInRow="JOB_ID" msprop:Generator_ColumnPropNameInTable="JOB_IDColumn" msprop:Generator_UserColumnName="JOB_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RSLT_START_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_START_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_START_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_START_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_START_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RSLT_END_DATETIME" msprop:Generator_ColumnVarNameInTable="columnRSLT_END_DATETIME" msprop:Generator_ColumnPropNameInRow="RSLT_END_DATETIME" msprop:Generator_ColumnPropNameInTable="RSLT_END_DATETIMEColumn" msprop:Generator_UserColumnName="RSLT_END_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRMS_END_DATETIME" msprop:Generator_ColumnVarNameInTable="columnPRMS_END_DATETIME" msprop:Generator_ColumnPropNameInRow="PRMS_END_DATETIME" msprop:Generator_ColumnPropNameInTable="PRMS_END_DATETIMEColumn" msprop:Generator_UserColumnName="PRMS_END_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STALL_USE_STATUS" msprop:Generator_ColumnVarNameInTable="columnSTALL_USE_STATUS" msprop:Generator_ColumnPropNameInRow="STALL_USE_STATUS" msprop:Generator_ColumnPropNameInTable="STALL_USE_STATUSColumn" msprop:Generator_UserColumnName="STALL_USE_STATUS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701StaffJob" msprop:Generator_TableClassName="IC3802701StaffJobDataTable" msprop:Generator_TableVarName="tableIC3802701StaffJob" msprop:Generator_TablePropName="IC3802701StaffJob" msprop:Generator_RowDeletingName="IC3802701StaffJobRowDeleting" msprop:Generator_UserTableName="IC3802701StaffJob" msprop:Generator_RowChangingName="IC3802701StaffJobRowChanging" msprop:Generator_RowEvHandlerName="IC3802701StaffJobRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701StaffJobRowDeleted" msprop:Generator_RowEvArgName="IC3802701StaffJobRowChangeEvent" msprop:Generator_RowChangedName="IC3802701StaffJobRowChanged" msprop:Generator_RowClassName="IC3802701StaffJobRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STF_CD" msprop:Generator_ColumnVarNameInTable="columnSTF_CD" msprop:Generator_ColumnPropNameInRow="STF_CD" msprop:Generator_ColumnPropNameInTable="STF_CDColumn" msprop:Generator_UserColumnName="STF_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701StallIdle" msprop:Generator_TableClassName="IC3802701StallIdleDataTable" msprop:Generator_TableVarName="tableIC3802701StallIdle" msprop:Generator_TablePropName="IC3802701StallIdle" msprop:Generator_RowDeletingName="IC3802701StallIdleRowDeleting" msprop:Generator_UserTableName="IC3802701StallIdle" msprop:Generator_RowChangingName="IC3802701StallIdleRowChanging" msprop:Generator_RowEvHandlerName="IC3802701StallIdleRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701StallIdleRowDeleted" msprop:Generator_RowEvArgName="IC3802701StallIdleRowChangeEvent" msprop:Generator_RowChangedName="IC3802701StallIdleRowChanged" msprop:Generator_RowClassName="IC3802701StallIdleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STALL_ID" msdata:Caption="JOB_ID" msprop:Generator_ColumnVarNameInTable="columnSTALL_ID" msprop:Generator_ColumnPropNameInRow="STALL_ID" msprop:Generator_ColumnPropNameInTable="STALL_IDColumn" msprop:Generator_UserColumnName="STALL_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IDLE_START_TIME" msprop:Generator_ColumnVarNameInTable="columnIDLE_START_TIME" msprop:Generator_ColumnPropNameInRow="IDLE_START_TIME" msprop:Generator_ColumnPropNameInTable="IDLE_START_TIMEColumn" msprop:Generator_UserColumnName="IDLE_START_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDLE_END_TIME" msprop:Generator_ColumnVarNameInTable="columnIDLE_END_TIME" msprop:Generator_ColumnPropNameInRow="IDLE_END_TIME" msprop:Generator_ColumnPropNameInTable="IDLE_END_TIMEColumn" msprop:Generator_UserColumnName="IDLE_END_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDLE_START_DATETIME" msprop:Generator_ColumnVarNameInTable="columnIDLE_START_DATETIME" msprop:Generator_ColumnPropNameInRow="IDLE_START_DATETIME" msprop:Generator_ColumnPropNameInTable="IDLE_START_DATETIMEColumn" msprop:Generator_UserColumnName="IDLE_START_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDLE_END_DATETIME" msprop:Generator_ColumnVarNameInTable="columnIDLE_END_DATETIME" msprop:Generator_ColumnPropNameInRow="IDLE_END_DATETIME" msprop:Generator_ColumnPropNameInTable="IDLE_END_DATETIMEColumn" msprop:Generator_UserColumnName="IDLE_END_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDLE_TYPE" msprop:Generator_ColumnVarNameInTable="columnIDLE_TYPE" msprop:Generator_ColumnPropNameInRow="IDLE_TYPE" msprop:Generator_ColumnPropNameInTable="IDLE_TYPEColumn" msprop:Generator_UserColumnName="IDLE_TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701LinkSendSettings" msprop:Generator_TableClassName="IC3802701LinkSendSettingsDataTable" msprop:Generator_TableVarName="tableIC3802701LinkSendSettings" msprop:Generator_TablePropName="IC3802701LinkSendSettings" msprop:Generator_RowDeletingName="IC3802701LinkSendSettingsRowDeleting" msprop:Generator_UserTableName="IC3802701LinkSendSettings" msprop:Generator_RowChangingName="IC3802701LinkSendSettingsRowChanging" msprop:Generator_RowEvHandlerName="IC3802701LinkSendSettingsRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701LinkSendSettingsRowDeleted" msprop:Generator_RowEvArgName="IC3802701LinkSendSettingsRowChangeEvent" msprop:Generator_RowChangedName="IC3802701LinkSendSettingsRowChanged" msprop:Generator_RowClassName="IC3802701LinkSendSettingsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEND_FLG" msprop:Generator_ColumnVarNameInTable="columnSEND_FLG" msprop:Generator_ColumnPropNameInRow="SEND_FLG" msprop:Generator_ColumnPropNameInTable="SEND_FLGColumn" msprop:Generator_UserColumnName="SEND_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLR_CD" msprop:Generator_ColumnVarNameInTable="columnDLR_CD" msprop:Generator_ColumnPropNameInRow="DLR_CD" msprop:Generator_ColumnPropNameInTable="DLR_CDColumn" msprop:Generator_UserColumnName="DLR_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BRN_CD" msprop:Generator_ColumnVarNameInTable="columnBRN_CD" msprop:Generator_ColumnPropNameInRow="BRN_CD" msprop:Generator_ColumnPropNameInTable="BRN_CDColumn" msprop:Generator_UserColumnName="BRN_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3802701JobStatus" msprop:Generator_TableClassName="IC3802701JobStatusDataTable" msprop:Generator_TableVarName="tableIC3802701JobStatus" msprop:Generator_TablePropName="IC3802701JobStatus" msprop:Generator_RowDeletingName="IC3802701JobStatusRowDeleting" msprop:Generator_UserTableName="IC3802701JobStatus" msprop:Generator_RowChangingName="IC3802701JobStatusRowChanging" msprop:Generator_RowEvHandlerName="IC3802701JobStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3802701JobStatusRowDeleted" msprop:Generator_RowEvArgName="IC3802701JobStatusRowChangeEvent" msprop:Generator_RowChangedName="IC3802701JobStatusRowChanged" msprop:Generator_RowClassName="IC3802701JobStatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JOB_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_DTL_ID" msprop:Generator_ColumnPropNameInRow="JOB_DTL_ID" msprop:Generator_ColumnPropNameInTable="JOB_DTL_IDColumn" msprop:Generator_UserColumnName="JOB_DTL_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JOB_INSTRUCT_ID" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="JOB_INSTRUCT_ID" msprop:Generator_ColumnVarNameInTable="columnJOB_INSTRUCT_ID" msprop:Generator_ColumnPropNameInTable="JOB_INSTRUCT_IDColumn" msprop:Generator_UserColumnName="JOB_INSTRUCT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_INSTRUCT_SEQ" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="JOB_INSTRUCT_SEQ" msprop:Generator_ColumnVarNameInTable="columnJOB_INSTRUCT_SEQ" msprop:Generator_ColumnPropNameInTable="JOB_INSTRUCT_SEQColumn" msprop:Generator_UserColumnName="JOB_INSTRUCT_SEQ" type="xs:long" minOccurs="0" />
+              <xs:element name="JOB_STATUS" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="JOB_STATUS" msprop:Generator_ColumnVarNameInTable="columnJOB_STATUS" msprop:Generator_ColumnPropNameInTable="JOB_STATUSColumn" msprop:Generator_UserColumnName="JOB_STATUS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

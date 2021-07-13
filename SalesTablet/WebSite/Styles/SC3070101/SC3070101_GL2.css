@@ -1,0 +1,588 @@
+﻿
+#GradeWindownGL2 {
+	position:absolute;
+	top:90px;
+	left:210px;
+	width:330px;
+	height:290px;
+	background-repeat: no-repeat;
+	background-position: 140px 0px;
+	z-index:500;
+}
+
+#GradeWindownGL2 #GradeWindownBoxGL2 {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: scroll;
+    overflow-x: hidden;
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeListItemBox {
+	width:298px
+}
+
+#GradeWindownGL2 #GradeWindownBoxGL2 table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#GradeWindownGL2 #GradeWindownBoxGL2 .GradeListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}   
+
+
+
+#ExteriorWindownGL2 {
+	position:absolute;
+	top:90px;
+	left:640px;
+	width:330px;
+	height:290px;
+	/* 検索リストの表示位置制御の為、削除
+    height:320px;
+	padding:17px 0px 0px 0px;
+	background:url(../images/SC3070101/scNscPopUpArrowTop.png);*/
+	background-repeat: no-repeat;
+	background-position: 140px 0px;
+	z-index:500;
+}
+
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: scroll;
+    overflow-x: hidden;
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorListItemBox {
+	width:298px
+}
+
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#ExteriorWindownGL2 #ExteriorWindownBoxGL2 .ExteriorListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}   
+
+#SfxWindownGL2 {
+	position:absolute;
+	top:90px;
+	left:460px;
+	width:330px;
+	height:290px;
+	background-repeat: no-repeat;
+	background-position: 140px 0px;
+	z-index:500;
+}
+
+#SfxWindownGL2 #SfxWindownBoxGL2 {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.036, rgba(29,40,59,0.9)),
+							color-stop(0.0365, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxCancellButton a.Square{
+	left:1px;
+	width:70px;
+	text-align:center;
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxListArea {
+	font-size:0.9em;
+	width:318px;
+	height:235px;
+	margin:0 auto;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxListBox {
+	width:298px;
+	height:220px;
+	margin:10px auto 0;
+	overflow-y: scroll;
+    overflow-x: hidden;
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxListItemBox {
+	width:298px
+}
+
+#SfxWindownGL2 #SfxWindownBoxGL2 table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#SfxWindownGL2 #SfxWindownBoxGL2 .SfxListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}   
+
+.clearbothHeigth19{	height:19px; overflow:hidden; clear:both;}
+.clearbothHeigth18{	height:18px; overflow:hidden; clear:both;}
+.clearbothHeigth17{	height:17px; overflow:hidden; clear:both;}
+
+
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #GradeContentGL2,
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #SfxContentGL2,
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #BodyColorContentGL2,
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #OrderContentGL2,
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #StockContentGL2{
+	background: -webkit-gradient(linear, left top, left bottom, from(#058bf5),
+						to(#0160e6));
+	border-right:#AAA 1px solid;
+	border-bottom:#AAA 1px solid;
+	text-align:center;
+	width:226px;
+	color:#FFF;
+	padding:15px 0;
+	vertical-align:middle;
+}
+
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #SfxContentGL2{
+	width:120px;
+}
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #BodyColorContentGL2{
+	width:100px;
+}
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #OrderContentGL2{
+	padding:5px 0;
+	width:182px;
+	padding-left:27px;
+}
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #StockContentGL2{
+	padding:5px 0;
+	width:420px;
+	border-right:#AAA 1px solid;
+	padding-left:32px;
+}
+
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList #GradeContentGL2{
+	border-left:#AAA 1px solid;
+}
+
+#OrderContentGL2 #TipBlockGL2{
+    height: 14px;
+}
+
+
+.invisible 
+{
+    opacity:0;
+}
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList .ColorTitle{
+	background: -webkit-gradient(linear, left top, left bottom, from(#909090),
+						to(#221e1d));
+	border-left:none;
+	text-align:center;
+	width:225px;
+	color:#FFF;
+}
+
+#zaikoMain .zaikoBoxSetWide .zaiko_bWindowb .zaikoContents_Area .SelectionList .ColorTitle .Boder{
+	border:#828282 1px solid;
+	border-right:#FFFFFF 1px solid;
+	border-left:none;
+	padding:15px 0;
+}

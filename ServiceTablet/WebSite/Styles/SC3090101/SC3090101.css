@@ -1,0 +1,251 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+div#mainLogin{
+    height: 919px;
+	width:640px;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff),
+						to(#919191));
+	z-index:1;
+	border-top:#797f8f 1px solid;
+}
+
+#mainLogin #contents{
+	display:block;
+	position:relative;
+	left:32px; top:100px;
+	width:564px;
+}
+
+#img_back{
+    width: 640px;
+    height: 919px;
+    position: absolute;
+    left: 0;
+}
+
+form#login{
+	float:left;
+	width:100%;
+	margin-bottom:53px;
+}
+
+/* ------------------------------------------------テキストボックス */
+#loginId,
+#loginPw{
+	width:100%;
+	color:#C5C5C5;
+	font-weight:bold;
+	height:85px;
+}
+
+#loginId{
+	background:#FFF;
+	border-bottom:#c5c5c5 1px solid;
+	border-radius:8px 8px 0 0;
+}
+#loginPw{
+	background:#FFF;
+	border-radius:0 0 8px 8px;
+}
+
+#loginPwText{top: 111px;}
+
+#loginIdText,
+#loginPwText{
+	width:40px;
+	float:left;
+	position:absolute;
+	top:26px;
+	left:25px;
+	z-index:300;
+	font-size:30px;
+	color:#CCC;
+}
+
+#loginId #id,
+#loginPw #password{
+	width: 535px;
+	height:40px;
+	margin:18px 0 0 15px;
+	/*position: relative;*/
+	display:block;
+	top: 18px;
+	left: 10px;
+	font-size:30px;
+	border: 1px solid #FFF;
+	box-shadow:inset 10px 12px 3px #fff;
+	z-index:1;
+	background-color: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
+	color: #393939;
+	-webkit-appearance: none;
+}
+
+/* ------------------------------------------------ボタン */
+#loginBtn{
+	width:564px;
+	float:left;
+	margin:54px 0 0 0;
+	border:#5b5b5b 1px solid;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	border-radius:8px;
+	padding:28px 0px 28px 0px;
+	text-align:center;
+	text-shadow:1px -1px #393939;
+	font-weight:bold;
+	font-size:27px;
+}
+#logOnBtn02{
+	width:564px;
+	float:left;
+	margin:54px 0 0 0;
+	border:#5b5b5b 1px solid;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	border-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e66b),
+						to(#49740d));
+	padding:35px 0px 35px 0px;
+	text-align:center;
+	text-shadow:1px -1px #393939;
+	font-size:27px;
+}
+
+#btnRefresh{
+	border:#5b5b5b 1px solid;
+	-moz-box-shadow:inset 3px 3px 3px #666;
+	border-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e66b), to(#49740d));
+	padding:15px 0px 15px 0px;
+	text-align:center;
+	text-shadow:1px -1px #393939;
+	width:100px;
+	font-size:20px;
+}
+
+#pnlError{
+    width:540px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+#clError{
+    font-size: 20px;
+}
+.mousUp{
+	background: -webkit-gradient(linear, left top, left bottom, from(#737373), to(#393939));
+	color:#fff;
+}
+.mousDown{
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3e56a), to(#4b760d));
+	color:#fff;
+	
+}
+
+/* ------------------------------------------------ローディング */
+.loading{
+	position:relative;
+	background:#FFF;
+	margin:0 0 53px 0;
+	padding:70px 0 70px 30px;
+	text-align:center;
+	border-radius:8px;
+	font-size:30px;
+	font-weight:bold;
+}
+.loadingIcn{
+	position:absolute;
+	display:block;
+	width:40px;
+	height:40px;
+	animation: LoadingAnimation 1.0s infinite linear;
+	left:160px;
+	overflow:hidden;
+	top:76px;
+}
+
+/* ------------------共通 */
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+
+.holding input {
+padding: 9px 7px 10px 7px;
+width: 296px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border-radius: 4px;
+margin-bottom: 8px;
+opacity: 1!important;
+}
+phoenix_core_logged_out.bundle.css:1
+.holding input,
+.holding .holder {
+font: 15px "Helvetica Neue",Arial,sans-serif;
+}
+phoenix_core_logged_out.bundle.css:1
+.front-page form .holding:hover input {
+opacity: .9;
+box-shadow: 0 -1px 0 rgba(0,0,0,.4),inset 0 1px 2px rgba(0,0,0,.3);
+-moz-box-shadow: 0 -1px 0 rgba(0,0,0,.4),inset 0 1px 2px rgba(0,0,0,.3);
+box-shadow: 0 -1px 0 rgba(0,0,0,.4),inset 0 1px 2px rgba(0,0,0,.3);
+}
+phoenix_core_logged_out.bundle.css:1
+.front-page form .holding input {
+border: none!important;
+box-shadow: 0 -1px 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(0,0,0,.2);
+-moz-box-shadow: 0 -1px 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(0,0,0,.2);
+box-shadow: 0 -1px 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(0,0,0,.2);
+background-color: white;
+color: #567792;
+opacity: .7;
+-webkit-transition: opacity 1s;
+-moz-transition: opacity 1s;
+-o-transition: opacity 1s;
+}
+
+phoenix_core_logged_out.bundle.css:1
+* {
+margin: 0;
+padding: 0;
+}
+
+user agent stylesheet
+input:not([type]), input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+padding: 1px 0px;
+}
+user agent stylesheet
+input[type="password"] {
+-webkit-text-security: disc;
+}
+.holder {
+position: absolute;
+top: 0;
+z-index: 1;
+left: 8px;
+white-space: nowrap;
+cursor: text;
+color: #999;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+-webkit-transition: opacity .1s,font-size .1s;
+-moz-transition: opacity .1s,font-size .1s;
+-o-transition: opacity .1s,font-size .1s;
+}
+
+.icrop-CustomTextBox-clear 
+{
+    background-image : url(../Images/textClearSmall.png);
+    background-repeat: no-repeat;
+    cursor: pointer; 
+    width:42px;
+    height:42px;
+    top:2px; 
+}

@@ -1,0 +1,100 @@
+﻿<%@ Master Language="VB" CodeFile="CommonMasterPageSales.master.vb" Inherits="Master_CommonMasterPageSales" %>
+<!DOCTYPE html>
+<html lang="ja">
+<head id="Head1" runat="server">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no" />
+
+    <%'タイトル %>
+    <title><asp:Literal ID="MstPG_WindowTitle" runat="server"/></title>
+    
+    <%'スタイルシート %>
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/Style.css"))%>" />
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/jquery.popover.css"))%>" />
+   	<link rel="stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/Controls.css"))%>" />
+    <link rel="Stylesheet" href="<%=WebResource.GetUrl(ResolveClientUrl("~/Styles/CommonMasterPageSales.css"))%>" />
+
+    <%'スクリプト %>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery-1.5.2.min.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery-ui-1.8.16.custom.min.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.ui.ipad.altfix.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.doubletap.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.flickable.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.json-2.3.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.popover.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.fingerscroll.js"))%>"></script>
+
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/icropScript.js"))%>"></script>
+
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CheckButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CheckMark.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomLabel.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomTextBox.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.DateTimeSelector.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.PopOverForm.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.SegmentedButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.SwitchButton.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.CustomRepeater.js"))%>"></script>
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/jquery.NumericKeypad.js"))%>"></script>
+
+    <script type="text/javascript" src="<%=WebResource.GetUrl(ResolveClientUrl("~/Scripts/CommonMasterPageSales.js"))%>"></script>
+
+    <%'HEAD部分の穴あけ %>
+    <asp:ContentPlaceHolder id="head" runat="server"/>
+</head>
+<body>
+<script type="text/javascript">
+    icropScript.ui.words.reload = <%= HttpUtility.JavaScriptStringEncode(WebWordUtility.GetWord("MASTERPAGEMAIN",20), True) %>;
+    <%
+        Dim enableScriptErrorNotification As Object = Toyota.eCRB.SystemFrameworks.Core.SystemConfiguration.Current.Manager.EnvironmentSetting.GetSetting(String.Empty).GetValue("EnableScriptErrorNotification")
+        If (enableScriptErrorNotification IsNot Nothing) Then
+            Response.Write(String.Format("icropScript.ui.enableScriptErrorNotification = {0};", CStr(enableScriptErrorNotification).toLower()))
+        End If
+    %>    
+</script>
+<div id="bodyFrame">
+<form id="this_form" runat="server">
+    <div id="MstPG_LoadingScreen">
+        <div id="MstPG_LoadingWrap">
+            <div class="loadingIcn">
+                <img src="<%=ResolveClientUrl("~/Styles/Images/animeicn-1.png")%>" width="76" height="76" alt="" />
+            </div>
+        </div>
+    </div>
+<div id="BaseBox"><%'サイズ確認用のタグです %>
+    <div id="container"><%'←全体を含むタグです。 %>
+        <%'ここからヘッダ %>
+        <div id="header">
+            <h1>
+                <asp:Label ID="MstPG_TitleLabel" runat="server" class="HeaderTitle" EnableViewState="false" />
+            </h1>
+	        <div class="rightButtonsGroup">
+                <asp:ImageButton ID="MstPG_IcropIcon" runat="server" class="imageIcon" ImageUrl="~/Styles/Images/headerImageSales.png" />
+                <icrop:PopOver ID="MstPG_PopOver1" runat="server" TriggerClientID="MstPG_IcropIcon" Height="44px" Width="200px">
+                    <icrop:CustomHyperLink ID="MstPG_Logout" runat="server" OnClick="LogoutButton_Click" style="padding:12px;font-size:24px;font-weight:bold;" />
+                </icrop:PopOver>
+	        </div>
+        </div>
+        <%'ここまでヘッダ %>
+
+        <%'コンテンツ部分の穴あけ %>
+        <asp:ContentPlaceHolder id="content" runat="server"/>
+        
+  	    <%'2012/05/23 KN 浅野 クルクル対応%>
+        <asp:HiddenField ID="MstPG_RefreshTimerTime" runat="server" />
+        <asp:HiddenField ID="MstPG_RefreshTimerMessage1" runat="server" />
+  	    <%'2012/05/23 KN 浅野 クルクル対応%>
+    </div>
+</div>
+
+</form>
+</div>
+<script type="text/javascript">
+    $(function () { icropScript.ui.isLoading = false; });
+</script>
+</body>
+</html>

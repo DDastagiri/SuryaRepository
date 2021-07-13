@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Controls Sample (HTML Version)</title>
+	
+	<link type="text/css" href="Styles/Style.css" rel="stylesheet" />
+	<link type="text/css" href="Styles/jquery.popover.css" rel="stylesheet" />
+	<link type="text/css" href="Styles/Controls.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="Scripts/jquery-1.5.2.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.ui.ipad.altfix.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.doubletap.js"></script>   
+	<script type="text/javascript" src="Scripts/jquery.flickable.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.fingerscroll.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.json-2.3.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.popover.js"></script>
+
+	<script type="text/javascript" src="Scripts/icropScript.js"></script>
+
+	<script type="text/javascript" src="Scripts/jquery.CheckButton.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CheckMark.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomButton.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomGridView.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomLabel.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomTextBox.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.DateTimeSelector.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.PopOverForm.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.SegmentedButton.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.SwitchButton.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomRepeater.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.NumericKeypad.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.CustomCheckBox.js"></script>
+    <style type="text/css">
+        h2 { padding:1em; }
+        h3 { padding:0.5em; }
+
+        
+    </style>
+</head>
+
+<body>
+<div id="bodyFrame">
+    <script type="text/javascript">
+        $(function () {
+            $("body").unbind("touchmove.icropScript");
+        });
+    </script>
+    <h2>カスタムコントロール　ギャラリー (クライアントサイドコントロール）</h2>
+
+
+    <h3>CustomRepeater</h3>
+	<div>
+		<div id="customRepeater1" style="width:300px; height:200px;" class="icrop-CustomRepeater"></div>
+	</div>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#customRepeater1")
+            	.CustomRepeater({
+            	    load: customRepeater1_load,
+            	    render: customRepeater1_render,
+            	    pageRows: 8,
+            	    defaultPage: 2
+            	});
+	    });
+
+	    function customRepeater1_load(repeater, rowIndex, rewind) {
+	        console.log("customRepeater1_load:" + rowIndex, +"," + rewind);
+	        var table = [],
+                fromIndex,
+                toIndex;
+
+	        if (rewind) {
+	            toIndex = rowIndex;
+	            fromIndex = Math.max(0, toIndex - 999);
+	        } else {
+	            fromIndex = rowIndex;
+	            toIndex = fromIndex + 999;
+	        }
+	        for (var i = fromIndex; i <= toIndex; i++) {
+	            table.push(customRepeater1Data[i]);
+	        }
+	        return table;
+	    }
+
+	    function customRepeater1_render(row, view) {
+	        view.append('<span style="display:inline-block">[' + row.value + ']</span>');
+	        view.append('<span style="display:inline-block">9/10 3次来店</span>');
+	        view.append('<span style="display:inline-block">' + row.name + '</td>');
+	    }
+
+	    var customRepeater1Data = [];
+	    for (var i = 0; i < 5000; i++) {
+	        customRepeater1Data.push({ name: "○○○○様", value: i });
+	    }
+    </script>
+
+    <h3>PopOver</h3>
+    <button id="trigger1">PopOver</button>
+    <div id='trigger1_header' style="width:300px;height:30px;">Popover header</div> 
+    <p id='trigger1_content' style="width:300px;height:250px;"> 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p> 
+    <script type="text/javascript">
+        $(function () {
+            $("#trigger1").popover({ header: '#trigger1_header', content: '#trigger1_content' });
+        });
+    </script>
+
+    <h3>PopOverForm</h3>
+    <button id="trigger2">PopOverForm</button>
+    <div id="popOverSheet1" data-TriggerClientID="trigger2">
+        <div class='icrop-PopOverForm-header'>
+            <div class='icrop-PopOverForm-header-left'></div>
+            <div class='icrop-PopOverForm-header-title'>PopOverForm</div>
+            <div class='icrop-PopOverForm-header-right'></div>
+        </div> 
+        <div class="icrop-PopOverForm-content" style="width:300px;height:300px;overflow:hidden;">
+		    <div class="icrop-PopOverForm-sheet" style="width:2100px;">
+                <div class="icrop-PopOverForm-page" style="width:300px;height:300px;float:left;"></div>
+                <div class="icrop-PopOverForm-page" style="width:300px;height:300px;float:left;"></div>
+                <div class="icrop-PopOverForm-page" style="width:300px;height:300px;float:left;"></div>
+                <div class="icrop-PopOverForm-page" style="width:300px;height:300px;float:left;"></div>
+                <div class="icrop-PopOverForm-page" style="width:300px;height:300px;float:left;"></div>
+            </div>
+ 		</div>
+   </div>
+    <script type="text/javascript">
+        $(function () {
+            $("#popOverSheet1").PopOverForm({
+                render: function (pop, index, args, container, header) {
+                    container.empty();
+                    var button = $("<div>Page" + index + "<button class='nextButton' type='button'>Next</button></div>");
+                    button.children("button").click(function (e) {
+                        if (index != 4) {
+                            pop.pushPage({});
+                        } else {
+                            pop.closePopOver(192);
+                        }
+                    });
+                    container.append(button);
+
+                    var keypad = $("<input type='text' id='keyPadInPopover' name='keyPadInPopover' style='width:50px' readonly='readonly' value='0'>");
+                    keypad.NumericKeypad({
+                        open: function () { $(this).NumericKeypad("setValue", $(this).val()); },
+                        valueChanged: function (num) { $("#keyPadInPopover").val(num); },
+                        parentPopover: pop.popoverElement 
+                    });
+                    container.append(keypad);
+
+                    if (index == 4) {
+                        var rightDiv = header.find(".icrop-PopOverForm-header-right"),
+                            commitButton = $("<button type='button'>決定</button>");
+
+                        commitButton
+                            .click(function (e) {
+                                pop.closePopOver(190);
+                            })
+                            .appendTo(rightDiv);
+                    }
+                },
+                close: function (pop, result) {
+                    icropScript.ShowMessageBox("001", "選択値：" + result, "#popOverSheet1");
+                }
+            });
+        });
+    </script>
+    
+    <h3>CustomLabel</h3>
+    <span id="customLabel1" style="display:inline-block; width:80px; height:30px;">あいうえおあいうえおあいうえおあいうえお</span>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#customLabel1").CustomLabel({ useEllipsis: true });
+	    });
+    </script>
+
+    <h3>CustomTextBox</h3>
+	<input id="input1" type="text" /><button id="input1DisabledButton">disabled</button><button id="input1UpdateTextButton">set value</button><br/>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#input1").CustomTextBox();
+	        $("#input1DisabledButton").click(function (e) {
+	            if ($("#input1").CustomTextBox("disabled") === true) {
+	                $("#input1").CustomTextBox("disabled", false);
+	            } else {
+	                $("#input1").CustomTextBox("disabled", true);
+	            }
+	        });
+	        $("#input1UpdateTextButton").click(function (e) {
+	            $("#input1").CustomTextBox("updateText", "abcdefg");
+	        });
+	    });
+    </script>
+
+    <h3>DateTimeSelector</h3>
+	<input id="inputDate" type="date" /><button id="inputDateDisabledButton">disabled</button><br/>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#inputDate").DateTimeSelector();
+	        $("#inputDateDisabledButton").click(function (e) {
+	            if ($("#inputDate").DateTimeSelector("disabled") === true) {
+	                $("#inputDate").DateTimeSelector("disabled", false);
+	            } else {
+	                $("#inputDate").DateTimeSelector("disabled", true);
+	            }
+
+	        });
+	    });
+    </script>
+
+    <h3>CustomButton</h3>
+	<div id="divButton" style="width:80px; height:70px; border:1px solid black;"></div><button id="divButtonDisabledButton">disabled</button><button id="divButtonCountButton">count up</button><br/>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#divButton").CustomButton({
+	            label: "Hello",
+	            iconUrl: "Styles/Images/button01.png",
+	            click: function (e) {
+	                alert("clicked!");
+	            }
+	        });
+	        $("#divButtonDisabledButton").click(function (e) {
+	            if ($("#divButton").CustomButton("disabled") === true) {
+	                $("#divButton").CustomButton("disabled", false);
+	            } else {
+	                $("#divButton").CustomButton("disabled", true);
+	            }
+
+	        });
+	        $("#divButtonCountButton").click(function (e) {
+	            $("#divButton").CustomButton("badgeCount", (($("#divButton").CustomButton("badgeCount")) + 1));
+	        });
+	    });
+	</script>
+	
+    <h3>SegmentedButton</h3>
+	<ul id="radio1">
+		<li><input type="radio" name="radio1" value="1">Very Good</li>
+		<li><input type="radio" name="radio1" value="2">Good</li>
+		<li><input type="radio" name="radio1" value="3">Bad</li>		
+	</ul>
+	<button id="radio1DisabledButton">disabled</button><br/>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#radio1").SegmentedButton({
+	            formName: "radio1",
+	            select: function (value) {
+	                if (value !== undefined) {
+	                    alert("selected value:" + value);
+	                }
+	            }
+	        });
+	        $("#radio1DisabledButton").click(function (e) {
+	            if ($("#radio1").SegmentedButton("disabled") === true) {
+	                $("#radio1").SegmentedButton("disabled", false);
+	            } else {
+	                $("#radio1").SegmentedButton("disabled", true);
+	            }
+	        });
+	    });
+	</script>
+	
+    <h3>CheckButton</h3>
+	<div>
+        <input id="checkButton1" type="checkbox" name="checkX" value="1" style="width:80px;height:70px;" />
+        <button id="checkButton1DisabledButton">disabled</button>
+    </div>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#checkButton1").CheckButton({
+	            label: "Hello",
+	            offIconUrl: "Styles/Images/button01.png",
+	            onIconUrl: "Styles/Images/button01_on.png",
+	            check: function (value) {
+	                alert("#checkButton1.check:" + value);
+	            }
+	        });
+	        $("#checkButton1DisabledButton").click(function (e) {
+	            if ($("#checkButton1").CheckButton("disabled") === true) {
+	                $("#checkButton1").CheckButton("disabled", false);
+	            } else {
+	                $("#checkButton1").CheckButton("disabled", true);
+	            }
+	        });
+
+	    });
+    </script>    
+
+    <h3>CustomCheckBox</h3>
+    <p style="margin:0.5em;">
+        input[type='checkbox']の要素のみCustomCheckBox化可能です。<br />親要素に、"icrop-CustomCheckBox" CSSクラスを付与してください。
+    </p>
+	<div class="icrop-CustomCheckBox" style="float:left; padding:5px; border-radius:8px;" >
+        <input id="customCheckBox1" type="checkbox" name="ccb1" style="margin-right:5px;vertical-align:middle;" />チェック
+    </div>
+	<div class="icrop-CustomCheckBox" style="float:left; width:100px; height:45px; border-radius:8px; background-color:Black;" >
+        <img src="Styles/Images/headerImage04.png" style="position:absolute; top:10px; left:10px;" />
+        <input id="customCheckBox2" type="checkbox" name="ccb2" checked="checked" style="position:absolute; top:5px; left:50px;" />
+    </div>
+    <button id="customCheckBox1DisabledButton" style="">disabled</button>
+    <button id="customCheckBox1ToggleButton" style="">toggle</button>
+    <div style="clear:both;"></div>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#customCheckBox1").CustomCheckBox({
+	            onIconUrl: "./Styles/Images/checkMark12.png",
+	            offIconUrl: "./Styles/Images/checkMark11.png",
+	            check: function (value) {
+	                alert("#customCheckBox1.check:" + value);
+	            }
+	        });
+	        $("#customCheckBox2").CustomCheckBox({
+	            onIconUrl: "./Styles/Images/checkMark12.png",
+	            offIconUrl: "./Styles/Images/checkMark11.png"
+	        });
+	        $("#customCheckBox1DisabledButton").click(function (e) {
+	            if ($("#customCheckBox1").CustomCheckBox("disabled") === true) {
+	                $("#customCheckBox1").CustomCheckBox("disabled", false);
+	            } else {
+	                $("#customCheckBox1").CustomCheckBox("disabled", true);
+	            }
+	        });
+	        $("#customCheckBox1ToggleButton").click(function (e) {
+	            if ($("#customCheckBox1").CustomCheckBox("value") === true) {
+	                $("#customCheckBox1").CustomCheckBox("value", false);
+	            } else {
+	                $("#customCheckBox1").CustomCheckBox("value", true);
+	            }
+	        });
+
+	    });
+    </script>    
+
+
+    <h3>SwitchButton</h3>
+	<div>
+        <input id="switchButton1" type="checkbox" name="checkX" value="2" style="width:80px;height:30px;" />
+        <button id="switchButton1DisabledButton">disabled</button>
+    </div>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#switchButton1").SwitchButton({
+	            onLabel: "ON",
+	            offLabel: "OFF",
+	            check: function (value) {
+	                alert("#switchButton1.check:" + value);
+	            }
+	        });
+	        $("#switchButton1DisabledButton").click(function (e) {
+	            if ($("#switchButton1").SwitchButton("disabled") === true) {
+	                $("#switchButton1").SwitchButton("disabled", false);
+	            } else {
+	                $("#switchButton1").SwitchButton("disabled", true);
+	            }
+	        });
+	    });
+	</script>
+	
+    <h3>CheckMark</h3>
+	<div>
+		<input id="checkMark1" type="checkbox" name="checkY" value="1" />
+        <button id="checkMark1DisabledButton">disabled</button>
+ 	</div>
+	<div>
+		<input id="checkMark2" type="checkbox" name="checkY" value="2" checked="checked" style="" />
+	</div>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#checkMark1").CheckMark({ label: "選択" });
+	        $("#checkMark2").CheckMark({ label: "選択", checkIconWidth: 30, checkIconHeight: 30, onIconUrl: "Styles/Images/checkMark01.png" });
+	        $("#checkMark1DisabledButton").click(function (e) {
+	            if ($("#checkMark1").CheckMark("disabled") === true) {
+	                $("#checkMark1").CheckMark("disabled", false);
+	            } else {
+	                $("#checkMark1").CheckMark("disabled", true);
+	            }
+	        });
+	    });
+	</script>
+
+
+    <h3>NumericKeypad</h3>
+	<div>
+		<input id="numericKeypad1" type="text" value="2" readonly="readonly">台
+        <button id="numericKeypad1Button" type="button">set value</button>
+	</div>
+	<script type="text/javascript">
+	    $(function () {
+	        $("#numericKeypad1").NumericKeypad({
+	            maxDigits: 3,
+	            acceptDecimalPoint: false,
+	            valueChanged: function (num) {
+	                $("#numericKeypad1").val(num);
+	            },
+	            open: function () {
+	                $("#numericKeypad1").NumericKeypad("setValue", $("#numericKeypad1").val());
+	            }
+	        });
+	        $('#numericKeypad1Button').click(function () {
+	            $("#numericKeypad1").val(5);
+	        });
+	    });
+    </script>
+
+    <div style="height:500px;"></div>
+</div>
+</body>
+</html>

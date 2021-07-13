@@ -1,0 +1,954 @@
+﻿/*/-------------------------------------------------------------------------
+//footer.css
+//--------------------------------------------------------------------------
+//機能：メインメニュー
+//作成：2012/12/22 TMEJ 張 タブレット版SMB機能開発(工程管理)
+//更新：2013/11/29 TMEJ 丁 タブレット版SMB チーフテクニシャン機能開発
+//更新：2014/06/18 TMEJ 丁 タブレット版SMB テレマ走行距離機能開発
+//更新：2015/02/13 TMEJ 範 新プラットフォーム版i-CROP仕様変更対応 (SMBチップ検索及び作業中断機能強化) 
+//更新：2017/09/05 NSK 小川 REQ-SVT-TMT-20160906-003 計画済みチップをストールから簡単に外せるようにする
+//更新：2019/06/18 NSK 皆川 (トライ店システム評価)次世代サービスオペレーション効率化に向けた、業務適合性検証
+---------------------------------------------------------------------------*/
+@charset "utf-8";
+/* CSS Document */
+#InitFooterArea
+{
+    width:100%;
+    height:100%
+}
+#ChipFooterArea
+{
+    width:100%;
+    height:100%
+}
+.InitFooterButton_Space
+{
+	width:48px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	text-align: center;
+	color:#FFF;
+	z-index:5;
+}
+.FooterNumber
+{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color:#FFFFFF;
+	display:block;
+	position:absolute;
+	text-align:right;
+	width:20px; height:12px;
+	top:1px; right:5px;
+	font-size:16px; line-height:16px;
+	text-shadow:1px 1px 1px #000;
+}
+
+.FooterName_Off
+{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	bottom:7px;
+	width:77px;
+	height:8px;
+	font-size:10px;
+	color:#666;
+	text-align:center;
+}
+.FooterName_On
+{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	bottom:7px;
+	width:77px;
+	height:8px;
+	font-size:10px;
+	color:#666;
+	text-align:center;
+	text-shadow:1px 1px 3px #0084ff;
+	color:#FFFFFF;
+}
+.FooterLightBox
+{
+	display:block;
+	position:absolute;
+	z-index:20;
+	width:100%; height:54%;
+	top:0; left:0;
+	background:rgba(255,255,255,0.35);
+	border-radius:1px 1px 0 0;
+}
+.WarningIcon_Off
+{
+	background:#e10000;
+	border-top:#4e4e4e 1px solid;
+	border-left:#4e4e4e 1px solid;
+	border-right:#000 1px solid;
+	border-bottom:#000 1px solid;
+	border-radius:2px;
+	box-shadow:inset 0px 0px 10px rgba(0,0,0,1.0);
+}
+.WarningIcon_On
+{
+	background:-webkit-gradient(linear, left top, left bottom, 
+		from(#c22c36),
+		color-stop(0.5, #bb1521),
+		color-stop(0.501, #b5000d),
+		to(#b5000d));
+	border-top:#1e0f10 1px solid;
+	border-left:#1d0e0f 1px solid;
+	border-right:#5a3a3c 1px solid;
+	border-bottom:#5e4046 1px solid;
+	box-shadow:inset 0px 0px 20px rgba(0,0,0,1.0);
+}
+.NormalIcon_Off
+{
+	background:-webkit-gradient(linear, left top, left bottom, 
+		from(#666666),
+		color-stop(0.5, #565656),
+		color-stop(0.501, #464646),
+		to(#464646));
+	border-top:#2b2b2b 1px solid;
+	border-left:#2b2b2b 1px solid;
+	border-right:#0f0f0f 1px solid;
+	border-bottom:#0f0f0f 1px solid;
+	border-radius:2px;
+	box-shadow:inset 0px 0px 5px rgba(0,0,0,1.0);
+}
+.NormalIcon_On
+{
+	background:-webkit-gradient(linear, left top, left bottom, 
+		from(#4b4b4b),
+		color-stop(0.5, #383838),
+		color-stop(0.501, #262626),
+		to(#262626));
+	border-top:#262626 1px solid;
+	border-left:#0f0f0f 1px solid;
+	border-right:#555555 1px solid;
+	border-bottom:#565656 1px solid;
+	border-radius:2px;
+	box-shadow:inset 0px 0px 20px rgba(0,0,0,1.0);
+}
+
+.btn-pressed {
+background: #126EE4;
+color: #FFF;
+}
+
+.VisibilityIcon_Off
+{
+	border-top:#4e4e4e 1px solid;
+	border-left:#4e4e4e 1px solid;
+	border-right:#000 1px solid;
+	border-bottom:#000 1px solid;
+	border-radius:2px;
+}
+
+.VisibilityIcon_On
+{
+	background:-webkit-gradient(linear, left top, left bottom, 
+		from(#4b4b4b),
+		color-stop(0.5, #383838),
+		color-stop(0.501, #262626),
+		to(#262626));
+	border-top:#262626 1px solid;
+	border-left:#0f0f0f 1px solid;
+	border-right:#555555 1px solid;
+	border-bottom:#565656 1px solid;
+	box-shadow:inset 0px 0px 20px rgba(0,0,0,1.0);
+}
+
+#FooterButton100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer100.png) no-repeat;
+}
+#FooterButton200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer200.png) no-repeat;
+}
+#FooterButton300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer300.png) no-repeat;
+}
+#FooterButton400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer400.png) no-repeat;
+}
+#FooterButton500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer500.png) no-repeat;
+}
+#FooterButton600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer600.png) no-repeat;
+}
+#FooterButton700
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon700
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer700.png) no-repeat;
+}
+#FooterButton800
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:left;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon800
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer800.png) no-repeat;
+}
+.ChipFooterButton_Space
+{
+	width:15px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	text-align: center;
+	color:#FFF;
+	z-index:5;
+}
+#FooterButton900
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon900
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer900_Active.png) no-repeat;
+}
+#FooterButton1000
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon1000
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1000_Active.png) no-repeat;
+}
+#FooterButton1100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon1100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1100_Active.png) no-repeat;
+}
+#FooterButton1200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon1200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1200_Active.png) no-repeat;
+}
+#FooterButton1300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon1300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1300_Active.png) no-repeat;
+}
+#FooterButton1400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon1400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1400_Active.png) no-repeat;
+}
+#FooterButton1500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon1500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1500_Active.png) no-repeat;
+}
+#FooterButton1600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon1600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1600_Active.png) no-repeat;
+}
+#FooterButton1700
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon1700
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1700_Active.png) no-repeat;
+}
+#FooterButton1800
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon1800
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1800_Active.png) no-repeat;
+}
+#FooterButton1900
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon1900
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer1900_Active.png) no-repeat;
+}
+#FooterButton2000
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon2000
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2000_Active.png) no-repeat;
+}
+#FooterButton2100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon2100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2100_Active.png) no-repeat;
+}
+#FooterButton2200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon2200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2200_Active.png) no-repeat;
+}
+#FooterButton2300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon2300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2300_Active.png) no-repeat;
+}
+#FooterButton2400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon2400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2400_Active.png) no-repeat;
+}
+#FooterButton2500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon2500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2500_Active.png) no-repeat;
+}
+#FooterButton2600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon2600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2600_Active.png) no-repeat;
+}
+#FooterButton2700
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon2700
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2700_Active.png) no-repeat;
+}
+#FooterButton2800
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+	/*opacity: 0.4;*/
+}
+#FooterButtonIcon2800
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2800_Active.png) no-repeat;
+}
+/* 2013/11/29 TMEJ 丁 タブレット版SMB チーフテクニシャン機能開発 START */
+#FooterButton2900
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon2900
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer2900_Active.png) no-repeat;
+}
+#FooterButton3000
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon3000
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer3000_Active.png) no-repeat;
+}
+/* 2013/11/29 TMEJ 丁 タブレット版SMB チーフテクニシャン機能開発 END */
+
+/*2014/06/18 TMEJ 丁 タブレット版SMB テレマ走行距離機能開発 START */
+#FooterButton3100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon3100
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer3100_Active.png) no-repeat;
+}
+/* 2014/06/18 TMEJ 丁 タブレット版SMB テレマ走行距離機能開発 END */
+
+/* 2015/02/13 TMEJ 範 新プラットフォーム版i-CROP仕様変更対応 (SMBチップ検索及び作業中断機能強化) START */
+#FooterButton3200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon3200
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer3200_Active.png) no-repeat;
+}
+/* 2015/02/13 TMEJ 範 新プラットフォーム版i-CROP仕様変更対応 (SMBチップ検索及び作業中断機能強化) END */
+
+/* 2017/08/30 NSK 竹中(悠) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加 START */
+#FooterButton3300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon3300
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer3300.png) no-repeat;
+}
+/* 2017/08/30 NSK 竹中(悠) REQ-SVT-TMT-20161109-001 SMB iPadにストールクローズ機能の追加 END */
+
+/* 2017/09/05 NSK 小川 REQ-SVT-TMT-20160906-003 計画済みチップをストールから簡単に外せるようにする START */
+#FooterButton3400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon3400
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer100_Active.png) no-repeat;
+}
+/* 2017/09/05 NSK 小川 REQ-SVT-TMT-20160906-003 計画済みチップをストールから簡単に外せるようにする END */
+
+/* 2019/06/18 NSK 皆川 (トライ店システム評価)次世代サービスオペレーション効率化に向けた、業務適合性検証 START */
+#FooterButton3500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon3500
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer3500.png) no-repeat;
+}
+#FooterButton3600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	margin-left:5px;
+	margin-top:1px;
+	float:right;
+	z-index:5;
+	border-radius:2px;
+}
+#FooterButtonIcon3600
+{
+	width:77px;
+	height:42px;
+	position:relative;
+	text-align: center;
+	color:#FFF;
+	background:url(../Images/SC3240101/Footer3600.png) no-repeat;
+}
+/* 2019/06/18 NSK 皆川 (トライ店システム評価)次世代サービスオペレーション効率化に向けた、業務適合性検証 END */
+
+@keyframes FotterBlinkInfo {
+ from {
+   opacity: 1.0;
+   box-shadow: 0px 0px 5px #C0C0C0;
+   -moz-box-shadow: 0px 0px 5px #C0C0C0;
+   box-shadow: 0px 0px 5px #C0C0C0;
+ }
+ to {
+   opacity: 0.2;
+   box-shadow: 0px 0px 0px #C0C0C0;
+   -moz-box-shadow: 0px 0px 0px #C0C0C0;
+   box-shadow: 0px 0px 0px #C0C0C0;
+ }
+}
+.FotterBlink{
+animation-name: FotterBlinkInfo;
+animation-duration: 0.8s;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+animation-direction: alternate;
+animation-delay: 0s;
+}
+
+
+/* 再計画を表示しない
+------------------------------------------------------------------------------*/
+#FooterButton2400
+{
+    display:none;    
+}

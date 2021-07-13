@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3810501DataSet" targetNamespace="http://tempuri.org/StallInfoDataSet.xsd" xmlns:mstns="http://tempuri.org/StallInfoDataSet.xsd" xmlns="http://tempuri.org/StallInfoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.iCROP.DataAccess.SC3150101.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3810501DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3810501DataSet" msprop:Generator_UserDSName="IC3810501DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3810501GetLastChip" msprop:Generator_TableClassName="IC3810501GetLastChipDataTable" msprop:Generator_TableVarName="tableIC3810501GetLastChip" msprop:Generator_TablePropName="IC3810501GetLastChip" msprop:Generator_RowDeletingName="IC3810501GetLastChipRowDeleting" msprop:Generator_UserTableName="IC3810501GetLastChip" msprop:Generator_RowChangingName="IC3810501GetLastChipRowChanging" msprop:Generator_RowEvHandlerName="IC3810501GetLastChipRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3810501GetLastChipRowDeleted" msprop:Generator_RowEvArgName="IC3810501GetLastChipRowChangeEvent" msprop:Generator_RowChangedName="IC3810501GetLastChipRowChanged" msprop:Generator_RowClassName="IC3810501GetLastChipRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REZID" msprop:Generator_ColumnVarNameInTable="columnREZID" msprop:Generator_ColumnPropNameInRow="REZID" msprop:Generator_ColumnPropNameInTable="REZIDColumn" msprop:Generator_UserColumnName="REZID" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3810501InspectionRefreshSeq" msprop:Generator_TableClassName="IC3810501InspectionRefreshSeqDataTable" msprop:Generator_TableVarName="tableIC3810501InspectionRefreshSeq" msprop:Generator_TablePropName="IC3810501InspectionRefreshSeq" msprop:Generator_RowDeletingName="IC3810501InspectionRefreshSeqRowDeleting" msprop:Generator_UserTableName="IC3810501InspectionRefreshSeq" msprop:Generator_RowChangingName="IC3810501InspectionRefreshSeqRowChanging" msprop:Generator_RowEvHandlerName="IC3810501InspectionRefreshSeqRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3810501InspectionRefreshSeqRowDeleted" msprop:Generator_RowEvArgName="IC3810501InspectionRefreshSeqRowChangeEvent" msprop:Generator_RowChangedName="IC3810501InspectionRefreshSeqRowChanged" msprop:Generator_RowClassName="IC3810501InspectionRefreshSeqRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REZID" msprop:Generator_ColumnVarNameInTable="columnREZID" msprop:Generator_ColumnPropNameInRow="REZID" msprop:Generator_ColumnPropNameInTable="REZIDColumn" msprop:Generator_UserColumnName="REZID" type="xs:long" />
+              <xs:element name="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3810501WashRefreshSeq" msprop:Generator_TableClassName="IC3810501WashRefreshSeqDataTable" msprop:Generator_TableVarName="tableIC3810501WashRefreshSeq" msprop:Generator_TablePropName="IC3810501WashRefreshSeq" msprop:Generator_RowDeletingName="IC3810501WashRefreshSeqRowDeleting" msprop:Generator_UserTableName="IC3810501WashRefreshSeq" msprop:Generator_RowChangingName="IC3810501WashRefreshSeqRowChanging" msprop:Generator_RowEvHandlerName="IC3810501WashRefreshSeqRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3810501WashRefreshSeqRowDeleted" msprop:Generator_RowEvArgName="IC3810501WashRefreshSeqRowChangeEvent" msprop:Generator_RowChangedName="IC3810501WashRefreshSeqRowChanged" msprop:Generator_RowClassName="IC3810501WashRefreshSeqRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REZID" msprop:Generator_ColumnVarNameInTable="columnREZID" msprop:Generator_ColumnPropNameInRow="REZID" msprop:Generator_ColumnPropNameInTable="REZIDColumn" msprop:Generator_UserColumnName="REZID" type="xs:long" />
+              <xs:element name="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3810501StallProcessInfo" msprop:Generator_TableClassName="IC3810501StallProcessInfoDataTable" msprop:Generator_TableVarName="tableIC3810501StallProcessInfo" msprop:Generator_TablePropName="IC3810501StallProcessInfo" msprop:Generator_RowDeletingName="IC3810501StallProcessInfoRowDeleting" msprop:Generator_UserTableName="IC3810501StallProcessInfo" msprop:Generator_RowChangingName="IC3810501StallProcessInfoRowChanging" msprop:Generator_RowEvHandlerName="IC3810501StallProcessInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3810501StallProcessInfoRowDeleted" msprop:Generator_RowEvArgName="IC3810501StallProcessInfoRowChangeEvent" msprop:Generator_RowChangedName="IC3810501StallProcessInfoRowChanged" msprop:Generator_RowClassName="IC3810501StallProcessInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REZID" msprop:Generator_ColumnVarNameInTable="columnREZID" msprop:Generator_ColumnPropNameInRow="REZID" msprop:Generator_ColumnPropNameInTable="REZIDColumn" msprop:Generator_UserColumnName="REZID" type="xs:long" />
+              <xs:element name="DSEQNO" msprop:Generator_ColumnVarNameInTable="columnDSEQNO" msprop:Generator_ColumnPropNameInRow="DSEQNO" msprop:Generator_ColumnPropNameInTable="DSEQNOColumn" msprop:Generator_UserColumnName="DSEQNO" type="xs:long" />
+              <xs:element name="SEQNO" msprop:Generator_ColumnVarNameInTable="columnSEQNO" msprop:Generator_ColumnPropNameInRow="SEQNO" msprop:Generator_ColumnPropNameInTable="SEQNOColumn" msprop:Generator_UserColumnName="SEQNO" type="xs:long" />
+              <xs:element name="RESULT_STATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_STATUS" msprop:Generator_ColumnVarNameInTable="columnRESULT_STATUS" msprop:Generator_ColumnPropNameInTable="RESULT_STATUSColumn" msprop:Generator_UserColumnName="RESULT_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_STALLID" msprop:Generator_ColumnVarNameInTable="columnRESULT_STALLID" msprop:Generator_ColumnPropNameInRow="RESULT_STALLID" msprop:Generator_ColumnPropNameInTable="RESULT_STALLIDColumn" msprop:Generator_UserColumnName="RESULT_STALLID" type="xs:long" />
+              <xs:element name="RESULT_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_START_TIME" msprop:Generator_ColumnVarNameInTable="columnRESULT_START_TIME" msprop:Generator_ColumnPropNameInTable="RESULT_START_TIMEColumn" msprop:Generator_UserColumnName="RESULT_START_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_END_TIME" msprop:Generator_ColumnVarNameInTable="columnRESULT_END_TIME" msprop:Generator_ColumnPropNameInTable="RESULT_END_TIMEColumn" msprop:Generator_UserColumnName="RESULT_END_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_IN_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_IN_TIME" msprop:Generator_ColumnVarNameInTable="columnRESULT_IN_TIME" msprop:Generator_ColumnPropNameInTable="RESULT_IN_TIMEColumn" msprop:Generator_UserColumnName="RESULT_IN_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_WORK_TIME" msprop:Generator_ColumnVarNameInTable="columnRESULT_WORK_TIME" msprop:Generator_ColumnPropNameInRow="RESULT_WORK_TIME" msprop:Generator_ColumnPropNameInTable="RESULT_WORK_TIMEColumn" msprop:Generator_UserColumnName="RESULT_WORK_TIME" type="xs:long" minOccurs="0" />
+              <xs:element name="REZ_START_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="REZ_START_TIME" msprop:Generator_ColumnVarNameInTable="columnREZ_START_TIME" msprop:Generator_ColumnPropNameInTable="REZ_START_TIMEColumn" msprop:Generator_UserColumnName="REZ_START_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REZ_END_TIME" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="REZ_END_TIME" msprop:Generator_ColumnVarNameInTable="columnREZ_END_TIME" msprop:Generator_ColumnPropNameInTable="REZ_END_TIMEColumn" msprop:Generator_UserColumnName="REZ_END_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REZ_WORK_TIME" msprop:Generator_ColumnVarNameInTable="columnREZ_WORK_TIME" msprop:Generator_ColumnPropNameInRow="REZ_WORK_TIME" msprop:Generator_ColumnPropNameInTable="REZ_WORK_TIMEColumn" msprop:Generator_UserColumnName="REZ_WORK_TIME" type="xs:long" minOccurs="0" />
+              <xs:element name="RESULT_WASH_START" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_WASH_START" msprop:Generator_ColumnVarNameInTable="columnRESULT_WASH_START" msprop:Generator_ColumnPropNameInTable="RESULT_WASH_STARTColumn" msprop:Generator_UserColumnName="RESULT_WASH_START" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_WASH_END" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_WASH_END" msprop:Generator_ColumnVarNameInTable="columnRESULT_WASH_END" msprop:Generator_ColumnPropNameInTable="RESULT_WASH_ENDColumn" msprop:Generator_UserColumnName="RESULT_WASH_END" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_WAIT_START" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_WAIT_START" msprop:Generator_ColumnVarNameInTable="columnRESULT_WAIT_START" msprop:Generator_ColumnPropNameInTable="RESULT_WAIT_STARTColumn" msprop:Generator_UserColumnName="RESULT_WAIT_START" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_WAIT_END" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_WAIT_END" msprop:Generator_ColumnVarNameInTable="columnRESULT_WAIT_END" msprop:Generator_ColumnPropNameInTable="RESULT_WAIT_ENDColumn" msprop:Generator_UserColumnName="RESULT_WAIT_END" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPDATE_COUNT" msprop:Generator_ColumnVarNameInTable="columnUPDATE_COUNT" msprop:Generator_ColumnPropNameInRow="UPDATE_COUNT" msprop:Generator_ColumnPropNameInTable="UPDATE_COUNTColumn" msprop:Generator_UserColumnName="UPDATE_COUNT" type="xs:long" minOccurs="0" />
+              <xs:element name="RESULT_INSPECTION_START" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_INSPECTION_START" msprop:Generator_ColumnVarNameInTable="columnRESULT_INSPECTION_START" msprop:Generator_ColumnPropNameInTable="RESULT_INSPECTION_STARTColumn" msprop:Generator_UserColumnName="RESULT_INSPECTION_START" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESULT_INSPECTION_END" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="RESULT_INSPECTION_END" msprop:Generator_ColumnVarNameInTable="columnRESULT_INSPECTION_END" msprop:Generator_ColumnPropNameInTable="RESULT_INSPECTION_ENDColumn" msprop:Generator_UserColumnName="RESULT_INSPECTION_END" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

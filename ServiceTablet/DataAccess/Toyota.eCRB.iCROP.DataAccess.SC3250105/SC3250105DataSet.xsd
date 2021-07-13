@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3250105DataSet" targetNamespace="http://tempuri.org/SC3250105DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3250105DataSet.xsd" xmlns="http://tempuri.org/SC3250105DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3250105DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3250105DataSet" msprop:Generator_UserDSName="SC3250105DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PreviosReplacement" msprop:Generator_TableClassName="PreviosReplacementDataTable" msprop:Generator_TableVarName="tablePreviosReplacement" msprop:Generator_TablePropName="PreviosReplacement" msprop:Generator_RowDeletingName="PreviosReplacementRowDeleting" msprop:Generator_RowChangingName="PreviosReplacementRowChanging" msprop:Generator_RowEvHandlerName="PreviosReplacementRowChangeEventHandler" msprop:Generator_RowDeletedName="PreviosReplacementRowDeleted" msprop:Generator_UserTableName="PreviosReplacement" msprop:Generator_RowChangedName="PreviosReplacementRowChanged" msprop:Generator_RowEvArgName="PreviosReplacementRowChangeEvent" msprop:Generator_RowClassName="PreviosReplacementRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REPLACED_DATETIME" msprop:Generator_ColumnVarNameInTable="columnREPLACED_DATETIME" msprop:Generator_ColumnPropNameInRow="REPLACED_DATETIME" msprop:Generator_ColumnPropNameInTable="REPLACED_DATETIMEColumn" msprop:Generator_UserColumnName="REPLACED_DATETIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REG_MILE" msprop:Generator_ColumnVarNameInTable="columnREG_MILE" msprop:Generator_ColumnPropNameInRow="REG_MILE" msprop:Generator_ColumnPropNameInTable="REG_MILEColumn" msprop:Generator_UserColumnName="REG_MILE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DmsCodeMap" msprop:Generator_TableClassName="DmsCodeMapDataTable" msprop:Generator_TableVarName="tableDmsCodeMap" msprop:Generator_TablePropName="DmsCodeMap" msprop:Generator_RowDeletingName="DmsCodeMapRowDeleting" msprop:Generator_RowChangingName="DmsCodeMapRowChanging" msprop:Generator_RowEvHandlerName="DmsCodeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="DmsCodeMapRowDeleted" msprop:Generator_UserTableName="DmsCodeMap" msprop:Generator_RowChangedName="DmsCodeMapRowChanged" msprop:Generator_RowEvArgName="DmsCodeMapRowChangeEvent" msprop:Generator_RowClassName="DmsCodeMapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE1" msdata:Caption="DMS_CD_1" msprop:Generator_ColumnVarNameInTable="columnCODE1" msprop:Generator_ColumnPropNameInRow="CODE1" msprop:Generator_ColumnPropNameInTable="CODE1Column" msprop:Generator_UserColumnName="CODE1" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE2" msdata:Caption="DMS_CD_2" msprop:Generator_ColumnVarNameInTable="columnCODE2" msprop:Generator_ColumnPropNameInRow="CODE2" msprop:Generator_ColumnPropNameInTable="CODE2Column" msprop:Generator_UserColumnName="CODE2" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE3" msdata:Caption="DMS_CD_3" msprop:Generator_ColumnVarNameInTable="columnCODE3" msprop:Generator_ColumnPropNameInRow="CODE3" msprop:Generator_ColumnPropNameInTable="CODE3Column" msprop:Generator_UserColumnName="CODE3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Mileage" msprop:Generator_TableClassName="MileageDataTable" msprop:Generator_TableVarName="tableMileage" msprop:Generator_RowChangedName="MileageRowChanged" msprop:Generator_TablePropName="Mileage" msprop:Generator_RowDeletingName="MileageRowDeleting" msprop:Generator_RowChangingName="MileageRowChanging" msprop:Generator_RowEvHandlerName="MileageRowChangeEventHandler" msprop:Generator_RowDeletedName="MileageRowDeleted" msprop:Generator_RowClassName="MileageRow" msprop:Generator_UserTableName="Mileage" msprop:Generator_RowEvArgName="MileageRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResultCode" msprop:Generator_ColumnVarNameInTable="columnResultCode" msprop:Generator_ColumnPropNameInRow="ResultCode" msprop:Generator_ColumnPropNameInTable="ResultCodeColumn" msprop:Generator_UserColumnName="ResultCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Mileage" msprop:Generator_ColumnVarNameInTable="columnMileage" msprop:Generator_ColumnPropNameInRow="Mileage" msprop:Generator_ColumnPropNameInTable="MileageColumn" msprop:Generator_UserColumnName="Mileage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SystemSetting" msprop:Generator_TableClassName="SystemSettingDataTable" msprop:Generator_TableVarName="tableSystemSetting" msprop:Generator_RowChangedName="SystemSettingRowChanged" msprop:Generator_TablePropName="SystemSetting" msprop:Generator_RowDeletingName="SystemSettingRowDeleting" msprop:Generator_RowChangingName="SystemSettingRowChanging" msprop:Generator_RowEvHandlerName="SystemSettingRowChangeEventHandler" msprop:Generator_RowDeletedName="SystemSettingRowDeleted" msprop:Generator_RowClassName="SystemSettingRow" msprop:Generator_UserTableName="SystemSetting" msprop:Generator_RowEvArgName="SystemSettingRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SETTING_VAL" msdata:Caption="SETTING_VALUE" msprop:Generator_ColumnVarNameInTable="columnSETTING_VAL" msprop:Generator_ColumnPropNameInRow="SETTING_VAL" msprop:Generator_ColumnPropNameInTable="SETTING_VALColumn" msprop:Generator_UserColumnName="SETTING_VAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PreviosReplacementDateTime" msprop:Generator_TableClassName="PreviosReplacementDateTimeDataTable" msprop:Generator_TableVarName="tablePreviosReplacementDateTime" msprop:Generator_TablePropName="PreviosReplacementDateTime" msprop:Generator_RowDeletingName="PreviosReplacementDateTimeRowDeleting" msprop:Generator_RowChangingName="PreviosReplacementDateTimeRowChanging" msprop:Generator_RowEvHandlerName="PreviosReplacementDateTimeRowChangeEventHandler" msprop:Generator_RowDeletedName="PreviosReplacementDateTimeRowDeleted" msprop:Generator_UserTableName="PreviosReplacementDateTime" msprop:Generator_RowChangedName="PreviosReplacementDateTimeRowChanged" msprop:Generator_RowEvArgName="PreviosReplacementDateTimeRowChangeEvent" msprop:Generator_RowClassName="PreviosReplacementDateTimeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INSPEC_ITEM_CD" msdata:Caption="SVCIN_ID" msprop:Generator_ColumnVarNameInTable="columnINSPEC_ITEM_CD" msprop:Generator_ColumnPropNameInRow="INSPEC_ITEM_CD" msprop:Generator_ColumnPropNameInTable="INSPEC_ITEM_CDColumn" msprop:Generator_UserColumnName="INSPEC_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_DTL_ID" msdata:Caption="SVCIN_MILE" msprop:Generator_ColumnVarNameInTable="columnJOB_DTL_ID" msprop:Generator_ColumnPropNameInRow="JOB_DTL_ID" msprop:Generator_ColumnPropNameInTable="JOB_DTL_IDColumn" msprop:Generator_UserColumnName="JOB_DTL_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DLR_CD" msdata:Caption="RSLT_DELI_DATETIME" msprop:Generator_ColumnVarNameInTable="columnDLR_CD" msprop:Generator_ColumnPropNameInRow="DLR_CD" msprop:Generator_ColumnPropNameInTable="DLR_CDColumn" msprop:Generator_UserColumnName="DLR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="BRN_CD" msdata:Caption="RO_NUM" msprop:Generator_ColumnVarNameInTable="columnBRN_CD" msprop:Generator_ColumnPropNameInRow="BRN_CD" msprop:Generator_ColumnPropNameInTable="BRN_CDColumn" msprop:Generator_UserColumnName="BRN_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RO_NUM" msdata:Caption="RO_STATUS" msprop:Generator_ColumnVarNameInTable="columnRO_NUM" msprop:Generator_ColumnPropNameInRow="RO_NUM" msprop:Generator_ColumnPropNameInTable="RO_NUMColumn" msprop:Generator_UserColumnName="RO_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="REPLACED_DATETIME" msdata:Caption="FIH_RO_NUM_SAMPLE" msprop:Generator_ColumnVarNameInTable="columnREPLACED_DATETIME" msprop:Generator_ColumnPropNameInRow="REPLACED_DATETIME" msprop:Generator_ColumnPropNameInTable="REPLACED_DATETIMEColumn" msprop:Generator_UserColumnName="REPLACED_DATETIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PreviosReplacementMileage" msprop:Generator_TableClassName="PreviosReplacementMileageDataTable" msprop:Generator_TableVarName="tablePreviosReplacementMileage" msprop:Generator_RowChangedName="PreviosReplacementMileageRowChanged" msprop:Generator_TablePropName="PreviosReplacementMileage" msprop:Generator_RowDeletingName="PreviosReplacementMileageRowDeleting" msprop:Generator_RowChangingName="PreviosReplacementMileageRowChanging" msprop:Generator_RowEvHandlerName="PreviosReplacementMileageRowChangeEventHandler" msprop:Generator_RowDeletedName="PreviosReplacementMileageRowDeleted" msprop:Generator_RowClassName="PreviosReplacementMileageRow" msprop:Generator_UserTableName="PreviosReplacementMileage" msprop:Generator_RowEvArgName="PreviosReplacementMileageRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REG_MILE" msdata:Caption="SVCIN_ID" msprop:Generator_ColumnVarNameInTable="columnREG_MILE" msprop:Generator_ColumnPropNameInRow="REG_MILE" msprop:Generator_ColumnPropNameInTable="REG_MILEColumn" msprop:Generator_UserColumnName="REG_MILE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VehicleDelivery" msprop:Generator_TableClassName="VehicleDeliveryDataTable" msprop:Generator_TableVarName="tableVehicleDelivery" msprop:Generator_TablePropName="VehicleDelivery" msprop:Generator_RowDeletingName="VehicleDeliveryRowDeleting" msprop:Generator_RowChangingName="VehicleDeliveryRowChanging" msprop:Generator_RowEvHandlerName="VehicleDeliveryRowChangeEventHandler" msprop:Generator_RowDeletedName="VehicleDeliveryRowDeleted" msprop:Generator_UserTableName="VehicleDelivery" msprop:Generator_RowChangedName="VehicleDeliveryRowChanged" msprop:Generator_RowEvArgName="VehicleDeliveryRowChangeEvent" msprop:Generator_RowClassName="VehicleDeliveryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DELI_DATE" msprop:Generator_ColumnVarNameInTable="columnDELI_DATE" msprop:Generator_ColumnPropNameInRow="DELI_DATE" msprop:Generator_ColumnPropNameInTable="DELI_DATEColumn" msprop:Generator_UserColumnName="DELI_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VCL_TYPE" msprop:Generator_ColumnVarNameInTable="columnVCL_TYPE" msprop:Generator_ColumnPropNameInRow="VCL_TYPE" msprop:Generator_ColumnPropNameInTable="VCL_TYPEColumn" msprop:Generator_UserColumnName="VCL_TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PreviousPartsReplace" msprop:Generator_TableClassName="PreviousPartsReplaceDataTable" msprop:Generator_TableVarName="tablePreviousPartsReplace" msprop:Generator_TablePropName="PreviousPartsReplace" msprop:Generator_RowDeletingName="PreviousPartsReplaceRowDeleting" msprop:Generator_RowChangingName="PreviousPartsReplaceRowChanging" msprop:Generator_RowEvHandlerName="PreviousPartsReplaceRowChangeEventHandler" msprop:Generator_RowDeletedName="PreviousPartsReplaceRowDeleted" msprop:Generator_UserTableName="PreviousPartsReplace" msprop:Generator_RowChangedName="PreviousPartsReplaceRowChanged" msprop:Generator_RowEvArgName="PreviousPartsReplaceRowChangeEvent" msprop:Generator_RowClassName="PreviousPartsReplaceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RO_NUM" msprop:Generator_ColumnVarNameInTable="columnRO_NUM" msprop:Generator_ColumnPropNameInRow="RO_NUM" msprop:Generator_ColumnPropNameInTable="RO_NUMColumn" msprop:Generator_UserColumnName="RO_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="REPLACE_MILE" msprop:Generator_ColumnVarNameInTable="columnREPLACE_MILE" msprop:Generator_ColumnPropNameInRow="REPLACE_MILE" msprop:Generator_ColumnPropNameInTable="REPLACE_MILEColumn" msprop:Generator_UserColumnName="REPLACE_MILE" type="xs:int" minOccurs="0" />
+              <xs:element name="REPLACE_DATE" msprop:Generator_ColumnVarNameInTable="columnREPLACE_DATE" msprop:Generator_ColumnPropNameInRow="REPLACE_DATE" msprop:Generator_ColumnPropNameInTable="REPLACE_DATEColumn" msprop:Generator_UserColumnName="REPLACE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PREVIOUS_REPLACE_MILE" msprop:Generator_ColumnVarNameInTable="columnPREVIOUS_REPLACE_MILE" msprop:Generator_ColumnPropNameInRow="PREVIOUS_REPLACE_MILE" msprop:Generator_ColumnPropNameInTable="PREVIOUS_REPLACE_MILEColumn" msprop:Generator_UserColumnName="PREVIOUS_REPLACE_MILE" type="xs:int" minOccurs="0" />
+              <xs:element name="PREVIOUS_REPLACE_DATE" msprop:Generator_ColumnVarNameInTable="columnPREVIOUS_REPLACE_DATE" msprop:Generator_ColumnPropNameInRow="PREVIOUS_REPLACE_DATE" msprop:Generator_ColumnPropNameInTable="PREVIOUS_REPLACE_DATEColumn" msprop:Generator_UserColumnName="PREVIOUS_REPLACE_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

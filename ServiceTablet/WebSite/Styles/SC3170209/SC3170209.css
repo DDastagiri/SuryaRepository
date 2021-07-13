@@ -1,0 +1,99 @@
+﻿/* FlexSlider 
+*********************************/
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles */
+.flexslider {width: 100%; margin: 0; padding: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {display: block;}/* max-width: 100%;  */
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider カスタム
+*********************************/
+.flex-container {position: relative; font-family:Helvetica;}
+.flex-direction-nav{display:none;}
+
+.FlexSliderUpper{height:20px;}
+.ControlNaviArea{}
+.ControlNaviArea li{display:inline-block;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position:relative; text-align: center;}
+.flex-control-nav li {margin-left:7px; }
+.flex-control-nav li:first-child {margin-left: 0;}
+
+.flex-control-nav li a 
+{
+    width: 7px; 
+    height: 7px; 
+    display: block;
+    border:#727783 1px solid;
+    border-radius:7px; 
+    cursor: pointer; 
+    text-indent: -9999px;
+    float:left;
+}
+
+.flex-control-nav li a:not(.active) {background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), color-stop(0.51, #666666), to(#808080));}
+.flex-control-nav li a.active {background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.51, #FEFEFE), to(#e2e2e2)); cursor: default;}
+
+.ControlNaviAreaRight{ position:absolute; top:0px; right:0px;}
+.PhotoCount{ font-size:16; font-weight:bold; color:#666666;}
+
+.flexslider {position: relative;}
+.flexslider .slides > li {position: relative; white-space: nowrap;}
+.flexslider img{ margin-top:7px; margin-left:10px;  float:left; width: 46%; }
+
+
+/*クルクル（画面全体）*/
+#LoadingScreen
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:Black;
+    width:100%;
+	height:100%;
+    opacity:0.6;
+    z-index:1000;
+    display:table;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#LoadingWrap
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#LoadingScreen .loadingIcn
+{
+	display:block;
+	width:38px;
+	height:38px;
+	-webkit-animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+
+@-webkit-keyframes LoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(340deg);}
+}

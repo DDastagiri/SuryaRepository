@@ -1,0 +1,594 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  SMB共通
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+.SMB_MainOutFrame{
+	overflow:hidden;
+	width:989px;
+	height:624px;
+}
+.SMB_Main{
+	position:relative;
+	overflow:hidden;
+	width:982px;
+	height:617px;
+	border-right:#000 1px solid;
+	border-bottom:#000 1px solid;
+	box-shadow:1px 1px 6px #6a6a6a;
+}
+
+/* SMBロゴ
+------------------------------------------------------------------------------*/
+.SMBLogo{
+	position:relative;
+	background:url(../images/SC3240601/smb_logo.png) 0 0 no-repeat;
+	width:142px;
+	height:33px;
+}
+
+/* ヘッダー
+------------------------------------------------------------------------------*/
+.TSMBHeader{
+	background:url(../images/SC3240601/tsmb_logo.png) 27px 18px no-repeat #2b2b2b;
+	border-bottom:#000000 1px solid;
+	width:100%;
+	height:92px;
+	z-index:2;
+	text-shadow:#000 0 -2px 0;
+}
+.TSMBHeader .TSMB_HDText01{
+	position:absolute;
+	left:0px; top:20px;
+	width:209px; height:25px;
+	text-align:center;
+	font-size:20px;
+	line-height:25px;
+}
+
+.TSMBHeader .TSMB_HDBox01,
+.TSMBHeader .TSMB_HDBox02,
+.TSMBHeader .TSMB_HDBox03,
+.TSMBHeader .TSMB_HDBox04{
+	position:absolute;
+	left:224px; top:20px;
+	width:441px; height:28px;
+}
+.TSMBHeader .TSMB_HDBox02{top:54px;}
+.TSMBHeader .TSMB_HDBox03{left:667px; width:337px;}
+.TSMBHeader .TSMB_HDBox04{left:667px; top:54px; width:337px;}
+
+.TSMBHeader .TSMB_HDBox01 .BoxText,
+.TSMBHeader .TSMB_HDBox02 .BoxText,
+.TSMBHeader .TSMB_HDBox03 .BoxText,
+.TSMBHeader .TSMB_HDBox04 .BoxText{
+	position:absolute;
+	left:0; top:0;
+	width:60px; height:28px;
+	text-align:right;
+	font-size:16px;
+	line-height:28px;
+}
+.TSMBHeader .TSMB_HDBox03 .BoxText,
+.TSMBHeader .TSMB_HDBox04 .BoxText{
+	width:76px;
+}
+
+
+.TSMBHeader .TSMB_HDBox01 .BoxArea,
+.TSMBHeader .TSMB_HDBox02 .BoxArea,
+.TSMBHeader .TSMB_HDBox03 .BoxArea,
+.TSMBHeader .TSMB_HDBox04 .BoxArea{
+	position:absolute;
+	right:0; top:0;
+	background:#1e1e1e;
+	border-bottom:#727272 1px solid;
+	box-shadow:inset #3a3a3a 0 1px 0, inset #000 0 0 20px;
+	border-radius:5px;
+	width:374px; height:27px;
+}
+.TSMBHeader .TSMB_HDBox03 .BoxArea,
+.TSMBHeader .TSMB_HDBox04 .BoxArea{
+	width:254px;
+}
+.TSMBHeader .TSMB_HDBox01 .BoxArea p,
+.TSMBHeader .TSMB_HDBox02 .BoxArea p,
+.TSMBHeader .TSMB_HDBox03 .BoxArea p,
+.TSMBHeader .TSMB_HDBox04 .BoxArea p{
+	padding:0 0 0 10px;
+	font-size:16px;
+	line-height:29px;
+}
+
+/* Mileage
+------------------------------------------------------------------------------*/
+.MileageBack{
+	position:relative;
+	background:-webkit-gradient(linear, left top, left bottom, from(#242424),
+								color-stop(0.1, #424242),
+								to(#424242));
+	width:100%; height:336px;
+	text-shadow:#000 0 -2px 0;
+}
+.MileageBack .MileageTitle{
+	position:absolute;
+	left:21px; top:10px;
+	width:400px; height:28px;
+	font-size:20px;
+	line-height:28px;
+}
+
+.MileageBack .MileageListTtlSet01{
+	position:absolute;
+	left:21px; top:47px;
+	width:90px; height:224px;
+}
+.MileageBack .MileageListTtlSet01 p{
+	display:block;
+	width:100%; height:28px;
+	line-height:28px;
+	font-size:14px;
+	text-align:right;
+}
+
+.MileageBack .MileageListTtlSet02{
+	position:absolute;
+	left:0px; top:273px;
+	width:100%; height:20px;
+}
+.MileageBack .MileageListTtlSet02 p{
+	display:block;
+	position:absolute;
+	top:0;
+	width:114px; height:20px;
+	line-height:20px;
+	font-size:14px;
+	text-align:center;
+}
+.MileageBack .MileageListTtlSet02 p.Data01{left:64px;}
+.MileageBack .MileageListTtlSet02 p.Data02{left:205px;}
+.MileageBack .MileageListTtlSet02 p.Data03{left:346px;}
+.MileageBack .MileageListTtlSet02 p.Data04{left:487px;}
+.MileageBack .MileageListTtlSet02 p.Data05{left:628px;}
+.MileageBack .MileageListTtlSet02 p.Data06{left:769px;}
+.MileageBack .MileageListTtlSet02 p.Data07{right:0px;}
+
+
+.MileageBack .MileageGraphClass{
+	position:absolute;
+	left:26px; top:49px;
+	width:980px; height:273.5px;
+	z-index:3;
+	/*box-shadow:#6a6a6a 2px 2px 5px; */
+}
+
+.MileageBack .Explanation{
+	position:absolute;
+	top:297px; left:20px;
+	background:#323232;
+	border:rgba(255,255,255,0.2) 1px solid;
+	box-shadow:inset #3a3a3a 0 1px 0, inset #000 0 2px 3px;
+	border-radius:13px;
+	width:430px; height:25px;
+	z-index:2;
+}
+.MileageBack .Explanation div{
+	display:block;
+	position:absolute;
+	top:0;
+	width:85px; height:25px;
+	line-height:26px;
+	font-size:14px;
+	padding:0 0 0 15px;
+}
+.MileageBack .Explanation .ExText01{left:9px;}
+.MileageBack .Explanation .ExText02{left:109px;}
+.MileageBack .Explanation .ExText03{left:209px;}
+.MileageBack .Explanation .ExText04{right:0px; width:69px;}
+
+.MileageBack .Explanation span{
+	position:absolute;
+	left:0; top:7px;
+	display:block;
+	width:12px; height:12px;
+	border-radius:12px;
+}
+.MileageBack .Explanation .ExText01 span{background:#00d8ff;}
+.MileageBack .Explanation .ExText02 span{background:#fcff00;}
+.MileageBack .Explanation .ExText03 span{background:#e2005a;}
+.MileageBack .Explanation .ExText04 span{background:#00e200;}
+
+
+.MileageBack .BtnSet{
+	position:absolute;
+	left:682px; top:296px;
+	width:321px; height:30px;
+	z-index:5;
+}
+
+.MileageBack .BtnSet .BtnBox01,
+.MileageBack .BtnSet .BtnBox02,
+.MileageBack .BtnSet .BtnBox03{
+	position:absolute;
+	top:0;
+	border:#141414 1px solid;
+	box-shadow:rgba(255,255,255,0.25) 0 1px 0;
+	border-radius:5px;
+	width:48px; height:27px;
+}
+
+.MileageBack .BtnSet p{
+	position:absolute;
+	top:0;
+	border-radius:4px;
+	width:48px; height:27px;
+	line-height:27px;
+	text-align:center;
+	font-size:12px;
+}
+
+.MileageBack .BtnSet .BtnBox01{
+	left:0;
+}
+.MileageBack .BtnSet .BtnBox01 p{
+	background:url(../images/SC3240601/tsmb_backIcon.png) center 8px no-repeat;
+	width:48px; height:27px;
+}
+
+.MileageBack .BtnSet .BtnBox02{
+	left:70px;
+	width:179px;
+}
+.MileageBack .BtnSet .BtnBox02 p.Btn01{
+	left:0;
+	width:59px; height:27px;
+	border-right:rgba(255,255,255,0.5) 1px solid;
+	border-radius:4px 0 0 4px;
+}
+.MileageBack .BtnSet .BtnBox02 p.Btn02{
+	left:60px;
+	width:59px; height:27px;
+	border-right:rgba(255,255,255,0.5) 1px solid;
+	border-radius:0;
+}
+.MileageBack .BtnSet .BtnBox02 p.Btn03{
+	right:0;
+	width:59px; height:27px;
+	border-radius:0 4px 4px 0;
+}
+
+.MileageBack .BtnSet .BtnBox03{
+	right:0;
+}
+.MileageBack .BtnSet .BtnBox03 p{
+	background:url(../images/SC3240601/tsmb_forwardIcon.png) center 8px no-repeat;
+	width:48px; height:27px;
+}
+
+
+.MileageBack .BtnSet .BtnOFF{
+	background:-webkit-gradient(linear, left top, left bottom, from(#6d6d6d),
+								color-stop(0.5, #313131),
+								color-stop(0.5, #000000),
+								to(#000000));
+}
+.MileageBack .BtnSet .BtnOn{
+	background:-webkit-gradient(linear, left top, left bottom, from(#5a5a5a),
+								color-stop(0.5, #474747),
+								color-stop(0.5, #303030),
+								to(#333333));
+}
+
+/* グルグル
+------------------------------------------------------------------------------*/
+
+#ServerProcessListOverlay {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	display:none;
+	/*top:174px;*/ 
+	/*left:37px;*/
+	z-index:99;
+	width:1024px;
+	height:700px;
+}
+
+#ServerProcessListIcon {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:300px;
+	left:491px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+
+#ServerProcessGraphOverlay {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	display:none;
+	top:130px;
+	left:37px;
+	z-index:16;
+	width:1024px;
+	height:280px;
+}
+
+#ServerProcessGraphIcon {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:270px;
+	left:491px;
+	width:38px;
+	height:38px;
+	z-index:15;
+}
+
+.PageLoadNextIcon, 
+.PageLoadBackIcon {
+    position:absolute;
+    float:left;
+	background:url(../Images/progress.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+    background-position:center center;
+    background-repeat:no-repeat;
+    width:21px;
+    height:22px;
+    margin-top:11px;
+    margin-left:5px;
+}
+
+#ServerProcessGraphBtnsOverlay {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	display:none;
+	top:350px;
+	left:670px;
+	z-index:17;
+	width:350px;
+	height:80px;
+}
+
+/* DisplayList
+------------------------------------------------------------------------------*/
+.DisplayList{
+	position:relative;
+	top: 0 ;
+	background:#2b2b2b;
+	box-shadow:rgba(0,0,0,0.8) 0 -3px 50px;
+	width:100%; height:225px;
+	border-top:#555555 1px solid;
+	text-shadow:#000 0 -2px 0;	
+	z-index:20;
+}
+
+.DisplayList .RecordAreaDiv
+{
+	height:45px;
+	padding:0px 0px;
+}
+
+.DisplayList .Knob{
+	position:absolute;
+	left:430px; top:-35px;
+	background:url(../images/SC3240601/tsmb_knob.png) 0 0 no-repeat;
+	background-position: center center; 
+	width:150px; height:50px;
+}
+
+.DisplayList .ListBox{
+	position:absolute;
+	left:20px; top:10px;
+	width:982px; height:auto;
+	border-left:#000000 1px solid;
+	border-bottom:#000000 1px solid;
+	box-shadow:#555555 1px 1px 0;
+}
+
+.DisplayList .ListBox .TitleSet{
+	overflow:hidden;
+	width:100%; height:31px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#3f3f3f),
+								color-stop(0.5, #3f3f3f),
+								color-stop(0.5, #000000),
+								to(#000000));
+}
+/*.DisplayList .ListBox .TitleSet p{
+	display:block;
+	float:left;
+	height:31px;
+	border-left:#555555 1px solid;
+	border-right:#000000 1px solid;
+	text-align:center;
+	font-size:14px;
+	line-height:31px;
+}
+.DisplayList .ListBox .TitleSet .Title01{width:38px;}
+.DisplayList .ListBox .TitleSet .Title02{width:105px;}
+.DisplayList .ListBox .TitleSet .Title03{width:105px;}
+.DisplayList .ListBox .TitleSet .Title04{width:203px;}
+.DisplayList .ListBox .TitleSet .Title05{width:203px;}
+.DisplayList .ListBox .TitleSet .Title06{width:240px;}
+.DisplayList .ListBox .TitleSet .Title07{width:74px;}*/
+.DisplayList .ListBox .TitleSet ul li:nth-child(1) { width:38px;display:block;float:left;height:31px;border-left:#555555 1px solid;border-right:#000000 1px solid;text-align:center;font-size:14px;line-height:31px;}
+.DisplayList .ListBox .TitleSet ul li:nth-child(2) { width:105px;display:block;float:left;height:31px;border-left:#555555 1px solid;border-right:#000000 1px solid;text-align:center;font-size:14px;line-height:31px;}
+.DisplayList .ListBox .TitleSet ul li:nth-child(3) { width:105px;display:block;float:left;height:31px;border-left:#555555 1px solid;border-right:#000000 1px solid;text-align:center;font-size:14px;line-height:31px;}
+.DisplayList .ListBox .TitleSet ul li:nth-child(4) { width:203px;display:block;float:left;height:31px;border-left:#555555 1px solid;border-right:#000000 1px solid;text-align:center;font-size:14px;line-height:31px;}
+.DisplayList .ListBox .TitleSet ul li:nth-child(5) { width:203px;display:block;float:left;height:31px;border-left:#555555 1px solid;border-right:#000000 1px solid;text-align:center;font-size:14px;line-height:31px;}
+.DisplayList .ListBox .TitleSet ul li:nth-child(6) { width:240px;display:block;float:left;height:31px;border-left:#555555 1px solid;border-right:#000000 1px solid;text-align:center;font-size:14px;line-height:31px;}
+.DisplayList .ListBox .TitleSet ul li:nth-child(7) { width:74px ;display:block;float:left;height:31px;border-left:#555555 1px solid;border-right:#000000 1px solid;text-align:center;font-size:14px;line-height:31px;}
+
+.DisplayList .ListScrollBox{
+	/*overflow:scroll;*/
+	overflow:hidden;
+	left:0; top:0;
+	width:982px; height:163px;
+}
+.DisplayList .ListScrollBox ul{
+	display:block;
+	overflow:hidden;
+	width:100%;
+	height:45px;
+	background:#2b2b2b;
+}
+.DisplayList .ListScrollBox ul:nth-child(even){
+	background:#3f3f3f;
+}
+/*.DisplayList .ListScrollBox dl{
+	display:block;
+	overflow:hidden;
+	width:100%;
+	height:45px;
+}*/
+/*.DisplayList .ListScrollBox dt,
+.DisplayList .ListScrollBox dd{
+	position:relative;
+	float:left;
+	border-left:#555555 1px solid;
+	border-right:#000000 1px solid;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	font-size:14px;
+}
+.DisplayList .ListScrollBox dt{
+	width:38px;
+}*/
+/*.DisplayList .ListScrollBox dd.Cell01{width:105px;}
+.DisplayList .ListScrollBox dd.Cell02{width:105px;}
+.DisplayList .ListScrollBox dd.Cell03{width:203px;}
+.DisplayList .ListScrollBox dd.Cell04{width:203px;}
+.DisplayList .ListScrollBox dd.Cell05{width:230px; padding-left:10px; text-align:left;}
+.DisplayList .ListScrollBox dd.Cell06{width:74px;}*/
+
+.DisplayList .ListScrollBox ul li:nth-child(1) { width:38px;position:relative;float:left;border-left:#555555 1px solid;border-right:#000000 1px solid;height:45px;line-height:45px;text-align:center;font-size:14px;}
+.DisplayList .ListScrollBox ul li:nth-child(2) { width:105px;position:relative;float:left;border-left:#555555 1px solid;border-right:#000000 1px solid;height:45px;line-height:45px;text-align:center;font-size:14px;}
+.DisplayList .ListScrollBox ul li:nth-child(3) { width:105px;position:relative;float:left;border-left:#555555 1px solid;border-right:#000000 1px solid;height:45px;line-height:45px;text-align:center;font-size:14px;}
+.DisplayList .ListScrollBox ul li:nth-child(4) { width:203px;position:relative;float:left;border-left:#555555 1px solid;border-right:#000000 1px solid;height:45px;line-height:45px;text-align:center;font-size:14px;}
+.DisplayList .ListScrollBox ul li:nth-child(5) { width:203px;position:relative;float:left;border-left:#555555 1px solid;border-right:#000000 1px solid;height:45px;line-height:45px;text-align:center;font-size:14px;}
+.DisplayList .ListScrollBox ul li:nth-child(6) { width:230px; padding-left:10px; text-align:left;position:relative;float:left;border-left:#555555 1px solid;border-right:#000000 1px solid;height:45px;line-height:45px;text-align:center;font-size:14px;}
+.DisplayList .ListScrollBox ul li:nth-child(7) { width:74px;position:relative;float:left;border-left:#555555 1px solid;border-right:#000000 1px solid;height:45px;line-height:45px;text-align:center;font-size:14px; }
+
+.DisplayList .ListScrollBox li .BtnBoxOff{
+	position:absolute;
+	left:12px; top:8px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#b0b4ba),
+								color-stop(0.5, #888e96),
+								color-stop(0.5, #848a93),
+								to(#6d7580));
+	border-top:#4f5153 1px solid;
+	border-left:#5f6368 1px solid;
+	border-right:#5f6368 1px solid;
+	border-bottom:#595f67 1px solid;
+	border-radius:5px;
+	box-shadow:#5f6060 0 1px 0, inset rgba(0,0,0,0.3) 0 1px 0;
+	width:48px; height:28px;
+	font-size:12px;
+	line-height:29px;
+	color:rgba(255,255,255,0.5);
+	text-shadow:rgba(0,0,0,0.5) 0 -1px 0;
+}
+
+.DisplayList .ListScrollBox li .BtnBoxOn{
+	position:absolute;
+	left:12px; top:8px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#7298e9),
+								color-stop(0.5, #376fe0),
+								color-stop(0.5, #2361dd),
+								to(#2463de));
+	border-top:#4f5153 1px solid;
+	border-left:#5f6368 1px solid;
+	border-right:#5f6368 1px solid;
+	border-bottom:#555d6d 1px solid;
+	border-radius:5px;
+	box-shadow:#5f6060 0 1px 0, inset rgba(0,0,0,0.3) 0 1px 0;
+	width:48px; height:28px;
+	font-size:12px;
+	line-height:29px;
+	color:rgba(255,255,255,1);
+	text-shadow:rgba(0,0,0,0.5) 0 -1px 0;
+}
+
+.DisplayList .ListScrollBox .BackPageClass
+{
+    border-bottom:#000000 1px solid;
+}
+
+.DisplayList .ListScrollBox .BackPageLoadClass
+{
+    border-bottom:#000000 1px solid;
+}
+
+.DisplayList .ListScrollBox .NextPageClass
+{
+    border-top:#000000 1px solid;
+}
+
+.DisplayList .ListScrollBox .NextPageLoadClass
+{
+    border-top:#000000 1px solid;
+}
+
+#OrderListOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	z-index:900;
+	width:1024px;
+	height:748px;
+	display:none;
+}
+
+.dummyrightbar{
+	position:absolute;
+	background:#2b2b2b;
+	width:19px; height:225px;
+	right:0px;
+	bottom:0px;
+	z-index:21;
+}
+.dummyleftbar{
+	position:absolute;
+	background:#2b2b2b;
+	width:19px; height:225px;
+	left:0px;
+	bottom:0px;
+	z-index:21;
+}
+.dummybottombar{
+	position:absolute;
+	background:#2b2b2b;
+	width:100%; height:21px;
+	bottom:0px;
+	z-index:21;
+}
+.dummybottombar .animeflg{
+}
+.dummylistbar{
+	position:absolute;
+	left:20px; bottom:21px;
+	width:982px; height:0.1px;
+	border-bottom:#000000 1px solid;
+	box-shadow:#555555 1px 1px 0;
+	z-index:22;
+}
+
+.dummyscroll{
+	position:absolute;
+	width:982px; height:168px;
+	z-index:23;
+	left: 20px;
+	bottom: 21px;
+	display: none;
+}
+

@@ -1,0 +1,429 @@
+﻿/**************************************************************************
+*SC3080401.css
+*─────────────────────────────────────
+*機能： ヘルプ依頼画面
+*補足： 
+*作成： 2012/01/30 TCS 鈴木(健)
+*更新： 2012/04/12 TCS 鈴木(健) HTMLエンコード対応
+***************************************************************************/
+
+/* ヘッダ全体を囲むDIV */
+#SC3080401PopOver {
+	background: -webkit-gradient(linear, left top, left bottom, from(#565d70), 
+							color-stop(0.002, #565d70),
+							color-stop(0.069,  #323c4c),
+							color-stop(0.0691, #19202d),
+							to(#1f232a));
+	-webkit-user-select:none;
+}
+
+/* ヘッダ全体を囲むDIV */
+.helpRequestPopUpHeader {
+	position:relative;
+	width:288px;
+	height:45px;
+	z-index:2;
+}
+.helpRequestPopUpHeader h3 {
+	position:absolute;
+	width:288px;
+	height:36px;
+	top:7px;
+	left:0; 
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+
+/* ヘッダ全体を囲むDIV、ヘッダの左部分のキャンセルボタン */
+.helpRequestPopUpHeader .helpRequestPopUpCancelButton {
+	position:absolute;
+	top:7px;
+	left:6px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#565f72), 
+	                        color-stop(0.50, #19233e), 
+	                        color-stop(0.501, #000b29), 
+	                        to(#000b29));
+	z-index:2;
+	line-height:17px;
+}
+
+/* 2ページ目のヘッダの左部分のヘルプボタン */
+.helpRequestHeaderBackButton {
+	position:absolute;
+	top:7px;
+	left:6px;
+	display:block;
+	color:#FFF;
+	font-size:0.9em;
+	width:90px;
+	height:32px;
+	overflow:hidden;
+}
+.helpRequestHeaderBackButton a{
+	position:absolute;
+	left:9px;
+	display:block;
+	color:#FFF;
+	font-size:0.9em;
+	width:65px;
+	height:20px;
+	padding:5px 5px 4px 0px;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.51, #1a233e),
+							color-stop(0.511, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	text-align:center;
+	line-height:20px;
+}
+.helpRequestHeaderBackButton .tgLeft{
+	position:absolute;
+	left:1px;
+	top:5px;
+	display:block;
+	width:20px;
+	height:20px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(53deg) skew(15deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.49, #1a233e),
+							color-stop(0.491, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;	
+}
+
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 START */
+/* ヘッダタイトルを囲むDIV */
+.helpRequestHeaderTitle
+{
+	width: 100px;
+}
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 END */
+
+/* ポップアップフォームのシート全体を囲むDIV */
+.helpRequestDataBox{
+	/*display:block;*/
+	width:512px;
+	height:232px;
+	/*position:absolute;*/
+	/*top:44px;	left:6px;*/
+	/*border-radius:5px;*/
+	background:#FFF;
+	/*border:#242c40 1px solid;*/
+	/*box-shadow:inset 0px 3px 3px #777;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+	z-index:2;
+}
+
+/* ポップアップフォームのシート内のページ全体を囲むDIV */
+.helpRequestInnerDataBox{
+	width:256px; height:232px;
+	float:left;overflow-y:scroll;overflow-x:hidden;
+}
+
+/* 1ページ目の依頼先（選択中）・ヘルプ内容（選択中）のラベルを囲むDIV */
+.helpRequestPopUpAuditButton {
+width: auto;
+height: 33px;
+background: url(../images/SC3080401/ncv51Arrow.png) right center no-repeat white;
+border: #BBB 1px solid;
+border-radius: 10px;
+padding: 12px 0 0 10px;
+font-size: 17px;
+line-height: 19px;
+color: #375388;
+border-image: initial;
+}
+
+/* 1ページ目下部の依頼ボタン */
+.helpRequestPopUpUnderRequestButton {
+	position:relative;
+	width:254px;
+	height:32px;
+	left:0;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 START */
+	top:72px;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 END */
+	background: -webkit-gradient(linear, left top, left bottom, from(#7a97ed), 
+	                        color-stop(0.50, #416ae5), 
+	                        color-stop(0.501, #1e4ee1), 
+	                        to(#1e4ee1));
+	border:#666 1px solid;
+	border-radius:4px;
+	margin:0 auto;
+	padding:6px 0 0 0;
+	text-align:center;
+	text-shadow:#2e3f74 0 -1px 0;
+	color:white;
+	line-height:26px;
+	font-size:1.1em;	
+}
+.helpRequestPopUpUnderRequestButton span{
+	color:white;
+}
+
+/* 1ページ目下部の依頼ボタン（非活性） */
+.helpRequestPopUpUnderRequestButtonDisabled {
+	position:relative;
+	width:254px;
+	height:32px;
+	left:0;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 START */
+	top:72px;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 END */
+	background: -webkit-gradient(linear, left top, left bottom, from(#afb3ba), to(#6d747f));
+	border:#606368 1px solid;
+	border-radius:4px;
+	margin:0 auto;
+	padding:7px 0 0 0;
+	text-align:center;
+	text-shadow:#666 0 -1px 0;
+	color:#b6b9bf;
+	line-height:25px;
+	font-size:1.1em;	
+}
+
+/* 1ページ目下部のキャンセルボタン */
+.helpRequestPopUpUnderCancelButton {
+	position:relative;
+	width:254px;
+	height:32px;
+	left:0;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 START */
+	top:50px;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 END */
+	background: -webkit-gradient(linear, left top, left bottom, from(#cd6d75), 
+	                        color-stop(0.50, #b93540), 
+	                        color-stop(0.501, #b01825), 
+	                        to(#b01825));
+	border:#666 1px solid;
+	border-radius:4px;
+	margin:0 auto;
+	padding:6px 0 0 0;
+	text-align:center;
+	text-shadow:#2e3f74 0 -1px 0;
+	color:#FFF;
+	line-height:26px;
+	font-size:1.1em;	
+}
+
+/* 1ページ目下部のキャンセルボタン（非活性） */
+.helpRequestPopUpUnderCancelButtonDisabled {
+	position:relative;
+	width:254px;
+	height:32px;
+	left:0;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 START */
+	top:50px;
+/* 2012/04/12 TCS 鈴木(健) HTMLエンコード対応 END */
+	background: -webkit-gradient(linear, left top, left bottom, from(#afb3ba), to(#6d747f));
+	border:#606368 1px solid;
+	border-radius:4px;
+	margin:0 auto;
+	padding:7px 0 0 0;
+	text-align:center;
+	text-shadow:#666 0 -1px 0;
+	color:#b6b9bf;
+	line-height:25px;
+	font-size:1.1em;	
+}
+
+/*
+下記のコントロールを囲むDIV
+ 1ページ目：ヘルプ依頼中・依頼先（選択中）・ヘルプ内容（選択中）・ヘルプ依頼不可（依頼先不在）
+ 2ページ目：依頼先一覧・ヘルプ内容一覧
+ */
+.helpRequestPopUpContactAuditBox {
+	width:auto;
+	margin:0 auto 10px;
+}
+.helpRequestPopUpContactAuditBox .helpRequestUnderRequestText{
+	text-align:center;
+	font-size:16px;
+	line-height:17px;
+}
+.helpRequestPopUpContactAuditBox .helpRequestRequestedTime{
+	position:absolute;
+	left:200px;
+	top:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#aaaaaa;
+	text-align:right;
+}
+
+/* 2ページ目の依頼先一覧を囲むDIV */
+.helpRequestPopUpAuditButtonAccountList{
+	width:auto;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	font-size:17px;
+	line-height:19px;
+}
+.helpRequestPopUpAuditButtonAccountList li{
+	position:relative;
+	height:30px;
+	border-bottom:#bbbbbb 1px solid;
+	padding:12px 0 0 50px;
+	font-weight:bold;
+}
+.helpRequestPopUpAuditButtonAccountList li.Check{
+	background:url(../Images/SC3080401/ncvCheckIcn.png) right center no-repeat;
+	color:#375388;
+}
+.helpRequestPopUpAuditButtonAccountList li.Offline span{
+	color:#aaaaaa;
+}
+.helpRequestPopUpAuditButtonAccountList li.ListEnd{
+	height:30px;
+	border-bottom:none;
+}
+.helpRequestPopUpAuditButtonAccountList .ncv51OnOffIcn{
+	left:9px; top:10px;
+	position:absolute;
+	border-bottom:none;
+}
+
+/* 2ページ目のヘルプ内容一覧を囲むDIV */
+.helpRequestPopUpAuditButtonHelpList{
+	width:auto;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	font-size:17px;
+	line-height:19px;
+}
+.helpRequestPopUpAuditButtonHelpList li{
+	position:relative;
+	height:30px;
+	border-bottom:#bbbbbb 1px solid;
+	padding:12px 0 0 10px;
+	font-weight:bold;
+}
+.helpRequestPopUpAuditButtonHelpList li.Check{
+	background:url(../Images/SC3080401/ncvCheckIcn.png) right center no-repeat;
+	color:#375388;
+}
+.helpRequestPopUpAuditButtonHelpList li.ListEnd{
+	height:30px;
+	border-bottom:none;
+}
+
+/* 在籍状態（大分類）がオンライン時のアイコン */
+.helpRequestNcv51OnIcn
+{
+	background:url(../Images/SC3080401/ncv51OnIcn.png) right center no-repeat;
+	width:34px;
+	height:25px;
+}
+
+/* 在籍状態（大分類）がオフライン時のアイコン */
+.helpRequestNcv51OffIcn{
+	background:url(../Images/SC3080401/ncv51OffIcn.png) right center no-repeat;
+	width:34px;
+	height:25px;	
+}
+
+/* 依頼先欄、ヘルプ内容欄の依頼中時のスタイル */
+.helpRequestPopUpAuditButtonUnderRequest {
+	width:auto;
+	height:33px;
+	background:#f2f2f2;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	padding:10px 0 0 10px;
+	font-size:17px;
+	line-height:19px;
+	color:#acacac;
+}
+
+/* 領域からはみ出た文字を「・・・」にする*/
+.helpRequestUseEllipsis 
+{
+	text-overflow:ellipsis;
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+}	
+	
+/* 領域からはみ出た文字を強制カットする　*/	
+.helpRequestUseCut
+{
+	text-overflow:clip;
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+/* 依頼先不在時の画像ファイル */
+.helpRequestNoSendAccountImg{
+	background:url(../Images/SC3080401/nsc413ContactRequest.png) center center no-repeat;
+	display:block;
+	height:183px;
+}
+
+/* 依頼先不在時の文言のスタイル */
+.helpRequestNoSendAccountText{
+	display:block;
+	color:#666;
+	font-size:16px;
+	text-align:center;
+}
+
+/*　登録時のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlackSC3080401 {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:-2000px;
+	left:-2000px;
+	background:#000;
+	width:4000px;
+	height:4000px;
+	z-index:100001;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlackSC3080401.open { opacity:0.0; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#processingServerSC3080401 {
+	position:absolute;
+	background:url(../Images/SC3080401/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:136px;
+	left:122px;
+	width:38px;
+	height:38px;
+	z-index:1000020;
+}
+#processingServerSC3080401.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}

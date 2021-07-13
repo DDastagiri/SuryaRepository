@@ -1,0 +1,227 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/CommonMasterPage.Master" AutoEventWireup="false" CodeFile="SC3010201.master.vb" Inherits="Pages_SC3010201" %>
+<%@ Register src="SC3040101.ascx" tagname="SC3040101" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <%'外部ファイル宣言 %>
+    <link rel="stylesheet" href="../Styles/SC3010201/SC3010201.css?20120220000001" type="text/css" media="all" />
+    <link rel="stylesheet" href="../Styles/SC3010201/SC3010201.PullDownRefresh.css?20120117000000" type="text/css" media="all" />
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.js?20120117000001"></script>
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.PullDownRefresh.js?20120117000000"></script>
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.MainMenuFingerscroll.js?20120117000000"></script>
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.jquery.touchSwipe.js?20121023000000"></script>
+    <%'HEADの穴あけ %>
+    <asp:ContentPlaceHolder ID="SC3010201head" runat="server"/>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="content" Runat="Server">
+    <asp:ScriptManager ID="managerScript" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+    <%'左カラム %>
+    <div id="parentDiv" style="width: 1600px; transform: translate(-350px, 0px);">
+        <div id="contentsLeftBox2" class="contentsFrame">
+            <%'穴空け %>
+            <asp:ContentPlaceHolder ID="SC3010201leftBottomBox2"  runat="server"/>
+        </div>
+        
+        <div id="contentsLeftBox" class="contentsFrame">
+        <h2 class="contentTitle wt01"><icrop:CustomLabel ID="leftContentTitleLabel" CssClass="cutTextWord" runat="server"/></h2>
+    
+    <div class="innerBox">
+        <%'重要事項 %>
+        <div id="message">
+            <div class="iconsBoxMemo icon01"><a id="messageAddButton" href="javascript:void(0)"></a></div>
+            <h3><class="sps25"></h3>
+            <div id="messageInner01" class="nsc00BackGroud01 normalMode">
+                <div id="messageInner02">
+
+                    <%'プルダウンリフレッシュのレイアウト %>
+                    <div id="messagePullDownToRefreshTemplateIn"></div>
+
+                    <%'重要事項 非同期更新用パネル %>
+                    <asp:UpdatePanel ID="MessageListViewUpPanel" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+
+                            <%'一覧ListView ここから %>
+                            <asp:ListView ID="MessageListView" runat="server" DataSourceID="MessageDataSource" EnableViewState="false" ClientIDMode="Predictable">
+                                <LayoutTemplate>
+                                    <ul>
+                                        <li id="itemPlaceholder" runat="server"/>
+                                    </ul>
+                                </LayoutTemplate>
+                                <ItemTemplate>
+                                    <li>
+                                    <%'メッセージ１件毎のレイアウト %>
+                                        <span class="messageImage">
+                                            <asp:Image runat="server" id="ImageForCreateAccount" src="../Styles/Images/SC3010201/nsc0001WhatsNewImportantPoint.png" alt="" />
+                                            <asp:Image runat="server" id="ImageForNotCreateAccount" src="../Styles/Images/SC3010201/nsc0000WhatsNewImportantPoint.png" alt="" />
+                                        </span>
+                                        <span class="messegeLineBox">
+                                            <icrop:CustomLabel ID="MessageTitleLabel" runat="server" 
+                                                        CssClass="MessageTitle" UseEllipsis="true" Width="176px" 
+                                                        Text='<%#HttpUtility.HtmlEncode(Eval("TITLE"))%>'/>
+                                            <asp:Label ID="Label2" runat="server" CssClass="MessageDay cutTextWord" Text='<%#HttpUtility.HtmlEncode(Eval("CREATEDATE_DISP"))%>' />
+                                            <%'詳細表示エリア %>
+                                            <div class="msgDetail useEllipsis">
+                                                <asp:Literal ID="MesageDetailLiteral" Mode="PassThrough" runat="server" Text='<%# HttpUtility.HtmlEncode(Eval("MESSAGE")).Replace(vbCrLf, "<br/>").Replace(vbLf, "<br/>")%>' />
+                                            </div>
+                                            <div id="deleteBntArea" class="deleteBntArea">
+                                                <asp:Button runat="server" ID="DeleteButton" CssClass="deleteButtonClass" Text='<%#WebWordUtility.GetWord("SC3010201", 13)%>' />
+                                            </div>
+                                            <div id="hiddenValueArea" class="hiddenValueArea">
+                                                <span>
+                                                    <asp:Literal ID="createAccountLiteral" runat="server" Mode="Encode" Text='<%#HttpUtility.HtmlEncode(Eval("CREATESTAFFCD"))%>'></asp:Literal>
+                                                </span>
+                                            </div>
+                                            <div id="hiddenValueAreaMessageNo" class="hiddenValueAreaMessageNo">
+                                                <span>
+                                                    <asp:Literal ID="messageNoLiteral" runat="server" Mode="Encode" Text='<%#HttpUtility.HtmlEncode(Eval("MESSAGENO"))%>'></asp:Literal>
+                                                </span>
+                                            </div>
+                                        </span>
+                                        
+                                    </li>
+                                </ItemTemplate>
+                                <EmptyDataTemplate>
+                                    <div id="messageNotFound">
+                                        <span><asp:Literal id="messageNotFoundLiteral" Mode="Encode" runat="server"></asp:Literal></span>
+                                    </div>
+                                </EmptyDataTemplate>
+                            </asp:ListView>
+                            <%'一覧ListView ここまで %>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+                    <%'データソース %>
+                    <asp:ObjectDataSource ID="MessageDataSource" runat="server"
+                                            SelectMethod="ReadMessageInfo" 
+                                            TypeName="Toyota.eCRB.Common.MainMenu.BizLogic.SC3010201BusinessLogic" />
+
+                </div>
+
+                <%'拡大・縮小ボタンの非同期更新パネル %>
+                <asp:UpdatePanel ID="MessageListButtonUpPanel" runat="server" UpdateMode="Conditional" RenderMode="Inline">
+                    <ContentTemplate>
+                        <p class="more02">&nbsp;
+                            <%'拡大 %>
+                            <asp:LinkButton ID="MessageBigSizeLink" runat="server" CssClass="cutTextWord" OnClientClick="return false">
+                                <icrop:CustomLabel ID="MessageNText1" runat="server"/>
+                                <%=HttpUtility.HtmlEncode(MessageListView.Items.Count - 2)%>
+                                <icrop:CustomLabel ID="MessageNText2" runat="server"/>
+                            </asp:LinkButton><%'縮小 %><asp:LinkButton ID="MessageNormalSizeLink" CssClass="cutTextWord" runat="server" OnClientClick="return false">&nbsp;</asp:LinkButton></p><%'非同期更新のトリガーボタン %><asp:Button ID="MessageListViewUpdateButton" runat="server" style="display:none" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+
+        <%'RSS %>
+        <div id="newsinf" >
+            <h2 class="contentTitle wt01"><icrop:CustomLabel ID="newsTitleLabel" CssClass="cutTextWord" runat="server"/></h2>
+        </div> 
+        <div id="news">
+            <div id="newsInner01" class="normalMode">
+                <div id="newsInner02"> 
+
+                    <%'プルダウンリフレッシュのレイアウト %>
+                    <div id="rssPullDownToRefreshTemplateIn"></div>
+
+                    <%'RSS 非同期更新用パネル %>
+                    <asp:UpdatePanel ID="RssListViewUpPanel" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+
+                            <%'一覧ListView %>
+                            <asp:ListView ID="RssListView" runat="server" EnableViewState="false" DataSourceID="RssDataSource" ClientIDMode="Predictable">
+                                <LayoutTemplate>
+                                    <ul>
+                                        <li id="itemPlaceholder" runat="server"/>
+                                    </ul>
+                                </LayoutTemplate>
+                                <ItemTemplate>
+                                    <%'RSS１件毎のレイアウト %>
+                                    <li siteUrl='<%#HttpUtility.HtmlEncode(Eval("ITEM_URL"))%>'>
+                                        <icrop:CustomLabel ID="rssItemText" 
+                                                           CssClass="newsTitle" 
+                                                           runat="server" 
+                                                           UseEllipsis="true" 
+                                                           Width="205px" 
+                                                           Text='<%#HttpUtility.HtmlEncode(WebWordUtility.GetWord(AppId, 7) & Eval("ITEM_TITLE").ToString())%>'/>
+                                        <span class="newsDate cutTextWord"><asp:Literal ID="Literal1" Mode="Encode" runat="server" Text='<%#Eval("ITEM_CREATEDATE_DAY")%>'/></span>
+                                        <span class="newsTime cutTextWord"><asp:Literal ID="Literal2" Mode="Encode" runat="server" Text='<%#Eval("ITEM_CREATEDATE_TIME")%>'/></span>
+                                    </li>
+                                </ItemTemplate>
+                                <EmptyDataTemplate>
+                                    <div id="rssNotFound">
+                                        <span><asp:Literal id="rssNotFoundLiteral" Mode="Encode" runat="server"></asp:Literal></span></div></EmptyDataTemplate></asp:ListView></ContentTemplate></asp:UpdatePanel><%'データソース %><asp:ObjectDataSource ID="RssDataSource" runat="server" 
+                                            SelectMethod="ReadRssInfo" 
+                                            TypeName="Toyota.eCRB.Common.MainMenu.BizLogic.SC3010201BusinessLogic" />
+                </div>
+
+                <%'拡大・縮小ボタンの非同期更新パネル %>
+                <asp:UpdatePanel ID="RssListButtonUpPanel" runat="server" UpdateMode="Conditional" RenderMode="Inline">
+                    <ContentTemplate>
+                        <p class="more">&nbsp; <%'拡大 %><asp:LinkButton ID="RssBigSizeLink" CssClass="cutTextWord" runat="server" OnClientClick="return false">
+                                <icrop:CustomLabel ID="NewsNText1" runat="server"/>
+                                <%=RssListView.Items.Count - 2%>
+                                <icrop:CustomLabel ID="NewsNText2" runat="server"/>
+                            </asp:LinkButton><%'縮小 %><asp:LinkButton ID="RssNormalSizeLink" CssClass="cutTextWord"  runat="server" OnClientClick="return false">&nbsp;</asp:LinkButton></p><%'非同期更新のトリガーボタン %><asp:Button ID="RssListViewUpdateButton" runat="server" style="display:none" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+
+        <%'プルダウンリフレッシュのレイアウトテンプレートエリア %>
+        <div id="pullDownToRefreshTemplate" style="display:none">
+            <!--プルダウンリフレッシュエリア START-->
+            <div class="pullDownToRefresh step0">
+                <!--内部ボックス-->
+                <div class="pullDownToRefresh-inBox">
+                    <!--中央寄せのアイコン＆テキスト表示エリア-->    
+                    <div class="pullDownToRefresh-center">
+                        <!--上下矢印アイコン-->
+                        <span class="pullDownToRefresh-icon"></span>
+                        <!--読み込み中アイコン-->
+                        <span class="pullDownToRefresh-loding"></span>
+                        <!--テキスト-->
+                        <div class="pullDownToRefresh-text">
+                            <!--メッセージ-->
+                            <span class="pullDownToRefresh-textBlock pullDownToRefresh-message">
+                                <span class="pullDownToRefresh-message-step0"><%:WebWordUtility.GetWord("SC3010201", 10)%></span>
+                                <span class="pullDownToRefresh-message-step1"><%:WebWordUtility.GetWord("SC3010201", 11)%></span>
+                                <span class="pullDownToRefresh-message-step2"><%:WebWordUtility.GetWord("SC3010201", 12)%></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--プルダウンリフレッシュエリア END-->
+        </div>
+
+        <% 'ログイン中のアカウント %>
+        <asp:HiddenField runat="server" id="accountHiddenField" />
+        <% '投稿したアカウント %>
+        <asp:HiddenField runat="server" id="createAccountHiddenField" />
+        <% '削除ボタン隠し %>
+        <asp:Button ID="DeleteButtonHidden" runat="server" style="display:none" />
+
+        <%'穴空け %>
+        <asp:ContentPlaceHolder ID="SC3010201leftBottomBox"  runat="server"/>
+    </div>
+</div>
+    
+        <%'右側の穴あけ %>
+        <asp:ContentPlaceHolder ID="SC3010201rightBox" runat="server"/>
+        
+        <%'重要事項登録 %>
+        <div id="messageWinPopupBlack">&nbsp;</div>
+        <div id="messageWinPopup">
+            <uc1:SC3040101 ID="SC30401011" runat="server" EnableViewState="false" />
+        </div>
+    </div>
+    
+    <%'サーバー処理中のオーバーレイとアイコン %>
+    <div id="serverProcessOverlayBlack"></div>
+    <div id="serverProcessIcon"></div>
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+    <asp:ContentPlaceHolder ID="SC301020footer" runat="server"/>
+</asp:Content>

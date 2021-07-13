@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 画面イベント時にフレームの上に付くチラつきを無くす */
+body 
+{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body{
+	margin:0;
+	padding:0;
+	background:#FFF;
+	font-family:Helvetica, sans-serif
+	
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td	{
+	margin: 0;	padding: 0;
+}
+
+/* 選択を不可とする。 */
+#MainFrame{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#MainFrame{
+	background:url(../Images/SC3190601/mainbackimg.png) 0 0 no-repeat;
+	position:relative;
+	width:1920px;
+	height:1080px;
+	color:#FFF;
+}
+
+#MainFrame .TitleSet{
+	position:absolute;
+	left:0; top:0;
+	width:1920px;
+	height:76px;
+	font-weight:bold;
+}
+#MainFrame .TitleSet .Title01{
+	position: absolute;
+	left: -1px;
+	top: 0;
+	background: url(../Images/SC3190601/textborder01.png) left bottom no-repeat;
+	width: 830px;
+	height: 76px;
+}
+#MainFrame .TitleSet .Title01 p{
+	display:block;
+	padding:9px 0 0 41px;
+	font-size:55px;
+	line-height:67px;
+	margin:0;
+}
+#MainFrame .TitleSet .Title01 p span{
+	font-size:42px;
+}
+#MainFrame .TitleSet .Title02{
+	position:absolute;
+	right:78px; top:0;
+	background:url(../Images/SC3190601/textborder02.png) right bottom no-repeat;
+	width:635px;
+	height:76px;
+}
+
+#MainFrame .TitleSet .Title02 p{
+	display:block;
+	padding:9px 29px 0 0;
+	font-size:36px;
+	line-height:67px;
+	margin:0;
+	text-align:right;
+}
+
+#MainFrame .TitleSet .Title02 p span{
+	font-size:30px;
+}
+
+#MainFrame .TitleSet .PlusBtn{
+	position:absolute;
+	right:20px; top:19px;
+	background:url(../Images/SC3190601/plusbtn.png) 0 0 no-repeat;
+	width:58px;
+	height:60px;
+}
+
+#MainFrame .TitleSet .PageIconbox{
+	position:absolute;
+	left:859px; top:24px;
+	width:290px; height:34px;
+}
+#MainFrame .TitleSet .PageIconbox .PageIcon{
+	position:absolute;
+	top:0;
+	background:url(../Images/SC3190601/pageicon_passive.png) 0 0 no-repeat;
+	width:46px;
+	height:46px;
+}
+#MainFrame .TitleSet .PageIconbox div.Icon01{left:0px;}
+#MainFrame .TitleSet .PageIconbox div.Icon02{left:80px;}
+#MainFrame .TitleSet .PageIconbox div.Icon03{left:160px;}
+#MainFrame .TitleSet .PageIconbox div.Icon04{left:240px;}
+
+#MainFrame .TitleSet .PageIconbox div.Active{background:url(../Images/SC3190601/pageicon_active.png) 0 0 no-repeat;}
+
+#MainFrame .TitleSet .PageIconbox .PChangeRight{
+	position:absolute;
+	top:-1px; right:-70px;
+	width:41px;
+	height:48px;
+}
+#MainFrame .TitleSet .PageIconbox .PChangeRight div{
+	background:url(../Images/SC3190601/pagechangeR_passive.png) 0 0 no-repeat;
+	width:41px;
+	height:48px;
+}
+
+#MainFrame .TitleSet .PageIconbox .PChangeRight div.Active{background:url(../Images/SC3190601/pagechangeR_active.png) 0 0 no-repeat;}
+
+.ListSet{
+	position:absolute;
+	left:20px; top:89px;
+	width:1872px;
+	height:963px;
+	border:#cecece 4px solid;
+	border-radius:10px;
+}
+
+.ListSet .ListTitle{
+	height:64px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0238a7), 
+							color-stop(0.50, #0787f4),
+							to(#0238a7));
+	border-radius:5px 5px 0 0;
+	box-shadow:#FFF 0 2px 14px;
+}
+.ListSet .ListTitle th{
+	box-shadow:inset #111731 0 -1px 0;
+	text-align:center;
+	font-size:30px;
+	line-height:64px;
+	border-right:#c4c4c4 4px solid;
+}
+.ListSet .ListTitle th:nth-of-type(1){width:101px;}
+.ListSet .ListTitle th:nth-of-type(2){width:176px;}
+.ListSet .ListTitle th:nth-of-type(3){width:176px;}
+.ListSet .ListTitle th:nth-of-type(4){width:256px;}
+.ListSet .ListTitle th:nth-of-type(5){width:404px;}
+.ListSet .ListTitle th:nth-of-type(6){width:94px;}
+.ListSet .ListTitle th:nth-of-type(7){width:176px;}
+.ListSet .ListTitle th:nth-of-type(8){width:176px;}
+.ListSet .ListTitle th:nth-of-type(9){width:94px; font-size:27px;}
+.ListSet .ListTitle th:nth-of-type(10){width:183px; border:none;}
+
+
+
+.ListSet .ListBox{
+	position:absolute;
+	left:0; top:70px;
+}
+.ListSet .ListBox td{
+	background:rgba(255,255,255,0.3);
+	height:88px;
+	font-size:28px;
+	line-height:88px;
+	text-align:center;
+}
+
+.ListSet .ListBox td:nth-of-type(1){width:88px;}
+.ListSet .ListBox td:nth-of-type(2){width:170px;}
+.ListSet .ListBox td:nth-of-type(3){width:170px;}
+.ListSet .ListBox td:nth-of-type(4){width:250px;}
+.ListSet .ListBox td:nth-of-type(5){width:398px;}
+.ListSet .ListBox td:nth-of-type(6){width:88px;}
+.ListSet .ListBox td:nth-of-type(7){width:170px;}
+.ListSet .ListBox td:nth-of-type(8){width:170px;}
+.ListSet .ListBox td:nth-of-type(9){width:88px;}
+.ListSet .ListBox td:nth-of-type(10){width:auto;}
+
+.ListSet .ListBox tr.combine td:nth-of-type(1){width:250px;}
+.ListSet .ListBox tr.combine td:nth-of-type(2){width:398px;}
+.ListSet .ListBox tr.combine td:nth-of-type(3){width:88px;}
+.ListSet .ListBox tr.combine td:nth-of-type(4){width:170px;}
+.ListSet .ListBox tr.combine td:nth-of-type(5){width:170px;}
+.ListSet .ListBox tr.combine td:nth-of-type(6){width:88px;}
+.ListSet .ListBox tr.combine td:nth-of-type(7){width:170px;}
+
+.ListSet .ListBox td .TopBox{
+	padding:0 0 0 12px;
+	border-bottom:rgba(255,255,255,0.75) 1px dotted;
+	line-height:44px;
+	text-align:left;
+}
+.ListSet .ListBox td .BottomBox{
+	padding:0 0 0 12px;
+	line-height:43px;
+	text-align:left;
+}
+
+.ListSet .ListBox td{
+}
+
+
+.ListSet .ListBox tr.BackColor_Red td{
+	background:#cc0513;
+}
+.ListSet .ListBox tr.BackColor_Yellow td{
+	background:#cca739;
+	color:#000000;
+}
+
+
+
+/* その他
+------------------------------------------------------------------------------*/
+.FontRed{
+	color:#ff0000;
+}
+
+.Ellipsis {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+/* 追加分
+------------------------------------------------------------------------------*/
+#SC3190601_Label_CurStatus
+{
+    position: absolute;
+    left: 0px; 
+}
+
+#SC3190601_Label_POTotal
+{
+    left: 284px; 
+    position: absolute;
+    text-align: left;
+}
+
+#SC3190601_Label_POTotal_Val
+{
+    left: 335px; 
+    position: absolute; 
+}
+
+#SC3190601_Label_PODelay
+{
+    left: 375px; 
+    position: absolute; 
+    text-align: left;
+}
+
+#SC3190601_Label_PSTotal
+{
+    left: 435px; 
+    position: absolute;
+}
+#SC3190601_Label_PSTotal_Val
+{
+    left: 525px; 
+    position: absolute;
+}
+#SC3190601_Label_PSDelay
+{
+    left: 565px; 
+    position: absolute; 
+    text-align: left;
+}
+#SC3190601_Label_Colon
+{
+    position: absolute;
+    left: 265px;
+}
+
+.registOverlay {
+    position:absolute;
+    /*top:0px;
+    left:0px;*/
+    width: 100%;
+    height: 100%;
+    background-color:Black;
+    opacity:0.6;
+    z-index:50;
+    display:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.registOverlay .registWrap {
+    width: 1920px;
+    height: 1080px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.registOverlay .registWrap .processingServer {
+	background:url(../Images/animeicn-1.png) no-repeat;
+	display:block;
+	width:38px;
+	height:38px;
+	animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+.PartsListRowDiv{
+    position: absolute; 
+    left: 1px; 
+    width: 1868px; 
+    height: 98px;
+    z-index: 10;
+}
+
+.PartsListRowDiv:nth-of-type(1){top: 65px; height: 107px;}
+.PartsListRowDiv:nth-of-type(2){top: 172px;}
+.PartsListRowDiv:nth-of-type(3){top: 270px;}
+.PartsListRowDiv:nth-of-type(4){top: 368px;}
+.PartsListRowDiv:nth-of-type(5){top: 466px;}
+.PartsListRowDiv:nth-of-type(6){top: 564px;}
+.PartsListRowDiv:nth-of-type(7){top: 662px;}
+.PartsListRowDiv:nth-of-type(8){top: 760px;}
+.PartsListRowDiv:nth-of-type(9){top: 858px; height: 104px;}

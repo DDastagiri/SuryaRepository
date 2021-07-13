@@ -1,0 +1,1665 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Toyota.eCRB.iCROP.DataAccess.SC3080203
+</name>
+</assembly>
+<members>
+<member name="P:Toyota.eCRB.CustomerInfo.Details.DataAccess.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:Toyota.eCRB.CustomerInfo.Details.DataAccess.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203AlarmMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203UsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ServiceMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ItitialDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SequenceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203OperationDayDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SubCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitionMakermasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitorMaster2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxRsltDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxrsltDoneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201DlrvinDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201MileageHisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201ServiceHisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201MakernameDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203WinclassDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActivityFollowDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActivityContentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupBoxDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SelectedCarNumDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SeriesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwSeriesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwColorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActContactDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NextActContactDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FollowContactDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DlrStrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DlrStrFollwDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203RegistDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ContentWordDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SeqDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitorMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DateFormatDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SelectSeriesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NameTitleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203GetContactNmDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203TodoColorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NewCustIDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NewVclIDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ContentIconPathDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ServiceStaffDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203VinDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201FollowStatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisFllwDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisContentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisSelCarDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxSalesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203StatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203LatestActTimeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203AlarmMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203UsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ServiceMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ItitialDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SequenceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203OperationDayRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SubCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitionMakermasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitorMaster2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxRsltRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxrsltDoneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201DlrvinRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201MileageHisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201ServiceHisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201MakernameRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203WinclassRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActivityFollowRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActivityContentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupBoxRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SelectedCarNumRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SeriesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwSeriesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwColorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActContactRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NextActContactRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FollowContactRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DlrStrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DlrStrFollwRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203RegistDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ContentWordRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SeqRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitorMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DateFormatRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SelectSeriesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NameTitleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203GetContactNmRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203TodoColorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NewCustIDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NewVclIDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ContentIconPathRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ServiceStaffRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203VinRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201FollowStatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisFllwRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisContentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisSelCarRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxSalesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203StatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203LatestActTimeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203AlarmMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203UsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ServiceMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ItitialDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SequenceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203OperationDayRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SubCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitionMakermasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitorMaster2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxRsltRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxrsltDoneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201DlrvinRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201MileageHisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201ServiceHisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201MakernameRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203WinclassRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActivityFollowRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActivityContentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupBoxRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SelectedCarNumRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SeriesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwSeriesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwColorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActContactRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NextActContactRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FollowContactRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DlrStrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DlrStrFollwRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203RegistDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ContentWordRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SeqRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitorMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203DateFormatRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203SelectSeriesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NameTitleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203GetContactNmRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203TodoColorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NewCustIDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203NewVclIDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ContentIconPathRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ServiceStaffRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203VinRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080201FollowStatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisFllwRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisContentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203ActHisSelCarRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203CompetitionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203FllwupboxSalesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203StatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet.SC3080203LatestActTimeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="F:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.CONSTFLLWUPHOT">
+	<summary>
+ Follow-upBoxのCR活動スタータス
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.CONSTCRACTRSLTHOT">
+	<summary>
+ Follow-upBoxの活動結果
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.CONSTSELECTTOHOT">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.#ctor">
+	<summary>
+ デフォルトコンストラクタ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetAlarmMaster(System.String)">
+	<summary>
+ 001.アラームマスタ取得
+ </summary>
+	<param name="selection">0: どちらでも選択可、1: 時間指定がある場合のみ選択可、2: 時間指定が無い場合のみ選択可</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetCompetitionMakermaster">
+	<summary>
+ 002.競合メーカーマスタ取得(ALL)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetNoCompetitionMakermaster">
+	<summary>
+ 003.競合メーカーマスタ取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetCompetitorMaster">
+	<summary>
+ 004.競合車種マスタ取得
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetRelatedInfo(System.String)">
+	<summary>
+ 005.関連情報取得
+ </summary>
+	<param name="vin">VIN</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupbox(System.String,System.String,System.Int64,System.DateTime,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int64,System.String,System.String,System.String,System.String,System.DateTime,System.DateTime,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 006.Follow-up Box追加　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="cractivedate"></param>
+	<param name="appointtimeflg"></param>
+	<param name="cractlimitdate"></param>
+	<param name="untradedcstid"></param>
+	<param name="vclseqno"></param>
+	<param name="cractresult"></param>
+	<param name="branchplan"></param>
+	<param name="accountplan"></param>
+	<param name="insdid"></param>
+	<param name="vin"></param>
+	<param name="relatedinfoflg"></param>
+	<param name="nextcractivedate"></param>
+	<param name="updateaccount"></param>
+	<param name="createcractresult"></param>
+	<param name="prospectdate"></param>
+	<param name="hotdate"></param>
+	<param name="wicid"></param>
+	<param name="cractstatus"></param>
+	<param name="cractstatus1st"></param>
+	<param name="branchplan1st"></param>
+	<param name="accountplan1st"></param>
+	<param name="cractivedate1st"></param>
+	<param name="cractlimitdate1st"></param>
+	<param name="crcustid"></param>
+	<param name="createdby"></param>
+	<param name="originalid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.UpdateFllwupbox(System.String,System.String,System.String,System.String,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.String,System.String)">
+	<summary>
+ 007.Follow-up Box更新 (移行済み)
+ </summary>
+	<param name="thistimecractresult"></param>
+	<param name="strselecteddvs"></param>
+	<param name="cractlimitdate"></param>
+	<param name="nextactivitydatetime"></param>
+	<param name="crdvsid"></param>
+	<param name="account"></param>
+	<param name="thistimecractstatus"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxSuccessSeries(System.Int32,System.String,System.String,System.String,System.Int64,System.String)">
+	<summary>
+ 008.Follow-up Box成約車種追加 (移行済み)
+ </summary>
+	<param name="seqno"></param>
+	<param name="updateaccount"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="seq"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxCRHis(System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.String,System.String,System.String,System.Nullable{System.Int64},System.Int64,System.String,System.String,System.Int64)">
+	<summary>
+ 009.Follow-up Box活動履歴追加　(移行済み)
+ </summary>
+	<param name="calldate"></param>
+	<param name="account"></param>
+	<param name="crdvs"></param>
+	<param name="actualtimeend"></param>
+	<param name="actdate"></param>
+	<param name="method"></param>
+	<param name="action"></param>
+	<param name="actiontype"></param>
+	<param name="brnchaccount"></param>
+	<param name="actioncd"></param>
+	<param name="ctntseqno"></param>
+	<param name="selectseriesseqno"></param>
+	<param name="seriesnm"></param>
+	<param name="vclmodelname"></param>
+	<param name="dispbdycolor"></param>
+	<param name="quantity"></param>
+	<param name="fllwupboxrsltseqno"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InserFllwupboxDetail(System.String,System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 010.Follow-up Box詳細追加　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="lastserviceindate"></param>
+	<param name="lastsubctgcode"></param>
+	<param name="lastservicecd"></param>
+	<param name="lastservicename"></param>
+	<param name="lastmileage"></param>
+	<param name="lastserviceinbranch"></param>
+	<param name="originalid"></param>
+	<param name="vin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwupboxEntry(System.String,System.String,System.Int64)">
+	<summary>
+ 011.Follow-up Boxデータ更新情報取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxEntry(System.String,System.String,System.Int64,System.String)">
+	<summary>
+ 012.Follow-up Boxデータ更新情報追加 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="updateaccount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.UpdateFllwupboxEntry(System.String,System.String,System.Int64,System.String)">
+	<summary>
+ 013.Follow-up Boxデータ更新情報更新 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="updateaccount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxNewcst(System.String,System.String,System.Int64,System.String,System.String,System.Nullable{System.Int64})">
+	<summary>
+ 014.Follow-up Box未取引客情報追加 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="updateaccount"></param>
+	<param name="cstid"></param>
+	<param name="seqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwupboxRslt(System.String,System.String,System.Int64)">
+	<summary>
+ 015.Follow-up Box結果取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxRslt(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int32},System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32})">
+	<summary>
+ 016.Follow-up Box結果追加　(移行済み)
+ </summary>
+	<param name="memkind"></param>
+	<param name="thistimecractresult"></param>
+	<param name="stractualtimestart"></param>
+	<param name="strcalltime"></param>
+	<param name="strnextactivitydatetime"></param>
+	<param name="insuranceflg"></param>
+	<param name="strmemo"></param>
+	<param name="strpurchasedmakername"></param>
+	<param name="strpurchasedmodelcd"></param>
+	<param name="strpurchasedmodelname"></param>
+	<param name="dlrcd"></param>
+	<param name="fllwupseq"></param>
+	<param name="strseqno"></param>
+	<param name="crplanid"></param>
+	<param name="bfafdvs"></param>
+	<param name="crdvsid"></param>
+	<param name="plandvs"></param>
+	<param name="insdid"></param>
+	<param name="untradedcstid"></param>
+	<param name="vin"></param>
+	<param name="strcrrsltid"></param>
+	<param name="account"></param>
+	<param name="strtalkingtime"></param>
+	<param name="subctgcode"></param>
+	<param name="promotionid"></param>
+	<param name="strsuccessdate"></param>
+	<param name="strsuccesskind"></param>
+	<param name="strseriescode"></param>
+	<param name="strseriesname"></param>
+	<param name="strgiveupdate"></param>
+	<param name="opecd"></param>
+	<param name="servicecd"></param>
+	<param name="strsubctgorgname"></param>
+	<param name="subctgorgnameex"></param>
+	<param name="strstallreserveid"></param>
+	<param name="strstalldlrcd"></param>
+	<param name="strstallstrcd"></param>
+	<param name="strcd"></param>
+	<param name="strrecid"></param>
+	<param name="strlogicflg"></param>
+	<param name="strcmshislinkid"></param>
+	<param name="thistimecractstatus"></param>
+	<param name="cractstatus"></param>
+	<param name="strpurchasedmakerno"></param>
+	<param name="strcrcustid"></param>
+	<param name="strcustomerclass"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwupboxrsltDone(System.String,System.String,System.Int64,System.String)">
+	<summary>
+ 017.Follow-up Box活動実施取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxrsltDone(System.String,System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 018.Follow-up Box活動実施追加 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="category"></param>
+	<param name="actendflg"></param>
+	<param name="branchplan"></param>
+	<param name="accountplan"></param>
+	<param name="exestaffcode"></param>
+	<param name="updateaccount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.UpdateFllwupboxrsltDone(System.String,System.String,System.Int64,System.String,System.String,System.String)">
+	<summary>
+ 019.Follow-up Box活動実施更新 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="updateaccount"></param>
+	<param name="category"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxSalesmemo(System.String,System.String,System.Int64,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 020.Follow-up Box商談メモ追加　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="cstkind"></param>
+	<param name="customerclass"></param>
+	<param name="crcustid"></param>
+	<param name="inputaccount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertInreserveInfo(System.String,System.String,System.String,System.String,System.Int64,System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String)">
+	<summary>
+ 021.非活動対象要件情報追加　(移行済み)
+ </summary>
+	<param name="inreserveid"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="account"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="requestcategory"></param>
+	<param name="cstid"></param>
+	<param name="seqno"></param>
+	<param name="lastactivityday"></param>
+	<param name="resaccount"></param>
+	<param name="branch"></param>
+	<param name="staffaccount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertNweCustomer(System.String,System.String,System.String)">
+	<summary>
+ 022.未取引客個人情報追加　(移行済み)
+ </summary>
+	<param name="cstid"></param>
+	<param name="originalid"></param>
+	<param name="vin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertNweCustomerVclre(System.String,System.Int64,System.String,System.String,System.String)">
+	<summary>
+ 023.未取引客車両情報追加 (移行済み)
+ </summary>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetOtherPlanFllw(System.String,System.String,System.Int64)">
+	<summary>
+ 024.その他計画(Follow-up)取得　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertOtherPlanFllw(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64)">
+	<summary>
+ 025.その他計画(Follow-up)追加　(移行済み)
+ </summary>
+	<param name="createmodule"></param>
+	<param name="createaccount"></param>
+	<param name="updatemodule"></param>
+	<param name="updateaccount"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetServiceMaster(System.String,System.String)">
+	<summary>
+ 026.サービスマスタ取得 (移行済み)
+ </summary>
+	<param name="mntncd"></param>
+	<param name="dlrcd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetSubCategory(System.String)">
+	<summary>
+ 027.中項目マスタ取得 (移行済み)
+ </summary>
+	<param name="servicecd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertTotalHis(System.String,System.String,System.String,System.Int64,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 028.Total履歴追加　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="insdid"></param>
+	<param name="seqno"></param>
+	<param name="contactdate"></param>
+	<param name="categoryid"></param>
+	<param name="categorydvsid"></param>
+	<param name="vin"></param>
+	<param name="seriesname"></param>
+	<param name="status"></param>
+	<param name="servicenm"></param>
+	<param name="account"></param>
+	<param name="crcustid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetUsers(System.String,System.String)">
+	<summary>
+ 029.担当スタッフ取得 (移行済み)
+ </summary>
+	<param name="dlrcd">販売店コード</param>
+	<param name="strcd">店舗コード</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertWalkInPerson(System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.DateTime,System.String,System.String,System.String,System.DateTime,System.Int32,System.Int64,System.String,System.String,System.String,System.String,System.Int64,System.String,System.String,System.String,System.Nullable{System.Int32})">
+	<summary>
+ 030.ウォークイン要件情報追加 (移行済み)
+ </summary>
+	<param name="walkinid"></param>
+	<param name="cstid"></param>
+	<param name="seqno"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="walkindate"></param>
+	<param name="seriescode"></param>
+	<param name="seriesname"></param>
+	<param name="registrationtype"></param>
+	<param name="lastactivityday"></param>
+	<param name="wicid"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="crcustid"></param>
+	<param name="originalid"></param>
+	<param name="account"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertWalkInPersonMemo(System.String,System.String)">
+	<summary>
+ 031.ウォークイン要件メモ追加　(移行済み)
+ </summary>
+	<param name="walkinid"></param>
+	<param name="dlrcd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetMileageHis(System.String,System.String)">
+	<summary>
+ 032.自社客走行距離履歴取得 (移行済み)
+ </summary>
+	<param name="originalid"></param>
+	<param name="vin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetServiceHis(System.String,System.String)">
+	<summary>
+ 033.自社客点検履歴取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="jobno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetSeqWalkInPersonWalkInId">
+	<summary>
+ 034.Walk-in Person SeqNo取得 (移行済み)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetSeqInreserveInfoInreserveId">
+	<summary>
+ 035.非活動対象要件情報SeqNo取得　(移行済み)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetSeqNewcustomerCstId">
+	<summary>
+ 036.未取引客個人情報追加SeqNo取得　(移行済み)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetSeqNewcustomerVclreSeqno">
+	<summary>
+ 037.未取引客車両情報追加SeqNo取得　(移行済み)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.DeleteFllwupboxSalesmemowk(System.String,System.String,System.Int64)">
+	<summary>
+ 038.Follow-up Box商談メモWK削除 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetMakername(System.String,System.String,System.String)">
+	<summary>
+ 039.メーカー名取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="cntcd"></param>
+	<param name="seriescd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetSeqTotalhisSeqno">
+	<summary>
+ 040.TotalHisSqeNo取得 (移行済み)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetWinclass(System.String)">
+	<summary>
+ 041.来店区分取得　(移行済み)
+ </summary>
+	<param name="wicid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertNewCustFllwupbox(System.String,System.String,System.Int64,System.DateTime,System.String,System.DateTime,System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int64,System.String,System.String,System.String,System.String,System.DateTime,System.DateTime,System.String,System.String,System.String)">
+	<summary>
+ 042.Follow-up Box追加　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="cractivedate"></param>
+	<param name="appointtimeflg"></param>
+	<param name="cractlimitdate"></param>
+	<param name="untradedcstid"></param>
+	<param name="vclseqno"></param>
+	<param name="cractresult"></param>
+	<param name="branchplan"></param>
+	<param name="accountplan"></param>
+	<param name="relatedinfoflg"></param>
+	<param name="updateaccount"></param>
+	<param name="createcractresult"></param>
+	<param name="prospectdate"></param>
+	<param name="hotdate"></param>
+	<param name="wicid"></param>
+	<param name="cractstatus"></param>
+	<param name="cractstatus1st"></param>
+	<param name="branchplan1st"></param>
+	<param name="accountplan1st"></param>
+	<param name="cractivedate1st"></param>
+	<param name="cractlimitdate1st"></param>
+	<param name="crcustid"></param>
+	<param name="createdby"></param>
+	<param name="cstid"></param>
+	<returns></returns>
+	<remarks></remarks>
+	<History>
+ 2012/02/15 TCS 河原【SALES_1A】店舗コード000の未取引客で活動結果登録エラーの不具合修正
+ </History>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwupBox(System.String,System.String,System.Int64)">
+	<summary>
+ 043.Follow-upBox取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetSelectedCarNum(System.String,System.String,System.Int64,System.String)">
+	<summary>
+ 044.希望車種の台数を取得　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertOtherPlanFllwRslt(System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int64)">
+	<summary>
+ 045.その他計画(Follow-up)追加(活動結果登録時)　(移行済み)
+ </summary>
+	<param name="strcategory"></param>
+	<param name="strcrresult"></param>
+	<param name="strplanstatus"></param>
+	<param name="category"></param>
+	<param name="actualtimeend"></param>
+	<param name="branchactual"></param>
+	<param name="accountactual"></param>
+	<param name="planstatus"></param>
+	<param name="createmodule"></param>
+	<param name="createaccount"></param>
+	<param name="updatemodule"></param>
+	<param name="updateaccount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.UpdateOtherPlanFllwRslt(System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int64)">
+	<summary>
+ 046.その他計画(Follow-up)更新(活動結果登録時)　(移行済み)
+ </summary>
+	<param name="planstatus"></param>
+	<param name="cractresult"></param>
+	<param name="beforecractresult"></param>
+	<param name="cractresultflg"></param>
+	<param name="category"></param>
+	<param name="crenddate"></param>
+	<param name="crresult"></param>
+	<param name="crdvs"></param>
+	<param name="actbranch"></param>
+	<param name="accountactual"></param>
+	<param name="account"></param>
+	<param name="nextdate"></param>
+	<param name="timeflg"></param>
+	<param name="moduleid"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwRsltSeq(System.String,System.String,System.Int64)">
+	<summary>
+ 047.Follow-upBox結果の最大SeqNo+1を取得　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertFllwupboxCRHisRslt(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Int64,System.String)">
+	<summary>
+ 048.Follow-up Box結果追加(活動結果登録)　(移行済み)
+ </summary>
+	<param name="insuranceflg"></param>
+	<param name="actualtimestart"></param>
+	<param name="thistimecractresult"></param>
+	<param name="selecteddvs"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupseq"></param>
+	<param name="crplanid"></param>
+	<param name="bfafdvs"></param>
+	<param name="crdvsid"></param>
+	<param name="insdid"></param>
+	<param name="seriescode"></param>
+	<param name="seriesname"></param>
+	<param name="uid"></param>
+	<param name="vclregno"></param>
+	<param name="subctgcode"></param>
+	<param name="promotionid"></param>
+	<param name="crrsltid"></param>
+	<param name="plandvs"></param>
+	<param name="actdate"></param>
+	<param name="action"></param>
+	<param name="accountplan"></param>
+	<param name="servicecd"></param>
+	<param name="subctgorgname"></param>
+	<param name="subctgorgnameex"></param>
+	<param name="stallreserveid"></param>
+	<param name="stalldlrcd"></param>
+	<param name="stallstrcd"></param>
+	<param name="recid"></param>
+	<param name="cmshislinkid"></param>
+	<param name="rsltseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertCustMemohis(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 049.顧客メモ履歴登録 (移行済み)
+ </summary>
+	<param name="customerclass"></param>
+	<param name="cractname"></param>
+	<param name="vclinforegistflg"></param>
+	<param name="custsegment"></param>
+	<param name="crcustid"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="account"></param>
+	<param name="memo"></param>
+	<param name="originalid"></param>
+	<param name="vin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InsertTotalHisRslt(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.String)">
+	<summary>
+ 050.トータル履歴追加　(移行済み)
+ </summary>
+	<param name="insdid"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="untradedcstid"></param>
+	<param name="vin"></param>
+	<param name="seriesname"></param>
+	<param name="totalstatus"></param>
+	<param name="promotionid"></param>
+	<param name="servicenm"></param>
+	<param name="accountname"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.UpdateFLRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int64,System.String,System.String)">
+	<summary>
+ 051.TBLFLREQUEST追加 (移行済み)
+ </summary>
+	<param name="thistimecractresult"></param>
+	<param name="cractlimitdate"></param>
+	<param name="nextactivitydatetime"></param>
+	<param name="insuranceflg"></param>
+	<param name="seriescode"></param>
+	<param name="successkind"></param>
+	<param name="seriesname"></param>
+	<param name="successdate"></param>
+	<param name="memo"></param>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupseq"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetVclinfo(System.String,System.String)">
+	<summary>
+ 052.シリーズ取得(自社客)　(移行済み)
+ </summary>
+	<param name="originalid"></param>
+	<param name="vin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetNewcustVclinfo(System.String,System.Int64)">
+	<summary>
+ 053.シリーズ取得(未取引客)　(移行済み)
+ </summary>
+	<param name="cstid"></param>
+	<param name="seqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwSeries(System.String,System.String,System.String,System.Int64)">
+	<summary>
+ 054.Follow-up Box選択車種取得(シリーズ)　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="cntcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwModel(System.String,System.String,System.String,System.Int64)">
+	<summary>
+ 055.Follow-up Box選択車種取得(モデル)　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="cntcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwColor(System.String,System.String,System.String,System.Int64)">
+	<summary>
+ 056.Follow-up Box選択車種取得(カラー)　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="cntcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetActContact(System.String)">
+	<summary>
+ 057.接触方法マスタ取得 (移行済み)
+ </summary>
+	<param name="bookedafterflg">受注後フラグ</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetNextActContact">
+	<summary>
+ 058.接触方法マスタ取得(次回活動)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFollowContact">
+	<summary>
+ 059.接触方法マスタ取得(予約フォロー)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFollowCractstatus(System.String,System.String,System.Int64)">
+	<summary>
+ 060.Follow-upBox取得(活動結果登録用)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetContentWord(System.Int64)">
+	<summary>
+ 061.文言取得　(移行済み)
+ </summary>
+	<param name="seqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetDateFormat">
+	<summary>
+ 062.日付フォーマット取得 (移行済み)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetOrgNameTitle(System.String)">
+	<summary>
+ 063.自社客名前・敬称取得 (移行済み)
+ </summary>
+	<param name="originalid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetNewNameTitle(System.String)">
+	<summary>
+ 064.未取引客名前・敬称取得 (移行済み)
+ </summary>
+	<param name="cstid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetContactNM(System.Int64)">
+	<summary>
+ 065.CalDAV用接触方法名取得 (移行済み)
+ </summary>
+	<param name="contactno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetToDoColor(System.String,System.String,System.String,System.String,System.Int64)">
+	<summary>
+ 066.CalDAV用ToDo背景色取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="createdatadiv"></param>
+	<param name="scheduledvs"></param>
+	<param name="nextactiondvs"></param>
+	<param name="contactno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetNewCustID(System.String)">
+	<summary>
+ 067.未取引客存在確認　(移行済み)
+ </summary>
+	<param name="originalid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetNewVclID(System.String,System.String)">
+	<summary>
+ 068.未取引客車両存在確認 (移行済み)
+ </summary>
+	<param name="cstid"></param>
+	<param name="vin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetContentIconPath(System.Int32)">
+	<summary>
+ 069.アイコンのパス取得　(移行済み)
+ </summary>
+	<param name="seqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.insertFllwupboxMilehis(System.String,System.String,System.Int64,System.String,System.String,System.Int64,System.String,System.Double,System.String,System.String)">
+	<summary>
+ 070.Follow-up Box走行距離履歴の追加 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="insdid"></param>
+	<param name="vin"></param>
+	<param name="seqno"></param>
+	<param name="inputdate"></param>
+	<param name="mileage"></param>
+	<param name="system"></param>
+	<param name="jobno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetServiceStaff(System.String,System.String)">
+	<summary>
+ 071.入庫履歴よりサービススタッフ情報を取得　(移行済み)
+ </summary>
+	<param name="originalid"></param>
+	<param name="vin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetVin(System.String)">
+	<summary>
+ 072.自社客連番に紐付くVINを取得 (移行済み)
+ </summary>
+	<param name="originalid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetActHisCarSeq(System.String,System.String,System.Int64)">
+	<summary>
+ 073.活動実績登録用の希望車種情報を取得　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetActHisSelCarSeq(System.String,System.String,System.Int64,System.String,System.String)">
+	<summary>
+ 074.活動実績登録用の希望車種情報を取得 (移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="seqno"></param>
+	<param name="div"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetActHisFllw(System.String,System.String,System.Int64)">
+	<summary>
+ 075.活動実績登録用のフォローアップボックス情報を取得　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetActHisContent(System.Int64)">
+	<summary>
+ 076.Follow-up BOX活動内容取得(活動結果登録用)　(移行済み)
+ </summary>
+	<param name="seqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetActHisCarSeq(System.String,System.String,System.Int64,System.Int64,System.String)">
+	<summary>
+ 077.Follow-up Box選択車種取得(活動結果登録用)　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="seqno"></param>
+	<param name="cntcd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InserActHisFllwCrHis(System.String,System.String,System.Int64,System.Nullable{System.Int64},System.String,System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.String,System.Int64,System.Int64)">
+	<summary>
+ 078.Follow-up Box活動履歴(活動結果登録用)　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="fllwupboxseqno"></param>
+	<param name="crplanid"></param>
+	<param name="bfafdvs"></param>
+	<param name="crdvsid"></param>
+	<param name="insdid"></param>
+	<param name="seriescode"></param>
+	<param name="seriesname"></param>
+	<param name="account"></param>
+	<param name="regno"></param>
+	<param name="subctgcode"></param>
+	<param name="servicecd"></param>
+	<param name="subctgorgname"></param>
+	<param name="subctgorgnameex"></param>
+	<param name="promotionid"></param>
+	<param name="activityresult"></param>
+	<param name="plandvs"></param>
+	<param name="actdate"></param>
+	<param name="method"></param>
+	<param name="action"></param>
+	<param name="actiontype"></param>
+	<param name="brnchaccount"></param>
+	<param name="actioncd"></param>
+	<param name="ctntseqno"></param>
+	<param name="selectseriesseqno"></param>
+	<param name="seriesnm"></param>
+	<param name="vclmodelname"></param>
+	<param name="dispbdycolor"></param>
+	<param name="quantity"></param>
+	<param name="fllwupboxrsltseqno"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.InserActHisFllwTotalHis(System.String,System.String,System.String,System.DateTime,System.String,System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 079.Total履歴追加(活動結果登録用)　(移行済み)
+ </summary>
+	<param name="dlrcd"></param>
+	<param name="strcd"></param>
+	<param name="insdid"></param>
+	<param name="contactdate"></param>
+	<param name="categoryid"></param>
+	<param name="categorydvsid"></param>
+	<param name="vin"></param>
+	<param name="seriesname"></param>
+	<param name="accountnm"></param>
+	<param name="crcustid"></param>
+	<param name="customerclass"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetCompetition(System.String,System.String)">
+	<summary>
+ 080.競合車種取得(ALL)　(移行済み)
+ </summary>
+	<param name="competitionmakerno"></param>
+	<param name="competitorcd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.UpdateFllwupboxSales(System.String,System.String,System.Int64,System.String,System.DateTime,System.DateTime,System.String,System.String)">
+	<summary>
+ 081. Follow-up Box商談 を更新　(商談中⇒商談終了) (移行済み)
+ </summary>
+	<param name="dlrCD"></param>
+	<param name="strCD"></param>
+	<param name="fllwupbox_seqno"></param>
+	<param name="actualaccount"></param>
+	<param name="salesstarttime"></param>
+	<param name="salesendtime"></param>
+	<param name="account"></param>
+	<param name="updateid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetFllwupboxSales(System.String,System.String,System.Int64)">
+	<summary>
+ 082. Follow-up Box商談 を取得
+ </summary>
+	<param name="dlrCD"></param>
+	<param name="strCD"></param>
+	<param name="fllwupboxSeqNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetLatestActTimeEnd(System.String,System.String,System.Int64)">
+	<summary>
+ 083. 最大の活動終了時間を取得 (移行済み)
+ </summary>
+	<param name="dlrCD"></param>
+	<param name="strCD"></param>
+	<param name="fllwupboxSeqNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.CustomerInfo.Details.DataAccess.SC3080203DataSetTableAdapters.SC3080203TableAdapter.GetActContactTitle(System.Int64)">
+	<summary>
+ 084.接触方法マスタ取得
+ </summary>
+	<param name="contactno">接触方法No</param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

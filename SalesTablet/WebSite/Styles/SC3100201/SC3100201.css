@@ -1,0 +1,404 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/**
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * SC3100201.css
+ * ──────────────────────────────────
+ * 機能： 未対応来店客
+ * 補足： 
+ * 作成： 2011/12/12 KN k.nagasawa
+ * 更新： 2012/02/13 KN y.nakamura STEP2開発 $01
+ * 更新： 2012/08/27 TMEJ m.okamura 新車受付機能改善 $02
+ * ──────────────────────────────────
+ */
+
+.innerDataBox{
+    width:632px; height:311px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.nsc03List{
+    margin-bottom: 10px;    
+}
+.nsc03List th{
+	height:22px;
+	/* font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	background: -webkit-gradient(linear, left top, left bottom, from(#87898f), 
+							color-stop(0.5, #797b82),
+							to(#696c73));
+	border-right:#a3a3a3 1px solid;
+	padding:8px 0 0 0;
+	text-align:center;
+	vertical-align:top;
+	font-size:14px;
+	line-height:16px;
+	color:#FFF;
+}
+.nsc03List th.NoBoder{
+	border:none;
+}
+.nsc03List th.Reference{
+	border:none;
+	text-align:left;
+	padding-left:7px;
+}
+.nsc03List td{
+	/* font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	font-size:14px;
+	line-height:16px;
+	text-align:left;
+	vertical-align:top;
+}
+.nsc03ListReference{
+	/* margin:10px 0 0 0; */
+	/* padding-bottom: 10px; */
+}
+
+/**/
+.nsc03List td.Time01,
+.nsc03List td.Time02{
+	width:70px;
+	background:#ffd0d0;
+	border-right:#a3a3a3 1px solid;
+	border-bottom:#a3a3a3 1px solid;
+	height:37px;
+	padding:23px 0 0 0;
+	text-align:center;
+}
+.nsc03List td.Time02{
+	background:#feffaa;
+}
+/* $02 start 複数顧客に対する商談平行対応 */
+.nsc03List td.TimeStop {
+    border-top:#00B0F0 2px solid;
+    border-left:#00B0F0 2px solid;
+	border-bottom:#00B0F0 2px solid;
+}
+/* $02 end   複数顧客に対する商談平行対応 */
+/**/
+
+/**/
+.nsc03List td.Info01,
+.nsc03List td.Info02{
+	width:308px;
+	background:#ffd0d0;
+	border-right:#a3a3a3 1px solid;
+	border-bottom:#a3a3a3 1px solid;
+}
+.nsc03List td.Info02{
+	background:#feffaa;
+}
+/* $02 start 複数顧客に対する商談平行対応 */
+.nsc03List td.InfoStop {
+    border-top:#00B0F0 2px solid;
+	border-bottom:#00B0F0 2px solid;
+}
+/* $02 end   複数顧客に対する商談平行対応 */
+
+.nsc03List td.Info01 .InfoBox,
+.nsc03List td.Info02 .InfoBox
+{
+	width: 308px;
+	height: 60px;
+	background: transparent;
+}
+
+.nsc03List td.Info01 .InfoBoxLeft,
+.nsc03List td.Info02 .InfoBoxLeft{
+	float:left;
+	overflow:hidden;
+	width:60px;
+	height:60px;
+}
+.nsc03List td.Info01 .InfoBoxRight,
+.nsc03List td.Info02 .InfoBoxRight{
+	position:relative;
+	float:right;
+	overflow:hidden;
+	width:243px;
+}
+.nsc03List td.Info01 .InfoBoxRight .TextName,
+.nsc03List td.Info02 .InfoBoxRight .TextName{
+	width:227px;
+	position:relative;
+	border-bottom:#aaaaaa 1px solid;
+	font-size:18px;
+	padding:4px 5px 4px 6px;
+}
+/* $01 start step2開発 */
+.nsc03List td.Info01 .InfoBoxRight .TextNameRight,
+.nsc03List td.Info02 .InfoBoxRight .TextNameRight{
+	position:absolute;
+	right:5px;
+	top:4px;
+	font-size:12px;
+	line-height:18px;
+	width:90px;
+	text-align:right;
+	color:#666666;
+}
+/* $01 end   step2開発 */
+.nsc03List td.Info01 .InfoBoxRight .TextNameRight td,
+.nsc03List td.Info02 .InfoBoxRight .TextNameRight td{
+	text-align:left;
+	vertical-align:top;
+}
+/* $01 start step2開発 */
+.nsc03List .IcnBox1,
+.nsc03List .IcnBox2{
+	/* font-family:"ヒラギノ角ゴ Pro W6","HiraKakuProN-W6"; */
+	border-radius:4px;
+	border-top:#31737c 1px solid;
+	display:block;
+	float:left;
+	width:23px;
+	height:22px;
+	padding:0px 0 0 0;
+	text-align:center;
+	vertical-align:middle;
+	font-size:15px;
+	line-height:22px;
+	color:#FFF;
+}
+.nsc03List .IcnBox1{
+	text-shadow:#24808c 0 -1px 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#349cab),
+									to(#349cab));
+}
+.nsc03List .IcnBox2{
+	background: -webkit-gradient(linear, left top, left bottom, from(#d48200),
+									to(#eec300));
+}
+/* $01 end   step2開発 */
+.nsc03List td.Info01 .InfoBoxRight .TextNameRight td.IcnPadding,
+.nsc03List td.Info02 .InfoBoxRight .TextNameRight td.IcnPadding{
+	padding:5px 0 0 0;
+}
+/* $01 start step2開発 */
+.nsc03List td.Info01 .InfoBoxRight .TextNameRightGray,
+.nsc03List td.Info02 .InfoBoxRight .TextNameRightGray{
+	position:absolute;
+	overflow:hidden;
+	width:85px;
+	height:18px;
+	background:#dcdcdc;
+	border-radius:2px;
+	padding:2px 0 0 0;
+	font-size:14px;
+	text-align:center;
+}
+/* $01 end   step2開発 */
+.nsc03List td.Info01 .InfoBoxRight .IcnBox,
+.nsc03List td.Info02 .InfoBoxRight .IcnBox{
+	margin:7px 5px 0 5px;
+}
+.nsc03List td.Info01 .InfoBoxRight .IcnBox .NoBox,
+.nsc03List td.Info02 .InfoBoxRight .IcnBox .NoBox{
+	position:relative;
+	color:#303030;
+	font-size:14px;
+}
+.nsc03List td.Info01 .InfoBoxRight .IcnBox td,
+.nsc03List td.Info02 .InfoBoxRight .IcnBox td{
+	padding:0 4px 0 0;
+	color:#666666;
+}
+.nsc03List td.Info01 .InfoBoxRight .IcnBox td span,
+.nsc03List td.Info02 .InfoBoxRight .IcnBox td span{
+	padding:0;
+	margin:0;
+	font-size:12px;
+}
+/**/
+
+/**/
+.nsc03List td.Support01,
+.nsc03List td.Support02{
+	width:243px;
+	background:#ffd0d0;
+	border-bottom:#a3a3a3 1px solid;
+	padding:5px 10px 0 0;
+}
+.nsc03List td.Support02{
+	background:#feffaa;
+}
+/* $02 start 複数顧客に対する商談平行対応 */
+.nsc03List td.SupportStop {
+	border-top:#00B0F0 2px solid;
+	border-bottom:#00B0F0 2px solid;
+	border-right:#00B0F0 2px solid;
+	padding-right:8px;
+}
+/* $02 end   複数顧客に対する商談平行対応 */
+.nsc03List td.Support01 .SupportBoxLeft,
+.nsc03List td.Support02 .SupportBoxLeft{
+	float:left;
+	width:42px;
+	text-align:center;
+	font-size:12px;
+	line-height:16px;
+	color:#6c6c6c;
+}
+.nsc03List td.Support01 .SupportBoxRight,
+.nsc03List td.Support02 .SupportBoxRight{
+	float:right;
+	width:196px;
+	text-align:center;
+	font-size:14px;
+	color:#6c6c6c;
+}
+.nsc03List td.Support01 .SupportBoxRight .TextBox,
+.nsc03List td.Support02 .SupportBoxRight .TextBox{
+	padding:16px 0 0 0;
+	text-align:center;
+	font-size:16px;
+	color:#6c6c6c;
+}
+.nsc03List td.Support01 .SupportBoxRight p,
+.nsc03List td.Support02 .SupportBoxRight p{
+	display:block;
+	margin:1px 0 4px 0;
+}
+.nsc03List td.Support01 .SupportBoxRight .ButtonLeft,
+.nsc03List td.Support02 .SupportBoxRight .ButtonLeft{
+	width:82px;
+	float:left;
+}
+.nsc03List td.Support01 .SupportBoxRight .ButtonLeft02,
+.nsc03List td.Support02 .SupportBoxRight .ButtonLeft02{
+	width:62px;
+	float:left;
+}
+.nsc03List td.Support01 .SupportBoxRight .ButtonRight,
+.nsc03List td.Support02 .SupportBoxRight .ButtonRight{
+	width:52px;
+	float:right;
+}
+.nsc03List td.Support01 .SupportBoxRight .BlueButton,
+.nsc03List td.Support02 .SupportBoxRight .BlueButton{
+	width:70px;	height:20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7694ec), 
+							color-stop(0.500, #416ae5),
+							color-stop(0.510, #1e4ee1),
+							to(#1e4ee1));
+	border:#aaaaaa 1px solid;
+	border-radius:4px;
+	padding:4px 0 3px 0;
+}
+.nsc03List td.Support01 .SupportBoxRight .BlueButtonOff,
+.nsc03List td.Support02 .SupportBoxRight .BlueButtonOff{
+	width:70px;	height:20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aeb2b8), 
+							to(#6d7580));
+	border:#aaaaaa 1px solid;
+	border-radius:4px;
+	padding:4px 0 3px 0;
+}
+.nsc03List td.Support01 .SupportBoxRight .YellowButton,
+.nsc03List td.Support02 .SupportBoxRight .YellowButton{
+	width:50px;	height:20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fedf66), 
+							color-stop(0.500, #eacd66),
+							color-stop(0.510, #e2ad2d),
+							to(#e2ad2d));
+	border:#aaaaaa 1px solid;
+	border-radius:4px;
+	padding:4px 0 3px 0;
+}
+.nsc03List td.Support01 .SupportBoxRight .YellowButtonOff,
+.nsc03List td.Support02 .SupportBoxRight .YellowButtonOff{
+	width:50px;	height:20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aeb2b8), 
+							to(#6d7580));
+	border:#aaaaaa 1px solid;
+	border-radius:4px;
+	padding:4px 0 3px 0;
+}
+.nsc03List td.Support01 .SupportBoxRight .RedButton,
+.nsc03List td.Support02 .SupportBoxRight .RedButton{
+	width:50px;	height:20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cd6b74), 
+							color-stop(0.500, #b9343f),
+							color-stop(0.510, #b01825),
+							to(#b01825));
+	border:#aaaaaa 1px solid;
+	border-radius:4px;
+	padding:4px 0 3px 0;
+}
+.nsc03List td.Support01 .SupportBoxRight .RedButtonOff,
+.nsc03List td.Support02 .SupportBoxRight .RedButtonOff{
+	width:50px;	height:20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aeb2b8), 
+							to(#6d7580));
+	border:#aaaaaa 1px solid;
+	border-radius:4px;
+	padding:4px 0 3px 0;
+}
+
+.nsc03List .Red{color:#ff0000;}
+.nsc03List .Blue{color:#1951fb;}
+.nsc03List .Yellow{color:#f7aa15;}
+
+/**/
+
+.nsc03List td.Reference{
+	background:#FFF;
+}
+
+
+/* 未対応来店客無し
+-----------------------------------------*/
+.nsc03noguest{
+	/* font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	text-align:center;
+	padding:70px;
+	font-size:16px;
+	color:#666666;
+}
+.nsc03noguest img{
+	margin:0 0 18px 0;
+}
+
+/* 文字切り用 */
+.ellipsis
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* オーバーレイ
+-------------------------------------------------------------------------------------------*/
+#registOverlayBlackSC3100201 {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	width:633px;
+	height:312px;
+	z-index:10001;
+	display:none;
+	opacity:0;
+}
+#registOverlayBlackSC3100201.open { opacity:0.01; }
+
+/* 処理中アイコン表示
+ -------------------------------------------------------------------------------------------*/
+#processingServerSC3100201 {
+	position:absolute;
+	background:url(../Images/SC3100201/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:140px;
+	left:300px;
+	width:38px;
+	height:38px;
+	z-index:10002;
+}
+#processingServerSC3100201.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+

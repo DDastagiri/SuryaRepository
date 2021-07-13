@@ -1,0 +1,363 @@
+﻿/*//////////////////////////////////////////////////////////////////////////////
+//SC3080216.css
+//─────────────────────────────────────
+//機能： 顧客詳細(受注後工程フォロー)
+//補足： 
+//作成： 2014/02/13 TCS 森 受注後フォロー機能開発
+//作成： 2014/09/30 TCS 河原 TMT BTS-190
+//////////////////////////////////////////////////////////////////////////////*/
+
+
+@charset "utf-8";
+
+
+#SC3080216_activity_list
+{
+    height: 405px;
+    width: 982px;
+    border: 1px solid #929292;
+    border-radius: 8px;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(223,223,223,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(223,223,223,1.00) 100%);
+    top: 230px;
+    left: 20px;
+    box-shadow: 0px 4px 5px 0px #6C6C6C;
+    box-shadow: 0px 4px 5px 0px #6C6C6C;
+    
+}
+
+.SC3080216_title
+{
+    width: 144px;
+    height: 40px;
+    top: 15px;
+    left: 15px;
+    background-color: #00BE8A;
+    background-image: url(../images/SC3080216/titleback02.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#SC3080216_activity_list .SC3080216_title span
+{
+    color: white;
+    display: block;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+#SC3080216_toggle1
+{
+    top: 15px;
+    left: 177px;
+    width: 145px;
+    height: 29px;
+    margin-top: 215px;
+    position:absolute
+    
+}
+
+#SC3080216_toggle1 .SC3080216_left
+{
+    height: 27px;
+    width: 72px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position:absolute;
+}
+
+#SC3080216_toggle1 .SC3080216_right
+{
+    height: 27px;
+    width: 72px;
+    left: 73px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position:absolute;
+}
+
+#SC3080216_toggle1 .SC3080216_left a {
+    display: block;
+    height: 42px;
+    width: 100%;
+    line-height: 16px;
+}
+
+#SC3080216_toggle1 .SC3080216_right a {
+    display: block;
+    height: 42px;
+    width: 100%;
+    line-height: 16px;
+}
+
+#SC3080216_toggle1 .SC3080216_toggle_on, #SC3080216_toggle2 .SC3080216_toggle_on {
+    border-top: 1px solid #4E4F51;
+    border-right: 1px solid #4E4F51;
+    border-bottom: 1px solid #4E4F51;
+    border-left: 1px solid #4E4F51;
+    background-image: -webkit-linear-gradient(rgba(173,175,179,1.00) 0%,rgba(104,109,115,1.00) 100%);
+    background-image: linear-gradient(rgba(173,175,179,1.00) 0%,rgba(104,109,115,1.00) 100%);
+}
+
+#SC3080216_toggle1 .SC3080216_toggle_off, #SC3080216_toggle2 .SC3080216_toggle_off {
+    background-image: -webkit-linear-gradient(rgba(243,243,244,1.00) 0%,rgba(187,190,198,1.00) 100%);
+    background-image: linear-gradient(rgba(243,243,244,1.00) 0%,rgba(187,190,198,1.00) 100%);
+    border-top: 1px solid #717273;
+    border-left: 1px solid #717273;
+    border-right: 1px solid #717273;
+    border-bottom: 1px solid #717273;
+}
+
+#SC3080216_toggle1 .SC3080216_toggle_on a, #SC3080216_toggle2 .SC3080216_toggle_on a {
+    border-top: 1px solid #939598;
+    font-size: 12px;
+    color: white;
+    text-shadow: 0 -1px #454648;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#SC3080216_toggle1 .SC3080216_toggle_off a, #SC3080216_toggle2 .SC3080216_toggle_off a {
+    border-top: 1px solid #CFCFD0;
+    font-size: 12px;
+    color: #666;
+    padding-top: 5px;
+    text-align: center;
+    text-shadow: 0 1px white;
+}
+
+
+
+#SC3080216_toggle2 {
+    top: 15px;
+    left: 334px;
+    height: 29px;
+    width: 145px;
+    margin-top: 215px;
+    position:absolute
+}
+
+
+#SC3080216_toggle2 .SC3080216_left {
+    width: 72px;
+    height: 27px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position:absolute
+}
+
+#SC3080216_toggle2 .SC3080216_right {
+    height: 27px;
+    width: 72px;
+    left: 72px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position:absolute
+}
+
+#SC3080216_toggle2 .SC3080216_left a {
+    display: block;
+    height: 42px;
+    width: 100%;
+    line-height: 16px;
+}
+
+#SC3080216_toggle2 .SC3080216_right a {
+display: block;
+height: 42px;
+width: 100%;
+line-height: 16px;
+}
+
+#rightBox {
+    left: 15px;
+    top: 65px;
+    width: 464px;
+    height: 322px;
+    border: 1px solid #C8C8C8;
+    overflow: hidden;
+    padding-left: 2px;
+    background-color: white;
+    margin-top:10px;
+    margin-left:20px;
+}
+
+#rightBox ul 
+{
+    height:320px;
+    overflow: auto;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#rightBox li {
+    position: relative;
+    margin-top:1px;
+    margin-bottom: 2px;
+    color: #646464;
+}
+
+.rightBoxTitle {
+    background-color: #BBF2E0;
+    width: 319px;
+    height: 20px;
+    top:0px;
+    position:absolute
+}
+
+.rightBoxTitle span {
+    font-size: 12px;
+    display: block;
+    padding-top: 3px;
+    padding-left: 6px;
+    color: #646464;
+    /* 2014/09/30 TCS 河原 $02 TMT BTS-190 DEL */
+}
+
+
+.rightBoxRow {
+    height: 30px;
+}
+
+a {
+    color: #007FB5;
+    text-decoration: none;
+}
+
+.rightBoxRowRight {
+    height: 28px;
+    width: 424px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #C8C8C8;
+    border-radius: 3px;
+    margin-left:30px;
+    position:absolute;
+}
+
+#rightBox li.rightBoxRow span {
+    display: block;
+    height: 19px;
+    width: 390px;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 10px;
+    padding-top: 7px;
+    padding-left: 31px;
+    color: #646464;
+}
+
+#rightBox .on {
+    background-image: -webkit-linear-gradient(rgba(193,217,239,1.00) 0%,rgba(193,217,239,1.00) 54%,rgba(167,201,232,1.00) 54%,rgba(167,201,232,1.00) 100%);
+    background-image: linear-gradient(rgba(193,217,239,1.00) 0%,rgba(193,217,239,1.00) 54%,rgba(167,201,232,1.00) 54%,rgba(167,201,232,1.00) 100%);
+}
+
+#rightBox li .icon1 {
+    left: 0px;
+    top: 0;
+    width: 26px;
+    height: 28px;
+    border: 1px solid #C8C8C8;
+}
+
+#rightBox li .icon1_rightbottom {
+    height: 30px;
+    width: 30px;
+    left: -2px;
+    top: 0px;
+    background-color: white;
+    position: absolute;
+    background: url(../images/SC3080216/icon1_rightbottom.png) right bottom no-repeat;
+    border: none;
+}
+
+#rightBox li .icon2 {
+    width: 20px;
+    height: 20px;
+    left: 37px;
+    top: 5px;
+    position:absolute
+}
+
+#rightBox li .icon3 {
+    width: 20px;
+    height: 20px;   
+    left: 430px;
+    top: 5px;
+    position:absolute
+}
+
+#rightBox li .icon4 {
+    width: 20px;
+    height: 20px;   
+    left: 294px;
+    top: 1px;
+    position:absolute
+}
+
+#rightBox .off 
+{
+    background-image: -webkit-linear-gradient(rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 54%,rgba(245,245,245,1.00) 54%,rgba(245,245,245,1.00) 100%);
+    background-image: linear-gradient(rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 54%,rgba(245,245,245,1.00) 54%,rgba(245,245,245,1.00) 100%);
+}
+
+#rightBox .complete
+{
+    background-image:-webkit-linear-gradient(rgba(218,218,218,1.00) 0%,rgba(215,215,215,1.00) 54%,rgba(202,202,202,1.00) 54%,rgba(192,192,192,1.00) 100%);
+    background-image:linear-gradient(rgba(218,218,218,1.00) 0%,rgba(215,215,215,1.00) 54%,rgba(202,202,202,1.00) 54%,rgba(192,192,192,1.00) 100%);
+}
+
+#rightBox li .Check{
+    background: url(../Images/SC3080216/icon1_on.png) right center no-repeat;
+    width: 14px;
+    height: 11px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+
+#rightBox li .dateBox1
+{
+    top: 7px;
+    left: 280px;
+    width: 160px;
+    height: 16px;
+    font-size: 12px;
+    color: #646464;    
+    position:absolute;    
+}
+
+#rightBox li.finance 
+{
+    background-image: url(../images/finance.png);
+    background-position: 300px, 2px;
+    background-repeat: no-repeat;
+}
+
+.rightBoxTitleText
+{
+    background-color: #BBF2E0;
+}
+
+
+
+#dateBox1
+{
+    width: 120px;
+    height: 16px;    
+}
+
+#AfterActivityPrcsMain .ellipsis{
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}

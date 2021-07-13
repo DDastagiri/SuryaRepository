@@ -1,0 +1,412 @@
+﻿/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-40
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/* contents.css　div#mainにbackgroundを追加 */
+div#main
+{
+	/*position:relative;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#b7b7b7));
+}
+div#BaseBox{
+	width:1024px;
+	height:748px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    N-SC05-01
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#TcvNsc05-01Main{
+	position:relative;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 1);
+	border:#999999 1px solid;
+	top:-20px;
+	left:-20px;
+	box-shadow: 0px 5px 5px #666666;
+	padding:20px 17px 15px;
+}
+
+#TcvNsc05-01Main h2{
+	display:block;
+	position:relative;
+	height:30px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #737373),
+									color-stop(0.5, #434343),
+									color-stop(0.51, #292929),
+									color-stop(1, #292929));
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+#TcvNsc05-01Main h2 span{
+	display:block;
+	position:absolute;
+	top:2px; text-indent:10px;
+	color:#FFF;
+	font-size:14px;
+	font-family:"ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-shadow:#000 0 -1px 0;	
+}
+#TcvNsc05-01Main .noBorder
+{    
+	text-decoration: none;	
+}
+#TcvNsc05-01Main .ncs5001TitleTable{
+	margin-top:10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(0, #86898f),
+									to(1, #686c74));
+	color:#FFFFFF;
+}
+
+#TcvNsc05-01Main .ncs5001TitleTable a{
+	color:#FFFFFF;
+}
+
+#TcvNsc05-01Main .ncs5001TitleTable th{
+	font-size:14px;
+	line-height:14px;
+	color:#FFF;
+	font-weight:normal;
+}
+
+#TcvNsc05-01Main .ncs5001TitleTable .column1{ width:218px;}
+#TcvNsc05-01Main .ncs5001TitleTable .column2{ width:158px;}
+#TcvNsc05-01Main .ncs5001TitleTable .column3{ width:258px;}
+#TcvNsc05-01Main .ncs5001TitleTable .column4{ width:150px;}
+#TcvNsc05-01Main .ncs5001TitleTable .column5{ width:148px;}
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader1{ height:33px; border:#b3b3b3 1px solid; border-bottom:none;}
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader2{ height:33px; border:#b3b3b3 1px solid; border-bottom:none; border-left:#FFF 1px solid;}
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader3{ height:33px; border:#b3b3b3 1px solid; border-bottom:none; border-left:#FFF 1px solid;}
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader4{ height:33px; border:#b3b3b3 1px solid; border-bottom:none; border-left:#FFF 1px solid;}
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader5{ height:33px; border:#b3b3b3 1px solid; border-bottom:none; border-left:#FFF 1px solid;}
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader1,
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader2,
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader3,
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader4,
+#TcvNsc05-01Main .ncs5001TitleTable .tableHeader5{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #86898f),
+									color-stop(1, #686c74));
+	
+}
+
+
+#customerRepeater .ncs5001TitleTableBox{
+	position:relative;
+	display:block;
+	height:79px;
+	border:#b3b3b3 1px solid; 
+	border-top:none;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	margin:0; padding:0;
+}
+#customerRepeater .ncs5001TitleTableBox .column1{
+    width:219px;
+}
+#customerRepeater .ncs5001TitleTableBox .column2{
+    width:158px;
+}
+#customerRepeater .ncs5001TitleTableBox .column3{
+    width:257px;
+}
+#customerRepeater .ncs5001TitleTableBox .column4{
+    width:150px;
+}
+#customerRepeater .ncs5001TitleTableBox .column5{ 
+    width:148px;
+}
+#customerRepeater .ncs5001TitleTableBox .tableHeader1{
+    height:79px; border-right:#b3b3b3 1px solid;
+}
+#customerRepeater .ncs5001TitleTableBox .tableHeader2{
+    height:79px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;
+}
+#customerRepeater .ncs5001TitleTableBox .tableHeader3{
+    height:79px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;
+}
+#customerRepeater .ncs5001TitleTableBox .tableHeader4{
+    height:79px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;
+    padding-top:30px;
+}
+#customerRepeater .ncs5001TitleTableBox .tableHeader5{
+    height:79px; border-left:#FFF 1px solid;
+    padding-top:30px;
+}
+
+#customerRepeater .ncs5001TitleTableBox .ColorGray{
+    background:#dcdcdc;
+}
+#customerRepeater .ncs5001TitleTableBox .ColorWhite{
+    background:#FFF;
+}
+#customerRepeater .ncs5001TitleTableBox .ColorBlue{
+    background:#64C8FF;
+}
+#customerRepeater .ncs5001TitleTableBox .dataPortraits{
+	display:block;
+	position:absolute;
+	width:60px;	height:61px;
+	top:9px; left:9px;
+	z-index:2;
+}
+#customerRepeater .ncs5001TitleTableBox .dataUserName{
+	display:block;
+	position:absolute;
+	width:130px;
+	top:9px; left:77px;
+	z-index:3;
+	font-size:20px; line-height:20px;
+	font-weight:bold;
+	color:#333333;
+}
+#customerRepeater .ncs5001TitleTableBox .dataSettingIcon1,
+#customerRepeater .ncs5001TitleTableBox .dataSettingIcon2{
+	position:absolute;
+	display:block;
+	width:25px; height:20px;
+	top:40px; left:80px;
+	z-index:3;
+	font-size:13px; line-height:13px;
+	color:#fff;
+	border:#666666 1px solid;
+	text-align:center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #82888e),
+									color-stop(1, #6a7178));
+	border-radius: 3px;
+	padding-top:6px;
+}
+#customerRepeater .ncs5001TitleTableBox .dataSettingIcon2{
+    left:113px;
+}
+#customerRepeater .ncs5001TitleTableBox .dataSettingIcon1 span,
+#customerRepeater .ncs5001TitleTableBox .dataSettingIcon2 span{
+	bottom:6px;
+	display:block;
+	text-align:center;
+	width:23px;
+}
+#customerRepeater .ncs5001TitleTableBox .tableHeader2 .telMobile,
+#customerRepeater .ncs5001TitleTableBox .tableHeader2 .telHome,
+#customerRepeater .ncs5001TitleTableBox .tableHeader3 .MyFleet,
+#customerRepeater .ncs5001TitleTableBox .tableHeader3 .MyCarName,
+#customerRepeater .ncs5001TitleTableBox .tableHeader3 .MyCarNumber{
+	top:0px; 
+	display:block;
+	color:#333;
+    float: left;
+    vertical-align:middle;
+}
+#customerRepeater .ncs5001TitleTableBox .tableHeader2 .telMobile,
+#customerRepeater .ncs5001TitleTableBox .tableHeader2 .telHome{
+	width:158px;
+    height: 28px;
+	display:block;
+	text-align:center;
+	font-size:14px;
+    padding-top:10px;
+}
+#customerRepeater .ncs5001TitleTableBox .MyFleet{
+	left:10px;
+	width:150px; 
+    height: 30px;
+	font-size:18px; 
+	line-height:18px; 
+	font-weight:bold; 
+	color:#000;
+	text-align:left; 
+    padding-left:5px;
+    padding-top:8px;
+}
+#customerRepeater .ncs5001TitleTableBox .MyCarName{
+	width:90px; 
+    height: 23px;
+	left:140px; 
+	top:12px; 
+	font-size:14px; 
+	line-height:14px; 
+	color:#333;
+	font-weight:bold; 
+	text-align:left;
+    vertical-align:middle;
+    padding-top: 11px;
+}
+#customerRepeater .ncs5001TitleTableBox .MyCarNumber{
+	top:52px; 
+    height: 28px;
+	text-align:left; 
+	font-size:14px;
+	width:240px; 
+	left:10px;
+    padding-left:5px;
+    padding-top:10px;
+}
+#customerRepeater .ncs5001TitleTableBox .SplitLine1,
+#customerRepeater .ncs5001TitleTableBox .SplitLine2{
+	display:block;
+	top:38px; left:8px;
+	overflow:hidden;
+	height:1px;
+	font-size:1px; line-height:1px;
+	background:#a5a5a5;
+	border-bottom:#FFF 1px solid;
+	padding-left: 30px;
+	text-align:center;
+	margin:0px 3px 0px 3px;
+}
+#customerRepeater .ncs5001TitleTableBox .SplitLine2{
+    width:220px;
+}
+
+.icrop-CustomRepeater-pager{
+	display:block;
+	text-align:center;
+	padding:0px 0;
+	color:#4b7dda; font-size:16px;
+	
+	background:#FFF;
+	width:100%;
+}
+.icrop-CustomRepeater-inner-topPager 
+{
+	display:none;
+	text-align:center;
+	padding:0px 0;
+	color:#4b7dda; font-size:16px;
+    height:60px;
+	background:#FFF;
+	width:940px;
+	border:#AAA 1px solid;
+}
+.icrop-CustomRepeater-inner-topPager-label
+{
+	display:block;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+	border:#999999 0px solid;
+    font-weight:bold;
+	color:#4b7dda; font-size:16px;
+	width:930px;
+	text-align:center;
+	padding:20px 0px 0px;
+    height:30px;
+}
+.icrop-CustomRepeater-inner-bottomPager 
+{
+	display:none;
+	text-align:center;
+	padding:0px 0;
+	color:#4b7dda; font-size:16px;
+	
+    height:60px;
+	background:#FFF;
+	width:100%;
+}
+.icrop-CustomRepeater-inner-bottomPager-label
+{
+	display:block;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+	border:#999999 0px solid;
+    font-weight:bold;
+	color:#4b7dda; font-size:16px;
+	width:100%;
+	text-align:center;
+	padding:20px 0px 20px;
+    height:60px;
+}
+.icrop-CustomRepeater-pager-label {
+	display:block;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+	border:#999999 0px solid;
+    font-weight:bold;
+	color:#4b7dda; font-size:16px;
+	width:100%;
+	text-align:center;
+	padding:0px 0px 20px;
+}
+.icrop-CustomRepeater-pager-icon-up {
+	background:#FFF;
+    height: 0px;
+}
+.icrop-CustomRepeater-progress-inner
+{
+    width:200px;
+    height:150px;
+    opacity:0.5; 
+    background-color:#777; 
+    border-radius: 5px; 
+}
+#customerRepeater .leftDiv
+{
+    float: left;
+    height: 79px;
+}
+.disableButton
+{
+    display: none;
+}
+
+
+.scCstkindHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+.scCustomerClassHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+.scCrcustidHidden{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+.scVclHidden
+{
+	display:block;
+	overflow:hidden;
+	height:0px;
+}
+
+/*　サーバー処理中のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#serverProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	z-index:100;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#serverProcessOverlayBlack.open { opacity:0.6; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#serverProcessIcon {
+	position:absolute;
+	background:url(../Images/SC3010201/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:324px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+#serverProcessIcon.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}

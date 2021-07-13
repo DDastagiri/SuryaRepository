@@ -1,0 +1,1018 @@
+﻿/* 
+ * SCメイン
+ * 作成： 
+ * 更新： 2014/05/27 TCS 河原 $01 マネージャー機能
+ * 更新： 2014/09/30 TCS 河原 $02 TMT BTS-190
+*/
+
+#DateScheduleTitle {
+    position: absolute;
+    top: 218px;
+    left: 0px; 
+    border-bottom:0px #CCC solid; 
+    background:#FFF;
+    z-index:0;
+}    
+
+#contentsLeftBox2 .innerBox1 {
+    padding: 250px 15px;
+    position: relative; 
+}     
+ 
+#contentsLeftBox .InnerBox01,
+#contentsRightBox .InnerBox01{
+    padding:0 15px;
+    position:relative;
+} 
+
+#contentsRightBox h3.subTitle02ToDo{
+	width:inherit;
+	float:none;
+	margin:0 0 10px;
+	padding:0;
+	width:194px;
+	display:block;
+	font-weight:normal;
+}
+
+#contentsRightBox h3 .titleName,
+#contentsRightBox h3 .titleCount{
+    color:#FFFFFF;
+    font-size:14px;
+    line-height:18px;
+    display:table-cell;
+    margin:0;
+}
+
+#contentsRightBox h3 .titleName{
+    width:150px;
+    left:10px;
+    height:40px;
+    position:relative;
+    vertical-align:middle;
+}
+#contentsRightBox h3 .titleCount{
+    width:35px;
+    height:inherit;
+    position:relative;
+    vertical-align:middle;
+    right:-5;
+    text-align:right;
+}
+
+#contentsRightBox h3.todoType1{ background:#5a88e3;}
+#contentsRightBox h3.todoType2{ background:#f89b4c;}
+#contentsRightBox h3.todoType3{ background:#16c583;}
+#contentsRightBox h3.todoType4{ background:#ca66e1;}
+
+/*　右カラム用(スケジュール・Todo一覧)
+-------------------------------------------------------------------------------------------*/
+#contentsRightBox {
+    width:634px;
+    height:613px;
+    float:left;
+    position:relative;
+    margin:0px 25px 0px 0px;
+}
+#contentsRightBox .InnerBox01 { padding:0 15px; position:relative; opacity:1; -webkit-transition: opacity 150ms ease-in-out 0; }
+#contentsRightBox.contentsFrame .LodingInnerBox01 { opacity:0; }
+
+/*　ダッシュボード
+-------------------------------------------------------------------------------------------*/
+#dashboardBox { width:296px; overflow: hidden; height:188px; margin:5px 15px 5px 15px;}
+
+#dashboardBox.loading {}
+#dashboardFrame { border: none; padding: 0px; margin: 0px; }
+#loadingDashboard {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:130px;
+	left:130px;
+	width:21px;
+	height:22px;
+}
+
+/* SCメイン(KPI)
+-------------------------------------------------------------------------------------------*/
+#processKpiBox { width:296px; overflow: hidden; height:355px; margin:10px 15px 5px 15px;}
+#processKpiFrame { border: none; padding: 0px; margin: 0px; }
+#loadingProcessKpi {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:400px;
+	left:130px;
+	width:21px;
+	height:22px;
+}
+
+/*　日付
+ -------------------------------------------------------------------------------------------*/
+#contentsRightBox .katudouDate { position:absolute; font-size:12px; color:#808080; right: 10px; top: 11px; }
+#NowDateLiteral { text-align: center; }
+
+/*　スケジュール
+ -------------------------------------------------------------------------------------------*/
+#contentsRightBox .inLeftBox1  { width:200px; float:left; border-right:#999 0px solid; }  
+
+
+/* 終日イベント */
+#DateScheduleBox {
+    -webkit-transition: height 300ms ease-in-out 0;
+	margin:0px 0 25px 15px;
+	width:283px;
+	font-size:12px;
+	line-height:12px;
+	height: 43px;
+	padding:1px 1px 5px;
+	border-bottom:1px solid #c1c1c1;
+	border-top:1px solid #c1c1c1;
+	border-left:1px solid #c1c1c1;
+	border-right:1px solid #dedede;
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2) inset;
+	position:absolute;
+    top:249px; 
+    left:0px;
+	background:#FFF;
+	z-index:1;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+
+#DateScheduleBox .DateScheduleInner { height: 100%;  }
+	
+
+#DateScheduleBox ul { padding:7px 0px 0px 7px; }
+#DateScheduleBox li {
+    padding:1px 0px 5px 20px;
+    background-image: url(../Images/SC3010203/iconDayEvent.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 230px;
+}
+
+/*通常サイズ */
+#DateScheduleBox ul.normalMode li { display: none; }
+#DateScheduleBox ul.normalMode li:nth-child(1),#DateScheduleBox ul.normalMode li:nth-child(2)
+{
+    display: block;
+}
+/*終日イベント拡大サイズ*/
+#DateScheduleBox.bigMessageWindow { height: 187px;  }
+
+/* 終日イベントと時間スケジュールの境目 */
+#contentsRightBox .InsLineBox { position: absolute; width: 346px; left: 52px; top: 104px; border-top: #666 1px solid; }
+/* 終日イベント新規登録タップエリア */
+#DateScheduleBox .dateScheduleMarginArea { position:absolute; top:0px; right:0px; height:100%; width:52px; }
+
+/*他Ｎ件*/
+#DateScheduleBox p.moreDayEvent {
+    bottom: 5px;
+    right: 9px;
+    position: absolute;
+    text-align: right;   
+    font-size: 10px;
+    margin: 0px 0px 0px;
+}
+#DateScheduleBox p.moreDayEvent a { color: #999; min-width: 55px; display: inline-block; padding-top:5px; padding-right:12px; box-sizing: border-box; display:none;  }
+#DateScheduleBox p.moreDayEvent a:first-child { background:url(../Images/SC3010201/nsc0000more01.png) right center no-repeat; display:block; }
+#DateScheduleBox p.moreDayEvent a:last-child { background:url(../Images/SC3010201/nsc0000more02.png) right center no-repeat; display:block; }
+
+/*データなしのテキスト*/
+#DateScheduleBox span#dayEventNotFound { color:#777; font-size:12px; top:5px; left:4px; position:absolute; display:none; }
+
+/*　TODO
+ -------------------------------------------------------------------------------------------*/
+#contentsRightBox .inRightBox1.reftOrder1,
+#contentsRightBox .inRightBox1.reftOrder2,
+#contentsRightBox .inRightBox1.reftOrder3,
+#contentsRightBox .inRightBox1.reftOrder4{
+    float:none;
+    display:block;
+    position:absolute;
+    top:25px;
+}
+
+#contentsRightBox .inRightBox1.reftOrder1{left:14px;}
+#contentsRightBox .inRightBox1.reftOrder2{left:223px;}
+#contentsRightBox .inRightBox1.reftOrder3{left:432px;}
+#contentsRightBox .inRightBox1.reftOrder4{left:432px; top:305px;}
+
+
+/*to do list ﾍｯﾀﾞｰ*/
+/*-----------------------*/
+.contentsFrame .todowitches{
+    width:433px;
+    height:30px;
+    display:block;
+    position:absolute;
+    right:15px;
+    top:9px;
+    
+}
+.contentsFrame .todowitches .Date{
+    display:block;
+    width:88px; height:27px;
+    border-radius:5px;
+    font-size:16px; line-height:27px;
+    color:#666666;
+    position:absolute;
+    top:0; left:0; text-align:center;
+    border:#666666 1px solid;
+}
+.contentsFrame .todowitches .DateSWPrev,
+.contentsFrame .todowitches .DateSWToday,
+.contentsFrame .todowitches .DateSWNext{
+    font-size:14px;
+    line-height:14px;
+    display:block; height:14px; width:50px;
+    position:absolute;
+    color:#2362de; top:10px;
+    
+}
+.contentsFrame .todowitches .DateSWPrev{
+    left:108px;
+}
+.contentsFrame .todowitches .DateSWToday{
+    text-align:center; left:164px;
+}
+.contentsFrame .todowitches .DateSWNext{
+    text-align:right; left:224px;
+}
+
+.contentsFrame .todowitches .Notice{
+    width:29px; height:28px;
+    border-radius: 5px;
+    background:url(../images/iconNotice.png) center center no-repeat;
+    border:#666 1px solid;
+    top:0; right:0; position:absolute;
+    
+}
+
+ /*ToDo
+------------------------------------------------------------------------------*/
+
+#toDoBoxOut {
+    width:194px; height:500px;
+    background:url(../Images/SC3010203/bgToDoSizM.png) no-repeat;
+}
+#toDoBoxOut.SizeS{
+    height:220px; width:194px;
+    background:url(../Images/SC3010203/bgToDoSizS.png) no-repeat;
+}
+
+#BookedAftertoDoBoxOut {
+    width:194px; height:500px;
+    background:url(../Images/SC3010203/bgToDoSizM.png) no-repeat;
+}
+#BookedAftertoDoBoxOut.SizeS{
+    height:220px; width:194px;
+    background:url(../Images/SC3010203/bgToDoSizS.png) no-repeat;
+}
+
+#DeliAftertoDoBoxOut {
+    width:194px; height:500px;
+    background:url(../Images/SC3010203/bgToDoSizM.png) no-repeat;
+}
+#DeliAftertoDoBoxOut.SizeS{
+    height:220px; width:194px;
+    background:url(../Images/SC3010203/bgToDoSizS.png) no-repeat;
+}
+
+#VisitBoxOut {
+    width:194px; height:500px;
+    background:url(../Images/SC3010203/bgToDoSizM.png) no-repeat;
+}
+#VisitBoxOut.SizeS{
+    height:220px; width:194px;
+    background:url(../Images/SC3010203/bgToDoSizS.png) no-repeat;
+}
+
+
+
+
+#toDoBoxIn{}
+/* 遅れ */
+#toDoBoxIn p.toDoBoxNote {
+    font-size:12px;
+    text-align:right;
+    padding:9px 08px 0 0;
+    font-weight:bold;
+    height:19px;
+    display:block;
+}
+/* TODOチップを入れる枠(スクロール用) */
+.todoChipBox { height: 497px; margin: 0px auto 0px; position:relative;  }
+.BookedAftertodoChipBox { height: 497px; margin: 0px auto 0px; position:relative;  }
+.DeliAftertodoChipBox { height: 217px; margin: 0px auto 0px; position:relative;  }
+
+/* TODOチップ */
+.todoChip 
+{
+    width:169px;
+}
+
+
+/* アイコン */
+.todoChip .iconBox {
+    display:block;
+    float:left;
+    margin:6px 0px 0px;
+    height:20px;
+    width:20px;
+}
+.todoChip .callinIcon { background:url(../Images/SC3010203/Nsc_Todo_Icon_callin.png) no-repeat; }
+
+/* タイトル */
+.todoChip .inText { display:block;  padding:0px 0px 0px 3px; }
+/* 時間 */
+.todoChip .date   { display:block; font-size:10px; line-height:10px; color:#000; text-align:right; padding-top:-2px; }
+/* ドラッグ中のチップ */
+.dragChip { position: absolute; font-size:14px; opacity: 0.7; z-index: 3; }
+/* ドラッグしているチップの親となるチップ */
+.dragChipOwner { opacity: 0.5; }
+/* TODOチップ格納ボックス */
+#SalestodoChipBoxInner { padding-bottom: 20px; }
+ /* TODOチップ格納ボックス */
+#BookedAftertodoChipBoxInner { padding-bottom: 20px; }
+/* TODOチップ格納ボックス */
+#DeliAftertodoChipBoxInner { padding-bottom: 10px; }
+
+ /*　スケジュール・TODO共通
+ -------------------------------------------------------------------------------------------*/
+ #contentsRightBox h3.subTitle01 {
+	width:152px;
+	float:left;
+}
+
+#contentsRightBox h4 {
+    display:block;
+    font-size:14px;
+    line-height:14px;
+    margin:0px 0 8px;
+    padding-top:14px;
+    color:#666;
+}
+
+/*　スケジュール(時間）
+ -------------------------------------------------------------------------------------------*/
+/* 全体を囲む枠 */
+#timeScheduleBoxOut  {
+    width: 289px;
+    height: 256px;
+    background:url(../Images/SC3010203/bgRollingSOver.png) no-repeat;
+    background-position: 35px 0px; 
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0px 0 0;
+    position: absolute;
+    top: 316px;
+    left: 0;
+}
+
+/* 内枠(スクロール用) */
+#timeScheduleBoxIn { min-height: 1086px; position: relative; }
+
+/* 時間ボックス */
+#timeScheduleLeftBox {
+    position:absolute;
+    box-sizing: border-box;
+    left: 0px;
+    top: 11px;
+    width: 40px;
+}
+
+/* 時間TEXT */
+#timeScheduleLeftBox p {
+    font-size:10px;
+    font-weight:normal;
+    text-align:right;
+    width:35px;
+    height:44px;
+    padding:0px 5px 0px 0px;
+    display:block;
+    position:relative;
+    top:-7px;
+    box-sizing:border-box;
+    margin: 0px;
+}
+/* 分のナビゲーション */
+#timeScheduleLeftBox p.naviminute {
+    font-weight:bold;
+    width:35px;
+    text-align:right;
+    position: absolute;
+    left:0px;
+    top: 0px;
+    box-sizing: border-box;
+    display:none;
+}
+/* 時間のナビゲーション */
+#timeScheduleLeftBox p.navihour { font-weight:bold; }
+
+/* 時間の隣のスケジュール枠 */
+#timeScheduleRightBox {
+    position:absolute;
+    box-sizing: border-box;
+    left:39px; top:11px;
+    width: 341px;
+}
+
+/* 時間のメモリ */
+#timeScheduleRightBox .timeLineBorder { height:22px; box-sizing:border-box; opacity:0.4; position:relative; }
+#timeScheduleRightBox .timeLineBorder:nth-child(odd)  { border-top: 1px solid #888; }
+#timeScheduleRightBox .timeLineBorder:nth-child(even) { border-top: 1px dashed #888; }
+#timeScheduleRightBox .timeLineBorder:nth-child(48)      { border-bottom: 1px solid #888; }
+/* 新規登録タップエリア */
+#timeScheduleRightBox div.marginArea { position:absolute; height:100%; width:20px; top:0px; right:0px; }
+
+/*チップ格納ボックス */
+#timeScheduleChipBox {
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    width: 246px;
+    height: 100%;
+    box-sizing: border-box; 
+}
+
+/*チップ */
+#timeScheduleChipBox div.timeScheduleChip 
+{
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+ }
+
+/*（現在時刻） */
+.borderLine {
+    background:url(../Images/SC3010203/borderLine.png) no-repeat;
+    width:352px;
+    height:19px;
+    left:30px;
+    top:0px;
+    position:absolute;
+}
+
+
+/*　読み込み中
+ -------------------------------------------------------------------------------------------*/
+#loadingSchedule {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:300px;
+	left:290px;
+	width:21px;
+	height:22px;
+}
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+
+/*2012/02/29 TCS 松野 【SALES_2】 START*/
+/*　読み込み中(来店実績一覧)
+ -------------------------------------------------------------------------------------------*/
+#loadingSchedule2 {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:278px;
+	left:162px;
+	width:21px;
+	height:22px;
+}
+
+/*　来店実績コンテンツの位置（中央寄せ）　*/
+.SC3100302InnerBox01{
+    padding:0 15px;
+    position:relative;
+}
+   
+/*　合計　*/
+h3.SC3100302TotalCount{
+    margin:0 0 11px 0;
+    text-align:right;
+    color:#666666;
+    font-size:14px;
+    padding-top: 13px;
+}
+
+.SC3100302Clearboth {
+display: block;
+overflow: hidden;
+clear: both;
+color: white;
+font-size: 1px;
+line-height: 1px;
+text-indent: -3000px;
+height: 1px;
+}
+
+/*　来店実績コンテンツの背景　*/
+.SC3100302toDoBoxOut{
+    width:289px; 
+    height:538px;
+    overflow:auto;
+    background:url(../images/SC3100302/sc3100302_background2.png) no-repeat;
+    padding:0px 0 0 0;
+    position:relative;
+    top:-6px;
+}
+
+/*　来店実績がない場合の背景　*/
+.SC3100302toDoBoxOut_None{
+    width:289px; 
+    height:533px;
+     overflow:auto;
+    border:#bbbbbb 1px solid;
+    border-radius: 3px;
+    padding:2px 0 0 0; 
+    position:relative;
+    top:-5px;
+}
+
+/*　来店実績がない場合の背景　*/
+.SC3100302_None{
+    width:289px; 
+    height:533px;
+    background:url(../images/SC3100302/sc3100302_background_none.png) center center no-repeat #FFF;
+    font-size:16px;
+    text-align:center;
+    color:#666666;
+}
+
+.SC3100302_None span{
+	position:relative;
+	top:350px;
+	text-align:center;
+}
+
+#SC3100302InnerBox 
+{
+	height:535px;
+}
+
+/*　チップ　*/
+#SC3100302InnerBox li{
+    font-size:12px;
+    color:#333;
+    display:block;
+    margin:8px auto 7px;
+    padding:3px 5px 5px;
+    width:253px;
+    height:29px;
+    box-shadow:2px 2px 5px #666;
+    list-style:none;
+    position:relative;
+}
+
+/*　ステータスアイコンの背景　*/
+#SC3100302InnerBox .imageBackGround{
+    display:block;
+    float:left;
+    margin:0;
+}
+
+/*　ステータスアイコン　*/
+#SC3100302InnerBox .imageBackGround img{
+    display:block;
+    position:relative;
+    top:4px; 
+    left:3px;
+}
+
+/*　一次対応者　*/
+#SC3100302InnerBox .TempStaff{
+    position:absolute;
+    left:37px;
+    top:3px;
+    padding:0 0 0 13px;
+    font-size:10px;
+    line-height:14px;
+    width: 80px;
+}
+
+#TempStaffOperationIcon 
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:13px;
+	width:10px;
+	border:0;
+}
+
+/*　商談開始日付　*/
+#SC3100302InnerBox .date{
+    display:block;
+    font-size:10px;
+    line-height:10px;
+    color:#000;
+    text-align:right;
+    padding-top:2px;
+    width:169px;
+}
+
+
+/*　お客様名　*/
+#SC3100302InnerBox .inText{
+    display:block;
+    padding:0px 0 0 32px;
+    font-weight:normal;
+    position:relative;
+    top:3px;
+    left: -24px;
+	width: 140px;
+}
+
+/*　次回活動エリア　*/
+#SC3100302InnerBox li .rightBox{
+    position:absolute;
+    right:0;
+    top:4px;
+    border-left:#646464 1px solid;
+    width:83px;
+}
+
+/*　次回活動エリアインナー　*/
+#SC3100302InnerBox li .rightBox .rightBoxIn{
+    border-left:#FFF 1px solid;
+    width:71px;
+    height:23px;
+    padding:5px 6px 2px 6px;
+}
+
+/*　次回活動日　*/
+#SC3100302InnerBox li .rightBox .rightBoxIn .rightBoxText{
+    position:absolute;
+    right:6px;
+    top:6px;
+    font-size:12px;
+}
+/*　次回活動アイコン　*/
+#NextActivityIcon 
+{
+	position:relative;
+	top:-1px;
+}
+
+/*　アップデートパネルのトリガー　*/
+.SC3100302Trigger{
+    visibility:hidden;
+}
+
+/*　権限アイコン、次回活動アイコンの非表示　*/
+.imageHidden 
+{
+	display:none;
+}
+/* 領域からはみ出た文字を強制カットする　*/	
+.useCut
+{
+	text-overflow:clip;
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+}	
+
+/* 領域からはみ出た文字を「・・・」にする*/
+.useEllipsis 
+{
+	text-overflow:ellipsis;
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+}	
+
+.addMagBtm10px{margin-bottom:10px;}
+.addMagBtm5px{margin-bottom:5px;}
+.addMagTop10px{margin-top:10px;}
+.addMagTop15px{margin-top:15px;}
+
+/*　Process KPI
+-------------------------------------------------------------------------------------------*/
+#ProcessKPI 
+{
+    height:350px;
+    width:296px; 
+    overflow: hidden;
+    margin:15px;
+}
+#ProcessKPIFrame 
+{
+    border: none; 
+    padding: 0px; 
+    margin: 0px;
+}
+#loadingProcessKPI 
+{
+    
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:130px;
+	left:130px;
+	width:21px;
+	height:22px;
+    
+}
+
+/* ToDoチップの基本設定
+----------------------------- */
+.SCMainChip{
+	display:block;
+	height:36px;
+	box-shadow:2px 2px 5px #666;
+	font-size:12px;
+	color:#464646;
+	margin:10px;
+	padding:0;
+}
+.SCMainChip.Small{
+	width:119px;
+}
+
+.SCMainChip .InnerBox{
+	display:block;
+	position:relative;
+	height:inherit;
+}
+.SCMainChip .InnerBox .inUserName{
+	width:70px;
+	left:5px;
+	font-size:12px;
+	line-height:22px;
+	position:relative;
+	vertical-align:top;
+}
+.addInfomation
+{
+	left:5px;
+	height:38px;
+	position:relative;
+	vertical-align:top;
+    width:70px;
+    font-size:10px;
+    /* 2014/09/30 TCS 河原 $02 TMT BTS-190 DEL */
+}
+.SCMainChip .InnerBox .inUserName .AddCaption{
+	font-size:10px; line-height:12px;
+	
+}
+.SCMainChip .InnerBox .IconBox01{
+	width:20px;
+	height:20px;
+	left:80px;
+	top:3px;
+	display:block;
+	position:absolute;
+}
+.SCMainChip .InnerBox .checkPoint1,
+.SCMainChip .InnerBox .checkPoint2,
+.SCMainChip .InnerBox .checkPoint3,
+.SCMainChip .InnerBox .checkPoint4{
+	display:block;
+	width:150px;
+	/* 2014/09/30 TCS 河原 $02 TMT BTS-190 DEL */
+	position:absolute;
+	font-size:10px;
+	right:5px; top:6px;
+	text-align:right;
+}
+.SCMainChip .InnerBox .checkPoint1{}
+.SCMainChip .InnerBox .checkPoint2{top:20px;}
+
+.SCMainChip .InnerBox .checkPoint3{
+	font-size:11px; height:11px;
+}
+.SCMainChip .InnerBox .checkPoint4{
+	width:57px; font-size:9px;
+	top:20px; text-align:left;
+}
+
+/* スケジュールチップ */
+.ScheduleChip{
+	display:block;
+	width:169px;
+	height:36px;
+	box-shadow:2px 2px 5px #666;
+	font-size:12px;
+	color:#464646;
+	margin:0px;
+	padding:0;
+}
+.ScheduleChip.Small{
+	width:119px;
+}
+
+.ScheduleChip .InnerBox{
+	display:block; position:relative;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2) inset,
+	 -1px -1px 1px 1px rgba(255,255,255,0.2) inset;
+	 height:inherit;
+}
+.ScheduleChip .InnerBox .inUserName{
+	left:5px;
+	font-size:12px;
+	line-height:23px;
+	display:block;
+	position:relative;
+	vertical-align:top;
+}
+.ScheduleChip .InnerBox .inUserName .AddCaption{
+	font-size:10px; line-height:12px;
+	
+}
+.ScheduleChip .InnerBox .IconBox01{
+	width:20px; height:20px;
+	left:88px; top:9px;
+	display:block; position:absolute;
+}
+.ScheduleChip .InnerBox .checkPoint1,
+.ScheduleChip .InnerBox .checkPoint2,
+.ScheduleChip .InnerBox .checkPoint3,
+.ScheduleChip .InnerBox .checkPoint4{
+	display:block;
+	width:150px; height:10px;
+	position:absolute;
+	font-size:10px; line-height:11px;
+	right:5px; top:6px;
+	text-align:right;
+}
+.ScheduleChip .InnerBox .checkPoint1{}
+.ScheduleChip .InnerBox .checkPoint2{top:20px;}
+
+.ScheduleChip .InnerBox .checkPoint3{
+	font-size:11px; height:11px;
+}
+.ScheduleChip .InnerBox .checkPoint4{
+	width:57px; font-size:9px;
+	top:20px; text-align:left;
+}
+
+/* 来店実績チップカラー */
+/*　チップ色-遅れ　*/
+.colorDelay .SCMainChip{
+    border:#EBEBEB 2px solid;
+    background-color:rgb(255,0,0)
+}
+
+/*　チップ色-完了　*/
+.colorComplete .SCMainChip{
+    border:#EBEBEB 2px solid;
+    background-color:rgb(181,189,189)
+}
+
+/*　チップ色-当日未完了　*/
+.colorDue .SCMainChip{
+    border:#EBEBEB 2px solid;
+    background-color:rgb(151,206,240)
+}
+#VisitBoxIn
+{
+    height:217px;   
+}
+
+.todoBoxIn
+{
+    height:218px;   
+}
+
+.SwitchButton
+{
+    position:relative;
+    top:5px;
+    left:290px;
+}
+
+/*
+セグメントボタン
+*/
+.icrop-SegmentedButton 
+{
+    font-size:12px;
+	border-radius:4px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f3f4),to(#bfc1ca));
+	list-style: none;
+	margin-top:-4px;
+	border:none;
+    text-shadow:rgba(255,255,255,0.8) 0 1px 1px;
+    color: #666;	
+}
+.icrop-SegmentedButton li {
+	float: left;
+	width:48px;
+	border: 0px solid black;
+    padding-top:4px;
+    height:25px;
+	text-overflow: clip;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+}
+.icrop-SegmentedButton li:first-child 
+{
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+    border: 1px solid #666;
+    border-right-width:0px;
+}	
+
+.icrop-SegmentedButton li:last-child 
+{
+    border: 1px solid #666;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+#ToDoDispSegmentedButton label
+{
+    position:relative;
+    top:3px;
+
+}
+.icrop-selected {
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb0b4),to(#666d74));
+	color: #fff;
+	height:21px;
+	width: 42px;
+	text-shadow:rgba(0,0,0,0.8) 0 -1px 1px;
+}
+
+/*　アップデートパネルのトリガー　*/
+.VisitSalesTrigger{
+    visibility:hidden;
+}
+
+
+#DateScheduleInner { height: 100%;  }
+
+
+
+
+
+
+/* ToDoチップ欄のくるくる */
+.loadingToDo1 {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:280px;
+	left:87px;
+	width:21px;
+	height:22px;
+}
+
+.loadingToDo2 {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:280px;
+	left:87px;
+	width:21px;
+	height:22px;
+}
+
+.loadingToDo3 {
+	position:absolute;
+	background:url(../Images/SC3010203/animeicn.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:150px;
+	left:87px;
+	width:21px;
+	height:22px;
+}
+
+
+
+
+/* $01 Add Start */
+#SC3290101Div
+{
+    display:inline-block;
+    width:643px;
+    height:301px;
+}
+
+#SC3290102Div
+{
+    display:inline-block;
+    width:643px;
+    height:294px;
+    margin-top:14px;
+}
+/* $01 Add End */

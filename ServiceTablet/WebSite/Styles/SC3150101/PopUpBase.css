@@ -1,0 +1,523 @@
+﻿@charset "utf-8";
+
+/*------------------------------------------------------------------------------*/
+/* 作成 2014/07/23 TMEJ 成澤 【開発】IT9711_タブレットSMB Job Dispatch機能開発 */
+
+/* 中断理由ポップアップウィンドウ Start-->
+------------------------------------------------------------------------------*/
+.popStopWindowBase {
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    z-index: 992;
+    top: 95px;
+    left: 350px;
+    height: 498px;
+    width: 331px;
+    display:none;
+}
+
+.popStopWindowBase .borderBox {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 1px;
+    line-height: 1px;
+    z-index: 1;
+    width: 331px;
+    height: 498px;
+}
+
+.popStopWindowBase .borderBox .myDataBox {
+    height: 497px;
+    display: block;
+    top: 0px;
+    left: 0;
+    border-radius: 9px;
+    border: #4f4f4f 1px solid;
+    box-shadow: 0px 1px 6px #000;
+    z-index: 2;
+}
+
+.popStopWindowBase .gradationBox {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    z-index: 2;
+    width: 331px;
+    height: 498px;
+}
+
+.popStopWindowBase .gradationBox .ArrowMaskR {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 70px;
+    overflow: hidden;
+    top: 18px;
+    right: -17px;
+}
+.popStopWindowBase .gradationBox .ArrowR {
+    display: block;
+    width: 26px;
+    height: 26px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    left: -18px;
+    border-bottom: 1px solid rgba(79,79,79,0.98);
+    border-top: 1px solid rgba(79,79,79,0.98);
+    border-left: 1px solid rgba(79,79,79,0.98);
+    border-right: 1px solid rgba(79,79,79,0.98);
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(13,23,38, 0.98)),
+     to(rgba(13,23,38,0.98)));
+
+}
+.popStopWindowBase .gradationBox .ArrowMaskL {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 70px;
+    overflow: hidden;
+    top: 18px;
+    left: -17px;
+}
+.popStopWindowBase .gradationBox .ArrowL {
+    display: block;
+    width: 26px;
+    height: 26px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    border-bottom: 1px solid rgba(79,79,79,0.98);
+    border-top: 1px solid rgba(79,79,79,0.98);
+    border-left: 1px solid rgba(79,79,79,0.98);
+    border-right: 1px solid rgba(79,79,79,0.98);
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(13,23,38, 0.98)),
+     to(rgba(13,23,38,0.98)));
+
+}
+.scStopPopUpHeaderBg {
+    height: 44px;width: 331px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    border-top: #aeb2bb 1px solid;
+    border-radius: 7px 7px 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.9)),
+     color-stop(0.01, rgba(201, 203, 208, 0.9)),
+     color-stop(0.011, rgba(68, 77, 97, 0.9)),
+     color-stop(0.48, rgba(28, 39, 57, 0.9)),
+     color-stop(0.52, rgba(4, 13, 28, 0.9)),
+     to(rgba(13,23,38,0.98)));
+    z-index: -1;
+}
+.scStopPopUpDataBg {
+    position: absolute;
+    border-radius: 0 0 7px 7px;
+    background: rgba(13,23,38,0.98);
+    top: 46px;
+    left: 0;
+    z-index: -1;
+    width: 331px;
+    height: 466px;
+}
+
+/* ヘッダーエリア start-->
+------------------------------------------------------------------------------*/
+.popStopWindowBase .PopUpHeader {
+    position: relative;
+    height: 47px;
+    z-index: 1000;
+    width: 331px;
+}
+
+.popStopWindowBase .PopUpHeader #lblStopReasonTitle {
+    position: absolute;
+    left: 85px;
+    top: 8px;
+    height: 36px;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #000;
+    width: 158px;
+    white-space: nowrap;
+}
+
+.popStopWindowBase .PopUpHeader .LeftBtn {
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    width: 78px;
+    height: 27px;
+}
+
+.popStopWindowBase .PopUpHeader .LeftBtn span, 
+.popStopWindowBase .PopUpHeader .RightBtn span, 
+.popStopWindowBase .PopUpHeader .RightBtn0 span {
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4f5769),
+     color-stop(0.01, #4f5769),
+     color-stop(0.01, #576174),
+     color-stop(0.5, #1a233e),
+     color-stop(0.5, #000b29),
+     to(#000b29));
+    border-radius: 4px;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    border: #010205 1px solid;
+    width: auto;
+    height: 27px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    z-index: 1;
+}
+
+.popStopWindowBase .PopUpHeader .RightBtn {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 78px;
+    height: 27px;
+}
+
+.popStopWindowBase .PopUpHeader .RightBtn span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#6485cc),
+     color-stop(0.01, #6485cc),
+     color-stop(0.01, #6f96e8),
+     color-stop(0.5, #376fe0),
+     color-stop(0.5, #2361dd),
+     to(#2463de));
+}
+
+/* ヘッダーエリア End<--
+/* データエリア Start-->
+------------------------------------------------------------------------------*/
+.popStopWindowBase .dataBox {
+    display: block;
+    position: absolute;
+    top: 46px;
+    left: 7px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: inset 0px 0px 3px #777;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), 
+     color-stop(0.6, #fff),
+     to(#e6e6e6));
+    z-index: 10;
+    height: 460px;
+    width: 319px;
+}
+
+.popStopWindowBase .dataBox #StopMemoScrollBox {
+    position: relative;
+    left: 9px;
+    top: 0;
+    width: 301px;
+    height: 451px;
+}
+
+.popStopWindowBase .dataBox .innerDataBox {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    padding: 10px 0 0 0;
+    border-radius: 0 0 4px 4px;
+    width: 301px;
+    height: 447px;
+}
+
+.popStopWindowBase .OverShadow {
+    display: block;
+    position: absolute;
+    font-size: 1px;
+    line-height: 1px;
+    z-index: 100;
+    height: 25px;
+    top: 46px;
+    left: 7px;
+    width: 319px;
+    border-radius: 4px;
+    box-shadow: inset 0px 3px 1px rgba(64,64,64,0.4);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(16,16,16,0.4)), 
+     color-stop(0.1, rgba(16,16,16,0.3)),
+     color-stop(0.2, rgba(16,16,16,0)),
+     to(rgba(16,16,16,0)));
+}
+
+.popStopWindowBase .PopInnerTitle {
+    color: #4c566c;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    padding-left: 12px;
+    width:280px;
+    overflow:hidden;
+}
+
+.popStopWindowBase .dataBox .innerDataBox .DataListTable {
+    display: block;
+    border: #bbbbbb 1px solid;
+    border-radius: 9px;
+    box-shadow: 0px 1px 0px #FFF;
+    background-color: #FFF;
+    margin: 7px 0 9px 0;
+    clear: both;
+}
+.popStopWindowBase #dpDetailStopMemo
+{
+    width:300px;
+    height:44px;
+    position:relative;
+    top:0px;
+    opacity:0;
+    z-index:10;
+}
+.popStopWindowBase #lblDetailStopMemo
+{
+    display: inline-block;
+    z-index: 10;
+    position: absolute;
+    left: 3px;
+}
+.popStopWindowBase #txtStopMemo
+{
+    position: relative;
+    top: 0px;
+    left: 4px;
+    display: block;
+    line-height: 18px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    color: #324F85;
+    resize: none;
+    white-space:normal;
+}
+
+.TableWorkingHours dd p.LeftArrow {
+    width: 25px;
+    height: 60px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 203px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.TableWorkingHours dd p.LeftArrow span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #32476e;
+    background: #324f85;
+    transform: skew(55deg) rotate(343deg);
+    position: absolute;
+    top: 17px;
+    left: 35px;
+}
+
+.TableWorkingHours dd p.RightArrow {
+    width: 25px;
+    height: 60px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 203px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.TableWorkingHours dd p.RightArrow span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #32476e;
+    background: #324f85;
+    transform: skew(-55deg) rotate(17deg);
+    position: absolute;
+    top: 17px;
+    left: -52px;
+}
+
+.TableWorkingHours dd p.CenterText,
+.TableWorkingHours .StopTimeLabel,
+.TableWorkingHours #StopTimeTxt {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #324f85;
+    padding: 0;
+    margin: 0;
+    line-height: 43px;
+}
+.TableWorkingHours #StopTimeTxt
+{
+    left:104px;
+    display:none; 
+    position:absolute; 
+    top:-6px; 
+    border:0px;
+}
+.popStopWindowBase .icrop-CustomTextBox-clear
+{
+    left:164px;    
+}
+
+ul.TableWorkingHours li.NextArrow,
+ul.DataListTable li.NextArrow {
+    color: #324f85;
+    
+}
+
+ul.TableWorkingHours li.NextArrow,
+ul.DataListTable li.NextArrow p {
+    display: block;
+    margin: 0 30px 0 0;
+    text-align: right;
+}
+
+ul.DataListTable li p,
+ul.DataListTable li span,
+ul.DataListTable li div{
+    line-height: 43px;
+    display: block;
+    padding: 0 10px 0 10px;
+}
+
+ul.TableWorkingHours li p,
+ul.TableWorkingHours li span,
+ul.TableWorkingHours li div{
+    line-height: 43px;
+    display: block;
+}
+
+.TableWorkingHours {
+    display: block;
+    border: #bbbbbb 1px solid;
+    border-radius: 9px;
+    box-shadow: 0px 1px 0px #FFF;
+    background-color: #FFF;
+    margin: 7px 0 9px 0;
+    clear: both;
+    height: 43px;
+}
+
+ul.TableWorkingHours li:last-child,
+ul.DataListTable li:last-child {
+    border-bottom: none;
+}
+
+ul.TableWorkingHours li.NextArrow,
+ul.DataListTable li.NextArrow {
+    color: #324f85;
+    background: url(../images/SC3240101/NextArrow.png) 273px no-repeat;
+}
+
+.popTechnicianWindow ul.DataListTable li span 
+{
+    padding: 0 0 0 10px;
+    display: inline-block;
+    width:170px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.popTechnicianWindow ul.DataListTable .RightPad
+{
+    width:inherit;
+    display: inline-block;
+    padding: 0 10px 0 0;
+    float: right;
+}
+
+ul.DataListTable li.Check {
+    color: #324f85;
+    background: url(../images/SC3240101/icon_check_blue.png) 266px no-repeat;
+}
+
+.popTechnicianWindow ul.DataListTable li.Check {
+    color: #324f85;
+    background: url(../images/SC3240101/icon_check_blue.png) 226px no-repeat;
+}
+
+.popRestWindow .dataBox .DataListTable {
+    display: block;
+    border: #bbbbbb 1px solid;
+    border-radius: 9px;
+    box-shadow: 0px 1px 0px #FFF;
+    background-color: #FFF;
+    margin: 0;
+    clear: both;
+    width:284px;
+    height:89px;
+}
+ul.DataListTable li
+{
+    color: #000000;
+}
+ul.DataListTable li.Grey {
+    color: #A1A1A1;
+}
+ul.DataListTable li.Check {
+    color: #324f85;
+    background: url(../images/SC3240101/icon_check_blue.png) 266px no-repeat;
+}
+ul.DataListTable li {
+    border-bottom: #bbbbbb 1px solid;
+    font-size: 14px;
+    list-style: none;
+    margin: 0px;
+    text-indent: 0px;
+    padding: 0px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#glayLayer{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:black;
+    opacity: 0.60;
+    filter:alpha(opacity=60);
+}
+#overLayer{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-244px;
+    margin-left:-325px;
+}
+* html #glayLayer{
+    position:absolute;
+}
+* html #overLayer{
+    position: absolute;
+}
+/* データエリア End<--
+/* 中断理由ポップアップウィンドウ End<--
+------------------------------------------------------------------------------*/

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3070401DataSet" targetNamespace="http://tempuri.org/IC3070401DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3070401DataSet.xsd" xmlns="http://tempuri.org/IC3070401DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3070401DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3070401DataSet" msprop:Generator_UserDSName="IC3070401DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3070401Purchaserate" msprop:Generator_TableClassName="IC3070401PurchaserateDataTable" msprop:Generator_TableVarName="tableIC3070401Purchaserate" msprop:Generator_TablePropName="IC3070401Purchaserate" msprop:Generator_RowDeletingName="IC3070401PurchaserateRowDeleting" msprop:Generator_UserTableName="IC3070401Purchaserate" msprop:Generator_RowChangingName="IC3070401PurchaserateRowChanging" msprop:Generator_RowEvHandlerName="IC3070401PurchaserateRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3070401PurchaserateRowDeleted" msprop:Generator_RowEvArgName="IC3070401PurchaserateRowChangeEvent" msprop:Generator_RowChangedName="IC3070401PurchaserateRowChanged" msprop:Generator_RowClassName="IC3070401PurchaserateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DLRCD" msdata:Caption="OPTIONPART" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SERIESCD" msdata:Caption="OPTIONCODE" msprop:Generator_ColumnVarNameInTable="columnSERIESCD" msprop:Generator_ColumnPropNameInRow="SERIESCD" msprop:Generator_ColumnPropNameInTable="SERIESCDColumn" msprop:Generator_UserColumnName="SERIESCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODELCD" msdata:Caption="OPTIONCODE" msprop:Generator_ColumnVarNameInTable="columnMODELCD" msprop:Generator_ColumnPropNameInRow="MODELCD" msprop:Generator_ColumnPropNameInTable="MODELCDColumn" msprop:Generator_UserColumnName="MODELCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OPTIONCODE" msprop:Generator_ColumnVarNameInTable="columnOPTIONCODE" msprop:Generator_ColumnPropNameInRow="OPTIONCODE" msprop:Generator_ColumnPropNameInTable="OPTIONCODEColumn" msprop:Generator_UserColumnName="OPTIONCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OPTIONPART" msprop:Generator_ColumnVarNameInTable="columnOPTIONPART" msprop:Generator_ColumnPropNameInRow="OPTIONPART" msprop:Generator_ColumnPropNameInTable="OPTIONPARTColumn" msprop:Generator_UserColumnName="OPTIONPART" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RATE" msprop:Generator_ColumnVarNameInTable="columnRATE" msprop:Generator_ColumnPropNameInRow="RATE" msprop:Generator_ColumnPropNameInTable="RATEColumn" msprop:Generator_UserColumnName="RATE" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

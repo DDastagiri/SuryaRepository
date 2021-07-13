@@ -1,0 +1,3007 @@
+﻿@charset "utf-8";
+
+#main{
+	background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#b7b7b7));
+}
+#main #contents{
+	display:block;
+	padding:20px 20px 20px 20px;
+}
+
+#contents .contentsFrame {
+    position:relative;
+	height:615px;
+	border:none;	
+	border-radius: 7px 7px 7px 7px;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+							color-stop(0.90, #FFF),
+							color-stop(0.91, #FFF),
+							to(#dfdfdf));
+}
+
+#contents .contentTitle{
+	width:190px;
+	font-size:16px;
+	padding:0px 0 0px 16px;
+	margin-bottom:7px;
+	color:#FFFFFF;
+	height:26px;
+	display:block;
+	display: table-cell;
+	vertical-align: middle;
+
+	border-top-left-radius:7px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:56px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.50, #797d84),
+            color-stop(0.51, #6a6e76),
+						to(#6a6e76));
+}
+
+#contents .iconsBoxMemo{
+	width:31px; height:31px;
+	border:#666 1px solid;
+	border-radius:3px;
+	background:url(../images/iconMemo.png) 7px 7px no-repeat #FFF;
+}
+#contents .iconsBoxMemo a{
+	display:block;
+	width:31px; height:31px;
+}
+
+#contents .iconsBoxCalDate a,
+#contents .iconsBoxCalWeek a,
+#contents .iconsBoxCalMonth a,
+#contents .iconsBoxCalPlus a,
+#contents .iconsBoxTrash a{ color:#333;}
+
+#contents .iconsBoxCalDate{
+	width:163px;
+	border:#666 1px solid;
+	border-radius:3px;
+}
+
+#contents .iconsBoxCalWeek,
+#contents .iconsBoxCalMonth,
+#contents .iconsBoxCalPlus,
+#contents .iconsBoxTrash{
+	width:31px;
+	border:#666 1px solid;
+	border-radius:3px;
+}
+#contents .iconsBoxCalWeek{margin:0 10px;}
+
+#contents .iconsBoxTrash{
+	position:absolute;
+	padding:4px 0;
+	bottom:80px; right:35px;
+	
+}
+
+.stc01Box03{
+	position:absolute;
+	background:#FFF;
+	border-radius: 7px 7px 7px 7px;/* ボックスの角を丸める */
+	box-shadow:3px 3px 3px #666;/* ボックスの影を描画 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+							color-stop(0.65, #f2f2f2),
+							to(#e2e2e2));/* バックグラウンドのグラデーション */
+	font-family: "ヒラギノ角ゴ Pro W6", HiraKakuProN-W6, "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.stc01Box03{
+	width:982px;
+	height:463px;
+	top:0;
+	left:0;
+}
+
+.stc01Box03Filter
+{
+    width:982px;
+	height:463px;
+	top:0px;
+	left:0;
+	position:absolute;z
+	background:#CCC;
+	border:#a5a5a5 1px solid;
+	border-radius: 7px 7px 7px 7px;/* ボックスの角を丸める */
+	opacity:0.8;
+}
+
+
+.stc01Box03 .Box03In {
+	position:absolute;
+	left:15px;
+	top:15px;
+	width:952px;
+	height:433px;
+	font-size:12px;
+	line-height:18px;
+}
+.stc01Box03 .TabButtonSet
+{
+	width:952px;
+	height:37px;
+}
+.stc01Box03 ul
+{
+    list-style-type:none;
+}
+
+.stc01Box03 .TabButtonSet li
+{
+	border-radius:5px 5px 0 0;
+	float:left;
+}
+.stc01Box03 .TabButtonSet li.TabButton01,
+.stc01Box03 .TabButtonSet li.TabButton02,
+.stc01Box03 .TabButtonSet li.TabButton03{
+	width:320px;
+	height:36px;
+	border-bottom:#B3B3B3 1px solid;
+}
+.stc01Box03 .TabButtonSet li.TabButton03{
+	width:312px;
+}
+.stc01Box03 .TabButtonSet li.TabButton01 .Button,
+.stc01Box03 .TabButtonSet li.TabButton02 .Button,
+.stc01Box03 .TabButtonSet li.TabButton03 .Button,
+.stc01Box03 .TabButtonSet .Rollover{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:312px;
+	height:26px;
+	padding:9px 0 0 0;
+	border-top:#95989b 1px solid;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb0b4), 
+							to(#676e75));
+	text-align:center;
+	font-size:14px;
+	line-height:16px;
+	text-shadow:#434548 0 -1px 0;
+	color:#FFF;
+}
+.stc01Box03 .TabButtonSet .Rollover{
+	width:310px;
+	height:27px;
+	background:#FFF;
+	color:#666666;
+	border-top:#b3b3b3 1px solid;
+	border-left:#b3b3b3 1px solid;
+	border-right:#b3b3b3 1px solid;
+	border-bottom:none;
+	text-shadow:#FFF 0 -1px 0;
+}
+
+.stc01Box03 .TabBox01, .TabBox02, .TabBox03{
+	position:absolute;
+	width:950px;
+	height:400px;
+	background:#FFF;
+	border-top:#B3B3B3 1px solid;
+	border-left:#B3B3B3 1px solid;
+	border-right:#B3B3B3 1px solid;
+	border-bottom:#B3B3B3 1px solid;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	
+}
+
+.stc01Box03 .TabBox01 .ContentBox{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	left:16px;
+	top:15px;
+	width:920px;
+	height:366px;
+	border:none;
+	border-radius:0px;
+	color:#666666;
+}
+
+.stc01Box03 .TabBox01 .ContentBox .LeftTopBox{
+	font-family: HiraKakuProN-W3, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	left:0;
+	top:0;
+	border:#B3B3B3 1px solid;
+	border-radius:7px;
+	width:319px;
+	height:135px;
+	font-size:12px;
+	line-height:16px;
+}
+.stc01Box03 .TabBox01 .LeftTopBoxIn{
+	position:absolute;
+	left:15px;
+	bottom:5px;
+	width:289px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBox{
+	position:absolute;
+	left:0;
+	bottom:0;
+	border:#B3B3B3 1px solid;
+	border-radius:7px;
+	width:319px;
+	height:212px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn{
+	font-family: HiraKakuProN-W3, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	left:15px;
+	bottom:6px;
+	width:289px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn td{
+	text-align:left;
+	vertical-align:top;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn .BoxMgn{
+	margin:0 0 7px 0;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn .BoxMgn02{
+	margin:0 0 9px 0;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn ul.ListMgn01{
+	margin:8px 0 0 0;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.TextE{width:13px; text-align:left; line-height:24px;}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.TextF{width:14px; text-align:right; line-height:24px;}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter01,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter02,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter03,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter04{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:40px;
+	height:20px;
+	display: block;
+	font-size:14px;
+	line-height:24px;
+	text-align: center;
+	text-shadow: 0px 1px 0px #FFF;
+	color:#7F7F7F;
+	background:-webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CACACA));
+	border-top:#949494 1px solid;
+	border-left:#949494 1px solid;
+	border-bottom:#949494 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter01{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter02{
+	width:42px;
+	border-left:#949494 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter03{
+	width:42px;
+	border-left:#949494 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter04{
+	border-left:#949494 1px solid;
+	border-right:#949494 1px solid;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.stc01Box03 .TabBox01 .LeftBottomBoxIn ul.Meter01RolloverSet{
+	position:absolute;
+	left:97px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter00Rollover,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter01Rollover,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter02Rollover,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter03Rollover{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:40px;
+	height:20px;
+	display: block;
+	font-size:14px;
+	line-height:24px;
+	text-align: center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #666;
+	background:-webkit-gradient(linear, left top, left bottom, from(#2a5fb5), 
+													to(#68a5f5)); 
+	border-top:#0c3b89 1px solid;
+	border-left:#0c3b89 1px solid;
+	border-bottom:#0c3b89 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter00Rollover{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-left:#FFF 1px solid;
+	border-right:#0c3b89 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter01Rollover{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter02Rollover{
+	width:42px;
+	border-left:#FFF 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Meter03Rollover{
+	width:41px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-left:#FFF 1px solid;
+	border-right:#0c3b89 1px solid;
+}
+
+
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li{
+	float:left;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Temperature{
+	display:block;
+	width:81px;
+	text-align:right;
+	height:18px;
+	padding:6px 0 0 0;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.Temperature span{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:16px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton01,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton02,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton03{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:58px;
+	height:24px;
+	display: block;
+	font-size:14px;
+	line-height:24px;
+	text-align: center;
+	text-shadow: 0px 1px 0px #FFF;
+	color:#7F7F7F;
+	background:-webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CACACA));
+	border-top:#A0A0A0 1px solid;
+	border-left:#A0A0A0 1px solid;
+	border-bottom:#A0A0A0 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton01{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton02{
+	width:60px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton03{
+	border-right:#A0A0A0 1px solid;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton01Rollover,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton02Rollover,
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton03Rollover{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:58px;
+	height:24px;
+	display: block;
+	font-size:14px;
+	line-height:24px;
+	text-align: center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #666;
+	background:-webkit-gradient(linear, left top, left bottom, from(#5A7CE4), 
+													color-stop(50%, #5A7CE4), 
+													color-stop(50%, #6489E9), 
+													to(#8CAFEC)); 
+	box-shadow:inset 0px 3px 5px #666;
+	border-top:#6A8DD9 1px solid;
+	border-left:#6A8DD9 1px solid;
+	border-bottom:#6A8DD9 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton01Rollover{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton02Rollover{
+	border-left:#FFF 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn li.SwitchButton03Rollover{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-right:#6A8DD9 1px solid;
+}
+.stc01Box03 .TabBox01 .LeftBottomBoxIn .stcCheckIcn{
+	background:url(../Images/SC3150102/stcCheckIcn.png) 50px 3px no-repeat;
+}
+
+.stc01Box03 .TabBox01 .RightBox{
+	position:absolute;
+	right:0;
+	top:0;
+	border:#B3B3B3 1px solid;
+	border-radius:7px;
+	width:582px;
+	height:364px;
+}
+.stc01Box03 .TabBox01 .RightBoxIn
+{
+	position:absolute;
+	left:10px;
+	top:35px;
+	width:562px;
+	height:319px;
+	overflow:hidden;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01,
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02{
+	width:562px;
+	height:47px;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01 td,
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02 td{
+	text-align:left;
+	vertical-align:top;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01{
+	background:#f0f0f0;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02{
+	background:#FFF;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01 .ListItem01,
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02 .ListItem01{
+	background:url(images/stcHistoryIcn.png) 11px 16px no-repeat;
+	width:184px;
+	padding:5px 0 0 35px;
+	font-size:13px;
+	line-height:15px;
+	color:#646464;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01 .ListItem01 span,
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02 .ListItem01 span{
+	font-size:10px;
+	color:#8c8c8c;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01 .ListItem02,
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02 .ListItem02{
+	width:65px;
+	padding:16px 0 0 0;
+	font-size:13px;
+	color:#646464;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01 .ListItem03,
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02 .ListItem03{
+	width:138px;
+	padding:16px 0 0 0;
+	font-size:13px;
+	color:#646464;
+}
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox01 .ListItem04,
+.stc01Box03 .TabBox01 .RightBoxIn .ListBox02 .ListItem04{
+	background:url(images/stcHistoryIcn02.png) 0px 16px no-repeat;
+	padding:16px 0 0 26px;
+	font-size:12px;
+	color:#4c4c4c;
+}
+
+?.stc01Box03 .TabBox02 .ContentBox  
+{
+    font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    position:absolute;
+    left:16px;
+    top:16px;
+    width:918px;
+    height:363px;
+    border:#B3B3B3 1px solid;
+    border-radius:7px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft,
+.stc01Box03 .TableListRight  
+{
+    position:absolute; 
+    bottom:15px; 
+    width:445px; 
+    height:315px; 
+    font-size:14px; 
+    line-height:16px; 
+    color:#666666; 
+}
+
+.stc01Box03 .TabBox02 .TableListLeft 
+{
+     left:15px; 
+}
+     
+.stc01Box03 .TabBox02 .TableListRight  
+{
+    right:15px; 
+    width:429px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList,
+.stc01Box03 .TableListRight .TableList  
+{
+    position:absolute;
+    left:0;
+    bottom:0;
+    border:#bcbcbc 1px solid;
+    width:441px;
+    height:292px;
+}
+
+.stc01Box03 .TabBox02 .TableListRight .TableList 
+{
+    width:427px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList table,
+.stc01Box03 .TableListRight .TableList table  
+{
+    width:441px;
+}
+
+.stc01Box03 .TabBox02 .TableListRight .TableList table  
+{
+    width:427px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList th,
+.stc01Box03 .TableListRight .TableList th  
+{
+    height:23px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#868990),  to(#696d75));
+    border-left:#FFF 1px solid;
+    border-right:#868990 1px solid;
+    padding:4px 0 0 0;
+    text-align:center;
+    vertical-align:top;
+    color:#FFF;
+    text-shadow:#55585e 0 -1px 0;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList .listtop01  
+{
+    width:29px;
+    border-left:none;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList .listtop02  
+{
+    width:140px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList .listtop03  
+{
+    width:89px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList .listtop04  
+{
+    width:88px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList .listtop05  
+{
+    width:89px;
+    border-right:none;
+}
+
+.stc01Box03 .TabBox02 .TableListRight .TableList .listtop01  
+{
+    width:34px;
+    border-left:none;
+}
+
+.stc01Box03 .TabBox02 .TableListRight .TableList .listtop02  
+{
+    width:141px;
+}
+
+.stc01Box03 .TabBox02 .TableListRight .TableList .listtop03  
+{
+    width:123px;
+}
+
+.stc01Box03 .TabBox02 .TableListRight .TableList .listtop04  
+{
+    width:124px;
+    border-right:none;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableListScroll,
+.stc01Box03 .TableListRight .TableListScroll  
+{
+    overflow:hidden; 
+    display:block; 
+    height:265px;
+}
+
+.stc01Box03 .TabBox02 .TableListLeft .TableList td,
+.stc01Box03 .TableListRight .TableList td  
+{
+    background:#FFF;
+    height:26px;
+    border-left:#FFF 1px solid;
+    border-right:#868990 1px solid;
+    padding:14px 0 0 0;
+    text-align:center;
+    vertical-align:top;
+}
+
+.stc01Box03 .TabBox02 .TableList td.BackGray  
+{
+    background:#efefef;
+}
+
+.stc01Box03 .TabBox02 .TableList td.NoColumn  
+{
+    border-left:none;
+}
+
+.stc01Box03 .TabBox02 .TableList td.Subtotal  
+{
+    border-right:none;
+}
+
+.stc01Box03 .TabBox02 .IcnButtonSet  
+{
+    position:absolute;
+    width:96px;
+    right:16px;
+    top:15px;
+}
+
+.stc01Box03 .TabBox02 .IcnButton01  
+{
+    position:absolute;
+    left:0;
+    top:0;
+    background:url(images/stc01listicn01.png) 0 0 no-repeat;
+    width:26px;
+    height:26px;
+}
+
+.stc01Box03 .TabBox02 .IcnButton02  
+{
+    position:absolute;
+    left:35px;
+    top:0;
+    background:url(images/stc01listicn02.png) 0 0 no-repeat;
+    width:26px;
+    height:26px;
+}
+
+.stc01Box03 .TabBox02 .IcnButton03  
+{
+    position:absolute;
+    left:70px; top:0;
+    background:url(images/stc01listicn03.png) 0 0 no-repeat;
+    width:26px;
+    height:26px;
+}
+
+/*S-SA-07｜ご用命事項*/]
+.mainblockContentAreaS-SA-07  
+{
+    width:984px;
+    border:#999 1px solid;
+    border-radius:8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.6, #FEFEFE), color-stop(0.7, #F4F4F4), to(#DBDBDB));
+    box-shadow:3px 3px 4px #666666;
+}
+
+.S-SA-07Main
+{
+    border:#B9B9B9 1px solid;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    position:relative;
+    top:-1px;
+    z-index:1;
+    background:#FFF;
+}
+
+.S-SA-07Main:after  
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.S-SA-07Wrap
+{
+    padding:15px;
+}
+
+.S-TC-07Body 
+{
+    width:982px;
+    height:463px;
+    border:#999999 1px solid;
+    border-radius:8px;
+    background:-webkit-gradient(linear, left top, left bottom, from(#FFF),
+    to(#DFDFDF));
+    box-shadow:5px 5px 5px #666;
+    clear:both;
+    position:relative;
+    top:130px;
+    left:19px;
+}
+
+.S-TC-07BodyWrap 
+{
+    padding:15px;
+}
+
+.S-TC-07Tab
+{
+    list-style: none;
+    font-size:14px;
+    text-align:center;
+    line-height:34px;
+    position:relative;
+    z-index:100;
+}
+
+.S-TC-07Tab:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.S-TC-07Tab li 
+{
+    width: 310px;
+    height:34px;
+    border-top:#B3B3B3 1px solid;
+    border-right:#B3B3B3 1px solid;
+    border-left:#B3B3B3 1px solid;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    background:#FFF;
+    float:left;
+}
+
+.S-TC-07Tab li:nth-child(1)
+{
+    margin-right:8px;
+}
+.S-TC-07Tab li:nth-child(2)
+{
+    margin-right:8px;
+}
+.S-TC-07Tab li:nth-child(3) 
+{
+    margin-right:0px;
+}
+
+.S-TC-07Tab a 
+{
+    color:#656565;
+}
+
+.S-TC-07Tab li.S-TC-07TabNoSelected
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#ADB0B4), to(#676E75));
+}
+
+.S-TC-07Tab li.S-TC-07TabNoSelected a
+{
+    color:#FFF;
+    text-shadow:0px -1px 0px #666;
+}
+
+.S-TC-07TabWrap  
+{
+    padding:15px;
+    border:none;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    background:#FFF;
+    position:relative;
+}
+
+.S-TC-07TabWrap:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.S-TC-07TabWrap h2 
+{
+    width:186px;
+    height:25px;
+    border-top-left-radius:7px;
+    border-bottom-right-radius:25px;
+    font-size:14px;
+    text-indent:14px;
+    line-height:26px;
+    color:#FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E929A), color-stop(0.49, #797D84), color-stop(0.5, #6A6E76), to(#5D616A));
+    font-weight:400;
+}
+/* -----------------------------------------
+ IT9611_次世代サービス 工程管理機能開発 START
+--------------------------------------------*/
+
+/*
+.S-SA-07Tab01Left
+{
+    margin-right:15px;
+    margin-bottom:15px;
+    border:#B9B9B9 1px solid;
+    border-radius:8px;
+    width:447px;
+    float:left;
+}
+
+.S-SA-07Tab01Left:after  
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.S-SA-07Tab01Left1-1  
+{
+    padding:45px 15px 15px 15px;
+}
+
+.S-SA-07Tab01Left1-1 p 
+{
+    height:361px;
+}
+
+.S-SA-07Tab01Right  
+{
+    width:448px;
+    float:left;
+}
+
+
+.S-SA-07Tab01RightTab { height:25px; position:relative; z-index:777; }
+.S-SA-07Tab01RightTab:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-SA-07Tab01RightTab ul { list-style:none; }
+.S-SA-07Tab01RightTab li { margin-right:5px; width:110px; float:left; font-size:12px; font-weight:400; line-height:27px; text-shadow:0px 1px 0px #333; text-align:center; border-top:#B9B9B9 1px solid; border-right:#B9B9B9 1px solid; border-left:#B9B9B9 1px solid; border-top-left-radius:8px; border-top-right-radius:8px; }
+
+.S-SA-07Tab01RightTabOff { background: -webkit-gradient(linear, left top, left bottom, from(#A8ABB0), to(#666D75)); }
+.S-SA-07Tab01RightTabOff a { color:#FFF; }
+
+.S-SA-07Tab01RightTabOn { background:#FFF; }
+.S-SA-07Tab01RightTabOn a { color:#656565; text-shadow:none; }
+
+
+.S-SA-07Tab01Right1-1 { border:#B9B9B9 1px solid; border-bottom-right-radius:8px; border-bottom-left-radius:8px; position:relative; top:-1px; z-index:1; overflow-y:scroll; clear:both; }
+
+.S-SA-07Tab01RightWrap { padding:17px 15px 0 15px; height:402px; overflow-y: scroll; }
+
+.S-SA-07Tab01Right1-1 dl { margin-bottom:15px; font-size:12px; color:#333; clear:both; }
+.S-SA-07Tab01Right1-1 dl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-SA-07Tab01Right1-1 dl dt { width:75px; line-height:33px; float:left; color:#666666; }
+.S-SA-07Tab01Right1-1 dl dd { float:left; font-size:14px; font-weight:600; line-height:32px; text-align:center; text-shadow:0px -1px 0px #333; }
+.S-SA-07Tab01Right1-1 dl dd a {  color:; display:block; }
+.S-SA-07Tab01Right1-1 dl dt span { padding-top:30px; display:inline-block; }
+
+
+
+.S-SA-07Tab01Right1-1-1 { width:113px; border:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab01Right1-1-2 { width:111px; border-top:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab01Right1-1-3 { width:113px; border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+
+.S-SA-07Tab01Right1-1-1Off { width:113px; border:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab01Right1-1-2Off { width:111px; border-top:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab01Right1-1-3Off { width:113px; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+.S-SA-07Tab01Right1-1-1 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab01Right1-1-2 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab01Right1-1-3 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+
+.S-SA-07Tab01Right1-1-1Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab01Right1-1-2Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab01Right1-1-3Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+
+
+.S-SA-07Tab01Right1-2-1 { width:169px; display:block; border-top:#2B5EAD 1px solid; border-left:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab01Right1-2-2 { width:169px; display:block; border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+
+.S-SA-07Tab01Right1-2-1Off { width:169px; color:#7F7F7F; text-shadow:0px 1px 0px #FFF; display:block; border-top:#9B9B9B 1px solid; border-left:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab01Right1-2-2Off { width:169px; color:#7F7F7F; text-shadow:0px 1px 0px #FFF; display:block; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+.S-SA-07Tab01Right1-2-1 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab01Right1-2-2 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+
+.S-SA-07Tab01Right1-2-1Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab01Right1-2-2Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+
+
+.S-SA-07Tab01Right1-5-1 { padding:0 10px 0 10px; width:319px; border:#BBBBBB 1px solid; border-radius:10px; background: none; height:92px; }
+
+
+
+.S-SA-07Tab02Left { margin-right:15px; margin-bottom:15px; border:#B9B9B9 1px solid; border-radius:8px; width:447px; float:left; }
+.S-SA-07Tab02Left:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.S-SA-07Tab02Left1-1 { padding:42px 15px 15px 15px; }
+.S-SA-07Tab02Left1-1 p { height:361px; }
+
+
+
+.S-SA-07Tab02Right { width:448px; float:left; }
+
+
+.S-SA-07Tab02Right1-1 { border:#B9B9B9 1px solid; border-bottom-right-radius:8px; border-bottom-left-radius:8px; position:relative; top:-1px; z-index:1; height:416px; overflow-y:scroll; clear:both; }
+
+.S-SA-07Tab02RightWrap { padding:15px 15px 5px 15px; }
+
+.S-SA-07Tab02Right1-1 dl { margin-bottom:10px; height:26px; font-size:12px; color:#333; clear:both; }
+.S-SA-07Tab02Right1-1 dl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-SA-07Tab02Right1-1 dl dt { width:88px; line-height:25px; float:left; color:#666666; }
+.S-SA-07Tab02Right1-1 dl dd { float:left; font-size:14px; line-height:24px; }
+.S-SA-07Tab02Right1-1 dl dd a {  color:; display:block; }
+.S-SA-07Tab02Right1-1 dl dt span { padding-top:52px; display:inline-block; }
+
+
+.S-SA-07Tab02Right1-1-1 { width:108px; text-align:center; border:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-1-2 { width:108px; text-align:center; border-top:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-1-3 { width:108px; text-align:center; border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+
+.S-SA-07Tab02Right1-1-1Off { width:108px; text-align:center; border:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-1-2Off { width:108px; text-align:center; border-top:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-1-3Off { width:108px; text-align:center; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+.S-SA-07Tab02Right1-1-1 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab02Right1-1-2 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab02Right1-1-3 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+
+.S-SA-07Tab02Right1-1-1Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab02Right1-1-2Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab02Right1-1-3Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+
+
+.S-SA-07Tab02Right1-2-1 { width:162px; text-align:center; border-top:#2B5EAD 1px solid; border-left:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-2-2 { width:162px; text-align:center; border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+
+.S-SA-07Tab02Right1-2-1Off { width:162px; text-align:center; display:block; border-top:#9B9B9B 1px solid; border-left:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-2-2Off { width:162px; text-align:center; display:block; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+.S-SA-07Tab02Right1-2-1 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab02Right1-2-2 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+
+.S-SA-07Tab02Right1-2-1Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab02Right1-2-2Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+
+.S-SA-07Tab02Right1-2-3 { width:202px; background:#EEE; border:0; background: none; text-shadow:0px 0px 0px #FFF; color:#7F7F7F; text-align:left; }
+.S-SA-07Tab02Right1-2-3 input { margin-right:5px; margin-left:5px; width:60px; height:24px; border:#CCC 1px solid; background:none; }
+
+
+.S-SA-07Tab02Right1-2-4 { width:125px; background:#EEE; border:0; background: none; text-shadow:0px 0px 0px #FFF; color:#7F7F7F; text-align:right; }
+.S-SA-07Tab02Right1-2-4 input { margin-left:5px; width:85px; height:24px; border:#CCC 1px solid; background:none; }
+
+.S-SA-07Tab02Right1-2-5 { width:125px; background:#EEE; border:0; background: none; text-shadow:0px 0px 0px #FFF; color:#7F7F7F; text-align:right; }
+.S-SA-07Tab02Right1-2-5 input { margin-right:5px; margin-left:5px; width:65px; height:24px; border:#CCC 1px solid; background:none; }
+
+.S-SA-07Tab02Right1-2-6 { width:202px; background:#EEE; border:0; background: none; text-shadow:0px 0px 0px #FFF; color:#7F7F7F; text-align:left; }
+.S-SA-07Tab02Right1-2-6 span { width:95px; display: block; float: left; }
+
+.S-SA-07Tab02Right1-2-6 input { margin-right:5px; width:60px; height:24px; border:#CCC 1px solid; background:none; }
+
+
+
+.S-SA-07Tab02Right1-4-1 { width:80px; text-align:center; border:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-4-2 { width:80px; text-align:center; border-top:#2B5EAD 1px solid; border-right:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-4-3 { width:80px; text-align:center; border-top:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-4-4 { width:80px; text-align:center; border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+
+.S-SA-07Tab02Right1-4-1Off { width:80px; text-align:center; border:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-4-2Off { width:80px; text-align:center; border-top:#9B9B9B 1px solid; border-right:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-4-3Off { width:80px; text-align:center; border-top:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-4-4Off { width:80px; text-align:center; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+.S-SA-07Tab02Right1-4-1 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab02Right1-4-2 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab02Right1-4-3 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab02Right1-4-4 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+
+.S-SA-07Tab02Right1-4-1Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab02Right1-4-2Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab02Right1-4-3Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab02Right1-4-4Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+
+
+.S-TC-07RightScrollFlick .S-SA-07Tab02Right1-5-1 
+{
+    text-align:center;
+    border:#2B5EAD 1px solid;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC));
+    color:#FFF;
+    text-shadow:0px -1px 0px #666;
+}
+
+.S-TC-07RightScrollFlick .S-SA-07Tab02Right1-5-1Off 
+{
+    text-align:center;
+    border:#9B9B9B 1px solid;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+}
+
+.S-SA-07Tab02Right1-5-2 { width:324px; text-align:center; border:#2B5EAD 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-5-2 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+
+.S-SA-07Tab02Right1-5-2Off { width:324px; text-align:center; border:#9B9B9B 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-5-2Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+
+
+.S-SA-07Tab02Right1-3-1 { width:108px; text-align:center; border:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-SA-07Tab02Right1-3-2 { width:108px; text-align:center; border-top:#2B5EAD 1px solid; border-right:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+
+
+.S-SA-07Tab02Right1-3-1Off { width:108px; text-align:center; border:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-SA-07Tab02Right1-3-2Off { width:108px; text-align:center; border-top:#9B9B9B 1px solid; border-right:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+.S-SA-07Tab02Right1-3-1 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+.S-SA-07Tab02Right1-3-2 a { color:#FFF; text-shadow:0px -1px 0px #666; }
+
+.S-SA-07Tab02Right1-3-1Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+.S-SA-07Tab02Right1-3-2Off a { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; }
+
+
+.S-SA-07Tab02Right1-3-3 { width:108px; background:#EEE; border:0; background: none; text-shadow:0px 0px 0px #FFF; color:#7F7F7F; text-align:right; }
+
+.S-SA-07Tab02Right1-3-3 input { margin-right:5px; width:60px; height:24px; border:#CCC 1px solid; background:none; }
+
+
+
+.S-TC-07Left  
+{
+    margin-right:15px;
+    width:451px;
+    height:363px;
+    border:#B3B3B3 1px solid;
+    border-radius:8px;
+    float:left;
+}
+
+.S-TC-07LeftButton  
+{
+    margin:0 -170px -32px 0;
+    width:170px;
+    height:32px;
+    position:relative;
+    top:-16px;
+    left:266px;
+}
+
+.S-TC-07LeftButton li 
+{
+    height:30px;
+    float:left;
+    border:#9B9B9B 1px solid;
+    background:-webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    text-align:center;
+}
+
+.S-TC-07LeftButton li.S-TC-07LeftButtonSelected 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#2A5CB4), to(#74ACFC));
+    border:#3667B1 1px solid;
+}
+
+.S-TC-07LeftButton li:nth-child(1) 
+{
+    width:83px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.S-TC-07LeftButton li:nth-child(2) 
+{
+    width:84px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border-left:0;
+}
+
+.S-TC-07LeftButton li a 
+{
+    height:30px;
+    display:block;
+}
+
+.S-TC-07LeftButton  li:nth-child(1) a 
+{
+    background:url(images/ico100.png) no-repeat center center;
+}
+
+.S-TC-07LeftButton  li:nth-child(2) a 
+{
+    background:url(images/ico101.png) no-repeat center center;
+}
+
+.S-TC-07LeftMemo  
+{
+    margin:69px 15px 0 15px;
+    height:254px;
+}
+
+
+.S-TC-07Right
+{
+    width:450px;
+    height:363px;
+    float:left;
+}
+
+.S-TC-07Right:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.S-TC-07RightTab 
+{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    font-size:14px;
+    line-height:25px;
+}
+
+.S-TC-07RightTab:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.S-TC-07RightTab li 
+{
+    margin-right:5px;
+    width:110px;
+    height:25px;
+    border-top:#B3B3B3 1px solid;
+    border-right:#B3B3B3 1px solid;
+    border-left:#B3B3B3 1px solid;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    background:#FFF;
+    float:left;
+    color:#656565;
+}
+
+.S-TC-07RightTab li.S-TC-07RightTabNoSelected
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#A7ABB0), to(#666D75));
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+}
+
+
+.S-TC-07RightTabWrap
+{
+    height:338px;
+    border:#B3B3B3 1px solid;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    position:relative;
+    top:-1px;
+    overflow: hidden;
+}
+
+.S-TC-07RightScroll 
+{
+    top:14px;
+    height:300px;
+    padding:14px;
+    padding-top:0px;
+    overflow:hidden;
+}
+.S-TC-07RightScrollFlick
+{
+    height:auto;
+}
+
+.S-TC-07RightBody  
+{
+    top:14px;
+    height:300px;
+    padding:14px;
+    overflow:hidden;
+}
+.S-TC-07RightBodyFlick
+{
+    height:auto;
+}
+
+
+.S-TC-07Right dl 
+{
+    line-height:24px;
+    color:#333;
+    clear:both;
+}
+.S-TC-07RightBody dl 
+{
+    margin-bottom:10px;
+}
+.S-TC-07RightScroll dl
+{
+    margin-bottom:9px;
+}
+
+.S-TC-07Right dl:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.S-TC-07Right dl dt 
+{
+    float:left;
+    color:#666;
+    font-size:12px;
+}
+.S-TC-07RightBody dl dt
+{
+    padding-top: 8px;
+    height:27px;
+}
+.S-TC-07RightScroll dl dt
+{
+    line-height:25px;
+}
+
+.S-TC-07Right dl dd 
+{
+    float:left;
+    font-size:14px;
+    text-align:center;
+    text-shadow:0px -1px 0px #333;
+    display:block;
+}
+.S-TC-07RightBody dl dd
+{
+    line-height:33px;
+}
+.S-TC-07RightScroll dl dd
+{
+    line-height:24px;
+    height:24px;
+}
+
+
+.S-TC-07Right dl dt span 
+{
+    display:inline-block;
+}
+
+.S-SA-07Tab02Right1-5-1Display
+{
+    display:inline-block;
+}
+.S-TC-07RightList
+{
+    width: 327px;
+    margin-left: 87px;
+    margin-bottom: 10px;
+    border:#BBB 1px solid;
+    border-radius:10px;
+    background:#FFF;
+    line-height:43px;
+    font-size:17px;
+}
+
+.S-TC-07RightList li 
+{
+    padding-left:10px;
+    height:42px;
+}
+
+.S-TC-07RightList li 
+{
+    border-top:#FFF 1px solid;
+    border-bottom:#BBB 1px solid;
+}
+
+.S-TC-07RightList li:last-child 
+{
+    border-bottom:none;
+}
+
+.S-TC-07RightListChecked 
+{
+    color:#324F85;
+    background:url(../Images/SC3150102/ico46.png) no-repeat 300px center;
+}
+*/
+
+/* ご用命事項iframe
+----------------------------*/ 
+.S-TC-07Main
+{
+    border:#B9B9B9 1px solid;
+    border-radius:8px;
+    width:917px;
+    height:363px;
+    float:left;
+    
+}
+
+/* 車両情報iframe   
+----------------------------*/   
+.S-TC-05Left2-1Iframe
+{
+    width:316px;
+    height:174px;
+    float:left;
+    border:none;
+}
+
+/* -----------------------------------------
+ IT9611_次世代サービス 工程管理機能開発 END
+--------------------------------------------*/
+
+/* 確認事項タブ */
+/*ボタン3列---基本*/
+.S-TC-07RightBody dl dd.S-TC-07Right01-1 
+{
+    border:#2B5EAD 1px solid;
+    border-top-left-radius:12px;
+    border-bottom-left-radius:12px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC));
+}
+.S-TC-07RightBody dl dd.S-TC-07Right01-2 { border-top:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right01-3 { border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right01-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right01-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right01-3Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+/*ボタン3列---入力あり*/
+.S-TC-07RightBody dl dd.S-TC-07Right03-1 { border:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right03-2 { border-top:#2B5EAD 1px solid; border-right:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right03-3 { border:0; background: none; text-shadow:none; color:#7F7F7F; text-align:right; }
+.S-TC-07RightBody dl dd.S-TC-07Right03-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right03-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-right:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right03-3Off { border:0; background: none; text-shadow:none; color:#7F7F7F; text-align:right; }
+
+/*ボタン2列---基本*/
+.S-TC-07RightBody dl dd.S-TC-07Right02-1 { border-top:#2B5EAD 1px solid; border-left:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right02-2 { border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right02-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; display:block; border-top:#9B9B9B 1px solid; border-left:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right02-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+/*ボタン4列---基本*/
+.S-TC-07RightBody dl dd.S-TC-07Right04-1 { border:#2B5EAD 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right04-2 { border-top:#2B5EAD 1px solid; border-right:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right04-3 { border-top:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right04-4 { border:#2B5EAD 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightBody dl dd.S-TC-07Right04-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right04-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-right:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right04-3Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightBody dl dd.S-TC-07Right04-4Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-right-radius:12px; border-bottom-right-radius:12px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+/*ボタン1列---基本*/
+.S-TC-07RightBody dl dd.S-TC-07Right05-1 { height:83px; border:none; background: none; }
+.S-TC-07RightBody dl dd.S-TC-07Right05-1Off { width:151px; color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-left:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-left-radius:12px; border-bottom-left-radius:12px; background: none; }
+.S-TC-07RightBody .S-TC-07Right05-1Memo 
+{
+    width:328px;
+    border:#BBBBBB 1px solid;
+    border-radius:12px;
+    background: none;
+    overflow:hidden;
+}
+.S-TC-07RightBody .S-TC-07Right05-1MemoBg { margin:2px 15px 11px 15px; height:70px; text-align:left; word-break:break-all; line-height:20px; }
+
+/*ボタン4列---ON---OFF*/
+.S-TC-07Right01-1,
+.S-TC-07Right01-2,
+.S-TC-07Right01-3,
+.S-TC-07Right02-1,
+.S-TC-07Right02-2,
+.S-TC-07Right04-1,
+.S-TC-07Right04-2,
+.S-TC-07Right04-3,
+.S-TC-07Right04-4,
+.S-TC-07Right03-1,
+.S-TC-07Right03-2,
+.S-TC-07Right03-3 
+{
+    color:#FFF;
+}
+
+.S-TC-07Right01-1Off,
+.S-TC-07Right01-2Off,
+.S-TC-07Right01-3Off,
+.S-TC-07Right02-1Off,
+.S-TC-07Right02-2Off,
+.S-TC-07Right04-1Off,
+.S-TC-07Right04-2Off,
+.S-TC-07Right04-3Off,
+.S-TC-07Right04-4Off,
+.S-TC-07Right03-1Off,
+.S-TC-07Right03-2Off,
+.S-TC-07Right03-3Off  
+{
+    color:#7F7F7F;
+}
+
+
+/* ご用命事項（左側）*/
+.S-TC-07LeftMemo2 
+{
+    margin:27px 15px 0 15px;
+    height:300px;
+    overflow:hidden;
+    text-align:left;
+    word-break:break-all;       /* 折り返し対応 */
+    line-height:20px;
+}
+
+
+/* 問診項目タブ */
+/*ボタン3列---基本*/
+.S-TC-07RightScroll dl dd.S-TC-07Right01-1 
+{
+    border:#2B5EAD 1px solid;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC));
+}
+.S-TC-07RightScroll dl dd.S-TC-07Right01-2 { border-top:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right01-3 { border:#2B5EAD 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right01-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right01-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right01-3Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+/*ボタン3列---入力あり*/
+.S-TC-07RightScroll dl dd.S-TC-07Right03-1 { border:#2B5EAD 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right03-2 { border-top:#2B5EAD 1px solid; border-right:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right03-3 { width:109px; border:0; background: none; text-shadow:none; color:#7F7F7F; text-align:right; }
+.S-TC-07RightScroll dl dd.S-TC-07Right03-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-left-radius:6px; border-bottom-left-radius:6px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right03-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-right:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right03-3Off { width:109px; border:0; background: none; text-shadow:none; color:#7F7F7F; text-align:right; }
+
+/*ボタン2列---基本*/
+.S-TC-07RightScroll dl dd.S-TC-07Right02-1 { border-top:#2B5EAD 1px solid; border-left:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right02-2 { border:#2B5EAD 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right02-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; display:block; border-top:#9B9B9B 1px solid; border-left:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right02-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+/*ボタン4列---基本*/
+.S-TC-07RightScroll dl dd.S-TC-07Right04-1 { border:#2B5EAD 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right04-2 { border-top:#2B5EAD 1px solid; border-right:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right04-3 { border-top:#2B5EAD 1px solid; border-bottom:#2B5EAD 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right04-4 { border:#2B5EAD 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#295AB2), to(#74ACFC)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right04-1Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right04-2Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-right:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right04-3Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+.S-TC-07RightScroll dl dd.S-TC-07Right04-4Off { color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border:#9B9B9B 1px solid; border-top-right-radius:10px; border-bottom-right-radius:10px; background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA)); }
+
+/*ボタン1列---基本*/
+.S-TC-07RightScroll dl dd.S-TC-07Right05-1 { height:128px; border:none; background: none; }
+.S-TC-07RightScroll dl dd.S-TC-07Right05-1Off { width:151px; color:#7F7F7F; text-shadow:0px 1px 0px #FFF; border-top:#9B9B9B 1px solid; border-left:#9B9B9B 1px solid; border-bottom:#9B9B9B 1px solid; border-top-left-radius:10px; border-bottom-left-radius:10px; background: none; }
+.S-TC-07RightScroll .S-TC-07Right05-1Memo { width:328px; border:#BBBBBB 1px solid; border-radius:6px; background: none; }
+.S-TC-07RightScroll .S-TC-07Right05-1MemoBg { margin:22px 15px 11px 15px; height:93px; background: url(images/bg09.png) repeat 0px -22px; }
+
+/*ボタン4列---ON---OFF*/
+.S-TC-07Right01-1,
+.S-TC-07Right01-2,
+.S-TC-07Right01-3,
+.S-TC-07Right02-1,
+.S-TC-07Right02-2,
+.S-TC-07Right04-1,
+.S-TC-07Right04-2,
+.S-TC-07Right04-3,
+.S-TC-07Right04-4,
+.S-TC-07Right03-1,
+.S-TC-07Right03-2,
+.S-TC-07Right03-3 
+{
+    color:#FFF;
+}
+
+.S-TC-07Right01-1Off,
+.S-TC-07Right01-2Off,
+.S-TC-07Right01-3Off,
+.S-TC-07Right02-1Off,
+.S-TC-07Right02-2Off,
+.S-TC-07Right04-1Off,
+.S-TC-07Right04-2Off,
+.S-TC-07Right04-3Off,
+.S-TC-07Right04-4Off,
+.S-TC-07Right03-1Off,
+.S-TC-07Right03-2Off,
+.S-TC-07Right03-3Off 
+{
+    color:#7F7F7F;
+}
+
+
+/*入力欄01*/
+.S-TC-07RightScroll dl dd.S-TC-07Right06-1 { width:218px; text-align:left; font-size:16px; color:#7F7F7F; text-shadow:none; }
+.S-TC-07RightScroll dl dd.S-TC-07Right06-1 span { font-size:12px; }
+.S-TC-07RightScroll dl dd.S-TC-07Right06-2 { width:113px; text-align:right; color:#7F7F7F; text-shadow:none; }
+.S-TC-07RightScroll dl dd.S-TC-07Right06-2 span { font-size:12px; }
+
+.S-TC-07RightScroll dl dd.S-TC-07Right06-1 input { margin-right:5px; width:137px; height:22px; border:none; background:#FFF; float:left; text-align:center; }
+.S-TC-07RightScroll dl dd.S-TC-07Right06-2 input { margin-left:5px; width:70px; height:22px; border:none; background:#FFF; float:right; text-align:center; }
+
+/*入力欄02*/
+.S-TC-07RightScroll dl dd.S-TC-07Right07-1 { width:113px; text-align:left; font-size:16px; color:#7F7F7F; text-shadow:none; }
+.S-TC-07RightScroll dl dd.S-TC-07Right07-1 span { font-size:12px; }
+.S-TC-07RightScroll dl dd.S-TC-07Right07-2 { width:218px; text-align:right; color:#7F7F7F; text-shadow:none; }
+
+.S-TC-07RightScroll dl dd.S-TC-07Right07-1 input { margin-right:5px; width:77px; height:22px; border:none; background:#FFF; float:left; text-align:center; }
+.S-TC-07RightScroll dl dd.S-TC-07Right07-2 input { margin-left:5px; width:137px; height:22px; border:none; background:#FFF; float:right; text-align:center; }
+
+.S-TC-07RightScroll dl dd.S-TC-07Right07-2 span { /*width:30px;*/ height:22px; float:right; font-size:12px}
+
+/*=================================
+    基本情報タブ
+=================================*/
+.S-TC-05 
+{
+    padding:15px;
+    border:none;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    background:#FFF;
+    position:relative;
+}
+.S-TC-05:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.S-TC-05 h2 { width:186px; height:25px; border-top-left-radius:7px; border-bottom-right-radius:25px; font-size:14px; text-indent:14px; line-height:26px; color:#FFF; /*text-shadow:1px 1px 0px #333;*/
+background: -webkit-gradient(linear, left top, left bottom, from(#8E929A), color-stop(0.49, #797D84), color-stop(0.5, #6A6E76), to(#5D616A)); font-weight:400; }
+
+.S-TC-05 dl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-TC-05 p:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.S-TC-05Left
+{
+    margin-right:15px;
+    width:319px;
+    float:left;
+}
+
+.S-TC-05Left1-1 
+{
+    margin-bottom:14px;
+    border:#ABABAB 1px solid;
+    border-radius:8px;
+    color:#656565;
+    font-size:12px;
+}
+.S-TC-05Left1-1:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-TC-05Left1-1Wrap { padding:10px 10px 0 10px; }
+
+.S-TC-05Left1-1 dl { height:16px; }
+
+/* 基本情報タブ：顧客情報：オーナー名 */
+.S-TC-05Left1-2 { width:148px; float:left; }
+.S-TC-05Left1-2 dt 
+{
+    float:left;
+}
+.S-TC-05Left1-2 dd 
+{
+    float:left;    
+}
+/*-- 2018/06/28 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 START --*/
+.S-TC-05Left1-2 dd .Lmark
+{
+    float:right;			
+    width:13px;			
+    height:15px;			
+    border-radius:2px;			
+    font-size:12px;			
+    text-align:center;			
+    text-shadow:0px 1px 0px #666;			
+    line-height:16px;			
+    color:#000;			
+    display:inline-block;			
+    background-color:#00b050;
+}
+/*-- 2018/06/28 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 END --*/
+/* 基本情報タブ：顧客情報：来店者名 */
+.S-TC-05Left1-3 
+{
+    width:141px;
+    float:left;
+/*-- 2018/06/28 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 START --*/
+    margin-left:2px;
+/*-- 2018/06/28 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 END --*/
+
+}
+.S-TC-05Left1-3 dt 
+{
+    float:left;
+}
+.S-TC-05Left1-3 dd 
+{
+    float:left;
+}
+/* 基本情報タブ：顧客情報：車のタイプ */
+.S-TC-05Left1-4 
+{
+    height:16px;
+    clear:both;
+}
+.S-TC-05Left1-4 dt
+{
+    float:left;
+}
+/* 基本情報タブ：顧客情報：VIN */
+.S-TC-05Left1-5 { width:289px; clear:both; }
+.S-TC-05Left1-5 dt 
+{
+    float:left;
+}
+.S-TC-05Left1-5 dd 
+{
+    float:left;
+/*-- 2018/06/12 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 START --*/
+    width:204px
+/*-- 2018/06/12 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 END --*/
+}
+/*-- 2018/06/12 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 START --*/
+.S-TC-05Left1-5 dd .Pmark
+{
+    float:right;			
+    right:4px;			
+    top:46px;			
+    width:13px;			
+    height:15px;			
+    border-radius:2px;			
+    font-size:12px;			
+    text-align:center;			
+    text-shadow:0px 1px 0px #666;			
+    line-height:16px;			
+    color:#000;			
+    display:inline-block;			
+    background-color:#FF0;
+    margin:1px;
+}
+
+.S-TC-05Left1-5 dd .Tmark
+{
+    float:right;			
+    right:4px;			
+    top:46px;			
+    width:13px;			
+    height:15px;			
+    border-radius:2px;			
+    font-size:12px;			
+    text-align:center;			
+    text-shadow:0px 1px 0px #666;			
+    line-height:16px;			
+    color:#000;			
+    display:inline-block;			
+    background-color:#ffc000;
+    margin:1px;
+}
+.S-TC-05Left1-5 dd .Emark
+{
+    float:right;			
+    right:4px;			
+    top:46px;			
+    width:13px;			
+    height:15px;			
+    border-radius:2px;			
+    font-size:12px;			
+    text-align:center;			
+    text-shadow:0px 1px 0px #666;			
+    line-height:16px;			
+    color:#000;			
+    display:inline-block;			
+    background-color:#b7dee8;
+    margin:1px;
+}
+.S-TC-05Left1-5 dd .Bmark
+{
+    float:right;			
+    right:4px;			
+    top:46px;			
+    width:13px;			
+    height:15px;			
+    border-radius:2px;			
+    font-size:12px;			
+    text-align:center;			
+    text-shadow:0px 1px 0px #666;			
+    line-height:16px;			
+    color:#FFF;			
+    display:inline-block;			
+    background-color: #7030a0;
+    margin:1px;
+}
+.S-TC-05Left1-5 dd .Mmark
+{
+    float:right;			
+    right:4px;			
+    top:46px;			
+    width:13px;			
+    height:15px;			
+    border-radius:2px;			
+    font-size:12px;			
+    text-align:center;			
+    text-shadow:0px 1px 0px #666;			
+    line-height:16px;			
+    color:#000;			
+    display:inline-block;			
+    background-color:#fcd5b5;
+    margin:1px;
+}
+/*-- 2018/06/12 NSK 可児 TKM Next Gen e-CRB Project Application development Block B-1  Pマーク、L マークなどを表示 END --*/
+/* 基本情報タブ：顧客情報：登録番号 */
+.S-TC-05Left1-6 { width:289px; clear:both; }
+.S-TC-05Left1-6 dt 
+{
+    float:left;
+}
+.S-TC-05Left1-6 dd 
+{
+    float:left;
+}
+/* 基本情報タブ：顧客情報：年式/納車日 */
+.S-TC-05Left1-7 { width:289px; clear:both; }
+.S-TC-05Left1-7 dt 
+{
+    float:left;
+}
+.S-TC-05Left1-7 dd 
+{
+    float:left;
+}
+/* 基本情報タブ：顧客情報：走行距離 */
+.S-TC-05Left1-8 { margin-bottom:10px; width:289px; clear:both; }
+.S-TC-05Left1-8 dt 
+{
+    float:left;
+}
+.S-TC-05Left1-8 dd 
+{
+    float:left;
+}
+
+
+.S-TC-05Left2-1 { border:#ABABAB 1px solid; border-radius:8px; color:#656565; font-size:12px; width:316px; height:200px;}
+.S-TC-05Left2-1:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-TC-05Left2-1Wrap { padding:10px 10px 0 10px; }
+/* 基本情報：初期状態：燃料 */
+.S-TC-05Left2-2 { margin-bottom:11px; height:20px; line-height:22px; }
+.S-TC-05Left2-2 dt 
+{
+    float:left;
+}
+.S-TC-05Left2-2 dd { float:left; }
+.S-TC-05Left2-2 li { float:left; }
+
+.S-TC-05Left2-2 dd:nth-child(2) 
+{
+}
+.S-TC-05Left2-2 dd:nth-child(3) { width:174px; border:#949494 1px solid; border-radius:21px; }
+.S-TC-05Left2-2 dd:nth-child(4) 
+{
+    text-align:right;
+}
+
+.S-TC-05Left2-3 { width:; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#BDBDBD), to(#F8F8F8)); border-radius:35px; }
+
+.S-TC-05Left2-3-1Off { width:43px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#BDBDBD), to(#F8F8F8)); border-top-left-radius:35px; border-bottom-left-radius:35px; }
+.S-TC-05Left2-3-1On { width:42px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#2A5FB5), to(#69A5F5)); border-right:#FFF 1px solid; border-top-left-radius:35px; border-bottom-left-radius:35px; }
+.S-TC-05Left2-3-1On2 { width:43px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#2A5FB5), to(#69A5F5)); border-radius:35px; }
+
+.S-TC-05Left2-3-2Off { width:42px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#BDBDBD), to(#F8F8F8)); border-left:#949494 1px solid; }
+.S-TC-05Left2-3-2On { width:42px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#2A5FB5), to(#69A5F5)); border-right:#FFF 1px solid; }
+.S-TC-05Left2-3-2On2 { width:43px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#2A5FB5), to(#69A5F5)); border-top-right-radius:35px; border-bottom-right-radius:35px; }
+
+.S-TC-05Left2-3-3Off { width:42px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#BDBDBD), to(#F8F8F8)); border-left:#949494 1px solid; }
+.S-TC-05Left2-3-3On { width:42px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#2A5FB5), to(#69A5F5)); border-right:#FFF 1px solid; }
+.S-TC-05Left2-3-3On2 { width:43px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#2A5FB5), to(#69A5F5)); border-top-right-radius:35px; border-bottom-right-radius:35px; }
+
+.S-TC-05Left2-3-4Off { width:42px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#BDBDBD), to(#F8F8F8)); border-left:#949494 1px solid; border-top-right-radius:35px; border-bottom-right-radius:35px; }
+.S-TC-05Left2-3-4On { width:45px; height:21px; background:-webkit-gradient(linear, left top, left bottom, from(#2A5FB5), to(#69A5F5)); border-top-right-radius:35px; border-bottom-right-radius:35px; }
+/* 基本情報：初期状態：オーディオ */
+.S-TC-05Left2-5 { margin-bottom:8px; height:26px; line-height:26px; }
+.S-TC-05Left2-5 dt 
+{
+    float:left;
+}
+.S-TC-05Left2-5 dd 
+{ width:204px; float:left; }
+
+.S-TC-05Left2-6 { list-style:none; }
+.S-TC-05Left2-6 li 
+{
+    height:23px;
+    float:left;
+    text-align:center;
+    line-height:23px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+.S-TC-05Left2-6-1Off 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    border-top:#949494 1px solid;
+    border-bottom:#949494 1px solid;
+    border-left:#949494 1px solid;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+}
+.S-TC-05Left2-6-1On 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#5A7CB2), color-stop(0.5, #407EE6), color-stop(0.5, #4C88E8), to(#7CADEB));
+    border-top:#3B72C9 1px solid;
+    border-bottom:#3B72C9 1px solid;
+    border-left:#3B72C9 1px solid;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+}
+
+.S-TC-05Left2-6-2Off 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    border:#949494 1px solid;
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+}
+.S-TC-05Left2-6-2On 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#5A7CB2), color-stop(0.5, #407EE6), color-stop(0.5, #4C88E8), to(#7CADEB));
+    border:#3B72C9 1px solid;
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+}
+
+.S-TC-05Left2-6-3Off 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    border-top:#949494 1px solid;
+    border-bottom:#949494 1px solid;
+    border-right:#949494 1px solid;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+}
+.S-TC-05Left2-6-3On 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#5A7CB2), color-stop(0.5, #407EE6), color-stop(0.5, #4C88E8), to(#7CADEB));
+    border-top:#3B72C9 1px solid;
+    border-bottom:#3B72C9 1px solid;
+    border-right:#3B72C9 1px solid;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+}
+/* 基本情報：初期状態：エアコン */
+.S-TC-05Left2-7 { margin-bottom:4px; line-height:28px; }
+.S-TC-05Left2-7 dt
+{
+    float:left;
+}
+.S-TC-05Left2-7 dd:nth-child(2) { width:134px; float:left; }
+.S-TC-05Left2-7 dd:nth-child(3) 
+{
+    float:left;
+    text-align:right;
+}
+.S-TC-05Left2-7 dd:nth-child(3) input { margin-right:5px; width:53px; height:24px; background:#FFF; border:#9B9B9B 1px solid; border-radius:4px; float:left; }
+
+.S-TC-05Left2-8 { list-style:none; }
+.S-TC-05Left2-8 li 
+{
+    height:24px;
+    float:left;
+    text-align:center;
+    line-height:24px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+.S-TC-05Left2-8-1Off 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    border-top:#949494 1px solid;
+    border-bottom:#949494 1px solid;
+    border-left:#949494 1px solid;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+}
+.S-TC-05Left2-8-1On 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#5A7CB2), color-stop(0.5, #407EE6), color-stop(0.5, #4C88E8), to(#7CADEB));
+    border-top:#3B72C9 1px solid;
+    border-bottom:#3B72C9 1px solid;
+    border-left:#3B72C9 1px solid;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+}
+
+.S-TC-05Left2-8-2Off 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(#CACACA));
+    border-top:#949494 1px solid;
+    border:#949494 1px solid;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    color:#7F7F7F;
+    text-shadow:0px 1px 0px #FFF;
+}
+.S-TC-05Left2-8-2On 
+{
+    background:-webkit-gradient(linear, left top, left bottom, from(#5A7CB2), color-stop(0.5, #407EE6), color-stop(0.5, #4C88E8), to(#7CADEB));
+    border:#3B72C9 1px solid;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    color:#FFF;
+    text-shadow:0px -1px 0px #333;
+}
+
+
+.S-TC-05Left2-9 { list-style:none; clear:both; }
+.S-TC-05Left2-9 li 
+{
+    margin-bottom:3px;
+    float:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.S-TC-05Left2-9 li:nth-child(1) { width:109px; }
+.S-TC-05Left2-9 li:nth-child(2) { width:113px; }
+.S-TC-05Left2-9 li:nth-child(3) { width:67px; }
+.S-TC-05Left2-9 li:nth-child(4) { width:109px; }
+.S-TC-05Left2-9 li:nth-child(5) { width:113px; }
+.S-TC-05Left2-9 li:nth-child(6) { width:67px; }
+.S-TC-05Left2-9Checked { background:url(../Images/SC3150102/ico125.png) no-repeat 60px center; }
+/* 基本情報：初期状態：貴重品 */
+.S-TC-05Left2-10 { margin-bottom:8px; clear:both; }
+.S-TC-05Left2-10 dt 
+{
+    float:left;
+}
+.S-TC-05Left2-10 dd 
+{
+    float:left;
+}
+
+/* 基本情報：入庫履歴 */
+.S-TC-05Right { width:584px; border:#ABABAB 1px solid; border-radius:8px; color:#656565; font-size:14px; float:left; }
+.S-TC-05Right:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.S-TC-05RightWrap { padding:10px 10px 0 10px; }
+.S-TC-05RightScroll 
+{
+    overflow:hidden;
+    height:328px;
+}
+
+.S-TC-05Right1-1 { clear:both; color:#636363; height:47px; }
+.S-TC-05Right1-1:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.S-TC-05Right1-1 dt { width:36px; text-align:center; float:left; }
+.S-TC-05Right1-1 dt img { margin-top:14px; }
+.S-TC-05Right1-1 dd 
+{
+    font-size:12px;
+    float:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.S-TC-05Right1-1 dd:nth-child(2) { padding-top:4px; width:184px; line-height:12px; }
+.S-TC-05Right1-1 dd:nth-child(2) span { font-size:10px; line-height: 12px; color:#333333; font-weight: 400;}
+.S-TC-05Right1-1 dd:nth-child(3) { width:65px; line-height:47px; }
+.S-TC-05Right1-1 dd:nth-child(4) { width:138px; line-height:47px; }
+.S-TC-05Right1-1 dd:nth-child(5) { padding-left:20px; width:119px; line-height:47px; font-weight:600; background:url(../Images/SC3150102/ico33.png) no-repeat 0px 15px; }
+
+.S-TC-05Right1-1:nth-child(odd) { background:#F0F0F0; }
+
+/* 入庫履歴：前の6件を表示する */
+/* 入庫履歴：全ての入庫を表示する */
+.S-TC-05Right2-1{
+	clear:both;
+	font-size:16px;
+	line-height:40px;
+	font-weight:bold;
+	color:#375388;
+	text-align:center;
+	padding:0 10px 0 0;
+}
+/* 全ての入庫を表示するリンク */
+.S-TC-05Right2-1 a{
+	color:#375388;
+	text-decoration: none;
+}
+/* 入庫履歴：次を6件を表示する */
+.S-TC-05Right2-2{
+	clear:both;
+	font-size:16px;
+	line-height:40px;
+	font-weight:bold;
+	color:#375388;
+	text-align:center;
+	padding:0 10px 0 0;
+}
+/* 次を6件を表示するリンク */
+.S-TC-05Right2-2 a{
+	color:#375388;
+	text-decoration: none;
+}
+/* 入庫履歴：読み込み中(上部) */
+.S-TC-05Right-PrevLoding{
+	clear:both;
+	font-size:16px;
+	line-height:40px;
+	font-weight:bold;
+	color:#375388;
+	text-align:center;
+	padding:0 10px 0 0;
+}
+/* 入庫履歴：読み込み中(下部) */
+.S-TC-05Right-NextLoding{
+	clear:both;
+	font-size:16px;
+	line-height:40px;
+	font-weight:bold;
+	color:#375388;
+	text-align:center;
+	padding:0 10px 0 0;
+}
+/* 読み込み中画像 */
+.LoadImage
+{
+    position:absolute;
+    display:table;
+    left:200px;
+    margin-top:7px;
+    background:url(../Images/SC3150102/animeicn-1.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    width:21px;
+    height:22px;
+    animation: load-icon-animation 1.4s infinite linear;
+}
+/* アニメションの設定 */
+@keyframes load-icon-animation
+{
+	0%{	transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+.S-TC-05Right2-2 a{
+	color:#375388;
+	text-decoration: none;
+}
+
+/* リスト読み込み中にタップできないようにするDIV */
+.S-TC-05RightWrap .DisabledDiv
+{
+    position:absolute;
+	width:565px;	
+	height:320px;
+    z-index:1110;
+}
+/* 作業内容タブ */
+.S-TC-01 
+{
+   padding:15px; 
+   background:#FFF; 
+   position:relative; 
+   top:-1px;
+}
+.S-TC-01:after { content: "."; 
+                 display: block; 
+                 height: 0; 
+                 clear: both; 
+                 visibility: hidden; }
+
+.S-TC-01 h2  { width:186px; height:25px;
+	           border-top-left-radius:7px;
+	           border-bottom-right-radius:25px;
+	           font-size:14px; 
+	           /*text-indent:14px;*/
+	           line-height:26px; color:#FFF; /*text-shadow:1px 1px 0px #333;*/
+	           background: -webkit-gradient(linear, left top, left bottom, from(#8E929A), color-stop(0.49, #797D84), color-stop(0.5, #6A6E76), to(#5D616A));
+	           font-weight:400;
+	           font-weight:bold; 
+}
+
+.S-TC-01 h3 { font-size:14px; 
+              font-weight:400; 
+              color:#656565;
+              height:18px; 
+              display:block; 
+              line-height:18px;}
+
+.S-TC-01Wrap { border:#B3B3B3 1px solid; border-radius:8px; }
+.S-TC-01Wrap2 { padding:10px 15px 15px 15px; clear:both; }
+.S-TC-01Wrap2:after { content: "."; 
+                      display: block; 
+                      height: 0; 
+                      clear: both; 
+                      visibility: hidden; }
+
+.S-TC-01Paging { margin:0 -75px -25px 0; 
+                 width:125px; 
+                 height:25px; 
+                 list-style:none; 
+                 position:relative; 
+                 top:-10px; 
+                 left:762px; 
+                 padding-left: 25px; 
+                 clear:both; 
+                 font-size:12px; 
+                 float:left; 
+                 background: url(images/bg16.png) no-repeat 0px 0px; }
+                 
+.S-TC-01Paging li { margin-right:10px; width:23px; float:left; }
+.S-TC-01Paging a { display: inline-block; width:23px; height:23px; text-align: center; line-height:23px; color:#333; border:#B3B3B3 1px solid; background:#FFF; border-radius:4px; }
+
+.S-TC-01Paging a.S-TC-01PagingOn { border:#3063B2 1px solid; background:-webkit-gradient(linear, left top, left bottom, from(#2C5FB9), to(#74ACFB)); color:#FFF; }
+.S-TC-01Paging a.S-TC-01PagingOn span { padding-top:7px; padding-left:2px; display:block; width:21px; height:16px; text-align: left; font-size:9px; line-height:23px; background:url(images/ico122.png) no-repeat center center; }
+
+.S-TC-01Paging a.S-TC-01PagingOff { border:#B2B2B2 1px solid; background:#FFF; color:#666; }
+.S-TC-01Paging a.S-TC-01PagingOff span { padding-top:7px; padding-left:2px; display:block; width:21px; height:16px; text-align: left; font-size:9px; line-height:23px; background:url(images/ico123.png) no-repeat center center; }
+
+
+#ButtonSendNoticeToFM {
+    position:relative;
+    margin:0 -75px -25px 0;
+    top:-14px;
+    left:318px;
+    width:80px;
+    height:27px;
+    font-size:14px;
+    float:left; 
+}
+
+#spnCageNo
+{
+    margin:0 0 0 15px;
+}
+
+#lblCageNo
+{
+    margin:0 0 0 8px;
+}
+
+/* ↓↓↓追加作業アイコン */
+#S-TC-01Paging { margin:0 -75px -25px 0;  height:27px; list-style:none; position:relative; top:-14px; left:762px; clear:both; font-size:12px; float:left; background: url(../Images/SC3150102/bg16.png) no-repeat 0px 0px; }
+
+#S-TC-01Paging > li { float:left;}
+
+#S-TC-01Paging > li.liFast{ width:22px; height:100%; margin:0px; margin-right:5px}
+#S-TC-01Paging > li.liScroll{ width:97px; height:100%;border:0px solid #CCC; border-radius:4px; overflow-x:hidden;overflow-y:hidden; margin-right:10px; }
+#S-TC-01Paging > li.liLast{ width:22px; height:100%; margin-right:0 }
+
+#divScroll{ width:90px; height:27px; overflow: auto; overflow-x:hidden;overflow-y:hidden;}
+#divScroll ul { height:26px;}
+#divScroll li { float:left; margin-right:9px; display: inline-block; width:23px; height:23px; text-align: center; line-height:23px; }
+
+#divScroll div.S-TC-01PagingOn { border:#3063B2 1px solid; background:-webkit-gradient(linear, left top, left bottom, from(#2C5FB9), to(#74ACFB)); color:#FFF; border-radius:4px;}
+#divScroll div.S-TC-01PagingOn span { padding-top:7px; padding-left:2px; display:block; width:21px; height:16px; text-align: left; font-size:9px; line-height:23px; background:url(../images/SC3150102/ico122.png) no-repeat center center; }
+
+#divScroll div.S-TC-01PagingOff { border:#B2B2B2 1px solid; background:#FFF; color:#666; border-radius:4px; }
+#divScroll div.S-TC-01PagingOff span { padding-top:7px; padding-left:2px; display:block; width:21px; height:16px; text-align: left; font-size:9px; line-height:23px; background:url(../images/SC3150102/ico123.png) no-repeat center center; }
+/* ↑↑↑追加作業アイコン */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	S-TC01
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+.S-TC-01Left {  width:482px; float:left; margin-right:0; }
+.S-TC-01Right { width:401px; float:right; }
+
+.S-TC-01LeftHead { border-top:#B3B3B3 1px solid; border-right:#B3B3B3 1px solid; border-left:#B3B3B3 1px solid; background:-webkit-gradient(linear, left top, left bottom, from(#868990), to(#696D75)); height:28px; line-height:28px; text-align:center; font-size:14px; }
+.S-TC-01LeftHead:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-TC-01LeftHead dt { width:29px; border-right:#7F7F7F 1px solid; float:left; color:#FFF; text-shadow:0px -1px 0px #333; }
+.S-TC-01LeftHead dd { float:left; color:#FFF; text-shadow:0px -1px 0px #333; }
+
+
+#S-TC-01LeftBody dl:nth-child(even) { background:#FFF; }
+#S-TC-01LeftBody tr:nth-child(even) { background:#FFF; }
+
+#S-TC-01LeftBody{ line-height:76px;}
+#S-TC-01LeftBody dl { height:25px; }
+
+.S-TC-01LeftHead{
+	height:33px; line-height:33px;
+}
+.S-TC-01LeftHead dt,
+.S-TC-01LeftHead dd{ height:33px;
+                     position:relative;}
+#S-TC-01LeftBody dt,
+#S-TC-01LeftBody dd{ position:relative;}
+
+
+#S-TC-01LeftBody dl:nth-child(2) { color:#656565; }
+
+.S-TC-01LeftHead dt { width:28px; border-right:#b3b3b3 1px solid; }
+.S-TC-01LeftHead dd:nth-child(2) { width:28px; border-right:#b3b3b3 1px solid; }
+.S-TC-01LeftHead dd:nth-child(3) { width:147px; border-right:#b3b3b3 1px solid; }
+.S-TC-01LeftHead dd:nth-child(4) { width:97px; border-right:#b3b3b3 1px solid; }
+.S-TC-01LeftHead dd:nth-child(5) { width:172px; }
+
+.S-TC-01LeftHead dd:nth-child(2) { border-right:#7F7F7F 1px solid; border-left:#FFF 1px solid; }
+.S-TC-01LeftHead dd:nth-child(3) { border-right:#7F7F7F 1px solid; border-left:#FFF 1px solid; }
+.S-TC-01LeftHead dd:nth-child(4) { border-right:#7F7F7F 1px solid; border-left:#FFF 1px solid; }
+.S-TC-01LeftHead dd:nth-child(5) { border-left:#FFF 1px solid; }
+.S-TC-01LeftHead dd:nth-child(6) { border-left:#FFF 1px solid; }
+
+#S-TC-01LeftBody dt { width:25px; border-right:#b3b3b3 1px solid; float:left; }
+
+#S-TC-01LeftBody dd:nth-child(2) { width:25px; border-right:#b3b3b3 1px solid; }
+#S-TC-01LeftBody dd:nth-child(3) { width:164px; border-right:#b3b3b3 1px solid; }
+#S-TC-01LeftBody dd:nth-child(4) { width:50px; border-right:#b3b3b3 1px solid; }
+#S-TC-01LeftBody dd:nth-child(5) { width:78px; border-right:#b3b3b3 1px solid; }
+#S-TC-01LeftBody dd:nth-child(6) { width:100px; border-right:#b3b3b3 1px solid; }
+#S-TC-01LeftBody dd:nth-child(7) { width:62px; }
+
+#S-TC-01LeftBody { text-align:center; color:#656565; font-size:14px; line-height:40px; }
+#S-TC-01LeftBody dl { height:40px; clear:both; background:#FFF; }
+#S-TC-01LeftBody dl:nth-child(even) { background:#EEE; }
+#S-TC-01LeftBody dt { width:29px; border-right:#7F7F7F 1px solid; float:left; }
+#S-TC-01LeftBody dd { width:29px; float:left; }
+
+#S-TC-01LeftBody dd:nth-child(2) { width:133px; border-right:#7F7F7F 1px solid; }
+#S-TC-01LeftBody dd:nth-child(3) { width:89px; border-right:#7F7F7F 1px solid; border-left:#FFF 1px solid; }
+#S-TC-01LeftBody dd:nth-child(4) { width:88px; border-right:#7F7F7F 1px solid; border-left:#FFF 1px solid; }
+#S-TC-01LeftBody dd:nth-child(5) { width:89px; border-left:#FFF 1px solid; }
+
+.S-TC-01LeftHead dd.TitleSet03{
+	line-height:15px;
+	font-size:13px;
+}
+.S-TC-01LeftHead dd.TitleSet03 .BorderBox{
+	border-top:#FFF 1px solid;
+	overflow:hidden;
+	height:16px;
+}
+.S-TC-01LeftHead dd.TitleSet03 .STtl01{
+	height:15px;
+	border-bottom:#a5a5a5 1px solid;
+}
+.S-TC-01LeftHead dd.TitleSet03 .STtl02{
+	height:16px;
+	line-height:15px;
+	border-right:#a5a5a5 1px solid;
+	float:left;
+	width:73px;
+}
+.S-TC-01LeftHead dd.TitleSet03 .STtl03{
+	height:16px;
+	line-height:15px;
+	border-left:#FFFFFF 1px solid;
+	float:left;
+	width:72px;
+}
+/* 2019/12/19 NSK夏目 TR-SVT-TKM-20191209-001 Technician Main Menuにテクニシャン名が表示されない START */
+/*.S-TC-01LeftHead dd.TitleSet04{
+	line-height:15px;
+	font-size:13px;
+}
+.S-TC-01LeftHead dd.TitleSet04 .STtl01{
+	height:15px;
+	border-bottom:#a5a5a5 1px solid;
+}
+.S-TC-01LeftHead dd.TitleSet04 .STtl02{
+	height:16px;
+	border-top:#FFFFFF 1px solid;
+}*/
+.S-TC-01LeftHead dd.TitleSet04{
+	line-height:33px;
+	font-size:13px;
+}
+/* 2019/12/19 NSK夏目 TR-SVT-TKM-20191209-001 Technician Main Menuにテクニシャン名が表示されない END */
+
+
+#S-TC-01LeftBody .S-TC-01LeftGrayZone {
+	width:489px;
+	height:40px;
+	top: 80px;
+	background:#808080;
+	opacity:0.5;
+}
+
+#S-TC-01LeftBody .S-TC-01LeftGrayZone2 {
+	width:489px;
+	height:40px;
+	top: 80px;
+	background:#808080;
+	opacity:0.5;
+}
+
+#S-TC-01LeftBody .S-TC-01LeftGrayZone .w05{pointer-events:none;}
+
+#S-TC-01LeftBody .S-TC-01LeftGrayZone2 .w05{pointer-events:none;}
+
+#S-TC-01LeftBody .linesWrap {
+	height:39px;
+}
+
+.S-TC-01LeftScroll
+{
+    overflow-y:scroll; 
+    overflow-x:hidden;  
+    height:265px;
+    border-right:#B3B3B3 1px solid; 
+    border-bottom:#B3B3B3 1px solid; 
+    border-left:#B3B3B3 1px solid; 
+ }
+
+
+/*#S-TC-01LeftBody table { border:0px; border-collapse:collapse; }
+#S-TC-01LeftBody tr { height:40px; clear:both; background:#FFF; }
+
+
+#S-TC-01LeftBody td:nth-child(1) { width:27px; border-right:#7F7F7F 1px solid; }
+#S-TC-01LeftBody td:nth-child(2) { width:88px; border-right:#7F7F7F 1px solid; word-break:break-all; line-height:20px; text-align:left; padding-left:2px; }
+#S-TC-01LeftBody td:nth-child(3) { width:60px; border-right:#7F7F7F 1px solid; word-break:break-all; line-height:20px; }
+#S-TC-01LeftBody td:nth-child(4) { width:57px; border-right:#7F7F7F 1px solid; word-break:break-all; line-height:20px; }
+#S-TC-01LeftBody td:nth-child(5) { width:66px; border-right:#7F7F7F 1px solid; word-break:break-all; line-height:20px; }
+#S-TC-01LeftBody td:nth-child(6) { width:74px; border-right:#7F7F7F 1px solid; word-break:break-all; line-height:20px; }
+#S-TC-01LeftBody td:nth-child(7) { width:92px; word-break:break-all; line-height:20px; }  */
+
+.S-TC-01RightHead { border-top:#B3B3B3 1px solid; border-right:#B3B3B3 1px solid; border-left:#B3B3B3 1px solid; background:-webkit-gradient(linear, left top, left bottom, from(#868990), to(#696D75)); height:28px; line-height:28px; text-align:center; font-size:14px; }
+.S-TC-01RightHead:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.S-TC-01RightHead dt { width:28px; border-right:#b3b3b3 1px solid; float:left; color:#FFF; text-shadow:0px -1px 0px #333; }
+.S-TC-01RightHead dd { height:28px; float:left; color:#FFF; text-shadow:0px -1px 0px #333; }
+
+/* 2019/06/03 NSK鈴木 18PRJ03142_(FS)業務検証:セールス受注前活動活動結果登録オペレーション [TKM]PUAT-4109 部品詳細にて、バックオーダー(B/O)が表示されない START */
+/* .S-TC-01RightHead dd:nth-child(2) { width:125px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;} */
+/* .S-TC-01RightHead dd:nth-child(3) { width:87px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;}  */
+/* .S-TC-01RightHead dd:nth-child(4) { width:97px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;}  */
+/* .S-TC-01RightHead dd:nth-child(5) { width:48px; border-left:#FFF 1px solid;}                                  */
+.S-TC-01RightHead dd:nth-child(2) { width:173px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;}
+.S-TC-01RightHead dd:nth-child(3) { width:87px; border-right:#b3b3b3 1px solid; border-left:#FFF 1px solid;}
+.S-TC-01RightHead dd:nth-child(4) { width:97px; border-left:#FFF 1px solid;}
+/* 2019/06/03 NSK鈴木 18PRJ03142_(FS)業務検証:セールス受注前活動活動結果登録オペレーション [TKM]PUAT-4109 部品詳細にて、バックオーダー(B/O)が表示されない END   */
+
+.S-TC-01RightScroll {
+	overflow-y:scroll;
+	overflow-x:hidden; 
+	height:269px;
+	border-right:#B3B3B3 1px solid;
+	border-bottom:#B3B3B3 1px solid;
+	border-left:#B3B3B3 1px solid; 
+}
+	
+.S-TC-01RightScrollFilter
+{
+    height:265px;
+    width:394px;
+    position:absolute;
+    background:#CCC;
+    border-right:#B3B3B3 1px solid;
+    border-bottom:#B3B3B3 1px solid;
+    border-left:#B3B3B3 1px solid;
+    opacity:0.8;
+    display:none;
+}
+
+#S-TC-01RightBody { text-align:center; color:#656565; font-size:14px; line-height:34px; }
+#S-TC-01RightBody dl { height:25px; clear:both; background:#FFF; }
+
+#S-TC-01RightBody dt { width:25px; border-right:#7F7F7F 1px solid; float:left; }
+#S-TC-01RightBody dd { width:25px; float:left; }
+
+/*#S-TC-01RightBody table { border:0px; border-collapse:collapse; }
+#S-TC-01RightBody tr { height:40px; clear:both; background:#FFF; }
+
+#S-TC-01RightBody td:nth-child(1) { width:28px; word-break:break-all; line-height:20px; }
+#S-TC-01RightBody td:nth-child(2) { width:125px; word-break:break-all; line-height:20px; text-align:left; padding-left:2px; }
+#S-TC-01RightBody td:nth-child(3) { width:87px; word-break:break-all; line-height:20px; text-align:left; padding-left:2px; }
+#S-TC-01RightBody td:nth-child(4) { width:97px; word-break:break-all; line-height:20px; }
+#S-TC-01RightBody td:nth-child(5) { width:47px; word-break:break-all; line-height:20px; }
+#S-TC-01RightBody td:nth-child(6) { width:28px;}*/
+
+.S-TC-01LeftHead a,
+.S-TC-01RightHead a{
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+}
+
+.LinkLine{
+	display:block;
+	position:absolute;
+	border-bottom:#FFF 1px solid;
+	bottom:5px;
+	left:12px;
+	width:38px;
+	height:1px;
+	z-index:999;
+}
+
+#S-TC-01LeftBody .BoderNone,
+#S-TC-01RightBody .BoderNone{ border-bottom:none; }
+
+/*=============================================================================================================================*/
+
+.Stc01RegButton{
+	width:62px;
+	height:28px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:999;	
+}
+.Stc01RegButton a {
+	width:60px;
+	height:26px;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+	line-height:25px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#AEB2B8), to(#6D7580));
+	border:#3b4250 1px solid;
+	border-radius:6px;
+	display: block;
+	float:right;
+	text-decoration:none;
+}
+.Stc01RegButton a.Stc01RegButtonOn{
+	background:-webkit-gradient(linear, left top, left bottom, from(#7996ed),
+																color-stop(50%, #436be5),
+																color-stop(50%, #1e4ee1),
+																to(#1e4ee1));
+	color:#FFF;
+	text-shadow:0px -1px 0px #323a54;
+	line-height:26px;
+}
+
+
+.stc01Box03 .TabBox03 .ContentBox{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	left:16px;
+	top:16px;
+	width:918px;
+	height:363px;
+	border:#B3B3B3 1px solid;
+	border-radius:7px;
+}
+
+.stc01Box03 .TabBox03 .TableListLeft,
+.stc01Box03 .TabBox03 .TableListRight{
+	position:absolute;
+	bottom:15px;
+	width:445px;
+	height:315px;
+	font-size:14px;
+	line-height:16px;
+	color:#666666;
+}
+.stc01Box03 .TabBox03 .TableListLeft{left:15px;}
+.stc01Box03 .TabBox03 .TableListRight{right:15px; width:429px;}
+
+.stc01Box03 .TabBox03 .TableListLeft .TableList,
+.stc01Box03 .TabBox03 .TableListRight .TableList{
+	position:absolute;
+	left:0;
+	bottom:0;
+	border:#bcbcbc 1px solid;
+	width:441px;
+	height:292px;
+}
+.stc01Box03 .TabBox03 .TableListRight .TableList{
+	width:427px;
+}
+.stc01Box03 .TabBox03 .TableListLeft .TableList table,
+.stc01Box03 .TabBox03 .TableListRight .TableList table{
+	width:441px;
+}
+.stc01Box03 .TabBox03 .TableListRight .TableList table{
+	width:427px;
+}
+.stc01Box03 .TabBox03 .TableListLeft .TableList th,
+.stc01Box03 .TabBox03 .TableListRight .TableList th{
+	height:23px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#868990), 
+							to(#696d75));
+	border-left:#FFF 1px solid;
+	border-right:#868990 1px solid;
+	padding:4px 0 0 0;
+	text-align:center;
+	vertical-align:top;
+	color:#FFF;
+	text-shadow:#55585e 0 -1px 0;
+}
+.stc01Box03 .TabBox03 .TableListLeft .TableList .listtop01{width:29px; border-left:none;}
+.stc01Box03 .TabBox03 .TableListLeft .TableList .listtop02{width:140px;}
+.stc01Box03 .TabBox03 .TableListLeft .TableList .listtop03{width:89px;}
+.stc01Box03 .TabBox03 .TableListLeft .TableList .listtop04{width:88px;}
+.stc01Box03 .TabBox03 .TableListLeft .TableList .listtop05{width:89px; border-right:none;}
+
+.stc01Box03 .TabBox03 .TableListRight .TableList .listtop01{width:34px; border-left:none;}
+.stc01Box03 .TabBox03 .TableListRight .TableList .listtop02{width:141px;}
+.stc01Box03 .TabBox03 .TableListRight .TableList .listtop03{width:123px;}
+.stc01Box03 .TabBox03 .TableListRight .TableList .listtop04{width:124px; border-right:none;}
+
+
+.stc01Box03 .TabBox03 .TableListLeft .TableListScroll,
+.stc01Box03 .TabBox03 .TableListRight .TableListScroll
+{
+    overflow:hidden;
+	display:block;
+	height:265px;
+}
+.stc01Box03 .TabBox03 .TableListLeft .TableList td,
+.stc01Box03 .TabBox03 .TableListRight .TableList td{
+	background:#FFF;
+	height:26px;
+	border-left:#FFF 1px solid;
+	border-right:#868990 1px solid;
+	padding:14px 0 0 0;
+	text-align:center;
+	vertical-align:top;
+}
+.stc01Box03 .TabBox03 .TableList td.BackGray{
+	background:#efefef;
+}
+.stc01Box03 .TabBox03 .TableList td.NoColumn{
+	border-left:none;
+}
+.stc01Box03 .TabBox03 .TableList td.Subtotal{
+	border-right:none;
+}
+.stc01Box03 .TabBox03 .IcnButtonSet{
+	position:absolute;
+	width:96px;
+	right:16px;
+	top:15px;
+}
+.stc01Box03 .TabBox03 .IcnButton01{
+	position:absolute;
+	left:0;
+	top:0;
+	background:url(../Images/SC3150101/stc01listicn01.png) 0 0 no-repeat;
+	width:26px;
+	height:26px;
+}
+.stc01Box03 .TabBox03 .IcnButton02{
+	position:absolute;
+	left:35px;
+	top:0;
+	background:url(../Images/SC3150101/stc01listicn02.png) 0 0 no-repeat;
+	width:26px;
+	height:26px;
+}
+.stc01Box03 .TabBox03 .IcnButton03{
+	position:absolute;
+	left:70px;
+	top:0;
+	background:url(../Images/SC3150101/stc01listicn03.png) 0 0 no-repeat;
+	width:26px;
+	height:26px;
+}
+
+
+
+/* popUpWindow グラデ入り */
+
+.popover .header {
+    height:45px;
+}
+
+.popover .header #poWorkgroupList_header {
+    position:absolute;
+    width:314px;
+    height:36px;
+    top:7px;
+    line-height:32px;
+    left:0; text-align:center;
+    color:#FFF;
+    text-shadow:0px -1px 0px #000;
+    font-weight: bold;
+}
+
+#divPopoverScroll{
+    height:353px
+}
+ 
+.innerDataBox ul{
+    background:#FFF;
+    box-shadow:0px 1px 0px #FFF;
+    border:#bbbbbb 1px solid;
+    border-radius:9px;
+    width:280px;
+}
+.innerDataBox ul li{
+    border-bottom:#bbbbbb 1px solid;
+    overflow:hidden;
+    display:block;
+    width:269px;
+    height:43px;
+    padding:0 0 0 11px;
+    font-size:17px;
+    line-height:44px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.innerDataBox ul li:nth-child(1) { border-radius:9px 9px 0 0;}
+.innerDataBox ul li:nth-child(2) { }
+.innerDataBox ul li:last-child { border-bottom:none; border-radius:0 0 9px 9px;}
+
+.innerDataBox ul li.Check{
+    background:url(../Images/SC3150102/ico46.png) 256px 15px no-repeat;
+    color:#324f85;
+}
+.innerDataBox ul li.Gray{
+    color:#949494;
+}
+.innerDataBox .popup_lastline  {
+    height: 10px;
+    display: block;
+    font-size: 9px;
+    line-height: 10px;
+}
+
+.UnderLine {
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 2px;
+}
+
+
+#S-TC-01LeftBody  .S-TC-01DataTable{width:475px;}
+#S-TC-01RightBody .S-TC-01DataTable{width:394px;}
+
+#S-TC-01LeftBody  .S-TC-01DataTable tr,
+#S-TC-01RightBody .S-TC-01DataTable tr{ height:38px;}
+
+#S-TC-01LeftBody  .S-TC-01DataTable tr:nth-child(2n+1) ,
+#S-TC-01RightBody .S-TC-01DataTable tr:nth-child(2n+1) { background-color:#dcdcdc;}
+
+#S-TC-01LeftBody  .S-TC-01DataTable tr td .InnerBox,
+#S-TC-01RightBody .S-TC-01DataTable tr td .InnerBox{
+	height:76px; border-right:#a5a5a5 1px solid; border-left:#FFF 1px solid;
+	margin:0; padding:0;
+}
+#S-TC-01RightBody .S-TC-01DataTable tr td .InnerBox{
+	height:38px;
+}
+
+#S-TC-01LeftBody  .S-TC-01DataTable tr td .InnerBox.fst{border-left:none;}
+#S-TC-01RightBody .S-TC-01DataTable tr td .InnerBox.fst{border-left:none;}
+#S-TC-01LeftBody  .S-TC-01DataTable tr td .InnerBox.end{ border-right:none;}
+/* 2019/06/03 NSK鈴木 18PRJ03142_(FS)業務検証:セールス受注前活動活動結果登録オペレーション [TKM]PUAT-4109 部品詳細にて、バックオーダー(B/O)が表示されない START */
+/* #S-TC-01LeftBody  .S-TC-01DataTable tr td .InnerBox.end{ border-right:none;} */
+#S-TC-01RightBody .S-TC-01DataTable tr td .InnerBox.end{ border-right:none;}
+/* 2019/06/03 NSK鈴木 18PRJ03142_(FS)業務検証:セールス受注前活動活動結果登録オペレーション [TKM]PUAT-4109 部品詳細にて、バックオーダー(B/O)が表示されない END   */
+.S-TC-01DataTable tr td .w01{width:28px;}
+.S-TC-01DataTable tr td .w02{width:28px;}
+.S-TC-01DataTable tr td .w03{width:147px;}
+.S-TC-01DataTable tr td .w04{width:97px;}
+.S-TC-01DataTable tr td .w05{width:172px;}
+
+
+.S-TC-01DataTable tr td .w02{
+	position:relative;
+}
+.S-TC-01DataTable tr td .w02 .IconR{
+	position:absolute;
+	left:1px; top:26px;
+	background:#eeeeee;
+	border:#b3b3b3 1px solid;
+	border-radius:4px;
+	width:23px;
+	height:23px;
+	font-size:12px;
+	line-height:23px;
+	text-align:center;
+	padding:0; padding:0;
+	text-indent:0;
+}
+
+.S-TC-01DataTable tr td .w03{
+	line-height:37px;
+}
+.S-TC-01DataTable tr td .w03 .TextBoxSet{
+	overflow:hidden;
+	height:37px;
+}
+.S-TC-01DataTable tr td .w03 .Textbox01{
+	height:37px;
+	border-bottom:#a5a5a5 1px solid;
+	box-shadow:#FFF 0 1px 0;
+	padding:0 0 0 5px;
+	text-align:left;
+}
+.S-TC-01DataTable tr td .w03 .Textbox02{
+	height:38px;
+	border-right:#a5a5a5 1px solid;
+	float:left;
+	width:73px;
+	text-align:center;
+}
+.S-TC-01DataTable tr td .w03 .Textbox03{
+	height:38px;
+	border-left:#FFFFFF 1px solid;
+	float:left;
+	width:72px;
+	text-align:center;
+}
+
+/* 2019/12/19 NSK夏目 TR-SVT-TKM-20191209-001 Technician Main Menuにテクニシャン名が表示されない START */
+/*.S-TC-01DataTable tr td .w04{
+	line-height:37px;
+}
+.S-TC-01DataTable tr td .w04 .Textbox01{
+	height:37px;
+	border-bottom:#a5a5a5 1px solid;
+	text-align:center;
+}
+.S-TC-01DataTable tr td .w04 .Textbox02{
+	height:31px;
+	border-top:#FFFFFF 1px solid;
+	text-align:center;
+	line-height:15px;
+	padding:8px 0;
+}*/
+
+.S-TC-01DataTable tr td .w04{
+	line-height:75px;
+	text-align:center;
+}
+
+/* 2019/12/19 NSK夏目 TR-SVT-TKM-20191209-001 Technician Main Menuにテクニシャン名が表示されない END */
+
+.S-TC-01DataTable tr td .w05{
+	line-height:37px;
+	overflow:hidden;
+}
+.S-TC-01DataTable tr td .w05 .Textbox01{
+	position:relative;
+	width:56px;
+	height:75px;
+	border-right:#a5a5a5 1px solid;
+	text-align:center;
+	float:left;
+}
+.S-TC-01DataTable tr td .w05 .Textbox02{
+	position:relative;
+	width:56px;
+	height:75px;
+	border-left:#FFFFFF 1px solid;
+	border-right:#a5a5a5 1px solid;
+	text-align:center;
+	float:left;
+}
+.S-TC-01DataTable tr td .w05 .Textbox03{
+	position:relative;
+	width:56px;
+	height:75px;
+	border-left:#FFFFFF 1px solid;
+	text-align:center;
+	float:left;
+}
+.S-TC-01DataTable tr td .w05 .BtnOn,
+.S-TC-01DataTable tr td .w05 .BtnOff{
+	position:absolute;
+	left:3px; top:23px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#6485cc),
+							color-stop(0.01, #6485cc),
+							color-stop(0.01, #6f96e8),
+							color-stop(0.5, #376fe0),
+							color-stop(0.5, #2361dd),
+							to(#2463de));
+	border:#5f6368 1px solid;
+	border-radius:5px;
+	box-shadow:rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.1) 0 1px 0 inset;
+	width:48px;
+	height:26px;
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	text-shadow:rgba(0,0,0,0.5) 0 -1px 0;
+	line-height:26px;
+	font-weight:bold;
+}
+.S-TC-01DataTable tr td .w05 .BtnOff{
+	background:-webkit-gradient(linear, left top, left bottom, from(#b0b4ba),
+							to(#6d7580));
+	color:#FFF;
+}
+
+.S-TC-01DataTable tr td .w05 #JobReStartButton{
+	display:none;
+}
+
+/* 2019/06/03 NSK鈴木 18PRJ03142_(FS)業務検証:セールス受注前活動活動結果登録オペレーション [TKM]PUAT-4109 部品詳細にて、バックオーダー(B/O)が表示されない START */
+/*.S-TC-01DataTable tr td .w11{width:28px;}  */
+/*.S-TC-01DataTable tr td .w12{width:127px;} */
+/*.S-TC-01DataTable tr td .w13{width:88px;}  */
+/*.S-TC-01DataTable tr td .w14{width:99px;}  */
+/*.S-TC-01DataTable tr td .w15{width:48px;}  */
+.S-TC-01DataTable tr td .w11{width:28px;}
+.S-TC-01DataTable tr td .w12{width:175px;}
+.S-TC-01DataTable tr td .w13{width:88px;}
+.S-TC-01DataTable tr td .w14{width:99px;}
+/* 2019/06/03 NSK鈴木 18PRJ03142_(FS)業務検証:セールス受注前活動活動結果登録オペレーション [TKM]PUAT-4109 部品詳細にて、バックオーダー(B/O)が表示されない END   */
+
+
+#S-TC-01LeftBody .S-TC-01DataTable tr td .InnerBox.fst{display:block; text-align:center; line-height:76px;}
+#S-TC-01LeftBody .S-TC-01DataTable tr td .w02{text-align:left; text-indent:9px;}
+/* 2019/12/19 NSK夏目 TR-SVT-TKM-20191209-001 Technician Main Menuにテクニシャン名が表示されない START */
+/*#S-TC-01LeftBody .S-TC-01DataTable tr td .w04 span{
+	display:block;
+	height:36px;
+}*/
+#S-TC-01LeftBody .S-TC-01DataTable tr td .w04 span{
+	display:block;
+	height:75px;
+}
+/* 2019/12/19 NSK夏目 TR-SVT-TKM-20191209-001 Technician Main Menuにテクニシャン名が表示されない END */
+#S-TC-01LeftBody .S-TC-01DataTable tr td .w05 span{
+	text-align:center; display:block;
+	font-size:14px; line-height:16px;
+	padding-top:4px; height:30px;
+}
+#S-TC-01RightBody .S-TC-01DataTable tr td .w12{text-align:left; text-indent:9px;}
+
+
+#contents .stc01Box02 .contentTitle{ font-weight:normal; width:171px; height:25px; line-height:26px; font-size:16px;}
+#contents .S-TC-01Wrap h2{ font-weight:normal;}
+
+
+
+.S-TC-01 {
+    padding-bottom:11px;	
+}
+#if01_02 {
+    border:none;
+}
+
+
+.S-TC-01DataTable tr td .w02 .IconR{
+	position:absolute;
+	left:1px; top:26px;
+	background:#eeeeee;
+	border:#b3b3b3 1px solid;
+	border-radius:4px;
+	width:23px;
+	height:23px;
+	font-size:12px;
+	line-height:23px;
+	text-align:center;
+	padding:0; padding:0;
+	text-indent:0;
+}
+
+#S-TC-01LeftBody .S-TC-01DataTable  .w02 .imgicon01{
+    background:url(../images/SC3150102/stc01column_icn01.png) right top no-repeat;
+	position:absolute;
+	left:1px; top:26px;
+	/* border:#b3b3b3 1px solid;
+	border-radius:4px;*/
+	width:25px;
+	height:25px;
+	font-size:12px;
+	line-height:23px;
+	text-align:center;
+	padding:0; padding:0;
+	text-indent:0;
+}
+#S-TC-01LeftBody .S-TC-01DataTable  .w02 .imgicon02{
+    background:url(../images/SC3150102/stc01column_icn02.png) right top no-repeat;
+	position:absolute;
+	left:3px; top:26px;
+	width:23px;
+	height:23px;
+	font-size:12px;
+	line-height:23px;
+	text-align:center;
+	padding:0; padding:0;
+	text-indent:0;
+}
+#S-TC-01LeftBody .S-TC-01DataTable .w02 .imgicon02 p{
+    position:relative;
+    right:2px;
+    bottom:0px;
+    top:10px;
+    display:block;
+    width:12px;
+    height:15px;
+    font-size:12px;
+    line-height:15px;
+    font-weight:bold;
+    text-align:center;
+    color:#FFF;
+    
+}
+.S-TC-01WrapLeft,
+.S-TC-01WrapRight { border:#B3B3B3 1px solid; border-radius:8px; }
+.S-TC-01WrapLeft{
+	position:relative;
+	float:left;
+	width:451px;
+}
+.S-TC-01WrapRight{
+	position:relative;
+	float:right;
+	width:451px;
+}
+
+
+/* 文言省略表示 */
+.Ellipsis
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+.EllipsisTextRight
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    text-align: left;
+}
+
+/* 2015/04/03 TMEJ 明瀬 TMT２販社号口後フォロー IDX635 ボタンタップ時に文言のツールチップが表示される START */
+.EllipsisNoToolChip
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+/* 2015/04/03 TMEJ 明瀬 TMT２販社号口後フォロー IDX635 ボタンタップ時に文言のツールチップが表示される END */

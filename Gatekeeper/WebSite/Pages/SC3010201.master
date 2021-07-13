@@ -1,0 +1,143 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/CommonMasterPage.Master" AutoEventWireup="false" CodeFile="SC3010201.master.vb" Inherits="Pages_SC3010201" %>
+<%@ Register src="SC3040101.ascx" tagname="SC3040101" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <%'外部ファイル宣言 %>
+    <link rel="stylesheet" href="../Styles/SC3010201/SC3010201.css?20111228000000" type="text/css" media="all" />
+    <script type="text/javascript" src="../Scripts/SC3010201/SC3010201.js?20120106000000"></script>
+    <%'HEADの穴あけ %>
+    <asp:ContentPlaceHolder ID="SC3010201head" runat="server"/>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="content" Runat="Server">
+<asp:ScriptManager ID="managerScript" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+<%'左カラム %>
+<div id="contentsLeftBox" class="contentsFrame">
+    <h2 class="contentTitle"><icrop:CustomLabel ID="leftContentTitleLabel" CssClass="cutTextWord" Width="170px" runat="server"/></h2>
+    
+    <div class="innerBox">
+        <%'重要事項 %>
+        <div id="message">
+            <div class="iconsBoxMemo icon01"><a id="messageAddButton" href="javascript:void(0)"></a></div>
+            <h3><icrop:CustomLabel ID="messageTitleLabel" CssClass="cutTextWord" Width="230px" runat="server" /></h3>
+            <div id="messageInner01" class="nsc00BackGroud01">
+                <div id="messageInner02">
+
+                    <%'一覧ListView ここから %>
+                    <asp:ListView ID="MessageListView" runat="server" DataSourceID="MessageDataSource" EnableViewState="false" ClientIDMode="Predictable">
+                        <LayoutTemplate>
+                            <ul class="normalMode">
+                                <li id="itemPlaceholder" runat="server"/>
+                            </ul>
+                        </LayoutTemplate>
+                        <ItemTemplate>
+                            <li>
+                                <%'メッセージ１件毎のレイアウト %>
+                                <span class="messegeLineBox">
+                                    <icrop:CustomLabel ID="MessageTitleLabel" runat="server" 
+                                                        CssClass="MessageTitle" UseEllipsis="true" Width="176px" 
+                                                        Text='<%#HttpUtility.HtmlEncode(Eval("TITLE"))%>'/>
+                                    <asp:Label ID="Label2" runat="server" CssClass="MessageDay cutTextWord" Text='<%#HttpUtility.HtmlEncode(Eval("CREATEDATE_DISP"))%>' />
+                                    <%'詳細表示エリア %>
+                                    <div class="msgDetail">
+                                        <asp:Literal ID="MesageDetailLiteral" Mode="PassThrough" runat="server" 
+                                        Text='<%# HttpUtility.HtmlEncode(Eval("MESSAGE")).Replace(vbCrLf, "<br/>").Replace(vbLf, "<br/>")%>' />
+                                    </div>
+                                </span>
+                            </li>
+                        </ItemTemplate>
+                        <EmptyDataTemplate>
+                            <div id="messageNotFound">
+                                <span><asp:Literal id="messageNotFoundLiteral" Mode="Encode" runat="server"></asp:Literal></span>
+                            </div>
+                        </EmptyDataTemplate>
+                    </asp:ListView>
+                    <%'一覧ListView ここまで %>
+                    <%'データソース %>
+                    <asp:ObjectDataSource ID="MessageDataSource" runat="server"
+                                            SelectMethod="ReadMessageInfo" 
+                                            TypeName="Toyota.eCRB.Common.MainMenu.BizLogic.SC3010201BusinessLogic" />
+
+                </div>
+                <p class="more02">&nbsp;
+                    <%'拡大 %>
+                    <asp:LinkButton ID="MessageBigSizeLink" runat="server" CssClass="cutTextWord" OnClientClick="return false">
+                        <icrop:CustomLabel ID="MessageNText1" runat="server"/>
+                        <%=HttpUtility.HtmlEncode(MessageListView.Items.Count - 3)%>
+                        <icrop:CustomLabel ID="MessageNText2" runat="server"/>
+                    </asp:LinkButton>
+                    <%'縮小 %>
+                    <asp:LinkButton ID="MessageNormalSizeLink" style="display:none" CssClass="cutTextWord" runat="server" OnClientClick="return false">&nbsp;</asp:LinkButton>
+                </p>
+            </div>
+        </div>
+        <%'RSS %>
+        <div id="news">
+            <h3><icrop:CustomLabel ID="newsTitleLabel" runat="server"/></h3>
+            <div id="newsInner01">
+                <div id="newsInner02">
+                    <%'一覧ListView %>
+                    <asp:ListView ID="RssListView" runat="server" EnableViewState="false" DataSourceID="RssDataSource" ClientIDMode="Predictable">
+                        <LayoutTemplate>
+                            <ul class="normalMode">
+                                <li id="itemPlaceholder" runat="server"/>
+                            </ul>
+                        </LayoutTemplate>
+                        <ItemTemplate>
+                            <%'RSS１件毎のレイアウト %>
+                            <li siteUrl='<%#HttpUtility.HtmlEncode(Eval("ITEM_URL"))%>'>
+                                <icrop:CustomLabel ID="rssItemText" 
+                                                   CssClass="newsTitle" 
+                                                   runat="server" 
+                                                   UseEllipsis="true" 
+                                                   Width="205px" 
+                                                   Text='<%#HttpUtility.HtmlEncode(WebWordUtility.GetWord(APPID, 7) & Eval("ITEM_TITLE").ToString())%>'/>
+                                <span class="newsDate cutTextWord"><asp:Literal ID="Literal1" Mode="Encode" runat="server" Text='<%#Eval("ITEM_CREATEDATE_DAY")%>'/></span>
+                                <span class="newsTime cutTextWord"><asp:Literal ID="Literal2" Mode="Encode" runat="server" Text='<%#Eval("ITEM_CREATEDATE_TIME")%>'/></span>
+                            </li>
+                        </ItemTemplate>
+                        <EmptyDataTemplate>
+                            <div id="rssNotFound">
+                                <span><asp:Literal id="rssNotFoundLiteral" Mode="Encode" runat="server"></asp:Literal></span>
+                            </div>
+                        </EmptyDataTemplate>
+                    </asp:ListView>
+                    <%'データソース %>
+                    <asp:ObjectDataSource ID="RssDataSource" runat="server" 
+                                            SelectMethod="ReadRssInfo" 
+                                            TypeName="Toyota.eCRB.Common.MainMenu.BizLogic.SC3010201BusinessLogic" />
+                </div>    
+                <p class="more">&nbsp;
+                    <%'拡大 %>
+                    <asp:LinkButton ID="RssBigSizeLink" CssClass="cutTextWord" runat="server" OnClientClick="return false">
+                        <icrop:CustomLabel ID="NewsNText1" runat="server"/>
+                        <%=RssListView.Items.Count - 3 %>
+                        <icrop:CustomLabel ID="NewsNText2" runat="server"/>
+                    </asp:LinkButton>
+                    <%'縮小 %>
+                    <asp:LinkButton ID="RssNormalSizeLink" CssClass="cutTextWord" style="display:none" runat="server" OnClientClick="return false">&nbsp;</asp:LinkButton>
+                </p>
+            </div>
+        </div>
+        <%'穴空け %>
+        <asp:ContentPlaceHolder ID="SC3010201leftBottomBox"  runat="server"/>
+    </div>
+</div>
+
+<%'右側の穴あけ %>
+<asp:ContentPlaceHolder ID="SC3010201rightBox" runat="server"/>
+
+<%'重要事項登録 %>
+<div id="messageWinPopupBlack">&nbsp;</div>
+<div id="messageWinPopup">
+    <uc1:SC3040101 ID="SC30401011" runat="server" EnableViewState="false" />
+</div>
+
+<%'サーバー処理中のオーバーレイとアイコン %>
+<div id="serverProcessOverlayBlack"></div>
+<div id="serverProcessIcon"></div>
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+    <asp:ContentPlaceHolder ID="SC301020footer" runat="server"/>
+</asp:Content>

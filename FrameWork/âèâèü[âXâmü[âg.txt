@@ -1,0 +1,123 @@
+SystemFrameworks リリースノート
+
+ディレクトリ構成
+	WebSite
+		リリース用Web基盤。
+	WebSite (Develop)
+		開発用Web基盤。slnファイル付。
+	SQL
+		基盤が利用するテーブルのDDL
+	Batch
+		リリース用Batch基盤。
+
+
+4.0.0 変更点
+	[仕様追加／変更]
+         -
+
+	[その他]
+		・【1.4.5】断面で分岐。
+		・【1.4.6】,【1.4.7】,【1.4.8】の反映済み。
+
+4.1.0 変更点
+	[仕様追加／変更]
+		・チームリーダー（TL)対応
+　			・TLログイン時に、「通知送受信一覧（MG用）」および「フッターボタン（ショールームステータス）」を表示。
+			・StaffContext.TeamLeaderプロパティ値が、再構築DBの定義に基づくよう、内部ロジックを修正。
+		・「国民番号」を、顧客検索条件に追加（マスターページのヘッダー）
+		・CustomButtonの点滅時間の増加
+
+4.2.0 変更点
+	[不具合修正]
+	・ログイン処理の不具合修正
+	　TB_M_STAFF側に存在しないアカウント（GK、受付など）でログインした場合、
+	　内部エラーが発生する不具合を修正。
+
+	[仕様追加／変更]
+	・JavaScriptのdocument.domain対応
+	　JavaScriptのdocument.domain指定を必要とする（＝親フレーム・子フレーム
+	　が別サイトに配置されている）機能IDを設定ファイルに設定する事により、
+	　マスターページ内部で自動的にdocument.domain指定を出力する。
+
+4.2.1 変更点
+	[仕様追加／変更]
+		・iOS8対応
+		  DOMのロード完了前に実行される"webkitTransitionEnd"イベントハンドラを、
+			setTimeout関数のイベントハンドラに置き換え。
+
+		 【修正ファイル】
+				icropScript.js
+				CommonMasterPage.js
+
+4.2.2 変更点
+	[仕様追加／変更]
+		・通知の受信をトリガーとして任意のイベントハンドラを実行できるよう、
+		　icropScript.ui.setNoticeHandlerメソッドを追加。
+
+		 【修正ファイル】
+				icropScript.js
+
+4.2.3 変更点
+	[仕様追加／変更]
+		・配送希望日入力ボタン（マスターページのフッターボタン）タップ時の遷移先URLの
+		　仕様変更に伴い、GET引数を追加（UserID,FunctionCode）。
+
+		 【修正ファイル】
+				Toyota.eCRB.SystemFrameworks.Web.dll
+
+4.2.4 変更点
+	[仕様追加／変更]
+		・セールスタブレットの受注後工程機能の利用有無を店舗毎にシステム設定できるように
+		　なったことに伴って、納車時説明ボタン（マスターページのフッターボタン）の
+		　表示／非表示を、本設定に基づいて制御する仕様を追加。
+		　（システム設定名：USE_AFTER_ODR_PROC_FLG（TB_M_SYSTEM_SETTING_DLR））
+
+		 【修正ファイル】
+				Toyota.eCRB.SystemFrameworks.Core.dll
+				Toyota.eCRB.SystemFrameworks.Web.dll
+
+4.2.5 変更点
+	[仕様追加／変更]
+		・配送希望日入力ボタン（マスターページのフッターボタン）タップ時の遷移先URLの
+		　仕様変更に伴い、GET引数のキー名を変更（TARGET_ID,DEALER_CD,BRANCH_CD,USER_ID）。
+
+		 【修正ファイル】
+				Toyota.eCRB.SystemFrameworks.Web.dll
+
+4.2.6 変更点
+	[仕様追加／変更]
+		・（トライ店システム評価）他システム連携における複数店舗コード変換対応
+		　・「TB_M_DMS_CODE_MAP」（基幹コードマップ）を取得する共通関数の取得項目に
+		　　「DMS_CD_3」（基幹コード3）を追加。
+		　・「TB_M_PROGRAM_SETTING」（プログラム設定）を取得する共通関数を追加。
+		　・配送希望日入力ボタン（マスターページのフッターボタン）タップ時のDMS店舗コード変換時に
+		　　プログラム設定を参照しDMS店舗コードを選択
+		　　（「DMS_CD_2」（基幹コード2）or「DMS_CD_3」（基幹コード3））するよう変更
+		　　
+		 【修正ファイル】
+				Toyota.eCRB.SystemFrameworks.Core.dll
+				Toyota.eCRB.SystemFrameworks.Web.dll
+4.2.7 変更点
+	[仕様追加／変更]
+		  ・スクロールが不要なケース(※)でのevent.preventDefault処理の廃止
+		     ※：表示領域＞表示内容 となるケース
+
+		 【修正ファイル】
+				jquery.fingerscroll.js
+
+
+4.2.8 変更点
+	[仕様追加／変更]
+		  ・商品紹介ボタンの追加
+		  ・納車時説明画面のボタンは非活性をデフォルトとする
+
+		 【修正ファイル】
+				CommonMasterPage.Master.vb
+				1800.png
+				1800_disabled.png
+				1800_on.png
+4.3.0 変更点
+	[仕様追加／変更]
+    　・（トライ店システム評価）タブレット基盤の統一化による開発・維持の効率化検証
+	　　　セールスタブレット基盤とサービスタブレット基盤の統一化
+

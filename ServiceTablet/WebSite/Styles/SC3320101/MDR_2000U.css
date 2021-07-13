@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+
+#MM_Main_Contents{
+	width:640px;
+	height:816px;
+	background:-webkit-linear-gradient(270deg,rgba(243, 243, 243, 1.00) 0%,rgba(216, 216, 216, 1.00) 100%);
+	padding-top:15px;
+		
+}
+
+#MM_Main_Contents .Bottom_Box{
+	width:608px;
+	height:799px;
+	background:#FFF;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+	margin:0px auto 0;
+}
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL{
+	width:578px;
+	height:768px;
+	border:#c9c9c9 1px solid;
+	box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:14px 0px 0px 14px; 
+	border-spacing:0px;
+	border-collapse: collapse;
+	overflow:hidden;
+}
+
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .TBL_head{
+	width:578px;
+}
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .HG38{
+	height:37px;	
+}
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .HG39{
+	height:38px;	
+}
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .TBL_head .head_Type01{
+	height:37px;
+	text-align:center;
+	font-size:26px;
+	font-weight:normal;
+	line-height:38px;
+	color:#FFF;
+	border-right:#c9c9c9 1px solid;
+	border-bottom:#c9c9c9 1px solid;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	position:relative;
+}
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .TBL_head .head_Type02{
+	height:37px;
+	text-align:center;
+	font-size:26px;
+	font-weight:normal;
+	line-height:38px;
+	color:#FFF;
+	border-left:#FFF 1px solid;
+	border-bottom:#c9c9c9 1px solid;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	position:relative;
+}
+.head_InBox01{
+	height:36px;
+	border:none;
+}
+.head_InBox02{
+	height:36px;
+}
+.head_InBox03{
+	height:37px;
+	border-top:#FFF 1px solid;
+	border-bottom:#FFF 1px solid;
+}
+.head_InBox04{
+	height:37px;
+	border-top:#FFF 1px solid;
+	border-bottom:#FFF 1px solid;
+}
+
+
+.head_InBox span.TX_01{
+	text-align:left;
+	font-size:34px;
+	font-weight:normal;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	position:absolute;
+	top:0; left:14px;
+}
+.head_InBox span.TX_02{
+	text-align:center;
+	font-size:24px;
+	font-weight:normal;
+	line-height:44px;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+#VisitInfoContents{
+	width:578px;
+	height:690px;
+	/*overflow-y:scroll;
+	overflow-x:hidden;*/
+}
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .Bottom_TBL{
+	width:578px;
+	/*height:776px;*/
+}
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .Bottom_TBL tr:nth-child(1) td:nth-of-type(1){
+    border-top: #C9C9C9 1px solid;
+}
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .Bottom_TBL tr:nth-child(1) td:nth-of-type(2){
+    border-top: #C9C9C9 1px solid;
+}
+
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .Bottom_TBL .Contents_Type01{
+	height:79px;
+	text-align:left;
+	font-size:34px;
+	line-height:79px;
+	color:#FFF;
+	border-right:#c9c9c9 1px solid;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	position:relative;
+}
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .Bottom_TBL .Contents_Type02{
+	height:79px;
+	text-align:center;
+	font-size:34px;
+	line-height:79px;
+	color:#FFF;
+	border-left:#FFF 1px solid;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+	position:absolute;
+}
+.Contents_InBox{
+	height:80px;
+	border-top:#FFF 1px solid;
+	border-bottom:#c9c9c9 1px solid;
+}
+
+.Contents_InBox .Loc_BoxNum{
+	width:148px;
+	height:57px;
+	background:#FFF;
+	border:#ababab 1px solid;
+	border-radius:8px;
+	position:absolute;
+	top:10px; left:153px;
+}
+.Contents_InBox .Loc_BoxAlp{
+	width:98px;
+	height:57px;
+	background:#FFF;
+	border:#ababab 1px solid;
+	border-radius:8px;
+	position:absolute;
+	top:10px; left:33px;
+}
+
+.Contents_InBox span.TXC_01{
+	text-align:left;
+	font-size:26px;
+	font-weight:normal;
+	line-height:78px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position:absolute;
+	top:0; left:26px;
+}
+.Contents_InBox span.TXC_02{
+	text-align:center;
+	font-size:24px;
+	font-weight:normal;
+	line-height:82px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+}
+.Contents_InBox .TXC_03{
+	top: -14px;
+	text-align:center;
+	font-size:24px;
+	font-weight:normal;
+	line-height:57px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	border: none;
+	position: relative;
+	width: 314px;
+}
+.Contents_InBox .TXC_Icon{
+	height:inherit;
+	background:url(../images/TC_Check_Icon.png) center center no-repeat;	
+}
+
+.W01{
+	width:242px;	
+}
+.W02{
+	width:336px;	
+}
+.W03{
+	width:241px;	
+}
+.W04{
+	width:336px;	
+}
+
+
+
+.TC_Button02{	
+	width:578px;
+	height:77px;
+	border-top:#5671ab 1px solid;
+	border-left:#3c5fa4 1px solid;
+	border-right:#3c5fa4 1px solid;
+	border-bottom:#4669ac 1px solid;
+	border-radius:10px;
+	margin:13px auto 0;
+	font-size:40px;
+	line-height:77px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px;
+}
+
+
+
+.TC_BG01{
+	background:-webkit-gradient(linear, left top, left bottom, from(#8d9199),
+               color-stop(0.50, #797d84),
+               color-stop(0.51, #6a6e76),
+			   to(#5e626b));
+}
+.TC_BG02{
+	background:#FFF;
+}
+.TC_BG03{
+	background:#efefef;
+}
+.TC_BG04{
+	background:-webkit-gradient(linear, left top, left bottom, from(#78a0f3),
+               color-stop(0.50, #386fe0),
+               color-stop(0.51, #2663dd),
+			   to(#2361da));
+}
+.TC_BG05{
+	background:-webkit-gradient(linear, left top, left bottom, from(#8d9199),to(#7a7e85));
+}
+.TC_BG06{
+	background:-webkit-gradient(linear, left top, left bottom, from(#6a6e76),to(#5e626b));
+}
+.TC_BG07{
+	background:#9ca2a9;
+}
+.TC_BG08{
+	background:#92989e;
+}
+.TC_BG09{
+	background:-webkit-gradient(linear, left top, left bottom, from(#b5b5b5),
+               color-stop(0.50, #8c8c8c),
+               color-stop(0.51, #818181),
+			   to(#7e7e7e));
+	border-top:#808080 1px solid;
+	border-left:#626262 1px solid;
+	border-right:#626262 1px solid;
+	border-bottom:#6f6f6f 1px solid;
+	color:#c6c6c6;
+	text-shadow:#757575 0 -2px 1px;
+}
+
+#LoadingScreen
+{
+position:absolute;
+top:0px;    
+height: 1200px;
+width: 640px;
+opacity:0.1;
+z-index:1000;
+display: none;
+}
+
+.TXC_03{
+	top: -14px;
+	text-align:center;
+	font-size:24px;
+	font-weight:normal;
+	line-height:57px;
+	color:#666666;
+	text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px;
+	position: relative;
+	width: 314px;
+}
+
+.SearchBox{
+	position:absolute;
+	left:9px; top:16px;
+	width:464px;
+	height:58px;
+}
+.SearchBox .SearchIcon{
+	position:absolute;
+	left:20px; top:16px;
+	background:url(../Images/SC3320101/search_icon.png) left top no-repeat;
+	width:100px; height:49px;
+	z-index:2;
+}
+.SearchBox .SearchArea{
+	position:absolute;
+	left:0; top:0;
+	background:#FFF;
+	box-shadow:#FFF 0 1px 2px, inset rgba(35,31,32,0.70) 0 2px 6px;
+	width:0px;
+	height:56px;
+	/*border:#636363 1px solid;*/
+	border-radius:56px;
+	z-index:1;
+}
+
+.SearchBox .SearchArea input{
+	position:absolute;
+	left:64px; top:16px;
+	border:none;
+	width:0px;
+	height:31px;
+	font-size:28px;
+	line-height:31px;
+	color: #686C74;
+}
+.DisplayOff{
+	display:none;
+}
+
+.DisplayOn{
+	display:table-row;
+}
+

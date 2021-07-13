@@ -1,0 +1,230 @@
+/* iPodTouchã§í  */
+#MstPG_LoadingScreen
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:Black;
+    opacity:0.6;
+    z-index:1000;
+    display:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#MstPG_LoadingWrap
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#MstPG_LoadingScreen .loadingIcn
+{
+	display:block;
+	width:76px;
+	height:76px;
+	-webkit-animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+
+@-webkit-keyframes LoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
+
+body {
+	background: -webkit-gradient(linear, center top, center bottom, from(#E5E5E5), to(#B4B4B4));
+	margin:0;
+	padding:0;
+	font-family:"ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif, "HiraKakuProN-W3";
+}
+
+#gate {
+	position: absolute;
+	top: 0px;
+	width: 640px;
+	height: 92px;
+	z-index: 2;
+	font-size: 40px;
+	font-weight: 700;
+	color: #717880;
+	text-align: center;
+	background: -webkit-gradient(linear, center top, center bottom, from(#F4F5F7), to(#AAAEBB));
+	text-shadow:0px 2px 1px #E0E2E7;
+	-webkit-box-shadow: 0px 1px 1px #C6C8CA;
+}
+
+#lbl_title {
+	position: absolute;
+	left: 130px;
+	top: 29px;
+	width: 360px;
+	height: 34px;
+	z-index: 10;
+	font-size: 38px;
+	text-align:center;
+}
+
+/* i-CROPâÊëú */
+.rightButtonsGroup
+{
+	position: absolute;
+	left: 492px;
+	top: 30px;
+}
+/* iPodTouchã§í Ç±Ç±Ç‹Ç≈ */
+
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ã§í ïîï™ */
+body{
+	margin:0;
+	padding:0;
+	font-family:"ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif, "HiraKakuProN-W3";
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td	{
+	margin: 0;	padding: 0;
+}
+
+input{
+	background-color: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
+	color: rgba(255, 255, 255, 0);
+	-webkit-appearance: none;}
+
+li{
+	list-style:none;
+	margin:0px;
+	text-indent: 0px;
+	padding: 0px;
+}
+
+hr {
+	display: none;
+	clear:both;
+}
+
+
+.clearboth{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	color:#FFFFFF;
+	font-size:1px;
+	line-height:1px;
+	text-indent:-3000px;
+	height:1px;
+}
+
+a{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+
+/* ÇªÇÃëº
+------------------------------------------------------------------------------*/
+div#BaseBox{
+	width:640px;
+	height:922px;
+}

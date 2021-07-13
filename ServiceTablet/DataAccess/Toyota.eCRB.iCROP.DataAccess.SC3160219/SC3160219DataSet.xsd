@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3160219DataSet" targetNamespace="http://tempuri.org/SC3160219DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3160219DataSet.xsd" xmlns="http://tempuri.org/SC3160219DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.iCROP.DataAccess.SC3160219.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3160219DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3160219DataSet" msprop:Generator_UserDSName="SC3160219DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RoExteriorDamageMaster" msprop:Generator_TableClassName="RoExteriorDamageMasterDataTable" msprop:Generator_TableVarName="tableRoExteriorDamageMaster" msprop:Generator_TablePropName="RoExteriorDamageMaster" msprop:Generator_RowDeletingName="RoExteriorDamageMasterRowDeleting" msprop:Generator_RowChangingName="RoExteriorDamageMasterRowChanging" msprop:Generator_RowEvHandlerName="RoExteriorDamageMasterRowChangeEventHandler" msprop:Generator_RowDeletedName="RoExteriorDamageMasterRowDeleted" msprop:Generator_UserTableName="RoExteriorDamageMaster" msprop:Generator_RowChangedName="RoExteriorDamageMasterRowChanged" msprop:Generator_RowEvArgName="RoExteriorDamageMasterRowChangeEvent" msprop:Generator_RowClassName="RoExteriorDamageMasterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PARTS_WORD_NUM" msprop:Generator_ColumnVarNameInTable="columnPARTS_WORD_NUM" msprop:Generator_ColumnPropNameInRow="PARTS_WORD_NUM" msprop:Generator_ColumnPropNameInTable="PARTS_WORD_NUMColumn" msprop:Generator_UserColumnName="PARTS_WORD_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="DAMAGE_TYPE" msprop:Generator_ColumnVarNameInTable="columnDAMAGE_TYPE" msprop:Generator_ColumnPropNameInRow="DAMAGE_TYPE" msprop:Generator_ColumnPropNameInTable="DAMAGE_TYPEColumn" msprop:Generator_UserColumnName="DAMAGE_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="DAMAGE_WORD_NUM" msprop:Generator_ColumnVarNameInTable="columnDAMAGE_WORD_NUM" msprop:Generator_ColumnPropNameInRow="DAMAGE_WORD_NUM" msprop:Generator_ColumnPropNameInTable="DAMAGE_WORD_NUMColumn" msprop:Generator_UserColumnName="DAMAGE_WORD_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADATION_FROM" msprop:Generator_ColumnVarNameInTable="columnGRADATION_FROM" msprop:Generator_ColumnPropNameInRow="GRADATION_FROM" msprop:Generator_ColumnPropNameInTable="GRADATION_FROMColumn" msprop:Generator_UserColumnName="GRADATION_FROM" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADATION_TO" msprop:Generator_ColumnVarNameInTable="columnGRADATION_TO" msprop:Generator_ColumnPropNameInRow="GRADATION_TO" msprop:Generator_ColumnPropNameInTable="GRADATION_TOColumn" msprop:Generator_UserColumnName="GRADATION_TO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RoExteriorDamageInfo" msprop:Generator_TableClassName="RoExteriorDamageInfoDataTable" msprop:Generator_TableVarName="tableRoExteriorDamageInfo" msprop:Generator_RowChangedName="RoExteriorDamageInfoRowChanged" msprop:Generator_TablePropName="RoExteriorDamageInfo" msprop:Generator_RowDeletingName="RoExteriorDamageInfoRowDeleting" msprop:Generator_RowChangingName="RoExteriorDamageInfoRowChanging" msprop:Generator_RowEvHandlerName="RoExteriorDamageInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="RoExteriorDamageInfoRowDeleted" msprop:Generator_RowClassName="RoExteriorDamageInfoRow" msprop:Generator_UserTableName="RoExteriorDamageInfo" msprop:Generator_RowEvArgName="RoExteriorDamageInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DAMAGE_TYPE_EXISTS" msprop:Generator_ColumnVarNameInTable="columnDAMAGE_TYPE_EXISTS" msprop:Generator_ColumnPropNameInRow="DAMAGE_TYPE_EXISTS" msprop:Generator_ColumnPropNameInTable="DAMAGE_TYPE_EXISTSColumn" msprop:Generator_UserColumnName="DAMAGE_TYPE_EXISTS" type="xs:string" minOccurs="0" />
+              <xs:element name="DAMAGE_MEMO" msprop:Generator_ColumnVarNameInTable="columnDAMAGE_MEMO" msprop:Generator_ColumnPropNameInRow="DAMAGE_MEMO" msprop:Generator_ColumnPropNameInTable="DAMAGE_MEMOColumn" msprop:Generator_UserColumnName="DAMAGE_MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="RO_THUMBNAIL_ID" msprop:Generator_ColumnVarNameInTable="columnRO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInRow="RO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInTable="RO_THUMBNAIL_IDColumn" msprop:Generator_UserColumnName="RO_THUMBNAIL_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="THUMBNAIL_IMG_PATH" msprop:Generator_ColumnVarNameInTable="columnTHUMBNAIL_IMG_PATH" msprop:Generator_ColumnPropNameInRow="THUMBNAIL_IMG_PATH" msprop:Generator_ColumnPropNameInTable="THUMBNAIL_IMG_PATHColumn" msprop:Generator_UserColumnName="THUMBNAIL_IMG_PATH" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RoThumbnailId" msprop:Generator_TableClassName="RoThumbnailIdDataTable" msprop:Generator_TableVarName="tableRoThumbnailId" msprop:Generator_RowChangedName="RoThumbnailIdRowChanged" msprop:Generator_TablePropName="RoThumbnailId" msprop:Generator_RowDeletingName="RoThumbnailIdRowDeleting" msprop:Generator_RowChangingName="RoThumbnailIdRowChanging" msprop:Generator_RowEvHandlerName="RoThumbnailIdRowChangeEventHandler" msprop:Generator_RowDeletedName="RoThumbnailIdRowDeleted" msprop:Generator_RowClassName="RoThumbnailIdRow" msprop:Generator_UserTableName="RoThumbnailId" msprop:Generator_RowEvArgName="RoThumbnailIdRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RO_THUMBNAIL_ID" msprop:Generator_ColumnVarNameInTable="columnRO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInRow="RO_THUMBNAIL_ID" msprop:Generator_ColumnPropNameInTable="RO_THUMBNAIL_IDColumn" msprop:Generator_UserColumnName="RO_THUMBNAIL_ID" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RoExteriorDamageCount" msprop:Generator_TableClassName="RoExteriorDamageCountDataTable" msprop:Generator_TableVarName="tableRoExteriorDamageCount" msprop:Generator_RowChangedName="RoExteriorDamageCountRowChanged" msprop:Generator_TablePropName="RoExteriorDamageCount" msprop:Generator_RowDeletingName="RoExteriorDamageCountRowDeleting" msprop:Generator_RowChangingName="RoExteriorDamageCountRowChanging" msprop:Generator_RowEvHandlerName="RoExteriorDamageCountRowChangeEventHandler" msprop:Generator_RowDeletedName="RoExteriorDamageCountRowDeleted" msprop:Generator_RowClassName="RoExteriorDamageCountRow" msprop:Generator_UserTableName="RoExteriorDamageCount" msprop:Generator_RowEvArgName="RoExteriorDamageCountRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnPropNameInTable="CountColumn" msprop:Generator_UserColumnName="Count" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

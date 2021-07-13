@@ -1,0 +1,283 @@
+﻿/*/-------------------------------------------------------------------------
+//SC3140102.css
+//--------------------------------------------------------------------------
+//機能：ダッシュボード
+//補足：
+//作成：2012/01/16 KN 森下
+//更新：
+----------------------------------------------------------------------------*/
+
+#dashboardBoxflick
+{
+    width: 296px;
+    overflow: hidden;
+}
+
+#dashboardBoxflick ul
+{
+    list-style: none;
+    width: 600px;
+    margin: 0;
+}
+      
+#dashboardBoxflick ul li
+{
+    width: 296px;
+    margin: 0;
+    float: left; 
+}
+
+#dashboardBoxflick .rightPadding
+{
+    padding-right: 5px;
+    border-right-style: outset;
+}
+
+#dashboardBoxflick h4 {
+        color: #FFF;
+}
+
+#dashboardBoxflick .ui-flickable-container {
+        cursor: pointer;
+}
+
+.clearboth {
+    display:block;
+    overflow:hidden;
+    clear:both;
+    color:#FFFFFF;
+    font-size:1px;
+    line-height:1px;
+    text-indent:-3000px;
+    height:1px;
+}
+
+#dashboardBox{
+}
+
+.dashboardBoxTitle
+{
+    display: block;
+    width: 180px;
+    float: left;
+    margin: 2px 0 4px 0;
+}
+.dashboardBoxTime {
+	display:block;
+	width:90px;
+	float:right;
+	text-align:right;
+	font-size:10px;
+	color:#666666;
+	margin:7px 0 4px 0;
+	padding:2px 0 0;
+}
+
+.dashboardBoxAll
+{
+    background: url('../Images/SC3140102/bgGoal200.png') no-repeat 99px -2px;
+    height: 190px;
+}
+
+.dashboardBoxHalf
+{
+    background: url('../Images/SC3140102/bgGoal200B.png') no-repeat 99px -2px;
+    height: 71px;
+}
+
+.dashboardBoxMainAreaStyle
+{
+    width: 296px;
+    background-color: #FFFFFF;
+    clear: both;
+}
+
+.dashboardBoxSubAreaStyle
+{
+    width: 296px;
+    background-color: #FFFFFF;
+    color: #666666;
+    clear: both;
+}
+
+.progress{
+	width:100%;
+	font-size:10px;
+}
+
+.progress tr.topGraf td{
+	padding:10px 0 0;
+}
+.progress td{
+	height:20px;
+	vertical-align:middle;
+	color:#666666;
+	font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", Osaka, sans-serif, HiraKakuProN-W6, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" ;
+}
+.progress .Column01{
+	font-size:9px;
+	width:40px;
+	text-align:left;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column01B{
+	font-size:9px;
+	width:68px;
+	text-align:left;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column02{
+	font-size:9px;
+	width:32px;
+	text-align:right;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column02B{
+	font-size:9px;
+	width:19px;
+	text-align:right;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column03{
+	font-size:9px;
+	width:32px;
+	text-align:right;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column03B{
+	font-size:9px;
+	width:21px;
+	text-align:right;
+	overflow:hidden;
+}
+.progress .Column04{
+	text-align:right;
+	padding-left:6px;
+}
+.progress .Column05{
+	white-space:nowrap;
+	width:210px;
+}
+.progress .Column06{
+	font-size:10px;
+	line-height:11px;
+	width:104px;
+	height:21px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column06 td{
+	height:14px;
+	padding:6px 0 0 0;
+	overflow:hidden;
+}
+.progress .Column06B{
+	font-size:9px;
+	width:107px;
+	height:14px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column06B td{
+	height:14px;
+	overflow:hidden;
+}
+.progress .Column07{
+	font-size:10px;
+	line-height:11px;
+	width:104px;
+	height:25px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.progress .Column08{
+	font-size:1px;
+	line-height:1px;
+	height:6px;
+	white-space:nowrap;
+}
+.progress .Column09{
+	font-size:1px;
+	line-height:1px;
+	height:20px;
+	white-space:nowrap;
+}
+
+.progress .Percent,
+.progress .PercentB{
+	font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", Osaka, sans-serif, HiraKakuProN-W6, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic" ;  
+	font-size:10px;
+	line-height:11px;
+	position:relative;
+	color:#666666;
+	width:190px;
+}
+
+.progress .Percent0,
+.progress .Percent100,
+.progress .Percent200{position:absolute; top:-3px;}
+
+.progress .Percent0{left:2px;}
+.progress .Percent100{left:82px;}
+.progress .Percent200{right:0;}
+
+.progress .PercentB .Percent0,
+.progress .PercentB .Percent100,
+.progress .PercentB .Percent200{position:absolute; top:-10px;}
+
+.progress .Bar01,
+.progress .Bar02,
+.progress .Bar03{
+	display:inline-block;
+	height:8px;
+}
+.progress .Bar01{
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(120, 147, 147, 0.6)),to(rgba(173, 241, 240, 0.4)));
+	opacity: 0.7;
+	box-shadow:3px 3px 3px #666;
+	border-top:2px solid #555555;
+	border-left:2px solid #555555;
+	border-bottom:2px solid #89fdfc;
+	border-right:2px solid #89fdfc;
+	margin:0 5px 0 -2px;
+}
+.progress .Bar02{
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(157, 157, 120, 0.6)),to(rgba(200, 217, 173, 0.4)));
+	opacity: 0.7;
+	box-shadow:3px 3px 3px #666;
+	border-top:2px solid #647575;
+	border-left:2px solid #647575;
+	border-bottom:2px solid #79ff03;
+	border-right:2px solid #79ff03;
+	margin:0 5px 0 -2px;
+}
+.progress .Bar03{
+	background: -webkit-gradient(linear, left top, left bottom, from(#c99300),to(#ffba00));
+	opacity: 0.6;
+	box-shadow:3px 3px 3px #666;
+	border-top:2px solid #647575;
+	border-left:2px solid #647575;
+	border-bottom:2px solid #f18d13;
+	border-right:2px solid #f18d13;
+	margin:0 5px 0 -2px;
+}
+
+.progress .addText_GraphOut
+{
+    width:30px;
+}
+
+.progress .addText_GraphIn
+{
+    position:relative;
+    width:30px;
+    top:-2px;
+    left:-40px;
+	text-align:right;
+	float:inherit;
+}

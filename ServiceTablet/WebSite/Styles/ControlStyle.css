@@ -1,0 +1,451 @@
+﻿/************************************************************************************/
+/* Toyota.eCRB.SystemFrameworks.Web.Controls 共通
+/************************************************************************************/
+
+/* 指定幅を超えてテキストを表示しようとした場合に「…」表示するためのスタイル */
+.textOverflow
+{
+    overflow      : hidden; 
+    white-space   : nowrap; 
+    text-overflow : ellipsis;
+}
+
+/* 「…」表示でテキスト表示が省略された場合のツールチップウィンドウのスタイル */
+.textOverflow_tooltipWindow
+{
+    border        : 1px solid #555;
+    border-radius : 5px;
+    background    : #FFE4C4;
+    color         : #555;
+    display       : none;
+    font-size     : 12px;
+    padding       : 1px 5px;
+    box-shadow    : 4px 4px rgba(3,3,3,0.4); box-shadow: 4px 4px rgba(3,3,3,0.4); 
+    white-space   : nowrap;
+    z-index       : 100000000;
+}
+
+
+.eCRB_selected
+{
+    background-color:Blue;
+    color:White;
+}
+
+.eCRB_PopOver
+{
+    background-color: Black;
+    color: White;
+}
+
+.eCRB_SegmentedButton_button
+{
+}
+.eCRB_SegmentedButton_button_up
+{
+    background-color: White;
+    color: Black;
+    font-weight: normal;
+}
+.eCRB_SegmentedButton_button_down
+{
+    background-color: Blue;
+    color: White;
+    font-weight: bold;
+}
+
+.eCRB_CheckButton .checkMark
+{
+    background-image: url(Images/check.png);
+}
+
+.eCRB_CheckButton
+{
+    background-color:White;
+    top: -4px;
+    left: -16px;
+    width: 60px;
+}
+
+.pushed
+{
+    background-color:Blue;
+}
+
+.eCRB_MultiItemSelector_button .checkMark
+{
+    background-image: url(Images/check.png);
+}
+
+.eCRB_buttonFrame
+{
+    border: 2px solid #111111;
+}
+
+.eCRB_buttonIcon
+{
+}
+
+.eCRB_buttonTextWithIcon
+{
+}
+
+.eCRB_buttonTextWithoutIcon
+{
+}
+
+.eCRB_buttonBadge
+{
+}
+
+.eCRB_checkMark
+{
+}
+
+
+/************************************************************************************/
+/* DateTextBox
+/************************************************************************************/
+
+/* Calendar container div */
+.gldp-android
+{
+	float:left;
+	font-family:"trebuchet ms" !important;
+	background-color:#222 !important;
+	font-size:0.8em !important;
+	font-weight:bold !important;
+	border:solid 1px #222;
+}
+
+/* Table style */
+.gldp-android table
+{
+	border-spacing:1px;
+	border-collapse:inherit;
+}
+
+/* Default row height */
+.gldp-android tr
+{
+	line-height:28px;
+}
+
+/* Default style of cell */
+.gldp-android td
+{
+	margin:0;
+	padding:0;
+	width:25px;
+	text-align:center;
+}
+
+/* Previous and Next arrows */
+.gldp-android-prevnext
+{
+	font-family:"times new roman";
+	background-color:#222;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+/* Month Year title */
+.gldp-android-monyear
+{
+	background-color:#222;
+	color:#fff;
+	font-size:0.9em;
+}
+
+
+/* Days of the week (Sun, Mon, ...) */
+.gldp-android-dow
+{
+	background-color:#424852;
+	color:#ddd;
+	font-size:0.8em;
+}
+
+/* Selectable days */
+.gldp-android-day
+{
+	background-color:#000;
+	color:#fff;
+	border:solid 1px #000;
+}
+
+.gldp-android-day-hover
+{
+	background-color:#000;
+	color:#fff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+/* Selectable daysnext */
+.gldp-android-daynext
+{
+	background-color:#000;
+	color:#fff;
+	border:solid 1px #000;
+}
+
+.gldp-android-daynext-hover
+{
+	background-color:#000;
+	color:#fff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+/* Selected days */
+.gldp-android-selected
+{
+	background-color:#024;
+	color:#fff;
+	border:solid 1px #008faf;
+	cursor:wait;
+}
+
+/* Today */
+.gldp-android-today
+{
+	background-color:#00afff;
+	color:#fff;
+	border:solid 1px #00afff;
+}
+.gldp-android-today-hover
+{
+	background-color:#fff;
+	color:#00afff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+/* Todaynext */
+.gldp-android-todaynext
+{
+	background-color:#00afff;
+	color:#fff;
+	border:solid 1px #00afff;
+}
+.gldp-android-todaynext-hover
+{
+	background-color:#fff;
+	color:#00afff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+/* Weekends */
+.gldp-android-sat
+{
+	background-color:#000;
+	color:#00afff;
+	border:solid 1px #000;
+}
+
+.gldp-android-sat-hover
+{
+	background-color:#000;
+	color:#00afff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+.gldp-android-sun
+{
+	background-color:#000;
+	color:#ff4f00;
+	border:solid 1px #000;
+}
+
+.gldp-android-sun-hover
+{
+	background-color:#000;
+	color:#ff4f00;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+/* Weekendsnext */
+.gldp-android-satnext
+{
+	background-color:#000;
+	color:#00afff;
+	border:solid 1px #000;
+}
+
+.gldp-android-satnext-hover
+{
+	background-color:#000;
+	color:#00afff;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+.gldp-android-sunnext
+{
+	background-color:#000;
+	color:#ff4f00;
+	border:solid 1px #000;
+}
+
+.gldp-android-sunnext-hover
+{
+	background-color:#000;
+	color:#ff4f00;
+	border:solid 1px #00afff;
+	cursor:pointer;
+}
+
+/* Non-selectable day.  Includes: previous/next month days and days that fall in the allowOld and endDate conditions */
+.gldp-android-noday
+{
+	background-color:#222;
+	border:solid 1px #222;
+	color:#666;
+	font-weight:normal;
+}
+
+
+
+/************************************************************************************/
+/* CustomGridView
+/************************************************************************************/
+/* CustomGridView コントロールの Tableスタイル */
+table.eCRB_CustomGridView
+{
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+/* CustomGridView ヘッダー行 */
+table.eCRB_CustomGridView tr[rowType=headerRow] 
+{ 
+    height: 40px; 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #999),color-stop(0.4, #888),color-stop(0.4, #777),color-stop(1, #666)); 
+}
+table.eCRB_CustomGridView tr[rowType=headerRow] th 
+{ 
+    color: #FFF;
+}
+
+/* CustomGridView データ行 */
+table.eCRB_CustomGridView tr[rowType=dataRow]
+{
+    height: 40px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+}
+
+/* ページング行 */
+table.eCRB_CustomGridView tr[rowType=nextPagingRow]
+{
+    height: 40px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+}
+table.eCRB_CustomGridView tr[rowType=nextPagingRow] td { text-align: center; cursor: pointer; }
+
+/* ソート昇順 */
+th.eCRB_CustomGridView_SortAscHead
+{
+    background: url(Images/srtup.png) no-repeat center right; padding: 0px 20px 0px 0px;
+}
+/* ソート降順 */
+th.eCRB_CustomGridView_SortDescHead
+{
+    background: url(Images/srtdown.png) no-repeat center right; padding: 0px 20px 0px 0px;
+}
+
+/************************************************************************************/
+/* PopOver
+/************************************************************************************/
+
+/* line 5, ../../app/stylesheets/popover.scss */
+.popover {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  cursor: auto;
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 17, ../../app/stylesheets/popover.scss */
+.popover.active {
+  opacity: 1;
+}
+/* line 21, ../../app/stylesheets/popover.scss */
+.popover > .triangle {
+  position: absolute;
+  width: 0px;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+}
+/* line 29, ../../app/stylesheets/popover.scss */
+.popover > .triangle.top {
+  bottom: -40px;
+  border-top: 20px solid black;
+}
+/* line 34, ../../app/stylesheets/popover.scss */
+.popover > .triangle.bottom {
+  top: -40px;
+  border-bottom: 20px solid black;
+}
+/* line 39, ../../app/stylesheets/popover.scss */
+.popover > .triangle.left {
+  right: -40px;
+  border-left: 20px solid black;
+}
+/* line 44, ../../app/stylesheets/popover.scss */
+.popover > .triangle.right {
+  left: -40px;
+  border-right: 20px solid black;
+}
+/* line 50, ../../app/stylesheets/popover.scss */
+.popover > .header {
+  font-weight: bold;
+  margin: 0;
+  padding: 3px;
+  height: 1.25em;
+  color: white;
+  background-color: black;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+  text-align: center;
+}
+/* line 64, ../../app/stylesheets/popover.scss */
+.popover > .content {
+  min-width: 15em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+

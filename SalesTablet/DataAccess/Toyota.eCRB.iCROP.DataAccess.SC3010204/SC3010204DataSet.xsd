@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3010204DataSet" targetNamespace="http://tempuri.org/SC3010204DataSet.xsd" xmlns:mstns="http://tempuri.org/SC3010204DataSet.xsd" xmlns="http://tempuri.org/SC3010204DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3010204DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3010204DataSet" msprop:Generator_UserDSName="SC3010204DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BranchSalesOrganz" msprop:Generator_TableClassName="BranchSalesOrganzDataTable" msprop:Generator_TableVarName="tableBranchSalesOrganz" msprop:Generator_RowChangedName="BranchSalesOrganzRowChanged" msprop:Generator_TablePropName="BranchSalesOrganz" msprop:Generator_RowDeletingName="BranchSalesOrganzRowDeleting" msprop:Generator_RowChangingName="BranchSalesOrganzRowChanging" msprop:Generator_RowEvHandlerName="BranchSalesOrganzRowChangeEventHandler" msprop:Generator_RowDeletedName="BranchSalesOrganzRowDeleted" msprop:Generator_RowClassName="BranchSalesOrganzRow" msprop:Generator_UserTableName="BranchSalesOrganz" msprop:Generator_RowEvArgName="BranchSalesOrganzRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORGNZ_ID" msprop:Generator_ColumnVarNameInTable="columnORGNZ_ID" msprop:Generator_ColumnPropNameInRow="ORGNZ_ID" msprop:Generator_ColumnPropNameInTable="ORGNZ_IDColumn" msprop:Generator_UserColumnName="ORGNZ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PARENT_ORGNZ_ID" msprop:Generator_ColumnVarNameInTable="columnPARENT_ORGNZ_ID" msprop:Generator_ColumnPropNameInRow="PARENT_ORGNZ_ID" msprop:Generator_ColumnPropNameInTable="PARENT_ORGNZ_IDColumn" msprop:Generator_UserColumnName="PARENT_ORGNZ_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ORGNZ_SC_FLG" msprop:Generator_ColumnVarNameInTable="columnORGNZ_SC_FLG" msprop:Generator_ColumnPropNameInRow="ORGNZ_SC_FLG" msprop:Generator_ColumnPropNameInTable="ORGNZ_SC_FLGColumn" msprop:Generator_UserColumnName="ORGNZ_SC_FLG" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesKpiItem" msprop:Generator_TableClassName="SalesKpiItemDataTable" msprop:Generator_TableVarName="tableSalesKpiItem" msprop:Generator_RowChangedName="SalesKpiItemRowChanged" msprop:Generator_TablePropName="SalesKpiItem" msprop:Generator_RowDeletingName="SalesKpiItemRowDeleting" msprop:Generator_RowChangingName="SalesKpiItemRowChanging" msprop:Generator_RowEvHandlerName="SalesKpiItemRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesKpiItemRowDeleted" msprop:Generator_RowClassName="SalesKpiItemRow" msprop:Generator_UserTableName="SalesKpiItem" msprop:Generator_RowEvArgName="SalesKpiItemRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SALES_KPI_ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnSALES_KPI_ITEM_CD" msprop:Generator_ColumnPropNameInRow="SALES_KPI_ITEM_CD" msprop:Generator_ColumnPropNameInTable="SALES_KPI_ITEM_CDColumn" msprop:Generator_UserColumnName="SALES_KPI_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SALES_KPI_ITEM" msprop:Generator_ColumnVarNameInTable="columnSALES_KPI_ITEM" msprop:Generator_ColumnPropNameInRow="SALES_KPI_ITEM" msprop:Generator_ColumnPropNameInTable="SALES_KPI_ITEMColumn" msprop:Generator_UserColumnName="SALES_KPI_ITEM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesKpiSummary" msprop:Generator_TableClassName="SalesKpiSummaryDataTable" msprop:Generator_TableVarName="tableSalesKpiSummary" msprop:Generator_RowChangedName="SalesKpiSummaryRowChanged" msprop:Generator_TablePropName="SalesKpiSummary" msprop:Generator_RowDeletingName="SalesKpiSummaryRowDeleting" msprop:Generator_RowChangingName="SalesKpiSummaryRowChanging" msprop:Generator_RowEvHandlerName="SalesKpiSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesKpiSummaryRowDeleted" msprop:Generator_RowClassName="SalesKpiSummaryRow" msprop:Generator_UserTableName="SalesKpiSummary" msprop:Generator_RowEvArgName="SalesKpiSummaryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SALES_KPI_ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnSALES_KPI_ITEM_CD" msprop:Generator_ColumnPropNameInRow="SALES_KPI_ITEM_CD" msprop:Generator_ColumnPropNameInTable="SALES_KPI_ITEM_CDColumn" msprop:Generator_UserColumnName="SALES_KPI_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="TGT_DATE" msprop:Generator_ColumnVarNameInTable="columnTGT_DATE" msprop:Generator_ColumnPropNameInRow="TGT_DATE" msprop:Generator_ColumnPropNameInTable="TGT_DATEColumn" msprop:Generator_UserColumnName="TGT_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SUM_VAL" msprop:Generator_ColumnVarNameInTable="columnSUM_VAL" msprop:Generator_ColumnPropNameInRow="SUM_VAL" msprop:Generator_ColumnPropNameInTable="SUM_VALColumn" msprop:Generator_UserColumnName="SUM_VAL" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesKpiTgtDate" msprop:Generator_TableClassName="SalesKpiTgtDateDataTable" msprop:Generator_TableVarName="tableSalesKpiTgtDate" msprop:Generator_RowChangedName="SalesKpiTgtDateRowChanged" msprop:Generator_TablePropName="SalesKpiTgtDate" msprop:Generator_RowDeletingName="SalesKpiTgtDateRowDeleting" msprop:Generator_RowChangingName="SalesKpiTgtDateRowChanging" msprop:Generator_RowEvHandlerName="SalesKpiTgtDateRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesKpiTgtDateRowDeleted" msprop:Generator_RowClassName="SalesKpiTgtDateRow" msprop:Generator_UserTableName="SalesKpiTgtDate" msprop:Generator_RowEvArgName="SalesKpiTgtDateRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TGT_DATE" msprop:Generator_ColumnVarNameInTable="columnTGT_DATE" msprop:Generator_ColumnPropNameInRow="TGT_DATE" msprop:Generator_ColumnPropNameInTable="TGT_DATEColumn" msprop:Generator_UserColumnName="TGT_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesKpiSummaryMonthly" msprop:Generator_TableClassName="SalesKpiSummaryMonthlyDataTable" msprop:Generator_TableVarName="tableSalesKpiSummaryMonthly" msprop:Generator_RowChangedName="SalesKpiSummaryMonthlyRowChanged" msprop:Generator_TablePropName="SalesKpiSummaryMonthly" msprop:Generator_RowDeletingName="SalesKpiSummaryMonthlyRowDeleting" msprop:Generator_RowChangingName="SalesKpiSummaryMonthlyRowChanging" msprop:Generator_RowEvHandlerName="SalesKpiSummaryMonthlyRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesKpiSummaryMonthlyRowDeleted" msprop:Generator_RowClassName="SalesKpiSummaryMonthlyRow" msprop:Generator_UserTableName="SalesKpiSummaryMonthly" msprop:Generator_RowEvArgName="SalesKpiSummaryMonthlyRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SUM_VAL" msprop:Generator_ColumnVarNameInTable="columnSUM_VAL" msprop:Generator_ColumnPropNameInRow="SUM_VAL" msprop:Generator_ColumnPropNameInTable="SUM_VALColumn" msprop:Generator_UserColumnName="SUM_VAL" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MonthlyKpiInfo" msprop:Generator_TableClassName="MonthlyKpiInfoDataTable" msprop:Generator_TableVarName="tableMonthlyKpiInfo" msprop:Generator_RowChangedName="MonthlyKpiInfoRowChanged" msprop:Generator_TablePropName="MonthlyKpiInfo" msprop:Generator_RowDeletingName="MonthlyKpiInfoRowDeleting" msprop:Generator_RowChangingName="MonthlyKpiInfoRowChanging" msprop:Generator_RowEvHandlerName="MonthlyKpiInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="MonthlyKpiInfoRowDeleted" msprop:Generator_RowClassName="MonthlyKpiInfoRow" msprop:Generator_UserTableName="MonthlyKpiInfo" msprop:Generator_RowEvArgName="MonthlyKpiInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NegotiationNumber" msprop:Generator_ColumnVarNameInTable="columnNegotiationNumber" msprop:Generator_ColumnPropNameInRow="NegotiationNumber" msprop:Generator_ColumnPropNameInTable="NegotiationNumberColumn" msprop:Generator_UserColumnName="NegotiationNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TcvNumber" msprop:Generator_ColumnVarNameInTable="columnTcvNumber" msprop:Generator_ColumnPropNameInRow="TcvNumber" msprop:Generator_ColumnPropNameInTable="TcvNumberColumn" msprop:Generator_UserColumnName="TcvNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuotatinNumber" msprop:Generator_ColumnVarNameInTable="columnQuotatinNumber" msprop:Generator_ColumnPropNameInRow="QuotatinNumber" msprop:Generator_ColumnPropNameInTable="QuotatinNumberColumn" msprop:Generator_UserColumnName="QuotatinNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TestDriveNumber" msprop:Generator_ColumnVarNameInTable="columnTestDriveNumber" msprop:Generator_ColumnPropNameInRow="TestDriveNumber" msprop:Generator_ColumnPropNameInTable="TestDriveNumberColumn" msprop:Generator_UserColumnName="TestDriveNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BookingNumber" msprop:Generator_ColumnVarNameInTable="columnBookingNumber" msprop:Generator_ColumnPropNameInRow="BookingNumber" msprop:Generator_ColumnPropNameInTable="BookingNumberColumn" msprop:Generator_UserColumnName="BookingNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B2DNegotiationNumber" msprop:Generator_ColumnVarNameInTable="columnB2DNegotiationNumber" msprop:Generator_ColumnPropNameInRow="B2DNegotiationNumber" msprop:Generator_ColumnPropNameInTable="B2DNegotiationNumberColumn" msprop:Generator_UserColumnName="B2DNegotiationNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NormalNegotiationNumber" msprop:Generator_ColumnVarNameInTable="columnNormalNegotiationNumber" msprop:Generator_ColumnPropNameInRow="NormalNegotiationNumber" msprop:Generator_ColumnPropNameInTable="NormalNegotiationNumberColumn" msprop:Generator_UserColumnName="NormalNegotiationNumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TcvFlg" msprop:Generator_ColumnVarNameInTable="columnTcvFlg" msprop:Generator_ColumnPropNameInRow="TcvFlg" msprop:Generator_ColumnPropNameInTable="TcvFlgColumn" msprop:Generator_UserColumnName="TcvFlg" type="xs:string" minOccurs="0" />
+              <xs:element name="QuotatinFlg" msprop:Generator_ColumnVarNameInTable="columnQuotatinFlg" msprop:Generator_ColumnPropNameInRow="QuotatinFlg" msprop:Generator_ColumnPropNameInTable="QuotatinFlgColumn" msprop:Generator_UserColumnName="QuotatinFlg" type="xs:string" minOccurs="0" />
+              <xs:element name="TestDriveFlg" msprop:Generator_ColumnVarNameInTable="columnTestDriveFlg" msprop:Generator_ColumnPropNameInRow="TestDriveFlg" msprop:Generator_ColumnPropNameInTable="TestDriveFlgColumn" msprop:Generator_UserColumnName="TestDriveFlg" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingFlg" msprop:Generator_ColumnVarNameInTable="columnBookingFlg" msprop:Generator_ColumnPropNameInRow="BookingFlg" msprop:Generator_ColumnPropNameInTable="BookingFlgColumn" msprop:Generator_UserColumnName="BookingFlg" type="xs:string" minOccurs="0" />
+              <xs:element name="NormalNegotiationFlg" msprop:Generator_ColumnVarNameInTable="columnNormalNegotiationFlg" msprop:Generator_ColumnPropNameInRow="NormalNegotiationFlg" msprop:Generator_ColumnPropNameInTable="NormalNegotiationFlgColumn" msprop:Generator_UserColumnName="NormalNegotiationFlg" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MonthlyKpi" msprop:Generator_TableClassName="MonthlyKpiDataTable" msprop:Generator_TableVarName="tableMonthlyKpi" msprop:Generator_RowChangedName="MonthlyKpiRowChanged" msprop:Generator_TablePropName="MonthlyKpi" msprop:Generator_RowDeletingName="MonthlyKpiRowDeleting" msprop:Generator_RowChangingName="MonthlyKpiRowChanging" msprop:Generator_RowEvHandlerName="MonthlyKpiRowChangeEventHandler" msprop:Generator_RowDeletedName="MonthlyKpiRowDeleted" msprop:Generator_RowClassName="MonthlyKpiRow" msprop:Generator_UserTableName="MonthlyKpi" msprop:Generator_RowEvArgName="MonthlyKpiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SALES_KPI_ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnSALES_KPI_ITEM_CD" msprop:Generator_ColumnPropNameInRow="SALES_KPI_ITEM_CD" msprop:Generator_ColumnPropNameInTable="SALES_KPI_ITEM_CDColumn" msprop:Generator_UserColumnName="SALES_KPI_ITEM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SUM_VAL" msprop:Generator_ColumnVarNameInTable="columnSUM_VAL" msprop:Generator_ColumnPropNameInRow="SUM_VAL" msprop:Generator_ColumnPropNameInTable="SUM_VALColumn" msprop:Generator_UserColumnName="SUM_VAL" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

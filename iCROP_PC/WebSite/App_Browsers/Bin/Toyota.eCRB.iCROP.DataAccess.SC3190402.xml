@@ -1,0 +1,252 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Toyota.eCRB.iCROP.DataAccess.SC3190402
+</name>
+</assembly>
+<members>
+<member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA01DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA02DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA03DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA04DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.SystemSettingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA04ResDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.MaxRoSeqDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.WordIniDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA01Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA02Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA03Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA04Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.SystemSettingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA04ResRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.MaxRoSeqRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.WordIniRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA01RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA02RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA03RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA04RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.SystemSettingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.AREA04ResRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.MaxRoSeqRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.WordIniRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameTRoInfo">
+	<summary>
+ RO情報
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameTJobInstruct">
+	<summary>
+ 作業指示
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameTJobDtl">
+	<summary>
+ 作業内容
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameTServicein">
+	<summary>
+ サービス入庫
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameTStallUse">
+	<summary>
+ RO情報
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameMVehicleDlr">
+	<summary>
+ 販売店車両
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameMVehicle">
+	<summary>
+ 車両
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameMModel">
+	<summary>
+ モデルマスタ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameMStall">
+	<summary>
+ ストールマスタ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameMUser">
+	<summary>
+ ユーザマスタ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsTblNameMSystemSettingDlr">
+	<summary>
+ 販売店システム設定
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsComma">
+	<summary>
+ カンマ
+ </summary>
+</member><member name="F:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.ConsSeparator">
+	<summary>
+ Where条件のセパレータ
+ </summary>
+</member><member name="M:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.#ctor">
+	<summary>
+ デフォルトコンストラクタ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.GetWaitingforPartsQuotationList(System.String,System.String,System.String[],System.Int32)">
+	<summary>
+ Area01.見積もり待ちデータ取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="branchCode">店舗コード</param>
+	<param name="roStatus">ROステータス</param>
+	<param name="addRepair">追加作業判断</param>
+	<returns>データセット</returns>
+	<remarks>ROステータス及びRO作業連番を条件にデータを取得する</remarks>
+</member><member name="M:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.GetWatingforJobPlanningList(System.String,System.String,System.String[],System.String[],System.String)">
+	<summary>
+ Area02.作業計画待ちデータ取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="branchCode">店舗コード</param>
+	<param name="roStatus">ROステータス</param>
+	<param name="startWorkInstructFlg">着工指示フラグ条件範囲</param>
+	<param name="choiceStartWorkInstructFlg">着工指示フラグ</param>
+	<returns>データセット</returns>
+	<remarks>ROステータス及びストール利用ステータスを条件にデータを取得する</remarks>
+</member><member name="M:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.GetWatingforPartsIssuingList(System.String,System.String,System.String[],System.String[],System.String)">
+	<summary>
+ Area03.出庫待ちデータ取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="branchCode">店舗コード</param>
+	<param name="roStatus">ROステータス</param>
+	<param name="startWorkInstructFlg">着工指示フラグ条件範囲</param>
+	<param name="choiceStartWorkInstructFlg">着工指示フラグ</param>
+	<returns>データセット</returns>
+	<remarks>ROステータス及びストール利用ステータスを条件にデータを取得する</remarks>
+</member><member name="M:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.GetWaitingforTechnicianPickupList(System.String,System.String,System.String[],System.String[])">
+	<summary>
+ Area04.引き取り待ちデータ取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="branchCode">店舗コード</param>
+	<param name="roStatus">ROステータス</param>
+	<param name="stallUseStatus">ストール利用ステータス</param>
+	<returns>データセット</returns>
+	<remarks>ROステータス及びストール利用ステータスを条件にデータを取得する</remarks>
+</member><member name="M:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.GetDlrSystemSettingValue(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ SC3190402_005:販売店システム設定から設定値を取得する
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="branchCode">店舗コード</param>
+	<param name="allDealerCode">全店舗を示す販売店コード</param>
+	<param name="allBranchCode">全店舗を示す店舗コード</param>
+	<param name="settingName">販売店システム設定名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.PartsManagement.PSMonitor.DataAccess.SC3190402DataSet.GetMaxRoSeq(System.String,System.String,System.String)">
+	<summary>
+ SC3190402_006:追加作業のチェック用データを取得する
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="branchCode">店舗コード</param>
+	<param name="roNum">RO番号</param>
+</member>
+</members>
+</doc>

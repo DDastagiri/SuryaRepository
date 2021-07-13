@@ -1,0 +1,1409 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * SC3210201.css
+ * ──────────────────────────────────
+ * 機能： ショールームステータスビジュアライゼーション
+ * 補足： 
+ * 作成： 2012/02/06 KN m.okamura
+ * 更新： 2012/08/28 TMEJ m.okamura 新車受付機能改善 $01
+ * ──────────────────────────────────
+ */
+
+
+
+/* nssv00用CSS　ここから
+------------------------------------------------------------------------------*/
+
+/* 左上パーツ
+-----------------------*/
+/* 選択を不可とする。 */
+#bodyFrame{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+}
+
+#HeadLeftBox{
+	display:block;
+	position:absolute;
+	width:1324px; height:150px;
+
+}
+
+.HeadLeftBoxShadow{
+	width:1324px;
+	box-shadow: 0px 0px 8px #ffffff;
+}
+
+#nssv00HeadLeftBox ul{
+	display:block;
+	width:1324px; height:150px;
+}
+#nssv00HeadLeftBox ul li{display:block; float:left; position:relative; height:150px;}
+#nssv00HeadLeftBox ul li.type1{ float:left; width:221px; background:url(../Images/SC3210201/nssv00UpBg01a.png);}
+#nssv00HeadLeftBox ul li.type2{ float:left; width:220px; background:url(../Images/SC3210201/nssv00UpBg01b.png);}
+#nssv00HeadLeftBox ul li.type3{ float:left; width:221px; background:url(../Images/SC3210201/nssv00UpBg01c.png);}
+
+
+#nssv00HeadLeftBox ul li .InnerDatas{
+	display:block;
+	position:relative;
+	width:200px;
+	margin:9px 0 0 9px;
+}
+#nssv00HeadLeftBox ul li .InnerDatas .HeaderBG{
+	display:block;
+	position:absolute;
+	width:100%;	height:42px;
+	top:0; left:0;
+	z-index:5;
+	background: rgba(0, 0, 0, 1);
+}
+#nssv00HeadLeftBox ul li .InnerDatas .HeadBox{
+	display:block;
+	position:absolute;
+	width:196px;
+	height:38px;
+	top:2px;
+	left:2px;
+	z-index:10;
+}
+#nssv00HeadLeftBox ul li .InnerDatas .HeadBox .LightBox{
+	position:absolute;
+	top:2px; left:2px;
+	width:192px; height:34px;
+	border-radius: 4px;
+	background: -webkit-gradient(linear, 90% 2%, 83% 88%, from(rgba(255, 255, 255, 0.5)), 
+							to(rgba(255, 255, 255,  0.0)));
+	
+}
+
+#nssv00HeadLeftBox ul li .InnerDatas .HeadBox .textData,
+#nssv00HeadLeftBox ul li .InnerDatas .HeadBox .textData1{
+	display:block;
+	width:200px;
+	position:absolute;
+	top:3px;
+	text-align:center;
+	text-shadow:#666 1px 1px 3px;
+	font-size:28px; line-height:28px;
+	color:#FFF;
+	z-index:10;
+}
+#nssv00HeadLeftBox ul li .InnerDatas .HeadBox .textData1{
+	color:#666;
+	top:4px;
+	z-index:9;
+}
+
+
+#nssv00HeadLeftBox ul li .InnerDatas .DataBox .LightBox{
+	position:absolute;
+	top:10px; left:0px;
+	width:186px; height:115px;
+	border-radius: 6px;
+	background:url(../svg/BLLightBox.svg);
+	background: -webkit-gradient(linear, 20% 60%, 5% 90%, from(rgba(255, 255, 255, 0.0)), 
+							to(rgba(255, 255, 255,  0.5)));
+}
+
+#nssv00HeadLeftBox ul li .InnerDatas .DataBox .textData,
+#nssv00HeadLeftBox ul li .InnerDatas .DataBox .textData1{
+	display:block;
+	width:196px;
+	position:absolute;
+	top:22px;
+	left:5px;
+	text-align:center;
+	font-size:98px; line-height:98px;
+	/* font-family:Arial, Helvetica, sans-serif; */
+	color:#FFF;
+	font-weight:bold;
+	text-shadow:#000000 -1px -3px 0;
+	z-index:20;
+}
+#nssv00HeadLeftBox ul li .InnerDatas .DataBox .textData1{
+	color:#000;
+	top:28px;
+	width:193px;
+	z-index:19;
+}
+
+
+
+#nssv00HeadLeftBox ul li .InnerDatas .DataBox{
+	display:block;
+	position:absolute;
+	width:196px; height:125px;
+	top:2px; left:2px;
+	border-radius:7px;
+	z-index:1;
+}
+#nssv00HeadLeftBox ul li .InnerDatas .colorRad{
+	background: -webkit-gradient(linear, left top, left bottom, from(#750000), 
+							to(#FF0000));
+}
+#nssv00HeadLeftBox ul li .InnerDatas .colorRad .textData{
+	text-shadow:#000000 -1px -1px 5px;
+}
+
+
+#nssv00HeadLeftBox ul li .InnerDatas .colorYellow{
+	background: -webkit-gradient(linear, left top, right top, from(#b28e00), 
+							color-stop(0.25, #ffcc00),
+							color-stop(0.75, #ffcc00),
+							to(#b28e00));
+}
+#nssv00HeadLeftBox ul li .InnerDatas .colorYellowGreen{
+	background: -webkit-gradient(linear, left top, right top, from(#43b200), 
+							color-stop(0.25, #60ff00),
+							color-stop(0.75, #60ff00),
+							to(#43b200));
+}
+#nssv00HeadLeftBox ul li .InnerDatas .colorGreen{
+	background: -webkit-gradient(linear, left top, right top, from(#008334), 
+							color-stop(0.25, #00bb4b),
+							color-stop(0.75, #00bb4b),
+							to(#008334));
+}
+#nssv00HeadLeftBox ul li .InnerDatas .colorBlue{
+	background: -webkit-gradient(linear, left top, right top, from(#004aa5), 
+							color-stop(0.25, #006aec),
+							color-stop(0.75, #006aec),
+							to(#004aa5));
+}
+#nssv00HeadLeftBox ul li .InnerDatas .colorAqua{
+	background: -webkit-gradient(linear, left top, right top, from(#009bb2), 
+							color-stop(0.25, #00dcfd),
+							color-stop(0.75, #00dcfd),
+							to(#009bb2));
+}
+#nssv00HeadLeftBox ul li .InnerDatas .colorPurple{
+	background: -webkit-gradient(linear, left top, right top, from(#6000b2), 
+							color-stop(0.25, #8a00ff),
+							color-stop(0.75, #8a00ff),
+							to(#6000b2));
+}
+
+
+#nssv00HeadLeftBox ul li .InnerDatas .Noactive {
+	background: -webkit-gradient(linear, left top, right top, from(#666),
+									color-stop(0.3, #949494),
+									color-stop(0.6, #949494),
+									color-stop(1.0, #666));
+}
+
+
+
+/* 右上パーツ
+-----------------------*/
+
+#nssv00HeadRightBox{
+	display:block;
+	position:absolute;
+	top:0; left:1344px;
+}
+#nssv00HeadRightBox .InnerBox{
+	border:#666 4px solid;
+	height:136px; width:528px;
+	padding-top:6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000000),
+							color-stop(0.450, #000000),
+							to(#0156a4));
+	font-size:76px;
+	line-height:140px;	
+	color:#FFFFFF;	
+	text-align:right;
+}
+#nssv00HeadRightBox .InnerBox .LeftBox{
+	float:left;
+	background:url(../Images/SC3210201/nssv00headrightIcn1.png) 13px 30px no-repeat;
+	width:254px;
+	height:126px;
+	padding-right:10px;
+	border-right:#7e7e7e 2px solid;
+}
+#nssv00HeadRightBox .InnerBox .RightBox{
+	float:left;
+	background:url(../Images/SC3210201/nssv00headrightIcn2.png) 13px 30px no-repeat;
+	width:248px;
+	height:126px;
+}
+#nssv00HeadRightBox .InnerBox span{
+	font-size:28px;
+}
+#nssv00HeadRightBox .InnerBox strong{
+	/* font-family:Arial, Helvetica, sans-serif; */
+	font-weight:bold;
+}
+
+
+/* スタッフ状況
+-----------------------*/
+.SituationFlame{
+	position:absolute;
+	border:#969696 4px solid;
+	border-radius:12px;
+	left:0;
+	top:170px;
+	width:1315px;
+	height:861px;
+}
+.SituationTitle{
+	position:relative;
+	height:50px;
+	padding:10px 0 0 0;
+	margin:0 0 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#5a5a5a), 
+							color-stop(0.500, #474747),
+							color-stop(0.501, #303030),
+							to(#333333));
+	border:#0a0a0a 1px solid;
+	border-radius: 6px 6px 0px 0px;
+	box-shadow: 0px 3px 5px #FFF;
+	font-size:38px;
+	line-height:40px;
+	text-align:center;
+	text-shadow:#000 0 -2px 0;
+	color:#bdbdbe;
+	z-index:0;
+}
+.SituationListSet{
+	position:relative;
+	display:block;
+	width:1297px;
+	height:773px;
+	overflow:auto;
+	margin:6px 0 0 18px;
+	padding:10px 0 0 0;
+	z-index:2;
+}
+.SituationListSet li{
+	position:relative;
+	float:left;
+	width:259px;
+	height:196px;
+}
+.SituationListSet li.ListRight{
+	width:240px;
+}
+.SituationListSet li .ListBox,
+.SituationListSet li .ListBoxRed,
+.SituationListSet li .ListBoxStandby,
+.SituationListSet li .ListBoxAway{
+	z-index:5;
+	position:relative;
+	top:0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), 
+							color-stop(0.720, #eeeeee),
+							color-stop(0.730, #d2eaf2),
+							to(#d2eaf2));
+	border-radius:6px;
+	box-shadow:inset -4px -4px 0px rgba(0, 0, 0, 0.3);
+	width:244px;
+	height:184px;
+	
+}
+.SituationListSet li .ListBoxRed{
+	background: -webkit-gradient(linear, left top, left bottom, from(#eb0000), 
+							to(#eb0000));
+							color:#FFFFFF;
+}
+.SituationListSet li .ListBoxStandby{
+	background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), 
+							color-stop(0.720, #eeeeee),
+							color-stop(0.730, #d8d8d8),
+							to(#d8d8d8));
+}
+.SituationListSet li .ListBoxAway{
+	background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), 
+							color-stop(0.720, #eeeeee),
+							color-stop(0.730, #edda8e),
+							to(#edda8e));
+}
+.SituationListSet li .BlackScreens{
+	/* スタッフ状況エリアの意匠が崩れる為追加修正 */
+	/*position:relative;*/
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:244px;
+	height:184px;
+	border-radius:4px;
+	background:#000;
+	opacity:0.5;
+	z-index:30;
+}
+/* スタッフチップ上段選択エリア(追加変更) */
+.SituationListSet li #StuffListBoxUpperRow{
+    height:133px;
+}
+.SituationListSet li .PhotoBox1,
+.SituationListSet li .PhotoBox2,
+.SituationListSet li .IcnBox{
+	position:absolute;
+	width:118px;
+	text-align:center;
+	font-size:20px;
+	line-height:28px;
+	color:#4c4c4c;
+}
+.SituationListSet li .ListBoxRed .PhotoBox1,
+.SituationListSet li .ListBoxRed .PhotoBox2,
+.SituationListSet li .ListBoxRed .IcnBox,
+.SituationListSet li .TimeBox .Time{
+	color:#FFF;
+}
+
+.SituationListSet li .PhotoBox1{
+	left:4px;
+	top:14px;
+}
+.SituationListSet li .PhotoBox2{
+	right:4px;
+	top:14px;
+}
+
+.SituationListSet li .IcnBox{
+	left:10px;
+	top:24px;
+	text-align:left;
+}
+.SituationListSet li .IcnBox .TextNumber{
+	display:block;
+	background:url(../Images/SC3210201/nssv00lefticn1.png) 0 0 no-repeat;
+	font-size:22px;
+	color:#4c4c4c;
+	padding:0 0 0 33px;
+	margin:0 0 15px 0;
+}
+.SituationListSet li .IcnBox .Chip{
+    position:relative;
+	display:block;
+	float:left;
+	width:36px;
+	height:27px;
+}
+
+.SituationListSet li .IcnBox .Chip span{
+	position:absolute;
+	left:8px;
+	top:3px;
+	color:#FFF;
+	font-size:18px;
+	line-height:20px;
+}
+
+.SituationListSet li.bottom{
+	height:184px;
+}
+
+img.imageDisplayNone {
+    display:none; 
+}
+
+/* TimeBox
+------------------*/
+.SituationListSet li .TimeBox{
+	position:absolute;
+	left:14px;
+	bottom:4px;
+	border-top:#838383 1px solid;
+	width:221px;
+	height:46px;
+}
+.SituationListSet li .TimeBox .IcnSet{
+	width:133px;
+	position:absolute;
+	left:-5px;
+	top:5px;
+}
+.SituationListSet li .TimeBox .IcnSet .Icn{
+	display:block;
+	overflow:hidden;
+	float:left;
+	width:33px;
+	height:34px;
+}
+.SituationListSet li .TimeBox .Time{
+	position:absolute;
+	right:0px;
+	top:11px;
+	font-size:24px;
+	line-height:24px;
+	color:#4c4c4c;
+}
+.SituationListSet li .TimeBox .CenterText{
+	position:absolute;
+	width:221px;
+	left:0px;
+	top:11px;
+	text-align:center;
+	font-size:24px;
+	line-height:26px;
+	color:#4c4c4c;
+}
+
+.SituationListSet li .ListBoxRed .PhotoBox1,
+.SituationListSet li .ListBoxRed .PhotoBox2,
+.SituationListSet li .ListBoxRed .IcnBox,
+.SituationListSet li .ListBoxRed .TimeBox .Time{
+	color:#FFF;
+}
+
+
+
+/* icn
+-----------------*/
+.SituationListSet li .IcnSet{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:2;
+}
+.SituationListSet li .Icn1{
+	float:left;
+	overflow:hidden;
+	width:26px;
+	height:25px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#72a4af),
+							to(#5893a1));
+	border-top:#567c85 1px solid;
+	box-shadow:0px 0px 2px #CCCCCC;
+	border-radius:4px;
+	font-size:15px;
+	line-height:25px;
+	text-align:center;
+	text-shadow:#416068 0 -1px 0;
+	color:#FFF;
+}
+.SituationListSet li .Icn2{
+	float:left;
+	overflow:hidden;
+	width:26px;
+	height:25px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d88800),
+							to(#efc600));
+	border-top:#b06e00 1px solid;
+	box-shadow:0px 0px 2px #CCCCCC;
+	border-radius:4px;
+	font-size:15px;
+	line-height:25px;
+	text-align:center;
+	text-shadow:#865b00 0 -1px 0;
+	color:#FFF;
+}
+.SituationListSet li .TMark{
+	position:absolute;
+	right:0px;
+	top:0px;
+	background:url(../Images/SC3210201/tmark.png) 5px 5px no-repeat #e6e6e6;
+	width:28px;
+	height:25px;
+	padding:0 2px 0 23px;
+	z-index:2;
+	font-size:18px;
+	line-height:25px;
+	text-align:center;
+	color:#666666;
+}
+
+
+/* 来店状況・待ち状況
+-----------------------*/
+.RightFlame{
+	position:absolute;
+	right:0;
+	top:170px;
+	width:536px;
+	height:869px;
+}
+
+.RightFlame .VisitFlame{
+	position:absolute;
+	border:#969696 4px solid;
+	border-radius:12px;
+	left:0;
+	top:0;
+	width:528px;
+	height:413px;
+	box-shadow: 2px 4px 8px #000;
+}
+.RightFlame .WaitFlame{
+	position:absolute;
+	border:#969696 4px solid;
+	border-radius:12px;
+	left:0;
+	bottom:0;
+	width:528px;
+	height:412px;
+}
+
+.RightFlame .VisitTitle,
+.RightFlame .WaitTitle{
+	position:relative;
+	overflow:hidden;
+	height:33px;
+	border-radius: 6px 6px 0px 0px;
+	padding:5px 0 0 0;
+	margin:0 0 0px 0;
+	font-size:26px;
+	line-height:28px;
+	text-align:center;
+	color:#ffffff;
+	z-index:0;
+}
+.RightFlame .VisitTitle{
+	background: -webkit-gradient(linear, left top, left bottom, from(#fdca00), 
+							to(#d0a600));
+	box-shadow: 0px 3px 5px #FFF;
+	text-shadow:#645000 0 -1px 0;
+}
+.RightFlame .WaitTitle{
+	background: -webkit-gradient(linear, left top, left bottom, from(#5ffd00), 
+							to(#4ed000));
+	box-shadow: 0px 3px 5px #FFF;
+	text-shadow:#1c4b00 0 -1px 0;
+}
+
+/* $01 start 複数顧客に対する商談平行対応 */
+.RightFlame .Cassette{
+	position:relative;
+	overflow:auto;
+	width:517px;
+	height:357px;
+	margin:6px 0 0 11px;
+	padding:0 0px 0 0;
+	z-index:2;
+}
+/* $01 end   複数顧客に対する商談平行対応 */
+.RightFlame .Cassette .end{
+	height:0px;
+	padding:15px 0 0 0;
+	margin:0;
+	text-align:1px;
+	font-size:1px;
+}
+/* $01 start 複数顧客に対する商談平行対応 */
+.RightFlame .Cassette .CassetteLeft,
+.RightFlame .Cassette .CassetteRight{
+	position:relative;
+	width:229px;
+	height:86px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), 
+							to(#dfdfdf));
+	box-shadow:inset -2px -2px 1px #9d9d9d;
+	border-radius:4px;
+	padding:10px 6px 10px 7px;
+	margin:15px 0 0 4px;
+	color:#4c4c4c;
+}
+.RightFlame .Cassette .CassetteLeft{
+	float:left;
+}
+.RightFlame .Cassette .CassetteRight{
+	float:left;
+	margin-left:8px;
+}
+.RightFlame .Cassette .CassetteTop{
+	margin-top:6px;
+}
+/* $01 end   複数顧客に対する商談平行対応 */
+.RightFlame .Cassette .CassetteLeft .CassetteName,
+.RightFlame .Cassette .CassetteRight .CassetteName{
+	float:left;
+	width:148px;
+	height:84px;
+	border-right:#838383 1px solid;
+	font-size:18px;
+}
+.RightFlame .Cassette .CassetteLeft .CassetteName .CassetteCustName,
+.RightFlame .Cassette .CassetteRight .CassetteName .CassetteCustName{
+	font-size:24px;
+	font-weight:normal;
+	line-height:32px;
+	width:148px;
+}
+.VisitStartTime {
+    width:50px;
+    text-align:center;
+}
+
+.RightFlame .Cassette .CassetteLeft .CassettePhoto,
+.RightFlame .Cassette .CassetteRight .CassettePhoto{
+	position:relative;
+	float:left;
+	width:63px;
+	height:84px;
+	padding:0 0 0 9px;
+	border-left:#c5c5c5 1px solid;
+	font-size:18px;
+	line-height:20px;
+	text-align:center;
+}
+.RightFlame .Cassette .CassetteLeft .Photo,
+.RightFlame .Cassette .CassetteRight .Photo{
+	position:absolute;
+	left:9px;
+	bottom:0;
+}
+
+.RightFlame .Cassette .CassetteRed{
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), 
+							to(#df0000));
+	box-shadow:inset -2px -2px 1px #9d0000;
+	color:#FFFFFF;
+
+}
+
+.RightFlame .Cassette .CassetteLeft .CassettePhoto p,
+.RightFlame .Cassette .CassetteRight .CassettePhoto p,
+.SituationListSet li .ListBoxRed .TimeBox .Time p{
+    right: 0px;
+    position: absolute;
+}
+
+/* $01 start 複数顧客に対する商談平行対応 */
+.RightFlame .Cassette .StopStore {
+    border: #00B0F0 solid;
+    top: -3px;
+    left: -3px;
+    margin-right: -6px;
+    margin-bottom: -6px;
+}
+/* $01 end   複数顧客に対する商談平行対応 */
+
+/* icn
+-----------------*/
+.RightFlame .Cassette .IcnSet{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	z-index:2;
+}
+.RightFlame .Cassette .Icn1{
+	float:left;
+	overflow:hidden;
+	width:26px;
+	height:25px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#72a4af),
+							to(#5893a1));
+	border-top:#567c85 1px solid;
+	box-shadow:0px 0px 2px #CCCCCC;
+	border-radius:4px;
+	font-size:15px;
+	line-height:25px;
+	text-align:center;
+	text-shadow:#416068 0 -1px 0;
+	color:#FFF;
+}
+.RightFlame .Cassette .Icn2{
+	float:left;
+	overflow:hidden;
+	width:26px;
+	height:25px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d88800),
+							to(#efc600));
+	border-top:#b06e00 1px solid;
+	box-shadow:0px 0px 2px #CCCCCC;
+	border-radius:4px;
+	font-size:15px;
+	line-height:25px;
+	text-align:center;
+	text-shadow:#865b00 0 -1px 0;
+	color:#FFF;
+}
+.RightFlame .Cassette .TMark{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	background:url(../Images/SC3210201/tmark.png) 5px 5px no-repeat #e6e6e6;
+	width:28px;
+	height:25px;
+	padding:0 2px 0 23px;
+	z-index:2;
+	font-size:18px;
+	line-height:25px;
+	text-align:center;
+	color:#666666;
+}
+
+
+.RedIcn{
+	position:absolute;
+	right:15px;
+	top:60px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f7c6c9),
+							color-stop(0.500, #e7555c),
+							color-stop(0.501, #e0242d),
+							to(#b50407));
+	border:#FFF 1px solid;
+	border-radius:50px;
+	width:24px;
+	height:24px;
+	font-size:18px;
+	text-align:center;
+	line-height:24px;
+	color:#FFFFFF;
+	z-index:20;
+}
+
+.ScreenBlack{
+	position:absolute;
+	/*margin分だけ下げる*/
+	left:-20px; top:-20px;
+	/*left:0; top:0;*/
+	background:#000;
+	width:1920px;
+	height:1080px;
+	opacity:0.5;
+	z-index:600;
+}
+
+/* エリアもActiveを適用できる様に変更追加 */
+.Active,
+.RightFlame .Active{
+	z-index:999;
+}
+
+#nssv00HeadLeftBox ul li.Active{ background:url(../Images/SC3210201/nssv00UpBg01cOn.png);
+}
+
+/* スタッフチップ 追加変更 */
+.SituationFlame .staffChip { position:absolute;width:240px; height:184px; }
+
+.StatusScreenBlack{
+	position:absolute;
+	background:#000;
+	width:221px;
+	height:155px;
+	opacity:0.5;
+	z-index:500;
+}
+
+.StuffScreenBlack{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:244px;
+	height:184px;
+	border-radius:4px;
+	background:#000;
+	opacity:0.5;
+	z-index:500;
+}
+
+.CustomerScreenBlack{
+	position:absolute;
+	background:#000;
+	width:242px;
+	height:106px;
+	opacity:0.5;
+	top: 0px;
+    left: 0px;
+	z-index:500;
+}
+
+/* 文字切り用 */
+.ellipsis
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	N-SC-61　POP
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+
+.scNscPopUpContactVisit {
+	position:absolute;
+	width:436px;
+	padding:0;
+	z-index:999;
+}
+
+.nsc61winCoordinate1{top:224px;	left:278px;}
+.nsc61winCoordinate2{top:323px;	left:318px;}
+
+
+.scNscPopUpContactVisitWindownBox {
+	width:436px;
+	height:576px;
+	/*height:624px; *//* 見積もり金非表示の為サイズ変更 */
+	position:relative;
+	border-radius:8px;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	z-index:1;
+}
+.scNscPopUpHeaderBg{
+	width:436px; height:42px;
+	position:absolute;
+	top:0; left:0;
+	border-top:#aeb2bb 1px solid;
+	border-radius:8px 8px 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 203, 208, 0.9)),
+								color-stop(0.50, rgba(29, 40, 59, 0.9)),
+								color-stop(0.51, rgba(3, 11, 26, 0.9)),
+								to(rgba(13,23,38,0.98)));
+	z-index:-1;
+}
+.scNscPopUpDataBg{
+	/*width:436px; height:582px;*//* 見積もり金非表示の為サイズ変更 */
+	width:436px; height:534px;
+	position:absolute;
+	border-radius:0 0 8px 8px;
+	background:rgba(13,23,38,0.98);
+	top:43px; left:0;
+	z-index:-1;
+}
+.scNscPopUpContactVisitHeader {
+	position:relative; width:436px; height:45px;
+}
+.scNscPopUpContactVisitHeader h3 {
+	position:absolute;
+	width:436px;
+	height:36px;
+	top:6px;
+	left:6px;
+	/*left:0;*//* 見栄えの為修正 */
+	text-align:center;
+	font-size:22px;
+	line-height:32px;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+.scNscPopUpContactVisitHeader .scNscPopUpCancelButton {
+	position:absolute;
+	top:7px;	left:6px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), color-stop(0.50, #0d1734), color-stop(0.501, #000b29), to(#000b29));
+}
+.scNscPopUpContactVisitHeader .scNscPopUpCompleteButton,
+.scNscPopUpContactVisitHeader .scNscPopUpCompleteButtonOff {
+	position:absolute;
+	top:7px;
+	right:3px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:23px;
+	padding:4px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), color-stop(0.50, #376fe0), color-stop(0.501, #2361dd), to(#2361dd));
+}
+.scNscPopUpContactVisitHeader .scNscPopUpCompleteButtonOff{
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), color-stop(0.50, #1a233e), color-stop(0.501, #000b29), to(#000b29));
+	color:#7d8392;
+}
+.scNscPopUpContactVisitListArea {
+	/* font-family:"ＭＳ ゴシック", "MS Gothic","Microsoft YaHei Bold"; */
+	font-size:14px;
+	width:315px;
+	margin:0 auto;
+	padding:0px;
+	border:#050d18 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), color-stop(0.018, #fff), color-stop(0.6, #fff), to(#e6e6e6));
+}
+.scNscPopUpContactVisitBox01 {
+	width:310px;
+	margin:0 auto 0;
+}
+.scNscPopUpContactVisitBox02 {
+	width:310px;
+	margin:0 0 0 9px;
+}
+
+.scNscPopUpContactVisitSttl01{
+	position:relative;
+	/* font-family:"ＭＳ ゴシック", "MS Gothic","Microsoft YaHei Bold"; */
+	display:block;
+	height:24px;
+	text-align:left;
+	vertical-align:middle;
+	color:#666666;
+	border-top:#4b5158 1px solid;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	background: #dff6ff;
+	-moz-box-shadow:inset 0px 2px 3px #656e75;
+	box-shadow:inset 0px 2px 3px #656e75;
+	box-shadow:inset 0px 2px 4px #656e75;
+	padding:6px 0 0 9px;
+}
+/* 意匠崩れ発生の為、変更 */
+.scNscPopUpContactVisitSttl01 .LeftBoxTime{
+	/*position:absolute;*/
+	right:9px;
+	top:6px;
+	left:354px;
+}
+
+
+.scNscPopUpContactVisitScroll{
+	height:142px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:10px 0 0 0;
+}
+
+
+/*  - ←の矢印 -  */
+.PoPuPBlockNRS02-1 { 
+	overflow:hidden; height:100px; width:34px;
+	 /*border:#FFF 1px solid;*//*←位置確認用*/ 
+	 position:absolute; z-index:99; 
+	 top:83px; left:-34px;/*←のマスク｜位置指定*/
+}
+.PoPuPBlockNRS02-2 { width:30px; height:30px; position:relative;
+  box-shadow:2px 4px 12px #222;
+	transform: rotate(-45deg);
+  top:10px; left:25px; background:
+	-webkit-gradient(linear, right top, left bottom, color-stop(0%, rgba(13,23,38,0.98)), color-stop(50%, rgba(13,23,38,0.98))); }
+.PoPuPBlockNRS02-3 { width: 28px; height: 28px; border-left:1px solid rgba(0,0,0,0.4); }/*吹き出しのツヤ*/
+
+
+.PoPuPBlockNSA41800TitleBlockButtonLeft { width:95px; height:30px; position:absolute; display:block; top:1px; left:0px;}
+.PoPuPBlockNSA41800TitleBlockButtonLeft a { 
+	/* font-family:"ＭＳ ゴシック", "MS Gothic","Microsoft YaHei Bold"; */
+	margin-left:19px;
+	width:70px; height:30px;
+	border-top:#1F2124 1px solid; 
+	border-right:#1F2124 1px solid; 
+	border-bottom:#1F2124 1px solid; 
+	border-radius:4px; display:block; 
+	box-shadow:0px 1px 1px #595E66; 
+	font-size:12px; 
+	text-shadow:0px -1px 0px #151A27; 
+	line-height:30px; color:#FFF; text-align:left;
+	text-indent:5px;
+	padding-right:4px;
+	background:-webkit-gradient(linear, left top, left bottom,
+	 from(#576174),
+	 color-stop(0.5, #1A233E), 
+	 color-stop(0.51, #000B29), 
+	 to(#000B29));
+	 position:absolute;
+	 top:5px;
+}
+.PoPuPBlockNSA41800TitleBlockButtonLeft span.PoPuPBlockNSA41800TitleBlockButtonLeftArrow {
+	width:24px; height:24px;
+	border:#1F2124 1px solid;
+	border-radius:6px; display:block;
+	box-shadow:0px 1px 1px #595E66;
+	background:-webkit-gradient(linear, right top, left bottom, from(#576174),
+						color-stop(0.5, #1A233E),
+						color-stop(0.51, #000B29),
+						to(#000B29));
+	transform: rotate(-45deg);
+	position:absolute; left:10px; top:8px; }
+.PoPuPBlockNSA41800TitleBlockButtonLeft span.PoPuPBlockNSA41800TitleBlockButtonLeftMask {
+	/*border:#FFF 1px solid;*/
+	width:22px; height:40px;
+	position:absolute;
+	left:0px; top:0px;
+	display: block; overflow:hidden; z-index: 1000;
+}
+
+
+
+/*ウインドの内部
+--------------*/
+
+
+
+
+.scNscPopUpContactVisitListArea {
+	/* font-family:"ＭＳ ゴシック", "MS Gothic","Microsoft YaHei Bold"; */
+	font-size:17px;
+	width:425px;
+	height:525px;
+	/*height:573px;*//* 見積もり金非表示の為サイズ変更 */
+	margin:0 auto;
+	padding:0px;
+	border:#050d18 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), color-stop(0.018, #fff), color-stop(0.6, #fff), to(#e6e6e6));
+}
+.scNscPopUpContactVisitBox01 {
+	width:402px;
+	margin:0 0 0 23px;
+}
+.scNscPopUpContactVisitBox02 {
+	width:285px;
+	margin:0 0 0 9px;
+}
+
+.scNscPopUpContactVisitSttl01{
+	position:relative;
+	/* font-family:"ＭＳ ゴシック", "MS Gothic","Microsoft YaHei Bold"; */
+	display:block;
+	height:23px;
+	text-align:left;
+	vertical-align:middle;
+	color:#666666;
+	border-top:#4b5158 1px solid;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	background: #dff6ff;
+	-moz-box-shadow:inset 0px 2px 3px #656e75;
+	box-shadow:inset 0px 2px 3px #656e75;
+	box-shadow:inset 0px 2px 4px #656e75;
+	padding:7px 0 0 25px;
+}
+.scNscPopUpContactVisitSttl01 .LeftBoxTime{
+	position:absolute;
+	right:24px;
+	top:7px;
+}
+
+
+.scNscPopUpContactVisitScroll{
+	width:auto;
+	height:474px;
+	/*height:522px;*//* 見積もり金非表示の為サイズ変更 */
+	overflow:auto;
+	padding:10px 0 0 0;
+}
+.scNscPopUpContactVisitScroll ul.ListSet01,
+.scNscPopUpContactVisitScroll ul.ListSet02{
+	width:377px;
+	background:#FFF;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	margin:0 0 10px 0;
+	font-size:20px;
+	line-height:25px;
+	color:#000000;
+}
+.scNscPopUpContactVisitScroll li{
+	position:relative;
+	width:318px;
+	height:28px;
+	border-top:#bbbbbb 1px solid;
+	padding:10px 0 10px 59px;
+	color:#000;
+}
+/* 意匠崩れ発生の為、追加変更 */
+.scNscPopUpContactVisitScroll li div p{	
+	right:10px;
+	top:12px;
+	font-size:17px;
+	text-align: right;
+	/*left:313px;
+    position:absolute;*/
+}
+
+#NoticeNameDiv {
+	position: relative;
+	width: 240px;
+	height: 25px;
+}
+
+#NoticeTimeDiv {
+	position: relative;
+	width: 70px;
+	height: 25px;
+	top: -25px;
+	left:240px;
+}
+
+#StaffDetailCustomerNameDiv {
+	position: relative;
+	width: 315px;
+}
+
+.scNscPopUpContactVisitScroll li p.FontRed{
+	color:#ff0000;
+}
+.scNscPopUpContactVisitScroll li .listIcnSet,
+.scNscPopUpContactVisitScroll li .listIcnSet2{
+	position:absolute;
+	right:15px;
+	top:11px;
+	font-size:15px;
+	line-height:26px;
+	color:#FFFFFF;
+	text-align:center;
+}
+.scNscPopUpContactVisitScroll li .listIcnSet2{
+	top:18px;
+}
+.scNscPopUpContactVisitScroll li .listIcn1{
+	width:25px;
+	height:25px;
+	float:left;
+	background: -webkit-gradient(linear, left top, left bottom, from(#72a4b0),
+									to(#5893a1));
+	box-shadow:inset 0px 1px 0px #50737b;
+	border-radius:4px;
+	text-shadow:#436168 0 -1px 0;
+	margin:0 0 0 7px;
+}
+.scNscPopUpContactVisitScroll li .listIcn2{
+	width:25px;
+	height:25px;
+	float:left;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d78600),
+									to(#efc600));
+	box-shadow:inset 0px 1px 0px #965c00;
+	border-radius:4px;
+	text-shadow:#855800 0 -1px 0;
+	margin:0 0 0 7px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet01 li.bordernone{border:none;}
+.scNscPopUpContactVisitScroll ul.ListSet01 li.list1{background:url(../Images/SC3210201/nrs01icn1Off.png) 18px 10px no-repeat;}
+.scNscPopUpContactVisitScroll ul.ListSet01 li.list2{background:url(../Images/SC3210201/nrs01icn2Off.png) 18px 10px no-repeat;}
+.scNscPopUpContactVisitScroll ul.ListSet01 li.list3{background:url(../Images/SC3210201/nrs01icn3Off.png) 18px 10px no-repeat;}
+
+.scNscPopUpContactVisitScroll ul.ListSet01 li.list1On{background:url(../Images/SC3210201/nrs01icn1On.png) 18px 10px no-repeat;}
+.scNscPopUpContactVisitScroll ul.ListSet01 li.list2On{background:url(../Images/SC3210201/nrs01icn2On.png) 18px 10px no-repeat;}
+.scNscPopUpContactVisitScroll ul.ListSet01 li.list3On{background:url(../Images/SC3210201/nrs01icn3On.png) 18px 10px no-repeat;}
+.scNscPopUpContactVisitScroll ul.ListSet01 li.list4On{background:url(../Images/SC3210201/nrs01icn4On.png) 18px 10px no-repeat;}
+
+.scNscPopUpContactVisitScroll ul.ListSet02 li.list1{padding-left:15px; width:363px; border:none;}
+.scNscPopUpContactVisitScroll ul.ListSet02 li.list2{background:url(../Images/SC3210201/nrs01icn4.png) 18px 9px no-repeat;}
+.scNscPopUpContactVisitScroll ul.ListSet02 li.list3{background:url(../Images/SC3210201/nrs01icn5.png) 18px 9px no-repeat;}
+.scNscPopUpContactVisitScroll ul.ListSet02 li.list4{background:url(../Images/SC3210201/nrs01icn6.png) 18px 9px no-repeat; width:308px; padding-right:10px;}
+.scNscPopUpContactVisitScroll ul.ListSet02 li.list5{background:url(../Images/SC3210201/nrs01icn7.png) 18px 8px no-repeat; width:308px; padding-right:10px;}
+/* 見積もり金額STEP2表示なし */
+/*.scNscPopUpContactVisitScroll ul.ListSet02 li.list6{background:url(../Images/SC3210201/nrs01icn8.png) 18px 9px no-repeat; border:none;}*/
+.scNscPopUpContactVisitScroll ul.ListSet02 li.FontBlue{
+	color:#375388;
+}
+
+.scNscPopUpContactVisitScroll ul.ListSet03{
+	overflow:hidden;
+	display:block;
+	background:#FFF;
+	width:377px;
+	height:58px;
+	border:#bbbbbb 1px solid;
+	border-radius:10px;
+	position:relative;
+	margin:0 0 0px 0;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li{
+	position:absolute;
+	top:9px;
+	width:75px;
+	text-align:center;
+	padding:28px 0 0 0;
+	font-size:10px;
+	border:none;
+	color:#666666;
+}
+/* プロセスアイコン:受注前(表示する為追加変更) */
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn1{
+	background:url(../Images/SC3210201/nrs01icn9.png) center top no-repeat;
+	left:6px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn1On{
+	background:url(../Images/SC3210201/nrs01icn9On.png) center top no-repeat;
+	left:6px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn2Off{
+	background:url(../Images/SC3210201/nrs01icn10Off.png) center top no-repeat;
+	left:79px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn2{
+	background:url(../Images/SC3210201/nrs01icn10.png) center top no-repeat;
+	left:79px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn3{
+	background:url(../Images/SC3210201/nrs01icn11.png) center top no-repeat;
+	left:153px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn3On{
+	background:url(../Images/SC3210201/nrs01icn11On.png) center top no-repeat;
+	left:153px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn4{
+	background:url(../Images/SC3210201/nrs01icn12.png) center top no-repeat;
+	left:225px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn4On{
+	background:url(../Images/SC3210201/nrs01icn12On.png) center top no-repeat;
+	left:225px;
+}
+/* ステータスアイコン(表示する為追加変更) */
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnHot,
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnSuccess,
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnCold,
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnGiveup,
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnWarm,
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnNoStatus{
+	border-left:#bbbbbb 1px solid;
+	padding:0px 0 0 12px;
+	right:13px;
+	top:3px;
+	width:45px;
+	height:52px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnHot{
+	background:url(../Images/SC3210201/nrs01icnHot.png) right 6px no-repeat;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnSuccess{
+	background:url(../Images/SC3210201/nrs01icnSuccess.png) right 6px no-repeat;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnCold{
+	background:url(../Images/SC3210201/nrs01icnCold.png) right 6px no-repeat;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnGiveup{
+	background:url(../Images/SC3210201/nrs01icnGiveup.png) right 6px no-repeat;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.IcnWarm{
+	background:url(../Images/SC3210201/nrs01icnWarm.png) right 6px no-repeat;
+}
+/* プロセスアイコン:受注後(表示する為追加変更) */
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn6Off{
+	background:url(../Images/SC3210201/nrs01icn14Off.png) center top no-repeat;
+	left:6px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn6On{
+	background:url(../Images/SC3210201/nrs01icn14On.png) center top no-repeat;
+	left:6px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn7Off{
+	background:url(../Images/SC3210201/nrs01icn15Off.png) center top no-repeat;
+	left:79px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn7On{
+	background:url(../Images/SC3210201/nrs01icn15On.png) center top no-repeat;
+	left:79px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn8Off{
+	background:url(../Images/SC3210201/nrs01icn16Off.png) center top no-repeat;
+	left:153px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn8On{
+	background:url(../Images/SC3210201/nrs01icn16On.png) center top no-repeat;
+	left:153px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn9Off{
+	background:url(../Images/SC3210201/nrs01icn17Off.png) center top no-repeat;
+	left:225px;
+}
+.scNscPopUpContactVisitScroll ul.ListSet03 li.Icn9On{
+	background:url(../Images/SC3210201/nrs01icn17On.png) center top no-repeat;
+	left:225px;
+}
+
+
+.PoPuPBlockNRS02-1 { 
+	overflow:hidden; height:100px; width:34px;
+	 /*border:#FFF 1px solid;*//*←位置確認用*/ 
+	 position:absolute; z-index:999; 
+	 /*top:130px;*/ left:-34px;/*←のマスク｜位置指定*/
+}
+.PoPuPBlockNRS02-2 { width:30px; height:30px; position:relative; box-shadow:2px 4px 12px #222; transform: rotate(-45deg); top:10px; left:25px; background: -webkit-gradient(linear, right top, left bottom, color-stop(0%, rgba(13,23,38,0.98)), color-stop(50%, rgba(13,23,38,0.98))); }
+.PoPuPBlockNRS02-3 { width: 28px; height: 28px; border-left:1px solid rgba(0,0,0,0.4); }/*吹き出しのツヤ*/
+
+
+
+
+/* ポップオーバー(追加変更) ================================================== */
+/* line 5, ../../app/stylesheets/popover.scss */
+.popoverEx {
+
+  position: absolute;
+  display: none;
+  
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 17, ../../app/stylesheets/popover.scss */
+.popoverEx.active {
+  opacity: 1;
+}
+
+/* ポップオーバー ================================================== */
+/* line 5, ../../app/stylesheets/popover.scss */
+.popoverEx {
+  position: absolute;
+  display: none;
+  
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* line 17, ../../app/stylesheets/popover.scss */
+.popoverEx.active {
+  opacity: 1;
+}
+/* line 21, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle {
+  position: absolute;
+  width: 0px;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+}
+/* line 29, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.top {
+  bottom: -40px;
+  border-top: 20px solid #1c232f;
+}
+/* line 34, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.bottom {
+  top: -40px;
+  border-bottom: 20px solid #1c232f;
+}
+/* line 39, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.left {
+  right: -40px;
+  border-left: 20px solid #1c232f;
+}
+/* line 44, ../../app/stylesheets/popover.scss */
+.popoverEx > .triangle.right {
+  left: -40px;
+  border-right: 20px solid #1c232f;
+}
+
+/* nssv00用CSS　ここまで
+------------------------------------------------------------------------------*/

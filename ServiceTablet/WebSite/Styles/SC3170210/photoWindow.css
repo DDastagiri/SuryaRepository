@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* CSS Document　camera写真のWindow　PhotoWindow */
+
+
+
+.BlackOver{
+	display:block;
+	width:1024px;
+	height:656px;
+	background:rgba(0,0,0,0.0);
+	position:absolute;
+	top:0px; left:0;
+}
+
+.BlackOver .mainblockContentArea{
+	width:984px; height:614px;
+	border:#000 1px solid;
+	border-radius:8px;
+	background:rgba(0,0,0,0.8);
+	display:block; position:absolute;
+	top:20px; left:19px;
+}
+
+.BlackOver .mainblockDialogBoxClose {
+	margin-bottom:-20px;
+	width:20px; height:20px;
+	border:#FFF 2px solid; border-radius:22px;
+	display: block;
+	background:#424242 url(../Images/SC3170210/ico6close.png) no-repeat center center;
+	position: absolute;
+	top:-9px;
+	left:-9px;
+}
+
+.BlackOver .MainView{
+	width:652px;	height:491px;
+	border:#cccccc 1px solid; border-radius:22px;
+	display:block; position:absolute;
+	top:25px; left:76px;
+	border-radius:0px;
+}
+/*
+.BlackOver .MainView p{
+	border:#fff 5px solid;
+	width:642px;	height:481px;
+	margin:0; padding:0;
+}
+*/
+.BlackOver .MainView div{
+	border:#fff 5px solid;
+	width:642px;	height:481px;
+	margin:0; padding:0;
+	text-align: center;
+}
+.BlackOver .ThumbnailView{
+	display:block;
+	position:absolute;
+	border-radius:0px;
+	border:none; margin:0; padding:0;
+	width:166px; height:493px;
+	overflow:hidden;
+	top:25px; left:745px;
+	overflow-y:scroll;
+}
+
+.BlackOver .ThumbnailView .ThumbnailPhotos{
+	display:block;
+	position:relative;
+	list-style:none; margin:0; padding:0;
+}
+.BlackOver .ThumbnailView .ThumbnailPhotos li{
+	list-style:none; margin:0; padding:0;
+	display:block;
+	width:161px; height:121px;
+	margin-bottom:10px;
+	border:1px solid #dcdcdc;
+	line-height:normal;
+	text-align: center;
+}
+.BlackOver .ThumbnailView .ThumbnailPhotos li p{
+	width:151px; height:111px;
+	position:absolute;
+	border:#FFF 6px solid;
+	top:0; left:0;
+}
+
+.BlackOver .ThumbnailView .ThumbnailPhotos li img{
+	width:160px; height:120px;
+}
+
+
+.BlackOver .DeleteBtn{
+	width:127px;
+	height:41px;
+	padding:0 0 0 0;
+	border:#000 2px solid;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e16363), 
+							color-stop(0.50, #d83030),
+							color-stop(0.51, #cf0101),
+							to(#cf0000));
+	border-radius:7px;
+	text-align:center;
+	font-size:18px;
+	line-height:41px;
+	font-weight:bold;
+	color:#ffffff;
+	text-shadow:rgba(0,0,0,0.7) 0 -1px 0; 
+	box-shadow:0px 1.2px 0px rgba(255,255,255,0.2),0px 2px 1px 1px rgba(0,0,0,0.2) inset;
+}
+.BlackOver .RegistrationBtn{
+	width:127px;
+	height:41px;
+	padding:0 0 0 0;
+	border:#000 2px solid;
+	background:-webkit-gradient(linear, left top, left bottom, from(#7c98ed),
+							color-stop(0.01, #7c98ed),
+							color-stop(0.5, #416ae5),
+							color-stop(0.51, #1e4ee1),
+							to(#1e4ee1));
+	border-radius:7px;
+	text-align:center;
+	font-size:18px;
+	line-height:41px;
+	font-weight:bold;
+	color:#ffffff;
+	text-shadow:rgba(0,0,0,0.7) 0 -1px 0;
+	box-shadow:0px 1.2px 0px rgba(255,255,255,0.2),0px 2px 1px 1px rgba(0,0,0,0.2) inset;
+}
+.BlackOver .CancelBtn{
+	width:127px;
+	height:41px;
+	padding:0 0 0 0;
+	border:#000 2px solid;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e16363), 
+							color-stop(0.50, #d83030),
+							color-stop(0.51, #cf0101),
+							to(#cf0000));
+	border-radius:7px;
+	text-align:center;
+	font-size:18px;
+	line-height:41px;
+	font-weight:bold;
+	color:#ffffff;
+	text-shadow:rgba(0,0,0,0.7) 0 -1px 0; 
+	box-shadow:0px 1.2px 0px rgba(255,255,255,0.2),0px 2px 1px 1px rgba(0,0,0,0.2) inset;
+}
+
+.pointBtn01{
+	width:128px;
+	height:39px;
+	position:absolute;
+	display:block;
+	top:551px; left:346px;
+	z-index:100;
+}
+.pointBtn02{
+	width:128px;
+	height:39px;
+	position:absolute;
+	display:block;
+	top:551px; left:504px;
+	z-index:100;
+}
+
+.pointBtn03{
+	width:128px;
+	height:39px;
+	position:absolute;
+	display:block;
+	top:551px; left:425px;
+	z-index:100;
+}

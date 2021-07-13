@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+
+.ProcessKPItable{
+	position:relative;	
+}
+.ProcessKPItable th,
+.ProcessKPItable td{
+	vertical-align:middle;
+	
+}
+.ProcessKPItable th{
+	height:43px;
+	background:#888888;
+	border-bottom:#FFF 2px solid;
+	color:#FFFFFF;
+	font-size:12px; line-height:16px;
+}
+
+.ProcessKPItable td{
+	height:36px;
+	color:#666666; font-weight:bold;
+	font-size:10px; line-height:12px;
+}
+.ProcessKPItable tr{
+	background:#eeeeee;
+}
+.ProcessKPItable tr:nth-child(2n){
+	background:#cccccc;
+	
+}
+
+.ProcessKPItable .Column01{
+	width:90px;
+}
+
+.ProcessKPItable .Column02-05{
+	width:38px; text-align:center;
+	border-left: #fff 1px solid;
+	font-size:11px;
+}
+.ProcessKPItable .Column06{
+	width:38px; text-align:center;
+	border-left:#ffffff 5px solid;
+}
+
+.ProcessKPItable .Column01 span{
+	padding-left:4px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.ProcessKPItable td.Column02-05 span{
+	display:table-cell; height:inherit;
+	vertical-align:middle;
+	text-align:right;
+}
+.ProcessKPItable td.Column06 span{
+	display:table-cell; height:inherit;
+	vertical-align:middle;
+}
+
+.ProcessKPItable td.Column01 span.centerTx{
+	text-align:center; 
+}
+
+.ProcessKPItable td.Column02-05 span.centerTx,
+.ProcessKPItable td.Column06 span.centerTx{
+	text-align:center; 
+	padding-left:3px;
+	width:inherit;
+}
+
+.ProcessKPItable td.Column02-05 span.rightTx,
+.ProcessKPItable td.Column06 span.rightTx{
+	text-align:right; 
+	padding-right:7px;
+	width:inherit;
+}
+
+.ProcessKPItable td .RedTex{color:#d73a3a;}
+
+.addMagTop10px{margin-top:10px;}
+
+.ProcessKPIdiv
+{
+    width:296px;
+    height:340px;
+}

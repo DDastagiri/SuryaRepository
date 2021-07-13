@@ -1,0 +1,1028 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#b7b7b7));
+}
+#main #contents{
+	display:block;
+	padding:20px 20px 20px 20px;
+}
+
+/*
+#contents .contentsFrame{
+	position:relative;
+	height:615px;
+	background:none;
+	border:none;
+	border-radius:0;
+	box-shadow:none;
+}
+*/
+
+/* ここから追加 */
+#contents .contentsFrame {
+    position:relative;
+	height:615px;
+	border:none;	
+	border-radius: 7px 7px 7px 7px;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+							color-stop(0.90, #FFF),
+							color-stop(0.91, #FFF),
+							to(#dfdfdf));
+}
+
+
+#contents .contentTitle{
+	width:190px;
+	font-size:16px;
+	padding:0px 0 0px 16px;
+	margin-bottom:7px;
+	color:#FFFFFF;
+	height:26px;
+	display:block;
+	display: table-cell;
+	vertical-align: middle;
+
+	border-top-left-radius:7px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:56px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+            color-stop(0.50, #797d84),
+            color-stop(0.51, #6a6e76),
+						to(#6a6e76));
+
+}
+
+#contents .iconsBoxMemo{
+	width:31px; height:31px;
+	border:#666 1px solid;
+	border-radius:3px;
+	background:url(../images/iconMemo.png) 7px 7px no-repeat #FFF;
+}
+#contents .iconsBoxMemo a{
+	display:block;
+	width:31px; height:31px;
+}
+
+#contents .iconsBoxCalDate a,
+#contents .iconsBoxCalWeek a,
+#contents .iconsBoxCalMonth a,
+#contents .iconsBoxCalPlus a,
+#contents .iconsBoxTrash a{ color:#333;}
+
+#contents .iconsBoxCalDate{
+	width:163px;
+	border:#666 1px solid;
+	border-radius:3px;
+}
+
+#contents .iconsBoxCalWeek,
+#contents .iconsBoxCalMonth,
+#contents .iconsBoxCalPlus,
+#contents .iconsBoxTrash{
+	width:31px;
+	border:#666 1px solid;
+	border-radius:3px;
+}
+#contents .iconsBoxCalWeek{margin:0 10px;}
+
+#contents .iconsBoxTrash{
+	position:absolute;
+	padding:4px 0;
+	bottom:80px; right:35px;
+	
+}
+/* ここまで追加 */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	S-TC01
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+.stc01Box01,
+.stc01Box02,
+.stc01Box03{
+	position:absolute;
+	background:#FFF;
+	border:#a5a5a5 1px solid;
+	border-radius: 7px 7px 7px 7px;/* ボックスの角を丸める */
+	box-shadow:3px 3px 3px #666;/* ボックスの影を描画 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+							color-stop(0.65, #f2f2f2),
+							to(#e2e2e2));/* バックグラウンドのグラデーション */
+}
+
+.stc01Box01
+{
+	width:560px;
+	height:128px;
+	top:0; left:0;
+}
+
+.stc01Box02{
+	width:400px;
+	height:128px;
+	top:0; left:582px;
+}
+
+.stc02Box02Filter
+{
+    width:400px;
+	height:128px;
+	top:0;
+	/*left:582px;*/
+	position:absolute;
+	background:#CCC;
+	border:#a5a5a5 1px solid;
+	border-radius: 7px 7px 7px 7px;/* ボックスの角を丸める */
+	/*box-shadow:3px 3px 3px #666;*//* ボックスの影を描画 */
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+							color-stop(0.65, #f2f2f2),
+							to(#e2e2e2));*//* バックグラウンドのグラデーション */
+	opacity:0;
+}
+
+.stc01Box03{
+	width:982px;
+	height:463px;
+	top:150px; left:0;
+}
+
+/*=================================
+  stc01Box01
+=================================*/
+.stc01Box01 .Box01In{
+	position:absolute;
+	left:15px;
+	top:15px;
+	width:530px;
+	height:99px;
+}
+.stc01Box01 .Box01Title{
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size:20px;
+	line-height:22px;
+}
+.stc01Box01 .Box01Title02{
+	position:absolute;
+	left:81px;
+	top:4px;
+	font-size:12px;
+	line-height:14px;
+}
+.stc01Box01 .Box01Title02 span{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.stc01Box01 .Box01GraphBox
+{
+	position:absolute;
+	width:530px;
+	height:68px;
+	left:0px;
+	bottom:0;
+/* ここから追加 */
+    /*overflow:auto;*/
+    overflow:hidden;
+/* ここまで追加 */
+}
+.stc01Box01 .Box01GraphLine{
+	position:absolute;
+    width:530px;
+	height:47px;
+	left:0;
+	bottom:0;
+	background:url(../Images/SC3150101/stcGraphDottedline.png) 0 0 repeat-x;
+	border-top:#9f9f9f 1px solid;
+	border-bottom:#9f9f9f 1px solid;
+/* ここから追加 */
+	top:18px;/* レイアウトずれを防ぐ */
+	opacity:1;
+	/*background-color:transparent;*/
+/* ここまで追加 */
+}
+.stc01Box01 .Box01GraphLineFilter{
+	position:absolute;
+    width:530px;
+	height:47px;
+	left:0;
+	bottom:0;
+	background:#B0B0B0;
+	opacity:0;
+}
+.stc01Box01 .Box01GraphCassette
+{
+	position:absolute;
+	width:53px;
+	height:62px;
+	font-size:10px;
+	text-align:center;
+	color:#666666;
+}
+/* ここから追加（チップのサンプルCSS） */
+.stc01Box01 .Box01GraphChipSample
+{
+	position:absolute;
+	width:50px;
+	height:47px;
+	font-size:10px;
+	text-align:center;
+	color:#666666;
+	background-color:Lime;
+}
+/* ここまで追加（チップのCSSサンプル） */
+/* ここから追加（灰色チップのCSSサンプル） */
+.stc01Box01 .Box01GraphChipSampleG
+{
+	position:absolute;
+	width:50px;
+	height:47px;
+	font-size:10px;
+	text-align:center;
+	color:#666666;
+	background-color:Gray;
+}
+/* ここまで追加（灰色チップのCSSサンプル） */
+.stc01Box01 .Cassette1 {left:1px; top:-15px;}
+.stc01Box01 .Cassette2 {left:55px; top:-15px;}
+.stc01Box01 .Cassette3 {left:108px; top:-15px;}
+.stc01Box01 .Cassette4 {left:161px; top:-15px;}
+/*
+.stc01Box01 .Cassette5 {left:214px; top:-15px;}*/
+.stc01Box01 .Cassette5 {left:214px; top:-15px; background-color:Lime;}
+.stc01Box01 .Cassette6 {left:267px; top:-15px;}
+.stc01Box01 .Cassette7 {left:320px; top:-15px;}
+.stc01Box01 .Cassette8 {left:373px; top:-15px;}
+.stc01Box01 .Cassette9 {left:426px; top:-15px;}
+.stc01Box01 .Cassette10{left:479px; top:-15px;}
+.stc01Box01 .Cassette11{left:532px; top:-15px;}
+
+.stc01Box01 .stcGraphIcn01,
+.stc01Box01 .stcGraphIcn02,
+.stc01Box01 .stcGraphIcn03,
+.stc01Box01 .stcGraphIcn04{
+	position:absolute;
+	left:0;
+	bottom:1px;
+	width:50px;
+	height:45px;
+}
+.stc01Box01 .stcGraphIcn01
+{
+	background:url(../Images/SC3150101/stcGraphIcn01.png) left bottom no-repeat;
+}
+.stc01Box01 .stcGraphIcn02{
+	background:url(../Images/SC3150101/stcGraphIcn02.png) left bottom no-repeat;
+}
+.stc01Box01 .stcGraphIcn03{
+	background:url(../Images/SC3150101/stcGraphIcn03.png) left bottom no-repeat;
+}
+.stc01Box01 .stcGraphIcn04{
+	background:url(../Images/stcGraphIcn04.png) left bottom no-repeat;
+}
+.stc01Box01 .CurrentBox{
+	position:absolute;
+/* ここから追加 */
+	top:10px;
+	visibility:hidden;
+/* ここまで追加 */
+	left:54px;
+	bottom:1px;
+/* ここから変更 */
+/*	width:25px; */
+	width:0px;
+/* ここまで変更 */
+	height:57px;
+	border-right:#ff0000 3px solid;
+	/*z-index:200;*/
+}
+.stc01Box01 .CurrentBoxTime{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	top:-10px;
+	left:0px;
+	width:52px;
+	height:14px;
+	padding:3px 0 0 0;
+	font-size:12px;
+	line-height:14px;
+	text-align:center;
+	color:#FFF;
+	background:#FF0000;
+	box-shadow:#404040 2px 2px 4px;
+}
+
+/* stc01Box01 ---------- ここまで
+---------------------------------*/
+
+/*=================================
+  stc01Box02
+=================================*/
+.stc01Box02 .Box02In{
+	position:absolute;
+	left:14px;
+	bottom:15px;
+	width:371px;
+	height:79px;
+	font-size:12px;
+	line-height:18px;
+}
+.stc01Box02 .Box02In span{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+.stc01Box02 .Box02In .TimeBox{
+	position:absolute;
+	right:0;
+	top:-20px;
+	width:160px;
+	font-size:14px;
+	line-height:26px;
+	text-align:right;
+	color:#666666;
+}
+.stc01Box02 .Box02In .TimeBox strong{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:20px;
+}
+.stc01Box02 .Box02In .Meter{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background:url(../Images/SC3150101/stcMeter.png) 0 0 no-repeat;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:371px;
+	height:34px;
+	font-size:10px;
+	line-height:11px;
+	
+	color:#666666;
+}
+.stc01Box02 .Box02In .MeterColor{
+	background:url(../Images/SC3150101/stcMeterColor.png) 0 0 no-repeat;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:0px;
+	height:34px;
+}
+.stc01Box02 .Box02In .MeterStartText{
+	position:absolute;
+	left:0;
+	top:15px;
+	display:block;
+	padding:0; margin:0;
+}
+.stc01Box02 .Box02In .MeterCompletionText{
+	position:absolute;
+	right:4px;
+	top:11px;
+	display:block;
+	padding:0; margin:0;
+}
+
+/* stc01Box02 ---------- ここまで
+---------------------------------*/
+
+/*=================================
+  stc01Box03
+=================================*/
+.stc01Box03 .Box03In {
+	position:absolute;
+	left:15px;
+	top:15px;
+	width:952px;
+	height:433px;
+	font-size:12px;
+	line-height:18px;
+}
+.stc01Box03 .TabButtonSet{
+	width:952px;
+	height:37px;
+}
+.stc01Box03 .TabButtonSet li{
+	border-radius:5px 5px 0 0;
+	float:left;
+}
+.stc01Box03 .TabButtonSet li.TabButton01,
+.stc01Box03 .TabButtonSet li.TabButton02,
+.stc01Box03 .TabButtonSet li.TabButton03{
+	width:320px;
+	height:36px;
+	border-bottom:#B3B3B3 1px solid;
+}
+.stc01Box03 .TabButtonSet li.TabButton03{
+	width:312px;
+}
+.stc01Box03 .TabButtonSet li.TabButton01 .Button,
+.stc01Box03 .TabButtonSet li.TabButton02 .Button,
+.stc01Box03 .TabButtonSet li.TabButton03 .Button,
+.stc01Box03 .TabButtonSet .Rollover{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:312px;
+	height:26px;
+	padding:9px 0 0 0;
+	border-top:#95989b 1px solid;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb0b4), 
+							to(#676e75));
+	text-align:center;
+	font-size:14px;
+	line-height:16px;
+	text-shadow:#434548 0 -1px 0;
+	color:#FFF;
+}
+.stc01Box03 .TabButtonSet .Rollover{
+	width:310px;
+	height:27px;
+	background:#FFF;
+	color:#666666;
+	border-top:#b3b3b3 1px solid;
+	border-left:#b3b3b3 1px solid;
+	border-right:#b3b3b3 1px solid;
+	border-bottomn:none;
+	text-shadow:#FFF 0 -1px 0;
+}
+.stc01Box03 .TabBox{
+	position:absolute;
+	width:950px;
+	height:395px;
+	background:#FFF;
+	border-top:none;
+	border-left:#B3B3B3 1px solid;
+	border-right:#B3B3B3 1px solid;
+	border-bottom:#B3B3B3 1px solid;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	
+}
+.stc01Box03 .ContentBox{
+	font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	position:absolute;
+	left:16px;
+	top:16px;
+	width:918px;
+	height:363px;
+	border:#B3B3B3 1px solid;
+	border-radius:7px;
+}
+
+
+.stc01Box03 .TableListLeft,
+.stc01Box03 .TableListRight{
+	position:absolute;
+	bottom:15px;
+	width:445px;
+	height:315px;
+	font-size:14px;
+	line-height:16px;
+	color:#666666;
+}
+.stc01Box03 .TableListLeft{left:15px;}
+.stc01Box03 .TableListRight{right:15px; width:429px;}
+
+.stc01Box03 .TableListLeft .TableList,
+.stc01Box03 .TableListRight .TableList{
+	position:absolute;
+	left:0;
+	bottom:0;
+	border:#bcbcbc 1px solid;
+	width:441px;
+	height:292px;
+}
+.stc01Box03 .TableListRight .TableList{
+	width:427px;
+}
+.stc01Box03 .TableListLeft .TableList table,
+.stc01Box03 .TableListRight .TableList table{
+	width:441px;
+}
+.stc01Box03 .TableListRight .TableList table{
+	width:427px;
+}
+.stc01Box03 .TableListLeft .TableList th,
+.stc01Box03 .TableListRight .TableList th{
+	height:23px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#868990), 
+							to(#696d75));
+	border-left:#FFF 1px solid;
+	border-right:#868990 1px solid;
+	padding:4px 0 0 0;
+	text-align:center;
+	vertical-align:top;
+	color:#FFF;
+	text-shadow:#55585e 0 -1px 0;
+}
+.stc01Box03 .TableListLeft .TableList .listtop01{width:29px; border-left:none;}
+.stc01Box03 .TableListLeft .TableList .listtop02{width:140px;}
+.stc01Box03 .TableListLeft .TableList .listtop03{width:89px;}
+.stc01Box03 .TableListLeft .TableList .listtop04{width:88px;}
+.stc01Box03 .TableListLeft .TableList .listtop05{width:89px; border-right:none;}
+
+.stc01Box03 .TableListRight .TableList .listtop01{width:34px; border-left:none;}
+.stc01Box03 .TableListRight .TableList .listtop02{width:141px;}
+.stc01Box03 .TableListRight .TableList .listtop03{width:123px;}
+.stc01Box03 .TableListRight .TableList .listtop04{width:124px; border-right:none;}
+
+
+.stc01Box03 .TableListLeft .TableListScroll,
+.stc01Box03 .TableListRight .TableListScroll{
+	overflow-y:scroll;
+	overflow-x:hidden;
+	display:block;
+	height:265px;
+}
+.stc01Box03 .TableListLeft .TableList td,
+.stc01Box03 .TableListRight .TableList td{
+	background:#FFF;
+	height:26px;
+	border-left:#FFF 1px solid;
+	border-right:#868990 1px solid;
+	padding:14px 0 0 0;
+	text-align:center;
+	vertical-align:top;
+}
+.stc01Box03 .TableList td.BackGray{
+	background:#efefef;
+}
+.stc01Box03 .TableList td.NoColumn{
+	border-left:none;
+}
+.stc01Box03 .TableList td.Subtotal{
+	border-right:none;
+}
+.stc01Box03 .IcnButtonSet{
+	position:absolute;
+	width:96px;
+	right:16px;
+	top:15px;
+}
+.stc01Box03 .IcnButton01{
+	position:absolute;
+	left:0;
+	top:0;
+	background:url(../Images/SC3150101/stc01listicn01.png) 0 0 no-repeat;
+	width:26px;
+	height:26px;
+}
+.stc01Box03 .IcnButton02{
+	position:absolute;
+	left:35px;
+	top:0;
+	background:url(../Images/SC3150101/stc01listicn02.png) 0 0 no-repeat;
+	width:26px;
+	height:26px;
+}
+.stc01Box03 .IcnButton03{
+	position:absolute;
+	left:70px;
+	top:0;
+	background:url(../Images/SC3150101/stc01listicn03.png) 0 0 no-repeat;
+	width:26px;
+	height:26px;
+}
+
+/* stc01Box03 ---------- ここまで
+---------------------------------*/
+
+
+/*---------------------------------
+    FooterCustomButton
+---------------------------------*/
+.footerCustomButton_ConnectParts
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background:#FF0000;
+}
+.footerCustomButton_StartWork
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background:#0000FF;
+}
+.footerCustomButton_SuspendWork
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background:#FF0000;
+}
+.footerCustomButton_StartCheck
+{
+    display:none;
+    color:white;
+    width:88px;
+    height:44px;
+    background:#0000FF;
+}
+
+
+/* FooterCustomButton ---- ここまで
+---------------------------------*/
+
+
+
+
+/****************************
+/* ポップアップ
+/****************************
+/*
+#tcvNsc31Main{
+	background:url(images/tcvNsc31MainBg.png) 0 0 repeat-x;
+	height:601px;
+	padding:90px 258px 0 286px;
+}
+*/
+
+.tcvNsc31Black{
+	position:absolute;
+	top:45px; left:0;
+	opacity: 0.6;
+	background:#000;
+	z-index:100;
+	width:1024px;
+	/*height:656px;*/
+	height:700px;
+}
+
+#tcvNsc31Main .popWind{
+	display:block;
+	position:absolute;
+	width:525px;
+	height:294px;
+	    top:210px;
+        left:280px;
+	z-index:500;
+	opacity: 0.8;   
+}
+
+.popWind .PopUpBtn01{
+	position:absolute;
+	z-index:210;
+}
+.PopUpBtn {
+    position: relative;
+    height: 40px;
+    color: #fff;
+    text-shadow: -1px -1px 0 #434b57;
+    text-align: center;
+    border-top: solid 1px #bec5cf;
+    border-bottom: solid 1px #3f4e63;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #acb9c9), color-stop(0.5, #8395af), color-stop(0.5, #7388a5), color-stop(1, #7488a1));
+}
+.PopUpBtn li {
+    list-style: none;
+}
+
+
+.PopUpBtn01 .buttonA {
+	position:absolute;
+	top:6px; left:3px;
+	width:93px;
+	height:31px;
+	overflow:hidden;
+  font-size: 12px;
+}
+.PopUpBtn01 .buttonA .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:28px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#4f5769),
+						color-stop(0.1, #4f5769),
+						color-stop(0.9, #000b29),
+						to(#000b29));
+	z-index:1;
+}
+.PopUpBtn01 .buttonA a{
+	position:absolute;
+	left:13px;
+	display:block;
+	padding:9px 2px 8px;
+	width:74px;
+	z-index:2;
+	font-size:12px; line-height:12px;
+	color:#FFFFFF;
+	border:inset 1px #383238;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4f5769), to(#000b29));
+	border-left:none;
+}
+.PopUpBtn01 .title{
+	position:absolute;
+	top:8px; left:6px;
+	font-size:20px;
+	color:#FFFFFF;
+	display:block;
+	font-weight:bold;
+	width:466px;
+	text-align:center;
+}
+
+/* ポップアップ-ボタン設定追加
+-------------------------------------------------------------------------------------*/
+
+.PopUpBtn01 .buttonC,
+.PopUpBtn01 .buttonD {
+	position:absolute;
+	top:6px;
+  display:block;
+	padding:9px 0px 8px;
+	z-index:2;
+	text-align:center;
+	font-size:12px; line-height:12px;
+	color:#FFFFFF;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.PopUpBtn01 .buttonC{left:6px; width:78px; background: -webkit-gradient(linear, left top, left bottom, from(#4f5769), to(#000b29));}
+.PopUpBtn01 .buttonD{left:393px; width:78px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#7b94e4), 
+						color-stop(0.500, #4e6fdc),
+						color-stop(0.501, #3f61d9),
+						to(#4063d9));
+}
+
+.PopUpBtn01 .buttonC a,
+.PopUpBtn01 .buttonD a{color:#FFFFFF; text-decoration:none; }
+
+
+
+
+
+
+#tcvNsc31Main .popWind .baseWind1{
+/*	opacity: 0.85;*/
+}
+#tcvNsc31Main .popWind .baseWind2{
+	display:none;
+}
+#tcvNsc31Main .popWind .baseWind1 .box{
+	position:absolute;
+	width:480px; height:210px;
+	border-radius: 9px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+						color-stop(0.055, #2a3445),
+						color-stop(0.055, #0f1623),
+						to(#030b19));
+	/*box-shadow:inset 0px 1px 0px #a6a9b4;*/
+	z-index:3;
+}
+#tcvNsc31Main .popWind .baseWind1 .boxBoder{
+	position:absolute;
+	padding:1px;
+	width:480px; height:210px;
+	border-radius: 9px;
+	background:#000;
+	z-index:3;
+		box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
+
+#tcvNsc31Main .popWind .baseWind1 .fuki{
+	display:block;
+	position:absolute;
+	left:1px;
+	top:1px;
+	background: -webkit-gradient(linear, left top, right bottom, from(#c5c6c8),
+						color-stop(0.4, #676e80),
+						to(#6e7585));
+	box-shadow:inset 1px 1px 0px #a6a9b4;
+	width:23px;
+	height:23px;
+	z-index:2;
+}
+#tcvNsc31Main .popWind .baseWind1 .fukiBoder{
+	display:block;
+	position:absolute;
+	left:10px;
+	top:-9px;
+	background:#000000;
+	width:25px;
+	height:25px;
+	z-index:2;
+	transform: rotate(45deg);
+}
+
+#tcvNsc31Main .popWind .Title{
+	display:block;
+	position:absolute;
+	left:95px; top:10px;
+	width:290px; height:20px;
+	text-align:center;
+	font-size:20px;
+	color:#FFF;
+}
+
+#tcvNsc31Main .popWind .dataWind1{
+	display:block;
+	position:absolute;
+	background:#FFF;
+	left:7px; top:44px;
+	width:466px; height:155px;        
+	border-radius: 7px;
+	box-shadow:inset 0px 3px 3px #333333;
+	background: #dcdee4;
+	z-index:4;
+}
+
+#tcvNsc31Main .popWind .dataWind1 .TextBox{
+	display:block;
+	width:444px;
+	position:absolute;
+	left:9px;
+	top:10px;
+	height:135px;
+	overflow:auto;
+	background:#f7f7f7;
+	border:#bababa 1px solid;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+}
+#tcvNsc31Main .popWind .dataWind1 .TextBoxIn{
+	display:block;
+	width:412px;
+	position:absolute;
+	left:9px;
+	top:10px;
+	padding-top:8px;
+}
+#tcvNsc31Main .popWind .dataWind1 .TextBox .ListTitle{
+	display:block;
+	height:44px;
+	width:424px;
+	line-height:44px;
+	font-size:16px;
+	color:#a8a8a8;
+	margin-bottom:10px;
+	float:left;
+	border:#bababa 1px solid;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	background:#FFF;
+}
+
+#tcvNsc31Main .popWind .dataWind1 .TextBox .ListMessage{
+	display:block;
+	height:200px;
+	width:424px;
+	line-height:44px;
+	font-size:16px;
+	color:#a8a8a8;
+	margin-bottom:10px;
+	float:left;
+	border:#bababa 1px solid;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	background:#FFF;
+}
+
+#tcvNsc31Main .popWind .dataWind1 .TextBox .ListDate,
+#tcvNsc31Main .popWind .dataWind1 .TextBox .ListTitleButton,
+#tcvNsc31Main .popWind .dataWind1 .TextBox .DateTitleButton{
+	display:block;
+	height:44px;
+	width:424px;
+	line-height:44px;
+	font-size:16px;
+	color:#FFFFFF;
+	float:left;
+	border:#bababa 1px solid;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	background:#EE0000;
+}
+
+.ListTitle .ListIn , .ListMessage .ListIn , .ListDate .ListIn{
+	padding:0 45px;
+}
+
+#tcvNsc31Main .popWind .dataWind1 .TextBox .ListDate .ListIn .DateTitle{
+	float:left;
+	color:#000000;
+	font-weight:bold;
+	display:inline;
+}
+
+#tcvNsc31Main .popWind .dataWind1 .TextBox .ListDate .ListIn .DateDetail{
+	float:right;
+	color:#455685;
+	display:inline;
+	/*background: url(images/tcvNsc31arrow.png) right no-repeat;*/
+	padding-right:10px;
+	font-weight:bold;
+}
+
+/**************************************
+    隠しボタン
+**************************************/
+.HiddenButton 
+{
+    display:none;
+}
+
+
+/* popover ------------- ここから
+---------------------------------*/
+/*
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockButtonLeft { width:85px; height:30px; float:left; }
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockButtonLeft a { width:80px; height:30px; border:#1F2124 1px solid; border-radius:4px; display:block; box-shadow:0px 1px 1px #595E66; font-size:12px; font-weight:400; text-shadow:0px 1px 0px #151A27; line-height:30px; color:#FFF; text-align: center; background:-webkit-gradient(linear, left top, left bottom, from(#576174), color-stop(0.5, #1A233E), color-stop(0.51, #000B29), to(#000B29)); }
+
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockName { width:225px; height:30px; float:left; }
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockName h3 { font-size:20px; font-weight:400; text-shadow:0px 1px 0px #404040; color:#FFF; text-align:center; }
+*/
+
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlock { margin-bottom:8px; height:30px; }
+
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockButtonLeft { width:85px; height:30px; float:left; }
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockButtonLeft span { width:80px; height:30px; border:#1F2124 1px solid; border-radius:4px; display:block; box-shadow:0px 1px 1px #595E66; font-size:12px; font-weight:400; text-shadow:0px 1px 0px #151A27; line-height:30px; color:#FFF; text-align: center; background:-webkit-gradient(linear, left top, left bottom, from(#576174), color-stop(0.5, #1A233E), color-stop(0.51, #000B29), to(#000B29)); }
+
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockName { width:225px; height:30px; float:left; }
+#PoPuPBlockSTC0101 .PoPuPBlockSTC0101TitleBlockName h3 { font-size:20px; text-shadow:0px 1px 0px #404040; color:#FFF; text-align:center; line-height: 40px; }
+
+/* popover ------------- ここまで
+---------------------------------*/
+
+/*  2012/03/03 上田 ロード中アイコン制御 Start */
+/*　R/O情報読み込み中
+ -------------------------------------------------------------------------------------------*/
+#roInfomationBox.loading {}
+#loadingroInfomation {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:block;
+	top:350px;
+	left:460px;
+	width:38px;
+	height:38px;
+}
+#roInfomationBox.loading #loadingroInfomation { display:block; }
+#roInfomationBox.loading #stc01Box03 { display:none; }
+/*  2012/03/03 上田 ロード中アイコン制御 End */

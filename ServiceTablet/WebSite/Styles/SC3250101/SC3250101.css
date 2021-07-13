@@ -1,0 +1,1472 @@
+﻿@charset "utf-8";
+/*/-------------------------------------------------------------------------
+//SC3250101.css
+//--------------------------------------------------------------------------
+//機能：商品訴求メイン（車両）画面
+//
+//作成：2014/02/XX NEC 鈴木	初版作成
+//更新：2014/03/XX NEC 上野
+
+---------------------------------------------------------------------------*/
+
+#main #contents {
+    padding:0px;
+ }
+
+body {
+	font-family:Helvetica, sans-serif;
+ }
+
+/* コンテンツ枠*/
+#contentsMain{
+	position:relative;
+	background: -webkit-gradient(linear, left top, left bottom,from(#e2e2e2),color-stop(0.51, #cfcfcf),to(#b3b3b3));
+	width:auto;
+	padding:20px 20px 0;
+	color:#333;
+	height:635px;
+	position:relative;
+}
+
+/*半透明ボード*/
+#contentsMainonBoard{
+	position:absolute;
+	top:44px;
+	left:0;
+	background:rgba(0,0,0,0.5);
+	width:1024px;
+	/*height:656px;*/
+	height:756px;
+	z-index: 1;
+}
+
+#contentsMain #contentsBox {
+	position: absolute;
+	top:131px;
+	width: 982px;
+	height:482px;
+	margin: 19px 0 20px 0;
+	padding: 0;
+	border-radius: 8px;
+	background-color: #FFF;
+	background-color: #FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.51, #FEFEFE), to(#e2e2e2));
+	border: #adadad 1px solid;
+	box-shadow: 3px 3px 4px #666;
+}
+
+/*************************
+*
+*コンテンツ上部
+*
+**************************/
+
+
+#roListtitle {
+	height: 108px;
+	width: 742px;
+	border-radius: 8px;
+	background-color: #FFF;
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.51, #FEFEFE), to(#e2e2e2));*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.65, #f2f2f2), to(#e2e2e2));
+	border: #999999 1px solid;
+	/*box-shadow: 0px 4px 4px #666;*/
+	box-shadow: 3px 3px 3px #666;
+	font-size: 14px;
+}
+
+#roTitle {
+	float: left;
+	width: 360px;
+	height: 100px;
+	position:relative;
+}
+
+#Logos {
+	/* background-image: url(../Images/SC3250101/logo_camry.png); */
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 18px;
+	position:absolute;
+	left:16px; top:11px;
+}
+
+#LogosIn {
+	width: 100px;
+	height: 18px;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	margin-top: 0px;
+}
+
+#LogosIn h2 {
+	font-size: 18px;
+}
+
+/* 2014/06/11 グレードと走行距離をカスタムラベルに変更　START　↓↓↓ */
+
+#carTxt {
+	display:block; position:absolute;
+	width:120px; font-size:14px;
+	height:16px; line-height:16px;
+	left:119px; top:14px;
+}
+
+#carTxt li {
+	float: left;
+	margin-right: 11px;
+}
+
+#carTxt #carGradeBox {
+	float: left;
+}
+
+#carTxt #carMileageBox {
+	float: right;
+}
+
+/* 2014/06/11 グレードと走行距離をカスタムラベルに変更　END　　↑↑↑ */
+
+/* 2016/10/19 商品訴求リストのボタンを削除　START　↓↓↓ */
+/*
+#iconBox {
+	display:block; position:absolute;
+	width: 114px;
+	height: 26px;
+	border-radius: 5px;
+	font-size: 14px;
+	text-align: center;
+	color: #000;
+	background-color: #ffffff;
+	left:240px; top:8px;
+}
+
+#iconBox dd {
+	float: left;
+	width:55px;
+	height: 24px;
+	text-align:center;
+	border-top:#6B6C6C 1px solid;
+	border-left:#4f5255 1px solid;
+}
+
+#iconBox .search {
+	border-right:none;
+	border-bottom:#9B9B9B 1px solid;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+}
+
+#iconBox dd a {
+	display: block;
+	width: 54px;
+	height: 23px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#iconBox .search a {
+	background: url(../Images/SC3250101/icon_search.png) 18px center no-repeat;
+}
+
+#iconBox .report a {
+	background: url(../Images/SC3250101/icon_report.png) 18px center no-repeat;
+}
+
+#iconBox .report {
+	border-right:#8e98a7 1px solid;
+	border-bottom:#8e98a7 1px solid;
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+}
+
+#iconBox .on {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ABAFB3), to(#686F75));
+}
+
+#iconBox .on a {
+	border-top: 1px solid #95979B;
+}
+
+#iconBox .off {
+	background: -webkit-gradient(linear, left top, left bottom, from(#F1F1F3), to(#BEC1CA));
+}
+
+#iconBox .off a {
+	border-top: 1px solid #D1D1D2;
+}
+
+#iconBox .search a {
+	background-image: url(../Images/SC3250101/ico01.png);
+}
+
+#iconBox .report a {
+	background-image: url(../Images/SC3250101/ico02.png);
+}
+
+#iconBox .report {
+	border-bottom:#9B9B9B 1px solid;
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+}
+*/
+/* 2016/10/19 商品訴求リストのボタンを削除　END　　↑↑↑ */
+
+
+#roSpcampaigntitle {
+	position: relative;
+	top: -110px;
+	left: 744px;
+	width: 218px;
+	border-radius: 8px;
+	/*background: -webkit-gradient(linear, left top, left bottom, 	from(#FFFFFF), color-stop(0.51, #FEFEFE), to(#e2e2e2));*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.65, #f2f2f2), to(#e2e2e2));
+	border: #999999 1px solid;
+	/*box-shadow: 0px 4px 4px #666;*/
+	box-shadow: 3px 3px 3px #666;
+	margin-left: 20px;
+	height: 108px;
+	overflow:auto;
+}
+
+#roSpcampaigntitle.ifrm {
+	position: absolute;
+	top: -1px;
+	left: -21px;
+	width: 218px;
+	border: #999999 1px solid;
+	height: 108px;
+}
+
+#roSpcampaigntitle h2 {
+	width: 186px;
+	height: 25px;
+	border-bottom:#dedfe1 1px solid;
+	border-top-left-radius:7px;
+	border-bottom-right-radius:25px;
+	font-size:16px;
+	text-indent:7px;
+	line-height:24px; color:#FFF; /*text-shadow:1px 1px 0px #333;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#8E929A), color-stop(0.49, #797D84), color-stop(0.5, #6A6E76), to(#5D616A)); font-weight:normal;
+}
+
+#roSpcampaigntitle ol li span {
+	margin-left: 3px;
+}
+
+#roResult {
+	margin-top: 0px;
+}
+
+#roResult dt {
+	display:block;
+	left:19px; top:47px;
+	position:absolute;
+	width:63px; height:14px;
+	font-size:14px; line-height:14px;
+}
+
+#roResult dt#txt01{
+	left:19px; top:80px;
+}
+
+#roResult #txt02{
+	padding-top:1px;
+}
+
+#roResult dd {
+	display:block;
+	width:271px; height:24px;
+	position:absolute;
+	left:82px; top:42px;
+	overflow:hidden;
+}
+
+#roResult dd.Iten02{
+	left:82px; top:75px;
+/*	width:262px; height:22px;
+	border: 1px solid #b3b3b3;
+	padding-left: 5px;
+	padding-top: 1px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;*/
+}
+
+#roResult input,select {
+	border: #C5C5C5 1px solid;
+	border-radius: 5px;
+	width: 269px;
+	height: 22px;
+	font-size: 14px;
+	text-align: center;
+	color: #375388;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+#roAdvice {
+	float: right;
+	position:relative;
+	display:block;
+	width:379px; height:108px;
+}
+
+#roAdvice h2 {
+	font-size: 14px;
+	font-weight: normal;
+	display:block;
+	width:190px;
+	height:14px;
+	line-height:14px;
+	top:14px;
+	left:0px;
+	position:absolute;
+}
+
+#roAdvice.Camera {
+    position:absolute;
+    top:8px;
+    left:190px;
+    padding: 0px 0px 0px 0px;
+    width:170px; height:20px;
+    text-align:right;
+    vertical-align:middle;
+}
+
+#roAdvicebox {
+	border: 1px solid #b3b3b3;
+	width: 348px;	height: 54px;
+	padding: 2px 2px 2px 10px;
+	background-color: #fff;
+}
+
+#roAdvicebox.textAreaBox{
+	display:block;
+	position:absolute;
+	top:31px;
+}
+
+#roAdvicebox li {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#roAdvicebox li span {
+	font-weight: bold;
+}
+
+#roAdviceboxContens {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	width:348px;
+	height: 54px;
+	overflow-x:auto;
+	background-color: #fff;
+}
+
+#bottomImg {
+	text-align: right;
+	/*padding-right: 28px;*/
+	/*background-image: url(../Images/SC3250101/icon_photo.png);*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: right 0px;*/
+	/*margin:-2px 0 0 0;*/
+	line-height:18px;
+    position:absolute;
+    top:8px;
+    left:280px;
+    /*padding: 0px 0px 0px 0px;*/
+    width:50px; height:20px;
+    text-align:right;
+    vertical-align:middle;
+}
+
+
+/*************************
+*
+*コンテンツ下部
+*
+**************************/
+
+/*************車の位置**************/
+#contentsArea {
+	padding:0;
+	margin:0;
+	background:url(../Images/SC3250101/carImage.png) 303px 146px no-repeat;
+	height:100%;
+	position:relative;
+}
+
+/*************ラインの位置**************/
+
+#contentsArea #line01 {
+	position:absolute;
+	bottom:228px;
+	right:603px;	
+}
+
+#contentsArea #line02 {
+	position:absolute;
+	top:61px;
+	left:372px;
+}
+
+#contentsArea #line03 {
+	position:absolute;
+	top:76px;
+	left:490px;
+}
+
+#contentsArea #line04 {
+	position:absolute;
+	top:99px;
+	right:133px;
+}
+
+#contentsArea #line05 {
+	position:absolute;
+	top:252px;
+	right:141px;
+}
+
+#contentsArea #line07 {
+	position:absolute;
+	bottom:83px;
+	right:370px;
+}
+
+#contentsArea #line08 {
+	position:absolute;
+	top:236px;
+	right:564px;
+}
+
+#contentsArea #line09 {
+	position:absolute;
+	top:281px;
+	right:629px;
+}
+
+/*************テーブルの位置**************/
+
+#contentsArea #list01 {
+	position:absolute;
+	top:19px;
+	left:19px;
+}
+
+#contentsArea #list02 {
+	position:absolute;
+	bottom:19px;
+	left:19px;
+}
+
+#contentsArea #list03 {
+	position:absolute;
+	top:19px;
+	left:257px;
+}
+
+#contentsArea #list04 {
+	position:absolute;
+	bottom:19px;
+	left:257px;
+}
+
+#contentsArea #list05 {
+	position:absolute;
+	top:19px;
+	left:495px;
+}
+
+#contentsArea #list06 {
+	position:absolute;
+	bottom:19px;
+	left:496px;
+}
+
+#contentsArea #list07 {
+	position:absolute;
+	top:19px;
+	right:18px;
+}
+
+#contentsArea #list08 {
+	position:absolute;
+	top:214px;
+	right:20px;
+}
+
+#contentsArea #list09 {
+	position:absolute;
+	bottom:19px;
+	right:18px;
+}
+	
+
+/*************テーブルの指定**************/
+
+/*ボーダーと影*/
+#contentsArea .tableShadow {
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+	border-radius: 3px;	
+	border: #adadad 1px solid;
+	width:228px;
+}
+
+#contentsArea table .tdLineV {
+	border-left: #adadad 1px solid;
+	border-right: #adadad 1px solid;
+}
+
+#contentsArea table{
+	margin:0;
+	width:228px;
+/*	font-weight:100;*/
+}
+
+#contentsArea table.listHead {
+	font-size: 12px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	background:#00a0b9;
+	border-bottom: #adadad 1px solid;
+	color:#FFF;
+}
+
+#contentsArea table .TableSetMainHD{
+	height:34px; width:100%;
+	position:relative;
+}
+
+#contentsArea table .TableSetMainHD .TbaleTitleLine{
+	display:block; position:absolute;
+	top:0; right:0; width:101px; height:36px;
+}
+
+#contentsArea table .TableSetMainHD .TbaleTitleLine.OneLine{
+	font-size:14px; line-height:32px;
+	
+}
+#contentsArea table .TableSetMainHD .TbaleTitleLine.TwoLine{
+	font-size:14px; line-height:16px;
+}
+
+#contentsArea table .TableSetMainHD .TbaleTitleLine.OneLineRed{
+	font-size:14px; line-height:32px;
+	color:#FF0000;
+}
+
+#contentsArea table .TableSetMainHD .TbaleTitleLine.TwoLineRed{
+	font-size:14px; line-height:16px;
+	color:#FF0000;
+}
+
+#contentsArea table .TableSetMainHD img{
+	display:block;
+	position:absolute;
+	left:0px; top:1px;
+}
+
+#contentsArea table .TableSetMainData01{
+	width:39px;
+	font-size:10px; line-height:14px;
+}
+
+#contentsArea table.listData {
+	font-size: 12px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	/*background:#FFF;*/
+	color:#000;
+/*	font-weight:bold;*/
+}
+
+#contentsArea table.listHead th {
+	font-weight:normal;
+	font-size:14px;
+}
+
+#contentsArea table.listHead th.row1 {
+	padding:4px 5px 0px 8px;
+	text-align:left;
+}
+
+#contentsArea table .row2,
+#contentsArea table .row3 {
+	font-size:10px !important;
+	text-align:center;
+/*	line-height:15px;*/
+	font-weight:normal;
+}
+
+#contentsArea table.listHead th img {
+	vertical-align:middle;
+	padding:1px 6px 6px 1px;
+}
+
+#contentsArea table.listHead th.row1{
+	width:135px;
+}
+
+#contentsArea table.listHead th.row2{
+	width:39px;
+}
+
+#contentsArea table.listHead th.row3{
+	width:39px;
+}
+
+#contentsArea table.listData td.row1{
+	width:140px;
+	line-height:16px;
+}
+
+#contentsArea table.listData td.row1-1{
+	line-height:16px;
+	width:74px;
+}
+
+#contentsArea table.listData td.row1-2{
+	line-height:16px;
+	/*width:74px;*/
+	padding:0;
+}
+
+#contentsArea table.listData td.row2,
+#contentsArea table.listData td.row3{
+	width:39px;
+	padding:0;
+}
+
+#contentsArea table.listData td {
+	padding:0 0 0 9px;
+}
+
+#contentsArea table.listData tr:last-child td {
+	padding-bottom:3px;
+}
+
+#contentsArea table.listData tr:first-child td{
+	padding-top:4px;
+}
+
+/*個別のテーブル修正*/
+
+#contentsArea #list07 table.listData tr:last-child td {
+	padding-bottom:2px;
+}
+
+#contentsArea #list02 table.listData tr:last-child td{
+	padding-bottom:7px;
+}
+
+#contentsArea #list06 table.listData tr:last-child td,
+#contentsArea #list09 table.listData tr:last-child td{
+	padding-bottom:6px;
+}	
+
+/*スクロール*/
+#scrollArea01 {
+	overflow:scroll: touch;
+	overflow-y:scroll;
+	height:137px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+
+/*スクロール*/
+#scrollArea02 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:93px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+
+/*スクロール*/
+#scrollArea03 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:73px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+
+/*スクロール*/
+#scrollArea04 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:73px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+
+/*スクロール*/
+#scrollArea05 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:73px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+	
+/*スクロール*/
+#scrollArea06 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:93px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+
+/*スクロール*/
+#scrollArea07 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:138px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+
+/*スクロール*/
+#scrollArea08 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:41px;
+	width:228px;
+	overflow-x:hidden;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+}
+
+/*スクロール*/
+#scrollArea09 {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	height:93px;
+	width:228px;
+	background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat-y;
+	overflow-x:hidden;
+}
+
+
+/*位置調整*/
+	
+td div {
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+td div img {
+	position:absolute;
+	display:block;
+	top:-1px;
+	left:11px;
+}
+
+/*ヘッダーアイコン*/
+
+#TitleImage01 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+/*ヘッダーアイコン*/
+
+.Icon_EngineBattery{
+	background-image: url("../images/SC3250101/icon10.png");
+}
+
+.Icon_Electrical{
+	background-image: url("../images/SC3250101/icon11.png");
+}
+
+.Icon_Body{
+	background-image: url("../images/SC3250101/icon03.png");
+}
+
+.Icon_BreakSystem{
+	background-image: url("../images/SC3250101/icon04.png");
+}
+
+.Icon_Underbody{
+	background-image: url("../images/SC3250101/icon05.png");
+}
+
+.Icon_OtherParts{
+	background-image: url("../images/SC3250101/icon06.png");
+}
+
+.Icon_SteeringSystem{
+	background-image: url("../images/SC3250101/icon07.png");
+}
+
+.Icon_PowerTransmission{
+	background-image: url("../images/SC3250101/icon08.png");
+}
+
+.Icon_CoolingSystem{
+	background-image: url("../images/SC3250101/icon09.png");
+}
+
+/*Resultアイコン*/
+.Icon_None{
+	background-image: url("../images/SC3250101/none.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_NoProblem{
+	background-image: url("../images/SC3250101/no_problem.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlredyRepalece{
+	background-image: url("../images/SC3250101/already_replace.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlreadyFix{
+	background-image: url("../images/SC3250101/already_fix.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlredyClean{
+	background-image: url("../images/SC3250101/already_clean.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlreadySwap{
+	background-image: url("../images/SC3250101/already_swap.png");
+	background-repeat:no-repeat;
+}
+
+/* 2014/07/07　NoActionアイコン追加　START　↓↓↓ */
+.Icon_NoAction{
+	background-image: url("../images/SC3250101/no_action.png");
+	background-repeat:no-repeat;
+}
+/* 2014/07/07　NoActionアイコン追加　END　　↑↑↑ */
+
+    
+/*Suggestアイコン*/
+.Icon_Inspaction{
+	background-image: url("../images/SC3250101/need_inspection.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Replace_Black{
+	background-image: url("../images/SC3250101/need_replace_black.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Fixing{
+	background-image: url("../images/SC3250101/need_fix.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Swapping{
+	background-image: url("../images/SC3250101/need_swapping.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Cleaning{
+	background-image: url("../images/SC3250101/need_clean.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Reset{
+	/*background-image: url("../images/SC3250101/reset.png");*/
+	background-repeat:no-repeat;
+}
+
+.Icon_Replace_Red{
+	background-image: url("../images/SC3250101/need_replace_red.png");
+	background-repeat:no-repeat;
+}
+       
+/*Resultアイコン（拡大表示用）*/
+.Icon_None_Pop{
+	background-image: url("../images/SC3250101/none_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_NoProblem_Pop{
+	background-image: url("../images/SC3250101/no_problem_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlredyRepalece_Pop{
+	background-image: url("../images/SC3250101/already_replace_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlreadyFix_Pop{
+	background-image: url("../images/SC3250101/already_fix_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlredyClean_Pop{
+	background-image: url("../images/SC3250101/already_clean_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_AlreadySwap_Pop{
+	background-image: url("../images/SC3250101/already_swap_pop.png");
+	background-repeat:no-repeat;
+}
+
+/* 2014/07/07　NoActionアイコン追加　START　↓↓↓ */
+.Icon_NoAction_Pop{
+	background-image: url("../images/SC3250101/no_action_pop.png");
+	background-repeat:no-repeat;
+}
+/* 2014/07/07　NoActionアイコン追加　END　　↑↑↑ */
+    
+/*Suggestアイコン（拡大表示用）*/
+.Icon_Inspaction_Pop{
+	background-image: url("../images/SC3250101/need_inspection_pop.png");
+	background-repeat:no-repeat;
+}
+    
+.Icon_Replace_Black_Pop{
+	background-image: url("../images/SC3250101/need_replace_black_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Fixing_Pop{
+	background-image: url("../images/SC3250101/need_fix_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Swapping_Pop{
+	background-image: url("../images/SC3250101/need_swap_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Cleaning_Pop{
+	background-image: url("../images/SC3250101/need_clean_pop.png");
+	background-repeat:no-repeat;
+}
+
+.Icon_Reset_Pop{
+	/*background-image: url("../images/SC3250101/reset_pop.png");*/
+	background-repeat:no-repeat;
+}
+
+ .Icon_Replace_Red_Pop{
+	background-image: url("../images/SC3250101/need_replace_red_pop.png");
+	background-repeat:no-repeat;
+}
+       
+#TitleImage01 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage02 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage03 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage04 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage05 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage06 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage07 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage08 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+#TitleImage09 {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:1px;
+	float:left;
+}
+
+
+/**************ポップアップウィンドウ**************/
+#popUp {
+	z-index: 100;
+	width: 420px;
+	border: 1px solid #C8C8C8;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 159px;
+	left: 290px;
+}
+
+#popUp tbody {
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#popUp th {
+	height: 38px;
+	background-color:#00A0B9;
+	border-bottom: 1px solid #C8C8C8;
+	vertical-align:middle;
+	font-size:14px;
+	color:#FFF;
+	font-weight:normal;
+}
+
+#popUp th img{
+	padding:0 6px 0 0;
+	margin:0 0 0 4px;
+}
+
+#popUp th p{
+	padding:6px 0 0;
+}
+
+#popUp td {
+	height:36px;
+	border-bottom: 1px solid #C8C8C8;
+	font-size:14px;
+}
+
+#popUp .col1{
+	width: 98px;
+	border-right: 1px solid #C8C8C8;
+	text-align:left;
+	padding-left:9px;
+}
+
+#popUp th.col1{
+	width:298px;
+}
+
+#popUp .col1-1{
+	width: 98px;
+	padding-left:10px;	
+}
+
+#popUp .col1-2{
+	width: 142px;
+}
+
+#popUp .col2{
+	width: 59px;
+	border-right: 1px solid #C8C8C8;
+	text-align:center;
+	font-weight:normal;
+	font-size:12px;
+	line-height:16px;
+}
+
+#popUp .col3{
+	width: 59px;
+	text-align:center;
+	font-weight:normal;
+	font-size:12px;
+}
+
+#closeBtn {
+	position: absolute;
+	top: 147px;
+	left: 277px;
+	z-index:100;
+}
+
+#popUpTitleImageFrame {
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+	position:absolute;
+	top:5px;
+    left:13px;
+	float:left;
+}
+
+/* 2014/05/21 「強く推奨時」の表示処理追加　START　↓↓↓ */
+#popUp .OneLineRed{
+	color:#FF0000;
+}
+/* 2014/05/21 「強く推奨時」の表示処理追加　　END　↑↑↑ */
+
+/* 吹き出し関係 */
+#floatBox {
+	position: absolute;
+	z-index: 99999;
+}
+
+#floatBox #balloon {
+	height: 47px;
+	/*width: 291px;*/
+	padding: 6px 0;
+	border: 1px solid #838385;
+	border-radius: 8px;
+	/* from #F4F6FA to #DADFE5 border #838385 shadow #ADADAD */
+	background: -webkit-gradient(linear, left top, left bottom, from(#F4F6FA), to(#DADFE5));
+	box-shadow: 1px 1px 5px #ADADAD, -1px -1px 5px #ADADAD, 1px -1px 5px #ADADAD, -1px 1px 5px #ADADAD;
+}
+
+#balloon_top_front {
+	position: absolute;
+	border-bottom: 9px solid #F4F6FA;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+    z-index:100000;
+	/*bottom: 60px;
+	left: 140px;*/
+}
+
+#balloon_top_back {
+	position: absolute;
+	border-bottom: 9px solid #838385;
+	border-right: 9px solid transparent;
+	border-left: 9px solid transparent;
+    z-index:100000;
+	/*bottom: 61px;
+	left: 138px;*/
+}
+
+#floatBox li {
+	float: left;
+	margin-left: 7px;
+	margin-right: 1px;
+	background-repeat: no-repeat;
+}
+
+#floatBox .push {
+	background-image: url(../Images/SC3250101/icon_selected.png);
+}
+
+/*2016/11/07 文言変更　クリーンアイコン選択状態時の画像　　START　↓↓↓*/
+#floatBox .pushClean {
+	background-image: url(../Images/SC3250101/icon_selectedClean.png);
+}
+/*2016/11/07 文言変更　クリーンアイコン選択状態時の画像　　END　↑↑↑*/
+
+/*2016/11/07 文言変更に伴い、クリーンアイコン幅拡大　START　↓↓↓*/
+#floatBox > div > ul > #li1 div,
+#floatBox > div > ul > #li2 div,
+#floatBox > div > ul > #li3 div,
+#floatBox > div > ul > #li4 div,
+#floatBox > div > ul > #li6 div,
+#floatBox > div > ul > #li7 div
+{
+	width: 49px;
+	height: 47px;
+	background-repeat: no-repeat;
+}
+
+#floatBox > div > ul > #li5 div
+{
+	width: 75px;
+	height: 47px;
+	background-repeat: no-repeat;
+}
+/*2016/11/07 文言変更に伴い、クリーンアイコン幅拡大　　END　↑↑↑*/
+
+#iconInspect {
+	background-image: url(../Images/SC3250101/icon_inspect.png);
+	background-position:-1px center;
+}
+
+#iconReplace {
+	background-image: url(../Images/SC3250101/icon_replace.png);
+}
+
+#iconFix {
+	background-image: url(../Images/SC3250101/icon_fix.png);
+}
+
+#iconCleaning {
+	background-image: url(../Images/SC3250101/icon_cleaning.png);
+	background-position:center center;
+}
+
+#iconSwap {
+	background-image: url(../Images/SC3250101/icon_swap.png);
+}
+
+#iconNone {
+	background-image: url(../Images/SC3250101/icon_none.png);
+}
+
+#iconReset {
+	background-image: url(../Images/SC3250101/icon_clear.png);
+}
+
+/*2014/05/22 整備選択コントロールのアイコン名変更　START　↓↓↓*/
+/*2016/11/07 文言変更に伴い、クリーンアイコン幅拡大　START　↓↓↓*/
+#floatBox > div > ul > #li1 .IconText,
+#floatBox > div > ul > #li2 .IconText,
+#floatBox > div > ul > #li3 .IconText,
+#floatBox > div > ul > #li4 .IconText,
+#floatBox > div > ul > #li6 .IconText,
+#floatBox > div > ul > #li7 .IconText
+{
+    width:49px;
+    height:18px;
+    padding:29px 0 0 0;
+    text-align:center;
+    font-size:10px;
+    line-height:18px;
+    color:#303a4b;
+}
+#floatBox > div > ul > #li5 .IconText
+{
+    width:75px;
+    height:18px;
+    padding:29px 0 0 0;
+    text-align:center;
+    font-size:10px;
+    line-height:18px;
+    color:#303a4b;
+}
+/*2016/11/07 文言変更に伴い、クリーンアイコン幅拡大　　END　↑↑↑*/
+/*2014/05/22 整備選択コントロールのアイコン名変更　　END　↑↑↑*/
+
+/*リンク色*/
+
+a {
+	color:#3E3AFF;
+}
+	
+img {
+	vertical-align:bottom;
+}
+	
+.floatL{
+	float:left;
+}
+	
+/*スクロール*/
+#popUpDetail {
+	/*z-index: 100;*/
+	/*width: 420px;*/
+	width: 422px;
+	border: 1px solid #C8C8C8;
+	background-color: #FFFFFF;
+}
+
+#popUpDetail th {
+	height: 38px;
+	background-color:#00A0B9;
+	border-bottom: 1px solid #C8C8C8;
+	vertical-align:middle;
+	font-size:14px;
+	color:#FFF;
+	font-weight:normal;
+}
+
+#popUpDetail th img{
+	padding:0 6px 0 0;
+	margin:0 0 0 4px;
+}
+
+#popUpDetail th p{
+	padding:6px 0 0;
+}
+
+#popUpDetail td {
+	height:36px;
+	border-bottom: 1px solid #C8C8C8;
+	font-size:14px;
+}
+
+#popUpDetail .col1{
+	width: 98px;
+	border-right: 1px solid #C8C8C8;
+	text-align:left;
+	padding-left:9px;
+}
+
+#popUpDetail th.col1{
+	width:298px;
+}
+
+#popUpDetail .col1-1{
+	/*width: 98px;*/
+	width:293px;
+	padding-left:10px;	
+}
+
+#popUpDetail .col1-2{
+	/*width: 142px;*/
+	/*width: 295px;*/
+	padding-left:98px;	
+}
+
+#popUpDetail .col2{
+	/*width: 59px;*/
+	width: 59px;
+	border-right: 1px solid #C8C8C8;
+	text-align:center;
+	font-weight:normal;
+	font-size:12px;
+	line-height:16px;
+}
+
+#popUpDetail .col3{
+	width: 59px;
+	text-align:center;
+	font-weight:normal;
+	font-size:12px;
+}
+
+#popUpList {
+	/*z-index: 100;*/
+	width: 422px;
+	height: 342px;
+	position: absolute;
+	top: 199px;
+	left: 290px;
+}
+
+#popUpListIn {
+	overflow:scroll: touch;
+	overflow-y:auto;
+	width:422px;
+	height: 334px;
+	overflow-x:hidden;
+	background-color: #FFFFFF;
+	/*background-image: url("../Images/SC3250101/listback.png");
+	background-repeat: repeat;*/
+}
+
+/**************フッターボタン**************/
+
+.fotterButtonTable
+{
+    height:47px;
+    border-collapse:collapse;
+    border:0px;
+    border-collapse:separate;
+    border-spacing:2px 0px;
+}
+
+.fotterButtonTable td
+{
+    vertical-align:top;
+}
+
+/*Registerボタン*/
+#imgRegister{
+    display:table-cell; 
+    width: 78px;
+    height: 47px;
+    background-repeat: no-repeat;
+    color:white;
+    vertical-align:middle;
+    text-align:center;
+    text-shadow:-1px -1px 0px #333;
+    font-size:14px;
+    font-weight:600; 
+}
+	
+.Register_Enable {
+    /* 2014/05/22 文言DBから取得　START　↓↓↓ */
+	/*background-image: url("../Images/SC3250101/footerIcon07.png");*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #57585A), color-stop(0.04, #7C98ED), color-stop(0.49, #4169E5), color-stop(0.5, #1E4EE1), to(#1D4AD6)); /*float:right;*/
+    /* 2014/05/22 文言DBから取得　END　　↑↑↑ */
+}
+	
+.Register_Disable {
+    /* 2014/05/22 文言DBから取得　START　↓↓↓ */
+	/*background-image: url("../Images/SC3250101/footerIcon07_Disable.png");*/
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #9E9E9E), color-stop(0.04, #9D9D9D), color-stop(0.49, #727272), color-stop(0.5, #5E5E5E), to(#555555)); float:right; */
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(0.02, #707070), color-stop(0.04, #707070), color-stop(0.49, #707070), color-stop(0.5, #707070), to(#707070)); /*float:right;*/ 
+    /* 2014/05/22 文言DBから取得　END　　↑↑↑ */
+}
+
+/*Cartボタン*/
+#imgCart{
+	width: 78px;
+	height: 47px;
+	background-repeat: no-repeat;
+}
+
+.Cart_Enable {
+	background-image: url("../Images/SC3250101/footerIcon08.png");
+}
+
+.Cart_Disable {
+	background-image: url("../Images/SC3250101/footerIcon08_Disable.png");
+}
+
+
+
+

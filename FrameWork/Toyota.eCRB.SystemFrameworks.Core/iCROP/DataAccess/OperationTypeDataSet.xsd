@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OperationTypeDataSet" targetNamespace="http://tempuri.org/OperationTypeDataSet.xsd" xmlns:mstns="http://tempuri.org/OperationTypeDataSet.xsd" xmlns="http://tempuri.org/OperationTypeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.ApplicationFrameworks.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OperationTypeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="OperationTypeDataSet" msprop:Generator_UserDSName="OperationTypeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OPERATIONTYPE" msdata:CaseSensitive="True" msprop:Generator_TableClassName="OPERATIONTYPEDataTable" msprop:Generator_TableVarName="tableOPERATIONTYPE" msprop:Generator_TablePropName="OPERATIONTYPE" msprop:Generator_RowDeletingName="OPERATIONTYPERowDeleting" msprop:Generator_UserTableName="OPERATIONTYPE" msprop:Generator_RowChangingName="OPERATIONTYPERowChanging" msprop:Generator_RowEvHandlerName="OPERATIONTYPERowChangeEventHandler" msprop:Generator_RowDeletedName="OPERATIONTYPERowDeleted" msprop:Generator_RowEvArgName="OPERATIONTYPERowChangeEvent" msprop:Generator_RowChangedName="OPERATIONTYPERowChanged" msprop:Generator_RowClassName="OPERATIONTYPERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OPERATIONCODE" msprop:Generator_ColumnVarNameInTable="columnOPERATIONCODE" msprop:Generator_ColumnPropNameInRow="OPERATIONCODE" msprop:Generator_ColumnPropNameInTable="OPERATIONCODEColumn" msprop:Generator_UserColumnName="OPERATIONCODE" type="xs:long" />
+              <xs:element name="DLRCD" msprop:Generator_ColumnVarNameInTable="columnDLRCD" msprop:Generator_ColumnPropNameInRow="DLRCD" msprop:Generator_ColumnPropNameInTable="DLRCDColumn" msprop:Generator_UserColumnName="DLRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRCD" msprop:Generator_ColumnVarNameInTable="columnSTRCD" msprop:Generator_ColumnPropNameInRow="STRCD" msprop:Generator_ColumnPropNameInTable="STRCDColumn" msprop:Generator_UserColumnName="STRCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OPERATIONNAME" msprop:Generator_ColumnVarNameInTable="columnOPERATIONNAME" msprop:Generator_ColumnPropNameInRow="OPERATIONNAME" msprop:Generator_ColumnPropNameInTable="OPERATIONNAMEColumn" msprop:Generator_UserColumnName="OPERATIONNAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OPERATIONNAME_DFL" msprop:Generator_ColumnVarNameInTable="columnOPERATIONNAME_DFL" msprop:Generator_ColumnPropNameInRow="OPERATIONNAME_DFL" msprop:Generator_ColumnPropNameInTable="OPERATIONNAME_DFLColumn" msprop:Generator_UserColumnName="OPERATIONNAME_DFL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OPERATIONCOMMENT" msprop:Generator_ColumnVarNameInTable="columnOPERATIONCOMMENT" msprop:Generator_ColumnPropNameInRow="OPERATIONCOMMENT" msprop:Generator_ColumnPropNameInTable="OPERATIONCOMMENTColumn" msprop:Generator_UserColumnName="OPERATIONCOMMENT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RECUSEFLG" msprop:Generator_ColumnVarNameInTable="columnRECUSEFLG" msprop:Generator_ColumnPropNameInRow="RECUSEFLG" msprop:Generator_ColumnPropNameInTable="RECUSEFLGColumn" msprop:Generator_UserColumnName="RECUSEFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELFLG" msprop:Generator_ColumnVarNameInTable="columnDELFLG" msprop:Generator_ColumnPropNameInRow="DELFLG" msprop:Generator_ColumnPropNameInTable="DELFLGColumn" msprop:Generator_UserColumnName="DELFLG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATEDATE" msprop:Generator_ColumnVarNameInTable="columnCREATEDATE" msprop:Generator_ColumnPropNameInRow="CREATEDATE" msprop:Generator_ColumnPropNameInTable="CREATEDATEColumn" msprop:Generator_UserColumnName="CREATEDATE" type="xs:dateTime" />
+              <xs:element name="UPDATEDATE" msprop:Generator_ColumnVarNameInTable="columnUPDATEDATE" msprop:Generator_ColumnPropNameInRow="UPDATEDATE" msprop:Generator_ColumnPropNameInTable="UPDATEDATEColumn" msprop:Generator_UserColumnName="UPDATEDATE" type="xs:dateTime" />
+              <xs:element name="UPDATEACCOUNT" msprop:Generator_ColumnVarNameInTable="columnUPDATEACCOUNT" msprop:Generator_ColumnPropNameInRow="UPDATEACCOUNT" msprop:Generator_ColumnPropNameInTable="UPDATEACCOUNTColumn" msprop:Generator_UserColumnName="UPDATEACCOUNT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_STARTTIME" msprop:Generator_ColumnVarNameInTable="columnLOGIN_STARTTIME" msprop:Generator_ColumnPropNameInRow="LOGIN_STARTTIME" msprop:Generator_ColumnPropNameInTable="LOGIN_STARTTIMEColumn" msprop:Generator_UserColumnName="LOGIN_STARTTIME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_ENDTIME" msprop:Generator_ColumnVarNameInTable="columnLOGIN_ENDTIME" msprop:Generator_ColumnPropNameInRow="LOGIN_ENDTIME" msprop:Generator_ColumnPropNameInTable="LOGIN_ENDTIMEColumn" msprop:Generator_UserColumnName="LOGIN_ENDTIME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OPERATIONTYPE" />
+      <xs:field xpath="mstns:OPERATIONCODE" />
+      <xs:field xpath="mstns:DLRCD" />
+      <xs:field xpath="mstns:STRCD" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

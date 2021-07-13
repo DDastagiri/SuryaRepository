@@ -1,0 +1,713 @@
+﻿/*//////////////////////////////////////////////////////////////////////////////
+//
+//    部品庫モニター用スタイル
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+/*//////////////////////////////////////////////////////////////////////////////
+//  共通
+//////////////////////////////////////////////////////////////////////////////*/
+
+/* 隠しボタン */
+.HiddenBtn{
+    display   : none;
+    visibility: hidden;
+}
+
+#Main{
+    background:url(../Images/SC3190402/tsl03_backimg.png) 0 0 no-repeat;
+    width:1920px;
+    height:1080px;
+}
+
+.divMainFrame{
+    position:relative;
+    overflow:hidden;
+    width:1920px;
+    height:1002px;
+}
+
+/* タイトル */
+/*------------------------------------------------------------------------------*/
+.divMainHeader{
+    position:relative;
+    width:100%;
+    height:76px;
+    background:url(../Images/SC3190402/tsl03_titlebar.png) left bottom no-repeat;
+}
+.divMainHeader .divMainHeaderTitleLeft{
+    position:absolute;
+    top:9px; left:40px;
+    width:800px;
+    height:44px;
+    font-size:41px;
+    line-height:67px;
+    font-weight:bold;
+    color:#FFF;
+}
+.divMainHeader .divMainHeaderTitleLeft span{
+    font-size:55px;
+}
+.divMainHeader .divMainHeaderTitleRight{
+    position:absolute;
+    top:9px; right:25px;
+    width:500px;
+    height:44px;
+    font-size:35px;
+    line-height:67px;
+    font-weight:bold;
+    text-align:right;
+    color:#FFF;
+}
+.divMainHeader .divMainHeaderTitleRight .upDateTime{
+    font-size:45px;
+}
+
+/* ------------------------------------------------------------------------------*/
+/* カセットセット
+/* ------------------------------------------------------------------------------*/
+.divMainArea{
+    position:absolute;
+    left:0px; top:0px;
+    width:100%;
+    height:1004px;
+}
+.divMainArea .divArea01,
+.divMainArea .divArea02,
+.divMainArea .divArea03,
+.divMainArea .divArea04 {
+    position:absolute;
+    top:14px;
+    height:952px; 
+    box-shadow:0px 2px 15px #000;
+    box-shadow:0px 2px 15px #000;
+    border-radius:9px;
+    border-radius:9px;
+    border-style: solid;
+    border-color:#000;
+    
+    border-width: 9px;
+    border-image: url(../Images/SC3190402/tsl03_table.png) 9 stretch;
+  border-image: url("../Images/SC3190402/tsl03_table.png") 9 stretch;
+}
+
+.divMainArea .divAreaSub02_Area01,
+.divMainArea .divAreaSub02_Area02,
+.divMainArea .divAreaSub02_Area03,
+.divMainArea .divAreaSub02_Area04 {
+    position:absolute;
+    left:8px; top:925px;
+    height:30px; 
+}
+.divMainArea .divAreaSub02_Area01 {
+    width:438px;
+}
+.divMainArea .divAreaSub02_Area02 {
+    width:242px;
+}
+.divMainArea .divAreaSub02_Area03 {
+    width:438px;
+}
+.divMainArea .divAreaSub02_Area04 {
+    width:587px;
+}
+.divMainArea .divArea01{
+    left:20px;
+    width:454px;
+}
+.divMainArea .divArea02{
+    left:505px;
+    width:258px;
+}
+.divMainArea .divArea03{
+    left:794px;
+    width:454px;
+}
+.divMainArea .divArea04{
+    right:20px;
+    width:603px;
+}
+
+.divMainArea .divAreaTitleHeader{
+    position:relative;
+    width:100%;
+    height:64px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0348b7),
+            color-stop(0.33, #077fec),
+            color-stop(0.50, #0785f2),
+            color-stop(0.66, #0672df),
+                        to(#023aa9));
+    background: linear-gradient(to bottom, #0348b7,#077fec 33%,#0785f2 50%,#0672df 66%,#023aa9);
+    border-bottom:#010722 1px solid;
+    border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+    box-shadow:0px 1px 7px #FFF, 0px 1px 5px #FFF;
+    box-shadow:0px 1px 7px #FFF, 0px 1px 5px #FFF;
+    font-size:26px;
+    line-height:28px;
+    font-weight:bold;
+    color:#FFF;
+    text-shadow:0 -1px 0 #000, 0 0 2px #000;
+    margin:-5px;
+    padding:5px;
+    z-index:100;
+}
+
+.divMainArea .divAreaTitleHeader .divAreaTitle{
+    width:100%;
+    height:64px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.divMainArea .divAreaTitleHeader .divAreaCount{
+    width:100%;
+    height:29px;
+    text-align:right;   
+    display:table-cell;
+    vertical-align:middle;
+    padding-right:10px;
+}
+
+/* 追加見積もり待ちエリア */
+.divMainArea .divArea01 .divMainAreaBoxIn{
+    position:absolute;
+    left:8px; top:72px;
+    width:438px;
+/*    height:905px; */
+/*    padding:17px 0 0 0; */
+    height:780px;
+    padding:0 0 0 0;
+    margin:17px 0 0 0;
+    overflow-y:scroll;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    z-index:1;
+}
+
+/* 作業計画待ちエリア */
+.divMainArea .divArea02 .divMainAreaBoxIn{
+    position:absolute;
+    left:8px; top:72px;
+    width:242px;
+/*    height:905px; */
+/*    padding:17px 0 0 0; */
+    height:780px;
+    padding:0 0 0 0;
+    margin:17px 0 0 0;
+    overflow-y:scroll;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    z-index:1;
+}
+
+/* 出庫待ちエリア */
+.divMainArea .divArea03 .divMainAreaBoxIn{
+    position:absolute;
+    left:8px; top:72px;
+    width:438px;
+/*    height:905px; */
+/*    padding:17px 0 0 0; */
+    height:780px;
+    padding:0 0 0 0;
+    margin:17px 0 0 0;
+    overflow-y:scroll;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    z-index:1;
+}
+
+/* 引き取り待ちエリア */
+.divMainArea .divArea04 .divMainAreaBoxIn{
+    position:absolute;
+    left:8px; top:72px;
+    width:587px;
+/*    height:905px; */
+/*    padding:17px 0 0 0; */
+    height:780px;
+    padding:0 0 0 0;
+    margin:17px 0 0 0;
+    overflow-y:scroll;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    z-index:1;
+}
+
+/* カセットの設定 */
+ul.ulSubAreaBoxIn{
+    position:relative;
+    display:block;
+    width:100%;
+}
+
+/* アニメーションの設定 */
+/*
+ul#ulSubAreaBox01,
+ul#ulSubAreaBox02,
+ul#ulSubAreaBox03,
+ul#ulSubAreaBox04 {
+  -webkit-transition:2s ease-in-out;
+}
+*/
+
+/*
+@keyframes test {
+     0% {
+         top:0px;
+     }
+     100% {
+         top:700px;
+     }
+}
+
+ul.ulSubAreaBoxIn {
+    animation-name: test;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+}
+*/
+
+/* チップの設定 */
+ul.ulSubAreaBoxIn li{
+    display:block;
+    width:100%;
+    height:112px;
+}
+
+/* 各エリア明細カウントのテキスト設定 */
+.divMainArea ul.ulSubAreaBoxIn li .divSubAreaDetail .divAreaCount{
+    position:absolute;
+    right:0; top:12px;
+    overflow:hidden;
+    width:36px;
+    height:14px;
+    line-height:18px;
+    font-size:10px;
+    text-align:right;
+    font-weight:bold;
+}
+
+/* 各エリア内のテキスト設定 */
+ul.ulSubAreaBoxIn li .divAreaBack{
+    position:relative;
+    background:rgba(255,255,255,0.3);
+    box-shadow:1px 1px 5px #000;
+    box-shadow:1px 1px 5px #000;
+    width:100%;
+    height:99px;
+    color:#FFF;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail,
+ul.ulSubAreaBoxIn li .divSubAreaDetail02{
+    position:absolute;
+    left:12px; top:7px;
+    width:356px;
+    height:88px;
+}
+
+ul.ulSubAreaBoxIn li .DispTime{
+    position:absolute;
+    right:10px; top:12px;
+    width:87px;
+    height:75px;
+    line-height:74px;
+    font-size:25px;
+    text-align:center;
+    border:#031351 1px solid;
+    box-shadow:0px 0px 4px #FFF, inset 0px 0px 4px #FFF;
+    box-shadow:0px 0px 4px #FFF, inset 0px 0px 4px #FFF;
+    font-weight:bold;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .RoNum,
+ul.ulSubAreaBoxIn li .divSubAreaDetail02 .RoNum{
+    position:absolute;
+    left:0; top:0px;
+    overflow:hidden;
+    width:231px;
+    height:29px;
+    line-height:29px;
+    font-size:21px;
+    font-weight:bold;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .RegNum,
+ul.ulSubAreaBoxIn li .divSubAreaDetail02 .RegNum02{
+    position:absolute;
+    left:215px; top:0px;
+    overflow:hidden;
+    width:138px;
+    height:29px;
+    line-height:29px;
+    font-size:21px;
+    font-weight:bold;
+    text-align:left;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .ModelName,
+ul.ulSubAreaBoxIn li .divSubAreaDetail02 .ModelName02,
+ul.ulSubAreaBoxIn li .divSubAreaDetail .ModelName04{
+    position:absolute;
+    overflow:hidden;
+    height:29px;
+    line-height:29px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .ModelName{
+    left:0; top:28px;
+    width:325px;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StallName{
+    position:absolute;
+    left:-1px; 
+    top:59px;
+    /*width:234px;*/
+    width:80px;
+    height:29px;
+    line-height:29px;
+    font-size:21px;
+    font-weight:bold;
+}
+
+/*
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StaffName,
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StaffName01{
+    position:absolute;
+    overflow:hidden;
+    width:210px;
+    height:29px;
+    line-height:29px;
+    font-size:21px;
+    text-align:left;
+    font-weight:bold;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StaffName{
+    left:141px; top:59px;
+}
+*/
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StaffName{
+    position:absolute;
+    overflow:hidden;
+    width:190px;
+    height:29px;
+    left:141px; top:59px;
+    line-height:29px;
+    font-size:21px;
+    text-align:left;
+    font-weight:bold;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StaffName span,
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StaffName01 span{
+    border:#FFF 1px solid;
+    padding:0 10px;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .BackOrder{
+    position: absolute;
+    overflow: hidden;
+    top: 59px;
+    left: 84px;
+    line-height: 29px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+    width: 66px;
+    height: 29px;
+}
+
+/* ------------------------------------------------------------------------*/
+/* 赤明細のみ設定
+/* ------------------------------------------------------------------------*/
+ul.ulSubAreaBoxIn li .BackColorRed .DispTime{
+    position:absolute;
+    right:10px; top:12px;
+    width:87px;
+    height:75px;
+    border-color:#800000;
+}
+
+ul.ulSubAreaBoxIn li .BackColorRed{
+    background:rgba(255,0,0,0.8);
+}
+
+ul.ulSubAreaBoxIn li .BackColorRed .divSubAreaDetail,
+ul.ulSubAreaBoxIn li .BackColorRed .divSubAreaDetail .divAreaCount{
+    color:#FFF;
+}
+/* ------------------------------------------------------------------------*/
+/* 各アイコン設定
+/* ------------------------------------------------------------------------*/
+ul.ulSubAreaBoxIn li .Smark{
+    position:absolute;
+    left:286px; top:59px;
+    width:34px;
+    height:29px;
+    overflow:hidden;
+    background:url(../Images/SC3190402/tsl03_icon_s.png) 0 0 no-repeat;
+}
+ul.ulSubAreaBoxIn li .Wmark{
+    position:absolute;
+    right:0; top:59px;
+    width:34px;
+    height:29px;
+    overflow:hidden;
+    background:url(../Images/SC3190402/tsl03_icon_w.png) 0 0 no-repeat;
+}
+#pnlArea03 ul.ulSubAreaBoxIn li .Boxmark{
+    height:29px;
+    overflow:hidden;
+    font-size:21px;
+    line-height:29px;
+    background:url(../Images/SC3190402/tsl03_icon_box.png) 0 0 no-repeat;
+    padding-left:41px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    padding-right:5px;
+    vertical-align: top;
+}
+
+#pnlArea03 ul.ulSubAreaBoxIn li .MaxWidth70{
+    max-width:70px;
+}
+
+#pnlArea03 ul.ulSubAreaBoxIn li .MaxWidth106{
+    max-width:106px;
+}
+
+#pnlArea03 ul.ulSubAreaBoxIn li .BoxmarkWmark{
+    position: absolute;
+    left: 170px;
+    top: 59px;
+    width: 150px;
+    height: 29px;
+    float: right;
+    text-align: right;
+}
+
+#pnlArea04 ul.ulSubAreaBoxIn li .Boxmark{
+    position:absolute;
+    left:398px; top:59px;
+    width:71px;
+    height:29px;
+    overflow:hidden;
+    font-size:21px;
+    line-height:29px;
+    text-align:right;
+    background:url(../Images/SC3190402/tsl03_icon_box.png) 0 0 no-repeat;
+}
+
+ul.ulSubAreaBoxIn li .Smark,
+ul.ulSubAreaBoxIn li .Wmark,
+ul.ulSubAreaBoxIn li .Boxmark{
+    right:12px;
+}
+
+/* ------------------------------------------------------------------------*/
+/* インジケーター種類 */
+/* ------------------------------------------------------------------------*/
+.IndicatorOn {
+	border: 0px solid transparent;
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px #ffffff;
+	background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+	background-clip: padding-box;
+	opacity: 0.79;
+}
+
+.IndicatorOff {
+	border: 0px solid transparent;
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px #acacac;
+	background-image: -webkit-linear-gradient(top, #acacac, #666666);
+	background-clip: padding-box;
+	opacity: 0.79;
+}
+
+.IndicatorNone {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------*/
+/* インジケーター表示エリア */
+/* ------------------------------------------------------------------------*/
+.divMainArea table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divMainArea td {
+    text-align:center;
+}
+
+/* インジケーター表示ブロック */
+.divIndicator{
+	width:16px;
+	height:16px;
+	margin:0 2px 0 2px;
+}
+
+/* ------------------------------------------------------------------------*/
+/* 追加作業見積もり待ちエリアのみの書式 */
+/* ------------------------------------------------------------------------*/
+/*
+ul.ulSubAreaBoxIn li .divSubAreaDetail .StaffName01{
+    left:0px; top:59px;
+}
+*/
+/* ------------------------------------------------------------------------*/
+/* 作業計画待ちエリアのみの書式 */
+/* ------------------------------------------------------------------------*/
+.divMainArea .TitlePatternArea02{
+    background: -webkit-gradient(linear, left top, left bottom, from(#054d9f),
+            color-stop(0.33, #02194c),
+            color-stop(0.48, #011340),
+            color-stop(0.66, #032b67),
+                        to(#055bb5));
+    background: linear-gradient(to bottom,
+                #054d9f,
+                #02194c 33%,
+                #011340 48%,
+                #032b67 66%,
+                #055bb5);
+    color:rgba(255,255,255,0.8);
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail02{
+    width:231px;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail02 .RegNum02{
+    left:0; top:59px;
+    text-align:left;
+    width: 191px;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail02 .ModelName02{
+    left:0; top:28px;
+    width:182px;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail02 .BackOrder{
+    position: absolute;
+    overflow: hidden;
+    top: 28px;
+    right: 6px;
+    line-height: 29px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+    width: 37px;
+    height: 29px;
+}
+ul.ulSubAreaBoxIn li .divSubAreaDetail02 .Wmark{
+    right: 6px;
+}
+
+/* ------------------------------------------------------------------------*/
+/* 出庫待ちエリアのみの書式 */
+/* ------------------------------------------------------------------------*/
+.Wmark03{
+    width:34px;
+    height:29px;
+    overflow:hidden;
+    background:url(../Images/SC3190402/tsl03_icon_w.png) 0 0 no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+/* ------------------------------------------------------------------------*/
+/* 引き取り待ちエリアのみの書式 */
+/* ------------------------------------------------------------------------*/
+ul.ulSubAreaBoxIn li .divSubAreaDetail .RegNum04{
+    position:absolute;
+    left:364px; top:0px;
+    overflow:hidden;
+    width:138px;
+    height:29px;
+    line-height:29px;
+    font-size:21px;
+    font-weight:bold;
+    text-align:left;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .ModelName04{
+    left:167px; top:28px;
+    width:310px;
+}
+
+ul.ulSubAreaBoxIn li .divSubAreaDetail .BillNo04{
+    position:absolute;
+    left:0; top:28px;
+    overflow:hidden;
+    width:170px;
+    height:29px;
+    line-height:29px;
+    font-size:20px;
+    font-weight:bold;
+}
+/* ------------------------------------------------------------------------*/
+/* 新着時の点滅設定 */
+/* ------------------------------------------------------------------------*/
+@keyframes pulse {
+    from {
+        opacity: 1.0;    /*透明度100%*/
+    }
+    to {
+        opacity: 0.0;    /*透明度0%*/
+    }
+}
+.Blinking{
+animation-name: pulse;                  /* 実行する名前 */
+animation-duration: 1.0s;               /* 1.0秒かけて実行 */
+animation-iteration-count:5;            /* 何回実行するか。infiniteで無限 */
+animation-timing-function:ease-in-out;  /* イーズインアウト */
+animation-direction: alternate;         /* alternateにするとアニメーションが反復 */
+animation-delay: 0s;                    /* 実行までの待ち時間 */
+}
+/* ------------------------------------------------------------------------*/
+
+
+.registOverlay {
+    position:absolute;
+    /*top:0px;
+    left:0px;*/
+    width: 100%;
+    height: 100%;
+    background-color:Black;
+    opacity:0.6;
+    z-index:1000;
+    display:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* 読み込み中 */
+.registOverlay .registWrap {
+    width: 1920px;
+    height: 1080px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.registOverlay .registWrap .processingServer {
+	background:url(../Images/animeicn-1.png) no-repeat;
+	display:block;
+	width:38px;
+	height:38px;
+	animation: LoadingAnimation 1.0s infinite linear;
+	margin: 0px auto;
+}
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}

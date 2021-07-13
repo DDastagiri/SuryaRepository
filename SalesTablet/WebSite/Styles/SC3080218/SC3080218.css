@@ -1,0 +1,1986 @@
+﻿/*//////////////////////////////////////////////////////////////////////////////
+//
+//  N-SC全体　CSS
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-60
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	活動結果登録 ポップアップ用
+//
+//////////////////////////////////////////////////////////////////////////////*/
+#confirmContents218
+{  
+    height:175px;
+    margin:0px 0px 20px 0px;
+    padding:0px 0px 15px 0px;
+}
+
+#confirmContents218 .contentsFrame{
+	border-radius:7px;
+	background:#FFF;
+	border:#a5a5a5 1px solid;
+	box-shadow:3px 3px 3px #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), 
+							color-stop(0.30, #FFF),
+							to(#dfdfdf));
+}
+
+/* 上段BOX */
+#confirmContents218 .BoxtypeNSC61A{
+	height:188px; 
+	width:982px;
+	position:absolute;
+	top:0px; 
+	left:0px;
+}
+
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetLeft {
+	overflow:hidden;
+	float:left;
+	width:468px;
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2{
+	display:block;
+	width:468px;
+	height:138px;
+	position:absolute;
+	left:501px; top:41px;
+	border:none;
+}
+
+
+/* 上段BOX内容 */
+#confirmContents218 .BoxtypeNSC61A .Activities01{
+	display:block;
+	width:464px; height:131px;
+	position:absolute;
+	left:15px; top:41px;
+}
+
+#confirmContents218 .BoxtypeNSC61A .Activities01 li{
+	display:block;
+	width:464px; height:43px;
+	border-left:#BBB 1px solid;
+	border-right:#BBB 1px solid;
+	border-bottom:#BBB 1px solid;
+	/*border-top:#FFF 1px solid; border-bottom:#BBB 1px solid;*/
+	background:#FFF url(images/ico52.png) 445px 16px no-repeat;
+	position:relative;
+	font-size:12px;
+}
+
+#confirmContents218 .BoxtypeNSC61A .Activities01 li:nth-child(1)  
+{
+    border-top:#BBB 1px solid; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+#confirmContents218 .BoxtypeNSC61A .Activities01 li:nth-last-child(1)   
+{
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+#confirmContents218 .BoxtypeNSC61A .Activities01 li .Line01
+{
+    display:block; 
+    position:absolute; 
+    width:1px; 
+    height:43px; 
+    border-right:#BBB 1px solid; 
+    left:95px; 
+}
+
+#confirmContents218 .BoxtypeNSC61A .Activities01 li .Title 
+{
+    display:block; 
+    position:absolute; 
+	width:90px;
+    top:13px; 
+    left:0;    
+    text-align:right;
+	font-size:14px;
+}
+
+#confirmContents218 .BoxtypeNSC61A .Activities01 li .Data  
+{
+    display:block; 
+    position:absolute; 
+	width:354px;
+    top:11px; 
+    left:105px; 
+    color:#375388;
+    font-size:14px;
+}
+
+#confirmContents218 .BoxtypeNSC61A .Activities01 li .Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+}
+
+#confirmContents218 .BoxtypeNSC61A dl {
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	font-weight:bold;
+	width:464px;
+	height:131px;
+}
+
+#confirmContents218 .BoxtypeNSC61A dt {
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:90px;
+	text-align:right;
+	vertical-align:middle;
+	padding:15px 10px 13px 0;
+	font-size:14px;
+	line-height:16px;
+}
+#confirmContents218 .BoxtypeNSC61A dd {
+	border-left:#BBBBBB 1px solid;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:353px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 0 14px 10px;
+	font-size:14px;
+	line-height:16px;
+	color:#375388;
+}
+#confirmContents218 .BoxtypeNSC61A dl.hiLong dt,
+#confirmContents218 .BoxtypeNSC61A dl.hiLong dd{
+	height:26px;
+	vertical-align:middle;
+}
+#confirmContents218 .BoxtypeNSC61A dl.hiLong dt{
+	padding:20px 10px 13px 0;
+}
+#confirmContents218 .BoxtypeNSC61A dl.hiLong dd{
+	padding:19px 0 14px 10px;
+}
+#confirmContents218 .BoxtypeNSC61A dl.hiLong dd.TextArea{
+	padding:12px 0 21px 10px;
+}
+#confirmContents218 .BoxtypeNSC61A dd.Long{
+	width:839px;
+}
+#confirmContents218 .BoxtypeNSC61A dt.end{
+	border-bottom:none;
+}
+#confirmContents218 .BoxtypeNSC61A dd.end{
+	border-bottom:none;
+}
+#confirmContents218 .BoxtypeNSC61A dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+}
+
+#confirmContents218 .BoxtypeNSC61A dt.nscListIcn{
+	padding-top:59px;
+	padding-bottom:59px;
+}
+#confirmContents218 .BoxtypeNSC61A .BlackNormalTxt{
+	color:#000;
+	font-weight:normal;
+}
+#confirmContents218 .BoxtypeNSC61A .BlackBoldTxt{
+	color:#000;
+}
+#confirmContents218 .BoxtypeNSC61A .RedTxt{
+	color:#d74747;
+}
+
+
+/* プロセス類 */
+
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset{
+	text-align:center;
+	padding:17px 0 17px 10px;
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA1,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA2,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA3,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA4,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA1Over,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA2Over,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA3Over,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA4Over{
+	border-radius:8px;
+	border:#9b9b9b 1px solid;
+	float:left;
+	margin:0 17px 0 0;
+	padding:45px 0 5px 0;
+	width:66px;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:0px -1px 1px #FFF;
+	color:#808080;
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA1Over,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA2Over,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA3Over,
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA4Over{
+	text-shadow:0px -1px 1px #000;
+	text-shadow:none;
+	color:#FFF;
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA1{
+	background: url(../Images/SC3080201/nsc60icn1a.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA2{
+	background: url(../Images/SC3080201/nsc60icn1b.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA3{
+	background: url(../Images/SC3080201/nsc60icn1c.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA4{
+	background: url(../Images/SC3080201/nsc60icn1d.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+
+
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA1Over{
+	background: url(../Images/SC3080201/nsc60icn1aOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA2Over{
+	background: url(../Images/SC3080201/nsc60icn1bOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA3Over{
+	background: url(../Images/SC3080201/nsc60icn1cOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents218 .BoxtypeNSC61A .nscListBoxSetRight2 .nscListIcnAset .nscListIcnA4Over{
+	background: url(../Images/SC3080201/nsc60icn1dOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+
+#confirmContents218 .icrop-PopOverForm-header-back {
+	border-left: none;
+	position:absolute;
+	top:6px;
+	left:20px;
+	display:block;
+	color:#FFF;
+	font-size:0.6em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	/*border:#25272b 1px solid;*/
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+}
+
+#confirmContents218 .GiveuptgLeft{
+	overflow: hidden;
+	position:absolute;
+	left:12px;
+	top:9px;
+	display:block;
+	width:22px;
+	height:22px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+/* 日付 */
+#scNscActTimeWindown6003 {
+	/*position:absolute;
+	top:-10px;
+	left:-18px;
+*/
+	width:340px;
+	height:244px;
+	padding:0 0 0 0px;
+	background-image: url(../Images/SC3080201/scNscActTimeWindownArrow2.png);
+	background-repeat: no-repeat;
+	background-position:148px bottom;
+	z-index:300;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox {
+	width:330px;
+	height:207px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+							color-stop(0.002, rgba(120,128,147,0.9)),
+							color-stop(0.015, rgba(87,95,114,0.9)),
+							color-stop(0.106, rgba(29,40,59,0.9)),
+							color-stop(0.1065, rgba(3,11,26,0.9)),
+							to(rgba(7,11,29,0.9)));
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCancellButton,
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton,
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton, 
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton {
+	position:absolute;
+	top:7px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*left:5px;*/
+	left:4px;
+	display:block;
+	color:#FFF;
+	/*font-size:0.8em;*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCancellButton a,
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton a,
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton a,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton a,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton a{
+	position:absolute;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*left:15px;*/
+	display:block;
+	color:#FFF;
+	/*font-size:0.85em;*/
+	font-size:0.8em;
+	text-shadow: 0px -1px 1px black;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	width:100px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*text-indent:3px;*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCancellButton a.Square,
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton a.Square,
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton a.Square,
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton a.Square,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton a.Square,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton a.Square{
+	width:80px;
+	text-align:center;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeCompletionButton,
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCompletionButton,
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCompletionButton,
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCompletionButton,
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCompletionButton,
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*font-size:0.75em;*/
+	font-size:0.8em;
+	text-shadow: 0px -1px 1px black;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	text-align:center;
+	width:78px;
+	height:22px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*padding:5px 0 0 0;*/
+	padding:7px 0 0 0;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	height:154px;
+	margin:0px;
+	margin-right:4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListBox {
+	width:298px;
+	height:134px;
+	margin:11px auto 9px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListItemBox {
+	width:298px
+}
+
+/* 2013/10/06 TCS 市川 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） MODIFY START */
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListArea input[type=datetime-local],
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListArea input[type=time] 
+{
+    text-align:left;
+    width:200px;
+    height:100%;
+}
+/* 2013/10/06 TCS 市川 次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス） MODIFY END */
+#scNscActTimeWindown6003 #scNscActTimeWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .scNscActTimeListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+.whiteColor{background:#FFF;}
+.glayColor{background:#f2f2f2;}
+
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dl{
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	margin:0;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dt{
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:61px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 10px 13px 21px;
+	margin:0;
+	font-size:14px;
+	line-height:16px;
+	background:none;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd{
+	border-left:none;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:190px;
+	text-align:left;
+	vertical-align:middle;
+	padding:14px 14px 13px 0;
+	margin:0;
+	text-align:right;
+	font-size:14px;
+	line-height:16px;
+	color:#375388;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.Long{
+	width:839px;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dt.end,
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.end{
+	border-bottom:none;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+	padding-right:30px;
+	width:174px;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dt.Blue,
+#scNscActTimeWindown6003 #scNscActTimeWindownBox dd.Blue{
+	background: -webkit-gradient(linear, left top, left bottom, from(#0581e3), 
+							color-stop(0.01, #0589f1),
+							to(#015fe6));
+	color:#FFF;
+	text-shadow:#000 0 -1px 0;
+}
+#scNscActTimeWindown6003 #scNscActTimeWindownBox .nscListBoxSetIn .Selection{
+	position:absolute;
+	display:block;
+	left:26px;
+	top:14px;
+	width:18px;
+	height:15px;
+	background:url(../Images/SC3080201/scNscCustomerEditingListBackCheck.png) 0 0 no-repeat;
+	color:#3b4f85;
+}
+
+
+/* 対応SC */
+#scNscStaffWindown 
+{
+    /*
+	position:absolute;
+	top:-2px;
+	left:-20px;
+*/
+	width:340px;
+	height:320px;
+	padding:0 0 0 0px;
+	background-image: url(images/scNscStaffWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscStaffWindown #scNscStaffWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//							color-stop(0.002, rgba(120,128,147,0.9)),
+//							color-stop(0.015, rgba(87,95,114,0.9)),
+//							color-stop(0.036, rgba(29,40,59,0.9)),
+//							color-stop(0.0365, rgba(3,11,26,0.9)),
+//							to(rgba(7,11,29,0.9)));
+*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+    font-size:0.85em;
+	width:100px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton a.Square{
+	left:1px;
+	width:80px;
+	text-align:center;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	height:235px;
+	margin:0px;
+	margin-right:4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListBox {
+	width:298px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) START */
+	/*height:220px;*/
+	height:230px;
+	/*margin:10px auto 0;*/
+    margin:4px 0px 0px 10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) END */
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItemBox {
+	width:298px;
+}
+
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItem5 table {
+	width:298px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItem5 th{
+	width:90px;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItem5 td{
+	width:206px;
+}
+#scNscStaffWindown #scNscStaffWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscStaffWindown #scNscStaffWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscStaffWindown #scNscStaffWindownBox .scNscStaffListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscStaffWindown #scNscStaffWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:204px;
+	display:block;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscStaffWindown #scNscStaffWindownBox .nscListBoxSetIn .Selection{
+	/* 自分でいろいろ変更・・・ */
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+/* 分類 */
+#scNscActContactWindown 
+{
+	width:340px;
+	height:320px;
+	padding:0 0 0 0px;
+	background-image: url(images/scNscActContactWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscActContactWindown #scNscActContactWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//							color-stop(0.002, rgba(120,128,147,0.9)),
+//							color-stop(0.015, rgba(87,95,114,0.9)),
+//							color-stop(0.036, rgba(29,40,59,0.9)),
+//							color-stop(0.0365, rgba(3,11,26,0.9)),
+//							to(rgba(7,11,29,0.9)));
+*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:100px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton a.Square{
+	left:1px;
+	width:80px;
+	text-align:center;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	height:235px;
+	margin:0px;
+	margin-right:4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListBox {
+	width:298px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) START */
+	/*height:220px;*/
+	height:230px;
+	/*margin:10px auto 0;*/
+    margin:4px 0px 0px 10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) END */
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItemBox {
+	width:298px;
+}
+
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItem5 table {
+	width:298px;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItem5 th{
+	width:90px;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItem5 td{
+	width:206px;
+}
+#scNscActContactWindown #scNscActContactWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscActContactWindown #scNscActContactWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscActContactWindown #scNscActContactWindownBox .scNscActContactListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+/*------*/
+
+#scNscActContactWindown #scNscActContactWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:204px;
+	display:block;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscActContactWindown #scNscActContactWindownBox .nscListBoxSetIn .Selection{
+	/* 自分でいろいろ変更・・・ */
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+/* カタログ */
+#scNscCatalogWindown {
+	/*position:absolute;*/
+	top:-2px;
+	left:-20px;
+	width:340px;
+	height:320px;
+	padding:0 0 0 17px;
+	background-image: url(images/scNscCatalogWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//							color-stop(0.002, rgba(120,128,147,0.9)),
+//							color-stop(0.015, rgba(87,95,114,0.9)),
+//							color-stop(0.036, rgba(29,40,59,0.9)),
+//							color-stop(0.0365, rgba(3,11,26,0.9)),
+//							to(rgba(7,11,29,0.9)));
+*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:100px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton a.Square{
+	left:1px;
+	width:80px;
+	text-align:center;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	height:235px;
+	margin:0px;
+	margin-right:4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListBox {
+	width:298px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) START */
+	/*height:220px;*/
+	height:230px;
+	/*margin:10px auto 0;*/
+    margin:4px 0px 0px 10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) END */
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItemBox {
+	width:298px
+}
+
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItem5 table {
+	width:298px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItem5 th{
+	width:90px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItem5 td{
+	width:206px;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscCatalogWindown #scNscCatalogWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .scNscCatalogListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:204px;
+	display:block;
+}
+/* 2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) START */
+/*
+//#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li.end{
+*/
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li:last-child{
+	border-bottom:none;
+}
+/* 2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) END */
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscCatalogWindown #scNscCatalogWindownBox .nscListBoxSetIn .Selection{
+	/* 自分でいろいろ変更・・・ */
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+/* 試乗 */
+#scNscTestDriveWindown {
+	
+	/*top:-2px;*/
+	/*left:-20px;*/
+	width:340px;
+	height:320px;
+	/*padding:0 0 0 17px;*/
+	background-image: url(images/scNscTestDriveWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	backgrouound: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//							color-stop(0.002, rgba(120,128,147,0.9)),
+//							color-stop(0.015, rgba(87,95,114,0.9)),
+//							color-stop(0.036, rgba(29,40,59,0.9)),
+//							color-stop(0.0365, rgba(3,11,26,0.9)),
+//							to(rgba(7,11,29,0.9)));
+*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveHadder h3 {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.85em;
+	width:100px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton a.Square{
+	left:1px;
+	width:80px;
+	text-align:center;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	height:235px;
+	margin:0px;
+	margin-right:5px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListBox {
+	width:298px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) START */
+	/*height:220px;*/
+	height:230px;
+	/*margin:10px auto 0;*/
+    margin:4px 0px 0px 10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) END */
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItemBox {
+	width:298px;
+}
+
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItem5 table {
+	width:298px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItem5 th{
+	width:90px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItem5 td{
+	width:206px;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .scNscTestDriveListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:204px;
+	display:block;
+}
+/* 2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) START */
+/*
+//#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li.end{
+*/
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li:last-child{
+	border-bottom:none;
+}
+/* 2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) END */
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscTestDriveWindown #scNscTestDriveWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+
+/* 見積 */
+#scNscValuationWindown {
+	/*position:absolute;*/
+	top:-2px;
+	left:-20px;
+	
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/* 
+    width:340px; 
+	height:320px;
+*/
+	width:540px;
+	height:340px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+	
+	padding:0 0 0 17px;
+	background-image: url(images/scNscValuationWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+#scNscValuationWindown #scNscValuationWindownBox {
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:330px;
+	height:288px;
+*/
+	width:530px;
+	height:308px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+	
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//							color-stop(0.002, rgba(120,128,147,0.9)),
+//							color-stop(0.015, rgba(87,95,114,0.9)),
+//							color-stop(0.036, rgba(29,40,59,0.9)),
+//							color-stop(0.0365, rgba(3,11,26,0.9)),
+//							to(rgba(7,11,29,0.9)));
+*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationHadder {
+	position:relative;
+
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:330px;
+*/
+	width:530px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+	
+	height:45px;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationHadder h3 {
+	position:absolute;
+
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:179px;
+*/
+	width:379px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */	
+	
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:100px;
+	height:32px;
+	overflow:hidden;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton a{
+	position:absolute;
+	left:15px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:80px;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+	text-indent:3px;
+	
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton a.Square{
+	left:1px;
+	width:80px;
+	text-align:center;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCancellButton .tgLeft{
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:78px;
+	height:22px;
+	padding:5px 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+							color-stop(0.50, #376fe0),
+							color-stop(0.501, #2361dd),
+							to(#2361dd));
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListArea {
+	font-size:0.9em;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*width:318px;*/
+	
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	height:235px;
+*/
+	height:255px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+
+	margin:0px;
+	margin-right:4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListBox {
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:298px;
+*/
+    width:498px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) START */
+	/*height:220px;*/
+	
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	height:230px;
+*/
+	height:250px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+	
+	/*margin:10px auto 0;*/
+    margin:4px 0px 0px 10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.217) END */
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItemBox {
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:298px;
+*/
+    width:498px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */    
+}
+
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItem5 table {
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:298px;
+*/
+	width:498px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItem5 th{
+	width:90px;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItem5 td{
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:206px;
+*/
+	width:406px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+}
+#scNscValuationWindown #scNscValuationWindownBox table{
+	border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+#scNscValuationWindown #scNscValuationWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+#scNscValuationWindown #scNscValuationWindownBox .scNscValuationListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+/*------*/
+
+#scNscValuationWindown #scNscValuationWindownBox ul.nscListBoxSetIn{
+	border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:296px;
+*/
+	width:496px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+
+	font-weight:bold;
+}
+
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+	width:204px;
+*/
+    width:404px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+
+	display:block;
+}
+
+/* 2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) START */
+/*
+//#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li.end{
+*/
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li:last-child{
+	border-bottom:none;
+}
+/* 2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) END */
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+#scNscValuationWindown #scNscValuationWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+.displayNone {
+    display:none
+}
+.endNoBorderRow{
+	border-bottom:none;
+}
+/****************************************
+ポップアップ系処理中アニメーション変更
+****************************************/
+#processingServer.Sc3080218CatalogListPopupLoadingAnimation.show {
+    left: 668px;
+    top: 369px;
+    z-index:10000000;
+}
+#processingServer.Sc3080218TestDriveListPopupLoadingAnimation.show {
+    left: 745px;
+    top: 368px;
+    z-index:10000000;
+}
+#processingServer.Sc3080218ValuationListPopupLoadingAnimation.show {
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 START */
+/*
+    left: 823px;
+*/
+    left: 718px;
+/* 2013/01/18 TCS 坪根 【A.STEP2】次世代e-CRB 新車タブレットSC活動支援機能開発 END */
+
+    top: 368px;
+    z-index:10000000;
+}
+#processingServer.Sc3080218StaffListPopupLoadingAnimation.show {
+    left: 656px;
+    top: 161px;
+    z-index:10000000;
+}
+#processingServer.Sc3080218ActContactListPopupLoadingAnimation.show {
+    left: 656px;
+    top: 199px;
+    z-index:10000000;
+}
+#processingServer.Sc3080218ActTimePopupLoadingAnimation.show {
+    left: 656px;
+    top: 120px;
+    z-index:10000000;
+}
+#registOverlayBlack.BGColor.open {
+    opacity: 0;
+}

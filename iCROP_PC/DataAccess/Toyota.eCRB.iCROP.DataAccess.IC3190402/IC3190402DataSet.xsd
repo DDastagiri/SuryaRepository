@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3190402DataSet" targetNamespace="http://tempuri.org/IC3190402DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3190402DataSet.xsd" xmlns="http://tempuri.org/IC3190402DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3190402DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3190402DataSet" msprop:Generator_UserDSName="IC3190402DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PartsSearchRequest" msprop:Generator_TableClassName="PartsSearchRequestDataTable" msprop:Generator_TableVarName="tablePartsSearchRequest" msprop:Generator_RowChangedName="PartsSearchRequestRowChanged" msprop:Generator_TablePropName="PartsSearchRequest" msprop:Generator_RowDeletingName="PartsSearchRequestRowDeleting" msprop:Generator_RowChangingName="PartsSearchRequestRowChanging" msprop:Generator_RowEvHandlerName="PartsSearchRequestRowChangeEventHandler" msprop:Generator_RowDeletedName="PartsSearchRequestRowDeleted" msprop:Generator_RowClassName="PartsSearchRequestRow" msprop:Generator_UserTableName="PartsSearchRequest" msprop:Generator_RowEvArgName="PartsSearchRequestRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DealerCode" msprop:Generator_ColumnVarNameInTable="columnDealerCode" msprop:Generator_ColumnPropNameInRow="DealerCode" msprop:Generator_ColumnPropNameInTable="DealerCodeColumn" msprop:Generator_UserColumnName="DealerCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BranchCode" msprop:Generator_ColumnVarNameInTable="columnBranchCode" msprop:Generator_ColumnPropNameInRow="BranchCode" msprop:Generator_ColumnPropNameInTable="BranchCodeColumn" msprop:Generator_UserColumnName="BranchCode" type="xs:string" minOccurs="0" />
+              <xs:element name="R_O" msprop:Generator_ColumnVarNameInTable="columnR_O" msprop:Generator_ColumnPropNameInRow="R_O" msprop:Generator_ColumnPropNameInTable="R_OColumn" msprop:Generator_UserColumnName="R_O" type="xs:string" minOccurs="0" />
+              <xs:element name="R_O_SEQNO" msprop:Generator_ColumnVarNameInTable="columnR_O_SEQNO" msprop:Generator_ColumnPropNameInRow="R_O_SEQNO" msprop:Generator_ColumnPropNameInTable="R_O_SEQNOColumn" msprop:Generator_UserColumnName="R_O_SEQNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PartsSearchResult" msprop:Generator_TableClassName="PartsSearchResultDataTable" msprop:Generator_TableVarName="tablePartsSearchResult" msprop:Generator_RowChangedName="PartsSearchResultRowChanged" msprop:Generator_TablePropName="PartsSearchResult" msprop:Generator_RowDeletingName="PartsSearchResultRowDeleting" msprop:Generator_RowChangingName="PartsSearchResultRowChanging" msprop:Generator_RowEvHandlerName="PartsSearchResultRowChangeEventHandler" msprop:Generator_RowDeletedName="PartsSearchResultRowDeleted" msprop:Generator_RowClassName="PartsSearchResultRow" msprop:Generator_UserTableName="PartsSearchResult" msprop:Generator_RowEvArgName="PartsSearchResultRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResultCode" msprop:Generator_ColumnVarNameInTable="columnResultCode" msprop:Generator_ColumnPropNameInRow="ResultCode" msprop:Generator_ColumnPropNameInTable="ResultCodeColumn" msprop:Generator_UserColumnName="ResultCode" type="xs:long" minOccurs="0" />
+              <xs:element name="DealerCode" msprop:Generator_ColumnVarNameInTable="columnDealerCode" msprop:Generator_ColumnPropNameInRow="DealerCode" msprop:Generator_ColumnPropNameInTable="DealerCodeColumn" msprop:Generator_UserColumnName="DealerCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BranchCode" msprop:Generator_ColumnVarNameInTable="columnBranchCode" msprop:Generator_ColumnPropNameInRow="BranchCode" msprop:Generator_ColumnPropNameInTable="BranchCodeColumn" msprop:Generator_UserColumnName="BranchCode" type="xs:string" minOccurs="0" />
+              <xs:element name="R_O" msprop:Generator_ColumnVarNameInTable="columnR_O" msprop:Generator_ColumnPropNameInRow="R_O" msprop:Generator_ColumnPropNameInTable="R_OColumn" msprop:Generator_UserColumnName="R_O" type="xs:string" minOccurs="0" />
+              <xs:element name="R_O_SEQNO" msprop:Generator_ColumnVarNameInTable="columnR_O_SEQNO" msprop:Generator_ColumnPropNameInRow="R_O_SEQNO" msprop:Generator_ColumnPropNameInTable="R_O_SEQNOColumn" msprop:Generator_UserColumnName="R_O_SEQNO" type="xs:string" minOccurs="0" />
+              <xs:element name="PARTS_ISSUE_STATUS" msprop:Generator_ColumnVarNameInTable="columnPARTS_ISSUE_STATUS" msprop:Generator_ColumnPropNameInRow="PARTS_ISSUE_STATUS" msprop:Generator_ColumnPropNameInTable="PARTS_ISSUE_STATUSColumn" msprop:Generator_UserColumnName="PARTS_ISSUE_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="RequestedStaffID" msprop:Generator_ColumnVarNameInTable="columnRequestedStaffID" msprop:Generator_ColumnPropNameInRow="RequestedStaffID" msprop:Generator_ColumnPropNameInTable="RequestedStaffIDColumn" msprop:Generator_UserColumnName="RequestedStaffID" type="xs:string" minOccurs="0" />
+              <xs:element name="BillNo" msprop:Generator_ColumnVarNameInTable="columnBillNo" msprop:Generator_ColumnPropNameInRow="BillNo" msprop:Generator_ColumnPropNameInTable="BillNoColumn" msprop:Generator_UserColumnName="BillNo" type="xs:string" minOccurs="0" />
+              <xs:element name="JobID" msprop:Generator_ColumnVarNameInTable="columnJobID" msprop:Generator_ColumnPropNameInRow="JobID" msprop:Generator_ColumnPropNameInTable="JobIDColumn" msprop:Generator_UserColumnName="JobID" type="xs:string" minOccurs="0" />
+              <xs:element name="PartsStaffName" msprop:Generator_ColumnVarNameInTable="columnPartsStaffName" msprop:Generator_ColumnPropNameInRow="PartsStaffName" msprop:Generator_ColumnPropNameInTable="PartsStaffNameColumn" msprop:Generator_UserColumnName="PartsStaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="CageNO" msprop:Generator_ColumnVarNameInTable="columnCageNO" msprop:Generator_ColumnPropNameInRow="CageNO" msprop:Generator_ColumnPropNameInTable="CageNOColumn" msprop:Generator_UserColumnName="CageNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DmsCodeMap" msprop:Generator_TableClassName="DmsCodeMapDataTable" msprop:Generator_TableVarName="tableDmsCodeMap" msprop:Generator_TablePropName="DmsCodeMap" msprop:Generator_RowDeletingName="DmsCodeMapRowDeleting" msprop:Generator_RowChangingName="DmsCodeMapRowChanging" msprop:Generator_RowEvHandlerName="DmsCodeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="DmsCodeMapRowDeleted" msprop:Generator_UserTableName="DmsCodeMap" msprop:Generator_RowChangedName="DmsCodeMapRowChanged" msprop:Generator_RowEvArgName="DmsCodeMapRowChangeEvent" msprop:Generator_RowClassName="DmsCodeMapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnACCOUNT" msprop:Generator_ColumnPropNameInRow="ACCOUNT" msprop:Generator_ColumnPropNameInTable="ACCOUNTColumn" msprop:Generator_UserColumnName="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE1" msdata:Caption="DMS_CD_1" msprop:Generator_ColumnVarNameInTable="columnCODE1" msprop:Generator_ColumnPropNameInRow="CODE1" msprop:Generator_ColumnPropNameInTable="CODE1Column" msprop:Generator_UserColumnName="CODE1" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE2" msdata:Caption="DMS_CD_2" msprop:Generator_ColumnVarNameInTable="columnCODE2" msprop:Generator_ColumnPropNameInRow="CODE2" msprop:Generator_ColumnPropNameInTable="CODE2Column" msprop:Generator_UserColumnName="CODE2" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE3" msdata:Caption="DMS_CD_3" msprop:Generator_ColumnVarNameInTable="columnCODE3" msprop:Generator_ColumnPropNameInRow="CODE3" msprop:Generator_ColumnPropNameInTable="CODE3Column" msprop:Generator_UserColumnName="CODE3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,172 @@
+﻿@charset "utf-8";
+
+.clearboth {
+    display:block;
+    overflow:hidden;
+    clear:both;
+    font-size:1px;
+    line-height:1px;
+    text-indent:-3000px;
+    height:1px;
+}
+
+#dashboardBox{
+}
+
+.dashboardBoxTitle{
+	display:block;
+	width:178px;
+	float:left;
+    white-space:nowrap;
+	overflow:hidden;
+}
+.dashboardBoxTime {
+	display:block;
+	width:110px;
+	float:right;
+	text-align:right;
+	font-size:10px;
+	color:#8A8A8A;
+	margin:10px 5px 7px 0;
+	padding:4px 0 0;
+	overflow:hidden;
+    white-space:nowrap;
+}
+
+.dashboardBoxAll{
+	background:url(../Images/SC3010202/bgGoal.png) no-repeat 95px -2px;
+	height:288px;
+}
+
+.dashboardBoxHalf{
+	background:url(../Images/SC3010202/bgGoal.png) no-repeat 87px bottom;
+	height:178px;
+}
+
+#dashboardBox .hText01{
+	font-size:13px;
+	line-height:13px;
+	width:94px;
+	float:left;
+	height:20px;
+	margin-right:3px;
+	overflow:hidden;
+    white-space:nowrap;
+}
+#dashboardBox .hText02{
+	font-size:10px;
+	line-height:10px;
+	display:block;
+	width:49px;
+	padding-top:2px;
+	float:left;
+	overflow:hidden;
+    white-space:nowrap;
+}
+#dashboardBox .hText03{
+	font-size:10px;
+	line-height:10px;
+	display:block;
+	width:18px;
+	padding-top:2px;
+	float:right;
+	text-align:right;
+	overflow:hidden;
+    white-space:nowrap;
+}
+.progress{
+	width:100%;
+	font-size:10px;
+}
+
+.progress tr.topGraf td{
+	padding:10px 0 0;
+}
+
+.progress td{
+	height:19px;
+	vertical-align:middle;
+}
+.progress .Column01{
+	font-size:11px;
+	width:38px;
+	text-align:right;
+	overflow:hidden;
+}
+.progress .Column02{
+	width:21px;
+	text-align:right;
+	overflow:hidden;
+}
+.progress .Column03{
+	width:21px;
+	text-align:right;
+	overflow:hidden;
+}
+.progress .Column04
+{
+	text-align:right;
+	padding-left:6px;
+}
+.progress .Column05
+{
+    white-space:nowrap;
+	width:210px;
+}
+.progress .Column06{
+	font-size:13px;
+	overflow:hidden;
+}
+
+.progress .Bar01,
+.progress .Bar02,
+.progress .Bar03{
+	display:inline-block;
+	height:10px;
+}
+.progress .Bar01{
+	background: -webkit-gradient(linear, left top, left bottom, from(#bddbdb),to(#adf1f0));
+	opacity: 0.7;
+	box-shadow:3px 3px 3px #666;
+	border-top:2px solid #647575;
+	border-left:2px solid #647575;
+	border-bottom:2px solid #6de0df;
+	border-right:2px solid #6de0df;
+	margin:0     5px 0 -2px;
+}
+.progress .Bar02{
+	background: -webkit-gradient(linear, left top, left bottom, from(#b6c199),to(#b8f980));
+	opacity: 0.7;
+	box-shadow:3px 3px 3px #666;
+	border-top:2px solid #647575;
+	border-left:2px solid #647575;
+	border-bottom:2px solid #6eda10;
+	border-right:2px solid #6eda10;
+	margin:0 5px 0 -2px;
+	
+}
+.progress .Bar03{
+	background: -webkit-gradient(linear, left top, left bottom, from(#c99300),to(#ffba00));
+	opacity: 0.6;
+	box-shadow:3px 3px 3px #666;
+	border-top:2px solid #647575;
+	border-left:2px solid #647575;
+	border-bottom:2px solid #f18d13;
+	border-right:2px solid #f18d13;
+	margin:0 5px 0 -2px;
+	
+}
+
+.progress .addText_GraphOut
+{
+    width:30px;
+}
+.progress .addText_GraphIn
+{
+    position:relative;
+    width:30px;
+    top:-2px;
+    left:-40px;
+	text-align:right;
+	float:inherit;
+}

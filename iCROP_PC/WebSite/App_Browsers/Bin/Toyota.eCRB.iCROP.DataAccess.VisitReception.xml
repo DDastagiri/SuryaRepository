@@ -1,0 +1,528 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Toyota.eCRB.iCROP.DataAccess.VisitReception
+</name>
+</assembly>
+<members>
+<member name="P:Toyota.eCRB.Visit.Api.DataAccess.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:Toyota.eCRB.Visit.Api.DataAccess.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionClaimInfoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorCustomerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionStaffSituationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorSituationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionStaffNoticeRequestDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorLinkingCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionBoardInfoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionConclusionCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionResultCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionNoticeRequestCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionNoticeRequestsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorLinkingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionClaimInfoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorCustomerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionStaffSituationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorSituationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionStaffNoticeRequestRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorLinkingCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionBoardInfoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionConclusionCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionResultCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionNoticeRequestCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionNoticeRequestsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorLinkingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionClaimInfoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorCustomerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionStaffSituationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorSituationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionStaffNoticeRequestRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorLinkingCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionBoardInfoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionConclusionCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionResultCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionNoticeRequestCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionNoticeRequestsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet.VisitReceptionVisitorLinkingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusFree">
+	<summary>
+ 来店実績ステータス（フリー）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusFreeBroadcast">
+	<summary>
+ 来店実績ステータス（フリー（ブロードキャスト））
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusAdjustment">
+	<summary>
+ 来店実績ステータス（調整中）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusDecisionBroadcast">
+	<summary>
+ 来店実績ステータス（確定（ブロードキャスト））
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusDecision">
+	<summary>
+ 来店実績ステータス（確定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusWating">
+	<summary>
+ 来店実績ステータス（待ち）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusNegotiate">
+	<summary>
+ 来店実績ステータス（商談中）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusNegotiateEnd">
+	<summary>
+ 来店実績ステータス（商談終了）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusNegotiateStop">
+	<summary>
+ 来店実績ステータス（商談中断）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitStatusCancel">
+	<summary>
+ 来店実績ステータス（来店キャンセル）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.StaffStatusNegotiate">
+	<summary>
+ スタッフステータス（商談中）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.StaffStatusStandby">
+	<summary>
+ スタッフステータス（スタンバイ）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.StaffStatusLeaving">
+	<summary>
+ スタッフステータス（一時退席）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.StaffStatusOffline">
+	<summary>
+ スタッフステータス（オフライン）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.OperationCodeSalesStaff">
+	<summary>
+ 操作権限コード（セールススタッフ）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.ActionResultSuccess">
+	<summary>
+ CR活動実績（制約）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.DeleteFlagNotDelete">
+	<summary>
+ 削除フラグ（未削除）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.DeleteFlagDelete">
+	<summary>
+ 削除フラグ（削除）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitorSegmentOriginal">
+	<summary>
+ 顧客区分（自社客）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.VisitorSegmentNew">
+	<summary>
+ 顧客区分（新規顧客）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.BroadcastFlagOn">
+	<summary>
+ ブロードキャストフラグ（送信済み）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.BroadcastFlagOff">
+	<summary>
+ ブロードキャストフラグ（未送信）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.UpdateId">
+	<summary>
+ 更新ID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.LastStatusAssessment">
+	<summary>
+ 最終ステータス(依頼)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.LastStatusRecv">
+	<summary>
+ 最終ステータス(受信)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.CustomerClassOwner">
+	<summary>
+ 顧客種別（所有者）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.ClaimStatusFirst">
+	<summary>
+ 苦情情報ステータス（1次対応中）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.ClaimStatusLast">
+	<summary>
+ 苦情情報ステータス（最終対応中）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.ClaimStatusComplete">
+	<summary>
+ 苦情情報ステータス（完了）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.RelationFlgOn">
+	<summary>
+ 苦情情報紐付け関係フラグ(親)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.RelationFlgOff">
+	<summary>
+ 苦情情報付け関係フラグ(なし)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.NoticeStatus">
+	<summary>
+ 通知ステータス(依頼)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.ReceiveStatus">
+	<summary>
+ 通知ステータス(受信)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.ContactNoVisit">
+	<summary>
+ 来店回数取得(6:来店)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.RegistrationType">
+	<summary>
+ 処理区分(3:Success/Give-Uo以外)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetClaimInfo(System.String,System.String,System.DateTime,System.DateTime,System.DateTime)">
+	<summary>
+ 店舗苦情情報の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startDate">取得開始日時</param>
+	<param name="endDate">取得終了日時</param>
+	<param name="completeDate">完了表示日時</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetVisitorCount(System.String,System.String,System.DateTime,System.DateTime,System.Collections.Generic.List{System.String})">
+	<summary>
+ 来店組数の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">開始日時</param>
+	<param name="endTime">終了日時</param>
+	<param name="visitStatus">来店実績ステータス</param>
+	<returns>来店組数データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetResultCount(System.String,System.String,System.DateTime,System.DateTime)">
+	<summary>
+ 実績件数の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">開始日時</param>
+	<param name="endTime">終了日時</param>
+	<returns>実績件数データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetConclusionCount(System.String,System.String,System.DateTime,System.DateTime)">
+	<summary>
+ 成約件数の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">開始日時</param>
+	<param name="endTime">終了日時</param>
+	<returns>成約件数データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetNoticeRequestCount(System.String,System.String,System.DateTime,System.DateTime,System.String,System.Collections.Generic.List{System.String})">
+	<summary>
+ 通知依頼件数の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startDate">開始日時</param>
+	<param name="endDate">終了日時</param>
+	<param name="noticeRequest">通知依頼種別</param>
+	<param name="statusList">最終ステータスリスト</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetVisitorSituation(System.String,System.String,System.DateTime,System.DateTime,System.Collections.Generic.List{System.String})">
+	<summary>
+ 来店状況の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">開始日時</param>
+	<param name="endTime">終了日時</param>
+	<param name="visitStatus">来店実績ステータス</param>
+	<returns>来店状況データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetStaffNegotiate(System.String,System.String,System.DateTime,System.DateTime)">
+	<summary>
+ スタッフ情報（商談中）の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">開始日時</param>
+	<param name="endTime">終了日時</param>
+	<returns>スタッフ情報（商談中）データテーブル</returns>
+	<remarks>未決定　スタッフステータスを条件に追加</remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetStaffResult(System.String,System.String,System.DateTime,System.DateTime,System.String)">
+	<summary>
+ スタッフ情報（成果）の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">開始日時</param>
+	<param name="endTime">終了日時</param>
+	<param name="staffStatus">スタッフステータス</param>
+	<returns>スタッフ情報（成果）データテーブル</returns>
+	<remarks>未決定　スタッフステータスを条件に追加</remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetStaffOffline(System.String,System.String)">
+	<summary>
+ スタッフ情報（オフライン）の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<returns>スタッフ情報（オフライン）データテーブル</returns>
+	<remarks>未決定　スタッフステータスを条件に追加</remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetVisitorLinkingCount(System.String,System.String,System.DateTime,System.DateTime)">
+	<summary>
+ お客様との紐付け人数の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">取得開始日時</param>
+	<param name="endTime">取得終了日時</param>
+	<returns>お客様との紐付け人数データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetVisitorLinking(System.String,System.String,System.DateTime,System.DateTime)">
+	<summary>
+ お客様との紐付け情報の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">取得開始日時</param>
+	<param name="endTime">取得終了日時</param>
+	<returns>お客様との紐付け情報データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetNoticeRequests(System.String,System.String,System.DateTime,System.DateTime,System.String,System.Collections.Generic.List{System.String})">
+	<summary>
+ 通知依頼情報の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="startTime">取得開始日時</param>
+	<param name="endTime">取得終了日時</param>
+	<param name="noticeRequestCategory">通知依頼種別</param>
+	<param name="lastStatus">ステータス</param>
+	<returns>通知依頼データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetVisitorCustomer(System.Int64,System.String)">
+	<summary>
+ 来店実績お客様情報の取得
+ </summary>
+	<param name="visitSequence">来店実績連番</param>
+	<param name="visitStatus">来店実績ステータス</param>
+	<returns>来店実績お客様情報データテーブル</returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetStaffNoticeRequest(System.Int64,System.String,System.Collections.Generic.List{System.String})">
+	<summary>
+ スタッフ通知依頼情報の取得
+ </summary>
+	<param name="visitSeq">シーケンス連番</param>
+	<param name="noticeKind">通知依頼種別</param>
+	<param name="lastStatus">最終ステータス</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter.GetVisitCount(System.String,System.String,System.Int64)">
+	<summary>
+ 来店回数の取得
+ </summary>
+	<param name="dealerCode">販売店コード</param>
+	<param name="storeCode">店舗コード</param>
+	<param name="followUpBoxSeqNo">Fllow-UpBox 内連番</param>
+	<returns>来店回数</returns>
+	<remarks></remarks>
+</member><member name="T:Toyota.eCRB.Visit.Api.DataAccess.VisitReceptionDataSetTableAdapters.VisitReceptionTableAdapter">
+	<summary>
+ 来店機能の受付処理共通テーブルアダプター
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,110 @@
+﻿/*/-------------------------------------------------------------------------
+//smb.css
+//--------------------------------------------------------------------------
+//機能：smbメイン画面
+//作成：2012/12/22 TMEJ 張 タブレット版SMB機能開発(工程管理)
+//更新：2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発
+---------------------------------------------------------------------------*/
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	font-family:Helvetica;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td	{
+	margin: 0;	padding: 0;
+}
+
+input{
+	background-color: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
+	color: rgba(255, 255, 255, 0);
+	-webkit-appearance: none;
+}
+#MstPG_CustomerSearchTextBox{
+    color: black;
+}
+li{
+	list-style:none;
+	margin:0px;
+	text-indent: 0px;
+	padding: 0px;
+}
+
+hr {
+	display: none;
+	clear:both;
+}
+
+
+.clearboth{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	color:#FFFFFF;
+	font-size:1px;
+	line-height:1px;
+	text-indent:-3000px;
+	height:1px;
+}
+
+a{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#007FB5;
+	text-decoration:none;
+}
+
+
+/* その他
+------------------------------------------------------------------------------*/
+#MainArea{
+	position:relative;
+	width:1024px;
+	height:658px;
+	background:#2b2b2b;
+	font-size:12px;
+	color:#FFF;
+	left:0px;
+	top:0px;
+}
+#MainAreaBackGroundColor
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#2b2b2b;
+	color:#FFF;
+	left:0px;
+	top:0px;
+}
+#MainAreaBackGroundLogo{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../Images/SC3240101/smb_back.png) no-repeat center,center;
+	color:#FFF;
+	left:0px;
+	top:0px;
+}
+#Inner{
+	position:relative;
+	padding:18px 0 0 20px;
+}
+
+/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 START */
+.Ellipsis
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+/* 2013/11/29 TMEJ 張 タブレット版SMB チーフテクニシャン機能開発 END */
+

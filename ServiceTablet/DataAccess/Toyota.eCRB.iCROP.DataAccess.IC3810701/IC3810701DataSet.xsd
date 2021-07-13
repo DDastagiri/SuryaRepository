@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3810701DataSet" targetNamespace="http://tempuri.org/IC3810701DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3810701DataSet.xsd" xmlns="http://tempuri.org/IC3810701DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3810701DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3810701DataSet" msprop:Generator_UserDSName="IC3810701DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StandardLTList" msprop:Generator_TableClassName="StandardLTListDataTable" msprop:Generator_TableVarName="tableStandardLTList" msprop:Generator_TablePropName="StandardLTList" msprop:Generator_RowDeletingName="StandardLTListRowDeleting" msprop:Generator_RowChangingName="StandardLTListRowChanging" msprop:Generator_RowEvHandlerName="StandardLTListRowChangeEventHandler" msprop:Generator_RowDeletedName="StandardLTListRowDeleted" msprop:Generator_UserTableName="StandardLTList" msprop:Generator_RowChangedName="StandardLTListRowChanged" msprop:Generator_RowEvArgName="StandardLTListRowChangeEvent" msprop:Generator_RowClassName="StandardLTListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RECEPT_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnRECEPT_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="RECEPT_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="RECEPT_STANDARD_LTColumn" msprop:Generator_UserColumnName="RECEPT_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="ADDWORK_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnADDWORK_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="ADDWORK_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="ADDWORK_STANDARD_LTColumn" msprop:Generator_UserColumnName="ADDWORK_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="DELIVERYPRE_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnDELIVERYPRE_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="DELIVERYPRE_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="DELIVERYPRE_STANDARD_LTColumn" msprop:Generator_UserColumnName="DELIVERYPRE_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="DELIVERYWR_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnDELIVERYWR_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="DELIVERYWR_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="DELIVERYWR_STANDARD_LTColumn" msprop:Generator_UserColumnName="DELIVERYWR_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="PARTS_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnPARTS_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="PARTS_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="PARTS_STANDARD_LTColumn" msprop:Generator_UserColumnName="PARTS_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="WASHTIME" msprop:Generator_ColumnVarNameInTable="columnWASHTIME" msprop:Generator_ColumnPropNameInRow="WASHTIME" msprop:Generator_ColumnPropNameInTable="WASHTIMEColumn" msprop:Generator_UserColumnName="WASHTIME" type="xs:long" minOccurs="0" />
+              <xs:element name="PARTS_WAITING_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnPARTS_WAITING_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="PARTS_WAITING_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="PARTS_WAITING_STANDARD_LTColumn" msprop:Generator_UserColumnName="PARTS_WAITING_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="ADDPARTS_ESTIMATE_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnADDPARTS_ESTIMATE_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="ADDPARTS_ESTIMATE_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="ADDPARTS_ESTIMATE_STANDARD_LTColumn" msprop:Generator_UserColumnName="ADDPARTS_ESTIMATE_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="RECEPT_GUIDE_STANDARD_LT" msprop:Generator_ColumnVarNameInTable="columnRECEPT_GUIDE_STANDARD_LT" msprop:Generator_ColumnPropNameInRow="RECEPT_GUIDE_STANDARD_LT" msprop:Generator_ColumnPropNameInTable="RECEPT_GUIDE_STANDARD_LTColumn" msprop:Generator_UserColumnName="RECEPT_GUIDE_STANDARD_LT" type="xs:long" minOccurs="0" />
+              <xs:element name="STD_INSPECTION_TIME" msprop:Generator_ColumnVarNameInTable="columnSTD_INSPECTION_TIME" msprop:Generator_ColumnPropNameInRow="STD_INSPECTION_TIME" msprop:Generator_ColumnPropNameInTable="STD_INSPECTION_TIMEColumn" msprop:Generator_UserColumnName="STD_INSPECTION_TIME" type="xs:long" minOccurs="0" />
+              <xs:element name="SCHE_SVCIN_DELI_AUTO_DISP_FLG" msprop:Generator_ColumnVarNameInTable="columnSCHE_SVCIN_DELI_AUTO_DISP_FLG" msprop:Generator_ColumnPropNameInRow="SCHE_SVCIN_DELI_AUTO_DISP_FLG" msprop:Generator_ColumnPropNameInTable="SCHE_SVCIN_DELI_AUTO_DISP_FLGColumn" msprop:Generator_UserColumnName="SCHE_SVCIN_DELI_AUTO_DISP_FLG" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

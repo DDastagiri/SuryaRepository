@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SC3150201DataSet" targetNamespace="http://tempuri.org/StallInfoDataSet.xsd" xmlns:mstns="http://tempuri.org/StallInfoDataSet.xsd" xmlns="http://tempuri.org/StallInfoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.iCROP.DataAccess.SC3150201.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SC3150201DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SC3150201DataSet" msprop:Generator_UserDSName="SC3150201DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SC3150201ChipInfo" msprop:Generator_TableClassName="SC3150201ChipInfoDataTable" msprop:Generator_TableVarName="tableSC3150201ChipInfo" msprop:Generator_RowChangedName="SC3150201ChipInfoRowChanged" msprop:Generator_TablePropName="SC3150201ChipInfo" msprop:Generator_RowDeletingName="SC3150201ChipInfoRowDeleting" msprop:Generator_RowChangingName="SC3150201ChipInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3150201ChipInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3150201ChipInfoRowDeleted" msprop:Generator_RowClassName="SC3150201ChipInfoRow" msprop:Generator_UserTableName="SC3150201ChipInfo" msprop:Generator_RowEvArgName="SC3150201ChipInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VCLREGNO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VCLREGNO" msprop:Generator_ColumnVarNameInTable="columnVCLREGNO" msprop:Generator_ColumnPropNameInTable="VCLREGNOColumn" msprop:Generator_UserColumnName="VCLREGNO" type="xs:string" minOccurs="0" />
+              <xs:element name="RESULT_START_TIME" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="RESULT_START_TIME" msprop:Generator_ColumnVarNameInTable="columnRESULT_START_TIME" msprop:Generator_ColumnPropNameInTable="RESULT_START_TIMEColumn" msprop:Generator_UserColumnName="RESULT_START_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REZ_DELI_DATE" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="REZ_DELI_DATE" msprop:Generator_ColumnVarNameInTable="columnREZ_DELI_DATE" msprop:Generator_ColumnPropNameInTable="REZ_DELI_DATEColumn" msprop:Generator_UserColumnName="REZ_DELI_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STARTTIME" msprop:Generator_ColumnVarNameInTable="columnSTARTTIME" msprop:Generator_ColumnPropNameInRow="STARTTIME" msprop:Generator_ColumnPropNameInTable="STARTTIMEColumn" msprop:Generator_UserColumnName="STARTTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ENDTIME" msprop:Generator_ColumnVarNameInTable="columnENDTIME" msprop:Generator_ColumnPropNameInRow="ENDTIME" msprop:Generator_ColumnPropNameInTable="ENDTIMEColumn" msprop:Generator_UserColumnName="ENDTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INSTRUCT" msprop:Generator_ColumnVarNameInTable="columnINSTRUCT" msprop:Generator_ColumnPropNameInRow="INSTRUCT" msprop:Generator_ColumnPropNameInTable="INSTRUCTColumn" msprop:Generator_UserColumnName="INSTRUCT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3150201StallInfo" msprop:Generator_TableClassName="SC3150201StallInfoDataTable" msprop:Generator_TableVarName="tableSC3150201StallInfo" msprop:Generator_RowChangedName="SC3150201StallInfoRowChanged" msprop:Generator_TablePropName="SC3150201StallInfo" msprop:Generator_RowDeletingName="SC3150201StallInfoRowDeleting" msprop:Generator_RowChangingName="SC3150201StallInfoRowChanging" msprop:Generator_RowEvHandlerName="SC3150201StallInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3150201StallInfoRowDeleted" msprop:Generator_RowClassName="SC3150201StallInfoRow" msprop:Generator_UserTableName="SC3150201StallInfo" msprop:Generator_RowEvArgName="SC3150201StallInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STALLID" msprop:Generator_ColumnVarNameInTable="columnSTALLID" msprop:Generator_ColumnPropNameInRow="STALLID" msprop:Generator_ColumnPropNameInTable="STALLIDColumn" msprop:Generator_UserColumnName="STALLID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PSTARTTIME" msprop:Generator_ColumnVarNameInTable="columnPSTARTTIME" msprop:Generator_ColumnPropNameInRow="PSTARTTIME" msprop:Generator_ColumnPropNameInTable="PSTARTTIMEColumn" msprop:Generator_UserColumnName="PSTARTTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PENDTIME" msprop:Generator_ColumnVarNameInTable="columnPENDTIME" msprop:Generator_ColumnPropNameInRow="PENDTIME" msprop:Generator_ColumnPropNameInTable="PENDTIMEColumn" msprop:Generator_UserColumnName="PENDTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SC3150201RefreshTime" msprop:Generator_TableClassName="SC3150201RefreshTimeDataTable" msprop:Generator_TableVarName="tableSC3150201RefreshTime" msprop:Generator_RowChangedName="SC3150201RefreshTimeRowChanged" msprop:Generator_TablePropName="SC3150201RefreshTime" msprop:Generator_RowDeletingName="SC3150201RefreshTimeRowDeleting" msprop:Generator_RowChangingName="SC3150201RefreshTimeRowChanging" msprop:Generator_RowEvHandlerName="SC3150201RefreshTimeRowChangeEventHandler" msprop:Generator_RowDeletedName="SC3150201RefreshTimeRowDeleted" msprop:Generator_RowClassName="SC3150201RefreshTimeRow" msprop:Generator_UserTableName="SC3150201RefreshTime" msprop:Generator_RowEvArgName="SC3150201RefreshTimeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TCSTATUS_REFRESH_TIME" msprop:Generator_ColumnVarNameInTable="columnTCSTATUS_REFRESH_TIME" msprop:Generator_ColumnPropNameInRow="TCSTATUS_REFRESH_TIME" msprop:Generator_ColumnPropNameInTable="TCSTATUS_REFRESH_TIMEColumn" msprop:Generator_UserColumnName="TCSTATUS_REFRESH_TIME" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

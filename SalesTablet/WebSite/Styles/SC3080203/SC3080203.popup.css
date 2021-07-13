@@ -1,0 +1,896 @@
+/*
+'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+'SC3080203.popup.css
+'─────────────────────────────────────
+'機能： 顧客詳細(活動登録)
+'補足： 
+'作成：            TCS 河原 【SALES_1A】
+'更新： 2012/03/07 TCS 河原 【SALES_2】
+'       2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227)
+'       2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219)
+'       2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70)
+'       2013/10/01 TCS 安田 【A STEP2】次世代e-CRB iOS7対応
+'       2013/12/03 TCS 市川 Aカード情報相互連携開発
+'─────────────────────────────────────
+*/
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  N-SC全体　CSS
+//
+//////////////////////////////////////////////////////////////////////////////*/
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	tcv N-SC-60
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	活動結果登録 ポップアップ用
+//
+//////////////////////////////////////////////////////////////////////////////*/
+#confirmContents60 { position:relative; }
+
+/* 各コンテンツエリアを囲う枠(Activity,Result,Next Activity) */
+#confirmContents60 .nscListBoxSet {
+	position:relative;
+	width:auto;
+	margin:0 0 20px 0;
+	padding:0 0 15px 0;
+	border-radius:8px;
+	background-color:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, 
+	from(#FFFFFF),
+    color-stop(0.51, #FEFEFE),
+	to(#e2e2e2));
+	border:#adadad 1px solid;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+	overflow:hidden;
+	
+}
+
+/* 各コンテンツエリアのタイトル */
+#confirmContents60 .nscListBoxSet h4 {
+	width:190px;
+	font-size:16px;
+	padding:1px 0 2px 16px;
+	margin-bottom:7px;
+	font-weight:bold;
+	color:#FFFFFF;
+	border-top-left-radius:7px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:56px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#8e929a),
+    color-stop(0.50, #797d84),
+    color-stop(0.51, #6a6e76),
+	to(#6a6e76));
+}
+
+.HeightB,
+.HeightC,
+.HeightD {
+	height:172px;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn {
+	margin:18px 15px 0 15px;
+	color:#646464;
+	font-size:14px;
+}
+#confirmContents60 .nscListBoxSet .HeightB2 {
+	margin:15px 15px 0 15px;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListBoxSetLeft {
+	overflow:hidden;
+	float:left;
+	width:468px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListBoxSetRight{
+	overflow:hidden;
+	float:right;
+	width:468px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListBoxSetRight2{
+	overflow:hidden;
+	float:right;
+	width:468px;
+	height:134px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListBoxSetRight2 dl{
+	height:132px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dl {
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	font-weight:bold;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dt {
+	border-bottom:#BBBBBB 1px solid;
+	float:left;
+	width:90px;
+	text-align:right;
+	vertical-align:middle;
+	padding:15px 10px 13px 0;
+	font-size:14px;
+	line-height:15px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .padding2{
+	padding-top:20px;
+	padding-bottom:18px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dd {
+	border-left:#BBBBBB 1px solid;
+	border-bottom:#BBBBBB 1px solid;
+	float:right;
+	width:354px;
+	text-align:left;
+	vertical-align:middle;
+	padding:15px 0 13px 10px;
+	font-size:14px;
+	line-height:15px;
+	color:#375388;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dl.hiLong dt,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dl.hiLong dd{
+	height:26px;
+	vertical-align:middle;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dl.hiLong dt{
+	padding:20px 10px 13px 0;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dl.hiLong dd{
+	padding:19px 0 14px 10px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dl.hiLong dd.TextArea{
+	padding:12px 0 21px 10px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dd.Long{
+	width:829px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dt.end{
+	border-bottom:none;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dd.end{
+	border-bottom:none;
+	line-height: 15px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dd.Arrow{
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn dt.nscListIcn{
+	padding-top:59px;
+	padding-bottom:59px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .BlackNormalTxt{
+	color:#000;
+	font-weight:normal;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .BlackBoldTxt{
+	color:#000;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .RedTxt{
+	color:#d74747;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .padding2 Table{
+	height:22px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nextAct{
+	padding-top: 16px;
+	padding-bottom: 14px;
+}
+
+/* Icnset A
+----------------*/
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset{
+	text-align:center;
+	padding:19px 0 19px 10px;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA1,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA2,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA3,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA4,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA1Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA2Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA3Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA4Over{
+	border-radius:8px;
+	border:#9b9b9b 1px solid;
+	float:left;
+	margin:0 17px 0 0;
+	padding:45px 0 5px 0;
+	width:66px;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:0px -1px 1px #FFF;
+	color:#808080;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA1Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA2Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA3Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA4Over{
+	text-shadow:0px -1px 1px #000;
+	text-shadow:none;
+	color:#FFF;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA1{
+	background: url(../Images/SC3080201/nsc60icn1a.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA2{
+	background: url(../Images/SC3080201/nsc60icn1b.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA3{
+	background: url(../Images/SC3080201/nsc60icn1c.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA4{
+	background: url(../Images/SC3080201/nsc60icn1d.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA1Over{
+	background: url(../Images/SC3080201/nsc60icn1aOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA2Over{
+	background: url(../Images/SC3080201/nsc60icn1bOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA3Over{
+	background: url(../Images/SC3080201/nsc60icn1cOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnAset .nscListIcnA4Over{
+	background: url(../Images/SC3080201/nsc60icn1dOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+
+
+
+/* Icnset B
+----------------*/
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset{
+	text-align:center;
+	padding:34px 0 34px 0;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB1,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB2,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB3,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB4,
+/* 2013/12/03 TCS 市川 Aカード情報相互連携開発 START */
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB4_Dummy,
+/* 2013/12/03 TCS 市川 Aカード情報相互連携開発 END */
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB5,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB1Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB2Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB3Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB4Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB5Over{
+	border-radius:8px;
+	margin:0 20px 0 0;
+	border:#9b9b9b 1px solid;
+	float:left;
+	padding:45px 0 5px 0;
+	width:103px;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:0px 1px 1px #FFF;
+	color:#808080;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB1Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB2Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB3Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB4Over,
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB5Over{
+	text-shadow:0px -1px 1px #000;
+	text-shadow:none;
+	color:#FFF;
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB1{
+	background: url(../Images/SC3080201/nsc60icn2a.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB2{
+	background: url(../Images/SC3080201/nsc60icn2b.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB3{
+	background: url(../Images/SC3080201/nsc60icn2c.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB4
+/* 2013/12/03 TCS 市川 Aカード情報相互連携開発 START */
+,#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB4_Dummy
+/* 2013/12/03 TCS 市川 Aカード情報相互連携開発 END */
+{
+	background: url(../Images/SC3080201/nsc60icn2d.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB5{
+	background: url(../Images/SC3080201/nsc60icn2e.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #fbfbfb),
+				color-stop(100%, #cacaca));
+}
+
+
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB1Over{
+	background: url(../Images/SC3080201/nsc60icn2aOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB2Over{
+	background: url(../Images/SC3080201/nsc60icn2bOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB3Over{
+	background: url(../Images/SC3080201/nsc60icn2cOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB4Over{
+	background: url(../Images/SC3080201/nsc60icn2dOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnBset .nscListIcnB5Over{
+	background: url(../Images/SC3080201/nsc60icn2eOver.png) center 9px no-repeat,
+				-webkit-gradient(linear, left top, left bottom,
+				color-stop(0, #7b97ed),
+				color-stop(50%, #416ae5),
+				color-stop(51%, #1e4ee1),
+				color-stop(100%, #1e4ee1));
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnC{
+	background:url(../Images/SC3080201/nsc60icn3.png) 0 0 no-repeat;
+	padding:0px 0px 0px 24px;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn .nscListIcnCFollow{
+	padding:5px 0 5px 24px;
+}
+
+/* 受注車両
+----------------*/
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn ul {
+	border-radius:10px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:465px;
+	font-weight:bold;
+}
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn li {
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:12px 0 12px 20px;
+	font-size:18px;
+	line-height:20px;
+}
+/* 2012/03/14 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) START */
+/*
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn li.end{
+*/
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn li:last-child{
+	border-bottom:none;
+}
+/* 2012/03/13 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.227) END */
+
+#confirmContents60 .nscListBoxSet .nscListBoxSetIn li.Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png) right center no-repeat;
+	color:#3b4f85;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	活動結果登録 次回活動日
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/* ポップアップ全体枠 */
+#custDtlPage3 #scNscNextActivityTimeWindown {
+	position:absolute;
+	top:280px;
+	
+	width:340px;
+	height:250px;
+	/*padding:0 0 0 17px;*/
+	background-image: url(../Images/SC3080201/scNscGiveupReasonWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px bottom;
+	display:none;
+}
+
+#custDtlPage3 #scNscNextActivityTimeWindown.nextMode { left:27px; }
+#custDtlPage3 #scNscNextActivityTimeWindown.followMode { left:510px; }
+
+/* ポップアップ全体枠 */
+#custDtlPage3 #scNscNextActivityTimeWindown #scNscNextActivityTimeWindownBox {
+	width:330px;
+	/*height:288px;*/
+	background-color:#666;
+	border-radius:8px;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+	/*background:#FFF;*/
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*
+//	background: -webkit-gradient(linear, left top, left bottom, from(rgba(201,203,208,0.9)), 
+//	color-stop(0.002, rgba(120,128,147,0.9)),
+//	color-stop(0.015, rgba(87,95,114,0.9)),
+//	color-stop(0.036, rgba(29,40,59,0.9)),
+//	color-stop(0.0365, rgba(3,11,26,0.9)),
+//	to(rgba(7,11,29,0.9)));
+*/
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+}
+
+/* ヘッダー */
+.scNscNextActivityTimeHadder { position:relative; width:330px; height:45px; }
+.scNscNextActivityTimeHadder h3 {
+	position:absolute;
+	width:171px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    font-size:20px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+
+/* 戻る・キャンセルボタン */
+.scNscNextActivityTimeCancellButton {
+	position:absolute;
+	top:7px;
+	left:5px;
+	display:block;
+	color:#FFF;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*font-size:0.8em;*/
+	/*width:79px;*/
+	width:100px;
+	/*height:28px;*/
+	height:32px;
+	overflow:hidden;
+/*
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174),color-stop(0.50, #0d1734),color-stop(0.501, #000b29),to(#000b29));
+	z-index:2;
+	text-align:center;
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+.scNscNextActivityTimeCancellButton a{
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+	display:block;
+	width:79px;
+	height:28px;
+*/
+	position:absolute;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-shadow: 0px -1px 1px black;
+	height:18px;
+	padding:7px 0 4px 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+	z-index:2;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+.scNscNextActivityTimeCancellButton a.Square{
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+	position:relative;
+	top:8px;
+	color:#FFF;
+*/
+	left:1px;
+	width:80px;
+	text-align:center;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+/* 完了ボタン */
+.scNscNextActivityTimeCompletionButton {
+	position:absolute;
+	top:7px;
+	right:5px;
+	display:block;
+	color:#FFF;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*font-size:0.8em;*/
+	font-size:0.75em;
+	text-shadow: 0px -1px 1px black;
+	text-align:center;
+	/*width:79px;*/
+	width:78px;
+	/*height:28px;*/
+	height:22px;
+	padding:7px 0 0 0;
+    /*overflow:hidden;*/
+	border:#25272b 1px solid;
+	/*border-left:none;*/
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8),color-stop(0.50, #376fe0),color-stop(0.501, #2361dd),to(#2361dd));
+	/*z-index:2;*/
+	/*text-align:center;*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+/*
+.scNscNextActivityTimeCompletionButton span{
+	position:relative;
+	top:8px;
+	color:#FFF;
+}
+*/
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+/* リスト */
+#custDtlPage3 .scNscNextActivityListBody 
+{
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+    /*margin: 0px 5px 5px;*/
+    margin: 0px 4px 5px 4px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+    border:#a5a5a5 1px solid;
+    border-radius:5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+    color-stop(0.018, #fff),
+    color-stop(0.6, #fff),
+    to(#e6e6e6));
+    overflow-x: hidden;
+}
+
+/* リスト */
+#custDtlPage3 .scNscNextActivityListArea 
+{
+    font-size:0.9em;
+    width:652px;
+    position:relative;
+    left:0px;
+    top:0px;
+    -webkit-transition: transform 500ms ease-in-out 0;
+}
+
+#custDtlPage3 #scNscNextActivityListArea.page1 { transform:translate3d(0px, 0px, 0px); }
+#custDtlPage3 #scNscNextActivityListArea.page2 { transform:translate3d(-320px, 0px, 0px); }
+
+
+/* 各ページの枠 */
+#custDtlPage3 .scNscNextActivityListArea > div.popupPage { width:320px; height:160px; float:left; overflow-y:hidden; }
+
+/* 各リストのUL */
+#custDtlPage3 .scNscNextActivityListArea ul 
+{
+  	list-style-type:none;
+	padding:0px;
+	display:block;
+	margin:9px;
+	border:1px solid #ccc;
+	border-radius:8px;
+	background:#FFF;
+	box-sizing:border-box;
+}
+
+/* リスト１行 */
+#custDtlPage3 .scNscNextActivityListArea li
+{
+    height:21px; 
+    display:block; 
+    padding:11px 0px 11px 0px;
+    border-top:1px solid #CCC;
+    position:relative;
+}
+
+#custDtlPage3 .scNscNextActivityListArea li.Selection
+{
+    background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+
+/* 矢印つき */
+#custDtlPage3 .scNscNextActivityListArea li.Arrow {
+	background:url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;
+}
+
+#custDtlPage3 .scNscNextActivityListArea li span { display:block; position:absolute; top:12px; }
+#custDtlPage3 .scNscNextActivityListArea li span.title { left:15px;  color:#444; }
+#custDtlPage3 .scNscNextActivityListArea li span.value { right:15px; color:#375388; }
+#custDtlPage3 .scNscNextActivityListArea li span.alert { left:38px; font-weight:bold; }
+/* 2013/10/04 TCS 市川【次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス）】MOD START */
+#custDtlPage3 .scNscNextActivityListArea li.Arrow span.value { right:30px;width:185px; }
+/* 2013/10/04 TCS 市川【次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス）】MOD END */
+#custDtlPage3 .scNscNextActivityListArea li:first-child { border-top:none; }
+
+/* 2013/10/04 TCS 市川【次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス）】MOD START */
+#custDtlPage3 .scNscNextActivityListArea input[type=datetime-local],
+#custDtlPage3 .scNscNextActivityListArea input[type=date],
+#custDtlPage3 .scNscNextActivityListArea input[type=time]
+{
+    /* 入力値が空となると0px×0px表示となる事象を回避 */
+    text-align:left;
+    width:200px;
+    height:20px;
+}
+/* 2013/10/04 TCS 市川【次世代e-CRBタブレット iOS7.0 VersionUp対応（セールス）】MOD END */
+
+
+#PopupRegistButton {
+	position:absolute;
+	top:5px;
+	right:-7px;
+	display:block;
+	color:#FFF;
+	font-size:0.8em;
+	width:79px;
+	height:28px;
+	overflow:hidden;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8),color-stop(0.50, #376fe0),color-stop(0.501, #2361dd),to(#2361dd));
+	z-index:2;
+	text-align:center;
+}
+
+#PopupRegistButton span{
+	position:relative;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*top:8px;*/
+	top:7px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+
+
+.icrop-PopOverForm-header-back {
+	border-left: none;
+	position:absolute;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*top:6px;*/
+	top:7px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	left:20px;
+	display:block;
+	color:#FFF;
+	font-size:0.6em;
+	text-align:center;
+	width:78px;
+	height:22px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*padding:5px 0 0 0;*/
+	padding:6px 0px 0px 0px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	//border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							to(#000b29));
+}
+
+
+.GiveuptgLeft{
+	overflow: hidden;
+	position:absolute;
+	left:12px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/*top:9px;*/
+	top:10px;
+/* 2012/03/19 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.70) END */
+	display:block;
+	width:22px;
+	height:22px;
+	background:#009900;
+	border:inset 1px #383238;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+/****************************************
+ポップアップ系処理中アニメーション変更
+****************************************/
+#processingServer.NextActContactPopupLoadingAnimation.show {
+    left:663px;
+    top:532px;
+    z-index:10000000;
+}
+#processingServer.FollowContactPopupLoadingAnimation.show {
+    left:420px;
+    top:557px;
+    z-index:10000000;
+}
+#processingServer.GiveupReasonPopupLoadingAnimation.show {
+    left:548px;
+    top:373px;
+    z-index:10000000;
+}
+#processingServer.NextActTimeLoadingAnimation.show {
+    left:192px;
+    top:453px;
+    z-index:10000000;
+}
+#processingServer.FollowTimeLoadingAnimation.show {
+    left:676px;
+    top:471px;
+    z-index:10000000;
+}
+#registOverlayBlack.BGColor.open {
+    opacity: 0;
+}
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) START */
+/*次回活動日時 アラート有*/
+#scNscNextActivityTimeWindownBox.headerGradient-high {
+	background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                color-stop(0.1, #2A3445),
+                color-stop(0.1, #0F1623),
+                to(#030B19));
+}
+/*次回活動日時 アラート無*/
+#scNscNextActivityTimeWindownBox.headerGradient-Low {
+	background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                color-stop(0.12, #2A3445),
+                color-stop(0.12, #0F1623),
+                to(#030B19));
+}
+/* 2012/03/16 TCS 高橋 【SALES_2】(Sales1A ユーザテスト No.219) END */
+.nscGiveupListBoxSetIn li:last-child{
+	border-bottom:none;
+}
+
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+/* 断念理由のポップアップ 
+----------------------------------------------------------------------------------------*/
+#popOverForm_GiveupReason{
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(103, 110, 128)), color-stop(0.075, rgb(42, 52, 69)), color-stop(0.075, rgb(15, 22, 35)), to(rgb(3, 11, 25)));
+}
+/*ヘッダー部*/
+div.popOverHeader {padding:7px 5px 3px 5px;text-align:center;}
+.popOverHeader > .titleLabel{display:inline-block;padding-top:5px;height:20px;font-weight:bold;font-size: 12pt;}
+
+.popOverHeader > .commitButton, .popOverHeader > .cancelButton
+{
+	display: inline-block;
+	color: #FFF;
+	font-size: 10pt;
+	text-align: center;
+	line-height:25px;
+	width: 78px;
+	height: 27px;
+	border: #25272b 1px solid;
+	box-shadow: 0px 1px 0px #6e727b;
+	border-radius: 5px;
+}
+.popOverHeader > .commitButton
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+	color-stop(0.50, #376fe0),
+	color-stop(0.501, #2361dd),
+	to(#2361dd));
+	text-shadow: 0px -1px 1px black;  
+ }
+.popOverHeader > .cancelButton
+{
+	background: url(../Images/SC3080201/btnPopUpCancel.png) no-repeat;
+ }
+
+/* 選択リスト部 */
+.popOverBody {height:inherit;background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.6, #fff), to(#e6e6e6));} 
+.popOverBody .itemBox {border-radius:8px;border:solid 1px #BBBBBB;background-color:#FFFFFF;margin:0px 8px 8px 0px;font-size:12pt;}
+.popOverBody .itemBox .itemRow {border-top:solid 1px #BBBBBB;padding:11px 5px 11px 46px;}
+.popOverBody .itemBox .selected {background: url(../images/SC3080202/scNscPopUpListCheckMark.png) no-repeat 13px 13px;color: #345186;}
+.popOverBody .itemBox .ArrowSelected {
+	background: url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat
+	,url(../images/SC3080202/scNscPopUpListCheckMark.png) no-repeat 13px 13px;
+	color: #345186;
+}
+.popOverBody .itemBox .Arrow{background: url(../Images/SC3080201/nsc60Arrow.png) right center no-repeat;}
+#GiveupReasonDetail {
+	border-radius: 8px;
+	border: #bbbbbb 1px solid;
+	color: #666;
+	color: #393939;
+	font-size: 14px;
+	line-height: 19px;
+	padding: 10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+}
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */

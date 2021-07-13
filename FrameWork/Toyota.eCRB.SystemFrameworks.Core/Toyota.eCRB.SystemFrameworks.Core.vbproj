@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A831582F-7132-4B33-B1C8-3B49CCB401D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Toyota.eCRB.SystemFrameworks.Core</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Toyota.eCRB.SystemFrameworks.Core.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>..\WebSite\次世代e-CRB.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Toyota.eCRB.SystemFrameworks.Core.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseBusinessComponent.vb" />
+    <Compile Include="ConnectionManager.vb" />
+    <Compile Include="DateTimeFunc.vb" />
+    <Compile Include="DbQuery.vb" />
+    <Compile Include="DbSelectQuery.vb" />
+    <Compile Include="DbUpdateQuery.vb" />
+    <Compile Include="EnableCommitAttribute.vb" />
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="iCROP\BizLogic\ApplicationDataLoader.vb" />
+    <Compile Include="iCROP\BizLogic\Branch.vb" />
+    <Compile Include="iCROP\BizLogic\BranchEnvSetting.vb" />
+    <Compile Include="iCROP\BizLogic\Constant.vb" />
+    <Compile Include="iCROP\BizLogic\DateTimeForm.vb" />
+    <Compile Include="iCROP\BizLogic\DateTimeBizLogic.vb" />
+    <Compile Include="iCROP\BizLogic\Dealer.vb" />
+    <Compile Include="iCROP\BizLogic\DealerEnvSetting.vb" />
+    <Compile Include="iCROP\BizLogic\DmsCodeMap.vb" />
+    <Compile Include="iCROP\BizLogic\EnvironmentSetting.vb" />
+    <Compile Include="iCROP\BizLogic\FunctionSetting.vb" />
+    <Compile Include="iCROP\BizLogic\OperationType.vb" />
+    <Compile Include="iCROP\BizLogic\ProgramSettingV4.vb" />
+    <Compile Include="iCROP\BizLogic\SettingDataCache.vb" />
+    <Compile Include="iCROP\BizLogic\SystemEnvSetting.vb" />
+    <Compile Include="iCROP\BizLogic\SystemSetting.vb" />
+    <Compile Include="iCROP\BizLogic\SystemSettingDlr.vb" />
+    <Compile Include="iCROP\BizLogic\Users.vb" />
+    <Compile Include="iCROP\BizLogic\WordResourceManager.vb" />
+    <Compile Include="iCROP\DataAccess\AuthenticationManagerDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthenticationManagerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\AuthenticationManagerTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\BranchDataSet.Designer.vb">
+      <DependentUpon>BranchDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\BranchListDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BranchListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\BranchListTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\BranchTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\DateTimeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DateTimeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\DateTimeFormDataSet.Designer.vb">
+      <DependentUpon>DateTimeFormDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\DateTimeFormTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\DateTimeTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\DealerDataSet.Designer.vb">
+      <DependentUpon>DealerDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\DealerTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\DlrEnvSettingDataSet.Designer.vb">
+      <DependentUpon>DlrEnvSettingDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\DlrEnvSettingTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\DmsCodeMapDataSet.Designer.vb">
+      <DependentUpon>DmsCodeMapDataSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\DmsCodeMapDataSet.vb">
+      <DependentUpon>DmsCodeMapDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\DmsCodeMapTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\FunctionSettingDataSet.Designer.vb">
+      <DependentUpon>FunctionSettingDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\FunctionSettingTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\IcropWordDataSet.Designer.vb">
+      <DependentUpon>IcropWordDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\IcropWordTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\OperationTypeDataSet.Designer.vb">
+      <DependentUpon>OperationTypeDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\OperationTypeTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\ProgramSettingV4DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProgramSettingV4DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\ProgramSettingV4TableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\StaffContextDataSet.Designer.vb">
+      <DependentUpon>StaffContextDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\StaffContextTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\SystemEnvSettingDataSet.Designer.vb">
+      <DependentUpon>SystemEnvSettingDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\SystemEnvSettingTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\SystemSettingDataSet.Designer.vb">
+      <DependentUpon>SystemSettingDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\SystemSettingDlrDataSet.Designer.vb">
+      <DependentUpon>SystemSettingDlrDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\SystemSettingDlrTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\SystemSettingTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\SystemSharedDataSet.Designer.vb">
+      <DependentUpon>SystemSharedDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\SystemSharedTableAdapter.vb" />
+    <Compile Include="iCROP\DataAccess\UsersDataSet.Designer.vb">
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="iCROP\DataAccess\UsersTableAdapter.vb" />
+    <Compile Include="Logger.vb" />
+    <Compile Include="LoggerUtility.vb" />
+    <Compile Include="Logging\ObjectDumper.vb" />
+    <Compile Include="Logging\TraceCategory.vb" />
+    <Compile Include="Logging\TraceLogger.vb" />
+    <Compile Include="Logging\TraceLoggerLogRuleSection.vb" />
+    <Compile Include="Logging\TraceLogListener.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OracleExceptionEx.vb" />
+    <Compile Include="SecurityLogger.vb" />
+    <Compile Include="SQLResponseLogger.vb" />
+    <Compile Include="SystemConfiguration.vb" />
+    <Compile Include="TransactionAspect.vb" />
+    <Compile Include="TransactionAspectAttribute.vb" />
+    <Compile Include="TransactionAspectProperty.vb" />
+    <Compile Include="Validation.vb" />
+    <Compile Include="VersionInformation.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iCROP\DataAccess\AuthenticationManagerDataSet.xsc">
+      <DependentUpon>AuthenticationManagerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\AuthenticationManagerDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AuthenticationManagerDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\AuthenticationManagerDataSet.xss">
+      <DependentUpon>AuthenticationManagerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\BranchDataSet.xsc">
+      <DependentUpon>BranchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\BranchDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BranchDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\BranchDataSet.xss">
+      <DependentUpon>BranchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\BranchListDataSet.xsc">
+      <DependentUpon>BranchListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\BranchListDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BranchListDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\BranchListDataSet.xss">
+      <DependentUpon>BranchListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DateTimeDataSet.xsc">
+      <DependentUpon>DateTimeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DateTimeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DateTimeDataSet.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+    </None>
+    <None Include="iCROP\DataAccess\DateTimeDataSet.xss">
+      <DependentUpon>DateTimeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DateTimeFormDataSet.xsc">
+      <DependentUpon>DateTimeFormDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DateTimeFormDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DateTimeFormDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\DateTimeFormDataSet.xss">
+      <DependentUpon>DateTimeFormDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DealerDataSet.xsc">
+      <DependentUpon>DealerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DealerDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DealerDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\DealerDataSet.xss">
+      <DependentUpon>DealerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DlrEnvSettingDataSet.xsc">
+      <DependentUpon>DlrEnvSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DlrEnvSettingDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DlrEnvSettingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\DlrEnvSettingDataSet.xss">
+      <DependentUpon>DlrEnvSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DmsCodeMapDataSet.xsc">
+      <DependentUpon>DmsCodeMapDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\DmsCodeMapDataSet.xsd" />
+    <None Include="iCROP\DataAccess\DmsCodeMapDataSet.xss">
+      <DependentUpon>DmsCodeMapDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\FunctionSettingDataSet.xsc">
+      <DependentUpon>FunctionSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\FunctionSettingDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FunctionSettingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\FunctionSettingDataSet.xss">
+      <DependentUpon>FunctionSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\IcropWordDataSet.xsc">
+      <DependentUpon>IcropWordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\IcropWordDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IcropWordDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\IcropWordDataSet.xss">
+      <DependentUpon>IcropWordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\OperationTypeDataSet.xsc">
+      <DependentUpon>OperationTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\OperationTypeDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OperationTypeDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\OperationTypeDataSet.xss">
+      <DependentUpon>OperationTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\ProgramSettingV4DataSet.xsc">
+      <DependentUpon>ProgramSettingV4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\ProgramSettingV4DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProgramSettingV4DataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\ProgramSettingV4DataSet.xss">
+      <DependentUpon>ProgramSettingV4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\StaffContextDataSet.xsc">
+      <DependentUpon>StaffContextDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\StaffContextDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffContextDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\StaffContextDataSet.xss">
+      <DependentUpon>StaffContextDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemEnvSettingDataSet.xsc">
+      <DependentUpon>SystemEnvSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemEnvSettingDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemEnvSettingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\SystemEnvSettingDataSet.xss">
+      <DependentUpon>SystemEnvSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSettingDataSet.xsc">
+      <DependentUpon>SystemSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSettingDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemSettingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSettingDataSet.xss">
+      <DependentUpon>SystemSettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSettingDlrDataSet.xsc">
+      <DependentUpon>SystemSettingDlrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSettingDlrDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemSettingDlrDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSettingDlrDataSet.xss">
+      <DependentUpon>SystemSettingDlrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSharedDataSet.xsc">
+      <DependentUpon>SystemSharedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSharedDataSet.xsd">
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemSharedDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="iCROP\DataAccess\SystemSharedDataSet.xss">
+      <DependentUpon>SystemSharedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\UsersDataSet.xsc">
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCROP\DataAccess\UsersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersDataSet.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>Toyota.eCRB.SystemFrameworks.Core.iCROP.DataAccess</CustomToolNamespace>
+    </None>
+    <None Include="iCROP\DataAccess\UsersDataSet.xss">
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toyota.eCRB.SystemFrameworks.Configuration\Toyota.eCRB.SystemFrameworks.Configuration.vbproj">
+      <Project>{8F4ACE20-8F74-46A0-BF9A-7AD24927BAE3}</Project>
+      <Name>Toyota.eCRB.SystemFrameworks.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

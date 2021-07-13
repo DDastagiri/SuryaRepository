@@ -1,0 +1,361 @@
+﻿/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SC3040802.css
+─────────────────────────────────────
+機能： 通知一覧(MG用)
+補足： 
+作成： 2012/01/05 TCS 明瀬
+更新： 2018/07/19 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1
+─────────────────────────────────────*/
+
+.hiddenButton {
+    display: none;
+}
+
+.scNscPopUpContactList {
+	position:absolute;
+	width:320px;
+	padding:0;
+}
+
+.scNscPopUpContactListWindownBox {
+	width:319px;
+	height:613px;
+	background-color:#666;
+	background:#FFF;
+	border:#999999 1px solid;
+	box-shadow:0px 0px 12px #333;
+}
+
+/*閉じるボタンと「依頼一覧」の部分*/
+.scNscPopUpContactListHeader {
+	position:relative; width:319px; height:45px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6a6a6a),
+								color-stop(0.5, #2d2d2d),
+								color-stop(0.5, #000000),
+								to(#000000));
+	border-bottom:#999999 1px solid;
+}
+
+/*「依頼一覧」のラベル部分*/
+.scNscPopUpContactListHeader h3 {
+	position:absolute;
+	width:105px;
+	height:32px;
+	top:7px;
+	left:45px;
+	text-align:center;
+	font-size:20px;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+}
+
+/* 閉じるボタン */
+.scNscPopUpContactListHeader .IcnButton{
+	position:absolute;
+	left:7px;
+	top:8px;
+	width:31px;
+	height:31px;
+}
+
+/*依頼一覧のデータ部*/
+.scNscPopUpContactListMain {
+	/*font-family: HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	font-size:14px;
+	line-height:16px;
+	width:319px;
+	height:567px;
+	margin:0 auto;
+	padding:0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), 
+								to(#dcdcdc));
+}
+
+/* 通知情報が０件のときの画像 */
+.NoDataImage{
+	background:url(../Images/SC3040802/nsc04noData.png) 0 0 no-repeat;
+	display:block;
+	width:131px; height:110px;
+	position:absolute;
+	top:164px; 
+	left:90px;
+	/*left:123px;*/
+	z-index:1;
+}
+
+/* 通知情報が０件のときのラベル */
+.NoDataText{
+	display:block;
+	position:absolute;
+	top:294px; left:20px;
+	text-align:center;
+	/*font-family:HiraKakuProN-W6, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro";*/
+	font-size:16px;
+	color:#666;
+	width:280px;
+}
+
+/*通知データ(1件単位)*/
+.scNscPopUpContactListMain li{
+	position:relative;
+	border-bottom:#c8c8c8 1px solid;
+	height:62px;
+	padding:0px 14px 0 48px;
+	color:#4c4c4c;
+}
+
+/*ヘルプアイコン*/
+.scNscPopUpContactListMain .Icn01{
+	background:url(../Images/SC3040802/nsc01Icn01.png) 8px 21px no-repeat;
+}
+
+/*価格相談アイコン*/
+.scNscPopUpContactListMain .Icn02{
+	background:url(../Images/SC3040802/nsc01Icn02.png) 8px 21px no-repeat;
+}
+
+/*契約承認アイコン*/
+.scNscPopUpContactListMain .Icn08{
+	background:url(../Images/SC3040802/nsc01Icn08.png) 8px 21px no-repeat;
+}
+
+/*通知送信者名*/
+.scNscPopUpContactListMain .TextName01{
+	position:absolute;
+	left:44px;
+	top:11px;
+	width:75px;
+	height:17px;
+	padding:0 0 0 21px;
+	font-size:13px;
+    /*font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+    font-weight:bold;
+}
+
+/*顧客名*/
+.scNscPopUpContactListMain .TextName02{
+	position:absolute;
+	width:80px;
+	height:17px;
+	left:141px;
+	top:11px;
+	background:url(../Images/SC3040802/nsc01Icn04.png) 0 0 no-repeat;
+	padding:0 0 0 20px;
+	font-size:13px;
+    /*font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+    font-weight:bold;
+}
+
+/*時間文言*/
+.scNscPopUpContactListMain .Time{
+	/*font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+	position:absolute;
+	width:70px;
+	right:7px;
+	top:11px;
+	text-align:right;
+	font-size:14px;
+	color:#666666;
+}
+
+/* 2018/07/19 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 START */
+/* LoyalCustomer用レイアウト定義 */
+/* LoyalCustomerアイコン */
+.scNscPopUpContactListMain .loyalCstIcon{
+	position:absolute;
+	width:15px;
+	height:13px;
+	left:227px;
+	top:11px;
+	background:url(../Images/SC3040802/L_s.png) 0 0 no-repeat;
+	vertical-align: middle;
+}
+
+/*通知送信者名*/
+.scNscPopUpContactListMain .TextName01LoyalCst{
+	position:absolute;
+	left:44px;
+	top:11px;
+	width:65px; /*default:75px*/
+	height:17px;
+	padding:0 0 0 21px;
+	font-size:13px;
+    /*font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+    font-weight:bold;
+}
+
+/*顧客名*/
+.scNscPopUpContactListMain .TextName02LoyalCst{
+	position:absolute;
+	width:75px; /*default:80px*/
+	height:17px;
+	left:129px; /*default:141px*/
+	top:11px;
+	background:url(../Images/SC3040802/nsc01Icn04.png) 0 0 no-repeat;
+	padding:0 0 0 20px;
+	font-size:13px;
+    /*font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+    font-weight:bold;
+}
+/* 2018/07/19 TCS 前田 TKM Next Gen e-CRB Project Application development Block B-1 END */
+
+/*車種*/
+.scNscPopUpContactListMain .BottomText01Req{
+	position:absolute;
+	width:165px;
+	left:44px;
+	top:37px;
+	font-size:13px;
+    /*font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+    font-weight:bold;
+}
+
+/*ヘルプ内容*/
+.scNscPopUpContactListMain .BottomText01Help{
+	position:absolute;
+	width:270px;
+	left:44px;
+	top:37px;
+	font-size:13px;
+    /*font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+    font-weight:bold;
+}
+
+/*グレード*/
+.scNscPopUpContactListMain .BottomText01Req span{
+	font-size:11px;
+	font-weight:normal;
+}
+
+/*希望値引き金額*/
+.scNscPopUpContactListMain .BottomText02{
+	position:absolute;
+	width:105px;
+	right:7px;
+	top:37px;
+	text-align:right;
+	/*font-family: "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, HiraKakuProN-W3;*/
+    font-weight:bold;
+    font-size:15px;
+}
+
+/*ヘルプ依頼の場合に、２個目のラベルに追加するクラス*/
+.scNscPopUpContactListMain .BottomText02None{
+	position:absolute;
+	width:0px;
+}
+
+/*文字を設定されたWidthに合わせて強制的に切る*/
+.clip{
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*文字を設定されたWidthに合わせて...表示*/
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.icrop-CustomRepeater-pager{
+	display:block;
+	text-align:center;
+	padding:0px 0;
+	color:#4b7dda; 
+	font-size:16px;	
+	background:#FFF;
+	width:100%;
+}
+
+/*次の10件を読み込む...の領域*/
+.icrop-CustomRepeater-inner-bottomPager {
+	display:none;
+	text-align:center;
+	padding:0px 0;
+	color:#4b7dda; 
+	font-size:16px;	
+    height:60px;
+	background:#FFF;
+	width:100%;
+}
+
+/*次の10件を読み込む...のラベル*/
+.icrop-CustomRepeater-inner-bottomPager-label {
+	display:block;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+	border:#999999 0px solid;
+    font-weight:bold;
+	color:#4b7dda; 
+	font-size:16px;
+	width:308px;
+	text-align:center;
+	padding:20px 0px 20px;
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;    
+}
+
+/*前の10件を読み込む...の領域*/
+.icrop-CustomRepeater-inner-topPager {
+	text-align:center;
+	color:#4b7dda; 
+	font-size:16px;	
+    height:60px;
+	background:#FFF;
+	width:100%;
+	border-bottom:#999999 0px solid;
+}
+
+/*前の10件を読み込む...のラベル*/
+.icrop-CustomRepeater-inner-topPager-label {
+    display:inline-block;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+    font-weight:bold;
+	color:#4b7dda; 
+	font-size:16px;
+	width:308px;
+	text-align:center;
+	padding:20px 0px 20px;
+    text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;  
+}
+
+/*サーバー処理中のオーバーレイ*/
+#serverProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px; 
+	left:0px;
+	background:#000;
+	z-index:100;
+	width:320px;
+	height:613px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#serverProcessOverlayBlack.open { opacity:0.6; }
+
+/*処理中*/
+#serverProcessIcon {
+	position:absolute;
+	background:url(../Images/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:300px;
+	left:140px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+
+#serverProcessIcon.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}

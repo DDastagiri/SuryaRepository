@@ -1,0 +1,121 @@
+body.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+}
+.OkOrCancelButton {
+    width:200px;
+    height:70px;
+    border-radius: 5px;
+    font-size:XX-Large;
+}
+
+.tableBody
+{    
+    table-layout: fixed;
+    overflow: scroll;
+    width:100%; 
+    border-width: 1px; 
+}
+
+/* tdタグ
+・背景白
+*/
+.tdBackW
+{
+    background-color: #FFFFFF;
+}
+
+.auto-style1 {
+    width: 33%;
+    height: 70px;
+}
+.auto-style2 {
+    width: 100%;
+    height: 200px;
+}
+
+.txtCommon{
+    transition:border linear .2s,box-shadow linear .5s;
+    -moz-transition:border linear .2s,-moz-box-shadow linear .5s;
+    -webkit-transition:border linear .2s,box-shadow linear .5s;
+    -o-transition:border linear .2s,box-shadow linear .5s;
+    outline:none;border-color:rgba(5,150,250,.75);
+    box-shadow:0 0 8px rgba(5,150,240,.5);
+    -moz-box-shadow:0 0 8px rgba(5,150,24,.5);
+    box-shadow:0 0 8px rgba(5,150,24,3);
+    -o-box-shadow:0 0 8px rgba(5,150,24,.5);
+} 
+
+.divPageItem{
+    width: 100%;
+    text-align: center;
+    z-index:-10;
+}
+
+.txtCurrentPageItem {
+    width:12px;
+    height:2px; 
+    background-color:#2BAAFF;
+}
+
+.txtPageItem {
+    width:10px;
+    height:1px; 
+    background-color:#80CCFF;
+}
+
+/* 電卓ボタン数字アルファベット
+・フォントサイズ：特大
+・フォント色：黒
+*/
+.btnCalculator
+{
+    color: #000000;
+    font-size: XX-Large; 
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+    width:190px; 
+    height:100px;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#c0c0c0)); 
+    box-shadow: 1px 1px 1px rgba(000,000,000,0.3);
+    text-align: center;
+    -webkit-appearance: none;    
+}
+
+/* 電卓ボタンBS
+・フォントサイズ：特大
+・フォント色：白
+・背景色：黒
+*/
+.btnCalculatorBS
+{
+    color: #FFFFFF;
+    font-size: XX-Large; 
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+    width:190px; 
+    height:100px;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#383838), to(#000000)); 
+    box-shadow: 1px 1px 1px rgba(000,000,000,0.3);
+    text-align: center;
+    -webkit-appearance: none;  
+}
+
+/* 電卓ボタンAC
+・フォントサイズ：特大
+・フォント色：白
+・背景色：黒
+*/
+.btnCalculatorAC
+{
+    color: #FFFFFF;
+    font-size: XX-Large; 
+    font-family: 'HiraKakuProN-W3';
+    font-weight: normal;
+    width:190px; 
+    height:100px;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#777777), to(#3F3F3F)); 
+    box-shadow: 1px 1px 1px rgba(000,000,000,0.3);
+    text-align: center;
+    -webkit-appearance: none;  
+}

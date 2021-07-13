@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DmsCodeMapDataSet" targetNamespace="http://tempuri.org/DmsCodeMapDataSet.xsd" xmlns:mstns="http://tempuri.org/DmsCodeMapDataSet.xsd" xmlns="http://tempuri.org/DmsCodeMapDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DmsCodeMapDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DmsCodeMapDataSet" msprop:Generator_UserDSName="DmsCodeMapDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DMSCODEMAP" msdata:CaseSensitive="True" msprop:Generator_TableClassName="DMSCODEMAPDataTable" msprop:Generator_TableVarName="tableDMSCODEMAP" msprop:Generator_TablePropName="DMSCODEMAP" msprop:Generator_RowDeletingName="DMSCODEMAPRowDeleting" msprop:Generator_UserTableName="DMSCODEMAP" msprop:Generator_RowChangingName="DMSCODEMAPRowChanging" msprop:Generator_RowEvHandlerName="DMSCODEMAPRowChangeEventHandler" msprop:Generator_RowDeletedName="DMSCODEMAPRowDeleted" msprop:Generator_RowEvArgName="DMSCODEMAPRowChangeEvent" msprop:Generator_RowChangedName="DMSCODEMAPRowChanged" msprop:Generator_RowClassName="DMSCODEMAPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DMS_CD_1" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_1" msprop:Generator_ColumnPropNameInRow="DMS_CD_1" msprop:Generator_ColumnPropNameInTable="DMS_CD_1Column" msprop:Generator_UserColumnName="DMS_CD_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DMS_CD_2" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_2" msprop:Generator_ColumnPropNameInRow="DMS_CD_2" msprop:Generator_ColumnPropNameInTable="DMS_CD_2Column" msprop:Generator_UserColumnName="DMS_CD_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DMS_CD_3" msprop:Generator_ColumnVarNameInTable="columnDMS_CD_3" msprop:Generator_ColumnPropNameInRow="DMS_CD_3" msprop:Generator_ColumnPropNameInTable="DMS_CD_3Column" msprop:Generator_UserColumnName="DMS_CD_3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

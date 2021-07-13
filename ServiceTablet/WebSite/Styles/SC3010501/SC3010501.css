@@ -1,0 +1,47 @@
+/*/-------------------------------------------------------------------------
+//SC3010501.css
+//--------------------------------------------------------------------------
+//機能：他システム連携画面
+//作成：2013/12/16 TMEJ 小澤
+//更新：
+---------------------------------------------------------------------------*/
+
+div#main{
+    background: -webkit-gradient(linear, left top, left bottom, from(#E6E6E6), to(#B7B7B7));
+}
+
+ #main > #contents 
+ {
+     padding: 20px 15px 20px 15px;
+}
+
+.MainBorder
+{
+    width:984px;
+    height:610px;
+    border:#999 1px solid;
+    border-radius:8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.6, #FEFEFE), color-stop(0.7, #F4F4F4), to(#DBDBDB));
+    box-shadow:3px 3px 4px #666666;
+}
+
+.IFrameStyle
+{
+    background-color: white;
+    /*
+    width: 978px;
+    height: 604px;
+    margin-top: 3px;
+    margin-left: 3px;
+
+    width: 980px;
+    height: 606px;
+    margin-top: 2px;
+    margin-left: 2px;
+    */
+    width: 980px;
+    height: 606px;
+    margin-top: 2px;
+    margin-left: 2px;
+
+}

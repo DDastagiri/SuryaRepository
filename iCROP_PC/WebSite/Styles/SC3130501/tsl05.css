@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  SMB共通 青色タイプ
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#tsl05-02_Main{
+	background:url(../Images/SC3130501/tsl05-02_backimg.png) 0 0 no-repeat;
+	width:1920px;
+	height:1080px;
+	font-weight:bold;
+}
+
+.tsl05-02_MainOutFrame{
+	position:relative;
+	overflow:hidden;
+	width:1920px;
+	height:964px;
+}
+.tsl05-02_Main{
+	position:absolute;
+	left:77px; top:42px;
+	overflow:hidden;
+	width:1767px;
+	height:857px;
+}
+
+/* タイトル
+------------------------------------------------------------------------------*/
+.tsl05-02_Header{
+	position:relative;
+	width:100%;
+	height:116px;
+	background:url(../Images/SC3130501/tsl05-02_header.png) 0 0 no-repeat;
+}
+
+
+
+
+/* Header
+------------------------------------------------------------------------------*/
+.airport_Header{
+	position:relative;
+	overflow:hidden;
+	background:url(../Images/SC3130501/smb_b05_headerbackimg.png) 0 0 no-repeat;
+	width:1920px;
+	height:117px;
+}
+.airport_Header .LeftLogo{
+	position:absolute;
+	left:0; top:15px;
+	background:url(../Images/SC3130501/smb_b05_headerlogo01.png) 0 0 no-repeat;
+	width:285px;
+	height:71px;
+}
+.airport_Header .SMBLogo{
+	position:absolute;
+	right:34px; top:15px;
+	background:url(../Images/SC3130501/smb_b05_headersmblogo.png) 0 0 no-repeat;
+	width:139px;
+	height:40px;
+}
+.airport_Header .CenterTitle{
+	position:absolute;
+	left:297px; top:19px;
+	width:1329px;
+	height:81px;
+	position:absolute;
+	font-size:54px;
+	color:#FFF;
+	line-height:77px;
+	text-shadow:#273154 0 0 10px;
+	text-align:center;
+}
+.airport_Header .Data{
+	position:absolute;
+	right:35px; top:62px;
+	width:237px;
+	height:33px;
+	font-size:23px;
+	line-height:33px;
+	color:#FFF;
+	text-align:center;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space: nowrap; 
+}
+
+
+/* 内容
+------------------------------------------------------------------------------*/
+.tsl05-02_ImgBox{
+	position:absolute;
+	left:0; top:0;
+	background:url(../Images/SC3130501/tsl05-02Image05BodyBG02.png) 0 0 no-repeat;
+	width:1095px;
+	height:595px;
+}
+
+.tsl05-02_Title01,
+.tsl05-02_Title02{
+	position:absolute;
+	left:50px; top:23px;
+	display:block;
+	width:995px;
+	height:80px;
+	font-size:54px;
+	color:#FFF;
+	line-height:77px;
+	text-shadow:#273154 0 0 10px;
+}
+.tsl05-02_Title02{
+	width:537px;
+}
+.tsl05-02_Img01{
+	position:absolute;
+	left:50px; top:140px;
+	width:995px;
+	height:157px;
+	overflow:visible;
+}
+
+.tsl05-02_Img01 .Text01,
+.tsl05-02_Img01 .Text02{
+	display:block;
+	width:175px; height:110px;
+	font-size:55px; line-height:110px;
+	color:#FFF;
+	text-shadow: 0px -1px 0px #000;
+}
+.tsl05-02_Img01 .NumbersBox,
+.tsl05-02_Img02 .NumbersBox,
+.tsl05-02_Img03 .NumbersBox,
+.tsl05-02_Img04 .NumbersBox{
+	display:block;
+	position:absolute;
+	background: -webkit-gradient(linear, left top, left bottom,
+		from(#f2eb73),
+		color-stop(0.5, #f2bb3c),
+		color-stop(0.85, #f5a737),
+		to(#f7b65b));
+	background-image: linear-gradient(to bottom,
+			#f2eb73 0%,
+			#f2bb3c 50%,
+			#f5a737 85%,
+			#f7b65b 100%);
+	border-radius:5px;
+	color:#1c2c71; font-size:67px;
+	line-height:110px;
+	text-shadow:0 -1px 0 #000;
+	text-align:center;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5) inset,-5px -5px 5px 0px rgba(255,255,255,0.3) inset;
+	z-index:10;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space: nowrap; 
+}
+
+.tsl05-02_Img01 .NumbersBoxSize01{width:306px; height:110px;}
+.tsl05-02_Img02 .NumbersBoxSize01{width:506px; height:110px;}
+.tsl05-02_Img03 .NumbersBoxSize01{width:474px; height:110px;}
+.tsl05-02_Img04 .NumbersBoxSize01{width:153px; height:70px; line-height:70px;}
+.tsl05-02_Img01 .NumbersBoxP01{ top:0; left:190px;}
+.tsl05-02_Img02 .NumbersBoxP01{ top:0;  left:452px;}
+.tsl05-02_Img03 .NumbersBoxP01{ top:0; left:2px;}
+.tsl05-02_Img04 .NumbersBoxP01{ top:121px; left:52px;
+	background: -webkit-gradient(linear, left top, left bottom,
+		from(#4c90ee),
+		to(#6c9eeb));
+	background-image: linear-gradient(to bottom,
+			#4c90ee 0%,
+			#6c9eeb 100%);
+}
+
+.tsl05-02_Img01 .NumbersBoxBG01,
+.tsl05-02_Img02 .NumbersBoxBG01,
+.tsl05-02_Img03 .NumbersBoxBG01,
+.tsl05-02_Img04 .NumbersBoxBG01{
+	display:block;
+	position:absolute;
+	width:310px; height:114px;
+	top:-2px; left:188px;
+	border-radius:6px;
+	background: -webkit-gradient(linear, left top, left bottom,
+		from(#fff),
+		to(#4c8ac9));
+	background-image: linear-gradient(to bottom,
+			#fff 0%,
+			#4c8ac9 100%);
+}
+.tsl05-02_Img04 .NumbersBoxBG01{height:102px;}
+
+.tsl05-02_Img01 .Text02{
+	width:400px; height:110px;
+	position:absolute;
+	top:0;	left:525px;
+	display:block;
+	
+}
+
+
+.borderBottomLine{
+	display:block;
+	position:absolute;
+	width:100%; height:2px;
+	bottom:0; left:0;
+	background:#fff;
+	box-shadow:rgba(0,0,0,0.6) 1px 1px 0;
+	line-height:2px;
+}
+	
+
+
+
+.tsl05-02_Img02{
+	position:absolute;
+	left:50px; top:294px;
+	width:995px;
+	height:155px;
+}
+.tsl05-02_Img02 .NumbersBoxBG01{top:-2px; left:450px; width:510px;}
+
+.tsl05-02_Img02 .Text02{
+	display:block;
+	width:450px; height:110px;
+	font-size:55px; line-height:110px;
+	color:#FFF;
+	text-shadow: 0px -1px 0px #000;
+	position:absolute;
+	top:0;	left:0px;
+	display:block;
+	text-align:center;
+}
+
+
+
+
+.tsl05-02_Img03{
+	position:absolute;
+	left:50px; top:448px;
+	width:995px;
+	height:190px;
+}
+.tsl05-02_Img03 .NumbersBoxBG01{top:-2px; left:0px; width:478px;}
+
+.tsl05-02_Img03 .Text02{
+	display:block;
+	width:500px; height:110px;
+	font-size:55px; line-height:110px;
+	color:#FFF;
+	text-shadow: 0px -1px 0px #000;
+	position:absolute;
+	top:0;	left:518px;
+	display:block;
+}
+
+
+
+
+.tsl05-02_Img04{
+	position:absolute;
+	left:0px; top:629px;
+	width:1095px;	height:228px;
+	background:url(../Images/SC3130501/tsl05-02_img04.png) 0 0;
+}
+.tsl05-02_Img04 .Text01,
+.tsl05-02_Img04 .Text02,
+.tsl05-02_Img04 .Text03{
+	display:block;
+	width:400px; height:98px;
+	font-size:43px; line-height:98px;
+	letter-spacing:3px;
+	color:#FFF;
+	text-shadow: 0px -1px 0px #000;
+	position:absolute;
+}
+.tsl05-02_Img04 .Text01{ left:50px; top:18px; width:995px; height:76px; line-height:73px; font-size:44px;}
+.tsl05-02_Img04 .Text02{ left:50px; top:107px; visibility:hidden}
+.tsl05-02_Img04 .Text03{ left:220px; top:107px; width:671px;}
+.tsl05-02_Img04 .NumbersBoxBG01{ width:157px; height:74px; top:119px; left:50px;}
+
+
+
+
+
+
+
+
+
+.tsl05-02_Img05{
+	position:absolute;
+	right:0px; top:0px;
+	width:637px;
+	height:857px;
+	background:url(../Images/SC3130501/tsl05-02Image05BodyBG.png) 0 0 no-repeat;
+}
+
+
+.tsl05-02_Img05 h3{
+	background:url(../Images/SC3130501/tsl05-02Image05HeadBG.png) 0 0 no-repeat;
+	display:block;
+	height:88px;
+	text-align:center;
+	line-height:88px;
+	font-size:54px;
+	color:#FFFFFF;
+	/*
+	text-shadow:0 0 10px #2c69b3,0 0 10px #2c69b3;
+	*/
+}
+
+.tsl05-02_Img05 .BodyData{
+	display:block;
+	height:780px;
+	position:relative;
+	top:110px;
+	
+}
+.tsl05-02_Img05 .BodyData .myTitle01,
+.tsl05-02_Img05 .BodyData .myTitle02{
+	display:block;
+	position:absolute;
+	height:50px; width:137px;
+	top:25px; left:50px;
+	text-align:center;
+	font-size:40px;
+	color:#FFF;
+}
+.tsl05-02_Img05 .BodyData .myTitle02{
+	width:400px; left:188px;
+}
+
+.tsl05-02_Img05 .BodyData .myListe{
+	display:block;
+	position:absolute;
+	top:89px; left:50px;
+}
+.tsl05-02_Img05 .BodyData .myListe dd{
+	display:block;
+	background:url(../Images/SC3130501/tsl05-02Image05TextPanelBG.png) 0 0 no-repeat;
+	width:560px; height:108px;
+}
+
+
+.tsl05-02_Img05 .BodyData .myListe .NumberT,
+.tsl05-02_Img05 .BodyData .myListe .Location{
+	font-size:50px; color:#f4e126;
+	line-height:86px;
+	display:block;
+	width:137px;
+	text-align:center;
+	float:left;
+	text-shadow:-1px -1px 4px #2133e2;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space: nowrap; 
+}
+.tsl05-02_Img05 .BodyData .myListe .Location{
+	width:370px; text-align:left;
+	padding-left:30px;
+	float:left;
+}
+
+
+
+
+.tsl05Footer{
+	width:100%;
+	height:56px;
+	background:url(../Images/SC3130501/tsl05-02_footerbg.png) 0 0;
+	position:absolute;
+	bottom:0; left:0;
+}
+
+.tsl05Footer h5{
+	display:block;
+	text-align:right;
+	margin-right:20px;
+	font-size:25px; line-height:56px;
+	height:56px; color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+

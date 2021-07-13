@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * SC3100304_02.css
+ * ──────────────────────────────────
+ * 機能： ウェルカムボード
+ * 補足： 来店通知画面
+ * 作成： 2013/03/13 TMEJ t.shimamura
+ * 更新： 2013/04/16 TMEJ m.asano     ウェルカムボード仕様変更対応 $01
+ * ──────────────────────────────────
+ */
+
+
+/* 来店通知画面
+--------------------------------------*/
+#ButtonBoxArea{
+    width: 192px;
+    height: 28px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3F3F3F), color-stop(0.50, #3F3F3F), color-stop(0.50, black), to(black));
+    box-shadow: inset 1px 1px 0px #555;
+    border: black 1px solid;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.BgImageR{
+	display:block;
+	background:url(../Images/SC3100304/bordBG01.png) 0 0 no-repeat;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1920px;
+	overflow:hidden;
+	/* $01 start ウェルカムボード仕様変更対応 */
+	height:100%;
+	/* $01 end ウェルカムボード仕様変更対応 */
+}
+
+#WelcomeMain .footer{
+	display:block;
+	height:80px;
+	width:100%;
+	position:absolute;
+	top:1000px;
+}
+#WelcomeMain .footer .Titles{
+	display:block;
+	position:absolute;
+	width:545px; height:80px;
+	right:0;
+}
+#WelcomeMain .footer .ShopName{
+	width:1000px; height:80px;
+	font-size:46px;
+	line-height:80px;
+	position:absolute;
+	left:40px; color:#000;
+}
+#WelcomeMain h1.welcomeTitle{
+	display:block;	
+	width:500px; height:168px;
+	
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* 顧客名称
+-----------------------*/
+#WelcomeMain ul.WelcomeNamesData{
+	display:block;
+	/*width:1080px; height:1000px;
+	top:0px; left:426px;
+	position:absolute;*/	
+}
+
+#WelcomeMain ul.WelcomeNamesData li{
+	display:block;
+	/* $01 start ウェルカムボード仕様変更対応 */
+	width:1324px; 
+	left: 2px;
+	/* $01 end ウェルカムボード仕様変更対応 */
+	height:220px;
+	position:relative;
+}
+
+#WelcomeMain ul.WelcomeNamesData li .userName{
+	display:block;
+	height:160px; 
+	line-height:160px;
+	position:absolute;
+	top:29px; 
+	left:41px;
+	color:#000000;
+	/* $01 start ウェルカムボード仕様変更対応 */
+	font-size:122px;
+	/* $01 end ウェルカムボード仕様変更対応 */
+	text-align:center;
+}
+
+#WelcomeMain ul.WelcomeNamesData li .userTitle{
+	display:block;
+	width:250px; height:78px; line-height:78px;
+	position:absolute;
+	top:79px; left:667px;
+	color:#000000;
+	font-size:72px;
+	text-align:left;
+}
+
+
+#WelcomeMain ul.WelcomeNamesData li:nth-child(1){background:url(../Images/SC3100304/TextWindow01.png) 0 0 no-repeat;} 
+#WelcomeMain ul.WelcomeNamesData li:nth-child(2){background:url(../Images/SC3100304/TextWindow01.png) 0 0 no-repeat;}
+#WelcomeMain ul.WelcomeNamesData li:nth-child(3){background:url(../Images/SC3100304/TextWindow01.png) 0 0 no-repeat;} 
+
+#WelcomeMain .WelcomeMess1{
+	display:block;
+	width:1920px;	height:84px;
+	font-size:80px; line-height:84px;
+	text-align:center;
+	position:relative;
+	left:0px;
+	color:#FFF;
+	letter-spacing:10px;
+}
+
+#WelcomeMain .AddRegion
+{
+    display:block;
+    top:0px;
+    width:1920px;
+    height:1000px;
+    position:absolute;
+}
+
+
+#WelcomeMain .topType01{ margin-top:0;}
+#WelcomeMain .topType02{ margin-top:290px;}
+#WelcomeMain .topType03{ top:866px;}
+#WelcomeMain .topType04{ top:548px;}
+
+
+.DummyCellMiddle
+{
+    height:90px;
+    width:100%;
+}
+
+
+/* 文字切り用 */
+.ellipsis
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* レイアウト調整用 */
+.dummy
+{
+    width:100%;
+    height:90px;
+}

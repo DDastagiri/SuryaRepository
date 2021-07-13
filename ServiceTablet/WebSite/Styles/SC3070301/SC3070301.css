@@ -1,0 +1,733 @@
+﻿/* CSS Document */
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  契約書印刷
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━*/
+/*SC3070301.css                                                             */
+/*─────────────────────────────────────*/
+/*機能： 契約書印刷                                                         */
+/*補足：                                                                    */
+/*作成： 2011/12/01 TCS 相田                                                */
+/*更新： 2012/02/03 TCS 藤井  【SALES_1A】号口(課題No.46)対応               */
+/*─────────────────────────────────────*/
+
+/*　
+-------------------------------------------------------------------------------------------*/
+/*コンテンツフレームの内枠 */
+
+
+
+
+@media print
+{
+    #contractHcv50PaperFrame .contractHcv50FootButtoms .buttonsNone
+    {
+        visibility:hidden 
+    }
+    
+    #contractHcv50PaperFrame .tcvNcvPointBigWindowBackFrameClose .buttonNone
+    {
+        visibility:hidden
+    }
+}
+@media screen,print 
+{
+    
+.divCut330  {
+
+    text-align:left;
+    width:330px; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+}
+
+.divCut150  {
+
+    text-align:left;
+    width:150px; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+
+.divCut380  {
+
+    text-align:left;
+    width:370px; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+    
+.divCut300  {
+
+    text-align:left;
+    width:300px; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+
+.divCut98
+{
+    width:98px; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:left;
+}
+
+.divCut50
+{
+    width:50px; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:left;
+}
+
+    
+    
+    body
+    {
+        margin: 0px; padding: 0px;
+        background:#FFFFFF;
+        overflow-y: hidden;
+        position:relative;
+    }
+
+/*ADD*/
+div#mainPrint{
+	background:#FFFFFF;
+	height:auto;
+	width:1024px;
+	position:absolute;
+	top:0px; left: 0px;
+	box-sizing:border-box;
+	overflow-y:scroll;
+	overflow:scroll:touch;
+}
+div#main.WhiteBackground{
+	background:#FFFFFF;
+}
+#contractHcv50PaperFrame {
+	position:relative;
+	width:980px;
+	margin:20px auto;
+	color:Black;
+    height:4400px;
+}
+
+
+#contractHcv50PaperFrame .contractHcv50FootButtoms
+{
+	width:180px;
+	height:35px;
+	margin:0 auto;
+	text-align:left;
+}
+
+
+#contractHcv50PaperFrame .contractHcv50Underline{
+	text-decoration: contractHcv50Underline;
+	text-align:right;
+}
+
+
+
+/* 角○入力風 */
+#contractHcv50PaperFrame .contractHcv50InputFrame {
+	border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	width:110px;
+	text-align:right ;
+}
+
+/* 閉じるボタン */
+#contractHcv50PaperFrame .closeButtonImage {
+
+	background:url(../Images/SC3070301/Tcv_BigWindown_Close.png) right center no-repeat;
+	width:30px;
+	height:38px;
+	border:0px;
+}
+
+
+/* 契約書タイトル */
+#contractHcv50PaperFrame .contractHcv50PaperTitle {
+	width:960px;
+	height:50px;
+	margin:5px auto;
+	position:relative;
+}
+
+.tenpoClass {
+	position:absolute;
+	width:960px;
+	text-align:left;
+	border-bottom:2px solid ;
+	font-size:13px;
+}
+
+
+#contractHcv50PaperFrame .contractHcv50PaperTitle .contractHcv50TitleTxt{
+	position:absolute;
+	width:300px;
+	top:35px;
+	left:330px;
+	font-size:30px;
+	text-align:center;
+	font-weight: bold;
+	overflow:hidden;
+    white-space:nowrap;
+}
+
+#contractHcv50PaperFrame .contractHcv50PaperTitle .contractHcv50NoArea {
+	position:absolute;
+	width:250px;
+	top:30px;
+	right:0px;
+	text-align:left;
+	border-bottom:1px solid;
+	font-size:16px;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody {
+	width:960px;
+	margin:5px auto 40px;
+	font-size:16px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody a{
+	color:Black ;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressArea {
+	width:960px;
+	text-align:left;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressArea th{
+	font-weight: normal;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressTitle01 {
+	width:85px;
+	padding:1px 2px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressColon01 {
+	width:6px;
+	padding:1px 0;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressContents01  {
+	width:300px;
+	padding:2px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressTitle02 {
+	width:160px;
+	padding:2px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressContents02  {
+	width:310px;
+	padding:2px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressContents02 .contractHcv50AddressInputFrameArea02 {
+	width:308px;
+	border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding:3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressTitle03 {
+	width:74px;
+	padding:2px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressContents03  {
+	width:112px;
+	padding:2px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressContents03 .contractHcv50AddressInputFrameArea03 {
+	width:111px;
+	border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding:3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressContents04  {
+	width:112px;
+	padding:2px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50AddressContents04 .contractHcv50AddressInputFrameArea04 {
+	width:111px;
+	border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding:3px;
+}
+
+/* 第一条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 {
+	margin:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 h3{
+	padding:0 0px;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 table {
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: Black;
+	border-left-color: Black;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 th,
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 td{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: Black;
+	border-bottom-color: Black;
+	font-weight: normal;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 .contractHcv50Condition1Title01 {
+	padding:4px 3px;
+	border-top-width: 0px;
+	border-top-style: solid;
+	border-top-color: black;
+	background-color: white;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 .contractHcv50Condition1Contents01  {
+	padding:0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 .contractHcv50Condition1Title02 {
+	width:58px;
+	padding:4px 3px;
+	border-top-width: 0px;
+	border-top-style: solid;
+	border-top-color: Black;
+	background-color: white;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 .contractHcv50Condition1Contents02  {
+	width:80px;
+	padding:4px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 .contractHcv50Condition1Contents03  {
+	padding:4px 3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 .contractHcv50Condition1Contents01 .contractHcv50Condition1InputFrameArea {
+
+	border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding:3px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition1 .contractHcv50Condition1Contents03 .contractHcv50Condition3InputFrameArea {
+
+	border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding:3px;
+}
+
+/* 第二条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 {
+	margin:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 h3{
+	padding:0 0px;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 table {
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: black;
+	border-left-color: black;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 th,
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 td{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: black;
+	border-bottom-color: black;
+	font-weight: normal;
+	text-align: left;
+	overflow:hidden;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 .contractHcv50Condition2Title01 {
+	padding:4px 10px;
+	border-top-width: 0px;
+	border-top-style: solid;
+	border-top-color: black;
+	background-color: white;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 .contractHcv50Condition2Title02 {
+	width:94px;
+	padding:4px 3px 4px 10px;
+	border-top-width: 0px;
+	border-top-style: solid;
+	border-top-color: #FFF;
+	background-color: white;
+}
+
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 .contractHcv50Condition2Contents01  {
+	width:308px;
+	text-align: right;
+	padding:0 40 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 .contractHcv50Condition2Contents02  {
+	width:169px;
+	text-align: right;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 .contractHcv50Condition2Contents03  {
+	width:338px;
+
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 .contractHcv50Condition2Contents02 .contractHcv50Condition2InputFrameArea {
+	text-align:right;
+	border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	float:left;
+	margin-right:5px;
+	
+
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition2 .contractHcv50Condition2Contents02 .contractHcv50Condition2InputFrameAreaL {
+	float:left;
+	text-align:right;
+}
+#contractHcv50PaperFrame .border_left {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+}
+
+/* 第三条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition3 {
+	margin:10px 0 5px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition3 .Padding_Right20{
+	padding:0 20px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition3 h3{
+	padding:0 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition3 .contractHcv50Condition3Check_Box{
+	width:20px;
+	float:left;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition3 .contractHcv50Condition3Txt_Box{
+	width:950px;
+	float:left;
+}
+
+
+
+/* 第四条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition4 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition4 h3{
+	padding:0 0 0px;
+}
+
+
+/* 第五条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition5 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition5 h3{
+	padding:0 0 0px;
+}
+
+/* 第六条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition6 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition6 h3{
+	padding:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition6 li{
+	list-style-type: decimal;
+	margin:0 0 0 20px;
+}
+
+/* 第七条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition7 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition7 h3{
+	padding:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition7 li{
+	list-style-type: decimal;
+	margin:0 0 0 20px;
+}
+
+
+/* 第八条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition8 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition8 h3{
+	padding:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition8 li{
+	list-style-type: decimal;
+	margin:0 0 0 20px;
+}
+
+
+/* 第九条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition9 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition9 h3{
+	padding:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition9 li{
+	list-style-type: decimal;
+	margin:0 0 0 20px;
+}
+
+
+/* 第十条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition10 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition10 h3{
+	padding:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition10 li{
+	list-style-type: decimal;
+	margin:0 0 0 20px;
+}
+
+
+/* 第十一条 */
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition11 {
+	margin:0px 0px 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition11 h3{
+	padding:0 0 0px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition11 li{
+	list-style-type: decimal;
+	margin:0 0 0 20px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody #contractHcv50Condition11 .Txt_Area{
+	width:880px;
+	border-bottom:2px solid;
+	border-top:2px solid;
+	height:40px;
+}
+
+
+
+/** 下部 **/
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea {
+	width:920px;
+	margin:10px auto 70px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcFooterTxt{
+	font-weight: bold;
+	
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcv50NameArea {
+	margin:50px 0 0;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcv50NameArea .contractHcv50LeftArea {
+	width:400px;
+	float:left;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcv50NameArea .contractHcv50RightArea {
+	width:400px;
+	float:left;
+	margin-left:60px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcv50NameArea .contractHcv50NameAreaTitle01 {
+	width:150px;
+	height:40px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcv50NameArea .contractHcv50NameAreaColon01 {
+	width:10px;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcv50NameArea .contractHcv50NameAreaName01 {
+	width:280px;
+	height:40px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: Black ;
+}
+#contractHcv50PaperFrame #contractHcv50PaperFrameBody .contractHcv50FooterArea .contractHcv50NameArea .contractHcv50NameAreaDay {
+	padding:10px 0 0;
+}
+
+#contractHcv50PaperFrame .tcvNcvPointBigWindowBackFrameClose {
+	display:block;
+	position:relative;
+	width:30px;
+	height:30px;
+    top:10px;
+    left:10px;
+    z-index:2300;
+}
+
+
+#contractHcv50PaperFrame .contractHcv50FootButtoms .buttonGlay1{
+	display:block;
+	text-align:center;
+	color:#515459;
+	background:-webkit-gradient(linear, left top, left bottom, from(#f2f2f4),to(#bbbfc8));
+	padding:5px 0;
+	float:left;
+
+}
+
+#contractHcv50PaperFrame .contractHcv50FootButtoms .buttonsNoneScreen
+{
+   visibility:hidden
+}
+    
+#contractHcv50PaperFrame .contractHcv50FootButtoms .buttonGlay2
+{
+    display:block;
+	text-align:center;
+	color:#515459;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f4),
+						to(#bbbfc8));
+	padding:5px 0;
+	float:right;
+
+}
+
+#contractHcv50PaperFrame .contractHcv50FootButtoms .buttonGlay3{
+	display:block;
+	text-align:center;
+	color:#FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#adb2b8),
+						to(#676b74));
+
+	padding:5px 0;
+	float:left;
+	
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//  N-SC50 01
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+#Ncv5001Main{
+	position:relative;
+}
+
+.stringCut
+{
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.cutChara{
+  overflow:hidden;
+  white-space:nowrap;
+  width:80px;
+}
+
+.cutCharaTd{
+  overflow:hidden;
+  white-space:nowrap;
+  width:94px;
+  text-align:left;
+}
+
+.cutChara74{
+  overflow:hidden;
+  white-space:nowrap;
+  width:83px;
+  text-align:left;
+}
+
+.cutChara157{
+  overflow:hidden;
+  white-space:nowrap;
+  width:157px;
+  text-align:left;
+}
+
+.cutChara55{
+  overflow:hidden;
+  white-space:nowrap;
+  width:55px;
+}
+
+.pageNumClass {
+	width:960px;
+	text-align:center;
+	height:90px
+}
+
+.pageNum2Class {
+	width:960px;
+	text-align:center;
+        height:150px
+
+}
+
+.underlineClass
+{
+    border-bottom :1px solid;
+}
+
+/* 2012/02/03 TCS 藤井 【SALES_1A】号口(課題No.46)対応 ADD START */
+/*　サーバー処理中のオーバーレイ
+-------------------------------------------------------------------------------------------*/
+#serverProcessOverlayBlack {
+    -webkit-transition: opacity 300ms ease-in-out 0;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:#000;
+	z-index:100;
+	width:1024px;
+	height:748px;
+	z-index:4;
+	display:none;
+	opacity:0;
+}
+#serverProcessOverlayBlack.open { opacity:0.6; }
+
+/*　処理中
+ -------------------------------------------------------------------------------------------*/
+#serverProcessIcon {
+	position:absolute;
+	background:url(../Images/SC3010201/animeicn-1.png) no-repeat;
+	animation: LoadingAnimation 1.0s infinite linear;
+	display:none;
+	top:324px;
+	left:480px;
+	width:38px;
+	height:38px;
+	z-index:100;
+}
+#serverProcessIcon.show { display: block; }
+@keyframes LoadingAnimation {
+	0%{	transform:rotate(0deg);}
+	100%{transform:rotate(340deg);}
+}
+/* 2012/02/03 TCS 藤井 【SALES_1A】号口(課題No.46)対応 ADD END */
+
+}

@@ -1,0 +1,472 @@
+		  <div class="mainDataBox">
+			<!-- ここから内部 -->
+			<div class="mainblockDialogHead">
+			  <!--↓登録情報-->
+			  <p class="mainblockDialogHeadLeft1-1"><span><img src="../Styles/Images/SC3180202/ssa16LEXUSLOGO.png" width="85" height="80" style="margin-top:-3px;"></span></p>
+              <h2 class="HeadTitle" id="_HD_TITLE"></h2>
+              <div class="HeadLogo"><img src="../Styles/Images/SC3180202/logo_IS.png"></div>
+              <div class="HeadInBox1"><span id="_HD_REGNO_C"></span> <span id="_HD_REGNO_V"></span><br>
+              <span id="_HD_RONO_C"></span> <span id="_HD_RONO_V"></span></div>
+              <div class="HeadInBox2"><span id="_HD_CUST_C"></span> <span id="_HD_CUST_V"></span><br>
+              <span id="_HD_SA_C"></span> <span id="_HD_SA_V"></span></div>
+              <div class="HeadInBox3"><span id="_HD_IDATE_C"></span> <span id="_HD_IDATE_V"></span><br>
+              <span id="_HD_DDATE_C"></span> <span id="_HD_DDATE_V"></span></div>
+              <div class="HeadInBox4"><span id="_HD_MILE_C"></span> <span id="_HD_MILE_V"></span><br>
+              <span class="Icn2" id="_HD_CONT_C"><span id="_HD_CONT_V"></span></span></div>
+			</div>
+            
+	  	<div class="ssa04CassetteList">
+           	  <ul>
+              
+                	<li class="Cassette8 Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi38 HON">
+                	    <p class="TitleText2">Engine & Battery</p>
+                    </div>
+                    <div class="Column1">
+                      <div id="_SILABEL_1011" class="ColumnText01"></div>
+                      <p id="_SIVAL_1011" class="Square0"> </p>
+                    </div>
+                    <div class="Column2">
+                      <div id="_SILABEL_1051" class="ColumnText01"></div>
+                      <p id="_SIVAL_1051" class="Square0"> </p>
+                    </div>
+                    <div class="Column3">
+                      <div id="_SILABEL_1061" class="ColumnText01"></div>
+                      <p id="_SIVAL_1061" class="Square0"> </p>
+                    </div>
+                    <div class="Column4">
+                      <div id="_SILABEL_1041" class="ColumnText01a"></div>
+                      <div id="_SITEXT_1041" class="ColumnText02a"></div>
+                      <p id="_SIVAL_1041" class="Square0"> </p>
+                    </div>
+                    <div class="Column5">
+                      <div id="_SILABEL_9101" class="ColumnText01"></div>
+                      <p id="_SIVAL_9101" class="Square0"> </p>
+                    </div>
+                    <div class="Column6">
+                      <div id="_SILABEL_1031" class="ColumnText01"></div>
+                      <p id="_SIVAL_1031" class="Square0"> </p>
+                    </div>
+                    <div class="Column7">
+                      <div id="_SILABEL_1091" class="ColumnText01"></div>
+                      <p id="_SIVAL_1091" class="Square0"> </p>
+                    </div>
+                    <div class="Column8">
+                      <div id="_SILABEL_1071" class="ColumnText01"></div>
+                      <p id="_SIVAL_1071" class="Square0"> </p>
+                    </div>
+                  </li>
+                    
+                    
+                	<li class="Cassette5 Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi31 HON">
+                	    <p class="TitleText1">A/C System</p>
+                      </div>
+                      <div class="Column1">
+                        <div id="_SILABEL_2021" class="ColumnText01"></div>
+                        <p id="_SIVAL_2021" class="Square0"> </p>
+                      </div>
+                      <div class="Column2">
+                        <div id="_SILABEL_2011" class="ColumnText01"></div>
+                        <p id="_SIVAL_2011" class="Square0"> </p>
+                      </div>
+                      <div class="Column3">
+                        <div id="_SILABEL_2041" class="ColumnText01"></div>
+                        <p id="_SIVAL_2041" class="Square0"> </p>
+                      </div>
+                      <div class="Column4">
+                        <div id="_SILABEL_2031" class="ColumnText01"></div>
+                        <p id="_SIVAL_2031" class="Square0"> </p>
+                      </div>
+                      <div class="Column5">
+                        <div id="_SILABEL_2051" class="ColumnText01"></div>
+                        <p id="_SIVAL_2051" class="Square0"> </p>
+                      </div>
+               		</li>
+                  
+                  
+                	<li class="Cassette6 Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi63 HON">
+                	    <p class="TitleText1">Body</p>
+                      </div>
+                      <div class="Column1">
+                        <div id="_SILABEL_9081" class="ColumnText01"></div>
+                        <p id="_SIVAL_9081" class="Square0"> </p>
+                      </div>
+                      <div class="Column2">
+                        <div id="_SILABEL_9051" class="ColumnText01"></div>
+                        <p id="_SIVAL_9051" class="Square0"> </p>
+                      </div>
+                      <div class="Column3">
+                        <div id="_SILABEL_9041" class="ColumnText01"></div>
+                        <p id="_SIVAL_9041" class="Square0"> </p>
+                      </div>
+                      <div class="Column4">
+                        <div id="_SILABEL_9071" class="ColumnText01"></div>
+                        <p id="_SIVAL_9071" class="Square0"> </p>
+                      </div>
+                      <div class="Column5">
+                        <div id="_SILABEL_9061" class="ColumnText01"></div>
+                        <p id="_SIVAL_9061" class="Square0"> </p>
+                      </div>
+                      <div class="Column6">
+                        <div id="_SILABEL_5011" class="ColumnText01"></div>
+                        <p id="_SIVAL_5011" class="Square0"> </p>
+                      </div>
+               		</li>
+                  
+                  
+                  
+                	<li class="Cassette9a Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi39 HON">
+                	    <p class="TitleText1">Electrical System</p>
+                      </div>
+                      <div class="Column1">
+                        <div id="_SILABEL_3071" class="ColumnText01"></div>
+                        <p id="_SIVAL_3071" class="Square0"> </p>
+                      </div>
+                      <div class="Column2">
+                        <div id="_SILABEL_3041" class="ColumnText01"></div>
+                        <p id="_SIVAL_3041" class="Square0"> </p>
+                      </div>
+                      <div class="Column3">
+                        <div id="_SILABEL_3012" class="ColumnText01"></div>
+                        <p id="_SIVAL_3012" class="Square0"> </p>
+                      </div>
+                      <div class="Column4">
+                        <div id="_SILABEL_3011" class="ColumnText01"></div>
+                        <p id="_SIVAL_3011" class="Square0"> </p>
+                      </div>
+                      <div class="Column5">
+                        <div id="_SILABEL_3061" class="ColumnText01"></div>
+                        <p id="_SIVAL_3061" class="Square0"> </p>
+                      </div>
+                      <div class="Column6">
+                        <div id="_SILABEL_3101" class="ColumnText01"></div>
+                        <p id="_SIVAL_3101" class="Square0"> </p>
+                      </div>
+                      <div class="Column7">
+                        <div id="_SILABEL_3121" class="ColumnText01"></div>
+                        <p id="_SIVAL_3121" class="Square0"> </p>
+                      </div>
+                      <div class="Column8">
+                        <div id="_SILABEL_3031" class="ColumnText01"></div>
+                        <p id="_SIVAL_3031" class="Square0"> </p>
+                      </div>
+                      <div class="Column9">
+                        <div id="_SILABEL_3111" class="ColumnText01"></div>
+                        <p id="_SIVAL_3111" class="Square0"> </p>
+                      </div>
+               		</li>
+                  
+                  
+                	<li class="Cassette12b Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi56 HON">
+                	    <p class="TitleText1">Drive Train</p>
+                      </div>
+                      <div class="Column1">
+                        <div id="_SILABEL_4031" class="ColumnText01"></div>
+                        <p id="_SIVAL_4031" class="Square0"> </p>
+                      </div>
+                      <div class="Column2">
+                        <div id="_SILABEL_4021" class="ColumnText01"></div>
+                        <p id="_SIVAL_4021" class="Square0"> </p>
+                      </div>
+                      <div class="Column3">
+                        <div id="_SILABEL_4051" class="ColumnText01"></div>
+                        <p id="_SIVAL_4051" class="Square0"> </p>
+                      </div>
+                      <div class="Column4">
+                        <div id="_SILABEL_4041" class="ColumnText01"></div>
+                        <p id="_SIVAL_4041" class="Square0"> </p>
+                      </div>
+                      <div class="Column5">
+                        <div id="_SILABEL_4061" class="ColumnText02"></div>
+                        <p id="_SIVAL_4061" class="Square0"> </p>
+                      </div>
+                      <div class="Column5f">
+                        <div id="_SILABEL_4071" class="ColumnText02"></div>
+                        <p id="_SIVAL_4071" class="Square0"> </p>
+                      </div>
+                      <div class="Column6f">
+                        <div id="_SILABEL_4081" class="ColumnText02"></div>
+                        <p id="_SIVAL_4081" class="Square0"> </p>
+                      </div>
+               		</li>
+                  
+                	<li class="CassetteFull01 Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi03 HON">
+                	    <p class="TitleText1">Steering System</p>
+                      </div>
+                      <div class="Column1">
+                        <div id="_SILABEL_6041" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6041" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6041" class="Square0"> </p>
+                      </div>
+                      <div class="Column2d">
+                        <div id="_SILABEL_6051" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6051" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6051" class="Square0"> </p>
+                      </div>
+                      <div class="Column3d">
+                        <div id="_SILABEL_6061" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6061" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6061" class="Square0"> </p>
+                      </div>
+                      <div class="Column4d">
+                        <div id="_SILABEL_6062" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6062" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6062" class="Square0"> </p>
+                      </div>
+                      <div class="Column5d">
+                        <div id="_SILABEL_6071" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6071" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6071" class="Square0"> </p>
+                      </div>
+                      <div class="Column6d">
+                        <div id="_SILABEL_6072" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6072" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6072" class="Square0"> </p>
+                      </div>
+                      <div class="Column7d">
+                        <div id="_SILABEL_6081" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6081" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6081" class="Square0"> </p>
+                      </div>
+                      <div class="Column8d">
+                        <div id="_SILABEL_6082" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6082" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6082" class="Square0"> </p>
+                      </div>
+                      <div class="Column9d">
+                        <div id="_SILABEL_6091" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6091" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6091" class="Square0"> </p>
+                      </div>
+                      <div class="Column10d">
+                        <div id="_SILABEL_6092" class="ColumnText01a"></div>
+                        <div id="_SITEXT_6092" class="ColumnText02a"></div>
+                        <p id="_SIVAL_6092" class="Square0"> </p>
+                      </div>
+                      <div class="Column11d">
+                        <div id="_SILABEL_6011" class="ColumnText01a"></div>
+                        <p id="_SIVAL_6011" class="Square0"> </p>
+                      </div>
+                      <div class="Column12d">
+                        <div id="_SILABEL_6021" class="ColumnText01a"></div>
+                        <p id="_SIVAL_6021" class="Square0"> </p>
+                      </div>
+                      <div class="Column13d">
+                        <div id="_SILABEL_6031" class="ColumnText01"></div>
+                        <p id="_SIVAL_6031" class="Square0"> </p>
+                      </div>
+               		</li>
+                  
+                	<li class="CassetteFull01 Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi19 HON">
+                	    <p class="TitleText1">Braking System</p>
+                    </div>
+                    <div class="Column1">
+                      <div id="_SILABEL_7011" class="ColumnText01"></div>
+                      <p id="_SIVAL_7011" class="Square0"> </p>
+                    </div>
+                    <div class="Column2">
+                      <div id="_SILABEL_7081" class="ColumnText01"></div>
+                      <p id="_SIVAL_7081" class="Square0"> </p>
+                    </div>
+                    <div class="Column3">
+                      <div id="_SILABEL_7071" class="ColumnText01"></div>
+                      <p id="_SIVAL_7071" class="Square0"> </p>
+                    </div>
+                    <div class="Column4">
+                      <div id="_SILABEL_7021" class="ColumnText01"></div>
+                      <p id="_SIVAL_7021" class="Square0"> </p>
+                    </div>
+                      <div class="Column5g">
+                        <div id="_SILABEL_7051" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7051" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7051" class="Square0"> </p>
+                      </div>
+                      <div class="Column6g">
+                        <div id="_SILABEL_7052" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7052" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7052" class="Square0"> </p>
+                      </div>
+                      <div class="Column7g">
+                        <div id="_SILABEL_7061" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7061" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7061" class="Square0"> </p>
+                      </div>
+                      <div class="Column8g">
+                        <div id="_SILABEL_7062" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7062" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7062" class="Square0"> </p>
+                      </div>
+                      <div class="Column9g">
+                        <div id="_SILABEL_7031" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7031" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7031" class="Square0"> </p>
+                      </div>
+                      <div class="Column10g">
+                        <div id="_SILABEL_7032" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7032" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7032" class="Square0"> </p>
+                      </div>
+                      <div class="Column11g">
+                        <div id="_SILABEL_7041" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7041" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7041" class="Square0"> </p>
+                      </div>
+                      <div class="Column12g">
+                        <div id="_SILABEL_7042" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7042" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7042" class="Square0"> </p>
+                      </div>
+                      <div class="Column13g">
+                        <div id="_SILABEL_7091" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7091" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7091" class="Square0"> </p>
+                      </div>
+                      <div class="Column14g">
+                        <div id="_SILABEL_7092" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7092" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7092" class="Square0"> </p>
+                      </div>
+                      <div class="Column15g">
+                        <div id="_SILABEL_7101" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7101" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7101" class="Square0"> </p>
+                      </div>
+                      <div class="Column16g">
+                        <div id="_SILABEL_7102" class="ColumnText01a"></div>
+                        <div id="_SITEXT_7102" class="ColumnText02a"></div>
+                        <p id="_SIVAL_7102" class="Square0"> </p>
+                      </div>
+               		</li>
+                  
+                	<li class="Cassette11 Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi11 HON">
+                	    <p class="TitleText1">Chassis</p>
+                    </div>
+                    <div class="Column1">
+                      <div id="_SILABEL_8091" class="ColumnText01"></div>
+                      <p id="_SIVAL_8091" class="Square0"> </p>
+                    </div>
+                    <div class="Column2">
+                      <div id="_SILABEL_8021" class="ColumnText01"></div>
+                      <p id="_SIVAL_8021" class="Square0"> </p>
+                    </div>
+                    <div class="Column3">
+                      <div id="_SILABEL_8011" class="ColumnText01"></div>
+                      <p id="_SIVAL_8011" class="Square0"> </p>
+                    </div>
+                    <div class="Column4">
+                      <div id="_SILABEL_8041" class="ColumnText01"></div>
+                      <p id="_SIVAL_8041" class="Square0"> </p>
+                    </div>
+                    <div class="Column5">
+                      <div id="_SILABEL_8031" class="ColumnText01"></div>
+                      <p id="_SIVAL_8031" class="Square0"> </p>
+                    </div>
+                    <div class="Column6">
+                      <div id="_SILABEL_8071" class="ColumnText01"></div>
+                      <p id="_SIVAL_8071" class="Square0"> </p>
+                    </div>
+                    <div class="Column7">
+                      <div id="_SILABEL_8061" class="ColumnText01"></div>
+                      <p id="_SIVAL_8061" class="Square0"> </p>
+                    </div>
+                    <div class="Column8">
+                      <div id="_SILABEL_8051" class="ColumnText01"></div>
+                      <p id="_SIVAL_8051" class="Square0"> </p>
+                    </div>
+                    <div class="Column9">
+                      <div id="_SILABEL_8101" class="ColumnText01"></div>
+                      <p id="_SIVAL_8101" class="Square0"> </p>
+                    </div>
+                    <div class="Column10">
+                      <div id="_SILABEL_8111" class="ColumnText01"></div>
+                      <p id="_SIVAL_8111" class="Square0"> </p>
+                    </div>
+                    <div class="Column11">
+                      <div id="_SILABEL_8081" class="ColumnText01"></div>
+                      <p id="_SIVAL_8081" class="Square0"> </p>
+                    </div>
+               		</li>
+                  
+                	<li class="Cassette10 Type2 DON">
+                	  <div class="CassetteTitleCyan ChShi71 HON">
+                	    <p class="TitleText1">Others</p>
+                    </div>
+                    <div class="Column1">
+                      <div id="_SILABEL_1021" class="ColumnText01"></div>
+                      <p id="_SIVAL_1021" class="Square0"> </p>
+                    </div>
+                    <div class="Column2">
+                      <div id="_SILABEL_9131" class="ColumnText01"></div>
+                      <p id="_SIVAL_9131" class="Square0"> </p>
+                    </div>
+                    <div class="Column3">
+                      <div id="_SILABEL_9121" class="ColumnText01a"></div>
+                      <p id="_SIVAL_9121" class="Square0"> </p>
+                    </div>
+                    <div class="Column4">
+                      <div id="_SILABEL_9141" class="ColumnText01a"></div>
+                      <p id="_SIVAL_9141" class="Square0"> </p>
+                    </div>
+                    <div class="Column5">
+                      <div id="_SILABEL_9031" class="ColumnText01"></div>
+                      <p id="_SIVAL_9031" class="Square0"> </p>
+                    </div>
+                    <div class="Column6">
+                      <div id="_SILABEL_9111" class="ColumnText01"></div>
+                      <p id="_SIVAL_9111" class="Square0"> </p>
+                    </div>
+                    <div class="Column7">
+                      <div id="_SILABEL_9091" class="ColumnText01"></div>
+                      <p id="_SIVAL_9091" class="Square0"> </p>
+                    </div>
+               		</li>
+                  
+                  
+
+                </ul>
+                
+                
+                <div class="AddTextSet Ups">
+                	<h4 class="myTitle">Remarks&nbsp;:</h4>
+                  <div class="attntTxline"><span>1.</span>This is complimentary Inspection Check Sheet & this evaluation should not be constructed as carrying out the complete</div>
+                  <div class="attntTxline"><span>  </span>check up and servicing of the vehicle.</div>
+                  <div class="attntTxline"><span class="H2">2.</span>This Inspection Check Sheet is intended solely as a visual evaluation of only specific components & reflects the condition of the vehicle at the time & date of inspection.</div>
+
+                
+                </div>
+            </div>
+            
+            
+            
+            <div class="ssa04Button Upsx" style="border-top:none;">
+            	<div class="LegendLeft">
+                  <ul class="">
+                    <li><div class="Text01">OK</div></li>
+                    <li><div class="Text01">Replaced</div></li>
+                    <li><div class="Text01">Repaired</div></li>
+                    <li><div class="Text01">Cleaned</div></li>
+                    <li><div class="Text01">Replaced</div></li>
+                    <li><div class="Text01">Not Required</div></li>
+                    <li><div class="Text01">Recommend to replace</div></li>
+                    <li><div class="Text01">Need  to inspect</div></li>
+                    <li><div class="Text01">Need to replace</div></li>
+                    <li><div class="Text01">Need to repair</div></li>
+                    <li><div class="Text01">Need to clean</div></li>
+                    <li><div class="Text01">Need to rotate</div></li>
+                  </ul>
+							</div>
+            	<div class="centerBoxWide Upsx">
+            	  <div id="_AD_TITLE" class="Title">Service Result and Advice</div>
+                  <div id="_AD_VAL" class="TextArea"></div>
+            	</div>
+            </div>
+            
+		  </div>
+		</div>

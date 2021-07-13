@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="CNTCD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GZ</Value>
+    </Setting>
+    <Setting Name="LogLevel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="LogDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Temp\eCRBLogs\IC3040401</Value>
+    </Setting>
+    <Setting Name="Toyota_eCRB_iCROP_BizLogic_IC3040401_IC00001_IC3040403" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/WebService/IC00001/Services/IC3040403.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

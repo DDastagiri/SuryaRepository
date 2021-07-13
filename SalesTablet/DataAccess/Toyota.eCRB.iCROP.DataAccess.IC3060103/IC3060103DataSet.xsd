@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IC3060103DataSet" targetNamespace="http://tempuri.org/IC3060103DataSet.xsd" xmlns:mstns="http://tempuri.org/IC3060103DataSet.xsd" xmlns="http://tempuri.org/IC3060103DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Toyota.eCRB.iCROP.DataAccess.IC3060103.My.MySettings.GlobalReference.Default.ConnectionString" Provider="Oracle.DataAccess.Client" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IC3060103DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IC3060103DataSet" msprop:Generator_UserDSName="IC3060103DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IC3060103SetUcarAssessment" msprop:Generator_TableClassName="IC3060103SetUcarAssessmentDataTable" msprop:Generator_TableVarName="tableIC3060103SetUcarAssessment" msprop:Generator_TablePropName="IC3060103SetUcarAssessment" msprop:Generator_RowDeletingName="IC3060103SetUcarAssessmentRowDeleting" msprop:Generator_UserTableName="IC3060103SetUcarAssessment" msprop:Generator_RowChangingName="IC3060103SetUcarAssessmentRowChanging" msprop:Generator_RowEvHandlerName="IC3060103SetUcarAssessmentRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3060103SetUcarAssessmentRowDeleted" msprop:Generator_RowEvArgName="IC3060103SetUcarAssessmentRowChangeEvent" msprop:Generator_RowChangedName="IC3060103SetUcarAssessmentRowChanged" msprop:Generator_RowClassName="IC3060103SetUcarAssessmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ASSESSMENTNO" msprop:Generator_ColumnVarNameInTable="columnASSESSMENTNO" msprop:Generator_ColumnPropNameInRow="ASSESSMENTNO" msprop:Generator_ColumnPropNameInTable="ASSESSMENTNOColumn" msprop:Generator_UserColumnName="ASSESSMENTNO" type="xs:long" />
+              <xs:element name="STAFFCD" msdata:Caption="UPDATEACCOUNT" msprop:Generator_ColumnVarNameInTable="columnSTAFFCD" msprop:Generator_ColumnPropNameInRow="STAFFCD" msprop:Generator_ColumnPropNameInTable="STAFFCDColumn" msprop:Generator_UserColumnName="STAFFCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="26" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAKERNAME" msprop:Generator_ColumnVarNameInTable="columnMAKERNAME" msprop:Generator_ColumnPropNameInRow="MAKERNAME" msprop:Generator_ColumnPropNameInTable="MAKERNAMEColumn" msprop:Generator_UserColumnName="MAKERNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VEHICLENAME" msprop:Generator_ColumnVarNameInTable="columnVEHICLENAME" msprop:Generator_ColumnPropNameInRow="VEHICLENAME" msprop:Generator_ColumnPropNameInTable="VEHICLENAMEColumn" msprop:Generator_UserColumnName="VEHICLENAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSPECTIONDATE" msprop:Generator_ColumnVarNameInTable="columnINSPECTIONDATE" msprop:Generator_ColumnPropNameInRow="INSPECTIONDATE" msprop:Generator_ColumnPropNameInTable="INSPECTIONDATEColumn" msprop:Generator_UserColumnName="INSPECTIONDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REGISTRATIONNO" msprop:Generator_ColumnVarNameInTable="columnREGISTRATIONNO" msprop:Generator_ColumnPropNameInRow="REGISTRATIONNO" msprop:Generator_ColumnPropNameInTable="REGISTRATIONNOColumn" msprop:Generator_UserColumnName="REGISTRATIONNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APPRISAL_PRICE" msprop:Generator_ColumnVarNameInTable="columnAPPRISAL_PRICE" msprop:Generator_ColumnPropNameInRow="APPRISAL_PRICE" msprop:Generator_ColumnPropNameInTable="APPRISAL_PRICEColumn" msprop:Generator_UserColumnName="APPRISAL_PRICE" type="xs:long" />
+              <xs:element name="UPDATEID" msprop:Generator_ColumnVarNameInTable="columnUPDATEID" msprop:Generator_ColumnPropNameInRow="UPDATEID" msprop:Generator_ColumnPropNameInTable="UPDATEIDColumn" msprop:Generator_UserColumnName="UPDATEID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3060103GetUcarAssessment" msprop:Generator_TableClassName="IC3060103GetUcarAssessmentDataTable" msprop:Generator_TableVarName="tableIC3060103GetUcarAssessment" msprop:Generator_TablePropName="IC3060103GetUcarAssessment" msprop:Generator_RowDeletingName="IC3060103GetUcarAssessmentRowDeleting" msprop:Generator_UserTableName="IC3060103GetUcarAssessment" msprop:Generator_RowChangingName="IC3060103GetUcarAssessmentRowChanging" msprop:Generator_RowEvHandlerName="IC3060103GetUcarAssessmentRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3060103GetUcarAssessmentRowDeleted" msprop:Generator_RowEvArgName="IC3060103GetUcarAssessmentRowChangeEvent" msprop:Generator_RowChangedName="IC3060103GetUcarAssessmentRowChanged" msprop:Generator_RowClassName="IC3060103GetUcarAssessmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASM_ACT_FLG" msprop:Generator_ColumnVarNameInTable="columnASM_ACT_FLG" msprop:Generator_ColumnPropNameInRow="ASM_ACT_FLG" msprop:Generator_ColumnPropNameInTable="ASM_ACT_FLGColumn" msprop:Generator_UserColumnName="ASM_ACT_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTKIND" msprop:Generator_ColumnVarNameInTable="columnCSTKIND" msprop:Generator_ColumnPropNameInRow="CSTKIND" msprop:Generator_ColumnPropNameInTable="CSTKINDColumn" msprop:Generator_UserColumnName="CSTKIND" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IC3060103GetModelName" msprop:Generator_TableClassName="IC3060103GetModelNameDataTable" msprop:Generator_TableVarName="tableIC3060103GetModelName" msprop:Generator_TablePropName="IC3060103GetModelName" msprop:Generator_RowDeletingName="IC3060103GetModelNameRowDeleting" msprop:Generator_UserTableName="IC3060103GetModelName" msprop:Generator_RowChangingName="IC3060103GetModelNameRowChanging" msprop:Generator_RowEvHandlerName="IC3060103GetModelNameRowChangeEventHandler" msprop:Generator_RowDeletedName="IC3060103GetModelNameRowDeleted" msprop:Generator_RowEvArgName="IC3060103GetModelNameRowChangeEvent" msprop:Generator_RowChangedName="IC3060103GetModelNameRowChanged" msprop:Generator_RowClassName="IC3060103GetModelNameRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MODEL_NAME" msprop:Generator_ColumnVarNameInTable="columnMODEL_NAME" msprop:Generator_ColumnPropNameInRow="MODEL_NAME" msprop:Generator_ColumnPropNameInTable="MODEL_NAMEColumn" msprop:Generator_UserColumnName="MODEL_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

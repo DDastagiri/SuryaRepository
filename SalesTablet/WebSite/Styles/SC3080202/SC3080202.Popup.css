@@ -1,0 +1,828 @@
+﻿
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━*/
+/*SC3080202.Popup.css                                                       */
+/*─────────────────────────────────────*/
+/*機能： 顧客詳細(商談情報)                                                 */
+/*補足：                                                                    */
+/*作成： 2011/11/24 TCS 小野                                                */
+/*更新： 2012/03/06 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.170)       */
+/*       2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70)        */
+/*       2012/04/24 TCS 安田 【SALES_2】競合車種ページ遷移の速度改善（ユーザー課題 No.22）*/
+/*		 2013/12/16 TCS 市川 Aカード情報相互連携開発						*/
+/*		 2017/11/20 TCS 河原 TKM独自機能開発                                */
+/*       2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 START */
+/*       2020/01/22 TS  重松 TKM Change request development for Next Gen e-CRB (CR058,CR061) */
+/*─────────────────────────────────────*/
+
+@charset "utf-8";
+
+/* 希望車種・競合車種のポップアップ 
+----------------------------------------------------------------------------------------*/
+/* 噴出し */
+#custDtlPage2 .scNsc51PopUpModelSelectArrow {
+	position:absolute;
+	/* 2012/03/06 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.170) START */
+	/* top:-17px; */
+	top:-16px;
+	/* 2012/03/06 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.170) END */
+	left:26px;
+	width:314px;
+	padding:17px 0 0;
+	z-index:101;
+	background:url(../images/SC3080202/scNscPopUpArrowTop.png);
+	background-repeat: no-repeat;
+	background-position:120px top;
+}
+
+/* ウィンドウ */
+#custDtlPage2 .scNsc51PopUpModelSelectWindownBox {
+	height:auto;
+	padding:0 0 5px 0;
+	background-color:#666;
+	border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#676e80),
+	color-stop(0.075, #2a3445),
+	color-stop(0.075, #0f1623),
+	to(#030b19));
+}
+
+/* リストエリア */
+#custDtlPage2 .scNsc51PopUpModelSelectListArea2 {
+	font-size:0.9em;
+	margin:0 4px;
+	/*padding:10px 0px 10px;*/
+	padding:3px 0px 0px;
+	border:#a5a5a5 1px solid;
+	border-radius:5px;
+	overflow:hidden;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+	color-stop(0.018, #fff),
+	color-stop(0.6, #fff),
+	to(#e6e6e6));
+}
+
+
+/* 希望車種・競合車種ポップアップのタイトルエリア 
+--------------------------------------------------------*/
+/* 2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 START */
+#custDtlPage2 .scNsc51PopUpModelSelectHeader, 
+#custDtlPage2 .scNsc51CompPopUpModelSelectHeader, 
+#custDtlPage2 .scNsc51OtherPopUpSelectHeader ,
+#custDtlPage2 .scNsc51CondItemLabelPopUpSelectHeader {
+	position:relative;
+	width:314px;
+	height:45px;
+}
+#custDtlPage2 .scNsc51PopUpModelSelectHeader h3, 
+#custDtlPage2 .scNsc51CompPopUpModelSelectHeader h3, 
+#custDtlPage2 .scNsc51OtherPopUpSelectHeader h3 ,
+#custDtlPage2 .scNsc51CondItemLabelPopUpSelectHeader h3 {
+	position:absolute;
+	width:135px;
+	height:36px;
+	top:7px;
+	left:90px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+	font-size:20px;
+}
+
+/* ポップアップの完了ボタン
+--------------------------------------------------------*/
+#custDtlPage2 .scNsc51PopUpModelSelectHeader .scNscPopUpCompleteButton, 
+#custDtlPage2 .scNsc51CompPopUpModelSelectHeader .scNscCompPopUpCompleteButton, 
+#custDtlPage2 .scNsc51OtherPopUpSelectHeader .scNscOtherPopUpCompleteButton ,
+#custDtlPage2 .scNsc51OtherPopUpSelectHeader .Trade_in_MileageCompleteButton ,
+#custDtlPage2 .scNsc51CondItemLabelPopUpSelectHeader .scNscCondItemLabelPopUpCompleteButton {
+	position:absolute;
+	right:4px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center; 
+	width:78px;
+	height:27px;
+	padding:5 0 0 0;
+	border:#25272b 1px solid;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+	color-stop(0.50, #376fe0),
+	color-stop(0.501, #2361dd),
+	to(#2361dd));
+	/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) START */
+	/* top:7px; */
+	top:6px;
+	text-shadow: 0px -1px 1px black;
+	/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) END */
+}
+
+/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) START */
+#custDtlPage2 #CustomLabel12,
+#custDtlPage2 #CustomLabel15,
+#custDtlPage2 #CustomLabel47,
+#custDtlPage2 #CustomLabel48,
+#custDtlPage2 #Trade_in_MileageCancelButtonLabel,
+#custDtlPage2 #Trade_in_MileageCompleteButtonLabel {
+    height:27px;
+    line-height:27px;
+    text-shadow: 0px -1px 1px black;
+}
+/* 2012/03/15 TCS 平野 【SALES_2】(Sales1A ユーザテスト No.70) END */
+
+#SeriesSelectCompLabel,
+#CustomLabel9{
+	position:relative;
+	top:7px;
+}
+
+
+
+/* 希望車種・競合車種ポップアップのキャンセルボタン
+-------------------------------------------------------------------*/
+#custDtlPage2 .scNsc51PopUpModelSelectHeader .scNscPopUpCancelButton, 
+#custDtlPage2 .scNsc51CompPopUpModelSelectHeader .scNscCompPopUpCancelButton, 
+#custDtlPage2 .scNsc51OtherPopUpSelectHeader .scNscOtherPopUpCancelButton ,
+#custDtlPage2 .scNsc51OtherPopUpSelectHeader .Trade_in_MileageCancelButton ,
+#custDtlPage2 .scNsc51CondItemLabelPopUpSelectHeader .scNscCondItemLabelPopUpCancelButton {  
+	position:absolute;
+	top:7px;
+	left:4px;
+	display:block;
+	color:#FFF;
+	font-size:0.75em;
+	text-align:center;
+	width:80px;
+	height:27px;
+	padding:0 0 0 0;
+	border:#25272b 1px solid;
+	border-left:none;
+	box-shadow:0px 1px 0px #6e727b;
+	border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#576174), 
+    color-stop(0.50, #0d1734),
+	color-stop(0.501, #000b29),
+	to(#000b29));
+	z-index:2;
+}
+
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+#SeriesSelectBackModelLabel,
+#SeriesSelectBackGradeLabel,
+#SeriesSelectBackSuffixLabel,
+#SeriesSelectBackExteriorColorLabel,
+#SeriesSelectCancelLabel,
+#CompCarPopupCancelLabel,
+#CompCarPopupMakerBkLabel{
+	position:relative;
+	top:7px;
+}
+
+
+#custDtlPage2 .scNsc51PopUpModelSelectHeader .scNscPopUpCancelButton a, 
+#custDtlPage2 .scNsc51CompPopUpModelSelectHeader .scNscCompPopUpCancelButton a { color:#FFF; }
+
+/* 各ページのリストを囲う枠 */
+#custDtlPage2 .scNsc51PopUpList01, 
+#custDtlPage2 .scNsc51PopUpList02, 
+#custDtlPage2 .scNsc51PopUpList03,
+#custDtlPage2 .scNsc51PopUpList04,
+#custDtlPage2 .scNsc51PopUpList05,
+#custDtlPage2 .scNsc51CompPopUpList01, 
+#custDtlPage2 .scNsc51CompPopUpList02, 
+#custDtlPage2 scNsc51CompPopUpList03 
+/* $01 No.188 スクロールバー位置修正
+{ box-sizing:border-box; width:304px; float:left; }*/
+{ box-sizing:border-box; width:301px; float:left; }
+/* UL */
+#custDtlPage2 .scNsc51PopUpList01 ul,
+#custDtlPage2 .scNsc51PopUpList02 ul, 
+#custDtlPage2 .scNsc51PopUpList03 ul,
+#custDtlPage2 .scNsc51PopUpList04 ul,
+#custDtlPage2 .scNsc51PopUpList05 ul,
+#custDtlPage2 .scNsc51CompPopUpList01 ul, 
+#custDtlPage2 .scNsc51CompPopUpList02 ul, 
+#custDtlPage2 .scNsc51CompPopUpList03 ul
+{ margin:0 10px 0; box-sizing:border-box; }
+
+/* スクロール用の囲い */
+#custDtlPage2 .scNsc51PopUpScrollWrap, #custDtlPage2 .scNsc51PopUpScrollWrapComp { height:217px; position:relative; top:0px; left:0px; overflow:hidden; transform:translate3d(0px, 0px, 0px); }
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+/*--------------------------------------------------------------------------------------*/
+/* 希望車種固有 
+----------------------------------------------------------------------------------------*/
+/* 希望車種選択ポップアップの全体枠 */
+#custDtlPage2 #SeriesSelectPopup.scNsc51PopUpModelSelect {
+	position:absolute;
+	width:314px;
+	padding:0;
+	z-index:100;	
+}
+
+/* 希望車種選択ポップアップの全体枠 */
+#custDtlPage2 #SeriesSelectPopup { -webkit-transition: opacity 300ms ease-in-out 0; display:none; opacity:0; }
+/* オープン状態 */
+#custDtlPage2 #SeriesSelectPopup.opened { opacity:1; }
+
+#custDtlPage2 #SeriesSelectPopup.ptn1 { top:164px; }
+#custDtlPage2 #SeriesSelectPopup.ptn2 { top:280px; left:100px; }
+
+/* 更新を表すマーカークラス */
+#custDtlPage2 #SeriesSelectPopup.updateMode {}
+
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+/* 各リストを囲う枠 */
+#custDtlPage2 #scNsc51PopUpListWrap { width: 1505px; top:0px; left:0px; position: relative; -webkit-transition: transform 400ms ease 0; }
+
+/* 各ページの設定 */
+#custDtlPage2 #scNsc51PopUpListWrap.page1 { transform:translate3d(0px, 0px, 0px); /* left:0px; */ }         /*モデル選択*/
+#custDtlPage2 #scNsc51PopUpListWrap.page2 { transform:translate3d(-301px, 0px, 0px); /* left:-304px;*/ }    /*グレード選択*/
+#custDtlPage2 #scNsc51PopUpListWrap.page3 { transform:translate3d(-602px, 0px, 0px); /* left:-608px;*/ }    /*サフィックス選択*/
+#custDtlPage2 #scNsc51PopUpListWrap.page4 { transform:translate3d(-903px, 0px, 0px); /* left:-608px;*/ }    /*外装色選択*/
+#custDtlPage2 #scNsc51PopUpListWrap.page5 { transform:translate3d(-1204px, 0px, 0px); /* left:-608px;*/ }   /*内装色選択*/
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+/* 希望車種削除ボタン */
+#custDtlPage2 .scNsc51PopUpListDeleteButton {
+	border:1px solid #656066;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cd6971), 
+	color-stop(0.50, #b93540),
+	color-stop(0.501, #b01825),
+	to(#b01828));
+	color:#FFF;
+	text-shadow:0px -1px #000;
+	padding:10px;
+	font-size:14px;
+	margin:10px 10px 0;
+	border-radius: 10px; 
+	border-radius: 10px; 
+	-moz-border-radius: 10px;
+	text-align:center;
+	display:block;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/* 競合車種固有
+----------------------------------------------------------------------------------------*/
+/* 競合車種選択ポップアップの全体枠 */
+#custDtlPage2 #CompCarSelectPopup.scNsc51PopUpModelSelect {
+	position:absolute;
+	width:314px;
+	padding:0;
+	z-index:100;
+	display:none;
+	top:320px;
+	left:100px;
+}
+
+/* 競合車種の各リスト囲う枠 */
+/* 更新： 2012/04/24 TCS 安田 【SALES_2】競合車種ページ遷移の速度改善（ユーザー課題 No.22）START */
+/* transform 500ms → 400ms */
+/* #custDtlPage2 #CompCarSelectPopupListWrap { width: 602px; position: relative; -webkit-transition: transform 500ms ease-in-out 0; } */
+#custDtlPage2 #CompCarSelectPopupListWrap { width: 602px; position: relative; -webkit-transition: transform 400ms ease-in-out 0; }
+/* 更新： 2012/04/24 TCS 安田 【SALES_2】競合車種ページ遷移の速度改善（ユーザー課題 No.22）END */
+
+#custDtlPage2 #CompCarSelectPopupListWrap.page1 { transform:translate3d(0px, 0px, 0px); }       /*メーカー選択*/
+#custDtlPage2 #CompCarSelectPopupListWrap.page2 { transform:translate3d(-301px, 0px, 0px); }    /*モデル選択*/
+/* $01 No.188 スクロールバー位置修正 
+#custDtlPage2 #CompCarSelectPopupListWrap { width: 608px; position: relative; -webkit-transition: transform 500ms ease-in-out 0; }
+#custDtlPage2 #CompCarSelectPopupListWrap.page2 { transform:translate3d(-304px, 0px, 0px); }*/
+
+/*--------------------------------------------------------------------------------------*/
+/* その他条件入力ポップアップ固有
+----------------------------------------------------------------------------------------*/
+
+/* 競合車種選択ポップアップの全体枠 */
+#custDtlPage2 #OtherConditionInputPopup.scNsc51PopUpModelSelect,
+#custDtlPage2 #Trade_in_MileageInputPopup {
+	position:absolute;
+	width:314px;
+	padding:0;
+	z-index:100;
+	display:none;
+	top:350px;
+	left:100px;
+}
+
+/* 噴出し */
+#custDtlPage2 .scNsc51PopUpModelSelectArrowOther {
+	position:absolute;
+	top:86px;
+	left:-10px;
+	width:314px;
+	padding:17px 0 0;
+	z-index:101;
+	background:url(../images/SC3080202/scNscPopUpArrowTop.png);
+	background-repeat: no-repeat;
+	background-position:120px top;
+	transform:rotateZ(180deg);
+}
+
+#custDtlPage2 #ScNsc51OtherConditionInputText { border:none; outline:none; font-size:13px; }
+#custDtlPage2 #ScNsc51OtherConditionInputTextWrap
+{
+    box-sizing:border-box;
+    margin:0px 10px 0px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-radius:8px;
+	padding:3px 8px;
+	background-color:#FFFFFF;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/* リスト共通
+----------------------------------------------------------------------------------------*/
+/* 2017/11/20 TCS 河原 TKM独自機能開発 START */
+#custDtlPage2 .scNsc51PopUpList01 ul, 
+#custDtlPage2 .scNsc51PopUpList02 ul, 
+#custDtlPage2 .scNsc51PopUpList03 ul,
+#custDtlPage2 .scNsc51PopUpList04 ul,
+#custDtlPage2 .scNsc51PopUpList05 ul,
+#custDtlPage2 .scNsc51CompPopUpList01 ul, 
+#custDtlPage2 .scNsc51CompPopUpList02 ul
+{
+	list-style-type:none;
+	padding:0px;
+	display:block;
+}
+
+/* 選択リスト(LI)のスタイル */
+#custDtlPage2 .scNsc51PopUpList01 li, 
+#custDtlPage2 .scNsc51PopUpList02 li, 
+#custDtlPage2 .scNsc51PopUpList03 li,
+#custDtlPage2 .scNsc51PopUpList04 li,
+#custDtlPage2 .scNsc51PopUpList05 li,
+#custDtlPage2 .scNsc51CompPopUpList01 li, 
+#custDtlPage2 .scNsc51CompPopUpList02 li
+{
+	padding:10px 12px 10px 30px;
+	font-size:16px;
+	background:url(../images/SC3080202/ListArrowGr.png) no-repeat 260px 15px;
+	display:block;
+	overflow:hidden;
+	height:21px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0.2);
+	white-space:nowrap;
+}
+/* 矢印なし */
+#custDtlPage2 .scNsc51PopUpList01 li.NoArrow, 
+#custDtlPage2 .scNsc51PopUpList02 li.NoArrow, 
+#custDtlPage2 .scNsc51PopUpList03 li.NoArrow,
+#custDtlPage2 .scNsc51PopUpList04 li.NoArrow,
+#custDtlPage2 .scNsc51PopUpList05 li.NoArrow,
+#custDtlPage2 .scNsc51CompPopUpList01 li.NoArrow, 
+#custDtlPage2 .scNsc51CompPopUpList02 li.NoArrow
+{ background-image:none; }
+
+/* リスト先頭行*/
+#custDtlPage2 .scNsc51PopUpList01 li.scNsc51ListLi1:first-child, 
+#custDtlPage2 .scNsc51PopUpList02 li.scNsc51ListLi2:first-child, 
+#custDtlPage2 .scNsc51PopUpList03 li.scNsc51ListLi3:first-child,
+#custDtlPage2 .scNsc51PopUpList04 li.scNsc51ListLi4:first-child,
+#custDtlPage2 .scNsc51PopUpList05 li.scNsc51ListLi5:first-child,
+#custDtlPage2 .scNsc51CompPopUpList01 li.scNsc51CompListLi1:first-child, 
+#custDtlPage2 .scNsc51CompPopUpList02 li.scNsc51CompListLi2:first-child
+{
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	background-color:#FFFFFF;
+}
+/* リスト中間行*/
+#custDtlPage2 .scNsc51PopUpList01 li.scNsc51ListLi1,
+#custDtlPage2 .scNsc51PopUpList02 li.scNsc51ListLi2,
+#custDtlPage2 .scNsc51PopUpList03 li.scNsc51ListLi3,
+#custDtlPage2 .scNsc51PopUpList04 li.scNsc51ListLi4,
+#custDtlPage2 .scNsc51PopUpList05 li.scNsc51ListLi5,
+#custDtlPage2 .scNsc51CompPopUpList01 li.scNsc51CompListLi1,
+#custDtlPage2 .scNsc51CompPopUpList02 li.scNsc51CompListLi2
+{
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	background-color:#FFFFFF;
+}
+/* リスト最終行*/
+#custDtlPage2 .scNsc51PopUpList01 li.scNsc51ListLi1:last-child,
+#custDtlPage2 .scNsc51PopUpList02 li.scNsc51ListLi2:last-child,
+#custDtlPage2 .scNsc51PopUpList03 li.scNsc51ListLi3:last-child,
+#custDtlPage2 .scNsc51PopUpList04 li.scNsc51ListLi4:last-child,
+#custDtlPage2 .scNsc51PopUpList05 li.scNsc51ListLi5:last-child,
+#custDtlPage2 .scNsc51CompPopUpList01 li.scNsc51CompListLi1:last-child,
+#custDtlPage2 .scNsc51CompPopUpList02 li.scNsc51CompListLi2:last-child
+{
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft: 8px;
+	background-color:#FFFFFF;
+}
+
+/* リスト先頭行判定*/
+#custDtlPage2 .scNsc51PopUpList02 li.scNsc51ListLi2.top, 
+#custDtlPage2 .scNsc51PopUpList03 li.scNsc51ListLi3.top,
+#custDtlPage2 .scNsc51PopUpList04 li.scNsc51ListLi4.top,
+#custDtlPage2 .scNsc51PopUpList05 li.scNsc51ListLi5.top,
+#custDtlPage2 .scNsc51CompPopUpList02 li.scNsc51CompListLi2.top
+{
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	background-color:#FFFFFF;
+}
+/* リスト最終行判定*/
+#custDtlPage2 .scNsc51PopUpList02 li.scNsc51ListLi2.bottom,
+#custDtlPage2 .scNsc51PopUpList03 li.scNsc51ListLi3.bottom,
+#custDtlPage2 .scNsc51PopUpList04 li.scNsc51ListLi4.bottom,
+#custDtlPage2 .scNsc51PopUpList05 li.scNsc51ListLi5.bottom,
+#custDtlPage2 .scNsc51CompPopUpList02 li.scNsc51CompListLi2.bottom
+{
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft: 8px;
+	background-color:#FFFFFF;
+}
+
+
+
+/* チェック状態 */
+#custDtlPage2 .scNsc51PopUpList01 li.scNsc51ListLi1.On,
+#custDtlPage2 .scNsc51PopUpList02 li.scNsc51ListLi2.On,
+#custDtlPage2 .scNsc51PopUpList03 li.scNsc51ListLi3.On,
+#custDtlPage2 .scNsc51PopUpList04 li.scNsc51ListLi4.On,
+#custDtlPage2 .scNsc51CompPopUpList01 li.scNsc51CompListLi1.On
+{
+	background-image:url(../images/SC3080202/scNscPopUpListCheckMark.png) ,url(../images/SC3080202/ListArrowGr.png);
+	background-position:13px 13px,260px 15px;
+	color:#345186;
+}
+
+#custDtlPage2 .scNsc51PopUpList05 li.scNsc51ListLi5.On,
+#custDtlPage2 .scNsc51CompPopUpList02 li.scNsc51CompListLi2.On
+{
+	background-image:url(../images/SC3080202/scNscPopUpListCheckMark.png);
+	background-position:13px 13px;
+	color:#345186;
+}
+/* 2017/11/20 TCS 河原 TKM独自機能開発 END */
+
+/* 2012/03/16 TCS 藤井 【SALES_2】性能改善 Add Start */
+/****************************************
+ポップアップ系処理中アニメーション変更
+****************************************/
+#registOverlayBlack.popupLoadingBackgroundColor.open {
+    opacity: 0;
+}
+#processingServer.seriesSelectPopupLoadingAnimation.show {
+    left: 260px;
+    top: 480px;
+}
+#processingServer.carSelectPopupCompLoadingAnimation.show {
+    left: 260px;
+    top: 510px;
+}
+/* 2012/03/16 TCS 藤井 【SALES_2】性能改善 Add End */
+
+/*2012/03/27 TCS 松野 【SALES_2】 START*/
+#processingServer.activityPopupLoadingAnimation.show {
+    left: 200px;
+    top: 305px;
+}
+/*2012/03/27 TCS 松野 【SALES_2】 START*/
+
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 START */
+/*2020/01/22 TS  重松 TKM Change request development for Next Gen e-CRB (CR058,CR061)変更 start */
+/* 用件ソース1st、2ndのポップアップ 
+----------------------------------------------------------------------------------------*/
+#popOverSource1List_popover, #popOverSource2List_popover{
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(103, 110, 128)), color-stop(0.075, rgb(42, 52, 69)), color-stop(0.075, rgb(15, 22, 35)), to(rgb(3, 11, 25)));
+}
+/*2020/01/22 TS  重松 TKM Change request development for Next Gen e-CRB (CR058,CR061)変更 end */
+/*ヘッダー部*/
+div.popOverHeader {padding:7px 5px 3px 5px;text-align:center;}
+.popOverHeader > .titleLabel{display:inline-block;padding-top:5px;height:20px;font-weight:bold;font-size: 12pt;}
+
+.popOverHeader > .commitButton, .popOverHeader > .cancelButton
+{
+	display: inline-block;
+	color: #FFF;
+	font-size: 10pt;
+	text-align: center;
+	line-height:25px;
+	width: 78px;
+	height: 27px;
+	border: #25272b 1px solid;
+	box-shadow: 0px 1px 0px #6e727b;
+	border-radius: 5px;
+}
+.popOverHeader > .commitButton
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#6f96e8), 
+	color-stop(0.50, #376fe0),
+	color-stop(0.501, #2361dd),
+	to(#2361dd));
+	text-shadow: 0px -1px 1px black;  
+ }
+.popOverHeader > .cancelButton
+{
+	background: url(../Images/SC3080201/btnPopUpCancel.png) no-repeat;
+ }
+
+/* 選択リスト部 */
+.popOverBody {background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.6, #fff), to(#e6e6e6));} 
+.popOverBody .itemBox {border-radius:8px;border:solid 1px #BBBBBB;background-color:#FFFFFF;margin:0px 8px 8px 0px;}
+.popOverBody .itemBox .itemRow {border-top:solid 1px #BBBBBB;padding:11px 5px 11px 46px;width:240px;}
+.popOverBody .itemBox .selected {background: url(../images/SC3080202/scNscPopUpListCheckMark.png) no-repeat 13px 13px;color: #345186;}
+
+/*2013/12/16 TCS 市川 Aカード情報相互連携開発 END */
+
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//	TKMローカル
+//
+//////////////////////////////////////////////////////////////////////////////*/
+
+/* 2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 START */
+/*--------------------------------------------------------------------------------------*/
+/* 項目名変更ポップアップ固有
+----------------------------------------------------------------------------------------*/
+
+/* 項目名変更ポップアップの全体枠 */
+#custDtlPage2 #CondItemLabelInputPopup.scNsc51PopUpModelSelect {
+    position:absolute;
+    width:314px;
+    padding:0;
+    z-index:100;
+    display:none;
+    top:350px;
+    left:100px;
+}
+
+/* 噴出し */
+#custDtlPage2 .scNsc51PopUpModelSelectArrowItmLbl {
+    position:absolute;
+    top:86px;
+    left:-10px;
+    width:314px;
+    padding:17px 0 0;
+    z-index:101;
+    background:url(../images/SC3080202/scNscPopUpArrowTop.png);
+    background-repeat: no-repeat;
+    background-position:120px top;
+    -webkit-transform:rotateZ(180deg);
+}
+
+#custDtlPage2 #ScNsc51CondItemLabelInputText { border:none; outline:none; font-size:13px; }
+#custDtlPage2 #ScNsc51CondItemLabelInputTextWrap
+{
+    box-sizing:border-box;
+    margin:0px 10px 0px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-radius:8px;
+    padding:3px 8px;
+    background-color:#FFFFFF;
+}
+
+/* 分類 */
+#Trade_in_MakerWindown,
+#Trade_in_ModelYearWindown,
+#Trade_in_ModelWindown 
+{
+	width:340px;
+	height:320px;
+	padding:0 0 0 0px;
+	background-image: url(images/Trade_in_MakerWindownArrow.png);
+	background-repeat: no-repeat;
+	background-position: 109px 288px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox {
+	width:330px;
+	height:288px;
+	background-color:#666;
+	-webkit-border-radius:8px;
+	background:#FFF;
+	border:#1c232f 1px solid;
+	box-shadow:0px 0px 12px #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#676E80),
+                                 color-stop(0.075, #2A3445),
+                                 color-stop(0.075, #0F1623),
+                                 to(#030B19)
+                                );
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerHadder,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearHadder,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelHadder {
+	position:relative;
+	width:330px;
+	height:45px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerHadder h3,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearHadder h3,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelHadder h3  {
+	position:absolute;
+	width:179px;
+	height:36px;
+	top:9px;
+	left:75px;
+	text-align:center;
+	color:#FFF;
+	text-shadow:0px -1px 0px #333;
+    font-size:20px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerCancellButton .tgLeft,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearCancellButton .tgLeft,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelCancellButton .tgLeft {
+	position:absolute;
+	left:8px;
+	display:block;
+	width:25px;
+	height:28px;
+	background:#009900;
+	border:inset 1px #383238;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-webkit-transform: rotate(45deg);
+	background: -webkit-gradient(linear, left top, right bottom, from(#576174), 
+							color-stop(0.1, #576174),
+							color-stop(0.50, #0d1734),
+							color-stop(0.501, #000b29),
+							color-stop(0.95, #000b29),
+							to(#000b29));
+	z-index:1;
+	
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListArea,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListArea,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListArea {
+	font-size:0.9em;
+	height:235px;
+	margin:0px;
+	margin-right:4px;
+	margin-left:4px;
+	border:#a5a5a5 1px solid;
+	-webkit-border-radius:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), 
+							color-stop(0.018, #fff),
+							color-stop(0.6, #fff),
+							to(#e6e6e6));
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListBox,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListBox,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListBox {
+	width:298px;
+	height:230px;
+    margin:4px 0px 0px 10px;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListItemBox,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListItemBox,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListItemBox {
+	width:298px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListItem5 table,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListItem5 table,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListItem5 table {
+	width:298px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListItem5 th,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListItem5 th,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListItem5 th {
+	width:90px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListItem5 td,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListItem5 td,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListItem5 td {
+	width:206px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox table,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox table,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox table {
+	-webkit-border-radius:8px;
+	border:#bbbbbb 1px solid;
+	margin:0 0 15px;
+	background-color:#FFF;
+	
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox td,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox td,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox td{
+	padding:5px 46px;
+	font-size:16px;
+	text-align:left;
+	font-weight:bold;
+	line-height:35px;
+	height:35px;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListItemLeftBorder,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListItemLeftBorder,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListItemLeftBorder{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .Trade_in_MakerListItemBottomBorder,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .Trade_in_ModelYearListItemBottomBorder,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .Trade_in_ModelListItemBottomBorder{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox ul.nscListBoxSetIn,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox ul.nscListBoxSetIn,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox ul.nscListBoxSetIn{
+	-webkit-border-radius:8px;
+	border:#BBBBBB 1px solid;
+	background-color:#FFF;
+	width:296px;
+	font-weight:bold;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .nscListBoxSetIn li,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .nscListBoxSetIn li,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .nscListBoxSetIn li{
+	position:relative;
+	border-bottom:#BBBBBB 1px solid;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px 46px;
+	font-size:16px;
+	line-height:20px;
+	width:204px;
+	display:block;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .nscListBoxSetIn li.end,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .nscListBoxSetIn li.end,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .nscListBoxSetIn li.end{
+	border-bottom:none;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .nscListBoxSetIn li.Arrow,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .nscListBoxSetIn li.Arrow,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .nscListBoxSetIn li.Arrow{
+	background:url(images/nsc60Arrow.png) right center no-repeat;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .nscListBoxSetIn li.Blue,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .nscListBoxSetIn li.Blue,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .nscListBoxSetIn li.Blue{
+	color:#375388;
+}
+
+#Trade_in_MakerWindown #Trade_in_MakerWindownBox .nscListBoxSetIn .Selection,
+#Trade_in_ModelYearWindown #Trade_in_ModelYearWindownBox .nscListBoxSetIn .Selection,
+#Trade_in_ModelWindown #Trade_in_ModelWindownBox .nscListBoxSetIn .Selection{
+	background:url(../Images/SC3080201/nsc60CheckIcn.png);
+	background-position:20px 14px;
+	background-repeat: no-repeat;
+	color:#3b4f85;
+}
+
+/* 2018/07/10 TCS 河原 TKM Next Gen e-CRB Project Application development Block B-1 END */

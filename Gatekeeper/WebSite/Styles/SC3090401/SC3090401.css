@@ -1,0 +1,327 @@
+﻿/*===================================================
+* SC3090401.css
+*---------------------------------------------------
+* 機能：予約一覧画面 CSS
+* 作成： 2018/02/19 NSK h.kawatani   REQ-SVT-TMT-20170615-001 iPod Gatekeeperに顧客の車両登録番号を入力する機能を追加
+* 更新： 2019/02/28 NSK h.kawatani   REQ-SVT-TMT-20180601-001 Gate Keeper機能の視認性操作性改善 $01
+===================================================*/
+@charset "utf-8";
+/* CSS Document */
+
+#MM_Main_Contents{
+	width:640px;
+	height:816px;
+	background:-webkit-linear-gradient(270deg,rgba(243, 243, 243, 1.00) 0%,rgba(216, 216, 216, 1.00) 100%);
+	padding-top:15px;
+		
+}
+
+#MM_Main_Contents .Bottom_Box{
+	width:608px;
+	height:799px;
+	background:#FFF;
+	border:#c9c9c9 1px solid;
+	-webkit-box-shadow:0px 5px 5px #c4c3c3, 0px -1px 3px #c4c3c3;
+	margin:0px auto 0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#E5E5E5), to(#B4B4B4));
+}
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL{
+	width:608px;
+	height:790px;
+	-webkit-box-shadow:0px 5px 5px #d5d4d4, 0px -1px 3px #d5d4d4;
+	margin:0px; 
+	border-spacing:0px;
+	border-collapse: collapse;
+	overflow:hidden;
+}
+
+#VisitInfoContents{
+	width:608px;
+	height:720px;
+}
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .Bottom_TBL{
+	width:608px;
+	height:720px;
+}
+
+#ButtonHeader{
+    height: 80px;
+}
+
+#btn_back{
+    position: absolute;
+    top: 117px;
+    left: 30px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #9B9B9B;
+    background: -webkit-gradient(linear, center top, center bottom, from(#F3F3F4), to(#BEC1CA));
+    -webkit-border-radius: 10px;
+}
+
+#btn_back_o{
+	position: absolute;
+    top: 117px;
+    left: 30px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #9B9B9B;
+    background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+    -webkit-border-radius: 10px;
+    display: none;
+}
+
+#btn_sort_time, #btn_sort_no{
+	position: absolute;
+    top: 117px;
+    left: 385px;
+    height: 60px;
+    width: 100px;
+    border: 1px solid #9B9B9B;
+    background: -webkit-gradient(linear, center top, center bottom, from(#F3F3F4), to(#BEC1CA));
+    -webkit-border-radius: 7px;
+}
+
+#btn_sort_no{
+    display:none;
+}
+
+#btn_all{
+	position: absolute;
+    top: 117px;
+    left: 505px;
+    height: 60px;
+    width: 100px;
+    border: 1px solid #9B9B9B;
+    background: -webkit-gradient(linear, center top, center bottom, from(#F3F3F4), to(#BEC1CA));
+    -webkit-border-radius: 7px;
+}
+
+#btn_all_o{
+	position: absolute;
+    top: 117px;
+    left: 505px;
+    height: 60px;
+    width: 100px;
+    background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+    border: 1px solid #0586EA;
+    -webkit-border-radius: 7px;
+    display: none;
+}
+
+#ButtonHeader .imgBack{
+    display: block;
+    margin: 10px;
+}
+
+#ButtonHeader .imgSort{
+    display: block;
+    margin: 10px 28px;
+}
+
+#ButtonHeader .imgAll{
+    display: block;
+    margin: 10px 28px;
+}
+
+#MM_Main_Contents .Bottom_Box .VisitInfo_TBL .Bottom_TBL li{
+	padding-top:10px;
+	padding-bottom:10px;
+	/* $01 start */
+	/* height:120px; */
+    height:155px;
+    /* $01 end */
+	text-align:left;
+	/* $01 start */
+    /* font-size:34px; */
+	font-size:40px;
+	/* $01 end */
+	line-height:40px;
+	/* $01 start */
+    /* text-shadow:rgba(0, 0, 0, 0.8) 0 -2px 1px; */
+    background:Black;
+    /* $01 end */
+	position:relative;
+	border-top:#c9c9c9 1px solid;
+	border-bottom:#c9c9c9 1px solid;
+	border-spacing: 0;
+}
+
+.Contents_InBox{
+    /* $01 start */
+    /* font-size:30px; */
+    /* height: 40px; */
+    height: 73px;
+    /* $01 end */
+    float: left;
+    font-weight:normal;
+    /* $01 start */
+	/* line-height:40px; */
+	line-height:73px;
+	/* $01 end */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* $01 start */
+    /* text-shadow:rgba(0, 0, 0, 0.1) 0 -1px 1px; */
+    /* $01 end */
+}
+
+.W01{
+    left: 50px;
+    position:relative;
+    /* $01 start */
+	/* width:250px; */
+	width: 200px;
+	/* $01 end */
+}
+
+.W02{
+    left: 50px;
+    /* $01 start */
+	/* width:300px; */
+	width:200px;
+    padding-right: 20px;
+    text-align:right;
+	/* $01 end */
+	float: left;
+	position:relative;
+}
+
+.W03{
+    left: 50px;
+    position:relative;
+    /* $01 start */
+    /* width:550px;*/
+    width:410px;
+    /* $01 end */
+}
+
+/* $01 start */
+.W04{
+    width: 92px;
+    height: 73px;
+    line-height: 73px;                                                         
+}
+/* $01 end */
+
+.TC_BG_WHITE{
+	background:#FFF;
+	/* $01 start */
+    /* color:#666666; */
+	color:Black;
+	/* $01 end */
+}
+
+.TC_BG_GRAY{
+    background:#9ca2a9;
+    /* $01 start */
+    /* color:#666666; */
+	color:Black;
+	/* $01 end */
+}
+
+#LoadingScreen{
+    position:absolute;
+    top:0px;    
+    height: 1200px;
+    width: 640px;
+    opacity:0.1;
+    z-index:1000;
+    display: none;
+}
+
+.DisplayOff{
+	display:none;
+}
+
+.DisplayOn{
+	display:block;
+}
+
+#NoSearchImage{
+	display:none;
+	position:relative;
+	width:100%;
+	height:720px;
+	font-size:40px;
+	line-height:630px;
+	color:#666;
+	background: #FFFFFF;
+	text-align:center;
+}
+
+.AppointmentListNextMore{
+    display:block;
+    /* $01 start */
+    /* height:142px; */
+    /* line-height:142px; */
+    height:175px;
+    line-height:175px;
+    /* $01 end */
+    background:#F5F5F5;
+    text-align:center;
+    font-size:30px;
+    color:#375388;
+}
+/* $01 start */
+.WCBoxType01{
+	width:580px;
+	height:155px;
+	display:block;
+	border-radius: 9px;
+	box-sizing:border-box;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-bottom:7px;
+	position:relative;
+	border-top:#5e5b5b 1px solid;
+	border-left:#5e5b5b 1px solid;
+	border-bottom:#6c6867 1px solid;
+	margin-left:14px;
+	z-index:1;
+}
+
+.WCBoxType01 .LeftBox{
+    width: 468px;
+    height: 155px;
+}
+
+.WCBoxType01 .HeadBox{
+	display:block;
+	width:436px; height:90px;
+	position:absolute;
+	top:20px; left:31px;
+	font-size:40px;
+	padding-left:20px;
+	color:Black;
+	box-sizing:border-box;
+}
+
+.WCBoxType01 .RightBox{
+	width:112px; height:155px;
+	display:block;
+	position:absolute;
+	right:0; top:0;
+	border-left:#5e5b5b 1px solid;
+	text-align: center;
+}
+
+.WCBoxType01 .RightBox .icTime{
+	display:block;
+    top:90px; left:8px;
+	width:92px; height:42px;
+	background: #ffc600;
+	border-radius:9px;
+	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5) inset,
+						  1px 1px 2px rgba(0, 0, 0, 0.5) inset;
+	position:absolute;
+}
+
+.WCBoxType01 .RightBox .icTime span{
+	display:block; width:92px; height:42px;
+	border-radius:10px;
+	overflow: hidden;
+}
+/* $01 end */

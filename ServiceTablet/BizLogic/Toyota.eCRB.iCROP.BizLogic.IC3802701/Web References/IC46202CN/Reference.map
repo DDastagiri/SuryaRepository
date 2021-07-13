@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://ap81359web1:8008/IC46202/IC46202CN.asmx?wsdl" filename="IC46202CN.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://ap81359web1:8008/IC46202/IC46202CN.asmx?disco" filename="IC46202CN.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

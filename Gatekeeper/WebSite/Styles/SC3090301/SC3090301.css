@@ -1,0 +1,1178 @@
+/*//////////////////////////////////////////////////////////////////////////////
+//
+//    
+//
+//////////////////////////////////////////////////////////////////////////////*/
+/*===================================================
+* SC3090301.css
+*---------------------------------------------------
+* 機能：ゲートキーパーメイン画面 CSS
+* 作成：2012/1/31
+* 更新：2013/09/27 TMEJ 浅野 iOS7対応 $01
+* 更新：2013/12/05 TMEJ 嶋村 次世代e-CRBサービス 店舗展開に向けた標準作業確立 $02
+* 更新：2015/02/18 TMEJ 後藤 UAT課題#158 $03
+* 更新：2018/02/19 NSK 河谷 REQ-SVT-TMT-20170615-001_iPod Gatekeeperに顧客の車両登録番号を入力する機能を追加 $04
+* 更新：2019/02/28 NSK 河谷 REQ-SVT-TMT-20180601-001 Gate Keeper機能の視認性操作性改善 $05
+===================================================*/
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: -webkit-gradient(linear, center top, center bottom, from(#E5E5E5), to(#B4B4B4));
+	margin:0;
+	padding:0;
+	/* font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif, "HiraKakuProN-W3"; */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/* Upper block */
+#gate {
+	position: absolute;
+	top: 0px;
+	width: 640px;
+	height: 92px;
+	z-index: 2;
+	font-size: 40px;
+	font-weight: 700;
+	color: #717880;
+	text-align: center;
+	background: -webkit-gradient(linear, center top, center bottom, from(#F4F5F7), to(#AAAEBB));
+	text-shadow:0px 2px 1px #E0E2E7;
+	-webkit-box-shadow: 0px 1px 1px #C6C8CA;
+}
+
+/* ゲート管理text */
+#lbl_title {
+	position: absolute;
+	left: 224px;
+	top: 29px;
+	width: 200px;
+	height: 34px;
+	z-index: 10;
+	font-size: 38px;
+}
+
+/* i-CROP画像 */
+#img_logo {
+	position: absolute;
+	left: 492px;
+	top: 30px;
+	width: 135px;
+	height: 33px;
+	z-index: 10;
+}
+
+/* 車ボタン共通 */
+#btn_car, #btn_car_o {
+	position: absolute;
+	left: 29px;
+	top: 100px;
+    /* $04 start */
+    /*	width: 282px;*/
+	width: 186px;
+    /* $04 end */
+	height: 71px;
+	-webkit-border-radius: 12px;
+	z-index: 10;
+}
+
+/* 車ボタン活性 */
+#btn_car {
+	background: -webkit-gradient(linear, center top, center bottom, from(#F3F3F4), to(#BEC1CA));
+	border: 1px solid #9B9B9B;
+	-webkit-box-shadow: 0px 1px 2px #F3F3F3, 0px -2px 2px #6A6B6B;
+}
+
+/* 車ボタン選択 */
+#btn_car_o {
+	background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+	border: 1px solid #0586EA;
+	-webkit-box-shadow: 0px 1px 1px #F2F2F2, 0px -2px 1px #BBBBBB;
+}
+
+/* 車ボタン画像 */
+.img_car {
+	position: absolute;
+    /* $04 start */
+    /*	left: 120px;*/
+	left: 73px;
+    /* $04 end */
+	top: 18px;
+	width: 41px;
+	height: 36px;
+	z-index: 11;
+}
+
+/* 人ボタン共通 */
+#btn_person, #btn_person_o {
+	position: absolute;
+    /* $04 start */
+    /* left: 331px; */
+	/* top: 100px; */
+	/* width: 282px; */
+	left: 230px;
+	top: 100px;
+	width: 186px;
+    /* $04 end */
+	height: 71px;
+	-webkit-border-radius: 12px;
+	z-index: 10;
+}
+
+/* 人ボタン活性 */
+#btn_person {
+	background: -webkit-gradient(linear, center top, center bottom, from(#F3F3F4), to(#BEC1CA));
+	border: 1px solid #9B9B9B;
+	-webkit-box-shadow: 0px 1px 3px #F3F3F3, 0px -2px 2px #6A6B6B;
+}
+
+/* 人ボタン選択 */
+#btn_person_o {
+	background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+	border: 1px solid #0586EA;
+	-webkit-box-shadow: 0px 1px 2px #F2F2F2, 0px -2px 1px #BBBBBB;
+}
+
+/* 人ボタン画像 */
+.img_person {
+	position: absolute;
+    /* $04 start */
+    /*	left: 130px;*/
+	left: 82px;
+    /* $04 end */
+	top: 12px;
+	width: 22px;
+	height: 51px;
+	z-index: 11;
+}
+
+/* $04 start */
+/* 予約一覧ボタン */
+#btn_AppList, #btn_AppList_o {
+	position: absolute;
+	left: 430px;
+	top: 100px;
+	width: 186px;
+	height: 71px;
+	-webkit-border-radius: 12px;
+	z-index: 10;
+	background: -webkit-gradient(linear, center top, center bottom, from(#F3F3F4), to(#BEC1CA));
+	border: 1px solid #9B9B9B;
+	-webkit-box-shadow: 0px 1px 3px #F3F3F3, 0px -2px 2px #6A6B6B;
+}
+
+/* 予約一覧ボタン画像 */
+.img_AppList {
+	position: absolute;
+	left: 73px;
+	top: 16px;
+	width: 40px;
+	height: 40px;
+	z-index: 11;
+}
+
+/* 予約一覧ボタン選択 */
+#btn_AppList_o {
+	background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+	border: 1px solid #0586EA;
+	-webkit-box-shadow: 0px 1px 2px #F2F2F2, 0px -2px 1px #BBBBBB;
+}
+/* $04 end */
+
+/* 登録ナンバー,時間エリア */
+.input {
+	position: absolute;
+	top: 0px;
+	width: 640px;
+	/* $05 start */
+	/* height: 90px; */
+	/* z-index: 4; */
+	height: 110px;
+	z-index: 32;
+    /* $05 end */
+	background: -webkit-gradient(linear, center top, center bottom, from(#575D66),color-stop(0.2, #6F7681), to(#6F7681));
+}
+
+/* 登録ナンバー,時間共通 */
+.input_left, .input_right{
+    /* $04 start */
+    /* width:320px; */
+	/* $04 end */
+	height:90px;
+}
+
+/* 登録ナンバー */
+.input_left{
+	float:left;
+}
+
+/* 時間 */
+.input_right{
+	float:right;
+}
+
+/* 登録ナンバーエリア */
+.txt_car{
+	position:absolute;
+	/* $04 start */
+	/*	width:420px;*/
+	width:460px;
+	/* $04 end */
+	/* $05 start */
+	/* height:38px; */
+	/* line-height:90px; */
+	height:110px;
+	line-height:110px;
+	/* $05 end */
+	/*top:20px;*/
+	left:36px;
+}
+
+/* 登録ナンバーtext,時間text共通 */
+.lbl_time{
+	/* $05 start */
+	/* font-size:38px; */
+	font-size:44px;
+	/* $05 end */
+	font-weight:bold;
+	color:#fff;
+	text-shadow:0px -2px 2px #1C1E20;
+}
+.txt_car_number{
+	/* $05 start */
+	/* font-size:38px; */
+	font-size:44px;
+	/* $05 end */
+	font-weight:bold;
+	color:#fff;
+	text-shadow:0px -2px 2px #1C1E20;
+	/* $04 start */
+	display:block;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	/* $04 end */    	
+}
+
+/* 登録ナンバーtext */
+.txt_car_number{
+    /* $04 start */
+	/* width:100%; */
+	/* $04 end */
+	border:0;
+	background-color:transparent;
+}
+
+/* 時間text */
+.lbl_time{
+	position:absolute;
+	float:right;
+	/* $04 start */
+	/*	width:282px;*/
+	width:110px;
+	/* $04 end */
+	/* $05 start */
+	/* height:70px; */
+	/* line-height:90px; */
+	height:110px;
+	line-height:110px;
+	/* $05 end */
+	/*top:24px;*/
+	right:36px;
+	text-align:right;
+}
+
+/* スクロールランプ共通 */
+.input_lamp_odd1, .input_lamp_odd2, .input_lamp_odd3, .input_lamp_odd4, 
+.input_lamp_odd5, .input_lamp_odd6, .input_lamp_odd7, .input_lamp_odd8, 
+.input_lamp_odd9, .input_lamp_odd10, .input_lamp_odd11, .input_lamp_odd12, 
+.input_lamp_odd13, .input_lamp_odd14, .input_lamp_odd15, .input_lamp_odd16, 
+.input_lamp_odd17, .input_lamp_even1, .input_lamp_even2, .input_lamp_even3, 
+.input_lamp_even4, .input_lamp_even5, .input_lamp_even6, .input_lamp_even7, 
+.input_lamp_even8, .input_lamp_even9, .input_lamp_even10, .input_lamp_even11, 
+.input_lamp_even12, .input_lamp_even13, .input_lamp_even14, .input_lamp_even15, 
+.input_lamp_even16 {
+	position:absolute;
+	width:18px;
+	height:18px;
+	/* $05 start */
+	/* top:66px; */
+	top:80px;
+	/* $05 end */
+	z-index:1;
+}
+
+/* スクロールランプ1 (奇数時) */
+.input_lamp_odd1 {
+    left:312px;
+}
+/* スクロールランプ2 (奇数時) */
+.input_lamp_odd2 {
+    left:276px;
+}
+/* スクロールランプ3 (奇数時) */
+.input_lamp_odd3 {
+    left:348px;
+}
+/* スクロールランプ4 (奇数時) */
+.input_lamp_odd4 {
+    left:240px;
+}
+/* スクロールランプ5 (奇数時) */
+.input_lamp_odd5 {
+    left:384px;
+}
+/* スクロールランプ6 (奇数時) */
+.input_lamp_odd6 {
+    left:204px;
+}
+/* スクロールランプ7 (奇数時) */
+.input_lamp_odd7 {
+    left:420px;
+}
+/* スクロールランプ8 (奇数時) */
+.input_lamp_odd8 {
+    left:168px;
+}
+/* スクロールランプ9 (奇数時) */
+.input_lamp_odd9 {
+    left:456px;
+}
+/* スクロールランプ10 (奇数時) */
+.input_lamp_odd10 {
+    left:132px;
+}
+/* スクロールランプ11 (奇数時) */
+.input_lamp_odd11 {
+    left:492px;
+}
+/* スクロールランプ12 (奇数時) */
+.input_lamp_odd12 {
+    left:96px;
+}
+/* スクロールランプ13 (奇数時) */
+.input_lamp_odd13 {
+    left:528px;
+}
+/* スクロールランプ14 (奇数時) */
+.input_lamp_odd14 {
+    left:60px;
+}
+/* スクロールランプ15 (奇数時) */
+.input_lamp_odd15 {
+    left:564px;
+}
+/* スクロールランプ16 (奇数時) */
+.input_lamp_odd16 {
+    left:24px;
+}
+/* スクロールランプ17 (奇数時) */
+.input_lamp_odd17 {
+    left:600px;
+}
+/* スクロールランプ1 (偶数時) */
+.input_lamp_even1 {
+    left:330px;
+}
+/* スクロールランプ2 (偶数時) */
+.input_lamp_even2 {
+    left:294px;
+}
+/* スクロールランプ3 (偶数時) */
+.input_lamp_even3 {
+    left:366px;
+}
+/* スクロールランプ4 (偶数時) */
+.input_lamp_even4 {
+    left:258px;
+}
+/* スクロールランプ5 (偶数時) */
+.input_lamp_even5 {
+    left:402px;
+}
+/* スクロールランプ6 (偶数時) */
+.input_lamp_even6 {
+    left:222px;
+}
+/* スクロールランプ7 (偶数時) */
+.input_lamp_even7 {
+    left:438px;
+}
+/* スクロールランプ8 (偶数時) */
+.input_lamp_even8 {
+    left:186px;
+}
+/* スクロールランプ9 (偶数時) */
+.input_lamp_even9 {
+    left:474px;
+}
+/* スクロールランプ10 (偶数時) */
+.input_lamp_even10 {
+    left:150px;
+}
+/* スクロールランプ11 (偶数時) */
+.input_lamp_even11 {
+    left:510px;
+}
+/* スクロールランプ12 (偶数時) */
+.input_lamp_even12 {
+    left:114px;
+}
+/* スクロールランプ13 (偶数時) */
+.input_lamp_even13 {
+    left:546px;
+}
+/* スクロールランプ14 (偶数時) */
+.input_lamp_even14 {
+    left:78px;
+}
+/* スクロールランプ15 (偶数時) */
+.input_lamp_even15 {
+    left:582px;
+}
+/* スクロールランプ16 (偶数時) */
+.input_lamp_even16 {
+    left:42px;
+}
+
+
+/* 登録情報表示エリア */
+.tableArea {
+	position: absolute;
+	top: 90px;
+	width: 640px;
+	/* $05 start */
+	/* height: 282px; */
+	height: 482px;
+	/* $05 end */
+	background-color: #FFFFFF;
+	position: relative;
+	z-index: 3;
+}
+
+/* 車（大）,人（大）,新規お客様アイコン画像表示エリア */
+.img_contents {
+	position: absolute;
+	top: 90px;
+	width: 640px;
+	/* $05 start */
+	/* height: 282px; */
+	height: 482px;
+	/* $05 end */
+	z-index: 31;
+	background-color: #FFFFFF;
+	text-align:center;
+}
+
+/* 車（大）,人（大）,新規お客様アイコン画像共通 */
+#img_bigper, #img_bigcar, #img_newCust{
+	position: absolute;
+	width: 640px;
+	text-align:center;
+	z-index: 10;
+}
+
+/* 車（大） */
+#img_bigper{
+	/* $05 start */
+	/* top: 10px; */
+	top: 90px;
+	/* $05 end */
+}
+
+/* 人（大） */
+#img_bigcar{
+	/* $05 start */
+	/* top: 25px; */
+	top: 90px;
+	/* $05 end */
+}
+
+/* 新規お客様アイコン */
+#img_newCust{
+	top: 10px;
+}
+
+/* 数字ボタン共通 */
+#btn_01, #btn_02, #btn_03, #btn_04, #btn_05,
+#btn_01_o, #btn_02_o, #btn_03_o, #btn_04_o, #btn_05_o,
+#btn_01_n, #btn_02_n, #btn_03_n, #btn_04_n, #btn_05_n {
+	position: absolute;
+	/* $05 start */
+	/* top: 570px; */
+	top: 820px;
+	/* $05 end */
+	width: 97px;
+	height: 91px;
+	font-size: 62px;
+	font-weight: 600;
+	-webkit-border-radius: 8px;
+    z-index: 10;
+}
+
+/* 数字ボタン活性 */
+#btn_01, #btn_02, #btn_03, #btn_04, #btn_05 {
+	color: #535353;
+	background: -webkit-gradient(linear, center top, center bottom, from(#FDFDFD), to(#BABABA));
+	border: 1px solid #9B9B9B;
+    -webkit-box-shadow: 0px -2px 2px #5B5B5B;
+}
+
+/* 数字ボタン選択 */
+#btn_01_o, #btn_02_o, #btn_03_o, #btn_04_o, #btn_05_o {
+	color: #FFFFFF;
+	text-shadow: 0px -1px 3px #646A70;
+	background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+	border: 1px solid #0586EA;
+	-webkit-box-shadow: 0px 1px 2px #F2F2F2, 0px -1px 1px #BBBBBB;
+}
+
+/* 数字ボタン非活性 */
+#btn_01_n, #btn_02_n, #btn_03_n, #btn_04_n, #btn_05_n {
+	color: #C1C4C8;
+	text-shadow: 0px 0px 5px #C1C4C8;
+	background: -webkit-gradient(linear, center top, center bottom, from(#B0B4B9), to(#6C747F));
+	border: 1px solid #57595C;
+	-webkit-box-shadow: 0px 2px 2px #F2F2F2, 0px -1px 1px #57595C;
+}
+
+/* ボタン１共通 */
+#btn_01, #btn_01_o, #btn_01_n {
+	left: 29px;
+}
+
+/* ボタン２共通 */
+#btn_02, #btn_02_o, #btn_02_n {
+	left: 150px;
+}
+
+/* ボタン３共通 */
+#btn_03, #btn_03_o, #btn_03_n {
+	left: 271px;
+}
+
+/* ボタン４共通 */
+#btn_04, #btn_04_o, #btn_04_n {
+	left: 394px;
+}
+
+/* ボタン５共通 */
+#btn_05, #btn_05_o, #btn_05_n {
+	left: 514px;
+}
+
+/* ボタンtext共通 */
+#lbl_01, #lbl_02, #lbl_03, #lbl_04, #lbl_05, 
+#lbl_01_o, #lbl_02_o, #lbl_03_o, #lbl_04_o, #lbl_05_o, 
+#lbl_01_n, #lbl_02_n, #lbl_03_n, #lbl_04_n, #lbl_05_n {
+	position: absolute;
+	width:100%;
+	height:60px;
+	text-align:center;
+	top:10px;
+    z-index: 11;
+}
+
+/* $05 start */
+/* 来店目的ボタン(1個表示)のボタンの位置と幅 */
+.btn_1_position {
+   left: 29px;
+   width: 580px;
+}
+/* 来店目的ボタン(1個表示)の画像の位置(その他ボタン) */
+.img_1_position_other {
+    left: 260px;
+}
+
+
+/* 来店目的ボタン(2個表示)の左のボタンの位置と幅 */
+.btn_2_position_left {
+   left: 29px;
+   width: 250px;
+}
+
+/* 来店目的ボタン(2個表示)の右のボタンの位置と幅 */
+.btn_2_position_right {
+   left: 350px;
+   width: 250px;
+}
+
+/* 来店目的ボタン(2個表示)の画像の位置(新車ボタン) */
+.img_2_position_new {
+    left: 80px;
+}
+
+/* 来店目的ボタン(2個表示)の画像の位置(修理ボタン) */
+.img_2_position_repair {
+    left: 80px;
+}
+
+/* 来店目的ボタン(2個表示)の画像の位置(その他ボタン) */
+.img_2_position_other {
+    left: 90px;
+}
+
+/* 来店目的ボタン(3個表示)の左のボタンの位置と幅 */
+.btn_3_position_left {
+   left: 29px;
+   width: 166px;
+}
+
+/* 来店目的ボタン(3個表示)の中央のボタンの位置と幅 */
+.btn_3_position_center {
+   left: 237px;
+   width: 166px;
+}
+
+/* 来店目的ボタン(3個表示)の右のボタンの位置と幅 */
+.btn_3_position_right {
+   left: 446px;
+   width: 166px;
+}
+
+/* 来店目的ボタン(3個表示)の画像の位置(新車ボタン) */
+.img_3_position_new {
+    left: 30px;
+}
+
+/* 来店目的ボタン(3個表示)の画像の位置(修理ボタン) */
+.img_3_position_repair {
+    left: 36px;
+}
+
+/* 来店目的ボタン(3個表示)の画像の位置(その他ボタン) */
+.img_3_position_other {
+    left: 47px;
+}
+/* $05 end */
+
+/* 新車ボタン共通 */
+#btn_new, #btn_new_o, #btn_new_n {
+	position: absolute;
+	/* $05 start */
+	/* left: 29px; */
+	/* top: 680px; */
+	/* width: 166px; */
+    /* $05 end */
+	height: 121px;
+	-webkit-border-radius: 8px;
+	z-index: 10;
+}
+
+/* 新車ボタン活性 */
+#btn_new {
+	background: -webkit-gradient(linear, center top, center bottom, from(#FDFDFD), to(#BABABA));
+	border: 2px solid #9B9B9B;
+	-webkit-box-shadow: 0px -1px 3px #858585;
+}
+
+/* 新車ボタン選択 */
+#btn_new_o {
+	background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+	border: 1px solid #0586EA;
+	-webkit-box-shadow: 0px 1px 2px #F2F2F2, 0px -1px 1px #BBBBBB;
+}
+
+/* 新車ボタン非活性 */
+#btn_new_n {
+	background: -webkit-gradient(linear, center top, center bottom, from(#B0B4B9), to(#6C747F));
+	border: 1px solid #57595C;
+	-webkit-box-shadow: 0px 2px 2px #F2F2F2, 0px -1px 1px #57595C;
+}
+
+/* 新車ボタン画像 */
+#img_new, #img_new_o, #img_new_n {
+	position: absolute;
+	/* $05 start */
+	/* left: 30px; */
+	/* $05 end */
+	top: 18px;
+	width: 106px;
+	height: 69px;
+	z-index: 11;
+}
+
+/* 修理ボタン共通 */
+#btn_repair, #btn_repair_o, #btn_repair_n {
+	position: absolute;
+    /* $05 start */
+	/* left: 237px; */
+	/* top: 680px; */
+	/* width: 166px; */
+	/* $05 end */
+	height: 121px;
+	-webkit-border-radius: 8px;
+	z-index: 10;
+}
+
+/* 修理ボタン活性 */
+#btn_repair {
+	background: -webkit-gradient(linear, center top, center bottom, from(#FDFDFD), to(#BABABA));
+	border: 2px solid #9B9B9B;
+	-webkit-box-shadow: 0px -1px 3px #858585;
+}
+
+/* 修理ボタン選択 */
+#btn_repair_o {
+	background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+	border: 1px solid #0586EA;
+	-webkit-box-shadow: 0px 1px 2px #F2F2F2, 0px -1px 1px #BBBBBB;
+}
+
+/* 修理ボタン非活性 */
+#btn_repair_n {
+	background: -webkit-gradient(linear, center top, center bottom, from(#B0B4B9), to(#6C747F));
+	border: 1px solid #57595C;
+	-webkit-box-shadow: 0px 2px 2px #F2F2F2, 0px -1px 1px #57595C;
+}
+
+/* 修理ボタン画像 */
+#img_repair, #img_repair_o, #img_repair_n {
+	position: absolute;
+	/* $05 start */
+	/* left: 36px;*/
+	/* $05 end */
+	top: 15px;
+	width: 83px;
+	height: 83px;
+	z-index: 11;
+}
+
+/* その他ボタン共通 */
+#btn_other, #btn_other_o, #btn_other_n {
+	position: absolute;
+	/* $05 start */	
+	/* left: 446px; */
+	/* top: 680px; */
+	/* width: 166px; */
+	/* $05 end */
+	height: 121px;
+	-webkit-border-radius: 8px;
+	z-index: 10;
+}
+
+/* その他ボタン活性 */
+#btn_other {
+	background: -webkit-gradient(linear, center top, center bottom, from(#FDFDFD), to(#BABABA));
+	border: 2px solid #9B9B9B;
+	-webkit-box-shadow: 0px -1px 3px #858585;
+}
+
+/* その他ボタン選択 */
+#btn_other_o {
+	background: -webkit-gradient(linear, center top, center bottom, from(#058BF5), to(#0160E6));
+	border: 1px solid #0586EA;
+	-webkit-box-shadow: 0px 1px 2px #F2F2F2, 0px -1px 1px #BBBBBB;
+}
+
+/* その他ボタン非活性 */
+#btn_other_n {
+	background: -webkit-gradient(linear, center top, center bottom, from(#B0B4B9), to(#6C747F));
+	border: 1px solid #57595C;
+	-webkit-box-shadow: 0px 2px 2px #F2F2F2, 0px -1px 1px #57595C;
+}
+
+/* その他ボタン画像 */
+#img_other, #img_other_o,#img_other_n {
+	position: absolute;
+    /* $05 start */	
+	/* left: 47px; */
+    /* $05 end */	
+	top: 53px;
+	width: 77px;
+	height: 17px;
+	z-index: 11;
+}
+
+/* $05 start */	
+/* 送信ボタン共通 */
+/* #btn_submit, #btn_submit_o, #btn_submit_n {
+	position: absolute;
+	left: 28px;
+	top: 820px;
+	width: 584px;
+	height: 81px;
+	font-size: 43px;
+	font-weight: 700; */
+	/* $01 iOS7対応
+       text-align: center; */
+	/* -webkit-border-radius: 8px;
+	z-index: 10;
+} */
+
+/* 送信ボタン活性 */
+/* #btn_submit {
+	color: #B9BCC1;
+	text-shadow: 0px -1px 3px #646A70;
+	background: -webkit-gradient(linear, center top, center bottom, from(#AFB3B9), to(#6C7475));
+	border: 1px solid #4E5053;
+	-webkit-box-shadow: 0px 1px 3px #F3F3F3, 0px -1px 1px #4E5053;
+} */
+
+/* 送信ボタン選択 */
+/* #btn_submit_o {
+	color: #FFFFFF;
+	text-shadow: 0px -1px 2px #646A70;
+	background: -webkit-gradient(linear, center top, center bottom, from(#7C98ED), color-stop(0.49, #315DE3), color-stop(0.5, #1E4EE1), to(#1E4EE1));
+	border: 1px solid #565B67;
+	-webkit-box-shadow: 0px 1px 3px #F2F2F2, 0px -1px 1px #BBBBBB;
+} */
+
+/* 送信ボタン非活性 */
+/* #btn_submit_n {
+	color: #B9BDC1;
+	text-shadow: 0px -1px 2px #B9BDC1;
+	background: -webkit-gradient(linear, center top, center bottom, from(#B1B5BB), to(#6B737E));
+	border: 1px solid #565B67;
+	-webkit-box-shadow: 0px 2px 2px #F2F2F2, 0px -1px 1px #4E5053;
+} */
+
+/* 送信ボタンtext */
+/* .lbl_submit {
+	position: absolute;
+	top: 10px;
+	width: 584px;
+	height: 39px;
+	font-size: 42px;
+    z-index: 11;
+    text-align: center;
+} */
+/* $05 end */	
+
+/* 未送信データ件数text */
+#lbl_unSendCount {
+    position: absolute;	
+    /* $05 start */
+    /* top: 500px; */
+    top: 680px; 
+    /* $05 end */
+    left:530px; 
+	width: 50px;
+	height: 35px;
+	font-size: 30px;
+    z-index:50;
+	color: #535353;
+	background-color: #F1F2F2;
+	border: 1px solid #9B9B9B;
+    -webkit-box-shadow: 0px -2px 2px #5B5B5B;
+	-webkit-border-radius: 8px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* 次データ件数text */
+#lbl_NextDataCount {
+    position: absolute;	
+    /* $05 start */
+    /* top: 500px; */
+    top: 680px; 
+    line-height: 35px;
+    /* $05 end */
+    left: 364px;
+    width: 160px;
+	height: 35px;
+	font-size: 30px;
+    z-index:50;
+	color: #535353;
+	background-color: #F1F2F2;
+	border: 1px solid #9B9B9B;
+    -webkit-box-shadow: 0px -2px 2px #5B5B5B;
+	-webkit-border-radius: 8px;
+	/*text-align:center;*/
+	vertical-align:middle;
+}
+
+/* 前データ件数text */
+#lbl_PreviewDataCount {
+    position: absolute;	
+    /* $05 start */
+    /* top: 500px; */
+    top: 680px; 
+    line-height: 35px;
+    /* $05 end */
+   left: 364px;
+   width: 160px;
+	height: 35px;
+	font-size: 30px;
+    z-index:50;
+	color: #535353;
+	background-color: #F1F2F2;
+	border: 1px solid #9B9B9B;
+    -webkit-box-shadow: 0px -2px 2px #5B5B5B;
+	-webkit-border-radius: 8px;
+	 /*text-align:center;*/
+	vertical-align:middle;
+}
+
+/* SlideArea
+-------------------------- */
+.slidemask {
+	width: 640px;
+	/* $05 start */
+	/* height: 280px; */
+	height: 400px;
+	/* $05 end */
+	overflow: hidden;
+	position: relative;
+}
+
+/* PhotoSlideArea
+-------------------------- */
+ul.photo {
+	top: 0;
+	left: 0;
+	width: 11520px;
+	height: 280px;
+	position: absolute;
+	list-style-type: none;
+}
+ul.photo li {
+	width: 640px;
+	height: 280px;
+	float: left;
+	position: relative;
+}
+
+ul.photo li table {
+	bottom: 0;
+	left: 0;
+	padding: 0 0px;
+	width: 640px;
+	color: #000;
+	background: #fff;
+}
+
+ul.photo li table tr{
+	bottom: 0;
+	left: 0;
+	padding: 0 0px;
+	width: 640px;
+	/* $05 start */	
+	/* height: 130px; */
+	height: 180px;
+	/* $05 end */
+}
+
+ul.photo li table td{
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+ul.photo li span{
+	bottom: 0;
+	left: 0;
+	padding: 0 0px;
+	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	/* $05 start */	
+	/* font-size: 38px; */
+	font-size: 48px;
+	/* $05 end */
+	font-weight: 600;
+}
+
+.hr_table{
+	position:absolute;
+	margin:0;
+	padding:0;
+	width:582px;
+	left:29px;
+	height:1px;
+	color:#b7b7b7;
+}
+
+
+/* アイコン(初期状態) */
+.flickRelease-icon 
+{
+    position:absolute;
+    top: 300px; 
+    left: 150px; 
+    width: 40px; 
+    height: 40px;
+    display:none;
+    /*background:url(../Images/SC3090301/downicon.png) center center no-repeat;*/
+    -webkit-transition:-webkit-transform 200ms linear 0;
+    -webkit-transform:rotateZ(0deg);
+}
+    
+ul.photo li span p
+{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    /* $05 start */	
+	/* font-size: 24px; */
+	font-size: 32px;
+	/* $05 end */	
+	font-weight: 600;
+	/* $04 start */
+	width:475px;
+	/* $04 end */
+}
+
+/* アイコン(プルダウンして更新の状態) */
+#downCursor.flickRelease-icon.step1 { -webkit-transform:rotateZ(-180deg); }
+#downCursor.flickRelease-icon.step2 { opacity:0; }
+    
+/* アイコン(ロード中非表示) */
+.flickRelease-loding 
+{
+    position:absolute;
+    top: 300px; 
+    left: 150px; 
+    width: 40px; 
+    height: 40px;
+    background:url(../Images/SC3090301/animeicn-1.png) center center no-repeat;
+    display:none;
+    -webkit-animation: ReleaseLoadingAnimation 1.0s infinite linear;
+}
+
+/* 読み込み中 */
+@-webkit-keyframes ReleaseLoadingAnimation {
+	0%{	-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(340deg);}
+}
+    
+/* テキスト */
+.flickRelease-text
+{
+    position: absolute; 
+    top: 300px; 
+    left: 200px; 
+    font-size: 25px;
+}
+
+/* $02 start */
+/*削除ポップアップ */
+#popOver_Delete_popover 
+{
+    top: 80px;
+    left: 213px;
+    z-index: 100000; 
+    width: 210px;
+    z-index:1000 !important;
+    height: 80px;
+    
+}
+
+/*削除ポップアップ 内部 */
+#popOver_Delete_popover .content
+{
+    min-width: 70px;
+    min-height: 53px;
+}
+
+/*
+#popOver_Delete_popover .triangle.bottom .triangleBorder .triangleInner
+{
+    background:black;
+    margin:0px !important;
+    -webkit-box-shadow:inset 1px 1px 0px #333 !important;
+}
+*/
+
+#DeleteText
+{
+    font-size:24px;
+    font-weight:bold;
+
+}
+#AllDeleteButton_Click
+{
+        text-align:center;
+}
+
+#popOver_Delete_content
+{
+    margin-top: 10px;
+}
+#Text_NextDataCount
+{
+    position: absolute;
+    width: 160px;
+	/* $05 start */	
+    /* top: -4px; */
+    top: -2px;
+	/* $05 end */	
+        text-align:center;
+    /*left: 8px; */
+}
+
+#Text_PreviewDataCount
+{
+     position: absolute;
+    width: 160px; 
+	/* $05 start */	
+    /* top: -4px; */
+    top: -2px;
+	/* $05 end */
+    text-align:center;
+   /* left: 8px; */
+} 
+/* $02 end */
+
+.clip {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+/* $03 start */
+ul.photo li span.appointmentIcon 
+{
+    width: 52px;
+    height: 38px;
+	float:left;
+	background: #8CC66D;
+    color: white;
+    font-weight: normal;
+	-webkit-border-radius:10px;
+	margin: 0 15px 65px 0;
+	text-align: center;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    padding-top: 2px;
+    text-shadow:#999999 0 1px 0;
+}
+/* $03 end */
+
+/* $04 start */
+.CarInfoLabelWidth
+{
+    display:block;
+    width:475px;
+    /* $04 start */
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* $04 end */
+}
+
+.CustomerLabelWidth
+{
+    display:block;
+    width: 580px;
+    /* $04 start */
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* $04 end */
+}
+
+.icrop-CustomTextBox-clear
+{
+    z-index:1;
+    left:360px !important;
+    top:8px !important;
+}
+/* $04 end */
+
+/* $05 start */
+div#ContentBox {
+    height: 830px;
+    width: 640px;
+}
+/* $05 end */
